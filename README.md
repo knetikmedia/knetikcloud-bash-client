@@ -1,1 +1,0 @@
-# knetikcloud-bash-client
