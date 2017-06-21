@@ -1,0 +1,1656 @@
+#  completion                               -*- shell-script -*-
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# !
+# ! Note:
+# !
+# ! THIS SCRIPT HAS BEEN AUTOMATICALLY GENERATED USING
+# ! swagger-codegen (https://github.com/swagger-api/swagger-codegen)
+# ! FROM SWAGGER SPECIFICATION IN JSON.
+# !
+# ! Generated on: 2017-06-21T15:33:57.527-04:00
+# !
+# !
+# ! System wide installation:
+# !
+# ! $ sudo cp .bash-completion /etc/bash-completion.d/
+# !
+# !
+# ! User home installation (add this line to .bash_profile):
+# !
+# ! [ -r ~/.bash-completion ] && source ~/.bash-completion
+# !
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+declare -A mime_type_abbreviations
+# text/*
+mime_type_abbreviations["text"]="text/plain"
+mime_type_abbreviations["html"]="text/html"
+mime_type_abbreviations["md"]="text/x-markdown"
+mime_type_abbreviations["csv"]="text/csv"
+mime_type_abbreviations["css"]="text/css"
+mime_type_abbreviations["rtf"]="text/rtf"
+# application/*
+mime_type_abbreviations["json"]="application/json"
+mime_type_abbreviations["xml"]="application/xml"
+mime_type_abbreviations["yaml"]="application/yaml"
+mime_type_abbreviations["js"]="application/javascript"
+mime_type_abbreviations["bin"]="application/octet-stream"
+mime_type_abbreviations["rdf"]="application/rdf+xml"
+# image/*
+mime_type_abbreviations["jpg"]="image/jpeg"
+mime_type_abbreviations["png"]="image/png"
+mime_type_abbreviations["gif"]="image/gif"
+mime_type_abbreviations["bmp"]="image/bmp"
+mime_type_abbreviations["tiff"]="image/tiff"
+
+
+#
+# Check if this is OSX, if so defined custom init_completion
+#
+if [[ `uname` =~ "Darwin" ]]; then
+    __osx_init_completion()
+    {
+        COMPREPLY=()
+        _get_comp_words_by_ref cur prev words cword
+    }
+fi
+
+_()
+{
+    local cur
+    local prev
+    local words
+    local cword
+
+    # The reference of currently selected REST operation
+    local operation=""
+
+    # The list of available operation in the REST service
+    # It's modelled as an associative array for efficient key lookup
+    declare -A operations
+    operations["getOAuthToken"]=1
+    operations["createActivity"]=1
+    operations["createActivityOccurrence"]=1
+    operations["createActivityTemplate"]=1
+    operations["deleteActivity"]=1
+    operations["deleteActivityTemplate"]=1
+    operations["getActivities"]=1
+    operations["getActivity"]=1
+    operations["getActivityTemplate"]=1
+    operations["getActivityTemplates"]=1
+    operations["setActivityOccurrenceResults"]=1
+    operations["updateActivity"]=1
+    operations["updateActivityOccurrence"]=1
+    operations["updateActivityTemplate"]=1
+    operations["getSignedS3URL"]=1
+    operations["createClient"]=1
+    operations["deleteClient"]=1
+    operations["getClient"]=1
+    operations["getClientGrantTypes"]=1
+    operations["getClients"]=1
+    operations["setClientGrantTypes"]=1
+    operations["setClientRedirectUris"]=1
+    operations["updateClient"]=1
+    operations["createPermission"]=1
+    operations["deletePermission"]=1
+    operations["getPermission"]=1
+    operations["getPermissions"]=1
+    operations["updatePermission"]=1
+    operations["createRole"]=1
+    operations["deleteRole"]=1
+    operations["getClientRoles"]=1
+    operations["getRole"]=1
+    operations["getRoles"]=1
+    operations["getUserRoles"]=1
+    operations["setClientRoles"]=1
+    operations["setPermissionsForRole"]=1
+    operations["setUserRoles"]=1
+    operations["updateRole"]=1
+    operations["deleteTokens"]=1
+    operations["getToken"]=1
+    operations["getTokens"]=1
+    operations["getBREActions"]=1
+    operations["createBRECategoryTemplate"]=1
+    operations["deleteBRECategoryTemplate"]=1
+    operations["getBRECategories"]=1
+    operations["getBRECategory"]=1
+    operations["getBRECategoryTemplate"]=1
+    operations["getBRECategoryTemplates"]=1
+    operations["updateBRECategory"]=1
+    operations["updateBRECategoryTemplate"]=1
+    operations["sendBREEvent"]=1
+    operations["getBREExpressions"]=1
+    operations["createBREGlobal"]=1
+    operations["deleteBREGlobal"]=1
+    operations["getBREGlobal"]=1
+    operations["getBREGlobals"]=1
+    operations["updateBREGlobal"]=1
+    operations["createBRERule"]=1
+    operations["deleteBRERule"]=1
+    operations["getBREExpressionAsString"]=1
+    operations["getBRERule"]=1
+    operations["getBRERules"]=1
+    operations["setBRERule"]=1
+    operations["updateBRERule"]=1
+    operations["createBRETrigger"]=1
+    operations["deleteBRETrigger"]=1
+    operations["getBRETrigger"]=1
+    operations["getBRETriggers"]=1
+    operations["updateBRETrigger"]=1
+    operations["getBREVariableTypes"]=1
+    operations["getBREVariableValues"]=1
+    operations["addChallengeToCampaign"]=1
+    operations["createCampaign"]=1
+    operations["createCampaignTemplate"]=1
+    operations["deleteCampaign"]=1
+    operations["deleteCampaignTemplate"]=1
+    operations["getCampaign"]=1
+    operations["getCampaignChallenges"]=1
+    operations["getCampaignTemplate"]=1
+    operations["getCampaignTemplates"]=1
+    operations["getCampaigns"]=1
+    operations["removeChallengeFromCampaign"]=1
+    operations["updateCampaign"]=1
+    operations["updateCampaignTemplate"]=1
+    operations["createChallenge"]=1
+    operations["createChallengeActivity"]=1
+    operations["createChallengeActivityTemplate"]=1
+    operations["createChallengeTemplate"]=1
+    operations["deleteChallenge"]=1
+    operations["deleteChallengeActivity"]=1
+    operations["deleteChallengeActivityTemplate"]=1
+    operations["deleteChallengeEvent"]=1
+    operations["deleteChallengeTemplate"]=1
+    operations["getChallenge"]=1
+    operations["getChallengeActivities"]=1
+    operations["getChallengeActivity"]=1
+    operations["getChallengeActivityTemplate"]=1
+    operations["getChallengeActivityTemplates"]=1
+    operations["getChallengeEvent"]=1
+    operations["getChallengeEvents"]=1
+    operations["getChallengeTemplate"]=1
+    operations["getChallengeTemplates"]=1
+    operations["getChallenges"]=1
+    operations["updateChallenge"]=1
+    operations["updateChallengeActivity"]=1
+    operations["updateChallengeActivityTemplate"]=1
+    operations["updateChallengeTemplate"]=1
+    operations["createRewardSet"]=1
+    operations["deleteRewardSet"]=1
+    operations["getRewardSet"]=1
+    operations["getRewardSets"]=1
+    operations["updateRewardSet"]=1
+    operations["createCategory"]=1
+    operations["createCategoryTemplate"]=1
+    operations["deleteCategory"]=1
+    operations["deleteCategoryTemplate"]=1
+    operations["getCategories"]=1
+    operations["getCategory"]=1
+    operations["getCategoryTemplate"]=1
+    operations["getCategoryTemplates"]=1
+    operations["getTags"]=1
+    operations["updateCategory"]=1
+    operations["updateCategoryTemplate"]=1
+    operations["createConfig"]=1
+    operations["deleteConfig"]=1
+    operations["getConfig"]=1
+    operations["getConfigs"]=1
+    operations["updateConfig"]=1
+    operations["createArticle"]=1
+    operations["createArticleTemplate"]=1
+    operations["deleteArticle"]=1
+    operations["deleteArticleTemplate"]=1
+    operations["getArticle"]=1
+    operations["getArticleTemplate"]=1
+    operations["getArticleTemplates"]=1
+    operations["getArticles"]=1
+    operations["updateArticle"]=1
+    operations["updateArticleTemplate"]=1
+    operations["addComment"]=1
+    operations["deleteComment"]=1
+    operations["getComment"]=1
+    operations["getComments"]=1
+    operations["searchComments"]=1
+    operations["updateComment"]=1
+    operations["answerPoll"]=1
+    operations["createPoll"]=1
+    operations["createPollTemplate"]=1
+    operations["deletePoll"]=1
+    operations["deletePollTemplate"]=1
+    operations["getPoll"]=1
+    operations["getPollAnswer"]=1
+    operations["getPollTemplate"]=1
+    operations["getPollTemplates"]=1
+    operations["getPolls"]=1
+    operations["updatePoll"]=1
+    operations["updatePollTemplate"]=1
+    operations["createCurrency"]=1
+    operations["deleteCurrency"]=1
+    operations["getCurrencies"]=1
+    operations["getCurrency"]=1
+    operations["updateCurrency"]=1
+    operations["addDeviceUsers"]=1
+    operations["createDevice"]=1
+    operations["deleteDevice"]=1
+    operations["deleteDeviceUser"]=1
+    operations["deleteDeviceUsers"]=1
+    operations["getDevice"]=1
+    operations["getDevices"]=1
+    operations["updateDevice"]=1
+    operations["addDisposition"]=1
+    operations["deleteDisposition"]=1
+    operations["getDisposition"]=1
+    operations["getDispositionCounts"]=1
+    operations["getDispositions"]=1
+    operations["createFulfillmentType"]=1
+    operations["deleteFulfillmentType"]=1
+    operations["getFulfillmentType"]=1
+    operations["getFulfillmentTypes"]=1
+    operations["updateFulfillmentType"]=1
+    operations["createAchievement"]=1
+    operations["createAchievementTemplate"]=1
+    operations["deleteAchievement"]=1
+    operations["deleteAchievementTemplate"]=1
+    operations["getAchievement"]=1
+    operations["getAchievementTemplate"]=1
+    operations["getAchievementTemplates"]=1
+    operations["getAchievementTriggers"]=1
+    operations["getAchievements"]=1
+    operations["getDerivedAchievements"]=1
+    operations["getUserAchievementProgress"]=1
+    operations["getUserAchievementsProgress"]=1
+    operations["getUsersAchievementProgress"]=1
+    operations["getUsersAchievementsProgress"]=1
+    operations["incrementAchievementProgress"]=1
+    operations["setAchievementProgress"]=1
+    operations["updateAchievement"]=1
+    operations["updateAchievementTemplate"]=1
+    operations["getLeaderboard"]=1
+    operations["getLeaderboardRank"]=1
+    operations["getLeaderboardStrategies"]=1
+    operations["createLevel"]=1
+    operations["deleteLevel"]=1
+    operations["getLevel"]=1
+    operations["getLevelTriggers"]=1
+    operations["getLevels"]=1
+    operations["getUserLevel"]=1
+    operations["getUserLevels"]=1
+    operations["incrementProgress"]=1
+    operations["setProgress"]=1
+    operations["updateLevel"]=1
+    operations["addMetric"]=1
+    operations["addQuestionAnswers"]=1
+    operations["addQuestionTag"]=1
+    operations["addTagToQuestionsBatch"]=1
+    operations["createImportJob"]=1
+    operations["createQuestion"]=1
+    operations["createQuestionTemplate"]=1
+    operations["deleteImportJob"]=1
+    operations["deleteQuestion"]=1
+    operations["deleteQuestionAnswers"]=1
+    operations["deleteQuestionTemplate"]=1
+    operations["getImportJob"]=1
+    operations["getImportJobs"]=1
+    operations["getQuestion"]=1
+    operations["getQuestionAnswer"]=1
+    operations["getQuestionAnswers"]=1
+    operations["getQuestionDeltas"]=1
+    operations["getQuestionTags"]=1
+    operations["getQuestionTemplate"]=1
+    operations["getQuestionTemplates"]=1
+    operations["getQuestions"]=1
+    operations["getQuestionsCount"]=1
+    operations["processImportJob"]=1
+    operations["removeQuestionTag"]=1
+    operations["removeTagToQuestionsBatch"]=1
+    operations["searchQuestionTags"]=1
+    operations["updateImportJob"]=1
+    operations["updateQuestion"]=1
+    operations["updateQuestionAnswer"]=1
+    operations["updateQuestionTemplate"]=1
+    operations["updateQuestionsInBulk"]=1
+    operations["createInvoice"]=1
+    operations["getFulFillmentStatuses"]=1
+    operations["getInvoice"]=1
+    operations["getInvoiceLogs"]=1
+    operations["getInvoices"]=1
+    operations["getPaymentStatuses"]=1
+    operations["payInvoice"]=1
+    operations["setExternalRef"]=1
+    operations["setInvoiceItemFulfillmentStatus"]=1
+    operations["setOrderNotes"]=1
+    operations["setPaymentStatus"]=1
+    operations["updateBillingInfo"]=1
+    operations["getCountries"]=1
+    operations["getCountryByGeoLocation"]=1
+    operations["getCountryStates"]=1
+    operations["getCurrencyByGeoLocation"]=1
+    operations["addUserLog"]=1
+    operations["getBREEventLog"]=1
+    operations["getBREEventLogs"]=1
+    operations["getBREForwardLog"]=1
+    operations["getBREForwardLogs"]=1
+    operations["getUserLog"]=1
+    operations["getUserLogs"]=1
+    operations["addArtist"]=1
+    operations["createArtistTemplate"]=1
+    operations["deleteArtist"]=1
+    operations["deleteArtistTemplate"]=1
+    operations["getArtist"]=1
+    operations["getArtistTemplate"]=1
+    operations["getArtistTemplates"]=1
+    operations["getArtists"]=1
+    operations["updateArtist"]=1
+    operations["updateArtistTemplate"]=1
+    operations["getModerationReport"]=1
+    operations["getModerationReports"]=1
+    operations["updateModerationReport"]=1
+    operations["addUserToVideoWhitelist"]=1
+    operations["addVideo"]=1
+    operations["addVideoComment"]=1
+    operations["addVideoContributor"]=1
+    operations["addVideoFlag"]=1
+    operations["addVideoRelationships"]=1
+    operations["createVideoDisposition"]=1
+    operations["deleteVideo"]=1
+    operations["deleteVideoComment"]=1
+    operations["deleteVideoDisposition"]=1
+    operations["deleteVideoFlag"]=1
+    operations["deleteVideoRelationship"]=1
+    operations["getUserVideos"]=1
+    operations["getVideo"]=1
+    operations["getVideoComments"]=1
+    operations["getVideoDispositions"]=1
+    operations["getVideoRelationships"]=1
+    operations["getVideos"]=1
+    operations["removeUserFromVideoWhitelist"]=1
+    operations["removeVideoContributor"]=1
+    operations["updateVideo"]=1
+    operations["updateVideoComment"]=1
+    operations["updateVideoRelationship"]=1
+    operations["viewVideo"]=1
+    operations["sendRawEmail"]=1
+    operations["sendRawSMS"]=1
+    operations["sendTemplatedEmail"]=1
+    operations["sendTemplatedSMS"]=1
+    operations["createPaymentMethod"]=1
+    operations["deletePaymentMethod"]=1
+    operations["getPaymentMethod"]=1
+    operations["getPaymentMethods"]=1
+    operations["paymentAuthorization"]=1
+    operations["paymentCapture"]=1
+    operations["updatePaymentMethod"]=1
+    operations["verifyAppleReceipt"]=1
+    operations["handleGooglePayment"]=1
+    operations["silentPostOptimal"]=1
+    operations["createPayPalBillingAgreementUrl"]=1
+    operations["createPayPalExpressCheckout"]=1
+    operations["finalizePayPalBillingAgreement"]=1
+    operations["finalizePayPalCheckout"]=1
+    operations["createStripePaymentMethod"]=1
+    operations["payStripeInvoice"]=1
+    operations["getTransaction"]=1
+    operations["getTransactions"]=1
+    operations["refundTransaction"]=1
+    operations["getUserWallet"]=1
+    operations["getUserWalletTransactions"]=1
+    operations["getUserWallets"]=1
+    operations["getWalletBalances"]=1
+    operations["getWalletTransactions"]=1
+    operations["getWallets"]=1
+    operations["updateWalletBalance"]=1
+    operations["createXsollaTokenUrl"]=1
+    operations["receiveXsollaNotification"]=1
+    operations["getChallengeEventLeaderboard"]=1
+    operations["getChallengeEventParticipants"]=1
+    operations["getInvoiceReports"]=1
+    operations["getItemRevenue"]=1
+    operations["getRefundRevenue"]=1
+    operations["getRevenueByCountry"]=1
+    operations["getRevenueByItem"]=1
+    operations["getSubscriptionRevenue"]=1
+    operations["getSubscriptionReports"]=1
+    operations["getUsageByDay"]=1
+    operations["getUsageByHour"]=1
+    operations["getUsageByMinute"]=1
+    operations["getUsageByMonth"]=1
+    operations["getUsageByYear"]=1
+    operations["getUsageEndpoints"]=1
+    operations["getUserRegistrations"]=1
+    operations["addSearchIndex"]=1
+    operations["addSearchMappings"]=1
+    operations["deleteSearchIndex"]=1
+    operations["deleteSearchIndexes"]=1
+    operations["searchIndex"]=1
+    operations["linkAccounts"]=1
+    operations["linkAccounts1"]=1
+    operations["createItemTemplate"]=1
+    operations["createStoreItem"]=1
+    operations["deleteItemTemplate"]=1
+    operations["deleteStoreItem"]=1
+    operations["getBehaviors"]=1
+    operations["getItemTemplate"]=1
+    operations["getItemTemplates"]=1
+    operations["getStore"]=1
+    operations["getStoreItem"]=1
+    operations["getStoreItems"]=1
+    operations["updateItemTemplate"]=1
+    operations["updateStoreItem"]=1
+    operations["createBundleItem"]=1
+    operations["createBundleTemplate"]=1
+    operations["deleteBundleItem"]=1
+    operations["deleteBundleTemplate"]=1
+    operations["getBundleItem"]=1
+    operations["getBundleTemplate"]=1
+    operations["getBundleTemplates"]=1
+    operations["updateBundleItem"]=1
+    operations["updateBundleTemplate"]=1
+    operations["createCouponItem"]=1
+    operations["createCouponTemplate"]=1
+    operations["deleteCouponItem"]=1
+    operations["deleteCouponTemplate"]=1
+    operations["getCouponItem"]=1
+    operations["getCouponTemplate"]=1
+    operations["getCouponTemplates"]=1
+    operations["updateCouponItem"]=1
+    operations["updateCouponTemplate"]=1
+    operations["createCatalogSale"]=1
+    operations["deleteCatalogSale"]=1
+    operations["getCatalogSale"]=1
+    operations["getCatalogSales"]=1
+    operations["updateCatalogSale"]=1
+    operations["createShippingItem"]=1
+    operations["createShippingTemplate"]=1
+    operations["deleteShippingItem"]=1
+    operations["deleteShippingTemplate"]=1
+    operations["getShippingItem"]=1
+    operations["getShippingTemplate"]=1
+    operations["getShippingTemplates"]=1
+    operations["updateShippingItem"]=1
+    operations["updateShippingTemplate"]=1
+    operations["addCustomDiscount"]=1
+    operations["addDiscountToCart"]=1
+    operations["addItemToCart"]=1
+    operations["createCart"]=1
+    operations["getCart"]=1
+    operations["getCarts"]=1
+    operations["getShippable"]=1
+    operations["getShippingCountries"]=1
+    operations["removeDiscountFromCart"]=1
+    operations["setCartCurrency"]=1
+    operations["setCartOwner"]=1
+    operations["updateItemInCart"]=1
+    operations["updateShippingAddress"]=1
+    operations["createSubscription"]=1
+    operations["createSubscriptionTemplate"]=1
+    operations["deleteSubscription"]=1
+    operations["deleteSubscriptionTemplate"]=1
+    operations["getSubscription"]=1
+    operations["getSubscriptionTemplate"]=1
+    operations["getSubscriptionTemplates"]=1
+    operations["getSubscriptions"]=1
+    operations["processSubscriptions"]=1
+    operations["updateSubscription"]=1
+    operations["updateSubscriptionTemplate"]=1
+    operations["createVendor"]=1
+    operations["createVendorTemplate"]=1
+    operations["deleteVendor"]=1
+    operations["deleteVendorTemplate"]=1
+    operations["getVendor"]=1
+    operations["getVendorTemplate"]=1
+    operations["getVendorTemplates"]=1
+    operations["getVendors"]=1
+    operations["updateVendor"]=1
+    operations["updateVendorTemplate"]=1
+    operations["createCountryTax"]=1
+    operations["createStateTax"]=1
+    operations["deleteCountryTax"]=1
+    operations["deleteStateTax"]=1
+    operations["getCountryTax"]=1
+    operations["getCountryTaxes"]=1
+    operations["getStateTax"]=1
+    operations["getStateTaxesForCountries"]=1
+    operations["getStateTaxesForCountry"]=1
+    operations["updateCountryTax"]=1
+    operations["updateStateTax"]=1
+    operations["getTemplatePropertyType"]=1
+    operations["getTemplatePropertyTypes"]=1
+    operations["addUserTag"]=1
+    operations["createUserTemplate"]=1
+    operations["deleteUserTemplate"]=1
+    operations["getUser"]=1
+    operations["getUserTags"]=1
+    operations["getUserTemplate"]=1
+    operations["getUserTemplates"]=1
+    operations["getUsers"]=1
+    operations["passwordReset"]=1
+    operations["registerUser"]=1
+    operations["removeUserTag"]=1
+    operations["setPassword"]=1
+    operations["startPasswordReset"]=1
+    operations["submitPasswordReset"]=1
+    operations["updateUser"]=1
+    operations["updateUserTemplate"]=1
+    operations["createAddress"]=1
+    operations["deleteAddress"]=1
+    operations["getAddress"]=1
+    operations["getAddresses"]=1
+    operations["updateAddress"]=1
+    operations["addFriend"]=1
+    operations["getFriends"]=1
+    operations["getInviteToken"]=1
+    operations["getInvites"]=1
+    operations["redeemFriendshipToken"]=1
+    operations["removeOrDeclineFriend"]=1
+    operations["addMemberToGroup"]=1
+    operations["addMembersToGroup"]=1
+    operations["createGroup"]=1
+    operations["createGroupTemplate"]=1
+    operations["deleteGroup"]=1
+    operations["deleteGroupTemplate"]=1
+    operations["getGroup"]=1
+    operations["getGroupMember"]=1
+    operations["getGroupMembers"]=1
+    operations["getGroupTemplate"]=1
+    operations["getGroupTemplates"]=1
+    operations["getGroupsForUser"]=1
+    operations["removeGroupMember"]=1
+    operations["updateGroup"]=1
+    operations["updateGroupMemberStatus"]=1
+    operations["updateGroupTemplate"]=1
+    operations["updateGroups"]=1
+    operations["addItemToUserInventory"]=1
+    operations["checkUserEntitlementItem"]=1
+    operations["createEntitlementItem"]=1
+    operations["createEntitlementTemplate"]=1
+    operations["deleteEntitlementItem"]=1
+    operations["deleteEntitlementTemplate"]=1
+    operations["getEntitlementItem"]=1
+    operations["getEntitlementItems"]=1
+    operations["getEntitlementTemplate"]=1
+    operations["getEntitlementTemplates"]=1
+    operations["getUserInventories"]=1
+    operations["getUserInventory"]=1
+    operations["getUserInventoryLog"]=1
+    operations["getUsersInventory"]=1
+    operations["grantUserEntitlement"]=1
+    operations["updateEntitlementItem"]=1
+    operations["updateEntitlementTemplate"]=1
+    operations["updateUserInventoryBehaviorData"]=1
+    operations["updateUserInventoryExpires"]=1
+    operations["updateUserInventoryStatus"]=1
+    operations["useUserEntitlementItem"]=1
+    operations["createUserRelationship"]=1
+    operations["deleteUserRelationship"]=1
+    operations["getUserRelationship"]=1
+    operations["getUserRelationships"]=1
+    operations["updateUserRelationship"]=1
+    operations["getUserSubscriptionDetails"]=1
+    operations["getUsersSubscriptionDetails"]=1
+    operations["reactivateUserSubscription"]=1
+    operations["setSubscriptionBillDate"]=1
+    operations["setSubscriptionPaymentMethod"]=1
+    operations["setSubscriptionStatus"]=1
+    operations["setUserSubscriptionPlan"]=1
+    operations["getBatch"]=1
+    operations["sendBatch"]=1
+    operations["getHealth"]=1
+    operations["deleteMaintenance"]=1
+    operations["getMaintenance"]=1
+    operations["setMaintenance"]=1
+    operations["updateMaintenance"]=1
+    operations["getUserLocationLog"]=1
+    operations["getUserTokenDetails"]=1
+    operations["getVersion"]=1
+
+    # An associative array of operations to their parameters
+    # Only include path, query and header parameters
+    declare -A operation_parameters
+    operation_parameters["getOAuthToken"]=""
+    operation_parameters["createActivity"]=""
+    operation_parameters["createActivityOccurrence"]="test= "
+    operation_parameters["createActivityTemplate"]=""
+    operation_parameters["deleteActivity"]="id= "
+    operation_parameters["deleteActivityTemplate"]="id= cascade= "
+    operation_parameters["getActivities"]="filter_template= filter_name= filter_id= size= page= order= "
+    operation_parameters["getActivity"]="id= "
+    operation_parameters["getActivityTemplate"]="id= "
+    operation_parameters["getActivityTemplates"]="size= page= order= "
+    operation_parameters["setActivityOccurrenceResults"]="activity_occurrence_id= "
+    operation_parameters["updateActivity"]="id= "
+    operation_parameters["updateActivityOccurrence"]="activity_occurrence_id= "
+    operation_parameters["updateActivityTemplate"]="id= "
+    operation_parameters["getSignedS3URL"]="filename= content_type= "
+    operation_parameters["createClient"]=""
+    operation_parameters["deleteClient"]="client_key= "
+    operation_parameters["getClient"]="client_key= "
+    operation_parameters["getClientGrantTypes"]=""
+    operation_parameters["getClients"]="size= page= order= "
+    operation_parameters["setClientGrantTypes"]="client_key= "
+    operation_parameters["setClientRedirectUris"]="client_key= "
+    operation_parameters["updateClient"]="client_key= "
+    operation_parameters["createPermission"]=""
+    operation_parameters["deletePermission"]="permission= force= "
+    operation_parameters["getPermission"]="permission= "
+    operation_parameters["getPermissions"]="size= page= order= "
+    operation_parameters["updatePermission"]="permission= "
+    operation_parameters["createRole"]=""
+    operation_parameters["deleteRole"]="role= force= "
+    operation_parameters["getClientRoles"]="client_key= "
+    operation_parameters["getRole"]="role= "
+    operation_parameters["getRoles"]="size= page= order= "
+    operation_parameters["getUserRoles"]="user_id= "
+    operation_parameters["setClientRoles"]="client_key= "
+    operation_parameters["setPermissionsForRole"]="role= "
+    operation_parameters["setUserRoles"]="user_id= "
+    operation_parameters["updateRole"]="role= "
+    operation_parameters["deleteTokens"]="username= client_id= "
+    operation_parameters["getToken"]="username= client_id= "
+    operation_parameters["getTokens"]="filter_client_id= filter_username= size= page= order= "
+    operation_parameters["getBREActions"]="filter_category= filter_name= filter_tags= filter_search= "
+    operation_parameters["createBRECategoryTemplate"]=""
+    operation_parameters["deleteBRECategoryTemplate"]="id= cascade= "
+    operation_parameters["getBRECategories"]="size= page= "
+    operation_parameters["getBRECategory"]="name= "
+    operation_parameters["getBRECategoryTemplate"]="id= "
+    operation_parameters["getBRECategoryTemplates"]="size= page= order= "
+    operation_parameters["updateBRECategory"]="name= "
+    operation_parameters["updateBRECategoryTemplate"]="id= "
+    operation_parameters["sendBREEvent"]=""
+    operation_parameters["getBREExpressions"]=""
+    operation_parameters["createBREGlobal"]=""
+    operation_parameters["deleteBREGlobal"]="id= "
+    operation_parameters["getBREGlobal"]="id= "
+    operation_parameters["getBREGlobals"]="filter_system= size= page= "
+    operation_parameters["updateBREGlobal"]="id= "
+    operation_parameters["createBRERule"]=""
+    operation_parameters["deleteBRERule"]="id= "
+    operation_parameters["getBREExpressionAsString"]=""
+    operation_parameters["getBRERule"]="id= "
+    operation_parameters["getBRERules"]="filter_name= filter_enabled= filter_system= filter_trigger= filter_action= filter_condition= size= page= "
+    operation_parameters["setBRERule"]="id= "
+    operation_parameters["updateBRERule"]="id= "
+    operation_parameters["createBRETrigger"]=""
+    operation_parameters["deleteBRETrigger"]="event_name= "
+    operation_parameters["getBRETrigger"]="event_name= "
+    operation_parameters["getBRETriggers"]="filter_system= filter_category= filter_tags= filter_name= filter_search= size= page= "
+    operation_parameters["updateBRETrigger"]="event_name= "
+    operation_parameters["getBREVariableTypes"]=""
+    operation_parameters["getBREVariableValues"]="name= filter_name= size= page= "
+    operation_parameters["addChallengeToCampaign"]="id= "
+    operation_parameters["createCampaign"]=""
+    operation_parameters["createCampaignTemplate"]=""
+    operation_parameters["deleteCampaign"]="id= "
+    operation_parameters["deleteCampaignTemplate"]="id= cascade= "
+    operation_parameters["getCampaign"]="id= "
+    operation_parameters["getCampaignChallenges"]="id= filter_start_date= filter_end_date= size= page= order= "
+    operation_parameters["getCampaignTemplate"]="id= "
+    operation_parameters["getCampaignTemplates"]="size= page= order= "
+    operation_parameters["getCampaigns"]="filter_active= size= page= order= "
+    operation_parameters["removeChallengeFromCampaign"]="campaign_id= id= "
+    operation_parameters["updateCampaign"]="id= "
+    operation_parameters["updateCampaignTemplate"]="id= "
+    operation_parameters["createChallenge"]=""
+    operation_parameters["createChallengeActivity"]="challenge_id= validateSettings= "
+    operation_parameters["createChallengeActivityTemplate"]=""
+    operation_parameters["createChallengeTemplate"]=""
+    operation_parameters["deleteChallenge"]="id= "
+    operation_parameters["deleteChallengeActivity"]="activity_id= challenge_id= "
+    operation_parameters["deleteChallengeActivityTemplate"]="id= cascade= "
+    operation_parameters["deleteChallengeEvent"]="id= "
+    operation_parameters["deleteChallengeTemplate"]="id= cascade= "
+    operation_parameters["getChallenge"]="id= "
+    operation_parameters["getChallengeActivities"]="challenge_id= size= page= order= "
+    operation_parameters["getChallengeActivity"]="activity_id= "
+    operation_parameters["getChallengeActivityTemplate"]="id= "
+    operation_parameters["getChallengeActivityTemplates"]="size= page= order= "
+    operation_parameters["getChallengeEvent"]="id= "
+    operation_parameters["getChallengeEvents"]="filter_start_date= filter_end_date= filter_campaigns= filter_challenge= size= page= order= "
+    operation_parameters["getChallengeTemplate"]="id= "
+    operation_parameters["getChallengeTemplates"]="size= page= order= "
+    operation_parameters["getChallenges"]="filter_template= filter_active_campaign= filter_start_date= filter_end_date= size= page= order= "
+    operation_parameters["updateChallenge"]="id= "
+    operation_parameters["updateChallengeActivity"]="activity_id= challenge_id= "
+    operation_parameters["updateChallengeActivityTemplate"]="id= "
+    operation_parameters["updateChallengeTemplate"]="id= "
+    operation_parameters["createRewardSet"]=""
+    operation_parameters["deleteRewardSet"]="id= "
+    operation_parameters["getRewardSet"]="id= "
+    operation_parameters["getRewardSets"]="size= page= order= "
+    operation_parameters["updateRewardSet"]="id= "
+    operation_parameters["createCategory"]=""
+    operation_parameters["createCategoryTemplate"]=""
+    operation_parameters["deleteCategory"]="id= "
+    operation_parameters["deleteCategoryTemplate"]="id= cascade= "
+    operation_parameters["getCategories"]="filter_search= filter_active= size= page= order= "
+    operation_parameters["getCategory"]="id= "
+    operation_parameters["getCategoryTemplate"]="id= "
+    operation_parameters["getCategoryTemplates"]="size= page= order= "
+    operation_parameters["getTags"]="size= page= "
+    operation_parameters["updateCategory"]="id= "
+    operation_parameters["updateCategoryTemplate"]="id= "
+    operation_parameters["createConfig"]=""
+    operation_parameters["deleteConfig"]="name= "
+    operation_parameters["getConfig"]="name= "
+    operation_parameters["getConfigs"]="filter_search= size= page= order= "
+    operation_parameters["updateConfig"]="name= "
+    operation_parameters["createArticle"]=""
+    operation_parameters["createArticleTemplate"]=""
+    operation_parameters["deleteArticle"]="id= "
+    operation_parameters["deleteArticleTemplate"]="id= cascade= "
+    operation_parameters["getArticle"]="id= "
+    operation_parameters["getArticleTemplate"]="id= "
+    operation_parameters["getArticleTemplates"]="size= page= order= "
+    operation_parameters["getArticles"]="filter_category= filter_tagset= filter_title= size= page= order= "
+    operation_parameters["updateArticle"]="id= "
+    operation_parameters["updateArticleTemplate"]="id= "
+    operation_parameters["addComment"]=""
+    operation_parameters["deleteComment"]="id= "
+    operation_parameters["getComment"]="id= "
+    operation_parameters["getComments"]="context= context_id= size= page= "
+    operation_parameters["searchComments"]="size= page= "
+    operation_parameters["updateComment"]="id= "
+    operation_parameters["answerPoll"]="id= "
+    operation_parameters["createPoll"]=""
+    operation_parameters["createPollTemplate"]=""
+    operation_parameters["deletePoll"]="id= "
+    operation_parameters["deletePollTemplate"]="id= cascade= "
+    operation_parameters["getPoll"]="id= "
+    operation_parameters["getPollAnswer"]="id= "
+    operation_parameters["getPollTemplate"]="id= "
+    operation_parameters["getPollTemplates"]="size= page= order= "
+    operation_parameters["getPolls"]="filter_category= filter_tagset= filter_text= size= page= order= "
+    operation_parameters["updatePoll"]="id= "
+    operation_parameters["updatePollTemplate"]="id= "
+    operation_parameters["createCurrency"]=""
+    operation_parameters["deleteCurrency"]="code= "
+    operation_parameters["getCurrencies"]="filter_enabled_currencies= filter_type= size= page= order= "
+    operation_parameters["getCurrency"]="code= "
+    operation_parameters["updateCurrency"]="code= "
+    operation_parameters["addDeviceUsers"]="id= "
+    operation_parameters["createDevice"]=""
+    operation_parameters["deleteDevice"]="id= "
+    operation_parameters["deleteDeviceUser"]="id= user_id= "
+    operation_parameters["deleteDeviceUsers"]="id= filter_id= "
+    operation_parameters["getDevice"]="id= "
+    operation_parameters["getDevices"]="filter_make= filter_model= size= page= order= "
+    operation_parameters["updateDevice"]="id= "
+    operation_parameters["addDisposition"]=""
+    operation_parameters["deleteDisposition"]="id= "
+    operation_parameters["getDisposition"]="id= "
+    operation_parameters["getDispositionCounts"]="filter_context= filter_owner= "
+    operation_parameters["getDispositions"]="filter_context= filter_owner= size= page= order= "
+    operation_parameters["createFulfillmentType"]=""
+    operation_parameters["deleteFulfillmentType"]="id= "
+    operation_parameters["getFulfillmentType"]="id= "
+    operation_parameters["getFulfillmentTypes"]="size= page= order= "
+    operation_parameters["updateFulfillmentType"]="id= "
+    operation_parameters["createAchievement"]=""
+    operation_parameters["createAchievementTemplate"]=""
+    operation_parameters["deleteAchievement"]="name= "
+    operation_parameters["deleteAchievementTemplate"]="id= cascade= "
+    operation_parameters["getAchievement"]="name= "
+    operation_parameters["getAchievementTemplate"]="id= "
+    operation_parameters["getAchievementTemplates"]="size= page= order= "
+    operation_parameters["getAchievementTriggers"]=""
+    operation_parameters["getAchievements"]="filter_tagset= filter_name= filter_hidden= size= page= order= filter_derived= "
+    operation_parameters["getDerivedAchievements"]="name= "
+    operation_parameters["getUserAchievementProgress"]="user_id= achievement_name= "
+    operation_parameters["getUserAchievementsProgress"]="user_id= filter_achievement_derived= filter_achievement_tagset= filter_achievement_name= size= page= "
+    operation_parameters["getUsersAchievementProgress"]="achievement_name= filter_achievement_derived= filter_achievement_tagset= filter_achievement_name= size= page= "
+    operation_parameters["getUsersAchievementsProgress"]="filter_achievement_derived= filter_achievement_tagset= filter_achievement_name= size= page= "
+    operation_parameters["incrementAchievementProgress"]="user_id= achievement_name= "
+    operation_parameters["setAchievementProgress"]="user_id= achievement_name= "
+    operation_parameters["updateAchievement"]="name= "
+    operation_parameters["updateAchievementTemplate"]="id= "
+    operation_parameters["getLeaderboard"]="context_type= context_id= size= page= order= "
+    operation_parameters["getLeaderboardRank"]="context_type= context_id= id= "
+    operation_parameters["getLeaderboardStrategies"]=""
+    operation_parameters["createLevel"]=""
+    operation_parameters["deleteLevel"]="name= "
+    operation_parameters["getLevel"]="name= "
+    operation_parameters["getLevelTriggers"]=""
+    operation_parameters["getLevels"]="filter_name= size= page= order= "
+    operation_parameters["getUserLevel"]="user_id= name= "
+    operation_parameters["getUserLevels"]="user_id= filter_name= size= page= order= "
+    operation_parameters["incrementProgress"]="user_id= name= "
+    operation_parameters["setProgress"]="user_id= name= "
+    operation_parameters["updateLevel"]="name= "
+    operation_parameters["addMetric"]=""
+    operation_parameters["addQuestionAnswers"]="question_id= "
+    operation_parameters["addQuestionTag"]="id= "
+    operation_parameters["addTagToQuestionsBatch"]="filter_search= filter_idset= filter_category= filter_tag= filter_tagset= filter_type= filter_published= filter_import_id= "
+    operation_parameters["createImportJob"]=""
+    operation_parameters["createQuestion"]=""
+    operation_parameters["createQuestionTemplate"]=""
+    operation_parameters["deleteImportJob"]="id= "
+    operation_parameters["deleteQuestion"]="id= "
+    operation_parameters["deleteQuestionAnswers"]="question_id= id= "
+    operation_parameters["deleteQuestionTemplate"]="id= cascade= "
+    operation_parameters["getImportJob"]="id= "
+    operation_parameters["getImportJobs"]="filter_vendor= filter_category= filter_name= filter_status= size= page= order= "
+    operation_parameters["getQuestion"]="id= "
+    operation_parameters["getQuestionAnswer"]="question_id= id= "
+    operation_parameters["getQuestionAnswers"]="question_id= "
+    operation_parameters["getQuestionDeltas"]="since= "
+    operation_parameters["getQuestionTags"]="id= "
+    operation_parameters["getQuestionTemplate"]="id= "
+    operation_parameters["getQuestionTemplates"]="size= page= order= "
+    operation_parameters["getQuestions"]="size= page= order= filter_search= filter_idset= filter_category= filter_tagset= filter_tag= filter_type= filter_published= filter_import_id= "
+    operation_parameters["getQuestionsCount"]="filter_search= filter_idset= filter_category= filter_tag= filter_tagset= filter_type= filter_published= "
+    operation_parameters["processImportJob"]="id= publish_now= "
+    operation_parameters["removeQuestionTag"]="id= tag= "
+    operation_parameters["removeTagToQuestionsBatch"]="tag= filter_search= filter_idset= filter_category= filter_tag= filter_tagset= filter_type= filter_published= filter_import_id= "
+    operation_parameters["searchQuestionTags"]="filter_search= filter_category= filter_import_id= "
+    operation_parameters["updateImportJob"]="id= "
+    operation_parameters["updateQuestion"]="id= "
+    operation_parameters["updateQuestionAnswer"]="question_id= id= "
+    operation_parameters["updateQuestionTemplate"]="id= "
+    operation_parameters["updateQuestionsInBulk"]="filter_search= filter_idset= filter_category= filter_tagset= filter_type= filter_published= filter_import_id= "
+    operation_parameters["createInvoice"]=""
+    operation_parameters["getFulFillmentStatuses"]=""
+    operation_parameters["getInvoice"]="id= "
+    operation_parameters["getInvoiceLogs"]="id= size= page= "
+    operation_parameters["getInvoices"]="filter_user= filter_email= filter_fulfillment_status= filter_payment_status= filter_item_name= filter_external_ref= filter_created_date= filter_vendor_ids= filter_currency= filter_shipping_state_name= filter_shipping_country_name= filter_shipping= filter_vendor_name= filter_sku= size= page= order= "
+    operation_parameters["getPaymentStatuses"]=""
+    operation_parameters["payInvoice"]="id= "
+    operation_parameters["setExternalRef"]="id= "
+    operation_parameters["setInvoiceItemFulfillmentStatus"]="id= sku= "
+    operation_parameters["setOrderNotes"]="id= "
+    operation_parameters["setPaymentStatus"]="id= "
+    operation_parameters["updateBillingInfo"]="id= "
+    operation_parameters["getCountries"]=""
+    operation_parameters["getCountryByGeoLocation"]=""
+    operation_parameters["getCountryStates"]="country_code_iso3= "
+    operation_parameters["getCurrencyByGeoLocation"]=""
+    operation_parameters["addUserLog"]=""
+    operation_parameters["getBREEventLog"]="id= "
+    operation_parameters["getBREEventLogs"]="filter_start_date= filter_event_name= filter_event_id= size= page= order= "
+    operation_parameters["getBREForwardLog"]="id= "
+    operation_parameters["getBREForwardLogs"]="filter_start_date= filter_end_date= filter_status_code= size= page= order= "
+    operation_parameters["getUserLog"]="id= "
+    operation_parameters["getUserLogs"]="filter_user= filter_action_name= size= page= order= "
+    operation_parameters["addArtist"]=""
+    operation_parameters["createArtistTemplate"]=""
+    operation_parameters["deleteArtist"]="id= "
+    operation_parameters["deleteArtistTemplate"]="id= cascade= "
+    operation_parameters["getArtist"]="id= show_contributions= "
+    operation_parameters["getArtistTemplate"]="id= "
+    operation_parameters["getArtistTemplates"]="size= page= order= "
+    operation_parameters["getArtists"]="filter_artists_by_name= size= page= order= "
+    operation_parameters["updateArtist"]="id= "
+    operation_parameters["updateArtistTemplate"]="id= "
+    operation_parameters["getModerationReport"]="id= "
+    operation_parameters["getModerationReports"]="exclude_resolved= filter_context= size= page= "
+    operation_parameters["updateModerationReport"]="id= "
+    operation_parameters["addUserToVideoWhitelist"]="id= "
+    operation_parameters["addVideo"]=""
+    operation_parameters["addVideoComment"]="video_id= "
+    operation_parameters["addVideoContributor"]="video_id= "
+    operation_parameters["addVideoFlag"]="video_id= "
+    operation_parameters["addVideoRelationships"]="video_id= "
+    operation_parameters["createVideoDisposition"]="video_id= "
+    operation_parameters["deleteVideo"]="id= "
+    operation_parameters["deleteVideoComment"]="video_id= id= "
+    operation_parameters["deleteVideoDisposition"]="disposition_id= "
+    operation_parameters["deleteVideoFlag"]="video_id= "
+    operation_parameters["deleteVideoRelationship"]="video_id= id= "
+    operation_parameters["getUserVideos"]="user_id= exclude_flagged= size= page= "
+    operation_parameters["getVideo"]="id= "
+    operation_parameters["getVideoComments"]="video_id= size= page= "
+    operation_parameters["getVideoDispositions"]="video_id= size= page= "
+    operation_parameters["getVideoRelationships"]="video_id= size= page= "
+    operation_parameters["getVideos"]="exclude_flagged= filter_videos_by_uploader= filter_category= filter_tagset= filter_videos_by_name= filter_videos_by_contributor= filter_videos_by_author= filter_has_author= filter_has_uploader= filter_related_to= filter_friends= filter_disposition= size= page= order= "
+    operation_parameters["removeUserFromVideoWhitelist"]="video_id= id= "
+    operation_parameters["removeVideoContributor"]="video_id= id= "
+    operation_parameters["updateVideo"]="id= "
+    operation_parameters["updateVideoComment"]="video_id= id= "
+    operation_parameters["updateVideoRelationship"]="video_id= relationship_id= "
+    operation_parameters["viewVideo"]="id= "
+    operation_parameters["sendRawEmail"]=""
+    operation_parameters["sendRawSMS"]=""
+    operation_parameters["sendTemplatedEmail"]=""
+    operation_parameters["sendTemplatedSMS"]=""
+    operation_parameters["createPaymentMethod"]="user_id= "
+    operation_parameters["deletePaymentMethod"]="user_id= id= "
+    operation_parameters["getPaymentMethod"]="user_id= id= "
+    operation_parameters["getPaymentMethods"]="user_id= size= page= order= "
+    operation_parameters["paymentAuthorization"]=""
+    operation_parameters["paymentCapture"]="id= "
+    operation_parameters["updatePaymentMethod"]="user_id= id= "
+    operation_parameters["verifyAppleReceipt"]=""
+    operation_parameters["handleGooglePayment"]=""
+    operation_parameters["silentPostOptimal"]=""
+    operation_parameters["createPayPalBillingAgreementUrl"]=""
+    operation_parameters["createPayPalExpressCheckout"]=""
+    operation_parameters["finalizePayPalBillingAgreement"]=""
+    operation_parameters["finalizePayPalCheckout"]=""
+    operation_parameters["createStripePaymentMethod"]=""
+    operation_parameters["payStripeInvoice"]=""
+    operation_parameters["getTransaction"]="id= "
+    operation_parameters["getTransactions"]="filter_invoice= size= page= order= "
+    operation_parameters["refundTransaction"]="id= "
+    operation_parameters["getUserWallet"]="user_id= currency_code= "
+    operation_parameters["getUserWalletTransactions"]="user_id= currency_code= filter_type= filter_max_date= filter_min_date= filter_sign= size= page= order= "
+    operation_parameters["getUserWallets"]="user_id= "
+    operation_parameters["getWalletBalances"]=""
+    operation_parameters["getWalletTransactions"]="filter_invoice= filter_type= filter_date= filter_sign= filter_user_id= filter_username= filter_details= filter_currency_code= size= page= order= "
+    operation_parameters["getWallets"]="size= page= order= "
+    operation_parameters["updateWalletBalance"]="user_id= currency_code= "
+    operation_parameters["createXsollaTokenUrl"]=""
+    operation_parameters["receiveXsollaNotification"]=""
+    operation_parameters["getChallengeEventLeaderboard"]="filter_event= size= page= order= "
+    operation_parameters["getChallengeEventParticipants"]="filter_event= size= page= order= "
+    operation_parameters["getInvoiceReports"]="currency_code= granularity= filter_payment_status= filter_fulfillment_status= start_date= end_date= size= page= "
+    operation_parameters["getItemRevenue"]="currency_code= start_date= end_date= "
+    operation_parameters["getRefundRevenue"]="currency_code= start_date= end_date= "
+    operation_parameters["getRevenueByCountry"]="currency_code= start_date= end_date= size= page= "
+    operation_parameters["getRevenueByItem"]="currency_code= start_date= end_date= size= page= "
+    operation_parameters["getSubscriptionRevenue"]="currency_code= start_date= end_date= "
+    operation_parameters["getSubscriptionReports"]="size= page= "
+    operation_parameters["getUsageByDay"]="start_date= end_date= combine_endpoints= method= url= size= page= "
+    operation_parameters["getUsageByHour"]="start_date= end_date= combine_endpoints= method= url= size= page= "
+    operation_parameters["getUsageByMinute"]="start_date= end_date= combine_endpoints= method= url= size= page= "
+    operation_parameters["getUsageByMonth"]="start_date= end_date= combine_endpoints= method= url= size= page= "
+    operation_parameters["getUsageByYear"]="start_date= end_date= combine_endpoints= method= url= size= page= "
+    operation_parameters["getUsageEndpoints"]="start_date= end_date= "
+    operation_parameters["getUserRegistrations"]="granularity= start_date= end_date= size= page= "
+    operation_parameters["addSearchIndex"]="type= id= "
+    operation_parameters["addSearchMappings"]=""
+    operation_parameters["deleteSearchIndex"]="type= id= "
+    operation_parameters["deleteSearchIndexes"]="type= "
+    operation_parameters["searchIndex"]="type= size= page= "
+    operation_parameters["linkAccounts"]=""
+    operation_parameters["linkAccounts1"]=""
+    operation_parameters["createItemTemplate"]=""
+    operation_parameters["createStoreItem"]="cascade= "
+    operation_parameters["deleteItemTemplate"]="id= cascade= "
+    operation_parameters["deleteStoreItem"]="id= "
+    operation_parameters["getBehaviors"]=""
+    operation_parameters["getItemTemplate"]="id= "
+    operation_parameters["getItemTemplates"]="size= page= order= "
+    operation_parameters["getStore"]="limit= page= use_catalog= ignore_location= in_stock_only= "
+    operation_parameters["getStoreItem"]="id= "
+    operation_parameters["getStoreItems"]="filter_name_search= filter_unique_key= filter_published= filter_displayable= filter_start= filter_end= filter_start_date= filter_stop_date= filter_sku= filter_price= filter_tag= filter_items_by_type= filter_bundled_skus= filter_vendor= size= page= order= "
+    operation_parameters["updateItemTemplate"]="id= "
+    operation_parameters["updateStoreItem"]="id= cascade= "
+    operation_parameters["createBundleItem"]="cascade= "
+    operation_parameters["createBundleTemplate"]=""
+    operation_parameters["deleteBundleItem"]="id= "
+    operation_parameters["deleteBundleTemplate"]="id= cascade= "
+    operation_parameters["getBundleItem"]="id= "
+    operation_parameters["getBundleTemplate"]="id= "
+    operation_parameters["getBundleTemplates"]="size= page= order= "
+    operation_parameters["updateBundleItem"]="id= cascade= "
+    operation_parameters["updateBundleTemplate"]="id= "
+    operation_parameters["createCouponItem"]="cascade= "
+    operation_parameters["createCouponTemplate"]=""
+    operation_parameters["deleteCouponItem"]="id= "
+    operation_parameters["deleteCouponTemplate"]="id= cascade= "
+    operation_parameters["getCouponItem"]="id= "
+    operation_parameters["getCouponTemplate"]="id= "
+    operation_parameters["getCouponTemplates"]="size= page= order= "
+    operation_parameters["updateCouponItem"]="id= cascade= "
+    operation_parameters["updateCouponTemplate"]="id= "
+    operation_parameters["createCatalogSale"]=""
+    operation_parameters["deleteCatalogSale"]="id= "
+    operation_parameters["getCatalogSale"]="id= "
+    operation_parameters["getCatalogSales"]="size= page= order= "
+    operation_parameters["updateCatalogSale"]="id= "
+    operation_parameters["createShippingItem"]="cascade= "
+    operation_parameters["createShippingTemplate"]=""
+    operation_parameters["deleteShippingItem"]="id= "
+    operation_parameters["deleteShippingTemplate"]="id= cascade= "
+    operation_parameters["getShippingItem"]="id= "
+    operation_parameters["getShippingTemplate"]="id= "
+    operation_parameters["getShippingTemplates"]="size= page= order= "
+    operation_parameters["updateShippingItem"]="id= cascade= "
+    operation_parameters["updateShippingTemplate"]="id= "
+    operation_parameters["addCustomDiscount"]="id= "
+    operation_parameters["addDiscountToCart"]="id= "
+    operation_parameters["addItemToCart"]="id= "
+    operation_parameters["createCart"]="owner= currency_code= "
+    operation_parameters["getCart"]="id= "
+    operation_parameters["getCarts"]="filter_owner_id= size= page= order= "
+    operation_parameters["getShippable"]="id= "
+    operation_parameters["getShippingCountries"]="id= "
+    operation_parameters["removeDiscountFromCart"]="id= code= "
+    operation_parameters["setCartCurrency"]="id= "
+    operation_parameters["setCartOwner"]="id= "
+    operation_parameters["updateItemInCart"]="id= "
+    operation_parameters["updateShippingAddress"]="id= "
+    operation_parameters["createSubscription"]=""
+    operation_parameters["createSubscriptionTemplate"]=""
+    operation_parameters["deleteSubscription"]="id= plan_id= "
+    operation_parameters["deleteSubscriptionTemplate"]="id= cascade= "
+    operation_parameters["getSubscription"]="id= "
+    operation_parameters["getSubscriptionTemplate"]="id= "
+    operation_parameters["getSubscriptionTemplates"]="size= page= order= "
+    operation_parameters["getSubscriptions"]="size= page= order= "
+    operation_parameters["processSubscriptions"]=""
+    operation_parameters["updateSubscription"]="id= "
+    operation_parameters["updateSubscriptionTemplate"]="id= "
+    operation_parameters["createVendor"]=""
+    operation_parameters["createVendorTemplate"]=""
+    operation_parameters["deleteVendor"]="id= "
+    operation_parameters["deleteVendorTemplate"]="id= cascade= "
+    operation_parameters["getVendor"]="id= "
+    operation_parameters["getVendorTemplate"]="id= "
+    operation_parameters["getVendorTemplates"]="size= page= order= "
+    operation_parameters["getVendors"]="filter_name= size= page= order= "
+    operation_parameters["updateVendor"]="id= "
+    operation_parameters["updateVendorTemplate"]="id= "
+    operation_parameters["createCountryTax"]=""
+    operation_parameters["createStateTax"]="country_code_iso3= "
+    operation_parameters["deleteCountryTax"]="country_code_iso3= "
+    operation_parameters["deleteStateTax"]="country_code_iso3= state_code= "
+    operation_parameters["getCountryTax"]="country_code_iso3= "
+    operation_parameters["getCountryTaxes"]="size= page= order= "
+    operation_parameters["getStateTax"]="country_code_iso3= state_code= "
+    operation_parameters["getStateTaxesForCountries"]="size= page= order= "
+    operation_parameters["getStateTaxesForCountry"]="country_code_iso3= size= page= order= "
+    operation_parameters["updateCountryTax"]="country_code_iso3= "
+    operation_parameters["updateStateTax"]="country_code_iso3= state_code= "
+    operation_parameters["getTemplatePropertyType"]="type= "
+    operation_parameters["getTemplatePropertyTypes"]=""
+    operation_parameters["addUserTag"]="user_id= "
+    operation_parameters["createUserTemplate"]=""
+    operation_parameters["deleteUserTemplate"]="id= cascade= "
+    operation_parameters["getUser"]="id= "
+    operation_parameters["getUserTags"]="user_id= "
+    operation_parameters["getUserTemplate"]="id= "
+    operation_parameters["getUserTemplates"]="size= page= order= "
+    operation_parameters["getUsers"]="filter_displayname= filter_email= filter_firstname= filter_fullname= filter_lastname= filter_username= filter_tag= filter_group= filter_role= filter_search= size= page= order= "
+    operation_parameters["passwordReset"]="id= "
+    operation_parameters["registerUser"]=""
+    operation_parameters["removeUserTag"]="user_id= tag= "
+    operation_parameters["setPassword"]="id= "
+    operation_parameters["startPasswordReset"]="id= "
+    operation_parameters["submitPasswordReset"]=""
+    operation_parameters["updateUser"]="id= "
+    operation_parameters["updateUserTemplate"]="id= "
+    operation_parameters["createAddress"]="user_id= "
+    operation_parameters["deleteAddress"]="user_id= id= "
+    operation_parameters["getAddress"]="user_id= id= "
+    operation_parameters["getAddresses"]="user_id= size= page= order= "
+    operation_parameters["updateAddress"]="user_id= id= "
+    operation_parameters["addFriend"]="user_id= id= "
+    operation_parameters["getFriends"]="user_id= size= page= "
+    operation_parameters["getInviteToken"]="user_id= "
+    operation_parameters["getInvites"]="user_id= size= page= "
+    operation_parameters["redeemFriendshipToken"]="user_id= "
+    operation_parameters["removeOrDeclineFriend"]="user_id= id= "
+    operation_parameters["addMemberToGroup"]="unique_name= "
+    operation_parameters["addMembersToGroup"]="unique_name= "
+    operation_parameters["createGroup"]=""
+    operation_parameters["createGroupTemplate"]=""
+    operation_parameters["deleteGroup"]="unique_name= "
+    operation_parameters["deleteGroupTemplate"]="id= cascade= "
+    operation_parameters["getGroup"]="unique_name= "
+    operation_parameters["getGroupMember"]="unique_name= user_id= "
+    operation_parameters["getGroupMembers"]="unique_name= size= page= order= "
+    operation_parameters["getGroupTemplate"]="id= "
+    operation_parameters["getGroupTemplates"]="size= page= order= "
+    operation_parameters["getGroupsForUser"]="user_id= "
+    operation_parameters["removeGroupMember"]="unique_name= user_id= "
+    operation_parameters["updateGroup"]="unique_name= "
+    operation_parameters["updateGroupMemberStatus"]="unique_name= user_id= "
+    operation_parameters["updateGroupTemplate"]="id= "
+    operation_parameters["updateGroups"]="filter_template= filter_member_count= filter_name= filter_unique_name= filter_parent= filter_status= size= page= order= "
+    operation_parameters["addItemToUserInventory"]="id= "
+    operation_parameters["checkUserEntitlementItem"]="user_id= item_id= sku= "
+    operation_parameters["createEntitlementItem"]="cascade= "
+    operation_parameters["createEntitlementTemplate"]=""
+    operation_parameters["deleteEntitlementItem"]="entitlement_id= "
+    operation_parameters["deleteEntitlementTemplate"]="id= cascade= "
+    operation_parameters["getEntitlementItem"]="entitlement_id= "
+    operation_parameters["getEntitlementItems"]="size= page= order= "
+    operation_parameters["getEntitlementTemplate"]="id= "
+    operation_parameters["getEntitlementTemplates"]="size= page= order= "
+    operation_parameters["getUserInventories"]="id= inactive= size= page= filter_item_name= filter_item_id= filter_username= filter_group= filter_date= "
+    operation_parameters["getUserInventory"]="user_id= id= "
+    operation_parameters["getUserInventoryLog"]="user_id= id= size= page= "
+    operation_parameters["getUsersInventory"]="inactive= size= page= filter_item_name= filter_item_id= filter_username= filter_group= filter_date= "
+    operation_parameters["grantUserEntitlement"]="user_id= "
+    operation_parameters["updateEntitlementItem"]="entitlement_id= cascade= "
+    operation_parameters["updateEntitlementTemplate"]="id= "
+    operation_parameters["updateUserInventoryBehaviorData"]="user_id= id= "
+    operation_parameters["updateUserInventoryExpires"]="user_id= id= "
+    operation_parameters["updateUserInventoryStatus"]="user_id= id= "
+    operation_parameters["useUserEntitlementItem"]="user_id= item_id= sku= info= "
+    operation_parameters["createUserRelationship"]=""
+    operation_parameters["deleteUserRelationship"]="id= "
+    operation_parameters["getUserRelationship"]="id= "
+    operation_parameters["getUserRelationships"]="size= page= order= "
+    operation_parameters["updateUserRelationship"]="id= "
+    operation_parameters["getUserSubscriptionDetails"]="user_id= inventory_id= "
+    operation_parameters["getUsersSubscriptionDetails"]="user_id= "
+    operation_parameters["reactivateUserSubscription"]="user_id= inventory_id= "
+    operation_parameters["setSubscriptionBillDate"]="user_id= inventory_id= "
+    operation_parameters["setSubscriptionPaymentMethod"]="user_id= inventory_id= "
+    operation_parameters["setSubscriptionStatus"]="user_id= inventory_id= "
+    operation_parameters["setUserSubscriptionPlan"]="user_id= inventory_id= "
+    operation_parameters["getBatch"]="token= "
+    operation_parameters["sendBatch"]=""
+    operation_parameters["getHealth"]=""
+    operation_parameters["deleteMaintenance"]=""
+    operation_parameters["getMaintenance"]=""
+    operation_parameters["setMaintenance"]=""
+    operation_parameters["updateMaintenance"]=""
+    operation_parameters["getUserLocationLog"]="user_id= size= page= order= "
+    operation_parameters["getUserTokenDetails"]=""
+    operation_parameters["getVersion"]=""
+
+    # An associative array of possible values for enum parameters
+    declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["createActivityOccurrence::test"]="true false"
+    operation_parameters_enum_values["createActivityOccurrence::test"]="true false"
+    operation_parameters_enum_values["getActivities::filter_template"]="true false"
+    operation_parameters_enum_values["getActivities::filter_template"]="true false"
+    operation_parameters_enum_values["getActivities::filter_template"]="true false"
+    operation_parameters_enum_values["getActivities::filter_template"]="true false"
+    operation_parameters_enum_values["getActivities::filter_template"]="true false"
+    operation_parameters_enum_values["getActivities::filter_template"]="true false"
+    operation_parameters_enum_values["deletePermission::force"]="true false"
+    operation_parameters_enum_values["deletePermission::force"]="true false"
+    operation_parameters_enum_values["deleteRole::force"]="true false"
+    operation_parameters_enum_values["deleteRole::force"]="true false"
+    operation_parameters_enum_values["getBREGlobals::filter_system"]="true false"
+    operation_parameters_enum_values["getBREGlobals::filter_system"]="true false"
+    operation_parameters_enum_values["getBREGlobals::filter_system"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
+    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
+    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
+    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
+    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
+    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
+    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
+    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
+    operation_parameters_enum_values["getCampaigns::filter_active"]="true false"
+    operation_parameters_enum_values["getCampaigns::filter_active"]="true false"
+    operation_parameters_enum_values["getCampaigns::filter_active"]="true false"
+    operation_parameters_enum_values["getCampaigns::filter_active"]="true false"
+    operation_parameters_enum_values["createChallengeActivity::validateSettings"]="true false"
+    operation_parameters_enum_values["createChallengeActivity::validateSettings"]="true false"
+    operation_parameters_enum_values["createChallengeActivity::validateSettings"]="true false"
+    operation_parameters_enum_values["getChallengeEvents::filter_campaigns"]="true false"
+    operation_parameters_enum_values["getChallengeEvents::filter_campaigns"]="true false"
+    operation_parameters_enum_values["getChallengeEvents::filter_campaigns"]="true false"
+    operation_parameters_enum_values["getChallengeEvents::filter_campaigns"]="true false"
+    operation_parameters_enum_values["getChallengeEvents::filter_campaigns"]="true false"
+    operation_parameters_enum_values["getChallengeEvents::filter_campaigns"]="true false"
+    operation_parameters_enum_values["getChallengeEvents::filter_campaigns"]="true false"
+    operation_parameters_enum_values["getChallenges::filter_template"]="true false"
+    operation_parameters_enum_values["getChallenges::filter_active_campaign"]="true false"
+    operation_parameters_enum_values["getChallenges::filter_template"]="true false"
+    operation_parameters_enum_values["getChallenges::filter_active_campaign"]="true false"
+    operation_parameters_enum_values["getChallenges::filter_template"]="true false"
+    operation_parameters_enum_values["getChallenges::filter_active_campaign"]="true false"
+    operation_parameters_enum_values["getChallenges::filter_template"]="true false"
+    operation_parameters_enum_values["getChallenges::filter_active_campaign"]="true false"
+    operation_parameters_enum_values["getChallenges::filter_template"]="true false"
+    operation_parameters_enum_values["getChallenges::filter_active_campaign"]="true false"
+    operation_parameters_enum_values["getChallenges::filter_template"]="true false"
+    operation_parameters_enum_values["getChallenges::filter_active_campaign"]="true false"
+    operation_parameters_enum_values["getChallenges::filter_template"]="true false"
+    operation_parameters_enum_values["getChallenges::filter_active_campaign"]="true false"
+    operation_parameters_enum_values["getCategories::filter_active"]="true false"
+    operation_parameters_enum_values["getCategories::filter_active"]="true false"
+    operation_parameters_enum_values["getCategories::filter_active"]="true false"
+    operation_parameters_enum_values["getCategories::filter_active"]="true false"
+    operation_parameters_enum_values["getCategories::filter_active"]="true false"
+    operation_parameters_enum_values["getCurrencies::filter_enabled_currencies"]="true false"
+    operation_parameters_enum_values["getCurrencies::filter_enabled_currencies"]="true false"
+    operation_parameters_enum_values["getCurrencies::filter_enabled_currencies"]="true false"
+    operation_parameters_enum_values["getCurrencies::filter_enabled_currencies"]="true false"
+    operation_parameters_enum_values["getCurrencies::filter_enabled_currencies"]="true false"
+    operation_parameters_enum_values["getAchievements::filter_hidden"]="true false"
+    operation_parameters_enum_values["getAchievements::filter_derived"]="true false"
+    operation_parameters_enum_values["getAchievements::filter_hidden"]="true false"
+    operation_parameters_enum_values["getAchievements::filter_derived"]="true false"
+    operation_parameters_enum_values["getAchievements::filter_hidden"]="true false"
+    operation_parameters_enum_values["getAchievements::filter_derived"]="true false"
+    operation_parameters_enum_values["getAchievements::filter_hidden"]="true false"
+    operation_parameters_enum_values["getAchievements::filter_derived"]="true false"
+    operation_parameters_enum_values["getAchievements::filter_hidden"]="true false"
+    operation_parameters_enum_values["getAchievements::filter_derived"]="true false"
+    operation_parameters_enum_values["getAchievements::filter_hidden"]="true false"
+    operation_parameters_enum_values["getAchievements::filter_derived"]="true false"
+    operation_parameters_enum_values["getAchievements::filter_hidden"]="true false"
+    operation_parameters_enum_values["getAchievements::filter_derived"]="true false"
+    operation_parameters_enum_values["getUserAchievementsProgress::filter_achievement_derived"]="true false"
+    operation_parameters_enum_values["getUserAchievementsProgress::filter_achievement_derived"]="true false"
+    operation_parameters_enum_values["getUserAchievementsProgress::filter_achievement_derived"]="true false"
+    operation_parameters_enum_values["getUserAchievementsProgress::filter_achievement_derived"]="true false"
+    operation_parameters_enum_values["getUserAchievementsProgress::filter_achievement_derived"]="true false"
+    operation_parameters_enum_values["getUserAchievementsProgress::filter_achievement_derived"]="true false"
+    operation_parameters_enum_values["getUsersAchievementProgress::filter_achievement_derived"]="true false"
+    operation_parameters_enum_values["getUsersAchievementProgress::filter_achievement_derived"]="true false"
+    operation_parameters_enum_values["getUsersAchievementProgress::filter_achievement_derived"]="true false"
+    operation_parameters_enum_values["getUsersAchievementProgress::filter_achievement_derived"]="true false"
+    operation_parameters_enum_values["getUsersAchievementProgress::filter_achievement_derived"]="true false"
+    operation_parameters_enum_values["getUsersAchievementProgress::filter_achievement_derived"]="true false"
+    operation_parameters_enum_values["getUsersAchievementsProgress::filter_achievement_derived"]="true false"
+    operation_parameters_enum_values["getUsersAchievementsProgress::filter_achievement_derived"]="true false"
+    operation_parameters_enum_values["getUsersAchievementsProgress::filter_achievement_derived"]="true false"
+    operation_parameters_enum_values["getUsersAchievementsProgress::filter_achievement_derived"]="true false"
+    operation_parameters_enum_values["getUsersAchievementsProgress::filter_achievement_derived"]="true false"
+    operation_parameters_enum_values["addTagToQuestionsBatch::filter_published"]="true false"
+    operation_parameters_enum_values["addTagToQuestionsBatch::filter_published"]="true false"
+    operation_parameters_enum_values["addTagToQuestionsBatch::filter_published"]="true false"
+    operation_parameters_enum_values["addTagToQuestionsBatch::filter_published"]="true false"
+    operation_parameters_enum_values["addTagToQuestionsBatch::filter_published"]="true false"
+    operation_parameters_enum_values["addTagToQuestionsBatch::filter_published"]="true false"
+    operation_parameters_enum_values["addTagToQuestionsBatch::filter_published"]="true false"
+    operation_parameters_enum_values["addTagToQuestionsBatch::filter_published"]="true false"
+    operation_parameters_enum_values["addTagToQuestionsBatch::filter_published"]="true false"
+    operation_parameters_enum_values["getQuestions::filter_published"]="true false"
+    operation_parameters_enum_values["getQuestions::filter_published"]="true false"
+    operation_parameters_enum_values["getQuestions::filter_published"]="true false"
+    operation_parameters_enum_values["getQuestions::filter_published"]="true false"
+    operation_parameters_enum_values["getQuestions::filter_published"]="true false"
+    operation_parameters_enum_values["getQuestions::filter_published"]="true false"
+    operation_parameters_enum_values["getQuestions::filter_published"]="true false"
+    operation_parameters_enum_values["getQuestions::filter_published"]="true false"
+    operation_parameters_enum_values["getQuestions::filter_published"]="true false"
+    operation_parameters_enum_values["getQuestions::filter_published"]="true false"
+    operation_parameters_enum_values["getQuestions::filter_published"]="true false"
+    operation_parameters_enum_values["getQuestionsCount::filter_published"]="true false"
+    operation_parameters_enum_values["getQuestionsCount::filter_published"]="true false"
+    operation_parameters_enum_values["getQuestionsCount::filter_published"]="true false"
+    operation_parameters_enum_values["getQuestionsCount::filter_published"]="true false"
+    operation_parameters_enum_values["getQuestionsCount::filter_published"]="true false"
+    operation_parameters_enum_values["getQuestionsCount::filter_published"]="true false"
+    operation_parameters_enum_values["getQuestionsCount::filter_published"]="true false"
+    operation_parameters_enum_values["processImportJob::publish_now"]="true false"
+    operation_parameters_enum_values["processImportJob::publish_now"]="true false"
+    operation_parameters_enum_values["removeTagToQuestionsBatch::filter_published"]="true false"
+    operation_parameters_enum_values["removeTagToQuestionsBatch::filter_published"]="true false"
+    operation_parameters_enum_values["removeTagToQuestionsBatch::filter_published"]="true false"
+    operation_parameters_enum_values["removeTagToQuestionsBatch::filter_published"]="true false"
+    operation_parameters_enum_values["removeTagToQuestionsBatch::filter_published"]="true false"
+    operation_parameters_enum_values["removeTagToQuestionsBatch::filter_published"]="true false"
+    operation_parameters_enum_values["removeTagToQuestionsBatch::filter_published"]="true false"
+    operation_parameters_enum_values["removeTagToQuestionsBatch::filter_published"]="true false"
+    operation_parameters_enum_values["removeTagToQuestionsBatch::filter_published"]="true false"
+    operation_parameters_enum_values["updateQuestionsInBulk::filter_published"]="true false"
+    operation_parameters_enum_values["updateQuestionsInBulk::filter_published"]="true false"
+    operation_parameters_enum_values["updateQuestionsInBulk::filter_published"]="true false"
+    operation_parameters_enum_values["updateQuestionsInBulk::filter_published"]="true false"
+    operation_parameters_enum_values["updateQuestionsInBulk::filter_published"]="true false"
+    operation_parameters_enum_values["updateQuestionsInBulk::filter_published"]="true false"
+    operation_parameters_enum_values["updateQuestionsInBulk::filter_published"]="true false"
+    operation_parameters_enum_values["updateQuestionsInBulk::filter_published"]="true false"
+    operation_parameters_enum_values["getModerationReports::exclude_resolved"]="true false"
+    operation_parameters_enum_values["getModerationReports::exclude_resolved"]="true false"
+    operation_parameters_enum_values["getModerationReports::exclude_resolved"]="true false"
+    operation_parameters_enum_values["getModerationReports::exclude_resolved"]="true false"
+    operation_parameters_enum_values["getUserVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getUserVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getUserVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getUserVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_author"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_uploader"]="true false"
+    operation_parameters_enum_values["getVideos::filter_friends"]="true false"
+    operation_parameters_enum_values["getVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_author"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_uploader"]="true false"
+    operation_parameters_enum_values["getVideos::filter_friends"]="true false"
+    operation_parameters_enum_values["getVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_author"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_uploader"]="true false"
+    operation_parameters_enum_values["getVideos::filter_friends"]="true false"
+    operation_parameters_enum_values["getVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_author"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_uploader"]="true false"
+    operation_parameters_enum_values["getVideos::filter_friends"]="true false"
+    operation_parameters_enum_values["getVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_author"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_uploader"]="true false"
+    operation_parameters_enum_values["getVideos::filter_friends"]="true false"
+    operation_parameters_enum_values["getVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_author"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_uploader"]="true false"
+    operation_parameters_enum_values["getVideos::filter_friends"]="true false"
+    operation_parameters_enum_values["getVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_author"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_uploader"]="true false"
+    operation_parameters_enum_values["getVideos::filter_friends"]="true false"
+    operation_parameters_enum_values["getVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_author"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_uploader"]="true false"
+    operation_parameters_enum_values["getVideos::filter_friends"]="true false"
+    operation_parameters_enum_values["getVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_author"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_uploader"]="true false"
+    operation_parameters_enum_values["getVideos::filter_friends"]="true false"
+    operation_parameters_enum_values["getVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_author"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_uploader"]="true false"
+    operation_parameters_enum_values["getVideos::filter_friends"]="true false"
+    operation_parameters_enum_values["getVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_author"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_uploader"]="true false"
+    operation_parameters_enum_values["getVideos::filter_friends"]="true false"
+    operation_parameters_enum_values["getVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_author"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_uploader"]="true false"
+    operation_parameters_enum_values["getVideos::filter_friends"]="true false"
+    operation_parameters_enum_values["getVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_author"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_uploader"]="true false"
+    operation_parameters_enum_values["getVideos::filter_friends"]="true false"
+    operation_parameters_enum_values["getVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_author"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_uploader"]="true false"
+    operation_parameters_enum_values["getVideos::filter_friends"]="true false"
+    operation_parameters_enum_values["getVideos::exclude_flagged"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_author"]="true false"
+    operation_parameters_enum_values["getVideos::filter_has_uploader"]="true false"
+    operation_parameters_enum_values["getVideos::filter_friends"]="true false"
+    operation_parameters_enum_values["getUsageByDay::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByDay::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByDay::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByDay::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByDay::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByDay::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByDay::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByHour::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByHour::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByHour::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByHour::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByHour::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByHour::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByHour::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByMinute::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByMinute::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByMinute::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByMinute::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByMinute::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByMinute::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByMinute::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByMonth::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByMonth::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByMonth::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByMonth::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByMonth::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByMonth::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByMonth::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByYear::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByYear::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByYear::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByYear::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByYear::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByYear::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getUsageByYear::combine_endpoints"]="true false"
+    operation_parameters_enum_values["createStoreItem::cascade"]="true false"
+    operation_parameters_enum_values["createStoreItem::cascade"]="true false"
+    operation_parameters_enum_values["getStore::use_catalog"]="true false"
+    operation_parameters_enum_values["getStore::ignore_location"]="true false"
+    operation_parameters_enum_values["getStore::in_stock_only"]="true false"
+    operation_parameters_enum_values["getStore::use_catalog"]="true false"
+    operation_parameters_enum_values["getStore::ignore_location"]="true false"
+    operation_parameters_enum_values["getStore::in_stock_only"]="true false"
+    operation_parameters_enum_values["getStore::use_catalog"]="true false"
+    operation_parameters_enum_values["getStore::ignore_location"]="true false"
+    operation_parameters_enum_values["getStore::in_stock_only"]="true false"
+    operation_parameters_enum_values["getStore::use_catalog"]="true false"
+    operation_parameters_enum_values["getStore::ignore_location"]="true false"
+    operation_parameters_enum_values["getStore::in_stock_only"]="true false"
+    operation_parameters_enum_values["getStore::use_catalog"]="true false"
+    operation_parameters_enum_values["getStore::ignore_location"]="true false"
+    operation_parameters_enum_values["getStore::in_stock_only"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_published"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_displayable"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_published"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_displayable"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_published"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_displayable"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_published"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_displayable"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_published"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_displayable"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_published"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_displayable"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_published"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_displayable"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_published"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_displayable"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_published"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_displayable"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_published"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_displayable"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_published"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_displayable"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_published"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_displayable"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_published"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_displayable"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_published"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_displayable"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_published"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_displayable"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_published"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_displayable"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_published"]="true false"
+    operation_parameters_enum_values["getStoreItems::filter_displayable"]="true false"
+    operation_parameters_enum_values["updateStoreItem::cascade"]="true false"
+    operation_parameters_enum_values["updateStoreItem::cascade"]="true false"
+    operation_parameters_enum_values["updateStoreItem::cascade"]="true false"
+    operation_parameters_enum_values["createBundleItem::cascade"]="true false"
+    operation_parameters_enum_values["createBundleItem::cascade"]="true false"
+    operation_parameters_enum_values["updateBundleItem::cascade"]="true false"
+    operation_parameters_enum_values["updateBundleItem::cascade"]="true false"
+    operation_parameters_enum_values["updateBundleItem::cascade"]="true false"
+    operation_parameters_enum_values["createCouponItem::cascade"]="true false"
+    operation_parameters_enum_values["createCouponItem::cascade"]="true false"
+    operation_parameters_enum_values["updateCouponItem::cascade"]="true false"
+    operation_parameters_enum_values["updateCouponItem::cascade"]="true false"
+    operation_parameters_enum_values["updateCouponItem::cascade"]="true false"
+    operation_parameters_enum_values["createShippingItem::cascade"]="true false"
+    operation_parameters_enum_values["createShippingItem::cascade"]="true false"
+    operation_parameters_enum_values["updateShippingItem::cascade"]="true false"
+    operation_parameters_enum_values["updateShippingItem::cascade"]="true false"
+    operation_parameters_enum_values["updateShippingItem::cascade"]="true false"
+    operation_parameters_enum_values["createEntitlementItem::cascade"]="true false"
+    operation_parameters_enum_values["createEntitlementItem::cascade"]="true false"
+    operation_parameters_enum_values["getUserInventories::inactive"]="true false"
+    operation_parameters_enum_values["getUserInventories::inactive"]="true false"
+    operation_parameters_enum_values["getUserInventories::inactive"]="true false"
+    operation_parameters_enum_values["getUserInventories::inactive"]="true false"
+    operation_parameters_enum_values["getUserInventories::inactive"]="true false"
+    operation_parameters_enum_values["getUserInventories::inactive"]="true false"
+    operation_parameters_enum_values["getUserInventories::inactive"]="true false"
+    operation_parameters_enum_values["getUserInventories::inactive"]="true false"
+    operation_parameters_enum_values["getUserInventories::inactive"]="true false"
+    operation_parameters_enum_values["getUsersInventory::inactive"]="true false"
+    operation_parameters_enum_values["getUsersInventory::inactive"]="true false"
+    operation_parameters_enum_values["getUsersInventory::inactive"]="true false"
+    operation_parameters_enum_values["getUsersInventory::inactive"]="true false"
+    operation_parameters_enum_values["getUsersInventory::inactive"]="true false"
+    operation_parameters_enum_values["getUsersInventory::inactive"]="true false"
+    operation_parameters_enum_values["getUsersInventory::inactive"]="true false"
+    operation_parameters_enum_values["getUsersInventory::inactive"]="true false"
+    operation_parameters_enum_values["updateEntitlementItem::cascade"]="true false"
+    operation_parameters_enum_values["updateEntitlementItem::cascade"]="true false"
+    operation_parameters_enum_values["updateEntitlementItem::cascade"]="true false"
+
+    #
+    # Check if this is OSX and use special __osx_init_completion function
+    #
+    if [[ `uname` =~ "Darwin" ]]; then
+        __osx_init_completion || return
+    else
+        _init_completion -s || return
+    fi
+
+
+    # Check if operation is already in the command line provided
+    for word in "${words[@]}"; do
+        if [[ -n $word && ${operations[$word]} ]]; then
+            operation="${word}"
+        fi
+    done
+
+    if [[ -z $operation ]]; then
+        case $prev in
+            --ciphers|--connect-timeout|-C|--continue-at|-F|--form|--form-string|\
+            --ftp-account|--ftp-alternative-to-user|-P|--ftp-port|-H|--header|-h|\
+            --help|--hostpubmd5|--keepalive-time|--krb|--limit-rate|--local-port|\
+            --mail-from|--mail-rcpt|--max-filesize|--max-redirs|-m|--max-time|\
+            --pass|--proto|--proto-redir|--proxy-user|--proxy1.0|-Q|--quote|-r|\
+            --range|-X|--request|--retry|--retry-delay|--retry-max-time|\
+            --socks5-gssapi-service|-t|--telnet-option|--tftp-blksize|-z|\
+            --time-cond|--url|-u|--user|-A|--user-agent|-V|--version|-w|\
+            --write-out|--resolve|--tlsuser|--tlspassword|--about)
+                return
+                ;;
+            -K|--config|-b|--cookie|-c|--cookie-jar|-D|--dump-header|--egd-file|\
+            --key|--libcurl|-o|--output|--random-file|-T|--upload-file|--trace|\
+            --trace-ascii|--netrc-file)
+                _filedir
+                return
+                ;;
+            --cacert|-E|--cert)
+                _filedir '@(c?(e)rt|cer|pem|der)'
+                return
+                ;;
+            --capath)
+                _filedir -d
+                return
+                ;;
+            --cert-type|--key-type)
+                COMPREPLY=( $( compgen -W 'DER PEM ENG' -- "$cur" ) )
+                return
+                ;;
+            --crlfile)
+                _filedir crl
+                return
+                ;;
+            -d|--data|--data-ascii|--data-binary|--data-urlencode)
+                if [[ $cur == \@* ]]; then
+                    cur=${cur:1}
+                    _filedir
+                    COMPREPLY=( "${COMPREPLY[@]/#/@}" )
+                fi
+                return
+                ;;
+            --delegation)
+                COMPREPLY=( $( compgen -W 'none policy always' -- "$cur" ) )
+                return
+                ;;
+            --engine)
+                COMPREPLY=( $( compgen -W 'list' -- "$cur" ) )
+                return
+                ;;
+            --ftp-method)
+                COMPREPLY=( $( compgen -W 'multicwd nocwd singlecwd' -- "$cur" ) )
+                return
+                ;;
+            --ftp-ssl-ccc-mode)
+                COMPREPLY=( $( compgen -W 'active passive' -- "$cur" ) )
+                return
+                ;;
+            --interface)
+                _available_interfaces -a
+                return
+                ;;
+            -x|--proxy|--socks4|--socks4a|--socks5|--socks5-hostname)
+                _known_hosts_real
+                return
+                ;;
+            --pubkey)
+                _filedir pub
+                return
+                ;;
+            --stderr)
+                COMPREPLY=( $( compgen -W '-' -- "$cur" ) )
+                _filedir
+                return
+                ;;
+            --tlsauthtype)
+                COMPREPLY=( $( compgen -W 'SRP' -- "$cur" ) )
+                return
+                ;;
+            --host)
+                COMPREPLY=( $( compgen -W 'http:// https://' -- "$cur" ) )
+                return
+                ;;
+            -ct|--content-type|-ac|--accept)
+                COMPREPLY=( $( compgen -W '${!mime_type_abbreviations[*]}' -- "$cur" ) )
+                return
+                ;;
+        esac
+    fi
+
+    #
+    # Complete the server address based on ~/.ssh/known_hosts
+    # and ~/.ssh/config
+    #
+    local prefix=${COMP_WORDS[COMP_CWORD-2]}
+    local colon=${COMP_WORDS[COMP_CWORD-1]}
+    if [[ "$colon" == ":" && ( $prefix == "https" || $prefix == "http" ) ]]; then
+        COMPREPLY=()
+        local comp_ssh_hosts=`[[ -f ~/.ssh/known_hosts ]] && \
+                              ( cat ~/.ssh/known_hosts | \
+                              grep '^[a-zA-Z0-9]' | \
+                              cut -f 1 -d ' ' | \
+                              sed -e s/,.*//g | \
+                              grep -v ^# | \
+                              uniq | \
+                              grep -v "\[" ) ;
+                              [[ -f ~/.ssh/config ]] && \
+                              ( cat ~/.ssh/config | \
+                              grep "^Host " | \
+                              awk '{print $2}' )`
+        COMPREPLY=( $( compgen -P '//' -W '${comp_ssh_hosts}' -- "${cur:2}") )
+        return
+    fi
+
+    #
+    # Complete the  and cURL's arguments
+    #
+    if [[ $cur == -* ]]; then
+        COMPREPLY=( $( compgen -W '$(_parse_help curl) $(_parse_help $1)' -- "$cur" ) )
+        return
+    fi
+
+    #
+    # If the argument starts with a letter this could be either an operation
+    # or an operation parameter
+    # When $cur is empty, suggest the list of operations by default
+    #
+    if [[ $cur =~ ^[A-Za-z_0-9]* ]]; then
+        # If operation has not been yet selected, suggest the list of operations
+        # otherwise suggest arguments of this operation as declared in the
+        # Swagger specification
+        if [[ -z $operation ]]; then
+            COMPREPLY=( $(compgen -W '${!operations[*]}' -- ${cur}) )
+        else
+            COMPREPLY=( $(compgen -W '${operation_parameters[$operation]}' -- ${cur}) )
+            compopt -o nospace
+        fi
+        return
+    fi
+
+} &&
+complete -F _ 
+
+# ex: ts=4 sw=4 et filetype=sh
