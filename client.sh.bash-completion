@@ -8,7 +8,7 @@
 # ! swagger-codegen (https://github.com/swagger-api/swagger-codegen)
 # ! FROM SWAGGER SPECIFICATION IN JSON.
 # !
-# ! Generated on: 2017-06-21T15:33:57.527-04:00
+# ! Generated on: 2017-07-24T12:07:49.752-04:00
 # !
 # !
 # ! System wide installation:
@@ -317,6 +317,7 @@ _()
     operations["getInvoices"]=1
     operations["getPaymentStatuses"]=1
     operations["payInvoice"]=1
+    operations["setBundledInvoiceItemFulfillmentStatus"]=1
     operations["setExternalRef"]=1
     operations["setInvoiceItemFulfillmentStatus"]=1
     operations["setOrderNotes"]=1
@@ -593,6 +594,7 @@ _()
     operations["setSubscriptionPaymentMethod"]=1
     operations["setSubscriptionStatus"]=1
     operations["setUserSubscriptionPlan"]=1
+    operations["setUserSubscriptionPrice"]=1
     operations["getBatch"]=1
     operations["sendBatch"]=1
     operations["getHealth"]=1
@@ -696,13 +698,13 @@ _()
     operation_parameters["createChallengeActivityTemplate"]=""
     operation_parameters["createChallengeTemplate"]=""
     operation_parameters["deleteChallenge"]="id= "
-    operation_parameters["deleteChallengeActivity"]="activity_id= challenge_id= "
+    operation_parameters["deleteChallengeActivity"]="id= challenge_id= "
     operation_parameters["deleteChallengeActivityTemplate"]="id= cascade= "
     operation_parameters["deleteChallengeEvent"]="id= "
     operation_parameters["deleteChallengeTemplate"]="id= cascade= "
     operation_parameters["getChallenge"]="id= "
     operation_parameters["getChallengeActivities"]="challenge_id= size= page= order= "
-    operation_parameters["getChallengeActivity"]="activity_id= "
+    operation_parameters["getChallengeActivity"]="id= challenge_id= "
     operation_parameters["getChallengeActivityTemplate"]="id= "
     operation_parameters["getChallengeActivityTemplates"]="size= page= order= "
     operation_parameters["getChallengeEvent"]="id= "
@@ -711,7 +713,7 @@ _()
     operation_parameters["getChallengeTemplates"]="size= page= order= "
     operation_parameters["getChallenges"]="filter_template= filter_active_campaign= filter_start_date= filter_end_date= size= page= order= "
     operation_parameters["updateChallenge"]="id= "
-    operation_parameters["updateChallengeActivity"]="activity_id= challenge_id= "
+    operation_parameters["updateChallengeActivity"]="id= challenge_id= "
     operation_parameters["updateChallengeActivityTemplate"]="id= "
     operation_parameters["updateChallengeTemplate"]="id= "
     operation_parameters["createRewardSet"]=""
@@ -742,7 +744,7 @@ _()
     operation_parameters["getArticle"]="id= "
     operation_parameters["getArticleTemplate"]="id= "
     operation_parameters["getArticleTemplates"]="size= page= order= "
-    operation_parameters["getArticles"]="filter_category= filter_tagset= filter_title= size= page= order= "
+    operation_parameters["getArticles"]="filter_category= filter_tagset= filter_tag_intersection= filter_tag_exclusion= filter_title= size= page= order= "
     operation_parameters["updateArticle"]="id= "
     operation_parameters["updateArticleTemplate"]="id= "
     operation_parameters["addComment"]=""
@@ -855,6 +857,7 @@ _()
     operation_parameters["getInvoices"]="filter_user= filter_email= filter_fulfillment_status= filter_payment_status= filter_item_name= filter_external_ref= filter_created_date= filter_vendor_ids= filter_currency= filter_shipping_state_name= filter_shipping_country_name= filter_shipping= filter_vendor_name= filter_sku= size= page= order= "
     operation_parameters["getPaymentStatuses"]=""
     operation_parameters["payInvoice"]="id= "
+    operation_parameters["setBundledInvoiceItemFulfillmentStatus"]="id= bundleSku= sku= "
     operation_parameters["setExternalRef"]="id= "
     operation_parameters["setInvoiceItemFulfillmentStatus"]="id= sku= "
     operation_parameters["setOrderNotes"]="id= "
@@ -915,7 +918,7 @@ _()
     operation_parameters["createPaymentMethod"]="user_id= "
     operation_parameters["deletePaymentMethod"]="user_id= id= "
     operation_parameters["getPaymentMethod"]="user_id= id= "
-    operation_parameters["getPaymentMethods"]="user_id= size= page= order= "
+    operation_parameters["getPaymentMethods"]="user_id= filter_name= filter_payment_type= filter_payment_method_type_id= filter_payment_method_type_name= size= page= order= "
     operation_parameters["paymentAuthorization"]=""
     operation_parameters["paymentCapture"]="id= "
     operation_parameters["updatePaymentMethod"]="user_id= id= "
@@ -1131,6 +1134,7 @@ _()
     operation_parameters["setSubscriptionPaymentMethod"]="user_id= inventory_id= "
     operation_parameters["setSubscriptionStatus"]="user_id= inventory_id= "
     operation_parameters["setUserSubscriptionPlan"]="user_id= inventory_id= "
+    operation_parameters["setUserSubscriptionPrice"]="user_id= inventory_id= "
     operation_parameters["getBatch"]="token= "
     operation_parameters["sendBatch"]=""
     operation_parameters["getHealth"]=""

@@ -10,7 +10,7 @@
 # !
 # ! Based on: https://github.com/Valodim/zsh-curl-completion/blob/master/_curl
 # !
-# ! Generated on: 2017-06-21T15:33:57.527-04:00
+# ! Generated on: 2017-07-24T12:07:49.752-04:00
 # !
 # !
 # ! Installation:
@@ -513,6 +513,7 @@ case $state in
             "getInvoices[Retrieve invoices]" \
             "getPaymentStatuses[Lists available payment statuses]" \
             "payInvoice[Trigger payment of an invoice]" \
+            "setBundledInvoiceItemFulfillmentStatus[Set the fulfillment status of a bundled invoice item]" \
             "setExternalRef[Set the external reference of an invoice]" \
             "setInvoiceItemFulfillmentStatus[Set the fulfillment status of an invoice item]" \
             "setOrderNotes[Set the order notes of an invoice]" \
@@ -596,7 +597,7 @@ case $state in
             "addSearchMappings[Register reference mappings]" \
             "deleteSearchIndex[Delete an object]" \
             "deleteSearchIndexes[Delete all objects in an index]" \
-            "searchIndex[Search an index]"             "linkAccounts[Link facebook account]"             "linkAccounts1[Link facebook account]"             "createItemTemplate[Create an item template]" \
+            "searchIndex[Search an index]"             "linkAccounts[Link facebook account]"             "linkAccounts1[Link google account]"             "createItemTemplate[Create an item template]" \
             "createStoreItem[Create a store item]" \
             "deleteItemTemplate[Delete an item template]" \
             "deleteStoreItem[Delete a store item]" \
@@ -747,7 +748,8 @@ case $state in
             "setSubscriptionBillDate[Set a new date to bill a subscription on]" \
             "setSubscriptionPaymentMethod[Set the payment method to use for a subscription]" \
             "setSubscriptionStatus[Set the status of a subscription]" \
-            "setUserSubscriptionPlan[Set a new subscription plan for a user]"             "getBatch[Get batch result with token]" \
+            "setUserSubscriptionPlan[Set a new subscription plan for a user]" \
+            "setUserSubscriptionPrice[Set a new subscription price for a user]"             "getBatch[Get batch result with token]" \
             "sendBatch[Request to run API call given the method, content type, path url, and body of request]"             "getHealth[Get health info]"             "deleteMaintenance[Delete maintenance info]" \
             "getMaintenance[Get current maintenance info]" \
             "setMaintenance[Set current maintenance info]" \
@@ -1436,7 +1438,7 @@ case $state in
       deleteChallengeActivity)
         local -a _op_arguments
         _op_arguments=(
-          "activity_id=:[PATH] The activity id"
+          "id=:[PATH] The challenge_activity id"
 "challenge_id=:[PATH] The challenge id"
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -1484,7 +1486,8 @@ case $state in
       getChallengeActivity)
         local -a _op_arguments
         _op_arguments=(
-          "activity_id=:[PATH] The activity id"
+          "id=:[PATH] The challenge_activity id"
+"challenge_id=:[PATH] The challenge id"
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1566,7 +1569,7 @@ case $state in
       updateChallengeActivity)
         local -a _op_arguments
         _op_arguments=(
-          "activity_id=:[PATH] The activity id"
+          "id=:[PATH] The challenge_activity id"
 "challenge_id=:[PATH] The challenge id"
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -1796,7 +1799,9 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "filter_category=:[QUERY] Filter for articles from a specific category by id"
-"filter_tagset=:[QUERY] Filter for articles with specified tags (separated by comma)"
+"filter_tagset=:[QUERY] Filter for articles with at least one of a specified set of tags (separated by comma)"
+"filter_tag_intersection=:[QUERY] Filter for articles with all of a specified set of tags (separated by comma)"
+"filter_tag_exclusion=:[QUERY] Filter for articles with none of a specified set of tags (separated by comma)"
 "filter_title=:[QUERY] Filter for articles whose title contains a string"
 "size=:[QUERY] The number of objects returned per page"
 "page=:[QUERY] The number of the page returned, starting with 1"
@@ -2722,6 +2727,15 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      setBundledInvoiceItemFulfillmentStatus)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the invoice"
+"bundleSku=:[PATH] The sku of the bundle in the invoice that contains the given target"
+"sku=:[PATH] The sku of an item in the bundle in the invoice"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       setExternalRef)
         local -a _op_arguments
         _op_arguments=(
@@ -3197,7 +3211,11 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "user_id=:[PATH] ID of the user for whom the payment methods are being retrieved"
-          "size=:[QUERY] The number of objects returned per page"
+          "filter_name=:[QUERY] Filter for payment methods whose name starts with a given string"
+"filter_payment_type=:[QUERY] Filter for payment methods with a specific payment type"
+"filter_payment_method_type_id=:[QUERY] Filter for payment methods with a specific payment method type by id"
+"filter_payment_method_type_name=:[QUERY] Filter for payment methods whose payment method type name starts with a given string"
+"size=:[QUERY] The number of objects returned per page"
 "page=:[QUERY] The number of the page returned, starting with 1"
 "order=:[QUERY] a comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
           )
@@ -4931,6 +4949,14 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       setUserSubscriptionPlan)
+        local -a _op_arguments
+        _op_arguments=(
+          "user_id=:[PATH] The id of the user"
+"inventory_id=:[PATH] The id of the user&#39;s inventory"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      setUserSubscriptionPrice)
         local -a _op_arguments
         _op_arguments=(
           "user_id=:[PATH] The id of the user"
