@@ -8,7 +8,7 @@
 # ! swagger-codegen (https://github.com/swagger-api/swagger-codegen)
 # ! FROM SWAGGER SPECIFICATION IN JSON.
 # !
-# ! Generated on: 2017-07-26T11:49:30.627-04:00
+# ! Generated on: 2017-08-08T17:12:31.545-04:00
 # !
 # !
 # ! System wide installation:
@@ -383,6 +383,7 @@ _()
     operations["paymentCapture"]=1
     operations["updatePaymentMethod"]=1
     operations["verifyAppleReceipt"]=1
+    operations["createOrUpdateFattMerchantPaymentMethod"]=1
     operations["handleGooglePayment"]=1
     operations["silentPostOptimal"]=1
     operations["createPayPalBillingAgreementUrl"]=1
@@ -436,6 +437,7 @@ _()
     operations["getStore"]=1
     operations["getStoreItem"]=1
     operations["getStoreItems"]=1
+    operations["quickBuy"]=1
     operations["updateItemTemplate"]=1
     operations["updateStoreItem"]=1
     operations["createBundleItem"]=1
@@ -641,7 +643,7 @@ _()
     operation_parameters["deleteRole"]="role= force= "
     operation_parameters["getClientRoles"]="client_key= "
     operation_parameters["getRole"]="role= "
-    operation_parameters["getRoles"]="size= page= order= "
+    operation_parameters["getRoles"]="filter_name= filter_role= size= page= order= "
     operation_parameters["getUserRoles"]="user_id= "
     operation_parameters["setClientRoles"]="client_key= "
     operation_parameters["setPermissionsForRole"]="role= "
@@ -923,6 +925,7 @@ _()
     operation_parameters["paymentCapture"]="id= "
     operation_parameters["updatePaymentMethod"]="user_id= id= "
     operation_parameters["verifyAppleReceipt"]=""
+    operation_parameters["createOrUpdateFattMerchantPaymentMethod"]=""
     operation_parameters["handleGooglePayment"]=""
     operation_parameters["silentPostOptimal"]=""
     operation_parameters["createPayPalBillingAgreementUrl"]=""
@@ -976,6 +979,7 @@ _()
     operation_parameters["getStore"]="limit= page= use_catalog= ignore_location= in_stock_only= "
     operation_parameters["getStoreItem"]="id= "
     operation_parameters["getStoreItems"]="filter_name_search= filter_unique_key= filter_published= filter_displayable= filter_start= filter_end= filter_start_date= filter_stop_date= filter_sku= filter_price= filter_tag= filter_items_by_type= filter_bundled_skus= filter_vendor= size= page= order= "
+    operation_parameters["quickBuy"]=""
     operation_parameters["updateItemTemplate"]="id= "
     operation_parameters["updateStoreItem"]="id= cascade= "
     operation_parameters["createBundleItem"]="cascade= "

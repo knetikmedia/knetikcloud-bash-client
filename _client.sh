@@ -10,7 +10,7 @@
 # !
 # ! Based on: https://github.com/Valodim/zsh-curl-completion/blob/master/_curl
 # !
-# ! Generated on: 2017-07-26T11:49:30.627-04:00
+# ! Generated on: 2017-08-08T17:12:31.545-04:00
 # !
 # !
 # ! Installation:
@@ -512,7 +512,7 @@ case $state in
             "getInvoiceLogs[List invoice logs]" \
             "getInvoices[Retrieve invoices]" \
             "getPaymentStatuses[Lists available payment statuses]" \
-            "payInvoice[Trigger payment of an invoice]" \
+            "payInvoice[Pay an invoice using a saved payment method]" \
             "setBundledInvoiceItemFulfillmentStatus[Set the fulfillment status of a bundled invoice item]" \
             "setExternalRef[Set the external reference of an invoice]" \
             "setInvoiceItemFulfillmentStatus[Set the fulfillment status of an invoice item]" \
@@ -570,7 +570,7 @@ case $state in
             "getPaymentMethods[Get all payment methods for a user]" \
             "paymentAuthorization[Authorize payment of an invoice for later capture]" \
             "paymentCapture[Capture an existing invoice payment authorization]" \
-            "updatePaymentMethod[Update an existing payment method for a user]"             "verifyAppleReceipt[Pay invoice with Apple receipt]"             "handleGooglePayment[Mark an invoice paid with Google]"             "silentPostOptimal[Initiate silent post with Optimal]"             "createPayPalBillingAgreementUrl[Create a PayPal Classic billing agreement for the user]" \
+            "updatePaymentMethod[Update an existing payment method for a user]"             "verifyAppleReceipt[Pay invoice with Apple receipt]"             "createOrUpdateFattMerchantPaymentMethod[Create or update a FattMerchant payment method for a user]"             "handleGooglePayment[Mark an invoice paid with Google]"             "silentPostOptimal[Initiate silent post with Optimal]"             "createPayPalBillingAgreementUrl[Create a PayPal Classic billing agreement for the user]" \
             "createPayPalExpressCheckout[Create a payment token for PayPal express checkout]" \
             "finalizePayPalBillingAgreement[Finalizes a billing agreement after the user has accepted through PayPal]" \
             "finalizePayPalCheckout[Finalizes a payment after the user has completed checkout with PayPal]"             "createStripePaymentMethod[Create a Stripe payment method for a user]" \
@@ -607,6 +607,7 @@ case $state in
             "getStore[Get a listing of store items]" \
             "getStoreItem[Get a single store item]" \
             "getStoreItems[List and search store items]" \
+            "quickBuy[One-step purchase and pay for a single SKU item from a user's wallet]" \
             "updateItemTemplate[Update an item template]" \
             "updateStoreItem[Update a store item]"             "createBundleItem[Create a bundle item]" \
             "createBundleTemplate[Create a bundle template]" \
@@ -1000,7 +1001,9 @@ case $state in
       getRoles)
         local -a _op_arguments
         _op_arguments=(
-                    "size=:[QUERY] The number of objects returned per page"
+                    "filter_name=:[QUERY] Filter for roles that have a name starting with specified string"
+"filter_role=:[QUERY] Filter for roles that have a role starting with specified string"
+"size=:[QUERY] The number of objects returned per page"
 "page=:[QUERY] The number of the page returned, starting with 1"
 "order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
           )
@@ -3248,6 +3251,12 @@ case $state in
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      createOrUpdateFattMerchantPaymentMethod)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       handleGooglePayment)
         local -a _op_arguments
         _op_arguments=(
@@ -3727,6 +3736,12 @@ case $state in
 "page=:[QUERY] The number of the page returned, starting with 1"
 "order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
           )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      quickBuy)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       updateItemTemplate)
