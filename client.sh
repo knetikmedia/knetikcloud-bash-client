@@ -8,7 +8,7 @@
 # ! swagger-codegen (https://github.com/swagger-api/swagger-codegen)
 # ! FROM SWAGGER SPECIFICATION IN JSON.
 # !
-# ! Generated on: 2017-08-15T13:13:07.922-04:00
+# ! Generated on: 2017-08-15T13:50:38.372-04:00
 # !
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -101,6 +101,8 @@ operation_parameters_minimum_occurences["getOAuthToken:::client_id"]=1
 operation_parameters_minimum_occurences["getOAuthToken:::client_secret"]=0
 operation_parameters_minimum_occurences["getOAuthToken:::username"]=0
 operation_parameters_minimum_occurences["getOAuthToken:::password"]=0
+operation_parameters_minimum_occurences["getOAuthToken:::token"]=0
+operation_parameters_minimum_occurences["getOAuthToken:::refresh_token"]=0
 operation_parameters_minimum_occurences["createActivity:::activity_resource"]=0
 operation_parameters_minimum_occurences["createActivityOccurrence:::test"]=0
 operation_parameters_minimum_occurences["createActivityOccurrence:::activity_occurrence_resource"]=0
@@ -1336,6 +1338,8 @@ operation_parameters_maximum_occurences["getOAuthToken:::client_id"]=0
 operation_parameters_maximum_occurences["getOAuthToken:::client_secret"]=0
 operation_parameters_maximum_occurences["getOAuthToken:::username"]=0
 operation_parameters_maximum_occurences["getOAuthToken:::password"]=0
+operation_parameters_maximum_occurences["getOAuthToken:::token"]=0
+operation_parameters_maximum_occurences["getOAuthToken:::refresh_token"]=0
 operation_parameters_maximum_occurences["createActivity:::activity_resource"]=0
 operation_parameters_maximum_occurences["createActivityOccurrence:::test"]=0
 operation_parameters_maximum_occurences["createActivityOccurrence:::activity_occurrence_resource"]=0
@@ -2568,6 +2572,8 @@ operation_parameters_collection_type["getOAuthToken:::client_id"]=""
 operation_parameters_collection_type["getOAuthToken:::client_secret"]=""
 operation_parameters_collection_type["getOAuthToken:::username"]=""
 operation_parameters_collection_type["getOAuthToken:::password"]=""
+operation_parameters_collection_type["getOAuthToken:::token"]=""
+operation_parameters_collection_type["getOAuthToken:::refresh_token"]=""
 operation_parameters_collection_type["createActivity:::activity_resource"]=""
 operation_parameters_collection_type["createActivityOccurrence:::test"]=""
 operation_parameters_collection_type["createActivityOccurrence:::activity_occurrence_resource"]=""
