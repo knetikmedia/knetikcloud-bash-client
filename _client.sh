@@ -10,7 +10,7 @@
 # !
 # ! Based on: https://github.com/Valodim/zsh-curl-completion/blob/master/_curl
 # !
-# ! Generated on: 2017-08-08T17:12:31.545-04:00
+# ! Generated on: 2017-08-15T12:23:41.742-04:00
 # !
 # !
 # ! Installation:
@@ -309,7 +309,8 @@ case $state in
             "setActivityOccurrenceResults[Sets the status of an activity occurrence to FINISHED and logs metrics]" \
             "updateActivity[Update an activity]" \
             "updateActivityOccurrence[Updated the status of an activity occurrence]" \
-            "updateActivityTemplate[Update an activity template]"             "getSignedS3URL[Get a signed S3 URL]"             "createClient[Create a new client]" \
+            "updateActivityTemplate[Update an activity template]"             "getDownloadURL[Get a temporary signed S3 URL for download]" \
+            "getSignedS3URL[Get a signed S3 URL for upload]"             "createClient[Create a new client]" \
             "deleteClient[Delete a client]" \
             "getClient[Get a single client]" \
             "getClientGrantTypes[List available client grant types]" \
@@ -865,6 +866,15 @@ case $state in
         _op_arguments=(
           "id=:[PATH] The id of the template"
                     )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getDownloadURL)
+        local -a _op_arguments
+        _op_arguments=(
+                    "bucket=:[QUERY] S3 bucket name"
+"path=:[QUERY] The path to the file relative the bucket (the s3 object key)"
+"expiration=:[QUERY] The number of seconds this URL will be valid. Default to 60"
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getSignedS3URL)
@@ -1801,7 +1811,9 @@ case $state in
       getArticles)
         local -a _op_arguments
         _op_arguments=(
-                    "filter_category=:[QUERY] Filter for articles from a specific category by id"
+                    "filter_active_only=true:[QUERY] Filter for articles that are active (true) or inactive (false)"
+          "filter_active_only=false:[QUERY] Filter for articles that are active (true) or inactive (false)"
+"filter_category=:[QUERY] Filter for articles from a specific category by id"
 "filter_tagset=:[QUERY] Filter for articles with at least one of a specified set of tags (separated by comma)"
 "filter_tag_intersection=:[QUERY] Filter for articles with all of a specified set of tags (separated by comma)"
 "filter_tag_exclusion=:[QUERY] Filter for articles with none of a specified set of tags (separated by comma)"

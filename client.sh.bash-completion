@@ -8,7 +8,7 @@
 # ! swagger-codegen (https://github.com/swagger-api/swagger-codegen)
 # ! FROM SWAGGER SPECIFICATION IN JSON.
 # !
-# ! Generated on: 2017-08-08T17:12:31.545-04:00
+# ! Generated on: 2017-08-15T12:23:41.742-04:00
 # !
 # !
 # ! System wide installation:
@@ -83,6 +83,7 @@ _()
     operations["updateActivity"]=1
     operations["updateActivityOccurrence"]=1
     operations["updateActivityTemplate"]=1
+    operations["getDownloadURL"]=1
     operations["getSignedS3URL"]=1
     operations["createClient"]=1
     operations["deleteClient"]=1
@@ -625,6 +626,7 @@ _()
     operation_parameters["updateActivity"]="id= "
     operation_parameters["updateActivityOccurrence"]="activity_occurrence_id= "
     operation_parameters["updateActivityTemplate"]="id= "
+    operation_parameters["getDownloadURL"]="bucket= path= expiration= "
     operation_parameters["getSignedS3URL"]="filename= content_type= "
     operation_parameters["createClient"]=""
     operation_parameters["deleteClient"]="client_key= "
@@ -746,7 +748,7 @@ _()
     operation_parameters["getArticle"]="id= "
     operation_parameters["getArticleTemplate"]="id= "
     operation_parameters["getArticleTemplates"]="size= page= order= "
-    operation_parameters["getArticles"]="filter_category= filter_tagset= filter_tag_intersection= filter_tag_exclusion= filter_title= size= page= order= "
+    operation_parameters["getArticles"]="filter_active_only= filter_category= filter_tagset= filter_tag_intersection= filter_tag_exclusion= filter_title= size= page= order= "
     operation_parameters["updateArticle"]="id= "
     operation_parameters["updateArticleTemplate"]="id= "
     operation_parameters["addComment"]=""
@@ -1223,6 +1225,15 @@ _()
     operation_parameters_enum_values["getCategories::filter_active"]="true false"
     operation_parameters_enum_values["getCategories::filter_active"]="true false"
     operation_parameters_enum_values["getCategories::filter_active"]="true false"
+    operation_parameters_enum_values["getArticles::filter_active_only"]="true false"
+    operation_parameters_enum_values["getArticles::filter_active_only"]="true false"
+    operation_parameters_enum_values["getArticles::filter_active_only"]="true false"
+    operation_parameters_enum_values["getArticles::filter_active_only"]="true false"
+    operation_parameters_enum_values["getArticles::filter_active_only"]="true false"
+    operation_parameters_enum_values["getArticles::filter_active_only"]="true false"
+    operation_parameters_enum_values["getArticles::filter_active_only"]="true false"
+    operation_parameters_enum_values["getArticles::filter_active_only"]="true false"
+    operation_parameters_enum_values["getArticles::filter_active_only"]="true false"
     operation_parameters_enum_values["getCurrencies::filter_enabled_currencies"]="true false"
     operation_parameters_enum_values["getCurrencies::filter_enabled_currencies"]="true false"
     operation_parameters_enum_values["getCurrencies::filter_enabled_currencies"]="true false"
