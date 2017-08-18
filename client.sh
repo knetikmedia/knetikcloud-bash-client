@@ -8,7 +8,7 @@
 # ! swagger-codegen (https://github.com/swagger-api/swagger-codegen)
 # ! FROM SWAGGER SPECIFICATION IN JSON.
 # !
-# ! Generated on: 2017-08-17T22:16:13.341-04:00
+# ! Generated on: 2017-08-18T00:46:54.912-04:00
 # !
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -4182,297 +4182,297 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[activities]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createActivity${OFF};Create an activity
-  ${CYAN}createActivityOccurrence${OFF};Create a new activity occurrence. Ex: start a game
-  ${CYAN}createActivityTemplate${OFF};Create a activity template
-  ${CYAN}deleteActivity${OFF};Delete an activity
-  ${CYAN}deleteActivityTemplate${OFF};Delete a activity template
+  ${CYAN}createActivity${OFF};Create an activity (AUTH) (AUTH)
+  ${CYAN}createActivityOccurrence${OFF};Create a new activity occurrence. Ex: start a game (AUTH) (AUTH)
+  ${CYAN}createActivityTemplate${OFF};Create a activity template (AUTH) (AUTH)
+  ${CYAN}deleteActivity${OFF};Delete an activity (AUTH) (AUTH)
+  ${CYAN}deleteActivityTemplate${OFF};Delete a activity template (AUTH) (AUTH)
   ${CYAN}getActivities${OFF};List activity definitions
   ${CYAN}getActivity${OFF};Get a single activity
-  ${CYAN}getActivityTemplate${OFF};Get a single activity template
-  ${CYAN}getActivityTemplates${OFF};List and search activity templates
-  ${CYAN}setActivityOccurrenceResults${OFF};Sets the status of an activity occurrence to FINISHED and logs metrics
-  ${CYAN}updateActivity${OFF};Update an activity
-  ${CYAN}updateActivityOccurrence${OFF};Updated the status of an activity occurrence
-  ${CYAN}updateActivityTemplate${OFF};Update an activity template
+  ${CYAN}getActivityTemplate${OFF};Get a single activity template (AUTH) (AUTH)
+  ${CYAN}getActivityTemplates${OFF};List and search activity templates (AUTH) (AUTH)
+  ${CYAN}setActivityOccurrenceResults${OFF};Sets the status of an activity occurrence to FINISHED and logs metrics (AUTH) (AUTH)
+  ${CYAN}updateActivity${OFF};Update an activity (AUTH) (AUTH)
+  ${CYAN}updateActivityOccurrence${OFF};Updated the status of an activity occurrence (AUTH) (AUTH)
+  ${CYAN}updateActivityTemplate${OFF};Update an activity template (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[amazonWebServicesS3]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}getDownloadURL${OFF};Get a temporary signed S3 URL for download
-  ${CYAN}getSignedS3URL${OFF};Get a signed S3 URL for upload
+  ${CYAN}getDownloadURL${OFF};Get a temporary signed S3 URL for download (AUTH) (AUTH)
+  ${CYAN}getSignedS3URL${OFF};Get a signed S3 URL for upload (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[authClients]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createClient${OFF};Create a new client
-  ${CYAN}deleteClient${OFF};Delete a client
-  ${CYAN}getClient${OFF};Get a single client
-  ${CYAN}getClientGrantTypes${OFF};List available client grant types
-  ${CYAN}getClients${OFF};List and search clients
-  ${CYAN}setClientGrantTypes${OFF};Set grant types for a client
-  ${CYAN}setClientRedirectUris${OFF};Set redirect uris for a client
-  ${CYAN}updateClient${OFF};Update a client
+  ${CYAN}createClient${OFF};Create a new client (AUTH) (AUTH)
+  ${CYAN}deleteClient${OFF};Delete a client (AUTH) (AUTH)
+  ${CYAN}getClient${OFF};Get a single client (AUTH) (AUTH)
+  ${CYAN}getClientGrantTypes${OFF};List available client grant types (AUTH) (AUTH)
+  ${CYAN}getClients${OFF};List and search clients (AUTH) (AUTH)
+  ${CYAN}setClientGrantTypes${OFF};Set grant types for a client (AUTH) (AUTH)
+  ${CYAN}setClientRedirectUris${OFF};Set redirect uris for a client (AUTH) (AUTH)
+  ${CYAN}updateClient${OFF};Update a client (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[authPermissions]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createPermission${OFF};Create a new permission
-  ${CYAN}deletePermission${OFF};Delete a permission
-  ${CYAN}getPermission${OFF};Get a single permission
-  ${CYAN}getPermissions${OFF};List and search permissions
-  ${CYAN}updatePermission${OFF};Update a permission
+  ${CYAN}createPermission${OFF};Create a new permission (AUTH) (AUTH)
+  ${CYAN}deletePermission${OFF};Delete a permission (AUTH) (AUTH)
+  ${CYAN}getPermission${OFF};Get a single permission (AUTH) (AUTH)
+  ${CYAN}getPermissions${OFF};List and search permissions (AUTH) (AUTH)
+  ${CYAN}updatePermission${OFF};Update a permission (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[authRoles]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createRole${OFF};Create a new role
-  ${CYAN}deleteRole${OFF};Delete a role
-  ${CYAN}getClientRoles${OFF};Get roles for a client
-  ${CYAN}getRole${OFF};Get a single role
-  ${CYAN}getRoles${OFF};List and search roles
-  ${CYAN}getUserRoles${OFF};Get roles for a user
-  ${CYAN}setClientRoles${OFF};Set roles for a client
-  ${CYAN}setPermissionsForRole${OFF};Set permissions for a role
-  ${CYAN}setUserRoles${OFF};Set roles for a user
-  ${CYAN}updateRole${OFF};Update a role
+  ${CYAN}createRole${OFF};Create a new role (AUTH) (AUTH)
+  ${CYAN}deleteRole${OFF};Delete a role (AUTH) (AUTH)
+  ${CYAN}getClientRoles${OFF};Get roles for a client (AUTH) (AUTH)
+  ${CYAN}getRole${OFF};Get a single role (AUTH) (AUTH)
+  ${CYAN}getRoles${OFF};List and search roles (AUTH) (AUTH)
+  ${CYAN}getUserRoles${OFF};Get roles for a user (AUTH) (AUTH)
+  ${CYAN}setClientRoles${OFF};Set roles for a client (AUTH) (AUTH)
+  ${CYAN}setPermissionsForRole${OFF};Set permissions for a role (AUTH) (AUTH)
+  ${CYAN}setUserRoles${OFF};Set roles for a user (AUTH) (AUTH)
+  ${CYAN}updateRole${OFF};Update a role (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[authTokens]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}deleteTokens${OFF};Delete tokens by username, client id, or both
-  ${CYAN}getToken${OFF};Get a single token by username and client id
-  ${CYAN}getTokens${OFF};List usernames and client ids
+  ${CYAN}deleteTokens${OFF};Delete tokens by username, client id, or both (AUTH) (AUTH)
+  ${CYAN}getToken${OFF};Get a single token by username and client id (AUTH) (AUTH)
+  ${CYAN}getTokens${OFF};List usernames and client ids (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[bRERuleEngineActions]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}getBREActions${OFF};Get a list of available actions
+  ${CYAN}getBREActions${OFF};Get a list of available actions (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[bRERuleEngineCategories]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createBRECategoryTemplate${OFF};Create a BRE category template
-  ${CYAN}deleteBRECategoryTemplate${OFF};Delete a BRE category template
-  ${CYAN}getBRECategories${OFF};List categories
-  ${CYAN}getBRECategory${OFF};Get a single category
-  ${CYAN}getBRECategoryTemplate${OFF};Get a single BRE category template
-  ${CYAN}getBRECategoryTemplates${OFF};List and search BRE category templates
-  ${CYAN}updateBRECategory${OFF};Update a category
-  ${CYAN}updateBRECategoryTemplate${OFF};Update a BRE category template
+  ${CYAN}createBRECategoryTemplate${OFF};Create a BRE category template (AUTH) (AUTH)
+  ${CYAN}deleteBRECategoryTemplate${OFF};Delete a BRE category template (AUTH) (AUTH)
+  ${CYAN}getBRECategories${OFF};List categories (AUTH) (AUTH)
+  ${CYAN}getBRECategory${OFF};Get a single category (AUTH) (AUTH)
+  ${CYAN}getBRECategoryTemplate${OFF};Get a single BRE category template (AUTH) (AUTH)
+  ${CYAN}getBRECategoryTemplates${OFF};List and search BRE category templates (AUTH) (AUTH)
+  ${CYAN}updateBRECategory${OFF};Update a category (AUTH) (AUTH)
+  ${CYAN}updateBRECategoryTemplate${OFF};Update a BRE category template (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[bRERuleEngineEvents]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}sendBREEvent${OFF};Fire a new event, based on an existing trigger
+  ${CYAN}sendBREEvent${OFF};Fire a new event, based on an existing trigger (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[bRERuleEngineExpressions]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}getBREExpressions${OFF};Get a list of 'lookup' type expressions
+  ${CYAN}getBREExpressions${OFF};Get a list of 'lookup' type expressions (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[bRERuleEngineGlobals]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createBREGlobal${OFF};Create a global definition
-  ${CYAN}deleteBREGlobal${OFF};Delete a global
-  ${CYAN}getBREGlobal${OFF};Get a single global definition
-  ${CYAN}getBREGlobals${OFF};List global definitions
-  ${CYAN}updateBREGlobal${OFF};Update a global definition
+  ${CYAN}createBREGlobal${OFF};Create a global definition (AUTH) (AUTH)
+  ${CYAN}deleteBREGlobal${OFF};Delete a global (AUTH) (AUTH)
+  ${CYAN}getBREGlobal${OFF};Get a single global definition (AUTH) (AUTH)
+  ${CYAN}getBREGlobals${OFF};List global definitions (AUTH) (AUTH)
+  ${CYAN}updateBREGlobal${OFF};Update a global definition (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[bRERuleEngineRules]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createBRERule${OFF};Create a rule
-  ${CYAN}deleteBRERule${OFF};Delete a rule
-  ${CYAN}getBREExpressionAsString${OFF};Returns a string representation of the provided expression
-  ${CYAN}getBRERule${OFF};Get a single rule
-  ${CYAN}getBRERules${OFF};List rules
-  ${CYAN}setBRERule${OFF};Enable or disable a rule
-  ${CYAN}updateBRERule${OFF};Update a rule
+  ${CYAN}createBRERule${OFF};Create a rule (AUTH) (AUTH)
+  ${CYAN}deleteBRERule${OFF};Delete a rule (AUTH) (AUTH)
+  ${CYAN}getBREExpressionAsString${OFF};Returns a string representation of the provided expression (AUTH) (AUTH)
+  ${CYAN}getBRERule${OFF};Get a single rule (AUTH) (AUTH)
+  ${CYAN}getBRERules${OFF};List rules (AUTH) (AUTH)
+  ${CYAN}setBRERule${OFF};Enable or disable a rule (AUTH) (AUTH)
+  ${CYAN}updateBRERule${OFF};Update a rule (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[bRERuleEngineTriggers]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createBRETrigger${OFF};Create a trigger
-  ${CYAN}deleteBRETrigger${OFF};Delete a trigger
-  ${CYAN}getBRETrigger${OFF};Get a single trigger
-  ${CYAN}getBRETriggers${OFF};List triggers
-  ${CYAN}updateBRETrigger${OFF};Update a trigger
+  ${CYAN}createBRETrigger${OFF};Create a trigger (AUTH) (AUTH)
+  ${CYAN}deleteBRETrigger${OFF};Delete a trigger (AUTH) (AUTH)
+  ${CYAN}getBRETrigger${OFF};Get a single trigger (AUTH) (AUTH)
+  ${CYAN}getBRETriggers${OFF};List triggers (AUTH) (AUTH)
+  ${CYAN}updateBRETrigger${OFF};Update a trigger (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[bRERuleEngineVariables]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}getBREVariableTypes${OFF};Get a list of variable types available
-  ${CYAN}getBREVariableValues${OFF};List valid values for a type
+  ${CYAN}getBREVariableTypes${OFF};Get a list of variable types available (AUTH) (AUTH)
+  ${CYAN}getBREVariableValues${OFF};List valid values for a type (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[campaigns]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}addChallengeToCampaign${OFF};Add a challenge to a campaign
-  ${CYAN}createCampaign${OFF};Create a campaign
-  ${CYAN}createCampaignTemplate${OFF};Create a campaign template
-  ${CYAN}deleteCampaign${OFF};Delete a campaign
-  ${CYAN}deleteCampaignTemplate${OFF};Delete a campaign template
+  ${CYAN}addChallengeToCampaign${OFF};Add a challenge to a campaign (AUTH) (AUTH)
+  ${CYAN}createCampaign${OFF};Create a campaign (AUTH) (AUTH)
+  ${CYAN}createCampaignTemplate${OFF};Create a campaign template (AUTH) (AUTH)
+  ${CYAN}deleteCampaign${OFF};Delete a campaign (AUTH) (AUTH)
+  ${CYAN}deleteCampaignTemplate${OFF};Delete a campaign template (AUTH) (AUTH)
   ${CYAN}getCampaign${OFF};Returns a single campaign
   ${CYAN}getCampaignChallenges${OFF};List the challenges associated with a campaign
-  ${CYAN}getCampaignTemplate${OFF};Get a single campaign template
-  ${CYAN}getCampaignTemplates${OFF};List and search campaign templates
+  ${CYAN}getCampaignTemplate${OFF};Get a single campaign template (AUTH) (AUTH)
+  ${CYAN}getCampaignTemplates${OFF};List and search campaign templates (AUTH) (AUTH)
   ${CYAN}getCampaigns${OFF};List and search campaigns
-  ${CYAN}removeChallengeFromCampaign${OFF};Remove a challenge from a campaign
-  ${CYAN}updateCampaign${OFF};Update a campaign
-  ${CYAN}updateCampaignTemplate${OFF};Update an campaign template
+  ${CYAN}removeChallengeFromCampaign${OFF};Remove a challenge from a campaign (AUTH) (AUTH)
+  ${CYAN}updateCampaign${OFF};Update a campaign (AUTH) (AUTH)
+  ${CYAN}updateCampaignTemplate${OFF};Update an campaign template (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[campaignsChallenges]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createChallenge${OFF};Create a challenge
-  ${CYAN}createChallengeActivity${OFF};Create a challenge activity
-  ${CYAN}createChallengeActivityTemplate${OFF};Create a challenge activity template
-  ${CYAN}createChallengeTemplate${OFF};Create a challenge template
-  ${CYAN}deleteChallenge${OFF};Delete a challenge
-  ${CYAN}deleteChallengeActivity${OFF};Delete a challenge activity
-  ${CYAN}deleteChallengeActivityTemplate${OFF};Delete a challenge activity template
-  ${CYAN}deleteChallengeEvent${OFF};Delete a challenge event
-  ${CYAN}deleteChallengeTemplate${OFF};Delete a challenge template
+  ${CYAN}createChallenge${OFF};Create a challenge (AUTH) (AUTH)
+  ${CYAN}createChallengeActivity${OFF};Create a challenge activity (AUTH) (AUTH)
+  ${CYAN}createChallengeActivityTemplate${OFF};Create a challenge activity template (AUTH) (AUTH)
+  ${CYAN}createChallengeTemplate${OFF};Create a challenge template (AUTH) (AUTH)
+  ${CYAN}deleteChallenge${OFF};Delete a challenge (AUTH) (AUTH)
+  ${CYAN}deleteChallengeActivity${OFF};Delete a challenge activity (AUTH) (AUTH)
+  ${CYAN}deleteChallengeActivityTemplate${OFF};Delete a challenge activity template (AUTH) (AUTH)
+  ${CYAN}deleteChallengeEvent${OFF};Delete a challenge event (AUTH) (AUTH)
+  ${CYAN}deleteChallengeTemplate${OFF};Delete a challenge template (AUTH) (AUTH)
   ${CYAN}getChallenge${OFF};Retrieve a challenge
   ${CYAN}getChallengeActivities${OFF};List and search challenge activities
   ${CYAN}getChallengeActivity${OFF};Get a single challenge activity
-  ${CYAN}getChallengeActivityTemplate${OFF};Get a single challenge activity template
-  ${CYAN}getChallengeActivityTemplates${OFF};List and search challenge activity templates
+  ${CYAN}getChallengeActivityTemplate${OFF};Get a single challenge activity template (AUTH) (AUTH)
+  ${CYAN}getChallengeActivityTemplates${OFF};List and search challenge activity templates (AUTH) (AUTH)
   ${CYAN}getChallengeEvent${OFF};Retrieve a single challenge event details
   ${CYAN}getChallengeEvents${OFF};Retrieve a list of challenge events
-  ${CYAN}getChallengeTemplate${OFF};Get a single challenge template
-  ${CYAN}getChallengeTemplates${OFF};List and search challenge templates
+  ${CYAN}getChallengeTemplate${OFF};Get a single challenge template (AUTH) (AUTH)
+  ${CYAN}getChallengeTemplates${OFF};List and search challenge templates (AUTH) (AUTH)
   ${CYAN}getChallenges${OFF};Retrieve a list of challenges
-  ${CYAN}updateChallenge${OFF};Update a challenge
-  ${CYAN}updateChallengeActivity${OFF};Update a challenge activity
-  ${CYAN}updateChallengeActivityTemplate${OFF};Update an challenge activity template
-  ${CYAN}updateChallengeTemplate${OFF};Update a challenge template
+  ${CYAN}updateChallenge${OFF};Update a challenge (AUTH) (AUTH)
+  ${CYAN}updateChallengeActivity${OFF};Update a challenge activity (AUTH) (AUTH)
+  ${CYAN}updateChallengeActivityTemplate${OFF};Update an challenge activity template (AUTH) (AUTH)
+  ${CYAN}updateChallengeTemplate${OFF};Update a challenge template (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[campaignsRewards]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createRewardSet${OFF};Create a reward set
-  ${CYAN}deleteRewardSet${OFF};Delete a reward set
+  ${CYAN}createRewardSet${OFF};Create a reward set (AUTH) (AUTH)
+  ${CYAN}deleteRewardSet${OFF};Delete a reward set (AUTH) (AUTH)
   ${CYAN}getRewardSet${OFF};Get a single reward set
   ${CYAN}getRewardSets${OFF};List and search reward sets
-  ${CYAN}updateRewardSet${OFF};Update a reward set
+  ${CYAN}updateRewardSet${OFF};Update a reward set (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[categories]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createCategory${OFF};Create a new category
-  ${CYAN}createCategoryTemplate${OFF};Create a category template
-  ${CYAN}deleteCategory${OFF};Delete an existing category
-  ${CYAN}deleteCategoryTemplate${OFF};Delete a category template
+  ${CYAN}createCategory${OFF};Create a new category (AUTH) (AUTH)
+  ${CYAN}createCategoryTemplate${OFF};Create a category template (AUTH) (AUTH)
+  ${CYAN}deleteCategory${OFF};Delete an existing category (AUTH) (AUTH)
+  ${CYAN}deleteCategoryTemplate${OFF};Delete a category template (AUTH) (AUTH)
   ${CYAN}getCategories${OFF};List and search categories with optional filters
   ${CYAN}getCategory${OFF};Get a single category
-  ${CYAN}getCategoryTemplate${OFF};Get a single category template
-  ${CYAN}getCategoryTemplates${OFF};List and search category templates
+  ${CYAN}getCategoryTemplate${OFF};Get a single category template (AUTH) (AUTH)
+  ${CYAN}getCategoryTemplates${OFF};List and search category templates (AUTH) (AUTH)
   ${CYAN}getTags${OFF};List all trivia tags in the system
-  ${CYAN}updateCategory${OFF};Update an existing category
-  ${CYAN}updateCategoryTemplate${OFF};Update a category template
+  ${CYAN}updateCategory${OFF};Update an existing category (AUTH) (AUTH)
+  ${CYAN}updateCategoryTemplate${OFF};Update a category template (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[configs]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createConfig${OFF};Create a new config
-  ${CYAN}deleteConfig${OFF};Delete an existing config
+  ${CYAN}createConfig${OFF};Create a new config (AUTH) (AUTH)
+  ${CYAN}deleteConfig${OFF};Delete an existing config (AUTH) (AUTH)
   ${CYAN}getConfig${OFF};Get a single config
   ${CYAN}getConfigs${OFF};List and search configs
-  ${CYAN}updateConfig${OFF};Update an existing config
+  ${CYAN}updateConfig${OFF};Update an existing config (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[contentArticles]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createArticle${OFF};Create a new article
-  ${CYAN}createArticleTemplate${OFF};Create an article template
-  ${CYAN}deleteArticle${OFF};Delete an existing article
-  ${CYAN}deleteArticleTemplate${OFF};Delete an article template
+  ${CYAN}createArticle${OFF};Create a new article (AUTH) (AUTH)
+  ${CYAN}createArticleTemplate${OFF};Create an article template (AUTH) (AUTH)
+  ${CYAN}deleteArticle${OFF};Delete an existing article (AUTH) (AUTH)
+  ${CYAN}deleteArticleTemplate${OFF};Delete an article template (AUTH) (AUTH)
   ${CYAN}getArticle${OFF};Get a single article
-  ${CYAN}getArticleTemplate${OFF};Get a single article template
-  ${CYAN}getArticleTemplates${OFF};List and search article templates
+  ${CYAN}getArticleTemplate${OFF};Get a single article template (AUTH) (AUTH)
+  ${CYAN}getArticleTemplates${OFF};List and search article templates (AUTH) (AUTH)
   ${CYAN}getArticles${OFF};List and search articles
-  ${CYAN}updateArticle${OFF};Update an existing article
-  ${CYAN}updateArticleTemplate${OFF};Update an article template
+  ${CYAN}updateArticle${OFF};Update an existing article (AUTH) (AUTH)
+  ${CYAN}updateArticleTemplate${OFF};Update an article template (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[contentComments]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}addComment${OFF};Add a new comment
-  ${CYAN}deleteComment${OFF};Delete a comment
+  ${CYAN}addComment${OFF};Add a new comment (AUTH) (AUTH)
+  ${CYAN}deleteComment${OFF};Delete a comment (AUTH) (AUTH)
   ${CYAN}getComment${OFF};Return a comment
   ${CYAN}getComments${OFF};Returns a page of comments
   ${CYAN}searchComments${OFF};Search the comment index
-  ${CYAN}updateComment${OFF};Update a comment
+  ${CYAN}updateComment${OFF};Update a comment (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[contentPolls]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}answerPoll${OFF};Add your vote to a poll
-  ${CYAN}createPoll${OFF};Create a new poll
-  ${CYAN}createPollTemplate${OFF};Create a poll template
-  ${CYAN}deletePoll${OFF};Delete an existing poll
-  ${CYAN}deletePollTemplate${OFF};Delete a poll template
+  ${CYAN}answerPoll${OFF};Add your vote to a poll (AUTH) (AUTH)
+  ${CYAN}createPoll${OFF};Create a new poll (AUTH) (AUTH)
+  ${CYAN}createPollTemplate${OFF};Create a poll template (AUTH) (AUTH)
+  ${CYAN}deletePoll${OFF};Delete an existing poll (AUTH) (AUTH)
+  ${CYAN}deletePollTemplate${OFF};Delete a poll template (AUTH) (AUTH)
   ${CYAN}getPoll${OFF};Get a single poll
-  ${CYAN}getPollAnswer${OFF};Get poll answer
-  ${CYAN}getPollTemplate${OFF};Get a single poll template
-  ${CYAN}getPollTemplates${OFF};List and search poll templates
+  ${CYAN}getPollAnswer${OFF};Get poll answer (AUTH) (AUTH)
+  ${CYAN}getPollTemplate${OFF};Get a single poll template (AUTH) (AUTH)
+  ${CYAN}getPollTemplates${OFF};List and search poll templates (AUTH) (AUTH)
   ${CYAN}getPolls${OFF};List and search polls
-  ${CYAN}updatePoll${OFF};Update an existing poll
-  ${CYAN}updatePollTemplate${OFF};Update a poll template
+  ${CYAN}updatePoll${OFF};Update an existing poll (AUTH) (AUTH)
+  ${CYAN}updatePollTemplate${OFF};Update a poll template (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[currencies]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createCurrency${OFF};Create a currency
-  ${CYAN}deleteCurrency${OFF};Delete a currency
+  ${CYAN}createCurrency${OFF};Create a currency (AUTH) (AUTH)
+  ${CYAN}deleteCurrency${OFF};Delete a currency (AUTH) (AUTH)
   ${CYAN}getCurrencies${OFF};List and search currencies
   ${CYAN}getCurrency${OFF};Get a single currency
-  ${CYAN}updateCurrency${OFF};Update a currency
+  ${CYAN}updateCurrency${OFF};Update a currency (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[devices]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}addDeviceUsers${OFF};Add device users
-  ${CYAN}createDevice${OFF};Create a device
-  ${CYAN}deleteDevice${OFF};Delete a device
-  ${CYAN}deleteDeviceUser${OFF};Delete a device user
-  ${CYAN}deleteDeviceUsers${OFF};Delete all device users
-  ${CYAN}getDevice${OFF};Get a single device
-  ${CYAN}getDevices${OFF};List and search devices
-  ${CYAN}updateDevice${OFF};Update a device
+  ${CYAN}addDeviceUsers${OFF};Add device users (AUTH) (AUTH)
+  ${CYAN}createDevice${OFF};Create a device (AUTH) (AUTH)
+  ${CYAN}deleteDevice${OFF};Delete a device (AUTH) (AUTH)
+  ${CYAN}deleteDeviceUser${OFF};Delete a device user (AUTH) (AUTH)
+  ${CYAN}deleteDeviceUsers${OFF};Delete all device users (AUTH) (AUTH)
+  ${CYAN}getDevice${OFF};Get a single device (AUTH) (AUTH)
+  ${CYAN}getDevices${OFF};List and search devices (AUTH) (AUTH)
+  ${CYAN}updateDevice${OFF};Update a device (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[dispositions]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}addDisposition${OFF};Add a new disposition
-  ${CYAN}deleteDisposition${OFF};Delete a disposition
+  ${CYAN}addDisposition${OFF};Add a new disposition (AUTH) (AUTH)
+  ${CYAN}deleteDisposition${OFF};Delete a disposition (AUTH) (AUTH)
   ${CYAN}getDisposition${OFF};Returns a disposition
   ${CYAN}getDispositionCounts${OFF};Returns a list of disposition counts
   ${CYAN}getDispositions${OFF};Returns a page of dispositions
@@ -4481,34 +4481,34 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[fulfillment]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createFulfillmentType${OFF};Create a fulfillment type
-  ${CYAN}deleteFulfillmentType${OFF};Delete a fulfillment type
+  ${CYAN}createFulfillmentType${OFF};Create a fulfillment type (AUTH) (AUTH)
+  ${CYAN}deleteFulfillmentType${OFF};Delete a fulfillment type (AUTH) (AUTH)
   ${CYAN}getFulfillmentType${OFF};Get a single fulfillment type
   ${CYAN}getFulfillmentTypes${OFF};List and search fulfillment types
-  ${CYAN}updateFulfillmentType${OFF};Update a fulfillment type
+  ${CYAN}updateFulfillmentType${OFF};Update a fulfillment type (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[gamificationAchievements]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createAchievement${OFF};Create a new achievement definition
-  ${CYAN}createAchievementTemplate${OFF};Create an achievement template
-  ${CYAN}deleteAchievement${OFF};Delete an achievement definition
-  ${CYAN}deleteAchievementTemplate${OFF};Delete an achievement template
-  ${CYAN}getAchievement${OFF};Get a single achievement definition
-  ${CYAN}getAchievementTemplate${OFF};Get a single achievement template
-  ${CYAN}getAchievementTemplates${OFF};List and search achievement templates
-  ${CYAN}getAchievementTriggers${OFF};Get the list of triggers that can be used to trigger an achievement progress update
-  ${CYAN}getAchievements${OFF};Get all achievement definitions in the system
-  ${CYAN}getDerivedAchievements${OFF};Get a list of derived achievements
-  ${CYAN}getUserAchievementProgress${OFF};Retrieve progress on a given achievement for a given user
-  ${CYAN}getUserAchievementsProgress${OFF};Retrieve progress on achievements for a given user
-  ${CYAN}getUsersAchievementProgress${OFF};Retrieve progress on a given achievement for all users
-  ${CYAN}getUsersAchievementsProgress${OFF};Retrieve progress on achievements for all users
-  ${CYAN}incrementAchievementProgress${OFF};Increment an achievement progress record for a user
-  ${CYAN}setAchievementProgress${OFF};Set an achievement progress record for a user
-  ${CYAN}updateAchievement${OFF};Update an achievement definition
-  ${CYAN}updateAchievementTemplate${OFF};Update an achievement template
+  ${CYAN}createAchievement${OFF};Create a new achievement definition (AUTH) (AUTH)
+  ${CYAN}createAchievementTemplate${OFF};Create an achievement template (AUTH) (AUTH)
+  ${CYAN}deleteAchievement${OFF};Delete an achievement definition (AUTH) (AUTH)
+  ${CYAN}deleteAchievementTemplate${OFF};Delete an achievement template (AUTH) (AUTH)
+  ${CYAN}getAchievement${OFF};Get a single achievement definition (AUTH) (AUTH)
+  ${CYAN}getAchievementTemplate${OFF};Get a single achievement template (AUTH) (AUTH)
+  ${CYAN}getAchievementTemplates${OFF};List and search achievement templates (AUTH) (AUTH)
+  ${CYAN}getAchievementTriggers${OFF};Get the list of triggers that can be used to trigger an achievement progress update (AUTH) (AUTH)
+  ${CYAN}getAchievements${OFF};Get all achievement definitions in the system (AUTH) (AUTH)
+  ${CYAN}getDerivedAchievements${OFF};Get a list of derived achievements (AUTH) (AUTH)
+  ${CYAN}getUserAchievementProgress${OFF};Retrieve progress on a given achievement for a given user (AUTH) (AUTH)
+  ${CYAN}getUserAchievementsProgress${OFF};Retrieve progress on achievements for a given user (AUTH) (AUTH)
+  ${CYAN}getUsersAchievementProgress${OFF};Retrieve progress on a given achievement for all users (AUTH) (AUTH)
+  ${CYAN}getUsersAchievementsProgress${OFF};Retrieve progress on achievements for all users (AUTH) (AUTH)
+  ${CYAN}incrementAchievementProgress${OFF};Increment an achievement progress record for a user (AUTH) (AUTH)
+  ${CYAN}setAchievementProgress${OFF};Set an achievement progress record for a user (AUTH) (AUTH)
+  ${CYAN}updateAchievement${OFF};Update an achievement definition (AUTH) (AUTH)
+  ${CYAN}updateAchievementTemplate${OFF};Update an achievement template (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -4522,75 +4522,75 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[gamificationLeveling]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createLevel${OFF};Create a level schema
-  ${CYAN}deleteLevel${OFF};Delete a level
-  ${CYAN}getLevel${OFF};Retrieve a level
-  ${CYAN}getLevelTriggers${OFF};Get the list of triggers that can be used to trigger a leveling progress update
-  ${CYAN}getLevels${OFF};List and search levels
-  ${CYAN}getUserLevel${OFF};Get a user's progress for a given level schema
-  ${CYAN}getUserLevels${OFF};Get a user's progress for all level schemas
-  ${CYAN}incrementProgress${OFF};Update or create a leveling progress record for a user
-  ${CYAN}setProgress${OFF};Set leveling progress for a user
-  ${CYAN}updateLevel${OFF};Update a level
+  ${CYAN}createLevel${OFF};Create a level schema (AUTH) (AUTH)
+  ${CYAN}deleteLevel${OFF};Delete a level (AUTH) (AUTH)
+  ${CYAN}getLevel${OFF};Retrieve a level (AUTH) (AUTH)
+  ${CYAN}getLevelTriggers${OFF};Get the list of triggers that can be used to trigger a leveling progress update (AUTH) (AUTH)
+  ${CYAN}getLevels${OFF};List and search levels (AUTH) (AUTH)
+  ${CYAN}getUserLevel${OFF};Get a user's progress for a given level schema (AUTH) (AUTH)
+  ${CYAN}getUserLevels${OFF};Get a user's progress for all level schemas (AUTH) (AUTH)
+  ${CYAN}incrementProgress${OFF};Update or create a leveling progress record for a user (AUTH) (AUTH)
+  ${CYAN}setProgress${OFF};Set leveling progress for a user (AUTH) (AUTH)
+  ${CYAN}updateLevel${OFF};Update a level (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[gamificationMetrics]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}addMetric${OFF};Add a metric
+  ${CYAN}addMetric${OFF};Add a metric (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[gamificationTrivia]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}addQuestionAnswers${OFF};Add an answer to a question
-  ${CYAN}addQuestionTag${OFF};Add a tag to a question
-  ${CYAN}addTagToQuestionsBatch${OFF};Add a tag to a batch of questions
-  ${CYAN}createImportJob${OFF};Create an import job
-  ${CYAN}createQuestion${OFF};Create a question
-  ${CYAN}createQuestionTemplate${OFF};Create a question template
-  ${CYAN}deleteImportJob${OFF};Delete an import job
-  ${CYAN}deleteQuestion${OFF};Delete a question
-  ${CYAN}deleteQuestionAnswers${OFF};Remove an answer from a question
-  ${CYAN}deleteQuestionTemplate${OFF};Delete a question template
-  ${CYAN}getImportJob${OFF};Get an import job
-  ${CYAN}getImportJobs${OFF};Get a list of import job
-  ${CYAN}getQuestion${OFF};Get a single question
-  ${CYAN}getQuestionAnswer${OFF};Get an answer for a question
-  ${CYAN}getQuestionAnswers${OFF};List the answers available for a question
-  ${CYAN}getQuestionDeltas${OFF};List question deltas in ascending order of updated date
-  ${CYAN}getQuestionTags${OFF};List the tags for a question
-  ${CYAN}getQuestionTemplate${OFF};Get a single question template
-  ${CYAN}getQuestionTemplates${OFF};List and search question templates
-  ${CYAN}getQuestions${OFF};List and search questions
-  ${CYAN}getQuestionsCount${OFF};Count questions based on filters
-  ${CYAN}processImportJob${OFF};Start processing an import job
-  ${CYAN}removeQuestionTag${OFF};Remove a tag from a question
-  ${CYAN}removeTagToQuestionsBatch${OFF};Remove a tag from a batch of questions
-  ${CYAN}searchQuestionTags${OFF};List and search tags by the beginning of the string
-  ${CYAN}updateImportJob${OFF};Update an import job
-  ${CYAN}updateQuestion${OFF};Update a question
-  ${CYAN}updateQuestionAnswer${OFF};Update an answer for a question
-  ${CYAN}updateQuestionTemplate${OFF};Update a question template
-  ${CYAN}updateQuestionsInBulk${OFF};Bulk update questions
+  ${CYAN}addQuestionAnswers${OFF};Add an answer to a question (AUTH) (AUTH)
+  ${CYAN}addQuestionTag${OFF};Add a tag to a question (AUTH) (AUTH)
+  ${CYAN}addTagToQuestionsBatch${OFF};Add a tag to a batch of questions (AUTH) (AUTH)
+  ${CYAN}createImportJob${OFF};Create an import job (AUTH) (AUTH)
+  ${CYAN}createQuestion${OFF};Create a question (AUTH) (AUTH)
+  ${CYAN}createQuestionTemplate${OFF};Create a question template (AUTH) (AUTH)
+  ${CYAN}deleteImportJob${OFF};Delete an import job (AUTH) (AUTH)
+  ${CYAN}deleteQuestion${OFF};Delete a question (AUTH) (AUTH)
+  ${CYAN}deleteQuestionAnswers${OFF};Remove an answer from a question (AUTH) (AUTH)
+  ${CYAN}deleteQuestionTemplate${OFF};Delete a question template (AUTH) (AUTH)
+  ${CYAN}getImportJob${OFF};Get an import job (AUTH) (AUTH)
+  ${CYAN}getImportJobs${OFF};Get a list of import job (AUTH) (AUTH)
+  ${CYAN}getQuestion${OFF};Get a single question (AUTH) (AUTH)
+  ${CYAN}getQuestionAnswer${OFF};Get an answer for a question (AUTH) (AUTH)
+  ${CYAN}getQuestionAnswers${OFF};List the answers available for a question (AUTH) (AUTH)
+  ${CYAN}getQuestionDeltas${OFF};List question deltas in ascending order of updated date (AUTH) (AUTH)
+  ${CYAN}getQuestionTags${OFF};List the tags for a question (AUTH) (AUTH)
+  ${CYAN}getQuestionTemplate${OFF};Get a single question template (AUTH) (AUTH)
+  ${CYAN}getQuestionTemplates${OFF};List and search question templates (AUTH) (AUTH)
+  ${CYAN}getQuestions${OFF};List and search questions (AUTH) (AUTH)
+  ${CYAN}getQuestionsCount${OFF};Count questions based on filters (AUTH) (AUTH)
+  ${CYAN}processImportJob${OFF};Start processing an import job (AUTH) (AUTH)
+  ${CYAN}removeQuestionTag${OFF};Remove a tag from a question (AUTH) (AUTH)
+  ${CYAN}removeTagToQuestionsBatch${OFF};Remove a tag from a batch of questions (AUTH) (AUTH)
+  ${CYAN}searchQuestionTags${OFF};List and search tags by the beginning of the string (AUTH) (AUTH)
+  ${CYAN}updateImportJob${OFF};Update an import job (AUTH) (AUTH)
+  ${CYAN}updateQuestion${OFF};Update a question (AUTH) (AUTH)
+  ${CYAN}updateQuestionAnswer${OFF};Update an answer for a question (AUTH) (AUTH)
+  ${CYAN}updateQuestionTemplate${OFF};Update a question template (AUTH) (AUTH)
+  ${CYAN}updateQuestionsInBulk${OFF};Bulk update questions (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[invoices]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createInvoice${OFF};Create an invoice
+  ${CYAN}createInvoice${OFF};Create an invoice (AUTH) (AUTH)
   ${CYAN}getFulFillmentStatuses${OFF};Lists available fulfillment statuses
-  ${CYAN}getInvoice${OFF};Retrieve an invoice
-  ${CYAN}getInvoiceLogs${OFF};List invoice logs
-  ${CYAN}getInvoices${OFF};Retrieve invoices
+  ${CYAN}getInvoice${OFF};Retrieve an invoice (AUTH) (AUTH)
+  ${CYAN}getInvoiceLogs${OFF};List invoice logs (AUTH) (AUTH)
+  ${CYAN}getInvoices${OFF};Retrieve invoices (AUTH) (AUTH)
   ${CYAN}getPaymentStatuses${OFF};Lists available payment statuses
-  ${CYAN}payInvoice${OFF};Pay an invoice using a saved payment method
-  ${CYAN}setBundledInvoiceItemFulfillmentStatus${OFF};Set the fulfillment status of a bundled invoice item
-  ${CYAN}setExternalRef${OFF};Set the external reference of an invoice
-  ${CYAN}setInvoiceItemFulfillmentStatus${OFF};Set the fulfillment status of an invoice item
-  ${CYAN}setOrderNotes${OFF};Set the order notes of an invoice
-  ${CYAN}setPaymentStatus${OFF};Set the payment status of an invoice
-  ${CYAN}updateBillingInfo${OFF};Set or update billing info
+  ${CYAN}payInvoice${OFF};Pay an invoice using a saved payment method (AUTH) (AUTH)
+  ${CYAN}setBundledInvoiceItemFulfillmentStatus${OFF};Set the fulfillment status of a bundled invoice item (AUTH) (AUTH)
+  ${CYAN}setExternalRef${OFF};Set the external reference of an invoice (AUTH) (AUTH)
+  ${CYAN}setInvoiceItemFulfillmentStatus${OFF};Set the fulfillment status of an invoice item (AUTH) (AUTH)
+  ${CYAN}setOrderNotes${OFF};Set the order notes of an invoice (AUTH) (AUTH)
+  ${CYAN}setPaymentStatus${OFF};Set the payment status of an invoice (AUTH) (AUTH)
+  ${CYAN}updateBillingInfo${OFF};Set or update billing info (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -4605,86 +4605,86 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[logs]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}addUserLog${OFF};Add a user log entry
-  ${CYAN}getBREEventLog${OFF};Get an existing BRE event log entry by id
-  ${CYAN}getBREEventLogs${OFF};Returns a list of BRE event log entries
-  ${CYAN}getBREForwardLog${OFF};Get an existing forward log entry by id
-  ${CYAN}getBREForwardLogs${OFF};Returns a list of forward log entries
-  ${CYAN}getUserLog${OFF};Returns a user log entry by id
-  ${CYAN}getUserLogs${OFF};Returns a page of user logs entries
+  ${CYAN}addUserLog${OFF};Add a user log entry (AUTH) (AUTH)
+  ${CYAN}getBREEventLog${OFF};Get an existing BRE event log entry by id (AUTH) (AUTH)
+  ${CYAN}getBREEventLogs${OFF};Returns a list of BRE event log entries (AUTH) (AUTH)
+  ${CYAN}getBREForwardLog${OFF};Get an existing forward log entry by id (AUTH) (AUTH)
+  ${CYAN}getBREForwardLogs${OFF};Returns a list of forward log entries (AUTH) (AUTH)
+  ${CYAN}getUserLog${OFF};Returns a user log entry by id (AUTH) (AUTH)
+  ${CYAN}getUserLogs${OFF};Returns a page of user logs entries (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[mediaArtists]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}addArtist${OFF};Adds a new artist in the system
-  ${CYAN}createArtistTemplate${OFF};Create an artist template
-  ${CYAN}deleteArtist${OFF};Removes an artist from the system IF no resources are attached to it
-  ${CYAN}deleteArtistTemplate${OFF};Delete an artist template
+  ${CYAN}addArtist${OFF};Adds a new artist in the system (AUTH) (AUTH)
+  ${CYAN}createArtistTemplate${OFF};Create an artist template (AUTH) (AUTH)
+  ${CYAN}deleteArtist${OFF};Removes an artist from the system IF no resources are attached to it (AUTH) (AUTH)
+  ${CYAN}deleteArtistTemplate${OFF};Delete an artist template (AUTH) (AUTH)
   ${CYAN}getArtist${OFF};Loads a specific artist details
-  ${CYAN}getArtistTemplate${OFF};Get a single artist template
-  ${CYAN}getArtistTemplates${OFF};List and search artist templates
+  ${CYAN}getArtistTemplate${OFF};Get a single artist template (AUTH) (AUTH)
+  ${CYAN}getArtistTemplates${OFF};List and search artist templates (AUTH) (AUTH)
   ${CYAN}getArtists${OFF};Search for artists
-  ${CYAN}updateArtist${OFF};Modifies an artist details
-  ${CYAN}updateArtistTemplate${OFF};Update an artist template
+  ${CYAN}updateArtist${OFF};Modifies an artist details (AUTH) (AUTH)
+  ${CYAN}updateArtistTemplate${OFF};Update an artist template (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[mediaModeration]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}getModerationReport${OFF};Get a flag report
-  ${CYAN}getModerationReports${OFF};Returns a page of flag reports
-  ${CYAN}updateModerationReport${OFF};Update a flag report
+  ${CYAN}getModerationReport${OFF};Get a flag report (AUTH) (AUTH)
+  ${CYAN}getModerationReports${OFF};Returns a page of flag reports (AUTH) (AUTH)
+  ${CYAN}updateModerationReport${OFF};Update a flag report (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[mediaVideos]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}addUserToVideoWhitelist${OFF};Adds a user to a video's whitelist
-  ${CYAN}addVideo${OFF};Adds a new video in the system
-  ${CYAN}addVideoComment${OFF};Add a new video comment
-  ${CYAN}addVideoContributor${OFF};Adds a contributor to a video
-  ${CYAN}addVideoFlag${OFF};Add a new flag
-  ${CYAN}addVideoRelationships${OFF};Adds one or more existing videos as related to this one
-  ${CYAN}createVideoDisposition${OFF};Create a video disposition
-  ${CYAN}deleteVideo${OFF};Deletes a video from the system if no resources are attached to it
-  ${CYAN}deleteVideoComment${OFF};Delete a video comment
-  ${CYAN}deleteVideoDisposition${OFF};Delete a video disposition
-  ${CYAN}deleteVideoFlag${OFF};Delete a flag
-  ${CYAN}deleteVideoRelationship${OFF};Delete a video's relationship
-  ${CYAN}getUserVideos${OFF};Get user videos
-  ${CYAN}getVideo${OFF};Loads a specific video details
+  ${CYAN}addUserToVideoWhitelist${OFF};Adds a user to a video's whitelist (AUTH) (AUTH)
+  ${CYAN}addVideo${OFF};Adds a new video in the system (AUTH) (AUTH)
+  ${CYAN}addVideoComment${OFF};Add a new video comment (AUTH) (AUTH)
+  ${CYAN}addVideoContributor${OFF};Adds a contributor to a video (AUTH) (AUTH)
+  ${CYAN}addVideoFlag${OFF};Add a new flag (AUTH) (AUTH)
+  ${CYAN}addVideoRelationships${OFF};Adds one or more existing videos as related to this one (AUTH) (AUTH)
+  ${CYAN}createVideoDisposition${OFF};Create a video disposition (AUTH) (AUTH)
+  ${CYAN}deleteVideo${OFF};Deletes a video from the system if no resources are attached to it (AUTH) (AUTH)
+  ${CYAN}deleteVideoComment${OFF};Delete a video comment (AUTH) (AUTH)
+  ${CYAN}deleteVideoDisposition${OFF};Delete a video disposition (AUTH) (AUTH)
+  ${CYAN}deleteVideoFlag${OFF};Delete a flag (AUTH) (AUTH)
+  ${CYAN}deleteVideoRelationship${OFF};Delete a video's relationship (AUTH) (AUTH)
+  ${CYAN}getUserVideos${OFF};Get user videos (AUTH) (AUTH)
+  ${CYAN}getVideo${OFF};Loads a specific video details (AUTH) (AUTH)
   ${CYAN}getVideoComments${OFF};Returns a page of comments for a video
   ${CYAN}getVideoDispositions${OFF};Returns a page of dispositions for a video
   ${CYAN}getVideoRelationships${OFF};Returns a page of video relationships
   ${CYAN}getVideos${OFF};Search videos using the documented filters
-  ${CYAN}removeUserFromVideoWhitelist${OFF};Removes a user from a video's whitelist
-  ${CYAN}removeVideoContributor${OFF};Removes a contributor from a video
-  ${CYAN}updateVideo${OFF};Modifies a video's details
-  ${CYAN}updateVideoComment${OFF};Update a video comment
-  ${CYAN}updateVideoRelationship${OFF};Update a video's relationship details
+  ${CYAN}removeUserFromVideoWhitelist${OFF};Removes a user from a video's whitelist (AUTH) (AUTH)
+  ${CYAN}removeVideoContributor${OFF};Removes a contributor from a video (AUTH) (AUTH)
+  ${CYAN}updateVideo${OFF};Modifies a video's details (AUTH) (AUTH)
+  ${CYAN}updateVideoComment${OFF};Update a video comment (AUTH) (AUTH)
+  ${CYAN}updateVideoRelationship${OFF};Update a video's relationship details (AUTH) (AUTH)
   ${CYAN}viewVideo${OFF};Increment a video's view count
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[messaging]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}sendRawEmail${OFF};Send a raw email to one or more users
-  ${CYAN}sendRawSMS${OFF};Send a raw SMS
-  ${CYAN}sendTemplatedEmail${OFF};Send a templated email to one or more users
-  ${CYAN}sendTemplatedSMS${OFF};Send a new templated SMS
+  ${CYAN}sendRawEmail${OFF};Send a raw email to one or more users (AUTH) (AUTH)
+  ${CYAN}sendRawSMS${OFF};Send a raw SMS (AUTH) (AUTH)
+  ${CYAN}sendTemplatedEmail${OFF};Send a templated email to one or more users (AUTH) (AUTH)
+  ${CYAN}sendTemplatedSMS${OFF};Send a new templated SMS (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[payments]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createPaymentMethod${OFF};Create a new payment method for a user
-  ${CYAN}deletePaymentMethod${OFF};Delete an existing payment method for a user
-  ${CYAN}getPaymentMethod${OFF};Get a single payment method for a user
-  ${CYAN}getPaymentMethods${OFF};Get all payment methods for a user
-  ${CYAN}paymentAuthorization${OFF};Authorize payment of an invoice for later capture
-  ${CYAN}paymentCapture${OFF};Capture an existing invoice payment authorization
-  ${CYAN}updatePaymentMethod${OFF};Update an existing payment method for a user
+  ${CYAN}createPaymentMethod${OFF};Create a new payment method for a user (AUTH) (AUTH)
+  ${CYAN}deletePaymentMethod${OFF};Delete an existing payment method for a user (AUTH) (AUTH)
+  ${CYAN}getPaymentMethod${OFF};Get a single payment method for a user (AUTH) (AUTH)
+  ${CYAN}getPaymentMethods${OFF};Get all payment methods for a user (AUTH) (AUTH)
+  ${CYAN}paymentAuthorization${OFF};Authorize payment of an invoice for later capture (AUTH) (AUTH)
+  ${CYAN}paymentCapture${OFF};Capture an existing invoice payment authorization (AUTH) (AUTH)
+  ${CYAN}updatePaymentMethod${OFF};Update an existing payment method for a user (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -4696,7 +4696,7 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[paymentsFattMerchant]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createOrUpdateFattMerchantPaymentMethod${OFF};Create or update a FattMerchant payment method for a user
+  ${CYAN}createOrUpdateFattMerchantPaymentMethod${OFF};Create or update a FattMerchant payment method for a user (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -4708,253 +4708,253 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[paymentsOptimal]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}silentPostOptimal${OFF};Initiate silent post with Optimal
+  ${CYAN}silentPostOptimal${OFF};Initiate silent post with Optimal (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[paymentsPayPalClassic]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createPayPalBillingAgreementUrl${OFF};Create a PayPal Classic billing agreement for the user
-  ${CYAN}createPayPalExpressCheckout${OFF};Create a payment token for PayPal express checkout
-  ${CYAN}finalizePayPalBillingAgreement${OFF};Finalizes a billing agreement after the user has accepted through PayPal
-  ${CYAN}finalizePayPalCheckout${OFF};Finalizes a payment after the user has completed checkout with PayPal
+  ${CYAN}createPayPalBillingAgreementUrl${OFF};Create a PayPal Classic billing agreement for the user (AUTH) (AUTH)
+  ${CYAN}createPayPalExpressCheckout${OFF};Create a payment token for PayPal express checkout (AUTH) (AUTH)
+  ${CYAN}finalizePayPalBillingAgreement${OFF};Finalizes a billing agreement after the user has accepted through PayPal (AUTH) (AUTH)
+  ${CYAN}finalizePayPalCheckout${OFF};Finalizes a payment after the user has completed checkout with PayPal (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[paymentsStripe]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createStripePaymentMethod${OFF};Create a Stripe payment method for a user
+  ${CYAN}createStripePaymentMethod${OFF};Create a Stripe payment method for a user (AUTH) (AUTH)
   ${CYAN}payStripeInvoice${OFF};Pay with a single use token
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[paymentsTransactions]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}getTransaction${OFF};Get the details for a single transaction
-  ${CYAN}getTransactions${OFF};List and search transactions
-  ${CYAN}refundTransaction${OFF};Refund a payment transaction, in full or in part
+  ${CYAN}getTransaction${OFF};Get the details for a single transaction (AUTH) (AUTH)
+  ${CYAN}getTransactions${OFF};List and search transactions (AUTH) (AUTH)
+  ${CYAN}refundTransaction${OFF};Refund a payment transaction, in full or in part (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[paymentsWallets]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}getUserWallet${OFF};Returns the user's wallet for the given currency code
-  ${CYAN}getUserWalletTransactions${OFF};Retrieve a user's wallet transactions
-  ${CYAN}getUserWallets${OFF};List all of a user's wallets
-  ${CYAN}getWalletBalances${OFF};Retrieves a summation of wallet balances by currency code
-  ${CYAN}getWalletTransactions${OFF};Retrieve wallet transactions across the system
-  ${CYAN}getWallets${OFF};Retrieve a list of wallets across the system
-  ${CYAN}updateWalletBalance${OFF};Updates the balance for a user's wallet
+  ${CYAN}getUserWallet${OFF};Returns the user's wallet for the given currency code (AUTH) (AUTH)
+  ${CYAN}getUserWalletTransactions${OFF};Retrieve a user's wallet transactions (AUTH) (AUTH)
+  ${CYAN}getUserWallets${OFF};List all of a user's wallets (AUTH) (AUTH)
+  ${CYAN}getWalletBalances${OFF};Retrieves a summation of wallet balances by currency code (AUTH) (AUTH)
+  ${CYAN}getWalletTransactions${OFF};Retrieve wallet transactions across the system (AUTH) (AUTH)
+  ${CYAN}getWallets${OFF};Retrieve a list of wallets across the system (AUTH) (AUTH)
+  ${CYAN}updateWalletBalance${OFF};Updates the balance for a user's wallet (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[paymentsXsolla]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createXsollaTokenUrl${OFF};Create a payment token that should be used to forward the user to Xsolla so they can complete payment
+  ${CYAN}createXsollaTokenUrl${OFF};Create a payment token that should be used to forward the user to Xsolla so they can complete payment (AUTH) (AUTH)
   ${CYAN}receiveXsollaNotification${OFF};Receives payment response from Xsolla
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[reportingChallenges]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}getChallengeEventLeaderboard${OFF};Retrieve a challenge event leaderboard details
-  ${CYAN}getChallengeEventParticipants${OFF};Retrieve a challenge event participant details
+  ${CYAN}getChallengeEventLeaderboard${OFF};Retrieve a challenge event leaderboard details (AUTH) (AUTH)
+  ${CYAN}getChallengeEventParticipants${OFF};Retrieve a challenge event participant details (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[reportingOrders]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}getInvoiceReports${OFF};Retrieve invoice counts aggregated by time ranges
+  ${CYAN}getInvoiceReports${OFF};Retrieve invoice counts aggregated by time ranges (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[reportingRevenue]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}getItemRevenue${OFF};Get item revenue info
-  ${CYAN}getRefundRevenue${OFF};Get refund revenue info
-  ${CYAN}getRevenueByCountry${OFF};Get revenue info by country
-  ${CYAN}getRevenueByItem${OFF};Get revenue info by item
-  ${CYAN}getSubscriptionRevenue${OFF};Get subscription revenue info
+  ${CYAN}getItemRevenue${OFF};Get item revenue info (AUTH) (AUTH)
+  ${CYAN}getRefundRevenue${OFF};Get refund revenue info (AUTH) (AUTH)
+  ${CYAN}getRevenueByCountry${OFF};Get revenue info by country (AUTH) (AUTH)
+  ${CYAN}getRevenueByItem${OFF};Get revenue info by item (AUTH) (AUTH)
+  ${CYAN}getSubscriptionRevenue${OFF};Get subscription revenue info (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[reportingSubscriptions]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}getSubscriptionReports${OFF};Get a list of available subscription reports in most recent first order
+  ${CYAN}getSubscriptionReports${OFF};Get a list of available subscription reports in most recent first order (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[reportingUsage]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}getUsageByDay${OFF};Returns aggregated endpoint usage information by day
-  ${CYAN}getUsageByHour${OFF};Returns aggregated endpoint usage information by hour
-  ${CYAN}getUsageByMinute${OFF};Returns aggregated endpoint usage information by minute
-  ${CYAN}getUsageByMonth${OFF};Returns aggregated endpoint usage information by month
-  ${CYAN}getUsageByYear${OFF};Returns aggregated endpoint usage information by year
-  ${CYAN}getUsageEndpoints${OFF};Returns list of endpoints called (method and url)
+  ${CYAN}getUsageByDay${OFF};Returns aggregated endpoint usage information by day (AUTH) (AUTH)
+  ${CYAN}getUsageByHour${OFF};Returns aggregated endpoint usage information by hour (AUTH) (AUTH)
+  ${CYAN}getUsageByMinute${OFF};Returns aggregated endpoint usage information by minute (AUTH) (AUTH)
+  ${CYAN}getUsageByMonth${OFF};Returns aggregated endpoint usage information by month (AUTH) (AUTH)
+  ${CYAN}getUsageByYear${OFF};Returns aggregated endpoint usage information by year (AUTH) (AUTH)
+  ${CYAN}getUsageEndpoints${OFF};Returns list of endpoints called (method and url) (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[reportingUsers]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}getUserRegistrations${OFF};Get user registration info
+  ${CYAN}getUserRegistrations${OFF};Get user registration info (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[search]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}addSearchIndex${OFF};Add a new object to an index
-  ${CYAN}addSearchMappings${OFF};Register reference mappings
-  ${CYAN}deleteSearchIndex${OFF};Delete an object
-  ${CYAN}deleteSearchIndexes${OFF};Delete all objects in an index
+  ${CYAN}addSearchIndex${OFF};Add a new object to an index (AUTH) (AUTH)
+  ${CYAN}addSearchMappings${OFF};Register reference mappings (AUTH) (AUTH)
+  ${CYAN}deleteSearchIndex${OFF};Delete an object (AUTH) (AUTH)
+  ${CYAN}deleteSearchIndexes${OFF};Delete all objects in an index (AUTH) (AUTH)
   ${CYAN}searchIndex${OFF};Search an index
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[socialFacebook]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}linkAccounts${OFF};Link facebook account
+  ${CYAN}linkAccounts${OFF};Link facebook account (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[socialGoogle]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}linkAccounts1${OFF};Link google account
+  ${CYAN}linkAccounts1${OFF};Link google account (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[store]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createItemTemplate${OFF};Create an item template
-  ${CYAN}createStoreItem${OFF};Create a store item
-  ${CYAN}deleteItemTemplate${OFF};Delete an item template
-  ${CYAN}deleteStoreItem${OFF};Delete a store item
-  ${CYAN}getBehaviors${OFF};List available item behaviors
-  ${CYAN}getItemTemplate${OFF};Get a single item template
-  ${CYAN}getItemTemplates${OFF};List and search item templates
+  ${CYAN}createItemTemplate${OFF};Create an item template (AUTH) (AUTH)
+  ${CYAN}createStoreItem${OFF};Create a store item (AUTH) (AUTH)
+  ${CYAN}deleteItemTemplate${OFF};Delete an item template (AUTH) (AUTH)
+  ${CYAN}deleteStoreItem${OFF};Delete a store item (AUTH) (AUTH)
+  ${CYAN}getBehaviors${OFF};List available item behaviors (AUTH) (AUTH)
+  ${CYAN}getItemTemplate${OFF};Get a single item template (AUTH) (AUTH)
+  ${CYAN}getItemTemplates${OFF};List and search item templates (AUTH) (AUTH)
   ${CYAN}getStore${OFF};Get a listing of store items
   ${CYAN}getStoreItem${OFF};Get a single store item
   ${CYAN}getStoreItems${OFF};List and search store items
-  ${CYAN}quickBuy${OFF};One-step purchase and pay for a single SKU item from a user's wallet
-  ${CYAN}updateItemTemplate${OFF};Update an item template
-  ${CYAN}updateStoreItem${OFF};Update a store item
+  ${CYAN}quickBuy${OFF};One-step purchase and pay for a single SKU item from a user's wallet (AUTH) (AUTH)
+  ${CYAN}updateItemTemplate${OFF};Update an item template (AUTH) (AUTH)
+  ${CYAN}updateStoreItem${OFF};Update a store item (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[storeBundles]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createBundleItem${OFF};Create a bundle item
-  ${CYAN}createBundleTemplate${OFF};Create a bundle template
-  ${CYAN}deleteBundleItem${OFF};Delete a bundle item
-  ${CYAN}deleteBundleTemplate${OFF};Delete a bundle template
+  ${CYAN}createBundleItem${OFF};Create a bundle item (AUTH) (AUTH)
+  ${CYAN}createBundleTemplate${OFF};Create a bundle template (AUTH) (AUTH)
+  ${CYAN}deleteBundleItem${OFF};Delete a bundle item (AUTH) (AUTH)
+  ${CYAN}deleteBundleTemplate${OFF};Delete a bundle template (AUTH) (AUTH)
   ${CYAN}getBundleItem${OFF};Get a single bundle item
   ${CYAN}getBundleTemplate${OFF};Get a single bundle template
   ${CYAN}getBundleTemplates${OFF};List and search bundle templates
-  ${CYAN}updateBundleItem${OFF};Update a bundle item
-  ${CYAN}updateBundleTemplate${OFF};Update a bundle template
+  ${CYAN}updateBundleItem${OFF};Update a bundle item (AUTH) (AUTH)
+  ${CYAN}updateBundleTemplate${OFF};Update a bundle template (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[storeCoupons]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createCouponItem${OFF};Create a coupon item
-  ${CYAN}createCouponTemplate${OFF};Create a coupon template
-  ${CYAN}deleteCouponItem${OFF};Delete a coupon item
-  ${CYAN}deleteCouponTemplate${OFF};Delete a coupon template
-  ${CYAN}getCouponItem${OFF};Get a single coupon item
-  ${CYAN}getCouponTemplate${OFF};Get a single coupon template
-  ${CYAN}getCouponTemplates${OFF};List and search coupon templates
-  ${CYAN}updateCouponItem${OFF};Update a coupon item
-  ${CYAN}updateCouponTemplate${OFF};Update a coupon template
+  ${CYAN}createCouponItem${OFF};Create a coupon item (AUTH) (AUTH)
+  ${CYAN}createCouponTemplate${OFF};Create a coupon template (AUTH) (AUTH)
+  ${CYAN}deleteCouponItem${OFF};Delete a coupon item (AUTH) (AUTH)
+  ${CYAN}deleteCouponTemplate${OFF};Delete a coupon template (AUTH) (AUTH)
+  ${CYAN}getCouponItem${OFF};Get a single coupon item (AUTH) (AUTH)
+  ${CYAN}getCouponTemplate${OFF};Get a single coupon template (AUTH) (AUTH)
+  ${CYAN}getCouponTemplates${OFF};List and search coupon templates (AUTH) (AUTH)
+  ${CYAN}updateCouponItem${OFF};Update a coupon item (AUTH) (AUTH)
+  ${CYAN}updateCouponTemplate${OFF};Update a coupon template (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[storeSales]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createCatalogSale${OFF};Create a sale
-  ${CYAN}deleteCatalogSale${OFF};Delete a sale
-  ${CYAN}getCatalogSale${OFF};Get a single sale
-  ${CYAN}getCatalogSales${OFF};List and search sales
-  ${CYAN}updateCatalogSale${OFF};Update a sale
+  ${CYAN}createCatalogSale${OFF};Create a sale (AUTH) (AUTH)
+  ${CYAN}deleteCatalogSale${OFF};Delete a sale (AUTH) (AUTH)
+  ${CYAN}getCatalogSale${OFF};Get a single sale (AUTH) (AUTH)
+  ${CYAN}getCatalogSales${OFF};List and search sales (AUTH) (AUTH)
+  ${CYAN}updateCatalogSale${OFF};Update a sale (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[storeShipping]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createShippingItem${OFF};Create a shipping item
-  ${CYAN}createShippingTemplate${OFF};Create a shipping template
-  ${CYAN}deleteShippingItem${OFF};Delete a shipping item
-  ${CYAN}deleteShippingTemplate${OFF};Delete a shipping template
+  ${CYAN}createShippingItem${OFF};Create a shipping item (AUTH) (AUTH)
+  ${CYAN}createShippingTemplate${OFF};Create a shipping template (AUTH) (AUTH)
+  ${CYAN}deleteShippingItem${OFF};Delete a shipping item (AUTH) (AUTH)
+  ${CYAN}deleteShippingTemplate${OFF};Delete a shipping template (AUTH) (AUTH)
   ${CYAN}getShippingItem${OFF};Get a single shipping item
-  ${CYAN}getShippingTemplate${OFF};Get a single shipping template
-  ${CYAN}getShippingTemplates${OFF};List and search shipping templates
-  ${CYAN}updateShippingItem${OFF};Update a shipping item
-  ${CYAN}updateShippingTemplate${OFF};Update a shipping template
+  ${CYAN}getShippingTemplate${OFF};Get a single shipping template (AUTH) (AUTH)
+  ${CYAN}getShippingTemplates${OFF};List and search shipping templates (AUTH) (AUTH)
+  ${CYAN}updateShippingItem${OFF};Update a shipping item (AUTH) (AUTH)
+  ${CYAN}updateShippingTemplate${OFF};Update a shipping template (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[storeShoppingCarts]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}addCustomDiscount${OFF};Adds a custom discount to the cart
-  ${CYAN}addDiscountToCart${OFF};Adds a discount coupon to the cart
-  ${CYAN}addItemToCart${OFF};Add an item to the cart
+  ${CYAN}addCustomDiscount${OFF};Adds a custom discount to the cart (AUTH) (AUTH)
+  ${CYAN}addDiscountToCart${OFF};Adds a discount coupon to the cart (AUTH) (AUTH)
+  ${CYAN}addItemToCart${OFF};Add an item to the cart (AUTH) (AUTH)
   ${CYAN}createCart${OFF};Create a cart
-  ${CYAN}getCart${OFF};Returns the cart with the given GUID
-  ${CYAN}getCarts${OFF};Get a list of carts
-  ${CYAN}getShippable${OFF};Returns whether a cart requires shipping
-  ${CYAN}getShippingCountries${OFF};Get the list of available shipping countries per vendor
-  ${CYAN}removeDiscountFromCart${OFF};Removes a discount coupon from the cart
-  ${CYAN}setCartCurrency${OFF};Sets the currency to use for the cart
-  ${CYAN}setCartOwner${OFF};Sets the owner of a cart if none is set already
-  ${CYAN}updateItemInCart${OFF};Changes the quantity of an item already in the cart
-  ${CYAN}updateShippingAddress${OFF};Modifies or sets the order shipping address
+  ${CYAN}getCart${OFF};Returns the cart with the given GUID (AUTH) (AUTH)
+  ${CYAN}getCarts${OFF};Get a list of carts (AUTH) (AUTH)
+  ${CYAN}getShippable${OFF};Returns whether a cart requires shipping (AUTH) (AUTH)
+  ${CYAN}getShippingCountries${OFF};Get the list of available shipping countries per vendor (AUTH) (AUTH)
+  ${CYAN}removeDiscountFromCart${OFF};Removes a discount coupon from the cart (AUTH) (AUTH)
+  ${CYAN}setCartCurrency${OFF};Sets the currency to use for the cart (AUTH) (AUTH)
+  ${CYAN}setCartOwner${OFF};Sets the owner of a cart if none is set already (AUTH) (AUTH)
+  ${CYAN}updateItemInCart${OFF};Changes the quantity of an item already in the cart (AUTH) (AUTH)
+  ${CYAN}updateShippingAddress${OFF};Modifies or sets the order shipping address (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[storeSubscriptions]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createSubscription${OFF};Creates a subscription item and associated plans
-  ${CYAN}createSubscriptionTemplate${OFF};Create a subscription template
-  ${CYAN}deleteSubscription${OFF};Delete a subscription plan
-  ${CYAN}deleteSubscriptionTemplate${OFF};Delete a subscription template
+  ${CYAN}createSubscription${OFF};Creates a subscription item and associated plans (AUTH) (AUTH)
+  ${CYAN}createSubscriptionTemplate${OFF};Create a subscription template (AUTH) (AUTH)
+  ${CYAN}deleteSubscription${OFF};Delete a subscription plan (AUTH) (AUTH)
+  ${CYAN}deleteSubscriptionTemplate${OFF};Delete a subscription template (AUTH) (AUTH)
   ${CYAN}getSubscription${OFF};Retrieve a single subscription item and associated plans
-  ${CYAN}getSubscriptionTemplate${OFF};Get a single subscription template
-  ${CYAN}getSubscriptionTemplates${OFF};List and search subscription templates
+  ${CYAN}getSubscriptionTemplate${OFF};Get a single subscription template (AUTH) (AUTH)
+  ${CYAN}getSubscriptionTemplates${OFF};List and search subscription templates (AUTH) (AUTH)
   ${CYAN}getSubscriptions${OFF};List available subscription items and associated plans
-  ${CYAN}processSubscriptions${OFF};Processes subscriptions and charge dues
-  ${CYAN}updateSubscription${OFF};Updates a subscription item and associated plans
-  ${CYAN}updateSubscriptionTemplate${OFF};Update a subscription template
+  ${CYAN}processSubscriptions${OFF};Processes subscriptions and charge dues (AUTH) (AUTH)
+  ${CYAN}updateSubscription${OFF};Updates a subscription item and associated plans (AUTH) (AUTH)
+  ${CYAN}updateSubscriptionTemplate${OFF};Update a subscription template (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[storeVendors]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createVendor${OFF};Create a vendor
-  ${CYAN}createVendorTemplate${OFF};Create a vendor template
-  ${CYAN}deleteVendor${OFF};Delete a vendor
-  ${CYAN}deleteVendorTemplate${OFF};Delete a vendor template
+  ${CYAN}createVendor${OFF};Create a vendor (AUTH) (AUTH)
+  ${CYAN}createVendorTemplate${OFF};Create a vendor template (AUTH) (AUTH)
+  ${CYAN}deleteVendor${OFF};Delete a vendor (AUTH) (AUTH)
+  ${CYAN}deleteVendorTemplate${OFF};Delete a vendor template (AUTH) (AUTH)
   ${CYAN}getVendor${OFF};Get a single vendor
-  ${CYAN}getVendorTemplate${OFF};Get a single vendor template
-  ${CYAN}getVendorTemplates${OFF};List and search vendor templates
+  ${CYAN}getVendorTemplate${OFF};Get a single vendor template (AUTH) (AUTH)
+  ${CYAN}getVendorTemplates${OFF};List and search vendor templates (AUTH) (AUTH)
   ${CYAN}getVendors${OFF};List and search vendors
-  ${CYAN}updateVendor${OFF};Update a vendor
-  ${CYAN}updateVendorTemplate${OFF};Update a vendor template
+  ${CYAN}updateVendor${OFF};Update a vendor (AUTH) (AUTH)
+  ${CYAN}updateVendorTemplate${OFF};Update a vendor template (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[taxes]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createCountryTax${OFF};Create a country tax
-  ${CYAN}createStateTax${OFF};Create a state tax
-  ${CYAN}deleteCountryTax${OFF};Delete an existing tax
-  ${CYAN}deleteStateTax${OFF};Delete an existing state tax
+  ${CYAN}createCountryTax${OFF};Create a country tax (AUTH) (AUTH)
+  ${CYAN}createStateTax${OFF};Create a state tax (AUTH) (AUTH)
+  ${CYAN}deleteCountryTax${OFF};Delete an existing tax (AUTH) (AUTH)
+  ${CYAN}deleteStateTax${OFF};Delete an existing state tax (AUTH) (AUTH)
   ${CYAN}getCountryTax${OFF};Get a single tax
   ${CYAN}getCountryTaxes${OFF};List and search taxes
   ${CYAN}getStateTax${OFF};Get a single state tax
   ${CYAN}getStateTaxesForCountries${OFF};List and search taxes across all countries
   ${CYAN}getStateTaxesForCountry${OFF};List and search taxes within a country
-  ${CYAN}updateCountryTax${OFF};Create or update a tax
-  ${CYAN}updateStateTax${OFF};Create or update a state tax
+  ${CYAN}updateCountryTax${OFF};Create or update a tax (AUTH) (AUTH)
+  ${CYAN}updateStateTax${OFF};Create or update a state tax (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -4967,114 +4967,114 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[users]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}addUserTag${OFF};Add a tag to a user
-  ${CYAN}createUserTemplate${OFF};Create a user template
-  ${CYAN}deleteUserTemplate${OFF};Delete a user template
+  ${CYAN}addUserTag${OFF};Add a tag to a user (AUTH) (AUTH)
+  ${CYAN}createUserTemplate${OFF};Create a user template (AUTH) (AUTH)
+  ${CYAN}deleteUserTemplate${OFF};Delete a user template (AUTH) (AUTH)
   ${CYAN}getUser${OFF};Get a single user
-  ${CYAN}getUserTags${OFF};List tags for a user
-  ${CYAN}getUserTemplate${OFF};Get a single user template
-  ${CYAN}getUserTemplates${OFF};List and search user templates
+  ${CYAN}getUserTags${OFF};List tags for a user (AUTH) (AUTH)
+  ${CYAN}getUserTemplate${OFF};Get a single user template (AUTH) (AUTH)
+  ${CYAN}getUserTemplates${OFF};List and search user templates (AUTH) (AUTH)
   ${CYAN}getUsers${OFF};List and search users
   ${CYAN}passwordReset${OFF};Choose a new password after a reset
   ${CYAN}registerUser${OFF};Register a new user
-  ${CYAN}removeUserTag${OFF};Remove a tag from a user
-  ${CYAN}setPassword${OFF};Set a user's password
+  ${CYAN}removeUserTag${OFF};Remove a tag from a user (AUTH) (AUTH)
+  ${CYAN}setPassword${OFF};Set a user's password (AUTH) (AUTH)
   ${CYAN}startPasswordReset${OFF};Reset a user's password
   ${CYAN}submitPasswordReset${OFF};Reset a user's password without user id
-  ${CYAN}updateUser${OFF};Update a user
-  ${CYAN}updateUserTemplate${OFF};Update a user template
+  ${CYAN}updateUser${OFF};Update a user (AUTH) (AUTH)
+  ${CYAN}updateUserTemplate${OFF};Update a user template (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[usersAddresses]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createAddress${OFF};Create a new address
-  ${CYAN}deleteAddress${OFF};Delete an address
-  ${CYAN}getAddress${OFF};Get a single address
-  ${CYAN}getAddresses${OFF};List and search addresses
-  ${CYAN}updateAddress${OFF};Update an address
+  ${CYAN}createAddress${OFF};Create a new address (AUTH) (AUTH)
+  ${CYAN}deleteAddress${OFF};Delete an address (AUTH) (AUTH)
+  ${CYAN}getAddress${OFF};Get a single address (AUTH) (AUTH)
+  ${CYAN}getAddresses${OFF};List and search addresses (AUTH) (AUTH)
+  ${CYAN}updateAddress${OFF};Update an address (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[usersFriendships]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}addFriend${OFF};Add a friend
-  ${CYAN}getFriends${OFF};Get friends list
-  ${CYAN}getInviteToken${OFF};Returns the invite token
-  ${CYAN}getInvites${OFF};Get pending invites
-  ${CYAN}redeemFriendshipToken${OFF};Redeem friendship token
-  ${CYAN}removeOrDeclineFriend${OFF};Remove or decline a friend
+  ${CYAN}addFriend${OFF};Add a friend (AUTH) (AUTH)
+  ${CYAN}getFriends${OFF};Get friends list (AUTH) (AUTH)
+  ${CYAN}getInviteToken${OFF};Returns the invite token (AUTH) (AUTH)
+  ${CYAN}getInvites${OFF};Get pending invites (AUTH) (AUTH)
+  ${CYAN}redeemFriendshipToken${OFF};Redeem friendship token (AUTH) (AUTH)
+  ${CYAN}removeOrDeclineFriend${OFF};Remove or decline a friend (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[usersGroups]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}addMemberToGroup${OFF};Adds a new member to the group
-  ${CYAN}addMembersToGroup${OFF};Adds multiple members to the group
-  ${CYAN}createGroup${OFF};Create a group
-  ${CYAN}createGroupTemplate${OFF};Create a group template
-  ${CYAN}deleteGroup${OFF};Removes a group from the system IF no resources are attached to it
-  ${CYAN}deleteGroupTemplate${OFF};Delete a group template
+  ${CYAN}addMemberToGroup${OFF};Adds a new member to the group (AUTH) (AUTH)
+  ${CYAN}addMembersToGroup${OFF};Adds multiple members to the group (AUTH) (AUTH)
+  ${CYAN}createGroup${OFF};Create a group (AUTH) (AUTH)
+  ${CYAN}createGroupTemplate${OFF};Create a group template (AUTH) (AUTH)
+  ${CYAN}deleteGroup${OFF};Removes a group from the system IF no resources are attached to it (AUTH) (AUTH)
+  ${CYAN}deleteGroupTemplate${OFF};Delete a group template (AUTH) (AUTH)
   ${CYAN}getGroup${OFF};Loads a specific group's details
   ${CYAN}getGroupMember${OFF};Get a user from a group
   ${CYAN}getGroupMembers${OFF};Lists members of the group
-  ${CYAN}getGroupTemplate${OFF};Get a single group template
-  ${CYAN}getGroupTemplates${OFF};List and search group templates
+  ${CYAN}getGroupTemplate${OFF};Get a single group template (AUTH) (AUTH)
+  ${CYAN}getGroupTemplates${OFF};List and search group templates (AUTH) (AUTH)
   ${CYAN}getGroupsForUser${OFF};List groups a user is in
-  ${CYAN}removeGroupMember${OFF};Removes a user from a group
-  ${CYAN}updateGroup${OFF};Update a group
-  ${CYAN}updateGroupMemberStatus${OFF};Change a user's status
-  ${CYAN}updateGroupTemplate${OFF};Update a group template
+  ${CYAN}removeGroupMember${OFF};Removes a user from a group (AUTH) (AUTH)
+  ${CYAN}updateGroup${OFF};Update a group (AUTH) (AUTH)
+  ${CYAN}updateGroupMemberStatus${OFF};Change a user's status (AUTH) (AUTH)
+  ${CYAN}updateGroupTemplate${OFF};Update a group template (AUTH) (AUTH)
   ${CYAN}updateGroups${OFF};List and search groups
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[usersInventory]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}addItemToUserInventory${OFF};Adds an item to the user inventory
-  ${CYAN}checkUserEntitlementItem${OFF};Check for access to an item without consuming
-  ${CYAN}createEntitlementItem${OFF};Create an entitlement item
-  ${CYAN}createEntitlementTemplate${OFF};Create an entitlement template
-  ${CYAN}deleteEntitlementItem${OFF};Delete an entitlement item
-  ${CYAN}deleteEntitlementTemplate${OFF};Delete an entitlement template
+  ${CYAN}addItemToUserInventory${OFF};Adds an item to the user inventory (AUTH) (AUTH)
+  ${CYAN}checkUserEntitlementItem${OFF};Check for access to an item without consuming (AUTH) (AUTH)
+  ${CYAN}createEntitlementItem${OFF};Create an entitlement item (AUTH) (AUTH)
+  ${CYAN}createEntitlementTemplate${OFF};Create an entitlement template (AUTH) (AUTH)
+  ${CYAN}deleteEntitlementItem${OFF};Delete an entitlement item (AUTH) (AUTH)
+  ${CYAN}deleteEntitlementTemplate${OFF};Delete an entitlement template (AUTH) (AUTH)
   ${CYAN}getEntitlementItem${OFF};Get a single entitlement item
   ${CYAN}getEntitlementItems${OFF};List and search entitlement items
-  ${CYAN}getEntitlementTemplate${OFF};Get a single entitlement template
-  ${CYAN}getEntitlementTemplates${OFF};List and search entitlement templates
-  ${CYAN}getUserInventories${OFF};List the user inventory entries for a given user
-  ${CYAN}getUserInventory${OFF};Get an inventory entry
-  ${CYAN}getUserInventoryLog${OFF};List the log entries for this inventory entry
-  ${CYAN}getUsersInventory${OFF};List the user inventory entries for all users
-  ${CYAN}grantUserEntitlement${OFF};Grant an entitlement
-  ${CYAN}updateEntitlementItem${OFF};Update an entitlement item
-  ${CYAN}updateEntitlementTemplate${OFF};Update an entitlement template
-  ${CYAN}updateUserInventoryBehaviorData${OFF};Set the behavior data for an inventory entry
-  ${CYAN}updateUserInventoryExpires${OFF};Set the expiration date
-  ${CYAN}updateUserInventoryStatus${OFF};Set the status for an inventory entry
-  ${CYAN}useUserEntitlementItem${OFF};Use an item
+  ${CYAN}getEntitlementTemplate${OFF};Get a single entitlement template (AUTH) (AUTH)
+  ${CYAN}getEntitlementTemplates${OFF};List and search entitlement templates (AUTH) (AUTH)
+  ${CYAN}getUserInventories${OFF};List the user inventory entries for a given user (AUTH) (AUTH)
+  ${CYAN}getUserInventory${OFF};Get an inventory entry (AUTH) (AUTH)
+  ${CYAN}getUserInventoryLog${OFF};List the log entries for this inventory entry (AUTH) (AUTH)
+  ${CYAN}getUsersInventory${OFF};List the user inventory entries for all users (AUTH) (AUTH)
+  ${CYAN}grantUserEntitlement${OFF};Grant an entitlement (AUTH) (AUTH)
+  ${CYAN}updateEntitlementItem${OFF};Update an entitlement item (AUTH) (AUTH)
+  ${CYAN}updateEntitlementTemplate${OFF};Update an entitlement template (AUTH) (AUTH)
+  ${CYAN}updateUserInventoryBehaviorData${OFF};Set the behavior data for an inventory entry (AUTH) (AUTH)
+  ${CYAN}updateUserInventoryExpires${OFF};Set the expiration date (AUTH) (AUTH)
+  ${CYAN}updateUserInventoryStatus${OFF};Set the status for an inventory entry (AUTH) (AUTH)
+  ${CYAN}useUserEntitlementItem${OFF};Use an item (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[usersRelationships]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}createUserRelationship${OFF};Create a user relationship
-  ${CYAN}deleteUserRelationship${OFF};Delete a user relationship
-  ${CYAN}getUserRelationship${OFF};Get a user relationship
-  ${CYAN}getUserRelationships${OFF};Get a list of user relationships
-  ${CYAN}updateUserRelationship${OFF};Update a user relationship
+  ${CYAN}createUserRelationship${OFF};Create a user relationship (AUTH) (AUTH)
+  ${CYAN}deleteUserRelationship${OFF};Delete a user relationship (AUTH) (AUTH)
+  ${CYAN}getUserRelationship${OFF};Get a user relationship (AUTH) (AUTH)
+  ${CYAN}getUserRelationships${OFF};Get a list of user relationships (AUTH) (AUTH)
+  ${CYAN}updateUserRelationship${OFF};Update a user relationship (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[usersSubscriptions]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}getUserSubscriptionDetails${OFF};Get details about a user's subscription
-  ${CYAN}getUsersSubscriptionDetails${OFF};Get details about a user's subscriptions
-  ${CYAN}reactivateUserSubscription${OFF};Reactivate a subscription and charge fee
-  ${CYAN}setSubscriptionBillDate${OFF};Set a new date to bill a subscription on
-  ${CYAN}setSubscriptionPaymentMethod${OFF};Set the payment method to use for a subscription
-  ${CYAN}setSubscriptionStatus${OFF};Set the status of a subscription
-  ${CYAN}setUserSubscriptionPlan${OFF};Set a new subscription plan for a user
-  ${CYAN}setUserSubscriptionPrice${OFF};Set a new subscription price for a user
+  ${CYAN}getUserSubscriptionDetails${OFF};Get details about a user's subscription (AUTH) (AUTH)
+  ${CYAN}getUsersSubscriptionDetails${OFF};Get details about a user's subscriptions (AUTH) (AUTH)
+  ${CYAN}reactivateUserSubscription${OFF};Reactivate a subscription and charge fee (AUTH) (AUTH)
+  ${CYAN}setSubscriptionBillDate${OFF};Set a new date to bill a subscription on (AUTH) (AUTH)
+  ${CYAN}setSubscriptionPaymentMethod${OFF};Set the payment method to use for a subscription (AUTH) (AUTH)
+  ${CYAN}setSubscriptionStatus${OFF};Set the status of a subscription (AUTH) (AUTH)
+  ${CYAN}setUserSubscriptionPlan${OFF};Set a new subscription plan for a user (AUTH) (AUTH)
+  ${CYAN}setUserSubscriptionPrice${OFF};Set a new subscription price for a user (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -5093,17 +5093,17 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[utilMaintenance]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}deleteMaintenance${OFF};Delete maintenance info
+  ${CYAN}deleteMaintenance${OFF};Delete maintenance info (AUTH) (AUTH)
   ${CYAN}getMaintenance${OFF};Get current maintenance info
-  ${CYAN}setMaintenance${OFF};Set current maintenance info
-  ${CYAN}updateMaintenance${OFF};Update current maintenance info
+  ${CYAN}setMaintenance${OFF};Set current maintenance info (AUTH) (AUTH)
+  ${CYAN}updateMaintenance${OFF};Update current maintenance info (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[utilSecurity]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}getUserLocationLog${OFF};Returns the authentication log for a user
-  ${CYAN}getUserTokenDetails${OFF};Returns the authentication token details. Use /users endpoint for detailed user's info
+  ${CYAN}getUserLocationLog${OFF};Returns the authentication log for a user (AUTH) (AUTH)
+  ${CYAN}getUserTokenDetails${OFF};Returns the authentication token details. Use /users endpoint for detailed user's info (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -5187,7 +5187,7 @@ print_getOAuthToken_help() {
 ##############################################################################
 print_createActivity_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createActivity - Create an activity${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createActivity - Create an activity${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The activity resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5212,7 +5212,7 @@ print_createActivity_help() {
 ##############################################################################
 print_createActivityOccurrence_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createActivityOccurrence - Create a new activity occurrence. Ex: start a game${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createActivityOccurrence - Create a new activity occurrence. Ex: start a game${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Has to enforce extra rules if not used as an admin" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -5241,7 +5241,7 @@ print_createActivityOccurrence_help() {
 ##############################################################################
 print_createActivityTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createActivityTemplate - Create a activity template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createActivityTemplate - Create a activity template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Activity Templates define a type of activity and the properties they have" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -5268,7 +5268,7 @@ print_createActivityTemplate_help() {
 ##############################################################################
 print_deleteActivity_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteActivity - Delete an activity${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteActivity - Delete an activity${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the activity ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5292,7 +5292,7 @@ print_deleteActivity_help() {
 ##############################################################################
 print_deleteActivityTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteActivityTemplate - Delete a activity template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteActivityTemplate - Delete a activity template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -5379,7 +5379,7 @@ print_getActivity_help() {
 ##############################################################################
 print_getActivityTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getActivityTemplate - Get a single activity template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getActivityTemplate - Get a single activity template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5403,7 +5403,7 @@ print_getActivityTemplate_help() {
 ##############################################################################
 print_getActivityTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getActivityTemplates - List and search activity templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getActivityTemplates - List and search activity templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -5432,7 +5432,7 @@ print_getActivityTemplates_help() {
 ##############################################################################
 print_setActivityOccurrenceResults_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setActivityOccurrenceResults - Sets the status of an activity occurrence to FINISHED and logs metrics${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setActivityOccurrenceResults - Sets the status of an activity occurrence to FINISHED and logs metrics${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}activity_occurrence_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the activity occurrence ${YELLOW}Specify as: activity_occurrence_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5458,7 +5458,7 @@ print_setActivityOccurrenceResults_help() {
 ##############################################################################
 print_updateActivity_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateActivity - Update an activity${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateActivity - Update an activity${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the activity ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5484,7 +5484,7 @@ print_updateActivity_help() {
 ##############################################################################
 print_updateActivityOccurrence_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateActivityOccurrence - Updated the status of an activity occurrence${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateActivityOccurrence - Updated the status of an activity occurrence${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If setting to 'FINISHED' you must POST to /results instead to record the metrics and get synchronous reward results" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -5512,7 +5512,7 @@ print_updateActivityOccurrence_help() {
 ##############################################################################
 print_updateActivityTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateActivityTemplate - Update an activity template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateActivityTemplate - Update an activity template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5538,7 +5538,7 @@ print_updateActivityTemplate_help() {
 ##############################################################################
 print_getDownloadURL_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getDownloadURL - Get a temporary signed S3 URL for download${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getDownloadURL - Get a temporary signed S3 URL for download${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "To give access to files in your own S3 account, you will need to grant KnetikcCloud access to the file by adjusting your bucket policy accordingly. See S3 documentation for details." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -5569,7 +5569,7 @@ print_getDownloadURL_help() {
 ##############################################################################
 print_getSignedS3URL_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getSignedS3URL - Get a signed S3 URL for upload${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSignedS3URL - Get a signed S3 URL for upload${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Requires the file name and file content type (i.e., 'video/mpeg'). Make a PUT to the resulting url to upload the file and use the cdn_url to retrieve it after." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -5598,7 +5598,7 @@ print_getSignedS3URL_help() {
 ##############################################################################
 print_createClient_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createClient - Create a new client${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createClient - Create a new client${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The client resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5623,7 +5623,7 @@ print_createClient_help() {
 ##############################################################################
 print_deleteClient_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteClient - Delete a client${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteClient - Delete a client${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}client_key${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The key of the client ${YELLOW}Specify as: client_key=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5647,7 +5647,7 @@ print_deleteClient_help() {
 ##############################################################################
 print_getClient_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getClient - Get a single client${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getClient - Get a single client${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}client_key${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The key of the client ${YELLOW}Specify as: client_key=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5671,7 +5671,7 @@ print_getClient_help() {
 ##############################################################################
 print_getClientGrantTypes_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getClientGrantTypes - List available client grant types${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getClientGrantTypes - List available client grant types${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -5693,7 +5693,7 @@ print_getClientGrantTypes_help() {
 ##############################################################################
 print_getClients_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getClients - List and search clients${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getClients - List and search clients${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -5722,7 +5722,7 @@ print_getClients_help() {
 ##############################################################################
 print_setClientGrantTypes_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setClientGrantTypes - Set grant types for a client${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setClientGrantTypes - Set grant types for a client${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}client_key${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The key of the client ${YELLOW}Specify as: client_key=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5748,7 +5748,7 @@ print_setClientGrantTypes_help() {
 ##############################################################################
 print_setClientRedirectUris_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setClientRedirectUris - Set redirect uris for a client${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setClientRedirectUris - Set redirect uris for a client${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}client_key${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The key of the client ${YELLOW}Specify as: client_key=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5774,7 +5774,7 @@ print_setClientRedirectUris_help() {
 ##############################################################################
 print_updateClient_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateClient - Update a client${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateClient - Update a client${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}client_key${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The key of the client ${YELLOW}Specify as: client_key=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5800,7 +5800,7 @@ print_updateClient_help() {
 ##############################################################################
 print_createPermission_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createPermission - Create a new permission${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createPermission - Create a new permission${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The permission resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5825,7 +5825,7 @@ print_createPermission_help() {
 ##############################################################################
 print_deletePermission_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deletePermission - Delete a permission${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deletePermission - Delete a permission${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}permission${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The permission value ${YELLOW}Specify as: permission=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5851,7 +5851,7 @@ print_deletePermission_help() {
 ##############################################################################
 print_getPermission_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getPermission - Get a single permission${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getPermission - Get a single permission${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}permission${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The permission value ${YELLOW}Specify as: permission=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5875,7 +5875,7 @@ print_getPermission_help() {
 ##############################################################################
 print_getPermissions_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getPermissions - List and search permissions${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getPermissions - List and search permissions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -5904,7 +5904,7 @@ print_getPermissions_help() {
 ##############################################################################
 print_updatePermission_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updatePermission - Update a permission${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updatePermission - Update a permission${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}permission${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The permission value ${YELLOW}Specify as: permission=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5930,7 +5930,7 @@ print_updatePermission_help() {
 ##############################################################################
 print_createRole_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createRole - Create a new role${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createRole - Create a new role${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The role resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5955,7 +5955,7 @@ print_createRole_help() {
 ##############################################################################
 print_deleteRole_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteRole - Delete a role${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteRole - Delete a role${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}role${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The role value ${YELLOW}Specify as: role=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5981,7 +5981,7 @@ print_deleteRole_help() {
 ##############################################################################
 print_getClientRoles_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getClientRoles - Get roles for a client${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getClientRoles - Get roles for a client${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}client_key${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The client key ${YELLOW}Specify as: client_key=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6005,7 +6005,7 @@ print_getClientRoles_help() {
 ##############################################################################
 print_getRole_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getRole - Get a single role${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getRole - Get a single role${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}role${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The role value ${YELLOW}Specify as: role=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6029,7 +6029,7 @@ print_getRole_help() {
 ##############################################################################
 print_getRoles_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getRoles - List and search roles${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getRoles - List and search roles${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_name${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for roles that have a name starting with specified string${YELLOW} Specify as: filter_name=value${OFF}" \
@@ -6062,7 +6062,7 @@ print_getRoles_help() {
 ##############################################################################
 print_getUserRoles_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserRoles - Get roles for a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserRoles - Get roles for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The user's id ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6086,7 +6086,7 @@ print_getUserRoles_help() {
 ##############################################################################
 print_setClientRoles_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setClientRoles - Set roles for a client${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setClientRoles - Set roles for a client${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}client_key${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The client key ${YELLOW}Specify as: client_key=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6112,7 +6112,7 @@ print_setClientRoles_help() {
 ##############################################################################
 print_setPermissionsForRole_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setPermissionsForRole - Set permissions for a role${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setPermissionsForRole - Set permissions for a role${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}role${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The role value ${YELLOW}Specify as: role=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6138,7 +6138,7 @@ print_setPermissionsForRole_help() {
 ##############################################################################
 print_setUserRoles_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setUserRoles - Set roles for a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setUserRoles - Set roles for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The user's id ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6164,7 +6164,7 @@ print_setUserRoles_help() {
 ##############################################################################
 print_updateRole_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateRole - Update a role${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateRole - Update a role${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}role${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The role value ${YELLOW}Specify as: role=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6190,7 +6190,7 @@ print_updateRole_help() {
 ##############################################################################
 print_deleteTokens_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteTokens - Delete tokens by username, client id, or both${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteTokens - Delete tokens by username, client id, or both${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}username${OFF} ${BLUE}[String]${OFF}${OFF} - The username of the user${YELLOW} Specify as: username=value${OFF}" \
@@ -6217,7 +6217,7 @@ print_deleteTokens_help() {
 ##############################################################################
 print_getToken_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getToken - Get a single token by username and client id${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getToken - Get a single token by username and client id${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}username${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The username of the user ${YELLOW}Specify as: username=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6242,7 +6242,7 @@ print_getToken_help() {
 ##############################################################################
 print_getTokens_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getTokens - List usernames and client ids${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getTokens - List usernames and client ids${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Token value not shown" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6277,7 +6277,7 @@ print_getTokens_help() {
 ##############################################################################
 print_getBREActions_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBREActions - Get a list of available actions${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBREActions - Get a list of available actions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_category${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for actions that are within a specific category${YELLOW} Specify as: filter_category=value${OFF}" \
@@ -6308,7 +6308,7 @@ print_getBREActions_help() {
 ##############################################################################
 print_createBRECategoryTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createBRECategoryTemplate - Create a BRE category template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createBRECategoryTemplate - Create a BRE category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Templates define a type of BRE category and the properties they have" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6335,7 +6335,7 @@ print_createBRECategoryTemplate_help() {
 ##############################################################################
 print_deleteBRECategoryTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteBRECategoryTemplate - Delete a BRE category template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteBRECategoryTemplate - Delete a BRE category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6363,7 +6363,7 @@ print_deleteBRECategoryTemplate_help() {
 ##############################################################################
 print_getBRECategories_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBRECategories - List categories${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBRECategories - List categories${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -6390,7 +6390,7 @@ print_getBRECategories_help() {
 ##############################################################################
 print_getBRECategory_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBRECategory - Get a single category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBRECategory - Get a single category${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The category name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6414,7 +6414,7 @@ print_getBRECategory_help() {
 ##############################################################################
 print_getBRECategoryTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBRECategoryTemplate - Get a single BRE category template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBRECategoryTemplate - Get a single BRE category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6438,7 +6438,7 @@ print_getBRECategoryTemplate_help() {
 ##############################################################################
 print_getBRECategoryTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBRECategoryTemplates - List and search BRE category templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBRECategoryTemplates - List and search BRE category templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -6467,7 +6467,7 @@ print_getBRECategoryTemplates_help() {
 ##############################################################################
 print_updateBRECategory_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateBRECategory - Update a category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateBRECategory - Update a category${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The category name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6493,7 +6493,7 @@ print_updateBRECategory_help() {
 ##############################################################################
 print_updateBRECategoryTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateBRECategoryTemplate - Update a BRE category template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateBRECategoryTemplate - Update a BRE category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6519,7 +6519,7 @@ print_updateBRECategoryTemplate_help() {
 ##############################################################################
 print_sendBREEvent_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}sendBREEvent - Fire a new event, based on an existing trigger${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}sendBREEvent - Fire a new event, based on an existing trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Parameters within the event must match names and types from the trigger. Actual rule execution is asynchornous.  Returns request id, which will be used as the event id" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6546,7 +6546,7 @@ print_sendBREEvent_help() {
 ##############################################################################
 print_getBREExpressions_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBREExpressions - Get a list of 'lookup' type expressions${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBREExpressions - Get a list of 'lookup' type expressions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "These are expression types that take a second expression as input and produce a value. These can be used in addition to the standard types, like parameter, global and constant (see BRE documentation for details)." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6570,7 +6570,7 @@ print_getBREExpressions_help() {
 ##############################################################################
 print_createBREGlobal_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createBREGlobal - Create a global definition${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createBREGlobal - Create a global definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Once created you can then use in a custom rule. Note that global definitions cannot be modified or deleted if in use." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6597,7 +6597,7 @@ print_createBREGlobal_help() {
 ##############################################################################
 print_deleteBREGlobal_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteBREGlobal - Delete a global${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteBREGlobal - Delete a global${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "May fail if there are existing rules against it. Cannot delete core globals" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6623,7 +6623,7 @@ print_deleteBREGlobal_help() {
 ##############################################################################
 print_getBREGlobal_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBREGlobal - Get a single global definition${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBREGlobal - Get a single global definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the global definition ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6647,7 +6647,7 @@ print_getBREGlobal_help() {
 ##############################################################################
 print_getBREGlobals_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBREGlobals - List global definitions${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBREGlobals - List global definitions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_system${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Filter for globals that are system globals when true, or not when false. Leave off for both mixed${YELLOW} Specify as: filter_system=value${OFF}" \
@@ -6676,7 +6676,7 @@ print_getBREGlobals_help() {
 ##############################################################################
 print_updateBREGlobal_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateBREGlobal - Update a global definition${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateBREGlobal - Update a global definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "May fail if new parameters mismatch requirements of existing rules. Cannot update core globals" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6704,7 +6704,7 @@ print_updateBREGlobal_help() {
 ##############################################################################
 print_createBRERule_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createBRERule - Create a rule${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createBRERule - Create a rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Rules define which actions to run when a given event verifies the specified conditions. Conditions and actions are defined by binding event or context parameters to arguments. Conditions also known as Predicates are logical expressions that result in a boolean. Operators are used to describe rules between arguments to form that condition. There are 3 families of operators: Boolean, Math and String. Math and String operators are functions that transform arguments into numbers or strings...<h1>Boolean Operators</h1><br /><br />1 arg:<br />======<br /><br /><ul>	<li>IS_NULL</li>	<li>IS_NOT_NULL</li>	<li>STRING_IS_EMPTY</li>	<li>NOT </li>	<li>MAP_IS_EMPTY</li></ul><br />2 args:<br />=======<br /><br /><ul>	<li>EQ</li>	<li>NE (Not Equals)</li>	<li>GT (Greater Than)</li>	<li>GOE (Greater Or Equals)</li>	<li>LT (Lesser Than)</li>	<li>LOE (Lesser Or Equals)</li>	<li>OR</li>	<li>AND</li>	<li>XNOR</li>	<li>XOR</li>	<li>CONTAINS_KEY (for maps only)</li>	<li>CONTAINS_VALUE (for maps only)</li>	<li>MATCHES (regex)</li>	<li>MATCHES_IC (regex ignore case)</li>	<li>STARTS_WITH</li>	<li>STARTS_WITH_IC</li>	<li>EQ_IGNORE_CASE</li>	<li>ENDS_WITH</li>	<li>ENDS_WITH_IC</li>	<li>STRING_CONTAINS</li>	<li>STRING_CONTAINS_IC</li>	<li>LIKE (SQL like)</li></ul><br />3 args exceptions:<br />=================<br /><br /><ul>	<li>BETWEEN</li></ul><br />n args:<br />=======<br /><br /><ul>	<li>IN</li>	<li>NOT_INT</li></ul><h1>Math Operators</h1>1 arg:<br />=====<br /><br /><ul>	<li>NEGATE</li>	<li>MAP_SIZE</li>	<li>STRING_LENGTH</li> <li>CEIL</li> <li>ABS</li> <li>FLOOR</li> <li>ROUND</li> <li>RANDOM (no arg)</li> <li>RANDOM2 (seed arg)</li> <li>NUMCAST</li> <li>HOUR</li> <li>MINUTE</li> <li>SECOND</li> <li>MILLISECOND</li> <li>YEAR</li> <li>WEEK</li> <li>YEAR_MONTH</li> <li>YEAR_WEEK</li> <li>DAY_OF_WEEK</li> <li>DAY_OF_MONTH</li> <li>DAY_OF_YEAR</li> <li>WEEK</li> <li>WEEK</li> <li>WEEK</li></ul><br /><br />2 args:<br />======<br /><br /><ul> <li>ADD</li> <li>DIV</li> <li>MULT</li> <li>SUB</li> <li>POWER</li> <li>MOD</li> <li>LOCATE (index of (string, char))</li> <li>DIFF_YEARS</li> <li>DIFF_MONTHS</li> <li>DIFF_WEEKS</li> <li>DIFF_DAYS</li> <li>DIFF_HOURS</li> <li>DIFF_MINUTES</li> <li>DIFF_SECONDS</li></ul><br /><br />2 args:<br />======<br /><br /><ul>	<li>MIN</li>	<li>MAX</li></ul><h1>String Operators</h1>0 arg:<br />=====<br /><br /><ul>	<li>CURRENT_TIME</li></ul><br /><br />1 arg:<br />=====<br /><br /><ul>	<li>CURRENT_TIME</li>	<li>LOWER</li>	<li>UPPER</li>	<li>TRIM</li>	<li>STRING_CAST</li></ul><br /><br />2 args:<br />=====<br /><br /><ul>	<li>CHAR_AT</li>	<li>SUBSTR_1ARG (substr(string, start))</li>	<li>CONCAT</li>	<li>TRIM</li>	<li>STRING_CAST</li></ul><br /><br />3 args:<br />=====<br /><br /><ul>	<li>SUBSTR_2ARGS (substr(string, start, length))</li></ul>" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6731,7 +6731,7 @@ print_createBRERule_help() {
 ##############################################################################
 print_deleteBRERule_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteBRERule - Delete a rule${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteBRERule - Delete a rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "May fail if there are existing rules against it. Cannot delete core rules" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6757,7 +6757,7 @@ print_deleteBRERule_help() {
 ##############################################################################
 print_getBREExpressionAsString_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBREExpressionAsString - Returns a string representation of the provided expression${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBREExpressionAsString - Returns a string representation of the provided expression${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The expression" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6782,7 +6782,7 @@ print_getBREExpressionAsString_help() {
 ##############################################################################
 print_getBRERule_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBRERule - Get a single rule${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBRERule - Get a single rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the rule ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6806,7 +6806,7 @@ print_getBRERule_help() {
 ##############################################################################
 print_getBRERules_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBRERules - List rules${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBRERules - List rules${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_name${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for rules containing the given name${YELLOW} Specify as: filter_name=value${OFF}" \
@@ -6845,7 +6845,7 @@ print_getBRERules_help() {
 ##############################################################################
 print_setBRERule_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setBRERule - Enable or disable a rule${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setBRERule - Enable or disable a rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "This is helpful for turning off systems rules which cannot be deleted or modified otherwise" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6873,7 +6873,7 @@ print_setBRERule_help() {
 ##############################################################################
 print_updateBRERule_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateBRERule - Update a rule${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateBRERule - Update a rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Cannot update system rules" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6901,7 +6901,7 @@ print_updateBRERule_help() {
 ##############################################################################
 print_createBRETrigger_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createBRETrigger - Create a trigger${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createBRETrigger - Create a trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Customer added triggers will not be fired automatically or have rules associated with them by default. Custom rules must be added to get use from the trigger and it must then be fired from the outside. See the Bre Event services" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6928,7 +6928,7 @@ print_createBRETrigger_help() {
 ##############################################################################
 print_deleteBRETrigger_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteBRETrigger - Delete a trigger${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteBRETrigger - Delete a trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "May fail if there are existing rules against it. Cannot delete core triggers" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -6954,7 +6954,7 @@ print_deleteBRETrigger_help() {
 ##############################################################################
 print_getBRETrigger_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBRETrigger - Get a single trigger${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBRETrigger - Get a single trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}event_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The trigger event name ${YELLOW}Specify as: event_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6978,7 +6978,7 @@ print_getBRETrigger_help() {
 ##############################################################################
 print_getBRETriggers_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBRETriggers - List triggers${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBRETriggers - List triggers${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_system${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Filter for triggers that are system triggers when true, or not when false. Leave off for both mixed${YELLOW} Specify as: filter_system=value${OFF}" \
@@ -7015,7 +7015,7 @@ print_getBRETriggers_help() {
 ##############################################################################
 print_updateBRETrigger_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateBRETrigger - Update a trigger${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateBRETrigger - Update a trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "May fail if new parameters mismatch requirements of existing rules. Cannot update core triggers" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -7043,7 +7043,7 @@ print_updateBRETrigger_help() {
 ##############################################################################
 print_getBREVariableTypes_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBREVariableTypes - Get a list of variable types available${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBREVariableTypes - Get a list of variable types available${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Types include integer, string, user and invoice. These are used to qualify trigger parameters and action variables with strong typing." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -7067,7 +7067,7 @@ print_getBREVariableTypes_help() {
 ##############################################################################
 print_getBREVariableValues_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBREVariableValues - List valid values for a type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBREVariableValues - List valid values for a type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Used to lookup users to fill in a user constant for example. Only types marked as enumerable are suppoorted here." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -7099,7 +7099,7 @@ print_getBREVariableValues_help() {
 ##############################################################################
 print_addChallengeToCampaign_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addChallengeToCampaign - Add a challenge to a campaign${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addChallengeToCampaign - Add a challenge to a campaign${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the campaign ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7125,7 +7125,7 @@ print_addChallengeToCampaign_help() {
 ##############################################################################
 print_createCampaign_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createCampaign - Create a campaign${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createCampaign - Create a campaign${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The campaign resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7150,7 +7150,7 @@ print_createCampaign_help() {
 ##############################################################################
 print_createCampaignTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createCampaignTemplate - Create a campaign template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createCampaignTemplate - Create a campaign template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Campaign Templates define a type of campaign and the properties they have" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -7177,7 +7177,7 @@ print_createCampaignTemplate_help() {
 ##############################################################################
 print_deleteCampaign_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteCampaign - Delete a campaign${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteCampaign - Delete a campaign${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The campaign id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7201,7 +7201,7 @@ print_deleteCampaign_help() {
 ##############################################################################
 print_deleteCampaignTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteCampaignTemplate - Delete a campaign template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteCampaignTemplate - Delete a campaign template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -7287,7 +7287,7 @@ print_getCampaignChallenges_help() {
 ##############################################################################
 print_getCampaignTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getCampaignTemplate - Get a single campaign template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getCampaignTemplate - Get a single campaign template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7311,7 +7311,7 @@ print_getCampaignTemplate_help() {
 ##############################################################################
 print_getCampaignTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getCampaignTemplates - List and search campaign templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getCampaignTemplates - List and search campaign templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -7371,7 +7371,7 @@ print_getCampaigns_help() {
 ##############################################################################
 print_removeChallengeFromCampaign_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}removeChallengeFromCampaign - Remove a challenge from a campaign${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}removeChallengeFromCampaign - Remove a challenge from a campaign${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}campaign_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The campaign id ${YELLOW}Specify as: campaign_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7396,7 +7396,7 @@ print_removeChallengeFromCampaign_help() {
 ##############################################################################
 print_updateCampaign_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateCampaign - Update a campaign${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateCampaign - Update a campaign${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The campaign id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7422,7 +7422,7 @@ print_updateCampaign_help() {
 ##############################################################################
 print_updateCampaignTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateCampaignTemplate - Update an campaign template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateCampaignTemplate - Update an campaign template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7448,7 +7448,7 @@ print_updateCampaignTemplate_help() {
 ##############################################################################
 print_createChallenge_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createChallenge - Create a challenge${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createChallenge - Create a challenge${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Challenges do not run on their own.  They must be added to a campaign before events will spawn." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -7475,7 +7475,7 @@ print_createChallenge_help() {
 ##############################################################################
 print_createChallengeActivity_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createChallengeActivity - Create a challenge activity${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createChallengeActivity - Create a challenge activity${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}challenge_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The challenge id ${YELLOW}Specify as: challenge_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7503,7 +7503,7 @@ print_createChallengeActivity_help() {
 ##############################################################################
 print_createChallengeActivityTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createChallengeActivityTemplate - Create a challenge activity template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createChallengeActivityTemplate - Create a challenge activity template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Challenge Activity Templates define a type of challenge activity and the properties they have" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -7530,7 +7530,7 @@ print_createChallengeActivityTemplate_help() {
 ##############################################################################
 print_createChallengeTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createChallengeTemplate - Create a challenge template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createChallengeTemplate - Create a challenge template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Challenge Templates define a type of challenge and the properties they have" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -7557,7 +7557,7 @@ print_createChallengeTemplate_help() {
 ##############################################################################
 print_deleteChallenge_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteChallenge - Delete a challenge${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteChallenge - Delete a challenge${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The challenge id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7581,7 +7581,7 @@ print_deleteChallenge_help() {
 ##############################################################################
 print_deleteChallengeActivity_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteChallengeActivity - Delete a challenge activity${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteChallengeActivity - Delete a challenge activity${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "A challenge can have multiple instances of the same activity and thus the id used is of the specific entry within the challenge" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -7608,7 +7608,7 @@ print_deleteChallengeActivity_help() {
 ##############################################################################
 print_deleteChallengeActivityTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteChallengeActivityTemplate - Delete a challenge activity template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteChallengeActivityTemplate - Delete a challenge activity template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -7636,7 +7636,7 @@ print_deleteChallengeActivityTemplate_help() {
 ##############################################################################
 print_deleteChallengeEvent_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteChallengeEvent - Delete a challenge event${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteChallengeEvent - Delete a challenge event${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The challenge event id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7660,7 +7660,7 @@ print_deleteChallengeEvent_help() {
 ##############################################################################
 print_deleteChallengeTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteChallengeTemplate - Delete a challenge template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteChallengeTemplate - Delete a challenge template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -7769,7 +7769,7 @@ print_getChallengeActivity_help() {
 ##############################################################################
 print_getChallengeActivityTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getChallengeActivityTemplate - Get a single challenge activity template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getChallengeActivityTemplate - Get a single challenge activity template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7793,7 +7793,7 @@ print_getChallengeActivityTemplate_help() {
 ##############################################################################
 print_getChallengeActivityTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getChallengeActivityTemplates - List and search challenge activity templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getChallengeActivityTemplates - List and search challenge activity templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -7883,7 +7883,7 @@ print_getChallengeEvents_help() {
 ##############################################################################
 print_getChallengeTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getChallengeTemplate - Get a single challenge template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getChallengeTemplate - Get a single challenge template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7907,7 +7907,7 @@ print_getChallengeTemplate_help() {
 ##############################################################################
 print_getChallengeTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getChallengeTemplates - List and search challenge templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getChallengeTemplates - List and search challenge templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -7973,7 +7973,7 @@ print_getChallenges_help() {
 ##############################################################################
 print_updateChallenge_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateChallenge - Update a challenge${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateChallenge - Update a challenge${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If the challenge is a copy, changes will propagate to all the related challenges" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -8001,7 +8001,7 @@ print_updateChallenge_help() {
 ##############################################################################
 print_updateChallengeActivity_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateChallengeActivity - Update a challenge activity${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateChallengeActivity - Update a challenge activity${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "A challenge can have multiple instances of the same activity and thus the id used is of the specific entry within the challenge" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -8030,7 +8030,7 @@ print_updateChallengeActivity_help() {
 ##############################################################################
 print_updateChallengeActivityTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateChallengeActivityTemplate - Update an challenge activity template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateChallengeActivityTemplate - Update an challenge activity template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8056,7 +8056,7 @@ print_updateChallengeActivityTemplate_help() {
 ##############################################################################
 print_updateChallengeTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateChallengeTemplate - Update a challenge template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateChallengeTemplate - Update a challenge template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8082,7 +8082,7 @@ print_updateChallengeTemplate_help() {
 ##############################################################################
 print_createRewardSet_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createRewardSet - Create a reward set${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createRewardSet - Create a reward set${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The reward set resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8107,7 +8107,7 @@ print_createRewardSet_help() {
 ##############################################################################
 print_deleteRewardSet_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteRewardSet - Delete a reward set${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteRewardSet - Delete a reward set${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The reward id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8184,7 +8184,7 @@ print_getRewardSets_help() {
 ##############################################################################
 print_updateRewardSet_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateRewardSet - Update a reward set${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateRewardSet - Update a reward set${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The reward id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8210,7 +8210,7 @@ print_updateRewardSet_help() {
 ##############################################################################
 print_createCategory_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createCategory - Create a new category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createCategory - Create a new category${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The category to create" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8235,7 +8235,7 @@ print_createCategory_help() {
 ##############################################################################
 print_createCategoryTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createCategoryTemplate - Create a category template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createCategoryTemplate - Create a category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Templates define a type of category and the properties they have" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -8262,7 +8262,7 @@ print_createCategoryTemplate_help() {
 ##############################################################################
 print_deleteCategory_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteCategory - Delete an existing category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteCategory - Delete an existing category${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the category to be deleted ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8286,7 +8286,7 @@ print_deleteCategory_help() {
 ##############################################################################
 print_deleteCategoryTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteCategoryTemplate - Delete a category template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteCategoryTemplate - Delete a category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -8371,7 +8371,7 @@ print_getCategory_help() {
 ##############################################################################
 print_getCategoryTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getCategoryTemplate - Get a single category template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getCategoryTemplate - Get a single category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8395,7 +8395,7 @@ print_getCategoryTemplate_help() {
 ##############################################################################
 print_getCategoryTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getCategoryTemplates - List and search category templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getCategoryTemplates - List and search category templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -8451,7 +8451,7 @@ print_getTags_help() {
 ##############################################################################
 print_updateCategory_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateCategory - Update an existing category${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateCategory - Update an existing category${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the category ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8477,7 +8477,7 @@ print_updateCategory_help() {
 ##############################################################################
 print_updateCategoryTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateCategoryTemplate - Update a category template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateCategoryTemplate - Update a category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8503,7 +8503,7 @@ print_updateCategoryTemplate_help() {
 ##############################################################################
 print_createConfig_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createConfig - Create a new config${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createConfig - Create a new config${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The config object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8528,7 +8528,7 @@ print_createConfig_help() {
 ##############################################################################
 print_deleteConfig_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteConfig - Delete an existing config${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteConfig - Delete an existing config${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The config name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8609,7 +8609,7 @@ print_getConfigs_help() {
 ##############################################################################
 print_updateConfig_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateConfig - Update an existing config${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateConfig - Update an existing config${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The config name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8635,7 +8635,7 @@ print_updateConfig_help() {
 ##############################################################################
 print_createArticle_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createArticle - Create a new article${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createArticle - Create a new article${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Articles are blobs of text with titles, a category and assets. Formatting and display of the text is in the hands of the front end." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -8662,7 +8662,7 @@ print_createArticle_help() {
 ##############################################################################
 print_createArticleTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createArticleTemplate - Create an article template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createArticleTemplate - Create an article template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Article Templates define a type of article and the properties they have" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -8689,7 +8689,7 @@ print_createArticleTemplate_help() {
 ##############################################################################
 print_deleteArticle_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteArticle - Delete an existing article${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteArticle - Delete an existing article${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The article id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8713,7 +8713,7 @@ print_deleteArticle_help() {
 ##############################################################################
 print_deleteArticleTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteArticleTemplate - Delete an article template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteArticleTemplate - Delete an article template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -8765,7 +8765,7 @@ print_getArticle_help() {
 ##############################################################################
 print_getArticleTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getArticleTemplate - Get a single article template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getArticleTemplate - Get a single article template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8789,7 +8789,7 @@ print_getArticleTemplate_help() {
 ##############################################################################
 print_getArticleTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getArticleTemplates - List and search article templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getArticleTemplates - List and search article templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -8861,7 +8861,7 @@ print_getArticles_help() {
 ##############################################################################
 print_updateArticle_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateArticle - Update an existing article${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateArticle - Update an existing article${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The article id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8887,7 +8887,7 @@ print_updateArticle_help() {
 ##############################################################################
 print_updateArticleTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateArticleTemplate - Update an article template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateArticleTemplate - Update an article template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8913,7 +8913,7 @@ print_updateArticleTemplate_help() {
 ##############################################################################
 print_addComment_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addComment - Add a new comment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addComment - Add a new comment${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The comment to be added" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8938,7 +8938,7 @@ print_addComment_help() {
 ##############################################################################
 print_deleteComment_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteComment - Delete a comment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteComment - Delete a comment${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The comment id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9048,7 +9048,7 @@ print_searchComments_help() {
 ##############################################################################
 print_updateComment_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateComment - Update a comment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateComment - Update a comment${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The comment id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9074,7 +9074,7 @@ print_updateComment_help() {
 ##############################################################################
 print_answerPoll_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}answerPoll - Add your vote to a poll${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}answerPoll - Add your vote to a poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9100,7 +9100,7 @@ print_answerPoll_help() {
 ##############################################################################
 print_createPoll_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createPoll - Create a new poll${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createPoll - Create a new poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Polls are blobs of text with titles, a category and assets. Formatting and display of the text is in the hands of the front end." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -9127,7 +9127,7 @@ print_createPoll_help() {
 ##############################################################################
 print_createPollTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createPollTemplate - Create a poll template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createPollTemplate - Create a poll template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Poll templates define a type of poll and the properties they have" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -9154,7 +9154,7 @@ print_createPollTemplate_help() {
 ##############################################################################
 print_deletePoll_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deletePoll - Delete an existing poll${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deletePoll - Delete an existing poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9178,7 +9178,7 @@ print_deletePoll_help() {
 ##############################################################################
 print_deletePollTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deletePollTemplate - Delete a poll template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deletePollTemplate - Delete a poll template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -9230,7 +9230,7 @@ print_getPoll_help() {
 ##############################################################################
 print_getPollAnswer_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getPollAnswer - Get poll answer${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getPollAnswer - Get poll answer${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9254,7 +9254,7 @@ print_getPollAnswer_help() {
 ##############################################################################
 print_getPollTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getPollTemplate - Get a single poll template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getPollTemplate - Get a single poll template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9278,7 +9278,7 @@ print_getPollTemplate_help() {
 ##############################################################################
 print_getPollTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getPollTemplates - List and search poll templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getPollTemplates - List and search poll templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -9344,7 +9344,7 @@ print_getPolls_help() {
 ##############################################################################
 print_updatePoll_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updatePoll - Update an existing poll${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updatePoll - Update an existing poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9370,7 +9370,7 @@ print_updatePoll_help() {
 ##############################################################################
 print_updatePollTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updatePollTemplate - Update a poll template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updatePollTemplate - Update a poll template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9396,7 +9396,7 @@ print_updatePollTemplate_help() {
 ##############################################################################
 print_createCurrency_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createCurrency - Create a currency${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createCurrency - Create a currency${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The currency object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9421,7 +9421,7 @@ print_createCurrency_help() {
 ##############################################################################
 print_deleteCurrency_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteCurrency - Delete a currency${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteCurrency - Delete a currency${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}code${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The currency code ${YELLOW}Specify as: code=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9502,7 +9502,7 @@ print_getCurrency_help() {
 ##############################################################################
 print_updateCurrency_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateCurrency - Update a currency${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateCurrency - Update a currency${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}code${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The currency code ${YELLOW}Specify as: code=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9528,7 +9528,7 @@ print_updateCurrency_help() {
 ##############################################################################
 print_addDeviceUsers_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addDeviceUsers - Add device users${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addDeviceUsers - Add device users${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9554,7 +9554,7 @@ print_addDeviceUsers_help() {
 ##############################################################################
 print_createDevice_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createDevice - Create a device${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createDevice - Create a device${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - device" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9579,7 +9579,7 @@ print_createDevice_help() {
 ##############################################################################
 print_deleteDevice_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteDevice - Delete a device${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteDevice - Delete a device${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9603,7 +9603,7 @@ print_deleteDevice_help() {
 ##############################################################################
 print_deleteDeviceUser_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteDeviceUser - Delete a device user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteDeviceUser - Delete a device user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the device ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9628,7 +9628,7 @@ print_deleteDeviceUser_help() {
 ##############################################################################
 print_deleteDeviceUsers_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteDeviceUsers - Delete all device users${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteDeviceUsers - Delete all device users${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the device ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9654,7 +9654,7 @@ print_deleteDeviceUsers_help() {
 ##############################################################################
 print_getDevice_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getDevice - Get a single device${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getDevice - Get a single device${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9678,7 +9678,7 @@ print_getDevice_help() {
 ##############################################################################
 print_getDevices_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getDevices - List and search devices${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getDevices - List and search devices${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get a list of devices with optional filtering" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -9713,7 +9713,7 @@ print_getDevices_help() {
 ##############################################################################
 print_updateDevice_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateDevice - Update a device${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateDevice - Update a device${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9739,7 +9739,7 @@ print_updateDevice_help() {
 ##############################################################################
 print_addDisposition_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addDisposition - Add a new disposition${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addDisposition - Add a new disposition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new disposition record" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9764,7 +9764,7 @@ print_addDisposition_help() {
 ##############################################################################
 print_deleteDisposition_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteDisposition - Delete a disposition${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteDisposition - Delete a disposition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the disposition record ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9872,7 +9872,7 @@ print_getDispositions_help() {
 ##############################################################################
 print_createFulfillmentType_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createFulfillmentType - Create a fulfillment type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createFulfillmentType - Create a fulfillment type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The fulfillment type" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9897,7 +9897,7 @@ print_createFulfillmentType_help() {
 ##############################################################################
 print_deleteFulfillmentType_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteFulfillmentType - Delete a fulfillment type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteFulfillmentType - Delete a fulfillment type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9974,7 +9974,7 @@ print_getFulfillmentTypes_help() {
 ##############################################################################
 print_updateFulfillmentType_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateFulfillmentType - Update a fulfillment type${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateFulfillmentType - Update a fulfillment type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10000,7 +10000,7 @@ print_updateFulfillmentType_help() {
 ##############################################################################
 print_createAchievement_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createAchievement - Create a new achievement definition${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createAchievement - Create a new achievement definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If the definition contains a trigger event name, a BRE rule is created, so that tracking logic is executed when the triggering event occurs. If no trigger event name is specified, the user's achievement status must manually be updated via the API." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10027,7 +10027,7 @@ print_createAchievement_help() {
 ##############################################################################
 print_createAchievementTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createAchievementTemplate - Create an achievement template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createAchievementTemplate - Create an achievement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Achievement templates define a type of achievement and the properties they have" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10054,7 +10054,7 @@ print_createAchievementTemplate_help() {
 ##############################################################################
 print_deleteAchievement_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteAchievement - Delete an achievement definition${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteAchievement - Delete an achievement definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Will also disable the associated generated rule, if any." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10080,7 +10080,7 @@ print_deleteAchievement_help() {
 ##############################################################################
 print_deleteAchievementTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteAchievementTemplate - Delete an achievement template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteAchievementTemplate - Delete an achievement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10108,7 +10108,7 @@ print_deleteAchievementTemplate_help() {
 ##############################################################################
 print_getAchievement_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getAchievement - Get a single achievement definition${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getAchievement - Get a single achievement definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The name of the achievement ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10132,7 +10132,7 @@ print_getAchievement_help() {
 ##############################################################################
 print_getAchievementTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getAchievementTemplate - Get a single achievement template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getAchievementTemplate - Get a single achievement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10156,7 +10156,7 @@ print_getAchievementTemplate_help() {
 ##############################################################################
 print_getAchievementTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getAchievementTemplates - List and search achievement templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getAchievementTemplates - List and search achievement templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -10185,7 +10185,7 @@ print_getAchievementTemplates_help() {
 ##############################################################################
 print_getAchievementTriggers_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getAchievementTriggers - Get the list of triggers that can be used to trigger an achievement progress update${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getAchievementTriggers - Get the list of triggers that can be used to trigger an achievement progress update${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -10207,7 +10207,7 @@ print_getAchievementTriggers_help() {
 ##############################################################################
 print_getAchievements_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getAchievements - Get all achievement definitions in the system${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getAchievements - Get all achievement definitions in the system${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_tagset${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for achievements with specified tags (separated by comma)${YELLOW} Specify as: filter_tagset=value${OFF}" \
@@ -10244,7 +10244,7 @@ print_getAchievements_help() {
 ##############################################################################
 print_getDerivedAchievements_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getDerivedAchievements - Get a list of derived achievements${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getDerivedAchievements - Get a list of derived achievements${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Used by other services that depend on achievements" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10270,7 +10270,7 @@ print_getDerivedAchievements_help() {
 ##############################################################################
 print_getUserAchievementProgress_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserAchievementProgress - Retrieve progress on a given achievement for a given user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserAchievementProgress - Retrieve progress on a given achievement for a given user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Assets will not be filled in on the resources returned. Use 'Get a single poll' to retrieve the full resource with assets for a given item as needed." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10297,7 +10297,7 @@ print_getUserAchievementProgress_help() {
 ##############################################################################
 print_getUserAchievementsProgress_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserAchievementsProgress - Retrieve progress on achievements for a given user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserAchievementsProgress - Retrieve progress on achievements for a given user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Assets will not be filled in on the resources returned. Use 'Get a single poll' to retrieve the full resource with assets for a given item as needed." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10333,7 +10333,7 @@ print_getUserAchievementsProgress_help() {
 ##############################################################################
 print_getUsersAchievementProgress_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUsersAchievementProgress - Retrieve progress on a given achievement for all users${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUsersAchievementProgress - Retrieve progress on a given achievement for all users${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Assets will not be filled in on the resources returned. Use 'Get single achievement progress for user' to retrieve the full resource with assets for a given user as needed." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10369,7 +10369,7 @@ print_getUsersAchievementProgress_help() {
 ##############################################################################
 print_getUsersAchievementsProgress_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUsersAchievementsProgress - Retrieve progress on achievements for all users${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUsersAchievementsProgress - Retrieve progress on achievements for all users${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Assets will not be filled in on the resources returned. Use 'Get single achievement progress for user' to retrieve the full resource with assets for a given user as needed." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10404,7 +10404,7 @@ print_getUsersAchievementsProgress_help() {
 ##############################################################################
 print_incrementAchievementProgress_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}incrementAchievementProgress - Increment an achievement progress record for a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}incrementAchievementProgress - Increment an achievement progress record for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If no progress record yet exists for the user, it will be created. Otherwise it will be updated and the provided value added to the existing progress. May be negative. If progress meets or exceeds the achievement's max_value it will be marked as earned and a BRE event will be triggered for the <code>BreAchievementEarnedTrigger</code>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10433,7 +10433,7 @@ print_incrementAchievementProgress_help() {
 ##############################################################################
 print_setAchievementProgress_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setAchievementProgress - Set an achievement progress record for a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setAchievementProgress - Set an achievement progress record for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If no progress record yet exists for the user, it will be created. Otherwise it will be updated and progress set to the provided value. If progress meets or exceeds the achievement's max_value it will be marked as earned and a BRE event will be triggered for the <code>BreAchievementEarnedTrigger</code>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10462,7 +10462,7 @@ print_setAchievementProgress_help() {
 ##############################################################################
 print_updateAchievement_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateAchievement - Update an achievement definition${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateAchievement - Update an achievement definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "The existing generated rule, if any, will be deleted. A new rule will be created if a trigger event name is specified in the new version." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10490,7 +10490,7 @@ print_updateAchievement_help() {
 ##############################################################################
 print_updateAchievementTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateAchievementTemplate - Update an achievement template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateAchievementTemplate - Update an achievement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10599,7 +10599,7 @@ print_getLeaderboardStrategies_help() {
 ##############################################################################
 print_createLevel_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createLevel - Create a level schema${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createLevel - Create a level schema${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The level schema definition" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10624,7 +10624,7 @@ print_createLevel_help() {
 ##############################################################################
 print_deleteLevel_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteLevel - Delete a level${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteLevel - Delete a level${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The level schema name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10648,7 +10648,7 @@ print_deleteLevel_help() {
 ##############################################################################
 print_getLevel_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getLevel - Retrieve a level${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getLevel - Retrieve a level${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The level schema name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10672,7 +10672,7 @@ print_getLevel_help() {
 ##############################################################################
 print_getLevelTriggers_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getLevelTriggers - Get the list of triggers that can be used to trigger a leveling progress update${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getLevelTriggers - Get the list of triggers that can be used to trigger a leveling progress update${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -10694,7 +10694,7 @@ print_getLevelTriggers_help() {
 ##############################################################################
 print_getLevels_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getLevels - List and search levels${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getLevels - List and search levels${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get a list of levels schemas with optional filtering" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10727,7 +10727,7 @@ print_getLevels_help() {
 ##############################################################################
 print_getUserLevel_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserLevel - Get a user's progress for a given level schema${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserLevel - Get a user's progress for a given level schema${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10752,7 +10752,7 @@ print_getUserLevel_help() {
 ##############################################################################
 print_getUserLevels_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserLevels - Get a user's progress for all level schemas${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserLevels - Get a user's progress for all level schemas${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Filtering and sorting is based on the LevelingResource object, not the UserLevelingResource that is returned here." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10786,7 +10786,7 @@ print_getUserLevels_help() {
 ##############################################################################
 print_incrementProgress_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}incrementProgress - Update or create a leveling progress record for a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}incrementProgress - Update or create a leveling progress record for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If no progress record yet exists for the user, it will be created. Otherwise the provided value will be added to it. May be negative. If progress meets or exceeds the level's max_value it will be marked as earned and a BRE event will be triggered for the <code>BreAchievementEarnedTrigger</code>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10815,7 +10815,7 @@ print_incrementProgress_help() {
 ##############################################################################
 print_setProgress_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setProgress - Set leveling progress for a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setProgress - Set leveling progress for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If no progress record yet exists for the user, it will be created. Otherwise it will be updated to the provided value. If progress meets or exceeds the level's max_value it will be marked as earned and a BRE event will be triggered for the <code>BreAchievementEarnedTrigger</code>." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10844,7 +10844,7 @@ print_setProgress_help() {
 ##############################################################################
 print_updateLevel_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateLevel - Update a level${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateLevel - Update a level${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The level schema name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10870,7 +10870,7 @@ print_updateLevel_help() {
 ##############################################################################
 print_addMetric_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addMetric - Add a metric${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addMetric - Add a metric${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Post a new score/stat for an activity occurrence without ending the occurrence itself" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10897,7 +10897,7 @@ print_addMetric_help() {
 ##############################################################################
 print_addQuestionAnswers_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addQuestionAnswers - Add an answer to a question${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addQuestionAnswers - Add an answer to a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}question_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: question_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10923,7 +10923,7 @@ print_addQuestionAnswers_help() {
 ##############################################################################
 print_addQuestionTag_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addQuestionTag - Add a tag to a question${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addQuestionTag - Add a tag to a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10949,7 +10949,7 @@ print_addQuestionTag_help() {
 ##############################################################################
 print_addTagToQuestionsBatch_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addTagToQuestionsBatch - Add a tag to a batch of questions${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addTagToQuestionsBatch - Add a tag to a batch of questions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "All questions that dont't have the tag and match filters will have it added. The returned number is the number of questions updated." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10992,7 +10992,7 @@ print_addTagToQuestionsBatch_help() {
 ##############################################################################
 print_createImportJob_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createImportJob - Create an import job${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createImportJob - Create an import job${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Set up a job to import a set of trivia questions from a cvs file at a remote url. the file will be validated asynchronously but will not be processed until started manually with the process endpoint." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11019,7 +11019,7 @@ print_createImportJob_help() {
 ##############################################################################
 print_createQuestion_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createQuestion - Create a question${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createQuestion - Create a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new question" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11044,7 +11044,7 @@ print_createQuestion_help() {
 ##############################################################################
 print_createQuestionTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createQuestionTemplate - Create a question template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createQuestionTemplate - Create a question template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Question templates define a type of question and the properties they have" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11071,7 +11071,7 @@ print_createQuestionTemplate_help() {
 ##############################################################################
 print_deleteImportJob_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteImportJob - Delete an import job${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteImportJob - Delete an import job${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Also deletes all questions that were imported by it" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11097,7 +11097,7 @@ print_deleteImportJob_help() {
 ##############################################################################
 print_deleteQuestion_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteQuestion - Delete a question${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteQuestion - Delete a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11121,7 +11121,7 @@ print_deleteQuestion_help() {
 ##############################################################################
 print_deleteQuestionAnswers_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteQuestionAnswers - Remove an answer from a question${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteQuestionAnswers - Remove an answer from a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}question_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: question_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11146,7 +11146,7 @@ print_deleteQuestionAnswers_help() {
 ##############################################################################
 print_deleteQuestionTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteQuestionTemplate - Delete a question template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteQuestionTemplate - Delete a question template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11174,7 +11174,7 @@ print_deleteQuestionTemplate_help() {
 ##############################################################################
 print_getImportJob_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getImportJob - Get an import job${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getImportJob - Get an import job${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the job ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11198,7 +11198,7 @@ print_getImportJob_help() {
 ##############################################################################
 print_getImportJobs_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getImportJobs - Get a list of import job${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getImportJobs - Get a list of import job${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_vendor${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for jobs by vendor id${YELLOW} Specify as: filter_vendor=value${OFF}" \
@@ -11235,7 +11235,7 @@ print_getImportJobs_help() {
 ##############################################################################
 print_getQuestion_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getQuestion - Get a single question${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getQuestion - Get a single question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11259,7 +11259,7 @@ print_getQuestion_help() {
 ##############################################################################
 print_getQuestionAnswer_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getQuestionAnswer - Get an answer for a question${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getQuestionAnswer - Get an answer for a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}question_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: question_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11284,7 +11284,7 @@ print_getQuestionAnswer_help() {
 ##############################################################################
 print_getQuestionAnswers_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getQuestionAnswers - List the answers available for a question${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getQuestionAnswers - List the answers available for a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}question_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: question_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11308,7 +11308,7 @@ print_getQuestionAnswers_help() {
 ##############################################################################
 print_getQuestionDeltas_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getQuestionDeltas - List question deltas in ascending order of updated date${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getQuestionDeltas - List question deltas in ascending order of updated date${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "The 'since' parameter is important to avoid getting a full list of all questions. Implementors should make sure they pass the updated date of the last resource loaded, not the date of the last request, in order to avoid gaps" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11335,7 +11335,7 @@ print_getQuestionDeltas_help() {
 ##############################################################################
 print_getQuestionTags_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getQuestionTags - List the tags for a question${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getQuestionTags - List the tags for a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11359,7 +11359,7 @@ print_getQuestionTags_help() {
 ##############################################################################
 print_getQuestionTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getQuestionTemplate - Get a single question template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getQuestionTemplate - Get a single question template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11383,7 +11383,7 @@ print_getQuestionTemplate_help() {
 ##############################################################################
 print_getQuestionTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getQuestionTemplates - List and search question templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getQuestionTemplates - List and search question templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -11412,7 +11412,7 @@ print_getQuestionTemplates_help() {
 ##############################################################################
 print_getQuestions_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getQuestions - List and search questions${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getQuestions - List and search questions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -11457,7 +11457,7 @@ print_getQuestions_help() {
 ##############################################################################
 print_getQuestionsCount_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getQuestionsCount - Count questions based on filters${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getQuestionsCount - Count questions based on filters${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "This is also provided by the list endpoint so you don't need to call this for pagination purposes" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11496,7 +11496,7 @@ print_getQuestionsCount_help() {
 ##############################################################################
 print_processImportJob_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}processImportJob - Start processing an import job${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}processImportJob - Start processing an import job${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Will process the CSV file and add new questions asynchronously. The status of the job must be 'VALID'." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11524,7 +11524,7 @@ print_processImportJob_help() {
 ##############################################################################
 print_removeQuestionTag_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}removeQuestionTag - Remove a tag from a question${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}removeQuestionTag - Remove a tag from a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11549,7 +11549,7 @@ print_removeQuestionTag_help() {
 ##############################################################################
 print_removeTagToQuestionsBatch_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}removeTagToQuestionsBatch - Remove a tag from a batch of questions${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}removeTagToQuestionsBatch - Remove a tag from a batch of questions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "ll questions that have the tag and match filters will have it removed. The returned number is the number of questions updated." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11591,7 +11591,7 @@ print_removeTagToQuestionsBatch_help() {
 ##############################################################################
 print_searchQuestionTags_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}searchQuestionTags - List and search tags by the beginning of the string${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}searchQuestionTags - List and search tags by the beginning of the string${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "For performance reasons, search & category filters are mutually exclusive. If category is specified, search filter will be ignored in order to do fast matches for typeahead." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11622,7 +11622,7 @@ print_searchQuestionTags_help() {
 ##############################################################################
 print_updateImportJob_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateImportJob - Update an import job${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateImportJob - Update an import job${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Changes should be made before process is started for there to be any effect." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11650,7 +11650,7 @@ print_updateImportJob_help() {
 ##############################################################################
 print_updateQuestion_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateQuestion - Update a question${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateQuestion - Update a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11676,7 +11676,7 @@ print_updateQuestion_help() {
 ##############################################################################
 print_updateQuestionAnswer_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateQuestionAnswer - Update an answer for a question${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateQuestionAnswer - Update an answer for a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}question_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: question_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11703,7 +11703,7 @@ print_updateQuestionAnswer_help() {
 ##############################################################################
 print_updateQuestionTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateQuestionTemplate - Update a question template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateQuestionTemplate - Update a question template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11729,7 +11729,7 @@ print_updateQuestionTemplate_help() {
 ##############################################################################
 print_updateQuestionsInBulk_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateQuestionsInBulk - Bulk update questions${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateQuestionsInBulk - Bulk update questions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Will update all questions that match filters used (or all questions in system if no filters used). Body should match a question resource with only those properties you wish to set. Null values will be ignored. Returned number is how many were updated." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11770,7 +11770,7 @@ print_updateQuestionsInBulk_help() {
 ##############################################################################
 print_createInvoice_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createInvoice - Create an invoice${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createInvoice - Create an invoice${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Create an invoice(s) by providing a cart GUID. Note that there may be multiple invoices created, one per vendor." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11819,7 +11819,7 @@ print_getFulFillmentStatuses_help() {
 ##############################################################################
 print_getInvoice_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getInvoice - Retrieve an invoice${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getInvoice - Retrieve an invoice${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the invoice ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11843,7 +11843,7 @@ print_getInvoice_help() {
 ##############################################################################
 print_getInvoiceLogs_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getInvoiceLogs - List invoice logs${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getInvoiceLogs - List invoice logs${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the invoice ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11871,7 +11871,7 @@ print_getInvoiceLogs_help() {
 ##############################################################################
 print_getInvoices_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getInvoices - Retrieve invoices${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getInvoices - Retrieve invoices${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Without INVOICES_ADMIN permission the results are automatically filtered for only the logged in user's invoices. It is recomended however that filter_user be added to avoid issues for admin users accidentally getting additional invoices." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -11952,7 +11952,7 @@ print_getPaymentStatuses_help() {
 ##############################################################################
 print_payInvoice_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}payInvoice - Pay an invoice using a saved payment method${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}payInvoice - Pay an invoice using a saved payment method${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the invoice ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11978,7 +11978,7 @@ print_payInvoice_help() {
 ##############################################################################
 print_setBundledInvoiceItemFulfillmentStatus_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setBundledInvoiceItemFulfillmentStatus - Set the fulfillment status of a bundled invoice item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setBundledInvoiceItemFulfillmentStatus - Set the fulfillment status of a bundled invoice item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "This allows external fulfillment systems to report success or failure. Fulfillment status changes are restricted by a specific flow determining which status can lead to which." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -12008,7 +12008,7 @@ print_setBundledInvoiceItemFulfillmentStatus_help() {
 ##############################################################################
 print_setExternalRef_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setExternalRef - Set the external reference of an invoice${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setExternalRef - Set the external reference of an invoice${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the invoice ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12034,7 +12034,7 @@ print_setExternalRef_help() {
 ##############################################################################
 print_setInvoiceItemFulfillmentStatus_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setInvoiceItemFulfillmentStatus - Set the fulfillment status of an invoice item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setInvoiceItemFulfillmentStatus - Set the fulfillment status of an invoice item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "This allows external fulfillment systems to report success or failure. Fulfillment status changes are restricted by a specific flow determining which status can lead to which." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -12063,7 +12063,7 @@ print_setInvoiceItemFulfillmentStatus_help() {
 ##############################################################################
 print_setOrderNotes_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setOrderNotes - Set the order notes of an invoice${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setOrderNotes - Set the order notes of an invoice${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the invoice ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12089,7 +12089,7 @@ print_setOrderNotes_help() {
 ##############################################################################
 print_setPaymentStatus_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setPaymentStatus - Set the payment status of an invoice${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setPaymentStatus - Set the payment status of an invoice${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "This may trigger fulfillment if setting the status to 'paid'. This is mainly intended to support external payment systems that cannot be incorporated into the payment method system. Payment status changes are restricted by a specific flow determining which status can lead to which." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -12117,7 +12117,7 @@ print_setPaymentStatus_help() {
 ##############################################################################
 print_updateBillingInfo_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateBillingInfo - Set or update billing info${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateBillingInfo - Set or update billing info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the invoice ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12237,7 +12237,7 @@ print_getCurrencyByGeoLocation_help() {
 ##############################################################################
 print_addUserLog_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addUserLog - Add a user log entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addUserLog - Add a user log entry${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The user log entry to be added" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12262,7 +12262,7 @@ print_addUserLog_help() {
 ##############################################################################
 print_getBREEventLog_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBREEventLog - Get an existing BRE event log entry by id${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBREEventLog - Get an existing BRE event log entry by id${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The BRE event log entry id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12286,7 +12286,7 @@ print_getBREEventLog_help() {
 ##############################################################################
 print_getBREEventLogs_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBREEventLogs - Returns a list of BRE event log entries${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBREEventLogs - Returns a list of BRE event log entries${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_start_date${OFF} ${BLUE}[String]${OFF}${OFF} - A comma separated string without spaces.  First value is the operator to search on, second value is the event log start date, a unix timestamp in seconds.  Allowed operators: (GT, LT, EQ, GOE, LOE).${YELLOW} Specify as: filter_start_date=value${OFF}" \
@@ -12321,7 +12321,7 @@ print_getBREEventLogs_help() {
 ##############################################################################
 print_getBREForwardLog_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBREForwardLog - Get an existing forward log entry by id${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBREForwardLog - Get an existing forward log entry by id${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The forward log entry id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12345,7 +12345,7 @@ print_getBREForwardLog_help() {
 ##############################################################################
 print_getBREForwardLogs_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBREForwardLogs - Returns a list of forward log entries${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBREForwardLogs - Returns a list of forward log entries${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_start_date${OFF} ${BLUE}[String]${OFF}${OFF} - A comma separated string without spaces.  First value is the operator to search on, second value is the log start date, a unix timestamp in seconds.  Allowed operators: (GT, LT, EQ, GOE, LOE).${YELLOW} Specify as: filter_start_date=value${OFF}" \
@@ -12380,7 +12380,7 @@ print_getBREForwardLogs_help() {
 ##############################################################################
 print_getUserLog_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserLog - Returns a user log entry by id${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserLog - Returns a user log entry by id${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The user log entry id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12404,7 +12404,7 @@ print_getUserLog_help() {
 ##############################################################################
 print_getUserLogs_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserLogs - Returns a page of user logs entries${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserLogs - Returns a page of user logs entries${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_user${OFF} ${BLUE}[Integer]${OFF}${OFF} - Filter for actions taken by a specific user by id${YELLOW} Specify as: filter_user=value${OFF}" \
@@ -12437,7 +12437,7 @@ print_getUserLogs_help() {
 ##############################################################################
 print_addArtist_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addArtist - Adds a new artist in the system${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addArtist - Adds a new artist in the system${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Adds a new artist in the system. Use specific media contributions endpoint to add contributions" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -12464,7 +12464,7 @@ print_addArtist_help() {
 ##############################################################################
 print_createArtistTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createArtistTemplate - Create an artist template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createArtistTemplate - Create an artist template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Artist Templates define a type of artist and the properties they have" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -12491,7 +12491,7 @@ print_createArtistTemplate_help() {
 ##############################################################################
 print_deleteArtist_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteArtist - Removes an artist from the system IF no resources are attached to it${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteArtist - Removes an artist from the system IF no resources are attached to it${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The artist id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12515,7 +12515,7 @@ print_deleteArtist_help() {
 ##############################################################################
 print_deleteArtistTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteArtistTemplate - Delete an artist template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteArtistTemplate - Delete an artist template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -12569,7 +12569,7 @@ print_getArtist_help() {
 ##############################################################################
 print_getArtistTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getArtistTemplate - Get a single artist template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getArtistTemplate - Get a single artist template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12593,7 +12593,7 @@ print_getArtistTemplate_help() {
 ##############################################################################
 print_getArtistTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getArtistTemplates - List and search artist templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getArtistTemplates - List and search artist templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -12653,7 +12653,7 @@ print_getArtists_help() {
 ##############################################################################
 print_updateArtist_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateArtist - Modifies an artist details${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateArtist - Modifies an artist details${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The artist id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12679,7 +12679,7 @@ print_updateArtist_help() {
 ##############################################################################
 print_updateArtistTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateArtistTemplate - Update an artist template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateArtistTemplate - Update an artist template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12705,7 +12705,7 @@ print_updateArtistTemplate_help() {
 ##############################################################################
 print_getModerationReport_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getModerationReport - Get a flag report${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getModerationReport - Get a flag report${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The flag report id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12729,7 +12729,7 @@ print_getModerationReport_help() {
 ##############################################################################
 print_getModerationReports_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getModerationReports - Returns a page of flag reports${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getModerationReports - Returns a page of flag reports${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Context can be either a free-form string or a pre-defined context name" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -12762,7 +12762,7 @@ print_getModerationReports_help() {
 ##############################################################################
 print_updateModerationReport_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateModerationReport - Update a flag report${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateModerationReport - Update a flag report${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Lets you set the resolution of a report. Resolution types is {banned,ignore} in case of 'banned' you will need to pass the reason." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -12790,7 +12790,7 @@ print_updateModerationReport_help() {
 ##############################################################################
 print_addUserToVideoWhitelist_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addUserToVideoWhitelist - Adds a user to a video's whitelist${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addUserToVideoWhitelist - Adds a user to a video's whitelist${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Whitelisted users can view video regardless of privacy setting." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -12818,7 +12818,7 @@ print_addUserToVideoWhitelist_help() {
 ##############################################################################
 print_addVideo_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addVideo - Adds a new video in the system${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addVideo - Adds a new video in the system${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The video object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12843,7 +12843,7 @@ print_addVideo_help() {
 ##############################################################################
 print_addVideoComment_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addVideoComment - Add a new video comment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addVideoComment - Add a new video comment${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12869,7 +12869,7 @@ print_addVideoComment_help() {
 ##############################################################################
 print_addVideoContributor_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addVideoContributor - Adds a contributor to a video${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addVideoContributor - Adds a contributor to a video${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12895,7 +12895,7 @@ print_addVideoContributor_help() {
 ##############################################################################
 print_addVideoFlag_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addVideoFlag - Add a new flag${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addVideoFlag - Add a new flag${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12921,7 +12921,7 @@ print_addVideoFlag_help() {
 ##############################################################################
 print_addVideoRelationships_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addVideoRelationships - Adds one or more existing videos as related to this one${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addVideoRelationships - Adds one or more existing videos as related to this one${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12947,7 +12947,7 @@ print_addVideoRelationships_help() {
 ##############################################################################
 print_createVideoDisposition_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createVideoDisposition - Create a video disposition${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createVideoDisposition - Create a video disposition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12973,7 +12973,7 @@ print_createVideoDisposition_help() {
 ##############################################################################
 print_deleteVideo_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteVideo - Deletes a video from the system if no resources are attached to it${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteVideo - Deletes a video from the system if no resources are attached to it${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12997,7 +12997,7 @@ print_deleteVideo_help() {
 ##############################################################################
 print_deleteVideoComment_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteVideoComment - Delete a video comment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteVideoComment - Delete a video comment${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13022,7 +13022,7 @@ print_deleteVideoComment_help() {
 ##############################################################################
 print_deleteVideoDisposition_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteVideoDisposition - Delete a video disposition${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteVideoDisposition - Delete a video disposition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}disposition_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The disposition id ${YELLOW}Specify as: disposition_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13046,7 +13046,7 @@ print_deleteVideoDisposition_help() {
 ##############################################################################
 print_deleteVideoFlag_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteVideoFlag - Delete a flag${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteVideoFlag - Delete a flag${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13070,7 +13070,7 @@ print_deleteVideoFlag_help() {
 ##############################################################################
 print_deleteVideoRelationship_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteVideoRelationship - Delete a video's relationship${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteVideoRelationship - Delete a video's relationship${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13095,7 +13095,7 @@ print_deleteVideoRelationship_help() {
 ##############################################################################
 print_getUserVideos_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserVideos - Get user videos${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserVideos - Get user videos${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The user id ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13125,7 +13125,7 @@ print_getUserVideos_help() {
 ##############################################################################
 print_getVideo_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getVideo - Loads a specific video details${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getVideo - Loads a specific video details${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13286,7 +13286,7 @@ print_getVideos_help() {
 ##############################################################################
 print_removeUserFromVideoWhitelist_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}removeUserFromVideoWhitelist - Removes a user from a video's whitelist${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}removeUserFromVideoWhitelist - Removes a user from a video's whitelist${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Remove the user with the id given in the path from the whitelist of users that can view this video regardless of privacy setting." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -13313,7 +13313,7 @@ print_removeUserFromVideoWhitelist_help() {
 ##############################################################################
 print_removeVideoContributor_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}removeVideoContributor - Removes a contributor from a video${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}removeVideoContributor - Removes a contributor from a video${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13338,7 +13338,7 @@ print_removeVideoContributor_help() {
 ##############################################################################
 print_updateVideo_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateVideo - Modifies a video's details${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateVideo - Modifies a video's details${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13364,7 +13364,7 @@ print_updateVideo_help() {
 ##############################################################################
 print_updateVideoComment_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateVideoComment - Update a video comment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateVideoComment - Update a video comment${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13391,7 +13391,7 @@ print_updateVideoComment_help() {
 ##############################################################################
 print_updateVideoRelationship_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateVideoRelationship - Update a video's relationship details${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateVideoRelationship - Update a video's relationship details${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13442,7 +13442,7 @@ print_viewVideo_help() {
 ##############################################################################
 print_sendRawEmail_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}sendRawEmail - Send a raw email to one or more users${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}sendRawEmail - Send a raw email to one or more users${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new raw email to be sent" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13467,7 +13467,7 @@ print_sendRawEmail_help() {
 ##############################################################################
 print_sendRawSMS_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}sendRawSMS - Send a raw SMS${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}sendRawSMS - Send a raw SMS${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Sends a raw SMS text message to one or more users. User's without registered mobile numbers will be skipped." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -13494,7 +13494,7 @@ print_sendRawSMS_help() {
 ##############################################################################
 print_sendTemplatedEmail_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}sendTemplatedEmail - Send a templated email to one or more users${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}sendTemplatedEmail - Send a templated email to one or more users${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new template email to be sent" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13519,7 +13519,7 @@ print_sendTemplatedEmail_help() {
 ##############################################################################
 print_sendTemplatedSMS_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}sendTemplatedSMS - Send a new templated SMS${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}sendTemplatedSMS - Send a new templated SMS${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Sends a templated SMS text message to one or more users. User's without registered mobile numbers will be skipped." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -13546,7 +13546,7 @@ print_sendTemplatedSMS_help() {
 ##############################################################################
 print_createPaymentMethod_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createPaymentMethod - Create a new payment method for a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createPaymentMethod - Create a new payment method for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - ID of the user for whom the payment method is being created ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13572,7 +13572,7 @@ print_createPaymentMethod_help() {
 ##############################################################################
 print_deletePaymentMethod_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deletePaymentMethod - Delete an existing payment method for a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deletePaymentMethod - Delete an existing payment method for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - ID of the user for whom the payment method is being updated ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13597,7 +13597,7 @@ print_deletePaymentMethod_help() {
 ##############################################################################
 print_getPaymentMethod_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getPaymentMethod - Get a single payment method for a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getPaymentMethod - Get a single payment method for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - ID of the user for whom the payment method is being retrieved ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13622,7 +13622,7 @@ print_getPaymentMethod_help() {
 ##############################################################################
 print_getPaymentMethods_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getPaymentMethods - Get all payment methods for a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getPaymentMethods - Get all payment methods for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - ID of the user for whom the payment methods are being retrieved ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13660,7 +13660,7 @@ print_getPaymentMethods_help() {
 ##############################################################################
 print_paymentAuthorization_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}paymentAuthorization - Authorize payment of an invoice for later capture${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}paymentAuthorization - Authorize payment of an invoice for later capture${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - Payment authorization request" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13685,7 +13685,7 @@ print_paymentAuthorization_help() {
 ##############################################################################
 print_paymentCapture_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}paymentCapture - Capture an existing invoice payment authorization${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}paymentCapture - Capture an existing invoice payment authorization${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - ID of the payment authorization to capture ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13709,7 +13709,7 @@ print_paymentCapture_help() {
 ##############################################################################
 print_updatePaymentMethod_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updatePaymentMethod - Update an existing payment method for a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updatePaymentMethod - Update an existing payment method for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - ID of the user for whom the payment method is being updated ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13763,7 +13763,7 @@ print_verifyAppleReceipt_help() {
 ##############################################################################
 print_createOrUpdateFattMerchantPaymentMethod_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createOrUpdateFattMerchantPaymentMethod - Create or update a FattMerchant payment method for a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createOrUpdateFattMerchantPaymentMethod - Create or update a FattMerchant payment method for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Stores customer information and creates a payment method that can be used to pay invoices through the payments endpoints." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -13817,7 +13817,7 @@ print_handleGooglePayment_help() {
 ##############################################################################
 print_silentPostOptimal_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}silentPostOptimal - Initiate silent post with Optimal${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}silentPostOptimal - Initiate silent post with Optimal${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Will return the url for a hosted payment endpoint to post to. See Optimal documentation for details." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -13844,7 +13844,7 @@ print_silentPostOptimal_help() {
 ##############################################################################
 print_createPayPalBillingAgreementUrl_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createPayPalBillingAgreementUrl - Create a PayPal Classic billing agreement for the user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createPayPalBillingAgreementUrl - Create a PayPal Classic billing agreement for the user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Returns the token that should be used to forward the user to PayPal so they can accept the agreement." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -13871,7 +13871,7 @@ print_createPayPalBillingAgreementUrl_help() {
 ##############################################################################
 print_createPayPalExpressCheckout_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createPayPalExpressCheckout - Create a payment token for PayPal express checkout${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createPayPalExpressCheckout - Create a payment token for PayPal express checkout${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Returns the token that should be used to forward the user to PayPal so they can complete the checkout." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -13898,7 +13898,7 @@ print_createPayPalExpressCheckout_help() {
 ##############################################################################
 print_finalizePayPalBillingAgreement_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}finalizePayPalBillingAgreement - Finalizes a billing agreement after the user has accepted through PayPal${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}finalizePayPalBillingAgreement - Finalizes a billing agreement after the user has accepted through PayPal${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Returns the ID of the new payment method created for the user for the billing agreement." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -13925,7 +13925,7 @@ print_finalizePayPalBillingAgreement_help() {
 ##############################################################################
 print_finalizePayPalCheckout_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}finalizePayPalCheckout - Finalizes a payment after the user has completed checkout with PayPal${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}finalizePayPalCheckout - Finalizes a payment after the user has completed checkout with PayPal${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "The invoice will be marked paid/failed by asynchronous IPN callback." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -13952,7 +13952,7 @@ print_finalizePayPalCheckout_help() {
 ##############################################################################
 print_createStripePaymentMethod_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createStripePaymentMethod - Create a Stripe payment method for a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createStripePaymentMethod - Create a Stripe payment method for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Stores customer information and creates a payment method that can be used to pay invoices through the payments endpoints." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -14004,7 +14004,7 @@ print_payStripeInvoice_help() {
 ##############################################################################
 print_getTransaction_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getTransaction - Get the details for a single transaction${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getTransaction - Get the details for a single transaction${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14028,7 +14028,7 @@ print_getTransaction_help() {
 ##############################################################################
 print_getTransactions_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getTransactions - List and search transactions${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getTransactions - List and search transactions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_invoice${OFF} ${BLUE}[Integer]${OFF}${OFF} - Filter for transactions from a specific invoice${YELLOW} Specify as: filter_invoice=value${OFF}" \
@@ -14059,7 +14059,7 @@ print_getTransactions_help() {
 ##############################################################################
 print_refundTransaction_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}refundTransaction - Refund a payment transaction, in full or in part${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}refundTransaction - Refund a payment transaction, in full or in part${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Will not allow for refunding more than the full amount even with multiple partial refunds. Money is refunded to the payment method used to make the original payment. Payment method must support refunds." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -14087,7 +14087,7 @@ print_refundTransaction_help() {
 ##############################################################################
 print_getUserWallet_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserWallet - Returns the user's wallet for the given currency code${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserWallet - Returns the user's wallet for the given currency code${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The ID of the user for whom wallet is being retrieved ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14112,7 +14112,7 @@ print_getUserWallet_help() {
 ##############################################################################
 print_getUserWalletTransactions_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserWalletTransactions - Retrieve a user's wallet transactions${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserWalletTransactions - Retrieve a user's wallet transactions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The ID of the user for whom wallet transactions are being retrieved ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14151,7 +14151,7 @@ print_getUserWalletTransactions_help() {
 ##############################################################################
 print_getUserWallets_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserWallets - List all of a user's wallets${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserWallets - List all of a user's wallets${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The ID of the user for whom wallets are being retrieved ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14175,7 +14175,7 @@ print_getUserWallets_help() {
 ##############################################################################
 print_getWalletBalances_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getWalletBalances - Retrieves a summation of wallet balances by currency code${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getWalletBalances - Retrieves a summation of wallet balances by currency code${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -14197,7 +14197,7 @@ print_getWalletBalances_help() {
 ##############################################################################
 print_getWalletTransactions_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getWalletTransactions - Retrieve wallet transactions across the system${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getWalletTransactions - Retrieve wallet transactions across the system${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_invoice${OFF} ${BLUE}[Integer]${OFF}${OFF} - Filter for transactions from a specific invoice${YELLOW} Specify as: filter_invoice=value${OFF}" \
@@ -14242,7 +14242,7 @@ print_getWalletTransactions_help() {
 ##############################################################################
 print_getWallets_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getWallets - Retrieve a list of wallets across the system${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getWallets - Retrieve a list of wallets across the system${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -14271,7 +14271,7 @@ print_getWallets_help() {
 ##############################################################################
 print_updateWalletBalance_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateWalletBalance - Updates the balance for a user's wallet${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateWalletBalance - Updates the balance for a user's wallet${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The ID of the user for whom wallet is being modified ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14298,7 +14298,7 @@ print_updateWalletBalance_help() {
 ##############################################################################
 print_createXsollaTokenUrl_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createXsollaTokenUrl - Create a payment token that should be used to forward the user to Xsolla so they can complete payment${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createXsollaTokenUrl - Create a payment token that should be used to forward the user to Xsolla so they can complete payment${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The payment request to be sent to XSolla" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14347,7 +14347,7 @@ print_receiveXsollaNotification_help() {
 ##############################################################################
 print_getChallengeEventLeaderboard_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getChallengeEventLeaderboard - Retrieve a challenge event leaderboard details${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getChallengeEventLeaderboard - Retrieve a challenge event leaderboard details${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Lists all leaderboard entries with additional user details" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -14380,7 +14380,7 @@ print_getChallengeEventLeaderboard_help() {
 ##############################################################################
 print_getChallengeEventParticipants_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getChallengeEventParticipants - Retrieve a challenge event participant details${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getChallengeEventParticipants - Retrieve a challenge event participant details${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Lists all user submitted scores sorted by value, including those that do not apear in the leaderboard due to value or aggregation" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -14413,7 +14413,7 @@ print_getChallengeEventParticipants_help() {
 ##############################################################################
 print_getInvoiceReports_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getInvoiceReports - Retrieve invoice counts aggregated by time ranges${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getInvoiceReports - Retrieve invoice counts aggregated by time ranges${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}currency_code${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The code for a currency to get sales data for ${YELLOW}Specify as: currency_code=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14451,7 +14451,7 @@ print_getInvoiceReports_help() {
 ##############################################################################
 print_getItemRevenue_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getItemRevenue - Get item revenue info${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getItemRevenue - Get item revenue info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get basic info about revenue from sales of items and bundles (not subscriptions, shipping, etc), summed up within a time range" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -14481,7 +14481,7 @@ print_getItemRevenue_help() {
 ##############################################################################
 print_getRefundRevenue_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getRefundRevenue - Get refund revenue info${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getRefundRevenue - Get refund revenue info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get basic info about revenue loss from refunds (for all item types), summed up within a time range." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -14511,7 +14511,7 @@ print_getRefundRevenue_help() {
 ##############################################################################
 print_getRevenueByCountry_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getRevenueByCountry - Get revenue info by country${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getRevenueByCountry - Get revenue info by country${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get basic info about revenue from sales of all types, summed up within a time range and split out by country. Sorted for largest revenue at the top" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -14545,7 +14545,7 @@ print_getRevenueByCountry_help() {
 ##############################################################################
 print_getRevenueByItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getRevenueByItem - Get revenue info by item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getRevenueByItem - Get revenue info by item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get basic info about revenue from sales of all types, summed up within a time range and split out by specific item. Sorted for largest revenue at the top" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -14579,7 +14579,7 @@ print_getRevenueByItem_help() {
 ##############################################################################
 print_getSubscriptionRevenue_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getSubscriptionRevenue - Get subscription revenue info${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSubscriptionRevenue - Get subscription revenue info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get basic info about revenue from sales of new subscriptions as well as recurring payemnts, summed up within a time range" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -14609,7 +14609,7 @@ print_getSubscriptionRevenue_help() {
 ##############################################################################
 print_getSubscriptionReports_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getSubscriptionReports - Get a list of available subscription reports in most recent first order${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSubscriptionReports - Get a list of available subscription reports in most recent first order${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -14636,7 +14636,7 @@ print_getSubscriptionReports_help() {
 ##############################################################################
 print_getUsageByDay_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUsageByDay - Returns aggregated endpoint usage information by day${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUsageByDay - Returns aggregated endpoint usage information by day${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}start_date${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The beginning of the range being requested, unix timestamp in seconds${YELLOW} Specify as: start_date=value${OFF}" \
@@ -14673,7 +14673,7 @@ print_getUsageByDay_help() {
 ##############################################################################
 print_getUsageByHour_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUsageByHour - Returns aggregated endpoint usage information by hour${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUsageByHour - Returns aggregated endpoint usage information by hour${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}start_date${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The beginning of the range being requested, unix timestamp in seconds${YELLOW} Specify as: start_date=value${OFF}" \
@@ -14710,7 +14710,7 @@ print_getUsageByHour_help() {
 ##############################################################################
 print_getUsageByMinute_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUsageByMinute - Returns aggregated endpoint usage information by minute${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUsageByMinute - Returns aggregated endpoint usage information by minute${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}start_date${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The beginning of the range being requested, unix timestamp in seconds${YELLOW} Specify as: start_date=value${OFF}" \
@@ -14747,7 +14747,7 @@ print_getUsageByMinute_help() {
 ##############################################################################
 print_getUsageByMonth_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUsageByMonth - Returns aggregated endpoint usage information by month${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUsageByMonth - Returns aggregated endpoint usage information by month${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}start_date${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The beginning of the range being requested, unix timestamp in seconds${YELLOW} Specify as: start_date=value${OFF}" \
@@ -14784,7 +14784,7 @@ print_getUsageByMonth_help() {
 ##############################################################################
 print_getUsageByYear_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUsageByYear - Returns aggregated endpoint usage information by year${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUsageByYear - Returns aggregated endpoint usage information by year${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}start_date${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The beginning of the range being requested, unix timestamp in seconds${YELLOW} Specify as: start_date=value${OFF}" \
@@ -14821,7 +14821,7 @@ print_getUsageByYear_help() {
 ##############################################################################
 print_getUsageEndpoints_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUsageEndpoints - Returns list of endpoints called (method and url)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUsageEndpoints - Returns list of endpoints called (method and url)${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}start_date${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The beginning of the range being requested, unix timestamp in seconds${YELLOW} Specify as: start_date=value${OFF}" \
@@ -14848,7 +14848,7 @@ print_getUsageEndpoints_help() {
 ##############################################################################
 print_getUserRegistrations_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserRegistrations - Get user registration info${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserRegistrations - Get user registration info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Get user registration counts grouped by time range" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -14883,7 +14883,7 @@ print_getUserRegistrations_help() {
 ##############################################################################
 print_addSearchIndex_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addSearchIndex - Add a new object to an index${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addSearchIndex - Add a new object to an index${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Mainly intended for internal use." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -14912,7 +14912,7 @@ print_addSearchIndex_help() {
 ##############################################################################
 print_addSearchMappings_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addSearchMappings - Register reference mappings${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addSearchMappings - Register reference mappings${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Add a new type mapping to connect data from one index to another, or discover an exsting one. Mainly intended for internal use." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -14939,7 +14939,7 @@ print_addSearchMappings_help() {
 ##############################################################################
 print_deleteSearchIndex_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteSearchIndex - Delete an object${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteSearchIndex - Delete an object${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Mainly intended for internal use. Requires SEARCH_ADMIN." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -14966,7 +14966,7 @@ print_deleteSearchIndex_help() {
 ##############################################################################
 print_deleteSearchIndexes_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteSearchIndexes - Delete all objects in an index${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteSearchIndexes - Delete all objects in an index${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Mainly intended for internal use" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -15024,7 +15024,7 @@ print_searchIndex_help() {
 ##############################################################################
 print_linkAccounts_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}linkAccounts - Link facebook account${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}linkAccounts - Link facebook account${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Links the current user account to a facebook account, using the acccess token from facebook. Can also be used to update the access token after it has expired." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -15051,7 +15051,7 @@ print_linkAccounts_help() {
 ##############################################################################
 print_linkAccounts1_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}linkAccounts1 - Link google account${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}linkAccounts1 - Link google account${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Links the current user account to a google account, using the acccess token from google. Can also be used to update the access token after it has expired." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -15078,7 +15078,7 @@ print_linkAccounts1_help() {
 ##############################################################################
 print_createItemTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createItemTemplate - Create an item template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createItemTemplate - Create an item template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Item Templates define a type of item and the properties they have." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -15105,7 +15105,7 @@ print_createItemTemplate_help() {
 ##############################################################################
 print_createStoreItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createStoreItem - Create a store item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createStoreItem - Create a store item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "SKUs have to be unique in the entire store. If a duplicate SKU is found, a 400 error is generated and the response will have a \"parameters\" field that is a list of duplicates. A duplicate is an object like {item_id, offending_sku_list}. Ex:<br /> {..., parameters: [[{item: 1, skus: [\"SKU-1\"]}]]}<br /> If an item is brand new and has duplicate SKUs within itself, the item ID will be 0.  Item subclasses are not allowed here, you will have to use their respective endpoints." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -15134,7 +15134,7 @@ print_createStoreItem_help() {
 ##############################################################################
 print_deleteItemTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteItemTemplate - Delete an item template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteItemTemplate - Delete an item template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15160,7 +15160,7 @@ print_deleteItemTemplate_help() {
 ##############################################################################
 print_deleteStoreItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteStoreItem - Delete a store item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteStoreItem - Delete a store item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the item ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15184,7 +15184,7 @@ print_deleteStoreItem_help() {
 ##############################################################################
 print_getBehaviors_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBehaviors - List available item behaviors${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBehaviors - List available item behaviors${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -15206,7 +15206,7 @@ print_getBehaviors_help() {
 ##############################################################################
 print_getItemTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getItemTemplate - Get a single item template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getItemTemplate - Get a single item template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Item Templates define a type of item and the properties they have." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -15232,7 +15232,7 @@ print_getItemTemplate_help() {
 ##############################################################################
 print_getItemTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getItemTemplates - List and search item templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getItemTemplates - List and search item templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -15377,7 +15377,7 @@ print_getStoreItems_help() {
 ##############################################################################
 print_quickBuy_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}quickBuy - One-step purchase and pay for a single SKU item from a user's wallet${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}quickBuy - One-step purchase and pay for a single SKU item from a user's wallet${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Used to create and automatically pay an invoice for a single unit of a single SKU from a user's wallet. SKU must be priced in virtual currency and must not be an item that requires shipping. PAYMENTS_ADMIN permission is required if user ID is specified and is not the ID of the currently logged in user. If invoice price does not match expected price, purchase is aborted" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -15406,7 +15406,7 @@ print_quickBuy_help() {
 ##############################################################################
 print_updateItemTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateItemTemplate - Update an item template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateItemTemplate - Update an item template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15432,7 +15432,7 @@ print_updateItemTemplate_help() {
 ##############################################################################
 print_updateStoreItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateStoreItem - Update a store item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateStoreItem - Update a store item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the item ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15460,7 +15460,7 @@ print_updateStoreItem_help() {
 ##############################################################################
 print_createBundleItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createBundleItem - Create a bundle item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createBundleItem - Create a bundle item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "The SKU for the bundle itself must be unique and there can only be one SKU.  Extra notes for price_override:  The price of all the items (multiplied by the quantity) must equal the price of the bundle.  With individual prices set, items will be processed individually and can be refunded as such.  However, if all prices are set to null, the price of the bundle will be used and will be treated as one item." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -15489,7 +15489,7 @@ print_createBundleItem_help() {
 ##############################################################################
 print_createBundleTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createBundleTemplate - Create a bundle template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createBundleTemplate - Create a bundle template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Bundle Templates define a type of bundle and the properties they have." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -15516,7 +15516,7 @@ print_createBundleTemplate_help() {
 ##############################################################################
 print_deleteBundleItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteBundleItem - Delete a bundle item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteBundleItem - Delete a bundle item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the bundle ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15540,7 +15540,7 @@ print_deleteBundleItem_help() {
 ##############################################################################
 print_deleteBundleTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteBundleTemplate - Delete a bundle template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteBundleTemplate - Delete a bundle template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15645,7 +15645,7 @@ print_getBundleTemplates_help() {
 ##############################################################################
 print_updateBundleItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateBundleItem - Update a bundle item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateBundleItem - Update a bundle item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the bundle ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15673,7 +15673,7 @@ print_updateBundleItem_help() {
 ##############################################################################
 print_updateBundleTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateBundleTemplate - Update a bundle template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateBundleTemplate - Update a bundle template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15699,7 +15699,7 @@ print_updateBundleTemplate_help() {
 ##############################################################################
 print_createCouponItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createCouponItem - Create a coupon item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createCouponItem - Create a coupon item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "SKUs have to be unique in the entire store." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -15728,7 +15728,7 @@ print_createCouponItem_help() {
 ##############################################################################
 print_createCouponTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createCouponTemplate - Create a coupon template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createCouponTemplate - Create a coupon template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Coupon Templates define a type of coupon and the properties they have." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -15755,7 +15755,7 @@ print_createCouponTemplate_help() {
 ##############################################################################
 print_deleteCouponItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteCouponItem - Delete a coupon item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteCouponItem - Delete a coupon item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the coupon ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15779,7 +15779,7 @@ print_deleteCouponItem_help() {
 ##############################################################################
 print_deleteCouponTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteCouponTemplate - Delete a coupon template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteCouponTemplate - Delete a coupon template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15805,7 +15805,7 @@ print_deleteCouponTemplate_help() {
 ##############################################################################
 print_getCouponItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getCouponItem - Get a single coupon item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getCouponItem - Get a single coupon item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the coupon ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15829,7 +15829,7 @@ print_getCouponItem_help() {
 ##############################################################################
 print_getCouponTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getCouponTemplate - Get a single coupon template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getCouponTemplate - Get a single coupon template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Coupon Templates define a type of coupon and the properties they have." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -15855,7 +15855,7 @@ print_getCouponTemplate_help() {
 ##############################################################################
 print_getCouponTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getCouponTemplates - List and search coupon templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getCouponTemplates - List and search coupon templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -15884,7 +15884,7 @@ print_getCouponTemplates_help() {
 ##############################################################################
 print_updateCouponItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateCouponItem - Update a coupon item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateCouponItem - Update a coupon item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the coupon ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15912,7 +15912,7 @@ print_updateCouponItem_help() {
 ##############################################################################
 print_updateCouponTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateCouponTemplate - Update a coupon template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateCouponTemplate - Update a coupon template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15938,7 +15938,7 @@ print_updateCouponTemplate_help() {
 ##############################################################################
 print_createCatalogSale_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createCatalogSale - Create a sale${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createCatalogSale - Create a sale${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The catalog sale object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15963,7 +15963,7 @@ print_createCatalogSale_help() {
 ##############################################################################
 print_deleteCatalogSale_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteCatalogSale - Delete a sale${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteCatalogSale - Delete a sale${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the sale ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15987,7 +15987,7 @@ print_deleteCatalogSale_help() {
 ##############################################################################
 print_getCatalogSale_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getCatalogSale - Get a single sale${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getCatalogSale - Get a single sale${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the sale ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16011,7 +16011,7 @@ print_getCatalogSale_help() {
 ##############################################################################
 print_getCatalogSales_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getCatalogSales - List and search sales${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getCatalogSales - List and search sales${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -16040,7 +16040,7 @@ print_getCatalogSales_help() {
 ##############################################################################
 print_updateCatalogSale_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateCatalogSale - Update a sale${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateCatalogSale - Update a sale${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the sale ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16066,7 +16066,7 @@ print_updateCatalogSale_help() {
 ##############################################################################
 print_createShippingItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createShippingItem - Create a shipping item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createShippingItem - Create a shipping item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "A shipping item represents a shipping option and cost. SKUs have to be unique in the entire store." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -16095,7 +16095,7 @@ print_createShippingItem_help() {
 ##############################################################################
 print_createShippingTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createShippingTemplate - Create a shipping template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createShippingTemplate - Create a shipping template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Shipping Templates define a type of shipping and the properties they have." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -16122,7 +16122,7 @@ print_createShippingTemplate_help() {
 ##############################################################################
 print_deleteShippingItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteShippingItem - Delete a shipping item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteShippingItem - Delete a shipping item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the shipping item ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16146,7 +16146,7 @@ print_deleteShippingItem_help() {
 ##############################################################################
 print_deleteShippingTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteShippingTemplate - Delete a shipping template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteShippingTemplate - Delete a shipping template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16196,7 +16196,7 @@ print_getShippingItem_help() {
 ##############################################################################
 print_getShippingTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getShippingTemplate - Get a single shipping template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getShippingTemplate - Get a single shipping template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Shipping Templates define a type of shipping and the properties they have." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -16222,7 +16222,7 @@ print_getShippingTemplate_help() {
 ##############################################################################
 print_getShippingTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getShippingTemplates - List and search shipping templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getShippingTemplates - List and search shipping templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -16251,7 +16251,7 @@ print_getShippingTemplates_help() {
 ##############################################################################
 print_updateShippingItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateShippingItem - Update a shipping item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateShippingItem - Update a shipping item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the shipping item ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16279,7 +16279,7 @@ print_updateShippingItem_help() {
 ##############################################################################
 print_updateShippingTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateShippingTemplate - Update a shipping template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateShippingTemplate - Update a shipping template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16305,7 +16305,7 @@ print_updateShippingTemplate_help() {
 ##############################################################################
 print_addCustomDiscount_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addCustomDiscount - Adds a custom discount to the cart${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addCustomDiscount - Adds a custom discount to the cart${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the cart ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16331,7 +16331,7 @@ print_addCustomDiscount_help() {
 ##############################################################################
 print_addDiscountToCart_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addDiscountToCart - Adds a discount coupon to the cart${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addDiscountToCart - Adds a discount coupon to the cart${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the cart ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16357,7 +16357,7 @@ print_addDiscountToCart_help() {
 ##############################################################################
 print_addItemToCart_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addItemToCart - Add an item to the cart${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addItemToCart - Add an item to the cart${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Currently, carts cannot contain virtual and real currency items at the same time. Furthermore, the API only support a single virtual item at the moment" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -16414,7 +16414,7 @@ print_createCart_help() {
 ##############################################################################
 print_getCart_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getCart - Returns the cart with the given GUID${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getCart - Returns the cart with the given GUID${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the cart ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16438,7 +16438,7 @@ print_getCart_help() {
 ##############################################################################
 print_getCarts_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getCarts - Get a list of carts${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getCarts - Get a list of carts${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_owner_id${OFF} ${BLUE}[Integer]${OFF}${OFF} - Filter by the id of the owner${YELLOW} Specify as: filter_owner_id=value${OFF}" \
@@ -16469,7 +16469,7 @@ print_getCarts_help() {
 ##############################################################################
 print_getShippable_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getShippable - Returns whether a cart requires shipping${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getShippable - Returns whether a cart requires shipping${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the cart ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16493,7 +16493,7 @@ print_getShippable_help() {
 ##############################################################################
 print_getShippingCountries_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getShippingCountries - Get the list of available shipping countries per vendor${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getShippingCountries - Get the list of available shipping countries per vendor${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Since a cart can have multiple vendors with different shipping options, the countries are broken down by vendors. Please see notes about the response object as the fields are variable." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -16519,7 +16519,7 @@ print_getShippingCountries_help() {
 ##############################################################################
 print_removeDiscountFromCart_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}removeDiscountFromCart - Removes a discount coupon from the cart${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}removeDiscountFromCart - Removes a discount coupon from the cart${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the cart ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16544,7 +16544,7 @@ print_removeDiscountFromCart_help() {
 ##############################################################################
 print_setCartCurrency_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setCartCurrency - Sets the currency to use for the cart${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setCartCurrency - Sets the currency to use for the cart${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "May be disallowed by site settings." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -16572,7 +16572,7 @@ print_setCartCurrency_help() {
 ##############################################################################
 print_setCartOwner_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setCartOwner - Sets the owner of a cart if none is set already${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setCartOwner - Sets the owner of a cart if none is set already${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the cart ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16598,7 +16598,7 @@ print_setCartOwner_help() {
 ##############################################################################
 print_updateItemInCart_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateItemInCart - Changes the quantity of an item already in the cart${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateItemInCart - Changes the quantity of an item already in the cart${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "A quantity of zero will remove the item from the cart altogether." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -16626,7 +16626,7 @@ print_updateItemInCart_help() {
 ##############################################################################
 print_updateShippingAddress_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateShippingAddress - Modifies or sets the order shipping address${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateShippingAddress - Modifies or sets the order shipping address${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the cart ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16652,7 +16652,7 @@ print_updateShippingAddress_help() {
 ##############################################################################
 print_createSubscription_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createSubscription - Creates a subscription item and associated plans${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createSubscription - Creates a subscription item and associated plans${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The subscription to be created" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16677,7 +16677,7 @@ print_createSubscription_help() {
 ##############################################################################
 print_createSubscriptionTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createSubscriptionTemplate - Create a subscription template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createSubscriptionTemplate - Create a subscription template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Subscription Templates define a type of subscription and the properties they have." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -16704,7 +16704,7 @@ print_createSubscriptionTemplate_help() {
 ##############################################################################
 print_deleteSubscription_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteSubscription - Delete a subscription plan${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteSubscription - Delete a subscription plan${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Must not be locked or a migration target" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -16731,7 +16731,7 @@ print_deleteSubscription_help() {
 ##############################################################################
 print_deleteSubscriptionTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteSubscriptionTemplate - Delete a subscription template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteSubscriptionTemplate - Delete a subscription template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16781,7 +16781,7 @@ print_getSubscription_help() {
 ##############################################################################
 print_getSubscriptionTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getSubscriptionTemplate - Get a single subscription template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSubscriptionTemplate - Get a single subscription template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Subscription Templates define a type of subscription and the properties they have." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -16807,7 +16807,7 @@ print_getSubscriptionTemplate_help() {
 ##############################################################################
 print_getSubscriptionTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getSubscriptionTemplates - List and search subscription templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getSubscriptionTemplates - List and search subscription templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -16865,7 +16865,7 @@ print_getSubscriptions_help() {
 ##############################################################################
 print_processSubscriptions_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}processSubscriptions - Processes subscriptions and charge dues${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}processSubscriptions - Processes subscriptions and charge dues${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -16887,7 +16887,7 @@ print_processSubscriptions_help() {
 ##############################################################################
 print_updateSubscription_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateSubscription - Updates a subscription item and associated plans${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateSubscription - Updates a subscription item and associated plans${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Will not remove plans left out" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -16915,7 +16915,7 @@ print_updateSubscription_help() {
 ##############################################################################
 print_updateSubscriptionTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateSubscriptionTemplate - Update a subscription template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateSubscriptionTemplate - Update a subscription template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16941,7 +16941,7 @@ print_updateSubscriptionTemplate_help() {
 ##############################################################################
 print_createVendor_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createVendor - Create a vendor${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createVendor - Create a vendor${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The vendor" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16966,7 +16966,7 @@ print_createVendor_help() {
 ##############################################################################
 print_createVendorTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createVendorTemplate - Create a vendor template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createVendorTemplate - Create a vendor template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Vendor Templates define a type of vendor and the properties they have." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -16993,7 +16993,7 @@ print_createVendorTemplate_help() {
 ##############################################################################
 print_deleteVendor_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteVendor - Delete a vendor${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteVendor - Delete a vendor${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the vendor ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17017,7 +17017,7 @@ print_deleteVendor_help() {
 ##############################################################################
 print_deleteVendorTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteVendorTemplate - Delete a vendor template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteVendorTemplate - Delete a vendor template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17067,7 +17067,7 @@ print_getVendor_help() {
 ##############################################################################
 print_getVendorTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getVendorTemplate - Get a single vendor template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getVendorTemplate - Get a single vendor template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Vendor Templates define a type of vendor and the properties they have." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -17093,7 +17093,7 @@ print_getVendorTemplate_help() {
 ##############################################################################
 print_getVendorTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getVendorTemplates - List and search vendor templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getVendorTemplates - List and search vendor templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -17153,7 +17153,7 @@ print_getVendors_help() {
 ##############################################################################
 print_updateVendor_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateVendor - Update a vendor${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateVendor - Update a vendor${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the vendor ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17179,7 +17179,7 @@ print_updateVendor_help() {
 ##############################################################################
 print_updateVendorTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateVendorTemplate - Update a vendor template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateVendorTemplate - Update a vendor template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17205,7 +17205,7 @@ print_updateVendorTemplate_help() {
 ##############################################################################
 print_createCountryTax_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createCountryTax - Create a country tax${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createCountryTax - Create a country tax${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The tax object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17230,7 +17230,7 @@ print_createCountryTax_help() {
 ##############################################################################
 print_createStateTax_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createStateTax - Create a state tax${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createStateTax - Create a state tax${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}country_code_iso3${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The iso3 code of the country ${YELLOW}Specify as: country_code_iso3=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17256,7 +17256,7 @@ print_createStateTax_help() {
 ##############################################################################
 print_deleteCountryTax_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteCountryTax - Delete an existing tax${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteCountryTax - Delete an existing tax${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}country_code_iso3${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The iso3 code of the country ${YELLOW}Specify as: country_code_iso3=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17280,7 +17280,7 @@ print_deleteCountryTax_help() {
 ##############################################################################
 print_deleteStateTax_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteStateTax - Delete an existing state tax${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteStateTax - Delete an existing state tax${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}country_code_iso3${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The iso3 code of the country ${YELLOW}Specify as: country_code_iso3=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17448,7 +17448,7 @@ print_getStateTaxesForCountry_help() {
 ##############################################################################
 print_updateCountryTax_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateCountryTax - Create or update a tax${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateCountryTax - Create or update a tax${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}country_code_iso3${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The iso3 code of the country ${YELLOW}Specify as: country_code_iso3=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17474,7 +17474,7 @@ print_updateCountryTax_help() {
 ##############################################################################
 print_updateStateTax_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateStateTax - Create or update a state tax${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateStateTax - Create or update a state tax${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}country_code_iso3${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The iso3 code of the country ${YELLOW}Specify as: country_code_iso3=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17547,7 +17547,7 @@ print_getTemplatePropertyTypes_help() {
 ##############################################################################
 print_addUserTag_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addUserTag - Add a tag to a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addUserTag - Add a tag to a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17573,7 +17573,7 @@ print_addUserTag_help() {
 ##############################################################################
 print_createUserTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createUserTemplate - Create a user template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createUserTemplate - Create a user template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "User Templates define a type of user and the properties they have" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -17600,7 +17600,7 @@ print_createUserTemplate_help() {
 ##############################################################################
 print_deleteUserTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteUserTemplate - Delete a user template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteUserTemplate - Delete a user template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -17654,7 +17654,7 @@ print_getUser_help() {
 ##############################################################################
 print_getUserTags_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserTags - List tags for a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserTags - List tags for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17678,7 +17678,7 @@ print_getUserTags_help() {
 ##############################################################################
 print_getUserTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserTemplate - Get a single user template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserTemplate - Get a single user template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17702,7 +17702,7 @@ print_getUserTemplate_help() {
 ##############################################################################
 print_getUserTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserTemplates - List and search user templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserTemplates - List and search user templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -17837,7 +17837,7 @@ print_registerUser_help() {
 ##############################################################################
 print_removeUserTag_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}removeUserTag - Remove a tag from a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}removeUserTag - Remove a tag from a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17862,7 +17862,7 @@ print_removeUserTag_help() {
 ##############################################################################
 print_setPassword_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setPassword - Set a user's password${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setPassword - Set a user's password${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Password should be in plain text and will be encrypted on receipt. Use SSL for security." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -17943,7 +17943,7 @@ print_submitPasswordReset_help() {
 ##############################################################################
 print_updateUser_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateUser - Update a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateUser - Update a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Password will not be edited on this endpoint, use password specific endpoints." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -17971,7 +17971,7 @@ print_updateUser_help() {
 ##############################################################################
 print_updateUserTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateUserTemplate - Update a user template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateUserTemplate - Update a user template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17997,7 +17997,7 @@ print_updateUserTemplate_help() {
 ##############################################################################
 print_createAddress_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createAddress - Create a new address${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createAddress - Create a new address${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18023,7 +18023,7 @@ print_createAddress_help() {
 ##############################################################################
 print_deleteAddress_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteAddress - Delete an address${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteAddress - Delete an address${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18048,7 +18048,7 @@ print_deleteAddress_help() {
 ##############################################################################
 print_getAddress_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getAddress - Get a single address${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getAddress - Get a single address${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18073,7 +18073,7 @@ print_getAddress_help() {
 ##############################################################################
 print_getAddresses_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getAddresses - List and search addresses${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getAddresses - List and search addresses${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18103,7 +18103,7 @@ print_getAddresses_help() {
 ##############################################################################
 print_updateAddress_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateAddress - Update an address${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateAddress - Update an address${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18130,7 +18130,7 @@ print_updateAddress_help() {
 ##############################################################################
 print_addFriend_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addFriend - Add a friend${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addFriend - Add a friend${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "As a user, either creates or confirm a pending request. As an admin, call this endpoint twice while inverting the IDs to create a confirmed friendship." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -18157,7 +18157,7 @@ print_addFriend_help() {
 ##############################################################################
 print_getFriends_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getFriends - Get friends list${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getFriends - Get friends list${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18185,7 +18185,7 @@ print_getFriends_help() {
 ##############################################################################
 print_getInviteToken_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getInviteToken - Returns the invite token${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getInviteToken - Returns the invite token${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "This is a unique invite token that allows direct connection to the request user.  Exposing that token presents privacy issues if the token is leaked. Use friend request flow instead if confirmation is required" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -18211,7 +18211,7 @@ print_getInviteToken_help() {
 ##############################################################################
 print_getInvites_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getInvites - Get pending invites${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getInvites - Get pending invites${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Invites that the specified user received" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -18241,7 +18241,7 @@ print_getInvites_help() {
 ##############################################################################
 print_redeemFriendshipToken_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}redeemFriendshipToken - Redeem friendship token${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}redeemFriendshipToken - Redeem friendship token${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Immediately connects the requested user with the user mapped by the provided invite token" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -18269,7 +18269,7 @@ print_redeemFriendshipToken_help() {
 ##############################################################################
 print_removeOrDeclineFriend_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}removeOrDeclineFriend - Remove or decline a friend${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}removeOrDeclineFriend - Remove or decline a friend${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' if logged in ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18294,7 +18294,7 @@ print_removeOrDeclineFriend_help() {
 ##############################################################################
 print_addMemberToGroup_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addMemberToGroup - Adds a new member to the group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addMemberToGroup - Adds a new member to the group${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18320,7 +18320,7 @@ print_addMemberToGroup_help() {
 ##############################################################################
 print_addMembersToGroup_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addMembersToGroup - Adds multiple members to the group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addMembersToGroup - Adds multiple members to the group${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18346,7 +18346,7 @@ print_addMembersToGroup_help() {
 ##############################################################################
 print_createGroup_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createGroup - Create a group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createGroup - Create a group${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new group" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18371,7 +18371,7 @@ print_createGroup_help() {
 ##############################################################################
 print_createGroupTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createGroupTemplate - Create a group template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createGroupTemplate - Create a group template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Group Templates define a type of group and the properties they have" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -18398,7 +18398,7 @@ print_createGroupTemplate_help() {
 ##############################################################################
 print_deleteGroup_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteGroup - Removes a group from the system IF no resources are attached to it${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteGroup - Removes a group from the system IF no resources are attached to it${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18422,7 +18422,7 @@ print_deleteGroup_help() {
 ##############################################################################
 print_deleteGroupTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteGroupTemplate - Delete a group template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteGroupTemplate - Delete a group template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -18529,7 +18529,7 @@ print_getGroupMembers_help() {
 ##############################################################################
 print_getGroupTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getGroupTemplate - Get a single group template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getGroupTemplate - Get a single group template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18553,7 +18553,7 @@ print_getGroupTemplate_help() {
 ##############################################################################
 print_getGroupTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getGroupTemplates - List and search group templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getGroupTemplates - List and search group templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -18606,7 +18606,7 @@ print_getGroupsForUser_help() {
 ##############################################################################
 print_removeGroupMember_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}removeGroupMember - Removes a user from a group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}removeGroupMember - Removes a user from a group${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18631,7 +18631,7 @@ print_removeGroupMember_help() {
 ##############################################################################
 print_updateGroup_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateGroup - Update a group${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateGroup - Update a group${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18657,7 +18657,7 @@ print_updateGroup_help() {
 ##############################################################################
 print_updateGroupMemberStatus_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateGroupMemberStatus - Change a user's status${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateGroupMemberStatus - Change a user's status${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18684,7 +18684,7 @@ print_updateGroupMemberStatus_help() {
 ##############################################################################
 print_updateGroupTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateGroupTemplate - Update a group template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateGroupTemplate - Update a group template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18751,7 +18751,7 @@ print_updateGroups_help() {
 ##############################################################################
 print_addItemToUserInventory_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}addItemToUserInventory - Adds an item to the user inventory${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}addItemToUserInventory - Adds an item to the user inventory${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "The inventory is fulfilled asynchronously UNLESS the invoice is explicitely skipped. Depending on the use case, it might require the client to verify that the entitlement was added after the fact or configure a BRE rule to get a notification in real time" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -18779,7 +18779,7 @@ print_addItemToUserInventory_help() {
 ##############################################################################
 print_checkUserEntitlementItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}checkUserEntitlementItem - Check for access to an item without consuming${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}checkUserEntitlementItem - Check for access to an item without consuming${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Useful for pre-check and accounts for all various buisness rules" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -18808,7 +18808,7 @@ print_checkUserEntitlementItem_help() {
 ##############################################################################
 print_createEntitlementItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createEntitlementItem - Create an entitlement item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createEntitlementItem - Create an entitlement item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}cascade${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: false)${OFF} - Whether to cascade group changes, such as in the limited gettable behavior. A 400 error will return otherwise if the group is already in use with different values.${YELLOW} Specify as: cascade=value${OFF}" \
@@ -18835,7 +18835,7 @@ print_createEntitlementItem_help() {
 ##############################################################################
 print_createEntitlementTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createEntitlementTemplate - Create an entitlement template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createEntitlementTemplate - Create an entitlement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Entitlement templates define a type of entitlement and the properties they have" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -18862,7 +18862,7 @@ print_createEntitlementTemplate_help() {
 ##############################################################################
 print_deleteEntitlementItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteEntitlementItem - Delete an entitlement item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteEntitlementItem - Delete an entitlement item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}entitlement_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the entitlement ${YELLOW}Specify as: entitlement_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18886,7 +18886,7 @@ print_deleteEntitlementItem_help() {
 ##############################################################################
 print_deleteEntitlementTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteEntitlementTemplate - Delete an entitlement template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteEntitlementTemplate - Delete an entitlement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -18967,7 +18967,7 @@ print_getEntitlementItems_help() {
 ##############################################################################
 print_getEntitlementTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getEntitlementTemplate - Get a single entitlement template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getEntitlementTemplate - Get a single entitlement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18991,7 +18991,7 @@ print_getEntitlementTemplate_help() {
 ##############################################################################
 print_getEntitlementTemplates_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getEntitlementTemplates - List and search entitlement templates${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getEntitlementTemplates - List and search entitlement templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -19020,7 +19020,7 @@ print_getEntitlementTemplates_help() {
 ##############################################################################
 print_getUserInventories_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserInventories - List the user inventory entries for a given user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserInventories - List the user inventory entries for a given user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19060,7 +19060,7 @@ print_getUserInventories_help() {
 ##############################################################################
 print_getUserInventory_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserInventory - Get an inventory entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserInventory - Get an inventory entry${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the inventory owner or 'me' for the logged in user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19085,7 +19085,7 @@ print_getUserInventory_help() {
 ##############################################################################
 print_getUserInventoryLog_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserInventoryLog - List the log entries for this inventory entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserInventoryLog - List the log entries for this inventory entry${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the inventory owner or 'me' for the logged in user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19114,7 +19114,7 @@ print_getUserInventoryLog_help() {
 ##############################################################################
 print_getUsersInventory_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUsersInventory - List the user inventory entries for all users${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUsersInventory - List the user inventory entries for all users${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}inactive${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: false)${OFF} - If true, accepts inactive user inventories${YELLOW} Specify as: inactive=value${OFF}" \
@@ -19153,7 +19153,7 @@ print_getUsersInventory_help() {
 ##############################################################################
 print_grantUserEntitlement_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}grantUserEntitlement - Grant an entitlement${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}grantUserEntitlement - Grant an entitlement${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user to grant the entitlement to ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19179,7 +19179,7 @@ print_grantUserEntitlement_help() {
 ##############################################################################
 print_updateEntitlementItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateEntitlementItem - Update an entitlement item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateEntitlementItem - Update an entitlement item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}entitlement_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the entitlement ${YELLOW}Specify as: entitlement_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19207,7 +19207,7 @@ print_updateEntitlementItem_help() {
 ##############################################################################
 print_updateEntitlementTemplate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateEntitlementTemplate - Update an entitlement template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateEntitlementTemplate - Update an entitlement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19233,7 +19233,7 @@ print_updateEntitlementTemplate_help() {
 ##############################################################################
 print_updateUserInventoryBehaviorData_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateUserInventoryBehaviorData - Set the behavior data for an inventory entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateUserInventoryBehaviorData - Set the behavior data for an inventory entry${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19260,7 +19260,7 @@ print_updateUserInventoryBehaviorData_help() {
 ##############################################################################
 print_updateUserInventoryExpires_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateUserInventoryExpires - Set the expiration date${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateUserInventoryExpires - Set the expiration date${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Will change the current grace period for a subscription but not the bill date (possibly even ending before having the chance to re-bill)" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -19289,7 +19289,7 @@ print_updateUserInventoryExpires_help() {
 ##############################################################################
 print_updateUserInventoryStatus_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateUserInventoryStatus - Set the status for an inventory entry${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateUserInventoryStatus - Set the status for an inventory entry${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19316,7 +19316,7 @@ print_updateUserInventoryStatus_help() {
 ##############################################################################
 print_useUserEntitlementItem_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}useUserEntitlementItem - Use an item${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}useUserEntitlementItem - Use an item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user to check for or 'me' for logged in user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19345,7 +19345,7 @@ print_useUserEntitlementItem_help() {
 ##############################################################################
 print_createUserRelationship_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}createUserRelationship - Create a user relationship${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}createUserRelationship - Create a user relationship${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new relationship" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19370,7 +19370,7 @@ print_createUserRelationship_help() {
 ##############################################################################
 print_deleteUserRelationship_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteUserRelationship - Delete a user relationship${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteUserRelationship - Delete a user relationship${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the relationship ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19394,7 +19394,7 @@ print_deleteUserRelationship_help() {
 ##############################################################################
 print_getUserRelationship_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserRelationship - Get a user relationship${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserRelationship - Get a user relationship${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the relationship ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19418,7 +19418,7 @@ print_getUserRelationship_help() {
 ##############################################################################
 print_getUserRelationships_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserRelationships - Get a list of user relationships${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserRelationships - Get a list of user relationships${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -19447,7 +19447,7 @@ print_getUserRelationships_help() {
 ##############################################################################
 print_updateUserRelationship_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateUserRelationship - Update a user relationship${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateUserRelationship - Update a user relationship${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the relationship ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19473,7 +19473,7 @@ print_updateUserRelationship_help() {
 ##############################################################################
 print_getUserSubscriptionDetails_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserSubscriptionDetails - Get details about a user's subscription${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserSubscriptionDetails - Get details about a user's subscription${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19498,7 +19498,7 @@ print_getUserSubscriptionDetails_help() {
 ##############################################################################
 print_getUsersSubscriptionDetails_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUsersSubscriptionDetails - Get details about a user's subscriptions${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUsersSubscriptionDetails - Get details about a user's subscriptions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19522,7 +19522,7 @@ print_getUsersSubscriptionDetails_help() {
 ##############################################################################
 print_reactivateUserSubscription_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}reactivateUserSubscription - Reactivate a subscription and charge fee${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}reactivateUserSubscription - Reactivate a subscription and charge fee${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19549,7 +19549,7 @@ print_reactivateUserSubscription_help() {
 ##############################################################################
 print_setSubscriptionBillDate_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setSubscriptionBillDate - Set a new date to bill a subscription on${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setSubscriptionBillDate - Set a new date to bill a subscription on${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19576,7 +19576,7 @@ print_setSubscriptionBillDate_help() {
 ##############################################################################
 print_setSubscriptionPaymentMethod_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setSubscriptionPaymentMethod - Set the payment method to use for a subscription${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setSubscriptionPaymentMethod - Set the payment method to use for a subscription${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "May send null to use floating default" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -19605,7 +19605,7 @@ print_setSubscriptionPaymentMethod_help() {
 ##############################################################################
 print_setSubscriptionStatus_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setSubscriptionStatus - Set the status of a subscription${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setSubscriptionStatus - Set the status of a subscription${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Note that the new status may be blocked if the system is not configured to allow the current status to be changed to the new, to enforce proper flow. The default options for statuses are shown below but may be altered for special use cases" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -19634,7 +19634,7 @@ print_setSubscriptionStatus_help() {
 ##############################################################################
 print_setUserSubscriptionPlan_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setUserSubscriptionPlan - Set a new subscription plan for a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setUserSubscriptionPlan - Set a new subscription plan for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19661,7 +19661,7 @@ print_setUserSubscriptionPlan_help() {
 ##############################################################################
 print_setUserSubscriptionPrice_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setUserSubscriptionPrice - Set a new subscription price for a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setUserSubscriptionPrice - Set a new subscription price for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "This new price will be what the user is charged at the begining of each new period. This override is specific to the current subscription and will not carry over if they end and later re-subscribe. It will persist if the plan is changed using the setUserSubscriptionPlan endpoint." | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -19769,7 +19769,7 @@ print_getHealth_help() {
 ##############################################################################
 print_deleteMaintenance_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteMaintenance - Delete maintenance info${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteMaintenance - Delete maintenance info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -19815,7 +19815,7 @@ print_getMaintenance_help() {
 ##############################################################################
 print_setMaintenance_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}setMaintenance - Set current maintenance info${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}setMaintenance - Set current maintenance info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The maintenance object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19840,7 +19840,7 @@ print_setMaintenance_help() {
 ##############################################################################
 print_updateMaintenance_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateMaintenance - Update current maintenance info${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateMaintenance - Update current maintenance info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The maintenance object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19865,7 +19865,7 @@ print_updateMaintenance_help() {
 ##############################################################################
 print_getUserLocationLog_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserLocationLog - Returns the authentication log for a user${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserLocationLog - Returns the authentication log for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "A log entry is recorded everytime a user requests a new token. Standard pagination available" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -19898,7 +19898,7 @@ print_getUserLocationLog_help() {
 ##############################################################################
 print_getUserTokenDetails_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getUserTokenDetails - Returns the authentication token details. Use /users endpoint for detailed user's info${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getUserTokenDetails - Returns the authentication token details. Use /users endpoint for detailed user's info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -19976,7 +19976,7 @@ call_getOAuthToken() {
 ##############################################################################
 call_createActivity() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/activities" path_parameter_names query_parameter_names)
@@ -20050,7 +20050,7 @@ call_createActivity() {
 ##############################################################################
 call_createActivityOccurrence() {
     local path_parameter_names=()
-    local query_parameter_names=(test)
+    local query_parameter_names=(test    )
     local path
 
     path=$(build_request_path "/activity-occurrences" path_parameter_names query_parameter_names)
@@ -20124,7 +20124,7 @@ call_createActivityOccurrence() {
 ##############################################################################
 call_createActivityTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/activities/templates" path_parameter_names query_parameter_names)
@@ -20198,7 +20198,7 @@ call_createActivityTemplate() {
 ##############################################################################
 call_deleteActivity() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/activities/{id}" path_parameter_names query_parameter_names)
@@ -20230,7 +20230,7 @@ call_deleteActivity() {
 ##############################################################################
 call_deleteActivityTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/activities/templates/{id}" path_parameter_names query_parameter_names)
@@ -20326,7 +20326,7 @@ call_getActivity() {
 ##############################################################################
 call_getActivityTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/activities/templates/{id}" path_parameter_names query_parameter_names)
@@ -20358,7 +20358,7 @@ call_getActivityTemplate() {
 ##############################################################################
 call_getActivityTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/activities/templates" path_parameter_names query_parameter_names)
@@ -20390,7 +20390,7 @@ call_getActivityTemplates() {
 ##############################################################################
 call_setActivityOccurrenceResults() {
     local path_parameter_names=(activity_occurrence_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/activity-occurrences/{activity_occurrence_id}/results" path_parameter_names query_parameter_names)
@@ -20464,7 +20464,7 @@ call_setActivityOccurrenceResults() {
 ##############################################################################
 call_updateActivity() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/activities/{id}" path_parameter_names query_parameter_names)
@@ -20538,7 +20538,7 @@ call_updateActivity() {
 ##############################################################################
 call_updateActivityOccurrence() {
     local path_parameter_names=(activity_occurrence_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/activity-occurrences/{activity_occurrence_id}/status" path_parameter_names query_parameter_names)
@@ -20612,7 +20612,7 @@ call_updateActivityOccurrence() {
 ##############################################################################
 call_updateActivityTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/activities/templates/{id}" path_parameter_names query_parameter_names)
@@ -20686,7 +20686,7 @@ call_updateActivityTemplate() {
 ##############################################################################
 call_getDownloadURL() {
     local path_parameter_names=()
-    local query_parameter_names=(bucket path expiration)
+    local query_parameter_names=(bucket path expiration    )
     local path
 
     path=$(build_request_path "/amazon/s3/downloadurl" path_parameter_names query_parameter_names)
@@ -20718,7 +20718,7 @@ call_getDownloadURL() {
 ##############################################################################
 call_getSignedS3URL() {
     local path_parameter_names=()
-    local query_parameter_names=(filename content_type)
+    local query_parameter_names=(filename content_type    )
     local path
 
     path=$(build_request_path "/amazon/s3/signedposturl" path_parameter_names query_parameter_names)
@@ -20750,7 +20750,7 @@ call_getSignedS3URL() {
 ##############################################################################
 call_createClient() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/clients" path_parameter_names query_parameter_names)
@@ -20824,7 +20824,7 @@ call_createClient() {
 ##############################################################################
 call_deleteClient() {
     local path_parameter_names=(client_key)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/clients/{client_key}" path_parameter_names query_parameter_names)
@@ -20856,7 +20856,7 @@ call_deleteClient() {
 ##############################################################################
 call_getClient() {
     local path_parameter_names=(client_key)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/clients/{client_key}" path_parameter_names query_parameter_names)
@@ -20888,7 +20888,7 @@ call_getClient() {
 ##############################################################################
 call_getClientGrantTypes() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/clients/grant-types" path_parameter_names query_parameter_names)
@@ -20920,7 +20920,7 @@ call_getClientGrantTypes() {
 ##############################################################################
 call_getClients() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/auth/clients" path_parameter_names query_parameter_names)
@@ -20952,7 +20952,7 @@ call_getClients() {
 ##############################################################################
 call_setClientGrantTypes() {
     local path_parameter_names=(client_key)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/clients/{client_key}/grant-types" path_parameter_names query_parameter_names)
@@ -21026,7 +21026,7 @@ call_setClientGrantTypes() {
 ##############################################################################
 call_setClientRedirectUris() {
     local path_parameter_names=(client_key)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/clients/{client_key}/redirect-uris" path_parameter_names query_parameter_names)
@@ -21100,7 +21100,7 @@ call_setClientRedirectUris() {
 ##############################################################################
 call_updateClient() {
     local path_parameter_names=(client_key)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/clients/{client_key}" path_parameter_names query_parameter_names)
@@ -21174,7 +21174,7 @@ call_updateClient() {
 ##############################################################################
 call_createPermission() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/permissions" path_parameter_names query_parameter_names)
@@ -21248,7 +21248,7 @@ call_createPermission() {
 ##############################################################################
 call_deletePermission() {
     local path_parameter_names=(permission)
-    local query_parameter_names=(force)
+    local query_parameter_names=(force    )
     local path
 
     path=$(build_request_path "/auth/permissions/{permission}" path_parameter_names query_parameter_names)
@@ -21280,7 +21280,7 @@ call_deletePermission() {
 ##############################################################################
 call_getPermission() {
     local path_parameter_names=(permission)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/permissions/{permission}" path_parameter_names query_parameter_names)
@@ -21312,7 +21312,7 @@ call_getPermission() {
 ##############################################################################
 call_getPermissions() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/auth/permissions" path_parameter_names query_parameter_names)
@@ -21344,7 +21344,7 @@ call_getPermissions() {
 ##############################################################################
 call_updatePermission() {
     local path_parameter_names=(permission)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/permissions/{permission}" path_parameter_names query_parameter_names)
@@ -21418,7 +21418,7 @@ call_updatePermission() {
 ##############################################################################
 call_createRole() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/roles" path_parameter_names query_parameter_names)
@@ -21492,7 +21492,7 @@ call_createRole() {
 ##############################################################################
 call_deleteRole() {
     local path_parameter_names=(role)
-    local query_parameter_names=(force)
+    local query_parameter_names=(force    )
     local path
 
     path=$(build_request_path "/auth/roles/{role}" path_parameter_names query_parameter_names)
@@ -21524,7 +21524,7 @@ call_deleteRole() {
 ##############################################################################
 call_getClientRoles() {
     local path_parameter_names=(client_key)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/clients/{client_key}/roles" path_parameter_names query_parameter_names)
@@ -21556,7 +21556,7 @@ call_getClientRoles() {
 ##############################################################################
 call_getRole() {
     local path_parameter_names=(role)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/roles/{role}" path_parameter_names query_parameter_names)
@@ -21588,7 +21588,7 @@ call_getRole() {
 ##############################################################################
 call_getRoles() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_name filter_role size page order)
+    local query_parameter_names=(filter_name filter_role size page order    )
     local path
 
     path=$(build_request_path "/auth/roles" path_parameter_names query_parameter_names)
@@ -21620,7 +21620,7 @@ call_getRoles() {
 ##############################################################################
 call_getUserRoles() {
     local path_parameter_names=(user_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/users/{user_id}/roles" path_parameter_names query_parameter_names)
@@ -21652,7 +21652,7 @@ call_getUserRoles() {
 ##############################################################################
 call_setClientRoles() {
     local path_parameter_names=(client_key)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/clients/{client_key}/roles" path_parameter_names query_parameter_names)
@@ -21726,7 +21726,7 @@ call_setClientRoles() {
 ##############################################################################
 call_setPermissionsForRole() {
     local path_parameter_names=(role)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/roles/{role}/permissions" path_parameter_names query_parameter_names)
@@ -21800,7 +21800,7 @@ call_setPermissionsForRole() {
 ##############################################################################
 call_setUserRoles() {
     local path_parameter_names=(user_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/users/{user_id}/roles" path_parameter_names query_parameter_names)
@@ -21874,7 +21874,7 @@ call_setUserRoles() {
 ##############################################################################
 call_updateRole() {
     local path_parameter_names=(role)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/roles/{role}" path_parameter_names query_parameter_names)
@@ -21948,7 +21948,7 @@ call_updateRole() {
 ##############################################################################
 call_deleteTokens() {
     local path_parameter_names=()
-    local query_parameter_names=(username client_id)
+    local query_parameter_names=(username client_id    )
     local path
 
     path=$(build_request_path "/auth/tokens" path_parameter_names query_parameter_names)
@@ -21980,7 +21980,7 @@ call_deleteTokens() {
 ##############################################################################
 call_getToken() {
     local path_parameter_names=(username client_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/auth/tokens/{username}/{client_id}" path_parameter_names query_parameter_names)
@@ -22012,7 +22012,7 @@ call_getToken() {
 ##############################################################################
 call_getTokens() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_client_id filter_username size page order)
+    local query_parameter_names=(filter_client_id filter_username size page order    )
     local path
 
     path=$(build_request_path "/auth/tokens" path_parameter_names query_parameter_names)
@@ -22044,7 +22044,7 @@ call_getTokens() {
 ##############################################################################
 call_getBREActions() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_category filter_name filter_tags filter_search)
+    local query_parameter_names=(filter_category filter_name filter_tags filter_search    )
     local path
 
     path=$(build_request_path "/bre/actions" path_parameter_names query_parameter_names)
@@ -22076,7 +22076,7 @@ call_getBREActions() {
 ##############################################################################
 call_createBRECategoryTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/categories/templates" path_parameter_names query_parameter_names)
@@ -22150,7 +22150,7 @@ call_createBRECategoryTemplate() {
 ##############################################################################
 call_deleteBRECategoryTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/bre/categories/templates/{id}" path_parameter_names query_parameter_names)
@@ -22182,7 +22182,7 @@ call_deleteBRECategoryTemplate() {
 ##############################################################################
 call_getBRECategories() {
     local path_parameter_names=()
-    local query_parameter_names=(size page)
+    local query_parameter_names=(size page    )
     local path
 
     path=$(build_request_path "/bre/categories" path_parameter_names query_parameter_names)
@@ -22214,7 +22214,7 @@ call_getBRECategories() {
 ##############################################################################
 call_getBRECategory() {
     local path_parameter_names=(name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/categories/{name}" path_parameter_names query_parameter_names)
@@ -22246,7 +22246,7 @@ call_getBRECategory() {
 ##############################################################################
 call_getBRECategoryTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/categories/templates/{id}" path_parameter_names query_parameter_names)
@@ -22278,7 +22278,7 @@ call_getBRECategoryTemplate() {
 ##############################################################################
 call_getBRECategoryTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/bre/categories/templates" path_parameter_names query_parameter_names)
@@ -22310,7 +22310,7 @@ call_getBRECategoryTemplates() {
 ##############################################################################
 call_updateBRECategory() {
     local path_parameter_names=(name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/categories/{name}" path_parameter_names query_parameter_names)
@@ -22384,7 +22384,7 @@ call_updateBRECategory() {
 ##############################################################################
 call_updateBRECategoryTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/categories/templates/{id}" path_parameter_names query_parameter_names)
@@ -22458,7 +22458,7 @@ call_updateBRECategoryTemplate() {
 ##############################################################################
 call_sendBREEvent() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/events" path_parameter_names query_parameter_names)
@@ -22532,7 +22532,7 @@ call_sendBREEvent() {
 ##############################################################################
 call_getBREExpressions() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/expressions/lookup" path_parameter_names query_parameter_names)
@@ -22564,7 +22564,7 @@ call_getBREExpressions() {
 ##############################################################################
 call_createBREGlobal() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/globals/definitions" path_parameter_names query_parameter_names)
@@ -22638,7 +22638,7 @@ call_createBREGlobal() {
 ##############################################################################
 call_deleteBREGlobal() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/globals/definitions/{id}" path_parameter_names query_parameter_names)
@@ -22670,7 +22670,7 @@ call_deleteBREGlobal() {
 ##############################################################################
 call_getBREGlobal() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/globals/definitions/{id}" path_parameter_names query_parameter_names)
@@ -22702,7 +22702,7 @@ call_getBREGlobal() {
 ##############################################################################
 call_getBREGlobals() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_system size page)
+    local query_parameter_names=(filter_system size page    )
     local path
 
     path=$(build_request_path "/bre/globals/definitions" path_parameter_names query_parameter_names)
@@ -22734,7 +22734,7 @@ call_getBREGlobals() {
 ##############################################################################
 call_updateBREGlobal() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/globals/definitions/{id}" path_parameter_names query_parameter_names)
@@ -22808,7 +22808,7 @@ call_updateBREGlobal() {
 ##############################################################################
 call_createBRERule() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/rules" path_parameter_names query_parameter_names)
@@ -22882,7 +22882,7 @@ call_createBRERule() {
 ##############################################################################
 call_deleteBRERule() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/rules/{id}" path_parameter_names query_parameter_names)
@@ -22914,7 +22914,7 @@ call_deleteBRERule() {
 ##############################################################################
 call_getBREExpressionAsString() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/rules/expression-as-string" path_parameter_names query_parameter_names)
@@ -22988,7 +22988,7 @@ call_getBREExpressionAsString() {
 ##############################################################################
 call_getBRERule() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/rules/{id}" path_parameter_names query_parameter_names)
@@ -23020,7 +23020,7 @@ call_getBRERule() {
 ##############################################################################
 call_getBRERules() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_name filter_enabled filter_system filter_trigger filter_action filter_condition size page)
+    local query_parameter_names=(filter_name filter_enabled filter_system filter_trigger filter_action filter_condition size page    )
     local path
 
     path=$(build_request_path "/bre/rules" path_parameter_names query_parameter_names)
@@ -23052,7 +23052,7 @@ call_getBRERules() {
 ##############################################################################
 call_setBRERule() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/rules/{id}/enabled" path_parameter_names query_parameter_names)
@@ -23126,7 +23126,7 @@ call_setBRERule() {
 ##############################################################################
 call_updateBRERule() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/rules/{id}" path_parameter_names query_parameter_names)
@@ -23200,7 +23200,7 @@ call_updateBRERule() {
 ##############################################################################
 call_createBRETrigger() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/triggers" path_parameter_names query_parameter_names)
@@ -23274,7 +23274,7 @@ call_createBRETrigger() {
 ##############################################################################
 call_deleteBRETrigger() {
     local path_parameter_names=(event_name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/triggers/{event_name}" path_parameter_names query_parameter_names)
@@ -23306,7 +23306,7 @@ call_deleteBRETrigger() {
 ##############################################################################
 call_getBRETrigger() {
     local path_parameter_names=(event_name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/triggers/{event_name}" path_parameter_names query_parameter_names)
@@ -23338,7 +23338,7 @@ call_getBRETrigger() {
 ##############################################################################
 call_getBRETriggers() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_system filter_category filter_tags filter_name filter_search size page)
+    local query_parameter_names=(filter_system filter_category filter_tags filter_name filter_search size page    )
     local path
 
     path=$(build_request_path "/bre/triggers" path_parameter_names query_parameter_names)
@@ -23370,7 +23370,7 @@ call_getBRETriggers() {
 ##############################################################################
 call_updateBRETrigger() {
     local path_parameter_names=(event_name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/triggers/{event_name}" path_parameter_names query_parameter_names)
@@ -23444,7 +23444,7 @@ call_updateBRETrigger() {
 ##############################################################################
 call_getBREVariableTypes() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/variable-types" path_parameter_names query_parameter_names)
@@ -23476,7 +23476,7 @@ call_getBREVariableTypes() {
 ##############################################################################
 call_getBREVariableValues() {
     local path_parameter_names=(name)
-    local query_parameter_names=(filter_name size page)
+    local query_parameter_names=(filter_name size page    )
     local path
 
     path=$(build_request_path "/bre/variable-types/{name}/values" path_parameter_names query_parameter_names)
@@ -23508,7 +23508,7 @@ call_getBREVariableValues() {
 ##############################################################################
 call_addChallengeToCampaign() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/campaigns/{id}/challenges" path_parameter_names query_parameter_names)
@@ -23582,7 +23582,7 @@ call_addChallengeToCampaign() {
 ##############################################################################
 call_createCampaign() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/campaigns" path_parameter_names query_parameter_names)
@@ -23656,7 +23656,7 @@ call_createCampaign() {
 ##############################################################################
 call_createCampaignTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/campaigns/templates" path_parameter_names query_parameter_names)
@@ -23730,7 +23730,7 @@ call_createCampaignTemplate() {
 ##############################################################################
 call_deleteCampaign() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/campaigns/{id}" path_parameter_names query_parameter_names)
@@ -23762,7 +23762,7 @@ call_deleteCampaign() {
 ##############################################################################
 call_deleteCampaignTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/campaigns/templates/{id}" path_parameter_names query_parameter_names)
@@ -23858,7 +23858,7 @@ call_getCampaignChallenges() {
 ##############################################################################
 call_getCampaignTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/campaigns/templates/{id}" path_parameter_names query_parameter_names)
@@ -23890,7 +23890,7 @@ call_getCampaignTemplate() {
 ##############################################################################
 call_getCampaignTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/campaigns/templates" path_parameter_names query_parameter_names)
@@ -23954,7 +23954,7 @@ call_getCampaigns() {
 ##############################################################################
 call_removeChallengeFromCampaign() {
     local path_parameter_names=(campaign_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/campaigns/{campaign_id}/challenges/{id}" path_parameter_names query_parameter_names)
@@ -23986,7 +23986,7 @@ call_removeChallengeFromCampaign() {
 ##############################################################################
 call_updateCampaign() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/campaigns/{id}" path_parameter_names query_parameter_names)
@@ -24060,7 +24060,7 @@ call_updateCampaign() {
 ##############################################################################
 call_updateCampaignTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/campaigns/templates/{id}" path_parameter_names query_parameter_names)
@@ -24134,7 +24134,7 @@ call_updateCampaignTemplate() {
 ##############################################################################
 call_createChallenge() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/challenges" path_parameter_names query_parameter_names)
@@ -24208,7 +24208,7 @@ call_createChallenge() {
 ##############################################################################
 call_createChallengeActivity() {
     local path_parameter_names=(challenge_id)
-    local query_parameter_names=(validateSettings)
+    local query_parameter_names=(validateSettings    )
     local path
 
     path=$(build_request_path "/challenges/{challenge_id}/activities" path_parameter_names query_parameter_names)
@@ -24282,7 +24282,7 @@ call_createChallengeActivity() {
 ##############################################################################
 call_createChallengeActivityTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/challenge-activities/templates" path_parameter_names query_parameter_names)
@@ -24356,7 +24356,7 @@ call_createChallengeActivityTemplate() {
 ##############################################################################
 call_createChallengeTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/challenges/templates" path_parameter_names query_parameter_names)
@@ -24430,7 +24430,7 @@ call_createChallengeTemplate() {
 ##############################################################################
 call_deleteChallenge() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/challenges/{id}" path_parameter_names query_parameter_names)
@@ -24462,7 +24462,7 @@ call_deleteChallenge() {
 ##############################################################################
 call_deleteChallengeActivity() {
     local path_parameter_names=(id challenge_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/challenges/{challenge_id}/activities/{id}" path_parameter_names query_parameter_names)
@@ -24494,7 +24494,7 @@ call_deleteChallengeActivity() {
 ##############################################################################
 call_deleteChallengeActivityTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/challenge-activities/templates/{id}" path_parameter_names query_parameter_names)
@@ -24526,7 +24526,7 @@ call_deleteChallengeActivityTemplate() {
 ##############################################################################
 call_deleteChallengeEvent() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/challenges/events/{id}" path_parameter_names query_parameter_names)
@@ -24558,7 +24558,7 @@ call_deleteChallengeEvent() {
 ##############################################################################
 call_deleteChallengeTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/challenges/templates/{id}" path_parameter_names query_parameter_names)
@@ -24686,7 +24686,7 @@ call_getChallengeActivity() {
 ##############################################################################
 call_getChallengeActivityTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/challenge-activities/templates/{id}" path_parameter_names query_parameter_names)
@@ -24718,7 +24718,7 @@ call_getChallengeActivityTemplate() {
 ##############################################################################
 call_getChallengeActivityTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/challenge-activities/templates" path_parameter_names query_parameter_names)
@@ -24814,7 +24814,7 @@ call_getChallengeEvents() {
 ##############################################################################
 call_getChallengeTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/challenges/templates/{id}" path_parameter_names query_parameter_names)
@@ -24846,7 +24846,7 @@ call_getChallengeTemplate() {
 ##############################################################################
 call_getChallengeTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/challenges/templates" path_parameter_names query_parameter_names)
@@ -24910,7 +24910,7 @@ call_getChallenges() {
 ##############################################################################
 call_updateChallenge() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/challenges/{id}" path_parameter_names query_parameter_names)
@@ -24984,7 +24984,7 @@ call_updateChallenge() {
 ##############################################################################
 call_updateChallengeActivity() {
     local path_parameter_names=(id challenge_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/challenges/{challenge_id}/activities/{id}" path_parameter_names query_parameter_names)
@@ -25058,7 +25058,7 @@ call_updateChallengeActivity() {
 ##############################################################################
 call_updateChallengeActivityTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/challenge-activities/templates/{id}" path_parameter_names query_parameter_names)
@@ -25132,7 +25132,7 @@ call_updateChallengeActivityTemplate() {
 ##############################################################################
 call_updateChallengeTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/challenges/templates/{id}" path_parameter_names query_parameter_names)
@@ -25206,7 +25206,7 @@ call_updateChallengeTemplate() {
 ##############################################################################
 call_createRewardSet() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/rewards" path_parameter_names query_parameter_names)
@@ -25280,7 +25280,7 @@ call_createRewardSet() {
 ##############################################################################
 call_deleteRewardSet() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/rewards/{id}" path_parameter_names query_parameter_names)
@@ -25376,7 +25376,7 @@ call_getRewardSets() {
 ##############################################################################
 call_updateRewardSet() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/rewards/{id}" path_parameter_names query_parameter_names)
@@ -25450,7 +25450,7 @@ call_updateRewardSet() {
 ##############################################################################
 call_createCategory() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/categories" path_parameter_names query_parameter_names)
@@ -25524,7 +25524,7 @@ call_createCategory() {
 ##############################################################################
 call_createCategoryTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/categories/templates" path_parameter_names query_parameter_names)
@@ -25598,7 +25598,7 @@ call_createCategoryTemplate() {
 ##############################################################################
 call_deleteCategory() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/categories/{id}" path_parameter_names query_parameter_names)
@@ -25630,7 +25630,7 @@ call_deleteCategory() {
 ##############################################################################
 call_deleteCategoryTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/categories/templates/{id}" path_parameter_names query_parameter_names)
@@ -25726,7 +25726,7 @@ call_getCategory() {
 ##############################################################################
 call_getCategoryTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/categories/templates/{id}" path_parameter_names query_parameter_names)
@@ -25758,7 +25758,7 @@ call_getCategoryTemplate() {
 ##############################################################################
 call_getCategoryTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/categories/templates" path_parameter_names query_parameter_names)
@@ -25822,7 +25822,7 @@ call_getTags() {
 ##############################################################################
 call_updateCategory() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/categories/{id}" path_parameter_names query_parameter_names)
@@ -25896,7 +25896,7 @@ call_updateCategory() {
 ##############################################################################
 call_updateCategoryTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/categories/templates/{id}" path_parameter_names query_parameter_names)
@@ -25970,7 +25970,7 @@ call_updateCategoryTemplate() {
 ##############################################################################
 call_createConfig() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/configs" path_parameter_names query_parameter_names)
@@ -26044,7 +26044,7 @@ call_createConfig() {
 ##############################################################################
 call_deleteConfig() {
     local path_parameter_names=(name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/configs/{name}" path_parameter_names query_parameter_names)
@@ -26140,7 +26140,7 @@ call_getConfigs() {
 ##############################################################################
 call_updateConfig() {
     local path_parameter_names=(name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/configs/{name}" path_parameter_names query_parameter_names)
@@ -26214,7 +26214,7 @@ call_updateConfig() {
 ##############################################################################
 call_createArticle() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/content/articles" path_parameter_names query_parameter_names)
@@ -26288,7 +26288,7 @@ call_createArticle() {
 ##############################################################################
 call_createArticleTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/content/articles/templates" path_parameter_names query_parameter_names)
@@ -26362,7 +26362,7 @@ call_createArticleTemplate() {
 ##############################################################################
 call_deleteArticle() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/content/articles/{id}" path_parameter_names query_parameter_names)
@@ -26394,7 +26394,7 @@ call_deleteArticle() {
 ##############################################################################
 call_deleteArticleTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/content/articles/templates/{id}" path_parameter_names query_parameter_names)
@@ -26458,7 +26458,7 @@ call_getArticle() {
 ##############################################################################
 call_getArticleTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/content/articles/templates/{id}" path_parameter_names query_parameter_names)
@@ -26490,7 +26490,7 @@ call_getArticleTemplate() {
 ##############################################################################
 call_getArticleTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/content/articles/templates" path_parameter_names query_parameter_names)
@@ -26554,7 +26554,7 @@ call_getArticles() {
 ##############################################################################
 call_updateArticle() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/content/articles/{id}" path_parameter_names query_parameter_names)
@@ -26628,7 +26628,7 @@ call_updateArticle() {
 ##############################################################################
 call_updateArticleTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/content/articles/templates/{id}" path_parameter_names query_parameter_names)
@@ -26702,7 +26702,7 @@ call_updateArticleTemplate() {
 ##############################################################################
 call_addComment() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/comments" path_parameter_names query_parameter_names)
@@ -26776,7 +26776,7 @@ call_addComment() {
 ##############################################################################
 call_deleteComment() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/comments/{id}" path_parameter_names query_parameter_names)
@@ -26946,7 +26946,7 @@ call_searchComments() {
 ##############################################################################
 call_updateComment() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/comments/{id}/content" path_parameter_names query_parameter_names)
@@ -27020,7 +27020,7 @@ call_updateComment() {
 ##############################################################################
 call_answerPoll() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/polls/{id}/response" path_parameter_names query_parameter_names)
@@ -27094,7 +27094,7 @@ call_answerPoll() {
 ##############################################################################
 call_createPoll() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/polls" path_parameter_names query_parameter_names)
@@ -27168,7 +27168,7 @@ call_createPoll() {
 ##############################################################################
 call_createPollTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/polls/templates" path_parameter_names query_parameter_names)
@@ -27242,7 +27242,7 @@ call_createPollTemplate() {
 ##############################################################################
 call_deletePoll() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/polls/{id}" path_parameter_names query_parameter_names)
@@ -27274,7 +27274,7 @@ call_deletePoll() {
 ##############################################################################
 call_deletePollTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/media/polls/templates/{id}" path_parameter_names query_parameter_names)
@@ -27338,7 +27338,7 @@ call_getPoll() {
 ##############################################################################
 call_getPollAnswer() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/polls/{id}/response" path_parameter_names query_parameter_names)
@@ -27370,7 +27370,7 @@ call_getPollAnswer() {
 ##############################################################################
 call_getPollTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/polls/templates/{id}" path_parameter_names query_parameter_names)
@@ -27402,7 +27402,7 @@ call_getPollTemplate() {
 ##############################################################################
 call_getPollTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/media/polls/templates" path_parameter_names query_parameter_names)
@@ -27466,7 +27466,7 @@ call_getPolls() {
 ##############################################################################
 call_updatePoll() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/polls/{id}" path_parameter_names query_parameter_names)
@@ -27540,7 +27540,7 @@ call_updatePoll() {
 ##############################################################################
 call_updatePollTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/polls/templates/{id}" path_parameter_names query_parameter_names)
@@ -27614,7 +27614,7 @@ call_updatePollTemplate() {
 ##############################################################################
 call_createCurrency() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/currencies" path_parameter_names query_parameter_names)
@@ -27688,7 +27688,7 @@ call_createCurrency() {
 ##############################################################################
 call_deleteCurrency() {
     local path_parameter_names=(code)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/currencies/{code}" path_parameter_names query_parameter_names)
@@ -27784,7 +27784,7 @@ call_getCurrency() {
 ##############################################################################
 call_updateCurrency() {
     local path_parameter_names=(code)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/currencies/{code}" path_parameter_names query_parameter_names)
@@ -27858,7 +27858,7 @@ call_updateCurrency() {
 ##############################################################################
 call_addDeviceUsers() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/devices/{id}/users" path_parameter_names query_parameter_names)
@@ -27932,7 +27932,7 @@ call_addDeviceUsers() {
 ##############################################################################
 call_createDevice() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/devices" path_parameter_names query_parameter_names)
@@ -28006,7 +28006,7 @@ call_createDevice() {
 ##############################################################################
 call_deleteDevice() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/devices/{id}" path_parameter_names query_parameter_names)
@@ -28038,7 +28038,7 @@ call_deleteDevice() {
 ##############################################################################
 call_deleteDeviceUser() {
     local path_parameter_names=(id user_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/devices/{id}/users/{user_id}" path_parameter_names query_parameter_names)
@@ -28070,7 +28070,7 @@ call_deleteDeviceUser() {
 ##############################################################################
 call_deleteDeviceUsers() {
     local path_parameter_names=(id)
-    local query_parameter_names=(filter_id)
+    local query_parameter_names=(filter_id    )
     local path
 
     path=$(build_request_path "/devices/{id}/users" path_parameter_names query_parameter_names)
@@ -28102,7 +28102,7 @@ call_deleteDeviceUsers() {
 ##############################################################################
 call_getDevice() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/devices/{id}" path_parameter_names query_parameter_names)
@@ -28134,7 +28134,7 @@ call_getDevice() {
 ##############################################################################
 call_getDevices() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_make filter_model size page order)
+    local query_parameter_names=(filter_make filter_model size page order    )
     local path
 
     path=$(build_request_path "/devices" path_parameter_names query_parameter_names)
@@ -28166,7 +28166,7 @@ call_getDevices() {
 ##############################################################################
 call_updateDevice() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/devices/{id}" path_parameter_names query_parameter_names)
@@ -28240,7 +28240,7 @@ call_updateDevice() {
 ##############################################################################
 call_addDisposition() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/dispositions" path_parameter_names query_parameter_names)
@@ -28314,7 +28314,7 @@ call_addDisposition() {
 ##############################################################################
 call_deleteDisposition() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/dispositions/{id}" path_parameter_names query_parameter_names)
@@ -28442,7 +28442,7 @@ call_getDispositions() {
 ##############################################################################
 call_createFulfillmentType() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/fulfillment/types" path_parameter_names query_parameter_names)
@@ -28516,7 +28516,7 @@ call_createFulfillmentType() {
 ##############################################################################
 call_deleteFulfillmentType() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/fulfillment/types/{id}" path_parameter_names query_parameter_names)
@@ -28612,7 +28612,7 @@ call_getFulfillmentTypes() {
 ##############################################################################
 call_updateFulfillmentType() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/fulfillment/types/{id}" path_parameter_names query_parameter_names)
@@ -28686,7 +28686,7 @@ call_updateFulfillmentType() {
 ##############################################################################
 call_createAchievement() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/achievements" path_parameter_names query_parameter_names)
@@ -28760,7 +28760,7 @@ call_createAchievement() {
 ##############################################################################
 call_createAchievementTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/achievements/templates" path_parameter_names query_parameter_names)
@@ -28834,7 +28834,7 @@ call_createAchievementTemplate() {
 ##############################################################################
 call_deleteAchievement() {
     local path_parameter_names=(name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/achievements/{name}" path_parameter_names query_parameter_names)
@@ -28866,7 +28866,7 @@ call_deleteAchievement() {
 ##############################################################################
 call_deleteAchievementTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/achievements/templates/{id}" path_parameter_names query_parameter_names)
@@ -28898,7 +28898,7 @@ call_deleteAchievementTemplate() {
 ##############################################################################
 call_getAchievement() {
     local path_parameter_names=(name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/achievements/{name}" path_parameter_names query_parameter_names)
@@ -28930,7 +28930,7 @@ call_getAchievement() {
 ##############################################################################
 call_getAchievementTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/achievements/templates/{id}" path_parameter_names query_parameter_names)
@@ -28962,7 +28962,7 @@ call_getAchievementTemplate() {
 ##############################################################################
 call_getAchievementTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/achievements/templates" path_parameter_names query_parameter_names)
@@ -28994,7 +28994,7 @@ call_getAchievementTemplates() {
 ##############################################################################
 call_getAchievementTriggers() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/achievements/triggers" path_parameter_names query_parameter_names)
@@ -29026,7 +29026,7 @@ call_getAchievementTriggers() {
 ##############################################################################
 call_getAchievements() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_tagset filter_name filter_hidden size page order filter_derived)
+    local query_parameter_names=(filter_tagset filter_name filter_hidden size page order filter_derived    )
     local path
 
     path=$(build_request_path "/achievements" path_parameter_names query_parameter_names)
@@ -29058,7 +29058,7 @@ call_getAchievements() {
 ##############################################################################
 call_getDerivedAchievements() {
     local path_parameter_names=(name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/achievements/derived/{name}" path_parameter_names query_parameter_names)
@@ -29090,7 +29090,7 @@ call_getDerivedAchievements() {
 ##############################################################################
 call_getUserAchievementProgress() {
     local path_parameter_names=(user_id achievement_name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/achievements/{achievement_name}" path_parameter_names query_parameter_names)
@@ -29122,7 +29122,7 @@ call_getUserAchievementProgress() {
 ##############################################################################
 call_getUserAchievementsProgress() {
     local path_parameter_names=(user_id)
-    local query_parameter_names=(filter_achievement_derived filter_achievement_tagset filter_achievement_name size page)
+    local query_parameter_names=(filter_achievement_derived filter_achievement_tagset filter_achievement_name size page    )
     local path
 
     path=$(build_request_path "/users/{user_id}/achievements" path_parameter_names query_parameter_names)
@@ -29154,7 +29154,7 @@ call_getUserAchievementsProgress() {
 ##############################################################################
 call_getUsersAchievementProgress() {
     local path_parameter_names=(achievement_name)
-    local query_parameter_names=(filter_achievement_derived filter_achievement_tagset filter_achievement_name size page)
+    local query_parameter_names=(filter_achievement_derived filter_achievement_tagset filter_achievement_name size page    )
     local path
 
     path=$(build_request_path "/users/achievements/{achievement_name}" path_parameter_names query_parameter_names)
@@ -29186,7 +29186,7 @@ call_getUsersAchievementProgress() {
 ##############################################################################
 call_getUsersAchievementsProgress() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_achievement_derived filter_achievement_tagset filter_achievement_name size page)
+    local query_parameter_names=(filter_achievement_derived filter_achievement_tagset filter_achievement_name size page    )
     local path
 
     path=$(build_request_path "/users/achievements" path_parameter_names query_parameter_names)
@@ -29218,7 +29218,7 @@ call_getUsersAchievementsProgress() {
 ##############################################################################
 call_incrementAchievementProgress() {
     local path_parameter_names=(user_id achievement_name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/achievements/{achievement_name}/progress" path_parameter_names query_parameter_names)
@@ -29292,7 +29292,7 @@ call_incrementAchievementProgress() {
 ##############################################################################
 call_setAchievementProgress() {
     local path_parameter_names=(user_id achievement_name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/achievements/{achievement_name}/progress" path_parameter_names query_parameter_names)
@@ -29366,7 +29366,7 @@ call_setAchievementProgress() {
 ##############################################################################
 call_updateAchievement() {
     local path_parameter_names=(name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/achievements/{name}" path_parameter_names query_parameter_names)
@@ -29440,7 +29440,7 @@ call_updateAchievement() {
 ##############################################################################
 call_updateAchievementTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/achievements/templates/{id}" path_parameter_names query_parameter_names)
@@ -29610,7 +29610,7 @@ call_getLeaderboardStrategies() {
 ##############################################################################
 call_createLevel() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/leveling" path_parameter_names query_parameter_names)
@@ -29684,7 +29684,7 @@ call_createLevel() {
 ##############################################################################
 call_deleteLevel() {
     local path_parameter_names=(name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/leveling/{name}" path_parameter_names query_parameter_names)
@@ -29716,7 +29716,7 @@ call_deleteLevel() {
 ##############################################################################
 call_getLevel() {
     local path_parameter_names=(name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/leveling/{name}" path_parameter_names query_parameter_names)
@@ -29748,7 +29748,7 @@ call_getLevel() {
 ##############################################################################
 call_getLevelTriggers() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/leveling/triggers" path_parameter_names query_parameter_names)
@@ -29780,7 +29780,7 @@ call_getLevelTriggers() {
 ##############################################################################
 call_getLevels() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_name size page order)
+    local query_parameter_names=(filter_name size page order    )
     local path
 
     path=$(build_request_path "/leveling" path_parameter_names query_parameter_names)
@@ -29812,7 +29812,7 @@ call_getLevels() {
 ##############################################################################
 call_getUserLevel() {
     local path_parameter_names=(user_id name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/leveling/{name}" path_parameter_names query_parameter_names)
@@ -29844,7 +29844,7 @@ call_getUserLevel() {
 ##############################################################################
 call_getUserLevels() {
     local path_parameter_names=(user_id)
-    local query_parameter_names=(filter_name size page order)
+    local query_parameter_names=(filter_name size page order    )
     local path
 
     path=$(build_request_path "/users/{user_id}/leveling" path_parameter_names query_parameter_names)
@@ -29876,7 +29876,7 @@ call_getUserLevels() {
 ##############################################################################
 call_incrementProgress() {
     local path_parameter_names=(user_id name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/leveling/{name}/progress" path_parameter_names query_parameter_names)
@@ -29950,7 +29950,7 @@ call_incrementProgress() {
 ##############################################################################
 call_setProgress() {
     local path_parameter_names=(user_id name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/leveling/{name}/progress" path_parameter_names query_parameter_names)
@@ -30024,7 +30024,7 @@ call_setProgress() {
 ##############################################################################
 call_updateLevel() {
     local path_parameter_names=(name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/leveling/{name}" path_parameter_names query_parameter_names)
@@ -30098,7 +30098,7 @@ call_updateLevel() {
 ##############################################################################
 call_addMetric() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/metrics" path_parameter_names query_parameter_names)
@@ -30172,7 +30172,7 @@ call_addMetric() {
 ##############################################################################
 call_addQuestionAnswers() {
     local path_parameter_names=(question_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/questions/{question_id}/answers" path_parameter_names query_parameter_names)
@@ -30246,7 +30246,7 @@ call_addQuestionAnswers() {
 ##############################################################################
 call_addQuestionTag() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/questions/{id}/tags" path_parameter_names query_parameter_names)
@@ -30320,7 +30320,7 @@ call_addQuestionTag() {
 ##############################################################################
 call_addTagToQuestionsBatch() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_search filter_idset filter_category filter_tag filter_tagset filter_type filter_published filter_import_id)
+    local query_parameter_names=(filter_search filter_idset filter_category filter_tag filter_tagset filter_type filter_published filter_import_id    )
     local path
 
     path=$(build_request_path "/trivia/questions/tags" path_parameter_names query_parameter_names)
@@ -30394,7 +30394,7 @@ call_addTagToQuestionsBatch() {
 ##############################################################################
 call_createImportJob() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/import" path_parameter_names query_parameter_names)
@@ -30468,7 +30468,7 @@ call_createImportJob() {
 ##############################################################################
 call_createQuestion() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/questions" path_parameter_names query_parameter_names)
@@ -30542,7 +30542,7 @@ call_createQuestion() {
 ##############################################################################
 call_createQuestionTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/questions/templates" path_parameter_names query_parameter_names)
@@ -30616,7 +30616,7 @@ call_createQuestionTemplate() {
 ##############################################################################
 call_deleteImportJob() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/import/{id}" path_parameter_names query_parameter_names)
@@ -30648,7 +30648,7 @@ call_deleteImportJob() {
 ##############################################################################
 call_deleteQuestion() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/questions/{id}" path_parameter_names query_parameter_names)
@@ -30680,7 +30680,7 @@ call_deleteQuestion() {
 ##############################################################################
 call_deleteQuestionAnswers() {
     local path_parameter_names=(question_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/questions/{question_id}/answers/{id}" path_parameter_names query_parameter_names)
@@ -30712,7 +30712,7 @@ call_deleteQuestionAnswers() {
 ##############################################################################
 call_deleteQuestionTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/trivia/questions/templates/{id}" path_parameter_names query_parameter_names)
@@ -30744,7 +30744,7 @@ call_deleteQuestionTemplate() {
 ##############################################################################
 call_getImportJob() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/import/{id}" path_parameter_names query_parameter_names)
@@ -30776,7 +30776,7 @@ call_getImportJob() {
 ##############################################################################
 call_getImportJobs() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_vendor filter_category filter_name filter_status size page order)
+    local query_parameter_names=(filter_vendor filter_category filter_name filter_status size page order    )
     local path
 
     path=$(build_request_path "/trivia/import" path_parameter_names query_parameter_names)
@@ -30808,7 +30808,7 @@ call_getImportJobs() {
 ##############################################################################
 call_getQuestion() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/questions/{id}" path_parameter_names query_parameter_names)
@@ -30840,7 +30840,7 @@ call_getQuestion() {
 ##############################################################################
 call_getQuestionAnswer() {
     local path_parameter_names=(question_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/questions/{question_id}/answers/{id}" path_parameter_names query_parameter_names)
@@ -30872,7 +30872,7 @@ call_getQuestionAnswer() {
 ##############################################################################
 call_getQuestionAnswers() {
     local path_parameter_names=(question_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/questions/{question_id}/answers" path_parameter_names query_parameter_names)
@@ -30904,7 +30904,7 @@ call_getQuestionAnswers() {
 ##############################################################################
 call_getQuestionDeltas() {
     local path_parameter_names=()
-    local query_parameter_names=(since)
+    local query_parameter_names=(since    )
     local path
 
     path=$(build_request_path "/trivia/questions/delta" path_parameter_names query_parameter_names)
@@ -30936,7 +30936,7 @@ call_getQuestionDeltas() {
 ##############################################################################
 call_getQuestionTags() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/questions/{id}/tags" path_parameter_names query_parameter_names)
@@ -30968,7 +30968,7 @@ call_getQuestionTags() {
 ##############################################################################
 call_getQuestionTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/questions/templates/{id}" path_parameter_names query_parameter_names)
@@ -31000,7 +31000,7 @@ call_getQuestionTemplate() {
 ##############################################################################
 call_getQuestionTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/trivia/questions/templates" path_parameter_names query_parameter_names)
@@ -31032,7 +31032,7 @@ call_getQuestionTemplates() {
 ##############################################################################
 call_getQuestions() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order filter_search filter_idset filter_category filter_tagset filter_tag filter_type filter_published filter_import_id)
+    local query_parameter_names=(size page order filter_search filter_idset filter_category filter_tagset filter_tag filter_type filter_published filter_import_id    )
     local path
 
     path=$(build_request_path "/trivia/questions" path_parameter_names query_parameter_names)
@@ -31064,7 +31064,7 @@ call_getQuestions() {
 ##############################################################################
 call_getQuestionsCount() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_search filter_idset filter_category filter_tag filter_tagset filter_type filter_published)
+    local query_parameter_names=(filter_search filter_idset filter_category filter_tag filter_tagset filter_type filter_published    )
     local path
 
     path=$(build_request_path "/trivia/questions/count" path_parameter_names query_parameter_names)
@@ -31096,7 +31096,7 @@ call_getQuestionsCount() {
 ##############################################################################
 call_processImportJob() {
     local path_parameter_names=(id)
-    local query_parameter_names=(publish_now)
+    local query_parameter_names=(publish_now    )
     local path
 
     path=$(build_request_path "/trivia/import/{id}/process" path_parameter_names query_parameter_names)
@@ -31128,7 +31128,7 @@ call_processImportJob() {
 ##############################################################################
 call_removeQuestionTag() {
     local path_parameter_names=(id tag)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/questions/{id}/tags/{tag}" path_parameter_names query_parameter_names)
@@ -31160,7 +31160,7 @@ call_removeQuestionTag() {
 ##############################################################################
 call_removeTagToQuestionsBatch() {
     local path_parameter_names=(tag)
-    local query_parameter_names=(filter_search filter_idset filter_category filter_tag filter_tagset filter_type filter_published filter_import_id)
+    local query_parameter_names=(filter_search filter_idset filter_category filter_tag filter_tagset filter_type filter_published filter_import_id    )
     local path
 
     path=$(build_request_path "/trivia/questions/tags/{tag}" path_parameter_names query_parameter_names)
@@ -31192,7 +31192,7 @@ call_removeTagToQuestionsBatch() {
 ##############################################################################
 call_searchQuestionTags() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_search filter_category filter_import_id)
+    local query_parameter_names=(filter_search filter_category filter_import_id    )
     local path
 
     path=$(build_request_path "/trivia/tags" path_parameter_names query_parameter_names)
@@ -31224,7 +31224,7 @@ call_searchQuestionTags() {
 ##############################################################################
 call_updateImportJob() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/import/{id}" path_parameter_names query_parameter_names)
@@ -31298,7 +31298,7 @@ call_updateImportJob() {
 ##############################################################################
 call_updateQuestion() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/questions/{id}" path_parameter_names query_parameter_names)
@@ -31372,7 +31372,7 @@ call_updateQuestion() {
 ##############################################################################
 call_updateQuestionAnswer() {
     local path_parameter_names=(question_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/questions/{question_id}/answers/{id}" path_parameter_names query_parameter_names)
@@ -31446,7 +31446,7 @@ call_updateQuestionAnswer() {
 ##############################################################################
 call_updateQuestionTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/trivia/questions/templates/{id}" path_parameter_names query_parameter_names)
@@ -31520,7 +31520,7 @@ call_updateQuestionTemplate() {
 ##############################################################################
 call_updateQuestionsInBulk() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_search filter_idset filter_category filter_tagset filter_type filter_published filter_import_id)
+    local query_parameter_names=(filter_search filter_idset filter_category filter_tagset filter_type filter_published filter_import_id    )
     local path
 
     path=$(build_request_path "/trivia/questions" path_parameter_names query_parameter_names)
@@ -31594,7 +31594,7 @@ call_updateQuestionsInBulk() {
 ##############################################################################
 call_createInvoice() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/invoices" path_parameter_names query_parameter_names)
@@ -31700,7 +31700,7 @@ call_getFulFillmentStatuses() {
 ##############################################################################
 call_getInvoice() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/invoices/{id}" path_parameter_names query_parameter_names)
@@ -31732,7 +31732,7 @@ call_getInvoice() {
 ##############################################################################
 call_getInvoiceLogs() {
     local path_parameter_names=(id)
-    local query_parameter_names=(size page)
+    local query_parameter_names=(size page    )
     local path
 
     path=$(build_request_path "/invoices/{id}/logs" path_parameter_names query_parameter_names)
@@ -31764,7 +31764,7 @@ call_getInvoiceLogs() {
 ##############################################################################
 call_getInvoices() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_user filter_email filter_fulfillment_status filter_payment_status filter_item_name filter_external_ref filter_created_date filter_vendor_ids filter_currency filter_shipping_state_name filter_shipping_country_name filter_shipping filter_vendor_name filter_sku size page order)
+    local query_parameter_names=(filter_user filter_email filter_fulfillment_status filter_payment_status filter_item_name filter_external_ref filter_created_date filter_vendor_ids filter_currency filter_shipping_state_name filter_shipping_country_name filter_shipping filter_vendor_name filter_sku size page order    )
     local path
 
     path=$(build_request_path "/invoices" path_parameter_names query_parameter_names)
@@ -31828,7 +31828,7 @@ call_getPaymentStatuses() {
 ##############################################################################
 call_payInvoice() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/invoices/{id}/payments" path_parameter_names query_parameter_names)
@@ -31902,7 +31902,7 @@ call_payInvoice() {
 ##############################################################################
 call_setBundledInvoiceItemFulfillmentStatus() {
     local path_parameter_names=(id bundleSku sku)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/invoices/{id}/items/{bundleSku}/bundled-skus/{sku}/fulfillment-status" path_parameter_names query_parameter_names)
@@ -31976,7 +31976,7 @@ call_setBundledInvoiceItemFulfillmentStatus() {
 ##############################################################################
 call_setExternalRef() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/invoices/{id}/external-ref" path_parameter_names query_parameter_names)
@@ -32050,7 +32050,7 @@ call_setExternalRef() {
 ##############################################################################
 call_setInvoiceItemFulfillmentStatus() {
     local path_parameter_names=(id sku)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/invoices/{id}/items/{sku}/fulfillment-status" path_parameter_names query_parameter_names)
@@ -32124,7 +32124,7 @@ call_setInvoiceItemFulfillmentStatus() {
 ##############################################################################
 call_setOrderNotes() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/invoices/{id}/order-notes" path_parameter_names query_parameter_names)
@@ -32198,7 +32198,7 @@ call_setOrderNotes() {
 ##############################################################################
 call_setPaymentStatus() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/invoices/{id}/payment-status" path_parameter_names query_parameter_names)
@@ -32272,7 +32272,7 @@ call_setPaymentStatus() {
 ##############################################################################
 call_updateBillingInfo() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/invoices/{id}/billing-address" path_parameter_names query_parameter_names)
@@ -32474,7 +32474,7 @@ call_getCurrencyByGeoLocation() {
 ##############################################################################
 call_addUserLog() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/audit/logs" path_parameter_names query_parameter_names)
@@ -32548,7 +32548,7 @@ call_addUserLog() {
 ##############################################################################
 call_getBREEventLog() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/logs/event-log/{id}" path_parameter_names query_parameter_names)
@@ -32580,7 +32580,7 @@ call_getBREEventLog() {
 ##############################################################################
 call_getBREEventLogs() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_start_date filter_event_name filter_event_id size page order)
+    local query_parameter_names=(filter_start_date filter_event_name filter_event_id size page order    )
     local path
 
     path=$(build_request_path "/bre/logs/event-log" path_parameter_names query_parameter_names)
@@ -32612,7 +32612,7 @@ call_getBREEventLogs() {
 ##############################################################################
 call_getBREForwardLog() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/bre/logs/forward-log/{id}" path_parameter_names query_parameter_names)
@@ -32644,7 +32644,7 @@ call_getBREForwardLog() {
 ##############################################################################
 call_getBREForwardLogs() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_start_date filter_end_date filter_status_code size page order)
+    local query_parameter_names=(filter_start_date filter_end_date filter_status_code size page order    )
     local path
 
     path=$(build_request_path "/bre/logs/forward-log" path_parameter_names query_parameter_names)
@@ -32676,7 +32676,7 @@ call_getBREForwardLogs() {
 ##############################################################################
 call_getUserLog() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/audit/logs/{id}" path_parameter_names query_parameter_names)
@@ -32708,7 +32708,7 @@ call_getUserLog() {
 ##############################################################################
 call_getUserLogs() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_user filter_action_name size page order)
+    local query_parameter_names=(filter_user filter_action_name size page order    )
     local path
 
     path=$(build_request_path "/audit/logs" path_parameter_names query_parameter_names)
@@ -32740,7 +32740,7 @@ call_getUserLogs() {
 ##############################################################################
 call_addArtist() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/artists" path_parameter_names query_parameter_names)
@@ -32814,7 +32814,7 @@ call_addArtist() {
 ##############################################################################
 call_createArtistTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/artists/templates" path_parameter_names query_parameter_names)
@@ -32888,7 +32888,7 @@ call_createArtistTemplate() {
 ##############################################################################
 call_deleteArtist() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/artists/{id}" path_parameter_names query_parameter_names)
@@ -32920,7 +32920,7 @@ call_deleteArtist() {
 ##############################################################################
 call_deleteArtistTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/media/artists/templates/{id}" path_parameter_names query_parameter_names)
@@ -32984,7 +32984,7 @@ call_getArtist() {
 ##############################################################################
 call_getArtistTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/artists/templates/{id}" path_parameter_names query_parameter_names)
@@ -33016,7 +33016,7 @@ call_getArtistTemplate() {
 ##############################################################################
 call_getArtistTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/media/artists/templates" path_parameter_names query_parameter_names)
@@ -33080,7 +33080,7 @@ call_getArtists() {
 ##############################################################################
 call_updateArtist() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/artists/{id}" path_parameter_names query_parameter_names)
@@ -33154,7 +33154,7 @@ call_updateArtist() {
 ##############################################################################
 call_updateArtistTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/artists/templates/{id}" path_parameter_names query_parameter_names)
@@ -33228,7 +33228,7 @@ call_updateArtistTemplate() {
 ##############################################################################
 call_getModerationReport() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/moderation/reports/{id}" path_parameter_names query_parameter_names)
@@ -33260,7 +33260,7 @@ call_getModerationReport() {
 ##############################################################################
 call_getModerationReports() {
     local path_parameter_names=()
-    local query_parameter_names=(exclude_resolved filter_context size page)
+    local query_parameter_names=(exclude_resolved filter_context size page    )
     local path
 
     path=$(build_request_path "/moderation/reports" path_parameter_names query_parameter_names)
@@ -33292,7 +33292,7 @@ call_getModerationReports() {
 ##############################################################################
 call_updateModerationReport() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/moderation/reports/{id}" path_parameter_names query_parameter_names)
@@ -33366,7 +33366,7 @@ call_updateModerationReport() {
 ##############################################################################
 call_addUserToVideoWhitelist() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/videos/{id}/whitelist" path_parameter_names query_parameter_names)
@@ -33440,7 +33440,7 @@ call_addUserToVideoWhitelist() {
 ##############################################################################
 call_addVideo() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/videos" path_parameter_names query_parameter_names)
@@ -33514,7 +33514,7 @@ call_addVideo() {
 ##############################################################################
 call_addVideoComment() {
     local path_parameter_names=(video_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/videos/{video_id}/comments" path_parameter_names query_parameter_names)
@@ -33588,7 +33588,7 @@ call_addVideoComment() {
 ##############################################################################
 call_addVideoContributor() {
     local path_parameter_names=(video_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/videos/{video_id}/contributors" path_parameter_names query_parameter_names)
@@ -33662,7 +33662,7 @@ call_addVideoContributor() {
 ##############################################################################
 call_addVideoFlag() {
     local path_parameter_names=(video_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/videos/{video_id}/moderation" path_parameter_names query_parameter_names)
@@ -33736,7 +33736,7 @@ call_addVideoFlag() {
 ##############################################################################
 call_addVideoRelationships() {
     local path_parameter_names=(video_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/videos/{video_id}/related" path_parameter_names query_parameter_names)
@@ -33810,7 +33810,7 @@ call_addVideoRelationships() {
 ##############################################################################
 call_createVideoDisposition() {
     local path_parameter_names=(video_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/videos/{video_id}/dispositions" path_parameter_names query_parameter_names)
@@ -33884,7 +33884,7 @@ call_createVideoDisposition() {
 ##############################################################################
 call_deleteVideo() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/videos/{id}" path_parameter_names query_parameter_names)
@@ -33916,7 +33916,7 @@ call_deleteVideo() {
 ##############################################################################
 call_deleteVideoComment() {
     local path_parameter_names=(video_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/videos/{video_id}/comments/{id}" path_parameter_names query_parameter_names)
@@ -33948,7 +33948,7 @@ call_deleteVideoComment() {
 ##############################################################################
 call_deleteVideoDisposition() {
     local path_parameter_names=(disposition_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/videos/{video_id}/dispositions/{disposition_id}" path_parameter_names query_parameter_names)
@@ -33980,7 +33980,7 @@ call_deleteVideoDisposition() {
 ##############################################################################
 call_deleteVideoFlag() {
     local path_parameter_names=(video_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/videos/{video_id}/moderation" path_parameter_names query_parameter_names)
@@ -34012,7 +34012,7 @@ call_deleteVideoFlag() {
 ##############################################################################
 call_deleteVideoRelationship() {
     local path_parameter_names=(video_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/videos/{video_id}/related/{id}" path_parameter_names query_parameter_names)
@@ -34044,7 +34044,7 @@ call_deleteVideoRelationship() {
 ##############################################################################
 call_getUserVideos() {
     local path_parameter_names=(user_id)
-    local query_parameter_names=(exclude_flagged size page)
+    local query_parameter_names=(exclude_flagged size page    )
     local path
 
     path=$(build_request_path "/users/{user_id}/videos" path_parameter_names query_parameter_names)
@@ -34076,7 +34076,7 @@ call_getUserVideos() {
 ##############################################################################
 call_getVideo() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/videos/{id}" path_parameter_names query_parameter_names)
@@ -34236,7 +34236,7 @@ call_getVideos() {
 ##############################################################################
 call_removeUserFromVideoWhitelist() {
     local path_parameter_names=(video_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/videos/{video_id}/whitelist/{id}" path_parameter_names query_parameter_names)
@@ -34268,7 +34268,7 @@ call_removeUserFromVideoWhitelist() {
 ##############################################################################
 call_removeVideoContributor() {
     local path_parameter_names=(video_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/videos/{video_id}/contributors/{id}" path_parameter_names query_parameter_names)
@@ -34300,7 +34300,7 @@ call_removeVideoContributor() {
 ##############################################################################
 call_updateVideo() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/videos/{id}" path_parameter_names query_parameter_names)
@@ -34374,7 +34374,7 @@ call_updateVideo() {
 ##############################################################################
 call_updateVideoComment() {
     local path_parameter_names=(video_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/videos/{video_id}/comments/{id}/content" path_parameter_names query_parameter_names)
@@ -34448,7 +34448,7 @@ call_updateVideoComment() {
 ##############################################################################
 call_updateVideoRelationship() {
     local path_parameter_names=(video_id relationship_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/media/videos/{video_id}/related/{id}/relationship_details" path_parameter_names query_parameter_names)
@@ -34554,7 +34554,7 @@ call_viewVideo() {
 ##############################################################################
 call_sendRawEmail() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/messaging/raw-email" path_parameter_names query_parameter_names)
@@ -34628,7 +34628,7 @@ call_sendRawEmail() {
 ##############################################################################
 call_sendRawSMS() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/messaging/raw-sms" path_parameter_names query_parameter_names)
@@ -34702,7 +34702,7 @@ call_sendRawSMS() {
 ##############################################################################
 call_sendTemplatedEmail() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/messaging/templated-email" path_parameter_names query_parameter_names)
@@ -34776,7 +34776,7 @@ call_sendTemplatedEmail() {
 ##############################################################################
 call_sendTemplatedSMS() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/messaging/templated-sms" path_parameter_names query_parameter_names)
@@ -34850,7 +34850,7 @@ call_sendTemplatedSMS() {
 ##############################################################################
 call_createPaymentMethod() {
     local path_parameter_names=(user_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/payment-methods" path_parameter_names query_parameter_names)
@@ -34924,7 +34924,7 @@ call_createPaymentMethod() {
 ##############################################################################
 call_deletePaymentMethod() {
     local path_parameter_names=(user_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/payment-methods/{id}" path_parameter_names query_parameter_names)
@@ -34956,7 +34956,7 @@ call_deletePaymentMethod() {
 ##############################################################################
 call_getPaymentMethod() {
     local path_parameter_names=(user_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/payment-methods/{id}" path_parameter_names query_parameter_names)
@@ -34988,7 +34988,7 @@ call_getPaymentMethod() {
 ##############################################################################
 call_getPaymentMethods() {
     local path_parameter_names=(user_id)
-    local query_parameter_names=(filter_name filter_payment_type filter_payment_method_type_id filter_payment_method_type_name size page order)
+    local query_parameter_names=(filter_name filter_payment_type filter_payment_method_type_id filter_payment_method_type_name size page order    )
     local path
 
     path=$(build_request_path "/users/{user_id}/payment-methods" path_parameter_names query_parameter_names)
@@ -35020,7 +35020,7 @@ call_getPaymentMethods() {
 ##############################################################################
 call_paymentAuthorization() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/payment/authorizations" path_parameter_names query_parameter_names)
@@ -35094,7 +35094,7 @@ call_paymentAuthorization() {
 ##############################################################################
 call_paymentCapture() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/payment/authorizations/{id}/capture" path_parameter_names query_parameter_names)
@@ -35126,7 +35126,7 @@ call_paymentCapture() {
 ##############################################################################
 call_updatePaymentMethod() {
     local path_parameter_names=(user_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/payment-methods/{id}" path_parameter_names query_parameter_names)
@@ -35274,7 +35274,7 @@ call_verifyAppleReceipt() {
 ##############################################################################
 call_createOrUpdateFattMerchantPaymentMethod() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/payment/provider/fattmerchant/payment-methods" path_parameter_names query_parameter_names)
@@ -35422,7 +35422,7 @@ call_handleGooglePayment() {
 ##############################################################################
 call_silentPostOptimal() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/payment/provider/optimal/silent" path_parameter_names query_parameter_names)
@@ -35496,7 +35496,7 @@ call_silentPostOptimal() {
 ##############################################################################
 call_createPayPalBillingAgreementUrl() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/payment/provider/paypal/classic/agreements/start" path_parameter_names query_parameter_names)
@@ -35570,7 +35570,7 @@ call_createPayPalBillingAgreementUrl() {
 ##############################################################################
 call_createPayPalExpressCheckout() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/payment/provider/paypal/classic/checkout/start" path_parameter_names query_parameter_names)
@@ -35644,7 +35644,7 @@ call_createPayPalExpressCheckout() {
 ##############################################################################
 call_finalizePayPalBillingAgreement() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/payment/provider/paypal/classic/agreements/finish" path_parameter_names query_parameter_names)
@@ -35718,7 +35718,7 @@ call_finalizePayPalBillingAgreement() {
 ##############################################################################
 call_finalizePayPalCheckout() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/payment/provider/paypal/classic/checkout/finish" path_parameter_names query_parameter_names)
@@ -35792,7 +35792,7 @@ call_finalizePayPalCheckout() {
 ##############################################################################
 call_createStripePaymentMethod() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/payment/provider/stripe/payment-methods" path_parameter_names query_parameter_names)
@@ -35940,7 +35940,7 @@ call_payStripeInvoice() {
 ##############################################################################
 call_getTransaction() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/transactions/{id}" path_parameter_names query_parameter_names)
@@ -35972,7 +35972,7 @@ call_getTransaction() {
 ##############################################################################
 call_getTransactions() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_invoice size page order)
+    local query_parameter_names=(filter_invoice size page order    )
     local path
 
     path=$(build_request_path "/transactions" path_parameter_names query_parameter_names)
@@ -36004,7 +36004,7 @@ call_getTransactions() {
 ##############################################################################
 call_refundTransaction() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/transactions/{id}/refunds" path_parameter_names query_parameter_names)
@@ -36078,7 +36078,7 @@ call_refundTransaction() {
 ##############################################################################
 call_getUserWallet() {
     local path_parameter_names=(user_id currency_code)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/wallets/{currency_code}" path_parameter_names query_parameter_names)
@@ -36110,7 +36110,7 @@ call_getUserWallet() {
 ##############################################################################
 call_getUserWalletTransactions() {
     local path_parameter_names=(user_id currency_code)
-    local query_parameter_names=(filter_type filter_max_date filter_min_date filter_sign size page order)
+    local query_parameter_names=(filter_type filter_max_date filter_min_date filter_sign size page order    )
     local path
 
     path=$(build_request_path "/users/{user_id}/wallets/{currency_code}/transactions" path_parameter_names query_parameter_names)
@@ -36142,7 +36142,7 @@ call_getUserWalletTransactions() {
 ##############################################################################
 call_getUserWallets() {
     local path_parameter_names=(user_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/wallets" path_parameter_names query_parameter_names)
@@ -36174,7 +36174,7 @@ call_getUserWallets() {
 ##############################################################################
 call_getWalletBalances() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/wallets/totals" path_parameter_names query_parameter_names)
@@ -36206,7 +36206,7 @@ call_getWalletBalances() {
 ##############################################################################
 call_getWalletTransactions() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_invoice filter_type filter_date filter_sign filter_user_id filter_username filter_details filter_currency_code size page order)
+    local query_parameter_names=(filter_invoice filter_type filter_date filter_sign filter_user_id filter_username filter_details filter_currency_code size page order    )
     local path
 
     path=$(build_request_path "/wallets/transactions" path_parameter_names query_parameter_names)
@@ -36238,7 +36238,7 @@ call_getWalletTransactions() {
 ##############################################################################
 call_getWallets() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/wallets" path_parameter_names query_parameter_names)
@@ -36270,7 +36270,7 @@ call_getWallets() {
 ##############################################################################
 call_updateWalletBalance() {
     local path_parameter_names=(user_id currency_code)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/wallets/{currency_code}/balance" path_parameter_names query_parameter_names)
@@ -36344,7 +36344,7 @@ call_updateWalletBalance() {
 ##############################################################################
 call_createXsollaTokenUrl() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/payment/provider/xsolla/payment" path_parameter_names query_parameter_names)
@@ -36450,7 +36450,7 @@ call_receiveXsollaNotification() {
 ##############################################################################
 call_getChallengeEventLeaderboard() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_event size page order)
+    local query_parameter_names=(filter_event size page order    )
     local path
 
     path=$(build_request_path "/reporting/events/leaderboard" path_parameter_names query_parameter_names)
@@ -36482,7 +36482,7 @@ call_getChallengeEventLeaderboard() {
 ##############################################################################
 call_getChallengeEventParticipants() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_event size page order)
+    local query_parameter_names=(filter_event size page order    )
     local path
 
     path=$(build_request_path "/reporting/events/participants" path_parameter_names query_parameter_names)
@@ -36514,7 +36514,7 @@ call_getChallengeEventParticipants() {
 ##############################################################################
 call_getInvoiceReports() {
     local path_parameter_names=(currency_code)
-    local query_parameter_names=(granularity filter_payment_status filter_fulfillment_status start_date end_date size page)
+    local query_parameter_names=(granularity filter_payment_status filter_fulfillment_status start_date end_date size page    )
     local path
 
     path=$(build_request_path "/reporting/orders/count/{currency_code}" path_parameter_names query_parameter_names)
@@ -36546,7 +36546,7 @@ call_getInvoiceReports() {
 ##############################################################################
 call_getItemRevenue() {
     local path_parameter_names=(currency_code)
-    local query_parameter_names=(start_date end_date)
+    local query_parameter_names=(start_date end_date    )
     local path
 
     path=$(build_request_path "/reporting/revenue/item-sales/{currency_code}" path_parameter_names query_parameter_names)
@@ -36578,7 +36578,7 @@ call_getItemRevenue() {
 ##############################################################################
 call_getRefundRevenue() {
     local path_parameter_names=(currency_code)
-    local query_parameter_names=(start_date end_date)
+    local query_parameter_names=(start_date end_date    )
     local path
 
     path=$(build_request_path "/reporting/revenue/refunds/{currency_code}" path_parameter_names query_parameter_names)
@@ -36610,7 +36610,7 @@ call_getRefundRevenue() {
 ##############################################################################
 call_getRevenueByCountry() {
     local path_parameter_names=(currency_code)
-    local query_parameter_names=(start_date end_date size page)
+    local query_parameter_names=(start_date end_date size page    )
     local path
 
     path=$(build_request_path "/reporting/revenue/countries/{currency_code}" path_parameter_names query_parameter_names)
@@ -36642,7 +36642,7 @@ call_getRevenueByCountry() {
 ##############################################################################
 call_getRevenueByItem() {
     local path_parameter_names=(currency_code)
-    local query_parameter_names=(start_date end_date size page)
+    local query_parameter_names=(start_date end_date size page    )
     local path
 
     path=$(build_request_path "/reporting/revenue/products/{currency_code}" path_parameter_names query_parameter_names)
@@ -36674,7 +36674,7 @@ call_getRevenueByItem() {
 ##############################################################################
 call_getSubscriptionRevenue() {
     local path_parameter_names=(currency_code)
-    local query_parameter_names=(start_date end_date)
+    local query_parameter_names=(start_date end_date    )
     local path
 
     path=$(build_request_path "/reporting/revenue/subscription-sales/{currency_code}" path_parameter_names query_parameter_names)
@@ -36706,7 +36706,7 @@ call_getSubscriptionRevenue() {
 ##############################################################################
 call_getSubscriptionReports() {
     local path_parameter_names=()
-    local query_parameter_names=(size page)
+    local query_parameter_names=(size page    )
     local path
 
     path=$(build_request_path "/reporting/subscription" path_parameter_names query_parameter_names)
@@ -36738,7 +36738,7 @@ call_getSubscriptionReports() {
 ##############################################################################
 call_getUsageByDay() {
     local path_parameter_names=()
-    local query_parameter_names=(start_date end_date combine_endpoints method url size page)
+    local query_parameter_names=(start_date end_date combine_endpoints method url size page    )
     local path
 
     path=$(build_request_path "/reporting/usage/day" path_parameter_names query_parameter_names)
@@ -36770,7 +36770,7 @@ call_getUsageByDay() {
 ##############################################################################
 call_getUsageByHour() {
     local path_parameter_names=()
-    local query_parameter_names=(start_date end_date combine_endpoints method url size page)
+    local query_parameter_names=(start_date end_date combine_endpoints method url size page    )
     local path
 
     path=$(build_request_path "/reporting/usage/hour" path_parameter_names query_parameter_names)
@@ -36802,7 +36802,7 @@ call_getUsageByHour() {
 ##############################################################################
 call_getUsageByMinute() {
     local path_parameter_names=()
-    local query_parameter_names=(start_date end_date combine_endpoints method url size page)
+    local query_parameter_names=(start_date end_date combine_endpoints method url size page    )
     local path
 
     path=$(build_request_path "/reporting/usage/minute" path_parameter_names query_parameter_names)
@@ -36834,7 +36834,7 @@ call_getUsageByMinute() {
 ##############################################################################
 call_getUsageByMonth() {
     local path_parameter_names=()
-    local query_parameter_names=(start_date end_date combine_endpoints method url size page)
+    local query_parameter_names=(start_date end_date combine_endpoints method url size page    )
     local path
 
     path=$(build_request_path "/reporting/usage/month" path_parameter_names query_parameter_names)
@@ -36866,7 +36866,7 @@ call_getUsageByMonth() {
 ##############################################################################
 call_getUsageByYear() {
     local path_parameter_names=()
-    local query_parameter_names=(start_date end_date combine_endpoints method url size page)
+    local query_parameter_names=(start_date end_date combine_endpoints method url size page    )
     local path
 
     path=$(build_request_path "/reporting/usage/year" path_parameter_names query_parameter_names)
@@ -36898,7 +36898,7 @@ call_getUsageByYear() {
 ##############################################################################
 call_getUsageEndpoints() {
     local path_parameter_names=()
-    local query_parameter_names=(start_date end_date)
+    local query_parameter_names=(start_date end_date    )
     local path
 
     path=$(build_request_path "/reporting/usage/endpoints" path_parameter_names query_parameter_names)
@@ -36930,7 +36930,7 @@ call_getUsageEndpoints() {
 ##############################################################################
 call_getUserRegistrations() {
     local path_parameter_names=()
-    local query_parameter_names=(granularity start_date end_date size page)
+    local query_parameter_names=(granularity start_date end_date size page    )
     local path
 
     path=$(build_request_path "/reporting/users/registrations" path_parameter_names query_parameter_names)
@@ -36962,7 +36962,7 @@ call_getUserRegistrations() {
 ##############################################################################
 call_addSearchIndex() {
     local path_parameter_names=(type id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/search/index/{type}/{id}" path_parameter_names query_parameter_names)
@@ -37036,7 +37036,7 @@ call_addSearchIndex() {
 ##############################################################################
 call_addSearchMappings() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/search/mappings" path_parameter_names query_parameter_names)
@@ -37110,7 +37110,7 @@ call_addSearchMappings() {
 ##############################################################################
 call_deleteSearchIndex() {
     local path_parameter_names=(type id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/search/index/{type}/{id}" path_parameter_names query_parameter_names)
@@ -37142,7 +37142,7 @@ call_deleteSearchIndex() {
 ##############################################################################
 call_deleteSearchIndexes() {
     local path_parameter_names=(type)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/search/index/{type}" path_parameter_names query_parameter_names)
@@ -37248,7 +37248,7 @@ call_searchIndex() {
 ##############################################################################
 call_linkAccounts() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/social/facebook/users" path_parameter_names query_parameter_names)
@@ -37322,7 +37322,7 @@ call_linkAccounts() {
 ##############################################################################
 call_linkAccounts1() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/social/google/users" path_parameter_names query_parameter_names)
@@ -37396,7 +37396,7 @@ call_linkAccounts1() {
 ##############################################################################
 call_createItemTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/items/templates" path_parameter_names query_parameter_names)
@@ -37470,7 +37470,7 @@ call_createItemTemplate() {
 ##############################################################################
 call_createStoreItem() {
     local path_parameter_names=()
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/store/items" path_parameter_names query_parameter_names)
@@ -37544,7 +37544,7 @@ call_createStoreItem() {
 ##############################################################################
 call_deleteItemTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/store/items/templates/{id}" path_parameter_names query_parameter_names)
@@ -37576,7 +37576,7 @@ call_deleteItemTemplate() {
 ##############################################################################
 call_deleteStoreItem() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/items/{id}" path_parameter_names query_parameter_names)
@@ -37608,7 +37608,7 @@ call_deleteStoreItem() {
 ##############################################################################
 call_getBehaviors() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/items/behaviors" path_parameter_names query_parameter_names)
@@ -37640,7 +37640,7 @@ call_getBehaviors() {
 ##############################################################################
 call_getItemTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/items/templates/{id}" path_parameter_names query_parameter_names)
@@ -37672,7 +37672,7 @@ call_getItemTemplate() {
 ##############################################################################
 call_getItemTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/store/items/templates" path_parameter_names query_parameter_names)
@@ -37800,7 +37800,7 @@ call_getStoreItems() {
 ##############################################################################
 call_quickBuy() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/quick-buy" path_parameter_names query_parameter_names)
@@ -37874,7 +37874,7 @@ call_quickBuy() {
 ##############################################################################
 call_updateItemTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/items/templates/{id}" path_parameter_names query_parameter_names)
@@ -37948,7 +37948,7 @@ call_updateItemTemplate() {
 ##############################################################################
 call_updateStoreItem() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/store/items/{id}" path_parameter_names query_parameter_names)
@@ -38022,7 +38022,7 @@ call_updateStoreItem() {
 ##############################################################################
 call_createBundleItem() {
     local path_parameter_names=()
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/store/bundles" path_parameter_names query_parameter_names)
@@ -38096,7 +38096,7 @@ call_createBundleItem() {
 ##############################################################################
 call_createBundleTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/bundles/templates" path_parameter_names query_parameter_names)
@@ -38170,7 +38170,7 @@ call_createBundleTemplate() {
 ##############################################################################
 call_deleteBundleItem() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/bundles/{id}" path_parameter_names query_parameter_names)
@@ -38202,7 +38202,7 @@ call_deleteBundleItem() {
 ##############################################################################
 call_deleteBundleTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/store/bundles/templates/{id}" path_parameter_names query_parameter_names)
@@ -38330,7 +38330,7 @@ call_getBundleTemplates() {
 ##############################################################################
 call_updateBundleItem() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/store/bundles/{id}" path_parameter_names query_parameter_names)
@@ -38404,7 +38404,7 @@ call_updateBundleItem() {
 ##############################################################################
 call_updateBundleTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/bundles/templates/{id}" path_parameter_names query_parameter_names)
@@ -38478,7 +38478,7 @@ call_updateBundleTemplate() {
 ##############################################################################
 call_createCouponItem() {
     local path_parameter_names=()
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/store/coupons" path_parameter_names query_parameter_names)
@@ -38552,7 +38552,7 @@ call_createCouponItem() {
 ##############################################################################
 call_createCouponTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/coupons/templates" path_parameter_names query_parameter_names)
@@ -38626,7 +38626,7 @@ call_createCouponTemplate() {
 ##############################################################################
 call_deleteCouponItem() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/coupons/{id}" path_parameter_names query_parameter_names)
@@ -38658,7 +38658,7 @@ call_deleteCouponItem() {
 ##############################################################################
 call_deleteCouponTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/store/coupons/templates/{id}" path_parameter_names query_parameter_names)
@@ -38690,7 +38690,7 @@ call_deleteCouponTemplate() {
 ##############################################################################
 call_getCouponItem() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/coupons/{id}" path_parameter_names query_parameter_names)
@@ -38722,7 +38722,7 @@ call_getCouponItem() {
 ##############################################################################
 call_getCouponTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/coupons/templates/{id}" path_parameter_names query_parameter_names)
@@ -38754,7 +38754,7 @@ call_getCouponTemplate() {
 ##############################################################################
 call_getCouponTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/store/coupons/templates" path_parameter_names query_parameter_names)
@@ -38786,7 +38786,7 @@ call_getCouponTemplates() {
 ##############################################################################
 call_updateCouponItem() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/store/coupons/{id}" path_parameter_names query_parameter_names)
@@ -38860,7 +38860,7 @@ call_updateCouponItem() {
 ##############################################################################
 call_updateCouponTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/coupons/templates/{id}" path_parameter_names query_parameter_names)
@@ -38934,7 +38934,7 @@ call_updateCouponTemplate() {
 ##############################################################################
 call_createCatalogSale() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/sales" path_parameter_names query_parameter_names)
@@ -39008,7 +39008,7 @@ call_createCatalogSale() {
 ##############################################################################
 call_deleteCatalogSale() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/sales/{id}" path_parameter_names query_parameter_names)
@@ -39040,7 +39040,7 @@ call_deleteCatalogSale() {
 ##############################################################################
 call_getCatalogSale() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/sales/{id}" path_parameter_names query_parameter_names)
@@ -39072,7 +39072,7 @@ call_getCatalogSale() {
 ##############################################################################
 call_getCatalogSales() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/store/sales" path_parameter_names query_parameter_names)
@@ -39104,7 +39104,7 @@ call_getCatalogSales() {
 ##############################################################################
 call_updateCatalogSale() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/sales/{id}" path_parameter_names query_parameter_names)
@@ -39178,7 +39178,7 @@ call_updateCatalogSale() {
 ##############################################################################
 call_createShippingItem() {
     local path_parameter_names=()
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/store/shipping" path_parameter_names query_parameter_names)
@@ -39252,7 +39252,7 @@ call_createShippingItem() {
 ##############################################################################
 call_createShippingTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/shipping/templates" path_parameter_names query_parameter_names)
@@ -39326,7 +39326,7 @@ call_createShippingTemplate() {
 ##############################################################################
 call_deleteShippingItem() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/shipping/{id}" path_parameter_names query_parameter_names)
@@ -39358,7 +39358,7 @@ call_deleteShippingItem() {
 ##############################################################################
 call_deleteShippingTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/store/shipping/templates/{id}" path_parameter_names query_parameter_names)
@@ -39422,7 +39422,7 @@ call_getShippingItem() {
 ##############################################################################
 call_getShippingTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/shipping/templates/{id}" path_parameter_names query_parameter_names)
@@ -39454,7 +39454,7 @@ call_getShippingTemplate() {
 ##############################################################################
 call_getShippingTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/store/shipping/templates" path_parameter_names query_parameter_names)
@@ -39486,7 +39486,7 @@ call_getShippingTemplates() {
 ##############################################################################
 call_updateShippingItem() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/store/shipping/{id}" path_parameter_names query_parameter_names)
@@ -39560,7 +39560,7 @@ call_updateShippingItem() {
 ##############################################################################
 call_updateShippingTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/store/shipping/templates/{id}" path_parameter_names query_parameter_names)
@@ -39634,7 +39634,7 @@ call_updateShippingTemplate() {
 ##############################################################################
 call_addCustomDiscount() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/carts/{id}/custom-discounts" path_parameter_names query_parameter_names)
@@ -39708,7 +39708,7 @@ call_addCustomDiscount() {
 ##############################################################################
 call_addDiscountToCart() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/carts/{id}/discounts" path_parameter_names query_parameter_names)
@@ -39782,7 +39782,7 @@ call_addDiscountToCart() {
 ##############################################################################
 call_addItemToCart() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/carts/{id}/items" path_parameter_names query_parameter_names)
@@ -39888,7 +39888,7 @@ call_createCart() {
 ##############################################################################
 call_getCart() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/carts/{id}" path_parameter_names query_parameter_names)
@@ -39920,7 +39920,7 @@ call_getCart() {
 ##############################################################################
 call_getCarts() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_owner_id size page order)
+    local query_parameter_names=(filter_owner_id size page order    )
     local path
 
     path=$(build_request_path "/carts" path_parameter_names query_parameter_names)
@@ -39952,7 +39952,7 @@ call_getCarts() {
 ##############################################################################
 call_getShippable() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/carts/{id}/shippable" path_parameter_names query_parameter_names)
@@ -39984,7 +39984,7 @@ call_getShippable() {
 ##############################################################################
 call_getShippingCountries() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/carts/{id}/countries" path_parameter_names query_parameter_names)
@@ -40016,7 +40016,7 @@ call_getShippingCountries() {
 ##############################################################################
 call_removeDiscountFromCart() {
     local path_parameter_names=(id code)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/carts/{id}/discounts/{code}" path_parameter_names query_parameter_names)
@@ -40048,7 +40048,7 @@ call_removeDiscountFromCart() {
 ##############################################################################
 call_setCartCurrency() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/carts/{id}/currency" path_parameter_names query_parameter_names)
@@ -40122,7 +40122,7 @@ call_setCartCurrency() {
 ##############################################################################
 call_setCartOwner() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/carts/{id}/owner" path_parameter_names query_parameter_names)
@@ -40196,7 +40196,7 @@ call_setCartOwner() {
 ##############################################################################
 call_updateItemInCart() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/carts/{id}/items" path_parameter_names query_parameter_names)
@@ -40270,7 +40270,7 @@ call_updateItemInCart() {
 ##############################################################################
 call_updateShippingAddress() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/carts/{id}/shipping-address" path_parameter_names query_parameter_names)
@@ -40344,7 +40344,7 @@ call_updateShippingAddress() {
 ##############################################################################
 call_createSubscription() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/subscriptions" path_parameter_names query_parameter_names)
@@ -40418,7 +40418,7 @@ call_createSubscription() {
 ##############################################################################
 call_createSubscriptionTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/subscriptions/templates" path_parameter_names query_parameter_names)
@@ -40492,7 +40492,7 @@ call_createSubscriptionTemplate() {
 ##############################################################################
 call_deleteSubscription() {
     local path_parameter_names=(id plan_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/subscriptions/{id}/plans/{plan_id}" path_parameter_names query_parameter_names)
@@ -40524,7 +40524,7 @@ call_deleteSubscription() {
 ##############################################################################
 call_deleteSubscriptionTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/subscriptions/templates/{id}" path_parameter_names query_parameter_names)
@@ -40588,7 +40588,7 @@ call_getSubscription() {
 ##############################################################################
 call_getSubscriptionTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/subscriptions/templates/{id}" path_parameter_names query_parameter_names)
@@ -40620,7 +40620,7 @@ call_getSubscriptionTemplate() {
 ##############################################################################
 call_getSubscriptionTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/subscriptions/templates" path_parameter_names query_parameter_names)
@@ -40684,7 +40684,7 @@ call_getSubscriptions() {
 ##############################################################################
 call_processSubscriptions() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/subscriptions/process" path_parameter_names query_parameter_names)
@@ -40716,7 +40716,7 @@ call_processSubscriptions() {
 ##############################################################################
 call_updateSubscription() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/subscriptions/{id}" path_parameter_names query_parameter_names)
@@ -40790,7 +40790,7 @@ call_updateSubscription() {
 ##############################################################################
 call_updateSubscriptionTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/subscriptions/templates/{id}" path_parameter_names query_parameter_names)
@@ -40864,7 +40864,7 @@ call_updateSubscriptionTemplate() {
 ##############################################################################
 call_createVendor() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/vendors" path_parameter_names query_parameter_names)
@@ -40938,7 +40938,7 @@ call_createVendor() {
 ##############################################################################
 call_createVendorTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/vendors/templates" path_parameter_names query_parameter_names)
@@ -41012,7 +41012,7 @@ call_createVendorTemplate() {
 ##############################################################################
 call_deleteVendor() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/vendors/{id}" path_parameter_names query_parameter_names)
@@ -41044,7 +41044,7 @@ call_deleteVendor() {
 ##############################################################################
 call_deleteVendorTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/vendors/templates/{id}" path_parameter_names query_parameter_names)
@@ -41108,7 +41108,7 @@ call_getVendor() {
 ##############################################################################
 call_getVendorTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/vendors/templates/{id}" path_parameter_names query_parameter_names)
@@ -41140,7 +41140,7 @@ call_getVendorTemplate() {
 ##############################################################################
 call_getVendorTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/vendors/templates" path_parameter_names query_parameter_names)
@@ -41204,7 +41204,7 @@ call_getVendors() {
 ##############################################################################
 call_updateVendor() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/vendors/{id}" path_parameter_names query_parameter_names)
@@ -41278,7 +41278,7 @@ call_updateVendor() {
 ##############################################################################
 call_updateVendorTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/vendors/templates/{id}" path_parameter_names query_parameter_names)
@@ -41352,7 +41352,7 @@ call_updateVendorTemplate() {
 ##############################################################################
 call_createCountryTax() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/tax/countries" path_parameter_names query_parameter_names)
@@ -41426,7 +41426,7 @@ call_createCountryTax() {
 ##############################################################################
 call_createStateTax() {
     local path_parameter_names=(country_code_iso3)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/tax/countries/{country_code_iso3}/states" path_parameter_names query_parameter_names)
@@ -41500,7 +41500,7 @@ call_createStateTax() {
 ##############################################################################
 call_deleteCountryTax() {
     local path_parameter_names=(country_code_iso3)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/tax/countries/{country_code_iso3}" path_parameter_names query_parameter_names)
@@ -41532,7 +41532,7 @@ call_deleteCountryTax() {
 ##############################################################################
 call_deleteStateTax() {
     local path_parameter_names=(country_code_iso3 state_code)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/tax/countries/{country_code_iso3}/states/{state_code}" path_parameter_names query_parameter_names)
@@ -41724,7 +41724,7 @@ call_getStateTaxesForCountry() {
 ##############################################################################
 call_updateCountryTax() {
     local path_parameter_names=(country_code_iso3)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/tax/countries/{country_code_iso3}" path_parameter_names query_parameter_names)
@@ -41798,7 +41798,7 @@ call_updateCountryTax() {
 ##############################################################################
 call_updateStateTax() {
     local path_parameter_names=(country_code_iso3 state_code)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/tax/countries/{country_code_iso3}/states/{state_code}" path_parameter_names query_parameter_names)
@@ -41936,7 +41936,7 @@ call_getTemplatePropertyTypes() {
 ##############################################################################
 call_addUserTag() {
     local path_parameter_names=(user_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/tags" path_parameter_names query_parameter_names)
@@ -42010,7 +42010,7 @@ call_addUserTag() {
 ##############################################################################
 call_createUserTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/templates" path_parameter_names query_parameter_names)
@@ -42084,7 +42084,7 @@ call_createUserTemplate() {
 ##############################################################################
 call_deleteUserTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/users/templates/{id}" path_parameter_names query_parameter_names)
@@ -42148,7 +42148,7 @@ call_getUser() {
 ##############################################################################
 call_getUserTags() {
     local path_parameter_names=(user_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/tags" path_parameter_names query_parameter_names)
@@ -42180,7 +42180,7 @@ call_getUserTags() {
 ##############################################################################
 call_getUserTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/templates/{id}" path_parameter_names query_parameter_names)
@@ -42212,7 +42212,7 @@ call_getUserTemplate() {
 ##############################################################################
 call_getUserTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/users/templates" path_parameter_names query_parameter_names)
@@ -42424,7 +42424,7 @@ call_registerUser() {
 ##############################################################################
 call_removeUserTag() {
     local path_parameter_names=(user_id tag)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/tags/{tag}" path_parameter_names query_parameter_names)
@@ -42456,7 +42456,7 @@ call_removeUserTag() {
 ##############################################################################
 call_setPassword() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{id}/password" path_parameter_names query_parameter_names)
@@ -42636,7 +42636,7 @@ call_submitPasswordReset() {
 ##############################################################################
 call_updateUser() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{id}" path_parameter_names query_parameter_names)
@@ -42710,7 +42710,7 @@ call_updateUser() {
 ##############################################################################
 call_updateUserTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/templates/{id}" path_parameter_names query_parameter_names)
@@ -42784,7 +42784,7 @@ call_updateUserTemplate() {
 ##############################################################################
 call_createAddress() {
     local path_parameter_names=(user_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/addresses" path_parameter_names query_parameter_names)
@@ -42858,7 +42858,7 @@ call_createAddress() {
 ##############################################################################
 call_deleteAddress() {
     local path_parameter_names=(user_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/addresses/{id}" path_parameter_names query_parameter_names)
@@ -42890,7 +42890,7 @@ call_deleteAddress() {
 ##############################################################################
 call_getAddress() {
     local path_parameter_names=(user_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/addresses/{id}" path_parameter_names query_parameter_names)
@@ -42922,7 +42922,7 @@ call_getAddress() {
 ##############################################################################
 call_getAddresses() {
     local path_parameter_names=(user_id)
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/users/{user_id}/addresses" path_parameter_names query_parameter_names)
@@ -42954,7 +42954,7 @@ call_getAddresses() {
 ##############################################################################
 call_updateAddress() {
     local path_parameter_names=(user_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/addresses/{id}" path_parameter_names query_parameter_names)
@@ -43028,7 +43028,7 @@ call_updateAddress() {
 ##############################################################################
 call_addFriend() {
     local path_parameter_names=(user_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/friends/{id}" path_parameter_names query_parameter_names)
@@ -43060,7 +43060,7 @@ call_addFriend() {
 ##############################################################################
 call_getFriends() {
     local path_parameter_names=(user_id)
-    local query_parameter_names=(size page)
+    local query_parameter_names=(size page    )
     local path
 
     path=$(build_request_path "/users/{user_id}/friends" path_parameter_names query_parameter_names)
@@ -43092,7 +43092,7 @@ call_getFriends() {
 ##############################################################################
 call_getInviteToken() {
     local path_parameter_names=(user_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/invite-token" path_parameter_names query_parameter_names)
@@ -43124,7 +43124,7 @@ call_getInviteToken() {
 ##############################################################################
 call_getInvites() {
     local path_parameter_names=(user_id)
-    local query_parameter_names=(size page)
+    local query_parameter_names=(size page    )
     local path
 
     path=$(build_request_path "/users/{user_id}/invites" path_parameter_names query_parameter_names)
@@ -43156,7 +43156,7 @@ call_getInvites() {
 ##############################################################################
 call_redeemFriendshipToken() {
     local path_parameter_names=(user_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/friends/tokens" path_parameter_names query_parameter_names)
@@ -43230,7 +43230,7 @@ call_redeemFriendshipToken() {
 ##############################################################################
 call_removeOrDeclineFriend() {
     local path_parameter_names=(user_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/friends/{id}" path_parameter_names query_parameter_names)
@@ -43262,7 +43262,7 @@ call_removeOrDeclineFriend() {
 ##############################################################################
 call_addMemberToGroup() {
     local path_parameter_names=(unique_name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/groups/{unique_name}/members" path_parameter_names query_parameter_names)
@@ -43336,7 +43336,7 @@ call_addMemberToGroup() {
 ##############################################################################
 call_addMembersToGroup() {
     local path_parameter_names=(unique_name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/groups/{unique_name}/members/batch-add" path_parameter_names query_parameter_names)
@@ -43410,7 +43410,7 @@ call_addMembersToGroup() {
 ##############################################################################
 call_createGroup() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/groups" path_parameter_names query_parameter_names)
@@ -43484,7 +43484,7 @@ call_createGroup() {
 ##############################################################################
 call_createGroupTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/groups/templates" path_parameter_names query_parameter_names)
@@ -43558,7 +43558,7 @@ call_createGroupTemplate() {
 ##############################################################################
 call_deleteGroup() {
     local path_parameter_names=(unique_name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/groups/{unique_name}" path_parameter_names query_parameter_names)
@@ -43590,7 +43590,7 @@ call_deleteGroup() {
 ##############################################################################
 call_deleteGroupTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/users/groups/templates/{id}" path_parameter_names query_parameter_names)
@@ -43718,7 +43718,7 @@ call_getGroupMembers() {
 ##############################################################################
 call_getGroupTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/groups/templates/{id}" path_parameter_names query_parameter_names)
@@ -43750,7 +43750,7 @@ call_getGroupTemplate() {
 ##############################################################################
 call_getGroupTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/users/groups/templates" path_parameter_names query_parameter_names)
@@ -43814,7 +43814,7 @@ call_getGroupsForUser() {
 ##############################################################################
 call_removeGroupMember() {
     local path_parameter_names=(unique_name user_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/groups/{unique_name}/members/{user_id}" path_parameter_names query_parameter_names)
@@ -43846,7 +43846,7 @@ call_removeGroupMember() {
 ##############################################################################
 call_updateGroup() {
     local path_parameter_names=(unique_name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/groups/{unique_name}" path_parameter_names query_parameter_names)
@@ -43920,7 +43920,7 @@ call_updateGroup() {
 ##############################################################################
 call_updateGroupMemberStatus() {
     local path_parameter_names=(unique_name user_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/groups/{unique_name}/members/{user_id}/status" path_parameter_names query_parameter_names)
@@ -43994,7 +43994,7 @@ call_updateGroupMemberStatus() {
 ##############################################################################
 call_updateGroupTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/groups/templates/{id}" path_parameter_names query_parameter_names)
@@ -44100,7 +44100,7 @@ call_updateGroups() {
 ##############################################################################
 call_addItemToUserInventory() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{id}/inventory" path_parameter_names query_parameter_names)
@@ -44174,7 +44174,7 @@ call_addItemToUserInventory() {
 ##############################################################################
 call_checkUserEntitlementItem() {
     local path_parameter_names=(user_id item_id)
-    local query_parameter_names=(sku)
+    local query_parameter_names=(sku    )
     local path
 
     path=$(build_request_path "/users/{user_id}/entitlements/{item_id}/check" path_parameter_names query_parameter_names)
@@ -44206,7 +44206,7 @@ call_checkUserEntitlementItem() {
 ##############################################################################
 call_createEntitlementItem() {
     local path_parameter_names=()
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/entitlements" path_parameter_names query_parameter_names)
@@ -44280,7 +44280,7 @@ call_createEntitlementItem() {
 ##############################################################################
 call_createEntitlementTemplate() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/entitlements/templates" path_parameter_names query_parameter_names)
@@ -44354,7 +44354,7 @@ call_createEntitlementTemplate() {
 ##############################################################################
 call_deleteEntitlementItem() {
     local path_parameter_names=(entitlement_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/entitlements/{entitlement_id}" path_parameter_names query_parameter_names)
@@ -44386,7 +44386,7 @@ call_deleteEntitlementItem() {
 ##############################################################################
 call_deleteEntitlementTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/entitlements/templates/{id}" path_parameter_names query_parameter_names)
@@ -44482,7 +44482,7 @@ call_getEntitlementItems() {
 ##############################################################################
 call_getEntitlementTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/entitlements/templates/{id}" path_parameter_names query_parameter_names)
@@ -44514,7 +44514,7 @@ call_getEntitlementTemplate() {
 ##############################################################################
 call_getEntitlementTemplates() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/entitlements/templates" path_parameter_names query_parameter_names)
@@ -44546,7 +44546,7 @@ call_getEntitlementTemplates() {
 ##############################################################################
 call_getUserInventories() {
     local path_parameter_names=(id)
-    local query_parameter_names=(inactive size page filter_item_name filter_item_id filter_username filter_group filter_date)
+    local query_parameter_names=(inactive size page filter_item_name filter_item_id filter_username filter_group filter_date    )
     local path
 
     path=$(build_request_path "/users/{id}/inventory" path_parameter_names query_parameter_names)
@@ -44578,7 +44578,7 @@ call_getUserInventories() {
 ##############################################################################
 call_getUserInventory() {
     local path_parameter_names=(user_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/inventory/{id}" path_parameter_names query_parameter_names)
@@ -44610,7 +44610,7 @@ call_getUserInventory() {
 ##############################################################################
 call_getUserInventoryLog() {
     local path_parameter_names=(user_id id)
-    local query_parameter_names=(size page)
+    local query_parameter_names=(size page    )
     local path
 
     path=$(build_request_path "/users/{user_id}/inventory/{id}/log" path_parameter_names query_parameter_names)
@@ -44642,7 +44642,7 @@ call_getUserInventoryLog() {
 ##############################################################################
 call_getUsersInventory() {
     local path_parameter_names=()
-    local query_parameter_names=(inactive size page filter_item_name filter_item_id filter_username filter_group filter_date)
+    local query_parameter_names=(inactive size page filter_item_name filter_item_id filter_username filter_group filter_date    )
     local path
 
     path=$(build_request_path "/inventories" path_parameter_names query_parameter_names)
@@ -44674,7 +44674,7 @@ call_getUsersInventory() {
 ##############################################################################
 call_grantUserEntitlement() {
     local path_parameter_names=(user_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/entitlements" path_parameter_names query_parameter_names)
@@ -44748,7 +44748,7 @@ call_grantUserEntitlement() {
 ##############################################################################
 call_updateEntitlementItem() {
     local path_parameter_names=(entitlement_id)
-    local query_parameter_names=(cascade)
+    local query_parameter_names=(cascade    )
     local path
 
     path=$(build_request_path "/entitlements/{entitlement_id}" path_parameter_names query_parameter_names)
@@ -44822,7 +44822,7 @@ call_updateEntitlementItem() {
 ##############################################################################
 call_updateEntitlementTemplate() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/entitlements/templates/{id}" path_parameter_names query_parameter_names)
@@ -44896,7 +44896,7 @@ call_updateEntitlementTemplate() {
 ##############################################################################
 call_updateUserInventoryBehaviorData() {
     local path_parameter_names=(user_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/inventory/{id}/behavior-data" path_parameter_names query_parameter_names)
@@ -44970,7 +44970,7 @@ call_updateUserInventoryBehaviorData() {
 ##############################################################################
 call_updateUserInventoryExpires() {
     local path_parameter_names=(user_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/inventory/{id}/expires" path_parameter_names query_parameter_names)
@@ -45044,7 +45044,7 @@ call_updateUserInventoryExpires() {
 ##############################################################################
 call_updateUserInventoryStatus() {
     local path_parameter_names=(user_id id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/inventory/{id}/status" path_parameter_names query_parameter_names)
@@ -45118,7 +45118,7 @@ call_updateUserInventoryStatus() {
 ##############################################################################
 call_useUserEntitlementItem() {
     local path_parameter_names=(user_id item_id)
-    local query_parameter_names=(sku info)
+    local query_parameter_names=(sku info    )
     local path
 
     path=$(build_request_path "/users/{user_id}/entitlements/{item_id}/use" path_parameter_names query_parameter_names)
@@ -45150,7 +45150,7 @@ call_useUserEntitlementItem() {
 ##############################################################################
 call_createUserRelationship() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/relationships" path_parameter_names query_parameter_names)
@@ -45224,7 +45224,7 @@ call_createUserRelationship() {
 ##############################################################################
 call_deleteUserRelationship() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/relationships/{id}" path_parameter_names query_parameter_names)
@@ -45256,7 +45256,7 @@ call_deleteUserRelationship() {
 ##############################################################################
 call_getUserRelationship() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/relationships/{id}" path_parameter_names query_parameter_names)
@@ -45288,7 +45288,7 @@ call_getUserRelationship() {
 ##############################################################################
 call_getUserRelationships() {
     local path_parameter_names=()
-    local query_parameter_names=(size page order)
+    local query_parameter_names=(size page order    )
     local path
 
     path=$(build_request_path "/users/relationships" path_parameter_names query_parameter_names)
@@ -45320,7 +45320,7 @@ call_getUserRelationships() {
 ##############################################################################
 call_updateUserRelationship() {
     local path_parameter_names=(id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/relationships/{id}" path_parameter_names query_parameter_names)
@@ -45394,7 +45394,7 @@ call_updateUserRelationship() {
 ##############################################################################
 call_getUserSubscriptionDetails() {
     local path_parameter_names=(user_id inventory_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/subscriptions/{inventory_id}" path_parameter_names query_parameter_names)
@@ -45426,7 +45426,7 @@ call_getUserSubscriptionDetails() {
 ##############################################################################
 call_getUsersSubscriptionDetails() {
     local path_parameter_names=(user_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/subscriptions" path_parameter_names query_parameter_names)
@@ -45458,7 +45458,7 @@ call_getUsersSubscriptionDetails() {
 ##############################################################################
 call_reactivateUserSubscription() {
     local path_parameter_names=(user_id inventory_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/subscriptions/{inventory_id}/reactivate" path_parameter_names query_parameter_names)
@@ -45532,7 +45532,7 @@ call_reactivateUserSubscription() {
 ##############################################################################
 call_setSubscriptionBillDate() {
     local path_parameter_names=(user_id inventory_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/subscriptions/{inventory_id}/bill-date" path_parameter_names query_parameter_names)
@@ -45606,7 +45606,7 @@ call_setSubscriptionBillDate() {
 ##############################################################################
 call_setSubscriptionPaymentMethod() {
     local path_parameter_names=(user_id inventory_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/subscriptions/{inventory_id}/payment-method" path_parameter_names query_parameter_names)
@@ -45680,7 +45680,7 @@ call_setSubscriptionPaymentMethod() {
 ##############################################################################
 call_setSubscriptionStatus() {
     local path_parameter_names=(user_id inventory_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/subscriptions/{inventory_id}/status" path_parameter_names query_parameter_names)
@@ -45754,7 +45754,7 @@ call_setSubscriptionStatus() {
 ##############################################################################
 call_setUserSubscriptionPlan() {
     local path_parameter_names=(user_id inventory_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/subscriptions/{inventory_id}/plan" path_parameter_names query_parameter_names)
@@ -45828,7 +45828,7 @@ call_setUserSubscriptionPlan() {
 ##############################################################################
 call_setUserSubscriptionPrice() {
     local path_parameter_names=(user_id inventory_id)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/{user_id}/subscriptions/{inventory_id}/price-override" path_parameter_names query_parameter_names)
@@ -46040,7 +46040,7 @@ call_getHealth() {
 ##############################################################################
 call_deleteMaintenance() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/maintenance" path_parameter_names query_parameter_names)
@@ -46104,7 +46104,7 @@ call_getMaintenance() {
 ##############################################################################
 call_setMaintenance() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/maintenance" path_parameter_names query_parameter_names)
@@ -46178,7 +46178,7 @@ call_setMaintenance() {
 ##############################################################################
 call_updateMaintenance() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/maintenance" path_parameter_names query_parameter_names)
@@ -46252,7 +46252,7 @@ call_updateMaintenance() {
 ##############################################################################
 call_getUserLocationLog() {
     local path_parameter_names=()
-    local query_parameter_names=(user_id size page order)
+    local query_parameter_names=(user_id size page order    )
     local path
 
     path=$(build_request_path "/security/country-log" path_parameter_names query_parameter_names)
@@ -46284,7 +46284,7 @@ call_getUserLocationLog() {
 ##############################################################################
 call_getUserTokenDetails() {
     local path_parameter_names=()
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/me" path_parameter_names query_parameter_names)
