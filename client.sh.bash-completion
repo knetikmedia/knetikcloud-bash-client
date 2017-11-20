@@ -8,7 +8,7 @@
 # ! swagger-codegen (https://github.com/swagger-api/swagger-codegen)
 # ! FROM SWAGGER SPECIFICATION IN JSON.
 # !
-# ! Generated on: 2017-10-23T15:21:20.429-04:00
+# ! Generated on: 2017-11-20T10:55:37.904-05:00
 # !
 # !
 # ! System wide installation:
@@ -730,7 +730,7 @@ _()
     operation_parameters["updateCampaign"]="id= "
     operation_parameters["updateCampaignTemplate"]="id= "
     operation_parameters["createChallenge"]=""
-    operation_parameters["createChallengeActivity"]="challenge_id= validateSettings= "
+    operation_parameters["createChallengeActivity"]="challenge_id= validate_settings= "
     operation_parameters["createChallengeActivityTemplate"]=""
     operation_parameters["createChallengeTemplate"]=""
     operation_parameters["deleteChallenge"]="id= "
@@ -749,7 +749,7 @@ _()
     operation_parameters["getChallengeTemplates"]="size= page= order= "
     operation_parameters["getChallenges"]="filter_active_campaign= filter_start_date= filter_end_date= size= page= order= "
     operation_parameters["updateChallenge"]="id= "
-    operation_parameters["updateChallengeActivity"]="id= challenge_id= "
+    operation_parameters["updateChallengeActivity"]="id= challenge_id= validateSettings= "
     operation_parameters["updateChallengeActivityTemplate"]="id= "
     operation_parameters["updateChallengeTemplate"]="id= "
     operation_parameters["createRewardSet"]=""
@@ -1252,9 +1252,9 @@ _()
     operation_parameters_enum_values["getCampaigns::filter_active"]="true false"
     operation_parameters_enum_values["getCampaigns::filter_active"]="true false"
     operation_parameters_enum_values["getCampaigns::filter_active"]="true false"
-    operation_parameters_enum_values["createChallengeActivity::validateSettings"]="true false"
-    operation_parameters_enum_values["createChallengeActivity::validateSettings"]="true false"
-    operation_parameters_enum_values["createChallengeActivity::validateSettings"]="true false"
+    operation_parameters_enum_values["createChallengeActivity::validate_settings"]="true false"
+    operation_parameters_enum_values["createChallengeActivity::validate_settings"]="true false"
+    operation_parameters_enum_values["createChallengeActivity::validate_settings"]="true false"
     operation_parameters_enum_values["getChallengeEvents::filter_campaigns"]="true false"
     operation_parameters_enum_values["getChallengeEvents::filter_campaigns"]="true false"
     operation_parameters_enum_values["getChallengeEvents::filter_campaigns"]="true false"
@@ -1268,6 +1268,10 @@ _()
     operation_parameters_enum_values["getChallenges::filter_active_campaign"]="true false"
     operation_parameters_enum_values["getChallenges::filter_active_campaign"]="true false"
     operation_parameters_enum_values["getChallenges::filter_active_campaign"]="true false"
+    operation_parameters_enum_values["updateChallengeActivity::validateSettings"]="true false"
+    operation_parameters_enum_values["updateChallengeActivity::validateSettings"]="true false"
+    operation_parameters_enum_values["updateChallengeActivity::validateSettings"]="true false"
+    operation_parameters_enum_values["updateChallengeActivity::validateSettings"]="true false"
     operation_parameters_enum_values["getCategories::filter_active"]="true false"
     operation_parameters_enum_values["getCategories::filter_active"]="true false"
     operation_parameters_enum_values["getCategories::filter_active"]="true false"

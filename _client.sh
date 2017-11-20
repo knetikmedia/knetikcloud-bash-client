@@ -10,7 +10,7 @@
 # !
 # ! Based on: https://github.com/Valodim/zsh-curl-completion/blob/master/_curl
 # !
-# ! Generated on: 2017-10-23T15:21:20.429-04:00
+# ! Generated on: 2017-11-20T10:55:37.904-05:00
 # !
 # !
 # ! Installation:
@@ -1485,8 +1485,8 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "challenge_id=:[PATH] The challenge id"
-          "validateSettings=true:[QUERY] Whether to validate the settings being sent against the available settings on the base activity."
-          "validateSettings=false:[QUERY] Whether to validate the settings being sent against the available settings on the base activity."
+          "validate_settings=true:[QUERY] Whether to validate the settings being sent against the available settings on the base activity."
+          "validate_settings=false:[QUERY] Whether to validate the settings being sent against the available settings on the base activity."
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1643,7 +1643,9 @@ case $state in
         _op_arguments=(
           "id=:[PATH] The challenge_activity id"
 "challenge_id=:[PATH] The challenge id"
-                    )
+          "validateSettings=true:[QUERY] Whether to validate the settings being sent against the available settings on the base activity."
+          "validateSettings=false:[QUERY] Whether to validate the settings being sent against the available settings on the base activity."
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       updateChallengeActivityTemplate)
