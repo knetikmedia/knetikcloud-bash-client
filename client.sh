@@ -8,7 +8,7 @@
 # ! swagger-codegen (https://github.com/swagger-api/swagger-codegen)
 # ! FROM SWAGGER SPECIFICATION IN JSON.
 # !
-# ! Generated on: 2017-11-20T10:55:37.904-05:00
+# ! Generated on: 2018-01-05T09:34:45.249-05:00
 # !
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -432,6 +432,7 @@ operation_parameters_minimum_occurences["updatePollTemplate:::id"]=1
 operation_parameters_minimum_occurences["updatePollTemplate:::poll_template_resource"]=0
 operation_parameters_minimum_occurences["createCurrency:::currency"]=0
 operation_parameters_minimum_occurences["deleteCurrency:::code"]=1
+operation_parameters_minimum_occurences["getCurrencies:::filter_default"]=0
 operation_parameters_minimum_occurences["getCurrencies:::filter_enabled_currencies"]=0
 operation_parameters_minimum_occurences["getCurrencies:::filter_type"]=0
 operation_parameters_minimum_occurences["getCurrencies:::size"]=0
@@ -840,7 +841,7 @@ operation_parameters_minimum_occurences["getObjectTemplates:::size"]=0
 operation_parameters_minimum_occurences["getObjectTemplates:::page"]=0
 operation_parameters_minimum_occurences["getObjectTemplates:::order"]=0
 operation_parameters_minimum_occurences["updateObjectItem:::template_id"]=1
-operation_parameters_minimum_occurences["updateObjectItem:::entitlement_id"]=1
+operation_parameters_minimum_occurences["updateObjectItem:::object_id"]=1
 operation_parameters_minimum_occurences["updateObjectItem:::cascade"]=0
 operation_parameters_minimum_occurences["updateObjectItem:::object_item"]=0
 operation_parameters_minimum_occurences["updateObjectTemplate:::id"]=1
@@ -999,6 +1000,11 @@ operation_parameters_minimum_occurences["searchIndex:::type"]=1
 operation_parameters_minimum_occurences["searchIndex:::query"]=0
 operation_parameters_minimum_occurences["searchIndex:::size"]=0
 operation_parameters_minimum_occurences["searchIndex:::page"]=0
+operation_parameters_minimum_occurences["searchIndexWithTemplate:::type"]=1
+operation_parameters_minimum_occurences["searchIndexWithTemplate:::template"]=1
+operation_parameters_minimum_occurences["searchIndexWithTemplate:::query"]=0
+operation_parameters_minimum_occurences["searchIndexWithTemplate:::size"]=0
+operation_parameters_minimum_occurences["searchIndexWithTemplate:::page"]=0
 operation_parameters_minimum_occurences["linkAccounts:::facebook_token"]=0
 operation_parameters_minimum_occurences["linkAccounts1:::google_token"]=0
 operation_parameters_minimum_occurences["createItemTemplate:::item_template_resource"]=0
@@ -1258,6 +1264,7 @@ operation_parameters_minimum_occurences["deleteGroupMemberTemplate:::cascade"]=0
 operation_parameters_minimum_occurences["deleteGroupTemplate:::id"]=1
 operation_parameters_minimum_occurences["deleteGroupTemplate:::cascade"]=0
 operation_parameters_minimum_occurences["getGroup:::unique_name"]=1
+operation_parameters_minimum_occurences["getGroupAncestors:::unique_name"]=1
 operation_parameters_minimum_occurences["getGroupMember:::unique_name"]=1
 operation_parameters_minimum_occurences["getGroupMember:::user_id"]=1
 operation_parameters_minimum_occurences["getGroupMemberTemplate:::id"]=1
@@ -1744,6 +1751,7 @@ operation_parameters_maximum_occurences["updatePollTemplate:::id"]=0
 operation_parameters_maximum_occurences["updatePollTemplate:::poll_template_resource"]=0
 operation_parameters_maximum_occurences["createCurrency:::currency"]=0
 operation_parameters_maximum_occurences["deleteCurrency:::code"]=0
+operation_parameters_maximum_occurences["getCurrencies:::filter_default"]=0
 operation_parameters_maximum_occurences["getCurrencies:::filter_enabled_currencies"]=0
 operation_parameters_maximum_occurences["getCurrencies:::filter_type"]=0
 operation_parameters_maximum_occurences["getCurrencies:::size"]=0
@@ -2152,7 +2160,7 @@ operation_parameters_maximum_occurences["getObjectTemplates:::size"]=0
 operation_parameters_maximum_occurences["getObjectTemplates:::page"]=0
 operation_parameters_maximum_occurences["getObjectTemplates:::order"]=0
 operation_parameters_maximum_occurences["updateObjectItem:::template_id"]=0
-operation_parameters_maximum_occurences["updateObjectItem:::entitlement_id"]=0
+operation_parameters_maximum_occurences["updateObjectItem:::object_id"]=0
 operation_parameters_maximum_occurences["updateObjectItem:::cascade"]=0
 operation_parameters_maximum_occurences["updateObjectItem:::object_item"]=0
 operation_parameters_maximum_occurences["updateObjectTemplate:::id"]=0
@@ -2311,6 +2319,11 @@ operation_parameters_maximum_occurences["searchIndex:::type"]=0
 operation_parameters_maximum_occurences["searchIndex:::query"]=0
 operation_parameters_maximum_occurences["searchIndex:::size"]=0
 operation_parameters_maximum_occurences["searchIndex:::page"]=0
+operation_parameters_maximum_occurences["searchIndexWithTemplate:::type"]=0
+operation_parameters_maximum_occurences["searchIndexWithTemplate:::template"]=0
+operation_parameters_maximum_occurences["searchIndexWithTemplate:::query"]=0
+operation_parameters_maximum_occurences["searchIndexWithTemplate:::size"]=0
+operation_parameters_maximum_occurences["searchIndexWithTemplate:::page"]=0
 operation_parameters_maximum_occurences["linkAccounts:::facebook_token"]=0
 operation_parameters_maximum_occurences["linkAccounts1:::google_token"]=0
 operation_parameters_maximum_occurences["createItemTemplate:::item_template_resource"]=0
@@ -2570,6 +2583,7 @@ operation_parameters_maximum_occurences["deleteGroupMemberTemplate:::cascade"]=0
 operation_parameters_maximum_occurences["deleteGroupTemplate:::id"]=0
 operation_parameters_maximum_occurences["deleteGroupTemplate:::cascade"]=0
 operation_parameters_maximum_occurences["getGroup:::unique_name"]=0
+operation_parameters_maximum_occurences["getGroupAncestors:::unique_name"]=0
 operation_parameters_maximum_occurences["getGroupMember:::unique_name"]=0
 operation_parameters_maximum_occurences["getGroupMember:::user_id"]=0
 operation_parameters_maximum_occurences["getGroupMemberTemplate:::id"]=0
@@ -3053,6 +3067,7 @@ operation_parameters_collection_type["updatePollTemplate:::id"]=""
 operation_parameters_collection_type["updatePollTemplate:::poll_template_resource"]=""
 operation_parameters_collection_type["createCurrency:::currency"]=""
 operation_parameters_collection_type["deleteCurrency:::code"]=""
+operation_parameters_collection_type["getCurrencies:::filter_default"]=""
 operation_parameters_collection_type["getCurrencies:::filter_enabled_currencies"]=""
 operation_parameters_collection_type["getCurrencies:::filter_type"]=""
 operation_parameters_collection_type["getCurrencies:::size"]=""
@@ -3461,7 +3476,7 @@ operation_parameters_collection_type["getObjectTemplates:::size"]=""
 operation_parameters_collection_type["getObjectTemplates:::page"]=""
 operation_parameters_collection_type["getObjectTemplates:::order"]=""
 operation_parameters_collection_type["updateObjectItem:::template_id"]=""
-operation_parameters_collection_type["updateObjectItem:::entitlement_id"]=""
+operation_parameters_collection_type["updateObjectItem:::object_id"]=""
 operation_parameters_collection_type["updateObjectItem:::cascade"]=""
 operation_parameters_collection_type["updateObjectItem:::object_item"]=""
 operation_parameters_collection_type["updateObjectTemplate:::id"]=""
@@ -3620,6 +3635,11 @@ operation_parameters_collection_type["searchIndex:::type"]=""
 operation_parameters_collection_type["searchIndex:::query"]=""
 operation_parameters_collection_type["searchIndex:::size"]=""
 operation_parameters_collection_type["searchIndex:::page"]=""
+operation_parameters_collection_type["searchIndexWithTemplate:::type"]=""
+operation_parameters_collection_type["searchIndexWithTemplate:::template"]=""
+operation_parameters_collection_type["searchIndexWithTemplate:::query"]=""
+operation_parameters_collection_type["searchIndexWithTemplate:::size"]=""
+operation_parameters_collection_type["searchIndexWithTemplate:::page"]=""
 operation_parameters_collection_type["linkAccounts:::facebook_token"]=""
 operation_parameters_collection_type["linkAccounts1:::google_token"]=""
 operation_parameters_collection_type["createItemTemplate:::item_template_resource"]=""
@@ -3879,6 +3899,7 @@ operation_parameters_collection_type["deleteGroupMemberTemplate:::cascade"]=""
 operation_parameters_collection_type["deleteGroupTemplate:::id"]=""
 operation_parameters_collection_type["deleteGroupTemplate:::cascade"]=""
 operation_parameters_collection_type["getGroup:::unique_name"]=""
+operation_parameters_collection_type["getGroupAncestors:::unique_name"]=""
 operation_parameters_collection_type["getGroupMember:::unique_name"]=""
 operation_parameters_collection_type["getGroupMember:::user_id"]=""
 operation_parameters_collection_type["getGroupMemberTemplate:::id"]=""
@@ -5058,7 +5079,8 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[search]${OFF}"
 read -d '' ops <<EOF
-  ${CYAN}searchIndex${OFF};Search an index (AUTH) (AUTH)
+  ${CYAN}searchIndex${OFF};Search an index with no template (AUTH) (AUTH)
+  ${CYAN}searchIndexWithTemplate${OFF};Search an index with a template
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -5265,10 +5287,11 @@ read -d '' ops <<EOF
   ${CYAN}createGroup${OFF};Create a group (AUTH) (AUTH)
   ${CYAN}createGroupMemberTemplate${OFF};Create an group member template (AUTH) (AUTH)
   ${CYAN}createGroupTemplate${OFF};Create a group template (AUTH) (AUTH)
-  ${CYAN}deleteGroup${OFF};Removes a group from the system IF no resources are attached to it (AUTH) (AUTH)
+  ${CYAN}deleteGroup${OFF};Removes a group from the system (AUTH) (AUTH)
   ${CYAN}deleteGroupMemberTemplate${OFF};Delete an group member template (AUTH) (AUTH)
   ${CYAN}deleteGroupTemplate${OFF};Delete a group template (AUTH) (AUTH)
   ${CYAN}getGroup${OFF};Loads a specific group's details (AUTH) (AUTH)
+  ${CYAN}getGroupAncestors${OFF};Get group ancestors
   ${CYAN}getGroupMember${OFF};Get a user from a group (AUTH) (AUTH)
   ${CYAN}getGroupMemberTemplate${OFF};Get a single group member template (AUTH) (AUTH)
   ${CYAN}getGroupMemberTemplates${OFF};List and search group member templates (AUTH) (AUTH)
@@ -9819,6 +9842,8 @@ print_getCurrencies_help() {
     echo -e "${BOLD}${WHITE}getCurrencies - List and search currencies${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}filter_default${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Filter for the one currency that is set as default (true), or all that are not (false)${YELLOW} Specify as: filter_default=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}filter_enabled_currencies${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Filter for alternate currencies setup explicitely in system config${YELLOW} Specify as: filter_enabled_currencies=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}filter_type${OFF} ${BLUE}[String]${OFF}${OFF} - Filter currencies by type.  Allowable values: ('virtual', 'real')${YELLOW} Specify as: filter_type=value${OFF}" \
@@ -14422,7 +14447,7 @@ print_updateObjectItem_help() {
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}template_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template this object is part of ${YELLOW}Specify as: template_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}entitlement_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the entitlement ${YELLOW}Specify as: entitlement_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}object_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the object ${YELLOW}Specify as: object_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}cascade${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: false)${OFF} - Whether to cascade group changes, such as in the limited gettable behavior. A 400 error will return otherwise if the group is already in use with different values.${YELLOW} Specify as: cascade=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The object item object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15843,12 +15868,45 @@ print_getUserRegistrations_help() {
 ##############################################################################
 print_searchIndex_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}searchIndex - Search an index${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}searchIndex - Search an index with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "The body is an ElasticSearch query in JSON format. Please see their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html'>documentation</a> for details on the format and search options. The searchable object's format depends on on the type but mostly matches the resource from it's main endpoint. Exceptions include referenced objects (like user) being replaced with the full user resource to allow deeper searching." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of documents returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The query to be used for the search" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchIndexWithTemplate operation
+#
+##############################################################################
+print_searchIndexWithTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchIndexWithTemplate - Search an index with a template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "The body is an ElasticSearch query in JSON format. Please see their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html'>documentation</a> for details on the format and search options. The searchable object's format depends on on the type but mostly matches the resource from it's main endpoint. Exceptions include referenced objects (like user) being replaced with the full user resource to allow deeper searching." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}template${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index template ${YELLOW}Specify as: template=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of documents returned per page${YELLOW} Specify as: size=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
@@ -19275,7 +19333,9 @@ print_createGroupTemplate_help() {
 ##############################################################################
 print_deleteGroup_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}deleteGroup - Removes a group from the system IF no resources are attached to it${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}deleteGroup - Removes a group from the system${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "All groups listing this as the parent are also removed and users are in turn removed from this and those groups. This may result in users no longer being in this group's parent if they were not added to it directly as well." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19356,6 +19416,32 @@ print_deleteGroupTemplate_help() {
 print_getGroup_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getGroup - Loads a specific group's details${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getGroupAncestors operation
+#
+##############################################################################
+print_getGroupAncestors_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getGroupAncestors - Get group ancestors${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Returns a list of ancestor groups in reverse order (parent, then grandparent, etc" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19633,6 +19719,8 @@ print_removeGroupMember_help() {
 print_updateGroup_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateGroup - Update a group${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "If adding/removing/changing parent, user membership in group/new parent groups may be modified. The parent being removed will remove members from this sub group unless they were added explicitly to the parent and the new parent will gain members unless they were already a part of it." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -28932,7 +29020,7 @@ call_deleteCurrency() {
 ##############################################################################
 call_getCurrencies() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_enabled_currencies filter_type size page order    )
+    local query_parameter_names=(filter_default filter_enabled_currencies filter_type size page order    )
     local path
 
     path=$(build_request_path "/currencies" path_parameter_names query_parameter_names)
@@ -36931,7 +37019,7 @@ call_getObjectTemplates() {
 #
 ##############################################################################
 call_updateObjectItem() {
-    local path_parameter_names=(template_id entitlement_id)
+    local path_parameter_names=(template_id object_id)
     local query_parameter_names=(cascade    )
     local path
 
@@ -39228,6 +39316,80 @@ call_searchIndex() {
     local path
 
     path=$(build_request_path "/search/index/{type}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call searchIndexWithTemplate operation
+#
+##############################################################################
+call_searchIndexWithTemplate() {
+    local path_parameter_names=(type template)
+    local query_parameter_names=(size page)
+    local path
+
+    path=$(build_request_path "/search/index/{type}/{template}" path_parameter_names query_parameter_names)
     if [ $? -ne 0 ]; then
         ERROR_MSG=$path
         exit 1
@@ -45805,6 +45967,38 @@ call_getGroup() {
 
 ##############################################################################
 #
+# Call getGroupAncestors operation
+#
+##############################################################################
+call_getGroupAncestors() {
+    local path_parameter_names=(unique_name)
+    local query_parameter_names=()
+    local path
+
+    path=$(build_request_path "/users/groups/{unique_name}/ancestors" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call getGroupMember operation
 #
 ##############################################################################
@@ -50014,6 +50208,9 @@ case $key in
     searchIndex)
     operation="searchIndex"
     ;;
+    searchIndexWithTemplate)
+    operation="searchIndexWithTemplate"
+    ;;
     linkAccounts)
     operation="linkAccounts"
     ;;
@@ -50403,6 +50600,9 @@ case $key in
     ;;
     getGroup)
     operation="getGroup"
+    ;;
+    getGroupAncestors)
+    operation="getGroupAncestors"
     ;;
     getGroupMember)
     operation="getGroupMember"
@@ -51790,6 +51990,9 @@ case $operation in
     searchIndex)
     call_searchIndex
     ;;
+    searchIndexWithTemplate)
+    call_searchIndexWithTemplate
+    ;;
     linkAccounts)
     call_linkAccounts
     ;;
@@ -52179,6 +52382,9 @@ case $operation in
     ;;
     getGroup)
     call_getGroup
+    ;;
+    getGroupAncestors)
+    call_getGroupAncestors
     ;;
     getGroupMember)
     call_getGroupMember

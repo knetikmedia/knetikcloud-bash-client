@@ -8,7 +8,7 @@
 # ! swagger-codegen (https://github.com/swagger-api/swagger-codegen)
 # ! FROM SWAGGER SPECIFICATION IN JSON.
 # !
-# ! Generated on: 2017-11-20T10:55:37.904-05:00
+# ! Generated on: 2018-01-05T09:34:45.249-05:00
 # !
 # !
 # ! System wide installation:
@@ -447,6 +447,7 @@ _()
     operations["getUsageEndpoints"]=1
     operations["getUserRegistrations"]=1
     operations["searchIndex"]=1
+    operations["searchIndexWithTemplate"]=1
     operations["linkAccounts"]=1
     operations["linkAccounts1"]=1
     operations["createItemTemplate"]=1
@@ -577,6 +578,7 @@ _()
     operations["deleteGroupMemberTemplate"]=1
     operations["deleteGroupTemplate"]=1
     operations["getGroup"]=1
+    operations["getGroupAncestors"]=1
     operations["getGroupMember"]=1
     operations["getGroupMemberTemplate"]=1
     operations["getGroupMemberTemplates"]=1
@@ -803,7 +805,7 @@ _()
     operation_parameters["updatePollTemplate"]="id= "
     operation_parameters["createCurrency"]=""
     operation_parameters["deleteCurrency"]="code= "
-    operation_parameters["getCurrencies"]="filter_enabled_currencies= filter_type= size= page= order= "
+    operation_parameters["getCurrencies"]="filter_default= filter_enabled_currencies= filter_type= size= page= order= "
     operation_parameters["getCurrency"]="code= "
     operation_parameters["updateCurrency"]="code= "
     operation_parameters["addDeviceUsers"]="id= "
@@ -969,7 +971,7 @@ _()
     operation_parameters["getObjectItems"]="template_id= size= page= order= "
     operation_parameters["getObjectTemplate"]="id= "
     operation_parameters["getObjectTemplates"]="size= page= order= "
-    operation_parameters["updateObjectItem"]="template_id= entitlement_id= cascade= "
+    operation_parameters["updateObjectItem"]="template_id= object_id= cascade= "
     operation_parameters["updateObjectTemplate"]="id= "
     operation_parameters["createPaymentMethod"]="user_id= "
     operation_parameters["deletePaymentMethod"]="user_id= id= "
@@ -1018,6 +1020,7 @@ _()
     operation_parameters["getUsageEndpoints"]="start_date= end_date= "
     operation_parameters["getUserRegistrations"]="granularity= start_date= end_date= size= page= "
     operation_parameters["searchIndex"]="type= size= page= "
+    operation_parameters["searchIndexWithTemplate"]="type= template= size= page= "
     operation_parameters["linkAccounts"]=""
     operation_parameters["linkAccounts1"]=""
     operation_parameters["createItemTemplate"]=""
@@ -1148,6 +1151,7 @@ _()
     operation_parameters["deleteGroupMemberTemplate"]="id= cascade= "
     operation_parameters["deleteGroupTemplate"]="id= cascade= "
     operation_parameters["getGroup"]="unique_name= "
+    operation_parameters["getGroupAncestors"]="unique_name= "
     operation_parameters["getGroupMember"]="unique_name= user_id= "
     operation_parameters["getGroupMemberTemplate"]="id= "
     operation_parameters["getGroupMemberTemplates"]="size= page= order= "
@@ -1286,10 +1290,17 @@ _()
     operation_parameters_enum_values["getArticles::filter_active_only"]="true false"
     operation_parameters_enum_values["getArticles::filter_active_only"]="true false"
     operation_parameters_enum_values["getArticles::filter_active_only"]="true false"
+    operation_parameters_enum_values["getCurrencies::filter_default"]="true false"
     operation_parameters_enum_values["getCurrencies::filter_enabled_currencies"]="true false"
+    operation_parameters_enum_values["getCurrencies::filter_default"]="true false"
     operation_parameters_enum_values["getCurrencies::filter_enabled_currencies"]="true false"
+    operation_parameters_enum_values["getCurrencies::filter_default"]="true false"
     operation_parameters_enum_values["getCurrencies::filter_enabled_currencies"]="true false"
+    operation_parameters_enum_values["getCurrencies::filter_default"]="true false"
     operation_parameters_enum_values["getCurrencies::filter_enabled_currencies"]="true false"
+    operation_parameters_enum_values["getCurrencies::filter_default"]="true false"
+    operation_parameters_enum_values["getCurrencies::filter_enabled_currencies"]="true false"
+    operation_parameters_enum_values["getCurrencies::filter_default"]="true false"
     operation_parameters_enum_values["getCurrencies::filter_enabled_currencies"]="true false"
     operation_parameters_enum_values["getAchievements::filter_hidden"]="true false"
     operation_parameters_enum_values["getAchievements::filter_derived"]="true false"

@@ -10,7 +10,7 @@
 # !
 # ! Based on: https://github.com/Valodim/zsh-curl-completion/blob/master/_curl
 # !
-# ! Generated on: 2017-11-20T10:55:37.904-05:00
+# ! Generated on: 2018-01-05T09:34:45.249-05:00
 # !
 # !
 # ! Installation:
@@ -618,7 +618,8 @@ case $state in
             "getUsageByMinute[Returns aggregated endpoint usage information by minute]" \
             "getUsageByMonth[Returns aggregated endpoint usage information by month]" \
             "getUsageByYear[Returns aggregated endpoint usage information by year]" \
-            "getUsageEndpoints[Returns list of endpoints called (method and url)]"             "getUserRegistrations[Get user registration info]"             "searchIndex[Search an index]"             "linkAccounts[Link facebook account]"             "linkAccounts1[Link google account]"             "createItemTemplate[Create an item template]" \
+            "getUsageEndpoints[Returns list of endpoints called (method and url)]"             "getUserRegistrations[Get user registration info]"             "searchIndex[Search an index with no template]" \
+            "searchIndexWithTemplate[Search an index with a template]"             "linkAccounts[Link facebook account]"             "linkAccounts1[Link google account]"             "createItemTemplate[Create an item template]" \
             "createStoreItem[Create a store item]" \
             "deleteItemTemplate[Delete an item template]" \
             "deleteStoreItem[Delete a store item]" \
@@ -729,10 +730,11 @@ case $state in
             "createGroup[Create a group]" \
             "createGroupMemberTemplate[Create an group member template]" \
             "createGroupTemplate[Create a group template]" \
-            "deleteGroup[Removes a group from the system IF no resources are attached to it]" \
+            "deleteGroup[Removes a group from the system]" \
             "deleteGroupMemberTemplate[Delete an group member template]" \
             "deleteGroupTemplate[Delete a group template]" \
             "getGroup[Loads a specific group's details]" \
+            "getGroupAncestors[Get group ancestors]" \
             "getGroupMember[Get a user from a group]" \
             "getGroupMemberTemplate[Get a single group member template]" \
             "getGroupMemberTemplates[List and search group member templates]" \
@@ -2050,7 +2052,9 @@ case $state in
       getCurrencies)
         local -a _op_arguments
         _op_arguments=(
-                    "filter_enabled_currencies=true:[QUERY] Filter for alternate currencies setup explicitely in system config"
+                    "filter_default=true:[QUERY] Filter for the one currency that is set as default (true), or all that are not (false)"
+          "filter_default=false:[QUERY] Filter for the one currency that is set as default (true), or all that are not (false)"
+"filter_enabled_currencies=true:[QUERY] Filter for alternate currencies setup explicitely in system config"
           "filter_enabled_currencies=false:[QUERY] Filter for alternate currencies setup explicitely in system config"
 "filter_type=:[QUERY] Filter currencies by type.  Allowable values: (&#39;virtual&#39;, &#39;real&#39;)"
 "size=:[QUERY] The number of objects returned per page"
@@ -3409,7 +3413,7 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "template_id=:[PATH] The id of the template this object is part of"
-"entitlement_id=:[PATH] The id of the entitlement"
+"object_id=:[PATH] The id of the object"
           "cascade=true:[QUERY] Whether to cascade group changes, such as in the limited gettable behavior. A 400 error will return otherwise if the group is already in use with different values."
           "cascade=false:[QUERY] Whether to cascade group changes, such as in the limited gettable behavior. A 400 error will return otherwise if the group is already in use with different values."
           )
@@ -3841,6 +3845,16 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "type=:[PATH] The index type"
+          "size=:[QUERY] The number of documents returned per page"
+"page=:[QUERY] The number of the page returned, starting with 1"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchIndexWithTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+"template=:[PATH] The index template"
           "size=:[QUERY] The number of documents returned per page"
 "page=:[QUERY] The number of the page returned, starting with 1"
           )
@@ -4833,6 +4847,13 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getGroup)
+        local -a _op_arguments
+        _op_arguments=(
+          "unique_name=:[PATH] The group unique name"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getGroupAncestors)
         local -a _op_arguments
         _op_arguments=(
           "unique_name=:[PATH] The group unique name"
