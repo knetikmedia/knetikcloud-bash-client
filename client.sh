@@ -8,7 +8,7 @@
 # ! swagger-codegen (https://github.com/swagger-api/swagger-codegen)
 # ! FROM SWAGGER SPECIFICATION IN JSON.
 # !
-# ! Generated on: 2018-01-05T16:41:47.119-05:00
+# ! Generated on: 2018-01-05T16:56:18.871-05:00
 # !
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -402,9 +402,6 @@ operation_parameters_minimum_occurences["getComments:::context"]=1
 operation_parameters_minimum_occurences["getComments:::context_id"]=1
 operation_parameters_minimum_occurences["getComments:::size"]=0
 operation_parameters_minimum_occurences["getComments:::page"]=0
-operation_parameters_minimum_occurences["searchComments:::query"]=0
-operation_parameters_minimum_occurences["searchComments:::size"]=0
-operation_parameters_minimum_occurences["searchComments:::page"]=0
 operation_parameters_minimum_occurences["updateComment:::id"]=1
 operation_parameters_minimum_occurences["updateComment:::content"]=0
 operation_parameters_minimum_occurences["answerPoll:::id"]=1
@@ -767,6 +764,7 @@ operation_parameters_minimum_occurences["addVideoRelationships:::video_id"]=1
 operation_parameters_minimum_occurences["addVideoRelationships:::video_relationship_resource"]=0
 operation_parameters_minimum_occurences["createVideoDisposition:::video_id"]=1
 operation_parameters_minimum_occurences["createVideoDisposition:::disposition_resource"]=0
+operation_parameters_minimum_occurences["createVideoTemplate:::video_template_resource"]=0
 operation_parameters_minimum_occurences["deleteVideo:::id"]=1
 operation_parameters_minimum_occurences["deleteVideoComment:::video_id"]=1
 operation_parameters_minimum_occurences["deleteVideoComment:::id"]=1
@@ -774,6 +772,8 @@ operation_parameters_minimum_occurences["deleteVideoDisposition:::disposition_id
 operation_parameters_minimum_occurences["deleteVideoFlag:::video_id"]=1
 operation_parameters_minimum_occurences["deleteVideoRelationship:::video_id"]=1
 operation_parameters_minimum_occurences["deleteVideoRelationship:::id"]=1
+operation_parameters_minimum_occurences["deleteVideoTemplate:::id"]=1
+operation_parameters_minimum_occurences["deleteVideoTemplate:::cascade"]=0
 operation_parameters_minimum_occurences["getUserVideos:::user_id"]=1
 operation_parameters_minimum_occurences["getUserVideos:::exclude_flagged"]=0
 operation_parameters_minimum_occurences["getUserVideos:::size"]=0
@@ -788,6 +788,10 @@ operation_parameters_minimum_occurences["getVideoDispositions:::page"]=0
 operation_parameters_minimum_occurences["getVideoRelationships:::video_id"]=1
 operation_parameters_minimum_occurences["getVideoRelationships:::size"]=0
 operation_parameters_minimum_occurences["getVideoRelationships:::page"]=0
+operation_parameters_minimum_occurences["getVideoTemplate:::id"]=1
+operation_parameters_minimum_occurences["getVideoTemplates:::size"]=0
+operation_parameters_minimum_occurences["getVideoTemplates:::page"]=0
+operation_parameters_minimum_occurences["getVideoTemplates:::order"]=0
 operation_parameters_minimum_occurences["getVideos:::exclude_flagged"]=0
 operation_parameters_minimum_occurences["getVideos:::filter_videos_by_uploader"]=0
 operation_parameters_minimum_occurences["getVideos:::filter_category"]=0
@@ -815,6 +819,8 @@ operation_parameters_minimum_occurences["updateVideoComment:::content"]=0
 operation_parameters_minimum_occurences["updateVideoRelationship:::video_id"]=1
 operation_parameters_minimum_occurences["updateVideoRelationship:::relationship_id"]=1
 operation_parameters_minimum_occurences["updateVideoRelationship:::details"]=0
+operation_parameters_minimum_occurences["updateVideoTemplate:::id"]=1
+operation_parameters_minimum_occurences["updateVideoTemplate:::video_template_resource"]=0
 operation_parameters_minimum_occurences["viewVideo:::id"]=1
 operation_parameters_minimum_occurences["sendRawEmail:::raw_email_resource"]=0
 operation_parameters_minimum_occurences["sendRawPush:::raw_push_resource"]=0
@@ -996,15 +1002,50 @@ operation_parameters_minimum_occurences["getUserRegistrations:::start_date"]=0
 operation_parameters_minimum_occurences["getUserRegistrations:::end_date"]=0
 operation_parameters_minimum_occurences["getUserRegistrations:::size"]=0
 operation_parameters_minimum_occurences["getUserRegistrations:::page"]=0
+operation_parameters_minimum_occurences["searchCountGET:::type"]=1
+operation_parameters_minimum_occurences["searchCountPOST:::type"]=1
+operation_parameters_minimum_occurences["searchCountPOST:::query"]=0
+operation_parameters_minimum_occurences["searchCountWithTemplateGET:::type"]=1
+operation_parameters_minimum_occurences["searchCountWithTemplateGET:::template"]=1
+operation_parameters_minimum_occurences["searchCountWithTemplatePOST:::type"]=1
+operation_parameters_minimum_occurences["searchCountWithTemplatePOST:::template"]=1
+operation_parameters_minimum_occurences["searchCountWithTemplatePOST:::query"]=0
+operation_parameters_minimum_occurences["searchDocumentGET:::type"]=1
+operation_parameters_minimum_occurences["searchDocumentGET:::id"]=1
+operation_parameters_minimum_occurences["searchDocumentWithTemplateGET:::type"]=1
+operation_parameters_minimum_occurences["searchDocumentWithTemplateGET:::id"]=1
+operation_parameters_minimum_occurences["searchDocumentWithTemplateGET:::template"]=1
+operation_parameters_minimum_occurences["searchExplainGET:::type"]=1
+operation_parameters_minimum_occurences["searchExplainGET:::id"]=1
+operation_parameters_minimum_occurences["searchExplainPOST:::type"]=1
+operation_parameters_minimum_occurences["searchExplainPOST:::id"]=1
+operation_parameters_minimum_occurences["searchExplainPOST:::query"]=0
+operation_parameters_minimum_occurences["searchExplainWithTemplateGET:::type"]=1
+operation_parameters_minimum_occurences["searchExplainWithTemplateGET:::id"]=1
+operation_parameters_minimum_occurences["searchExplainWithTemplateGET:::template"]=1
+operation_parameters_minimum_occurences["searchExplainWithTemplatePOST:::type"]=1
+operation_parameters_minimum_occurences["searchExplainWithTemplatePOST:::id"]=1
+operation_parameters_minimum_occurences["searchExplainWithTemplatePOST:::template"]=1
+operation_parameters_minimum_occurences["searchExplainWithTemplatePOST:::query"]=0
 operation_parameters_minimum_occurences["searchIndex:::type"]=1
 operation_parameters_minimum_occurences["searchIndex:::query"]=0
-operation_parameters_minimum_occurences["searchIndex:::size"]=0
-operation_parameters_minimum_occurences["searchIndex:::page"]=0
-operation_parameters_minimum_occurences["searchIndexWithTemplate:::type"]=1
-operation_parameters_minimum_occurences["searchIndexWithTemplate:::template"]=1
-operation_parameters_minimum_occurences["searchIndexWithTemplate:::query"]=0
-operation_parameters_minimum_occurences["searchIndexWithTemplate:::size"]=0
-operation_parameters_minimum_occurences["searchIndexWithTemplate:::page"]=0
+operation_parameters_minimum_occurences["searchIndexGET:::type"]=1
+operation_parameters_minimum_occurences["searchIndexWithTemplateGET:::type"]=1
+operation_parameters_minimum_occurences["searchIndexWithTemplateGET:::template"]=1
+operation_parameters_minimum_occurences["searchIndexWithTemplatePOST:::type"]=1
+operation_parameters_minimum_occurences["searchIndexWithTemplatePOST:::template"]=1
+operation_parameters_minimum_occurences["searchIndexWithTemplatePOST:::query"]=0
+operation_parameters_minimum_occurences["searchMappingsGET:::type"]=1
+operation_parameters_minimum_occurences["searchMappingsWithTemplateGET:::type"]=1
+operation_parameters_minimum_occurences["searchMappingsWithTemplateGET:::template"]=1
+operation_parameters_minimum_occurences["searchValidateGET:::type"]=1
+operation_parameters_minimum_occurences["searchValidatePOST:::type"]=1
+operation_parameters_minimum_occurences["searchValidatePOST:::query"]=0
+operation_parameters_minimum_occurences["searchValidateWithTemplateGET:::type"]=1
+operation_parameters_minimum_occurences["searchValidateWithTemplateGET:::template"]=1
+operation_parameters_minimum_occurences["searchValidateWithTemplatePOST:::type"]=1
+operation_parameters_minimum_occurences["searchValidateWithTemplatePOST:::template"]=1
+operation_parameters_minimum_occurences["searchValidateWithTemplatePOST:::query"]=0
 operation_parameters_minimum_occurences["linkAccounts:::facebook_token"]=0
 operation_parameters_minimum_occurences["linkAccounts1:::google_token"]=0
 operation_parameters_minimum_occurences["createItemTemplate:::item_template_resource"]=0
@@ -1721,9 +1762,6 @@ operation_parameters_maximum_occurences["getComments:::context"]=0
 operation_parameters_maximum_occurences["getComments:::context_id"]=0
 operation_parameters_maximum_occurences["getComments:::size"]=0
 operation_parameters_maximum_occurences["getComments:::page"]=0
-operation_parameters_maximum_occurences["searchComments:::query"]=0
-operation_parameters_maximum_occurences["searchComments:::size"]=0
-operation_parameters_maximum_occurences["searchComments:::page"]=0
 operation_parameters_maximum_occurences["updateComment:::id"]=0
 operation_parameters_maximum_occurences["updateComment:::content"]=0
 operation_parameters_maximum_occurences["answerPoll:::id"]=0
@@ -2086,6 +2124,7 @@ operation_parameters_maximum_occurences["addVideoRelationships:::video_id"]=0
 operation_parameters_maximum_occurences["addVideoRelationships:::video_relationship_resource"]=0
 operation_parameters_maximum_occurences["createVideoDisposition:::video_id"]=0
 operation_parameters_maximum_occurences["createVideoDisposition:::disposition_resource"]=0
+operation_parameters_maximum_occurences["createVideoTemplate:::video_template_resource"]=0
 operation_parameters_maximum_occurences["deleteVideo:::id"]=0
 operation_parameters_maximum_occurences["deleteVideoComment:::video_id"]=0
 operation_parameters_maximum_occurences["deleteVideoComment:::id"]=0
@@ -2093,6 +2132,8 @@ operation_parameters_maximum_occurences["deleteVideoDisposition:::disposition_id
 operation_parameters_maximum_occurences["deleteVideoFlag:::video_id"]=0
 operation_parameters_maximum_occurences["deleteVideoRelationship:::video_id"]=0
 operation_parameters_maximum_occurences["deleteVideoRelationship:::id"]=0
+operation_parameters_maximum_occurences["deleteVideoTemplate:::id"]=0
+operation_parameters_maximum_occurences["deleteVideoTemplate:::cascade"]=0
 operation_parameters_maximum_occurences["getUserVideos:::user_id"]=0
 operation_parameters_maximum_occurences["getUserVideos:::exclude_flagged"]=0
 operation_parameters_maximum_occurences["getUserVideos:::size"]=0
@@ -2107,6 +2148,10 @@ operation_parameters_maximum_occurences["getVideoDispositions:::page"]=0
 operation_parameters_maximum_occurences["getVideoRelationships:::video_id"]=0
 operation_parameters_maximum_occurences["getVideoRelationships:::size"]=0
 operation_parameters_maximum_occurences["getVideoRelationships:::page"]=0
+operation_parameters_maximum_occurences["getVideoTemplate:::id"]=0
+operation_parameters_maximum_occurences["getVideoTemplates:::size"]=0
+operation_parameters_maximum_occurences["getVideoTemplates:::page"]=0
+operation_parameters_maximum_occurences["getVideoTemplates:::order"]=0
 operation_parameters_maximum_occurences["getVideos:::exclude_flagged"]=0
 operation_parameters_maximum_occurences["getVideos:::filter_videos_by_uploader"]=0
 operation_parameters_maximum_occurences["getVideos:::filter_category"]=0
@@ -2134,6 +2179,8 @@ operation_parameters_maximum_occurences["updateVideoComment:::content"]=0
 operation_parameters_maximum_occurences["updateVideoRelationship:::video_id"]=0
 operation_parameters_maximum_occurences["updateVideoRelationship:::relationship_id"]=0
 operation_parameters_maximum_occurences["updateVideoRelationship:::details"]=0
+operation_parameters_maximum_occurences["updateVideoTemplate:::id"]=0
+operation_parameters_maximum_occurences["updateVideoTemplate:::video_template_resource"]=0
 operation_parameters_maximum_occurences["viewVideo:::id"]=0
 operation_parameters_maximum_occurences["sendRawEmail:::raw_email_resource"]=0
 operation_parameters_maximum_occurences["sendRawPush:::raw_push_resource"]=0
@@ -2315,15 +2362,50 @@ operation_parameters_maximum_occurences["getUserRegistrations:::start_date"]=0
 operation_parameters_maximum_occurences["getUserRegistrations:::end_date"]=0
 operation_parameters_maximum_occurences["getUserRegistrations:::size"]=0
 operation_parameters_maximum_occurences["getUserRegistrations:::page"]=0
+operation_parameters_maximum_occurences["searchCountGET:::type"]=0
+operation_parameters_maximum_occurences["searchCountPOST:::type"]=0
+operation_parameters_maximum_occurences["searchCountPOST:::query"]=0
+operation_parameters_maximum_occurences["searchCountWithTemplateGET:::type"]=0
+operation_parameters_maximum_occurences["searchCountWithTemplateGET:::template"]=0
+operation_parameters_maximum_occurences["searchCountWithTemplatePOST:::type"]=0
+operation_parameters_maximum_occurences["searchCountWithTemplatePOST:::template"]=0
+operation_parameters_maximum_occurences["searchCountWithTemplatePOST:::query"]=0
+operation_parameters_maximum_occurences["searchDocumentGET:::type"]=0
+operation_parameters_maximum_occurences["searchDocumentGET:::id"]=0
+operation_parameters_maximum_occurences["searchDocumentWithTemplateGET:::type"]=0
+operation_parameters_maximum_occurences["searchDocumentWithTemplateGET:::id"]=0
+operation_parameters_maximum_occurences["searchDocumentWithTemplateGET:::template"]=0
+operation_parameters_maximum_occurences["searchExplainGET:::type"]=0
+operation_parameters_maximum_occurences["searchExplainGET:::id"]=0
+operation_parameters_maximum_occurences["searchExplainPOST:::type"]=0
+operation_parameters_maximum_occurences["searchExplainPOST:::id"]=0
+operation_parameters_maximum_occurences["searchExplainPOST:::query"]=0
+operation_parameters_maximum_occurences["searchExplainWithTemplateGET:::type"]=0
+operation_parameters_maximum_occurences["searchExplainWithTemplateGET:::id"]=0
+operation_parameters_maximum_occurences["searchExplainWithTemplateGET:::template"]=0
+operation_parameters_maximum_occurences["searchExplainWithTemplatePOST:::type"]=0
+operation_parameters_maximum_occurences["searchExplainWithTemplatePOST:::id"]=0
+operation_parameters_maximum_occurences["searchExplainWithTemplatePOST:::template"]=0
+operation_parameters_maximum_occurences["searchExplainWithTemplatePOST:::query"]=0
 operation_parameters_maximum_occurences["searchIndex:::type"]=0
 operation_parameters_maximum_occurences["searchIndex:::query"]=0
-operation_parameters_maximum_occurences["searchIndex:::size"]=0
-operation_parameters_maximum_occurences["searchIndex:::page"]=0
-operation_parameters_maximum_occurences["searchIndexWithTemplate:::type"]=0
-operation_parameters_maximum_occurences["searchIndexWithTemplate:::template"]=0
-operation_parameters_maximum_occurences["searchIndexWithTemplate:::query"]=0
-operation_parameters_maximum_occurences["searchIndexWithTemplate:::size"]=0
-operation_parameters_maximum_occurences["searchIndexWithTemplate:::page"]=0
+operation_parameters_maximum_occurences["searchIndexGET:::type"]=0
+operation_parameters_maximum_occurences["searchIndexWithTemplateGET:::type"]=0
+operation_parameters_maximum_occurences["searchIndexWithTemplateGET:::template"]=0
+operation_parameters_maximum_occurences["searchIndexWithTemplatePOST:::type"]=0
+operation_parameters_maximum_occurences["searchIndexWithTemplatePOST:::template"]=0
+operation_parameters_maximum_occurences["searchIndexWithTemplatePOST:::query"]=0
+operation_parameters_maximum_occurences["searchMappingsGET:::type"]=0
+operation_parameters_maximum_occurences["searchMappingsWithTemplateGET:::type"]=0
+operation_parameters_maximum_occurences["searchMappingsWithTemplateGET:::template"]=0
+operation_parameters_maximum_occurences["searchValidateGET:::type"]=0
+operation_parameters_maximum_occurences["searchValidatePOST:::type"]=0
+operation_parameters_maximum_occurences["searchValidatePOST:::query"]=0
+operation_parameters_maximum_occurences["searchValidateWithTemplateGET:::type"]=0
+operation_parameters_maximum_occurences["searchValidateWithTemplateGET:::template"]=0
+operation_parameters_maximum_occurences["searchValidateWithTemplatePOST:::type"]=0
+operation_parameters_maximum_occurences["searchValidateWithTemplatePOST:::template"]=0
+operation_parameters_maximum_occurences["searchValidateWithTemplatePOST:::query"]=0
 operation_parameters_maximum_occurences["linkAccounts:::facebook_token"]=0
 operation_parameters_maximum_occurences["linkAccounts1:::google_token"]=0
 operation_parameters_maximum_occurences["createItemTemplate:::item_template_resource"]=0
@@ -3037,9 +3119,6 @@ operation_parameters_collection_type["getComments:::context"]=""
 operation_parameters_collection_type["getComments:::context_id"]=""
 operation_parameters_collection_type["getComments:::size"]=""
 operation_parameters_collection_type["getComments:::page"]=""
-operation_parameters_collection_type["searchComments:::query"]=""
-operation_parameters_collection_type["searchComments:::size"]=""
-operation_parameters_collection_type["searchComments:::page"]=""
 operation_parameters_collection_type["updateComment:::id"]=""
 operation_parameters_collection_type["updateComment:::content"]=""
 operation_parameters_collection_type["answerPoll:::id"]=""
@@ -3402,6 +3481,7 @@ operation_parameters_collection_type["addVideoRelationships:::video_id"]=""
 operation_parameters_collection_type["addVideoRelationships:::video_relationship_resource"]=""
 operation_parameters_collection_type["createVideoDisposition:::video_id"]=""
 operation_parameters_collection_type["createVideoDisposition:::disposition_resource"]=""
+operation_parameters_collection_type["createVideoTemplate:::video_template_resource"]=""
 operation_parameters_collection_type["deleteVideo:::id"]=""
 operation_parameters_collection_type["deleteVideoComment:::video_id"]=""
 operation_parameters_collection_type["deleteVideoComment:::id"]=""
@@ -3409,6 +3489,8 @@ operation_parameters_collection_type["deleteVideoDisposition:::disposition_id"]=
 operation_parameters_collection_type["deleteVideoFlag:::video_id"]=""
 operation_parameters_collection_type["deleteVideoRelationship:::video_id"]=""
 operation_parameters_collection_type["deleteVideoRelationship:::id"]=""
+operation_parameters_collection_type["deleteVideoTemplate:::id"]=""
+operation_parameters_collection_type["deleteVideoTemplate:::cascade"]=""
 operation_parameters_collection_type["getUserVideos:::user_id"]=""
 operation_parameters_collection_type["getUserVideos:::exclude_flagged"]=""
 operation_parameters_collection_type["getUserVideos:::size"]=""
@@ -3423,6 +3505,10 @@ operation_parameters_collection_type["getVideoDispositions:::page"]=""
 operation_parameters_collection_type["getVideoRelationships:::video_id"]=""
 operation_parameters_collection_type["getVideoRelationships:::size"]=""
 operation_parameters_collection_type["getVideoRelationships:::page"]=""
+operation_parameters_collection_type["getVideoTemplate:::id"]=""
+operation_parameters_collection_type["getVideoTemplates:::size"]=""
+operation_parameters_collection_type["getVideoTemplates:::page"]=""
+operation_parameters_collection_type["getVideoTemplates:::order"]=""
 operation_parameters_collection_type["getVideos:::exclude_flagged"]=""
 operation_parameters_collection_type["getVideos:::filter_videos_by_uploader"]=""
 operation_parameters_collection_type["getVideos:::filter_category"]=""
@@ -3450,6 +3536,8 @@ operation_parameters_collection_type["updateVideoComment:::content"]=""
 operation_parameters_collection_type["updateVideoRelationship:::video_id"]=""
 operation_parameters_collection_type["updateVideoRelationship:::relationship_id"]=""
 operation_parameters_collection_type["updateVideoRelationship:::details"]=""
+operation_parameters_collection_type["updateVideoTemplate:::id"]=""
+operation_parameters_collection_type["updateVideoTemplate:::video_template_resource"]=""
 operation_parameters_collection_type["viewVideo:::id"]=""
 operation_parameters_collection_type["sendRawEmail:::raw_email_resource"]=""
 operation_parameters_collection_type["sendRawPush:::raw_push_resource"]=""
@@ -3631,15 +3719,50 @@ operation_parameters_collection_type["getUserRegistrations:::start_date"]=""
 operation_parameters_collection_type["getUserRegistrations:::end_date"]=""
 operation_parameters_collection_type["getUserRegistrations:::size"]=""
 operation_parameters_collection_type["getUserRegistrations:::page"]=""
+operation_parameters_collection_type["searchCountGET:::type"]=""
+operation_parameters_collection_type["searchCountPOST:::type"]=""
+operation_parameters_collection_type["searchCountPOST:::query"]=""
+operation_parameters_collection_type["searchCountWithTemplateGET:::type"]=""
+operation_parameters_collection_type["searchCountWithTemplateGET:::template"]=""
+operation_parameters_collection_type["searchCountWithTemplatePOST:::type"]=""
+operation_parameters_collection_type["searchCountWithTemplatePOST:::template"]=""
+operation_parameters_collection_type["searchCountWithTemplatePOST:::query"]=""
+operation_parameters_collection_type["searchDocumentGET:::type"]=""
+operation_parameters_collection_type["searchDocumentGET:::id"]=""
+operation_parameters_collection_type["searchDocumentWithTemplateGET:::type"]=""
+operation_parameters_collection_type["searchDocumentWithTemplateGET:::id"]=""
+operation_parameters_collection_type["searchDocumentWithTemplateGET:::template"]=""
+operation_parameters_collection_type["searchExplainGET:::type"]=""
+operation_parameters_collection_type["searchExplainGET:::id"]=""
+operation_parameters_collection_type["searchExplainPOST:::type"]=""
+operation_parameters_collection_type["searchExplainPOST:::id"]=""
+operation_parameters_collection_type["searchExplainPOST:::query"]=""
+operation_parameters_collection_type["searchExplainWithTemplateGET:::type"]=""
+operation_parameters_collection_type["searchExplainWithTemplateGET:::id"]=""
+operation_parameters_collection_type["searchExplainWithTemplateGET:::template"]=""
+operation_parameters_collection_type["searchExplainWithTemplatePOST:::type"]=""
+operation_parameters_collection_type["searchExplainWithTemplatePOST:::id"]=""
+operation_parameters_collection_type["searchExplainWithTemplatePOST:::template"]=""
+operation_parameters_collection_type["searchExplainWithTemplatePOST:::query"]=""
 operation_parameters_collection_type["searchIndex:::type"]=""
 operation_parameters_collection_type["searchIndex:::query"]=""
-operation_parameters_collection_type["searchIndex:::size"]=""
-operation_parameters_collection_type["searchIndex:::page"]=""
-operation_parameters_collection_type["searchIndexWithTemplate:::type"]=""
-operation_parameters_collection_type["searchIndexWithTemplate:::template"]=""
-operation_parameters_collection_type["searchIndexWithTemplate:::query"]=""
-operation_parameters_collection_type["searchIndexWithTemplate:::size"]=""
-operation_parameters_collection_type["searchIndexWithTemplate:::page"]=""
+operation_parameters_collection_type["searchIndexGET:::type"]=""
+operation_parameters_collection_type["searchIndexWithTemplateGET:::type"]=""
+operation_parameters_collection_type["searchIndexWithTemplateGET:::template"]=""
+operation_parameters_collection_type["searchIndexWithTemplatePOST:::type"]=""
+operation_parameters_collection_type["searchIndexWithTemplatePOST:::template"]=""
+operation_parameters_collection_type["searchIndexWithTemplatePOST:::query"]=""
+operation_parameters_collection_type["searchMappingsGET:::type"]=""
+operation_parameters_collection_type["searchMappingsWithTemplateGET:::type"]=""
+operation_parameters_collection_type["searchMappingsWithTemplateGET:::template"]=""
+operation_parameters_collection_type["searchValidateGET:::type"]=""
+operation_parameters_collection_type["searchValidatePOST:::type"]=""
+operation_parameters_collection_type["searchValidatePOST:::query"]=""
+operation_parameters_collection_type["searchValidateWithTemplateGET:::type"]=""
+operation_parameters_collection_type["searchValidateWithTemplateGET:::template"]=""
+operation_parameters_collection_type["searchValidateWithTemplatePOST:::type"]=""
+operation_parameters_collection_type["searchValidateWithTemplatePOST:::template"]=""
+operation_parameters_collection_type["searchValidateWithTemplatePOST:::query"]=""
 operation_parameters_collection_type["linkAccounts:::facebook_token"]=""
 operation_parameters_collection_type["linkAccounts1:::google_token"]=""
 operation_parameters_collection_type["createItemTemplate:::item_template_resource"]=""
@@ -4674,7 +4797,6 @@ read -d '' ops <<EOF
   ${CYAN}deleteComment${OFF};Delete a comment (AUTH) (AUTH)
   ${CYAN}getComment${OFF};Return a comment (AUTH) (AUTH)
   ${CYAN}getComments${OFF};Returns a page of comments (AUTH) (AUTH)
-  ${CYAN}searchComments${OFF};Search the comment index (AUTH) (AUTH)
   ${CYAN}updateComment${OFF};Update a comment (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4905,22 +5027,27 @@ read -d '' ops <<EOF
   ${CYAN}addVideoFlag${OFF};Add a new flag (AUTH) (AUTH)
   ${CYAN}addVideoRelationships${OFF};Adds one or more existing videos as related to this one (AUTH) (AUTH)
   ${CYAN}createVideoDisposition${OFF};Create a video disposition (AUTH) (AUTH)
+  ${CYAN}createVideoTemplate${OFF};Create a video template (AUTH) (AUTH)
   ${CYAN}deleteVideo${OFF};Deletes a video from the system if no resources are attached to it (AUTH) (AUTH)
   ${CYAN}deleteVideoComment${OFF};Delete a video comment (AUTH) (AUTH)
   ${CYAN}deleteVideoDisposition${OFF};Delete a video disposition (AUTH) (AUTH)
   ${CYAN}deleteVideoFlag${OFF};Delete a flag (AUTH) (AUTH)
   ${CYAN}deleteVideoRelationship${OFF};Delete a video's relationship (AUTH) (AUTH)
+  ${CYAN}deleteVideoTemplate${OFF};Delete a video template (AUTH) (AUTH)
   ${CYAN}getUserVideos${OFF};Get user videos (AUTH) (AUTH)
   ${CYAN}getVideo${OFF};Loads a specific video details (AUTH) (AUTH)
   ${CYAN}getVideoComments${OFF};Returns a page of comments for a video (AUTH) (AUTH)
   ${CYAN}getVideoDispositions${OFF};Returns a page of dispositions for a video (AUTH) (AUTH)
   ${CYAN}getVideoRelationships${OFF};Returns a page of video relationships (AUTH) (AUTH)
+  ${CYAN}getVideoTemplate${OFF};Get a single video template (AUTH) (AUTH)
+  ${CYAN}getVideoTemplates${OFF};List and search video templates (AUTH) (AUTH)
   ${CYAN}getVideos${OFF};Search videos using the documented filters (AUTH) (AUTH)
   ${CYAN}removeUserFromVideoWhitelist${OFF};Removes a user from a video's whitelist (AUTH) (AUTH)
   ${CYAN}removeVideoContributor${OFF};Removes a contributor from a video (AUTH) (AUTH)
   ${CYAN}updateVideo${OFF};Modifies a video's details (AUTH) (AUTH)
   ${CYAN}updateVideoComment${OFF};Update a video comment (AUTH) (AUTH)
   ${CYAN}updateVideoRelationship${OFF};Update a video's relationship details (AUTH) (AUTH)
+  ${CYAN}updateVideoTemplate${OFF};Update a video template (AUTH) (AUTH)
   ${CYAN}viewVideo${OFF};Increment a video's view count (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
@@ -5079,8 +5206,27 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[search]${OFF}"
 read -d '' ops <<EOF
+  ${CYAN}searchCountGET${OFF};Count matches with no template (AUTH) (AUTH)
+  ${CYAN}searchCountPOST${OFF};Count matches with no template (AUTH) (AUTH)
+  ${CYAN}searchCountWithTemplateGET${OFF};Count matches with a template (AUTH) (AUTH)
+  ${CYAN}searchCountWithTemplatePOST${OFF};Count matches with a template (AUTH) (AUTH)
+  ${CYAN}searchDocumentGET${OFF};Get document with no template (AUTH) (AUTH)
+  ${CYAN}searchDocumentWithTemplateGET${OFF};Get document with a template (AUTH) (AUTH)
+  ${CYAN}searchExplainGET${OFF};Explain matches with no template (AUTH) (AUTH)
+  ${CYAN}searchExplainPOST${OFF};Explain matches with no template (AUTH) (AUTH)
+  ${CYAN}searchExplainWithTemplateGET${OFF};Explain matches with a template (AUTH) (AUTH)
+  ${CYAN}searchExplainWithTemplatePOST${OFF};Explain matches with a template (AUTH) (AUTH)
   ${CYAN}searchIndex${OFF};Search an index with no template (AUTH) (AUTH)
-  ${CYAN}searchIndexWithTemplate${OFF};Search an index with a template
+  ${CYAN}searchIndexGET${OFF};Search an index with no template (AUTH) (AUTH)
+  ${CYAN}searchIndexWithTemplateGET${OFF};Search an index with a template (AUTH) (AUTH)
+  ${CYAN}searchIndexWithTemplatePOST${OFF};Search an index with a template (AUTH) (AUTH)
+  ${CYAN}searchIndicesGET${OFF};Get indices (AUTH) (AUTH)
+  ${CYAN}searchMappingsGET${OFF};Get mapping with no template (AUTH) (AUTH)
+  ${CYAN}searchMappingsWithTemplateGET${OFF};Get mapping with a template (AUTH) (AUTH)
+  ${CYAN}searchValidateGET${OFF};Validate matches with no template (AUTH) (AUTH)
+  ${CYAN}searchValidatePOST${OFF};Validate matches with no template (AUTH) (AUTH)
+  ${CYAN}searchValidateWithTemplateGET${OFF};Validate matches with a template (AUTH) (AUTH)
+  ${CYAN}searchValidateWithTemplatePOST${OFF};Validate matches with a template (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -5399,7 +5545,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "  -V,--version\t\t\t\tPrint API version"
     echo -e "  --about\t\t\t\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\t\t\t\tSpecify the host URL "
-echo -e "              \t\t\t\t(e.g. 'https://sandbox.knetikcloud.com')"
+echo -e "              \t\t\t\t(e.g. 'https://devsandbox.knetikcloud.com')"
 
     echo -e "  --force\t\t\t\tForce command invocation in spite of missing"
     echo -e "         \t\t\t\trequired parameters or wrong content type"
@@ -9391,37 +9537,6 @@ print_getComments_help() {
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for searchComments operation
-#
-##############################################################################
-print_searchComments_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}searchComments - Search the comment index${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "The body is an ElasticSearch query json. Please see their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html'>documentation</a> for details on the format and search options" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The search query" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -13595,6 +13710,33 @@ print_createVideoDisposition_help() {
 }
 ##############################################################################
 #
+# Print help for createVideoTemplate operation
+#
+##############################################################################
+print_createVideoTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createVideoTemplate - Create a video template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Video Templates define a type of video and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The video template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for deleteVideo operation
 #
 ##############################################################################
@@ -13702,6 +13844,34 @@ print_deleteVideoRelationship_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The relationship id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteVideoTemplate operation
+#
+##############################################################################
+print_deleteVideoTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteVideoTemplate - Delete a video template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}cascade${OFF} ${BLUE}[String]${OFF}${OFF} - The value needed to delete used templates${YELLOW} Specify as: cascade=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=204
@@ -13839,6 +14009,59 @@ print_getVideoRelationships_help() {
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getVideoTemplate operation
+#
+##############################################################################
+print_getVideoTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getVideoTemplate - Get a single video template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getVideoTemplates operation
+#
+##############################################################################
+print_getVideoTemplates_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getVideoTemplates - List and search video templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF} ${CYAN}(default: id:ASC)${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -14024,6 +14247,32 @@ print_updateVideoRelationship_help() {
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}relationship_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The relationship id ${YELLOW}Specify as: relationship_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The video relationship details" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateVideoTemplate operation
+#
+##############################################################################
+print_updateVideoTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateVideoTemplate - Update a video template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The video template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -15863,21 +16112,43 @@ print_getUserRegistrations_help() {
 }
 ##############################################################################
 #
-# Print help for searchIndex operation
+# Print help for searchCountGET operation
 #
 ##############################################################################
-print_searchIndex_help() {
+print_searchCountGET_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}searchIndex - Search an index with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}searchCountGET - Count matches with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "The body is an ElasticSearch query in JSON format. Please see their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html'>documentation</a> for details on the format and search options. The searchable object's format depends on on the type but mostly matches the resource from it's main endpoint. Exceptions include referenced objects (like user) being replaced with the full user resource to allow deeper searching." | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _count.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of documents returned per page${YELLOW} Specify as: size=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchCountPOST operation
+#
+##############################################################################
+print_searchCountPOST_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchCountPOST - Count matches with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _count.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The query to be used for the search" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
@@ -15895,22 +16166,511 @@ print_searchIndex_help() {
 }
 ##############################################################################
 #
-# Print help for searchIndexWithTemplate operation
+# Print help for searchCountWithTemplateGET operation
 #
 ##############################################################################
-print_searchIndexWithTemplate_help() {
+print_searchCountWithTemplateGET_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}searchIndexWithTemplate - Search an index with a template${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}searchCountWithTemplateGET - Count matches with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "The body is an ElasticSearch query in JSON format. Please see their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html'>documentation</a> for details on the format and search options. The searchable object's format depends on on the type but mostly matches the resource from it's main endpoint. Exceptions include referenced objects (like user) being replaced with the full user resource to allow deeper searching." | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _count.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}template${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index template ${YELLOW}Specify as: template=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of documents returned per page${YELLOW} Specify as: size=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchCountWithTemplatePOST operation
+#
+##############################################################################
+print_searchCountWithTemplatePOST_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchCountWithTemplatePOST - Count matches with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _count.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}template${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index template ${YELLOW}Specify as: template=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The query to be used for the search" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchDocumentGET operation
+#
+##############################################################################
+print_searchDocumentGET_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchDocumentGET - Get document with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchDocumentWithTemplateGET operation
+#
+##############################################################################
+print_searchDocumentWithTemplateGET_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchDocumentWithTemplateGET - Get document with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}template${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index template ${YELLOW}Specify as: template=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchExplainGET operation
+#
+##############################################################################
+print_searchExplainGET_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchExplainGET - Explain matches with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _explain.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchExplainPOST operation
+#
+##############################################################################
+print_searchExplainPOST_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchExplainPOST - Explain matches with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _explain.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The query to be used for the search" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchExplainWithTemplateGET operation
+#
+##############################################################################
+print_searchExplainWithTemplateGET_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchExplainWithTemplateGET - Explain matches with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _explain.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}template${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index template ${YELLOW}Specify as: template=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchExplainWithTemplatePOST operation
+#
+##############################################################################
+print_searchExplainWithTemplatePOST_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchExplainWithTemplatePOST - Explain matches with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _explain.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}template${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index template ${YELLOW}Specify as: template=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The query to be used for the search" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchIndex operation
+#
+##############################################################################
+print_searchIndex_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchIndex - Search an index with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _search.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The query to be used for the search" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchIndexGET operation
+#
+##############################################################################
+print_searchIndexGET_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchIndexGET - Search an index with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _search.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchIndexWithTemplateGET operation
+#
+##############################################################################
+print_searchIndexWithTemplateGET_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchIndexWithTemplateGET - Search an index with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _search.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}template${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index template ${YELLOW}Specify as: template=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchIndexWithTemplatePOST operation
+#
+##############################################################################
+print_searchIndexWithTemplatePOST_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchIndexWithTemplatePOST - Search an index with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _search.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}template${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index template ${YELLOW}Specify as: template=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The query to be used for the search" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchIndicesGET operation
+#
+##############################################################################
+print_searchIndicesGET_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchIndicesGET - Get indices${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _cat/indices for indices.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-get-mapping.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchMappingsGET operation
+#
+##############################################################################
+print_searchMappingsGET_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchMappingsGET - Get mapping with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _mapping.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-get-mapping.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchMappingsWithTemplateGET operation
+#
+##############################################################################
+print_searchMappingsWithTemplateGET_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchMappingsWithTemplateGET - Get mapping with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _mapping.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-get-mapping.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}template${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index template ${YELLOW}Specify as: template=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchValidateGET operation
+#
+##############################################################################
+print_searchValidateGET_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchValidateGET - Validate matches with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _validate/query.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-validate.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchValidatePOST operation
+#
+##############################################################################
+print_searchValidatePOST_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchValidatePOST - Validate matches with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _validate/query.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-validate.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The query to be used for the search" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchValidateWithTemplateGET operation
+#
+##############################################################################
+print_searchValidateWithTemplateGET_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchValidateWithTemplateGET - Validate matches with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _validate/query.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-validate.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}template${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index template ${YELLOW}Specify as: template=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for searchValidateWithTemplatePOST operation
+#
+##############################################################################
+print_searchValidateWithTemplatePOST_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}searchValidateWithTemplatePOST - Validate matches with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _validate/query.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-validate.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}template${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index template ${YELLOW}Specify as: template=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The query to be used for the search" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
@@ -28167,80 +28927,6 @@ call_getComments() {
 
 ##############################################################################
 #
-# Call searchComments operation
-#
-##############################################################################
-call_searchComments() {
-    local path_parameter_names=()
-    local query_parameter_names=(size page    )
-    local path
-
-    path=$(build_request_path "/comments/search" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
 # Call updateComment operation
 #
 ##############################################################################
@@ -35561,6 +36247,80 @@ call_createVideoDisposition() {
 
 ##############################################################################
 #
+# Call createVideoTemplate operation
+#
+##############################################################################
+call_createVideoTemplate() {
+    local path_parameter_names=()
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/media/videos/templates" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call deleteVideo operation
 #
 ##############################################################################
@@ -35721,6 +36481,38 @@ call_deleteVideoRelationship() {
 
 ##############################################################################
 #
+# Call deleteVideoTemplate operation
+#
+##############################################################################
+call_deleteVideoTemplate() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(cascade    )
+    local path
+
+    path=$(build_request_path "/media/videos/templates/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call getUserVideos operation
 #
 ##############################################################################
@@ -35858,6 +36650,70 @@ call_getVideoRelationships() {
     local path
 
     path=$(build_request_path "/media/videos/{video_id}/related" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getVideoTemplate operation
+#
+##############################################################################
+call_getVideoTemplate() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/media/videos/templates/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getVideoTemplates operation
+#
+##############################################################################
+call_getVideoTemplates() {
+    local path_parameter_names=()
+    local query_parameter_names=(size page order    )
+    local path
+
+    path=$(build_request_path "/media/videos/templates" path_parameter_names query_parameter_names)
     if [ $? -ne 0 ]; then
         ERROR_MSG=$path
         exit 1
@@ -36134,6 +36990,80 @@ call_updateVideoRelationship() {
     local path
 
     path=$(build_request_path "/media/videos/{video_id}/related/{id}/relationship_details" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateVideoTemplate operation
+#
+##############################################################################
+call_updateVideoTemplate() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/media/videos/templates/{id}" path_parameter_names query_parameter_names)
     if [ $? -ne 0 ]; then
         ERROR_MSG=$path
         exit 1
@@ -39307,12 +40237,500 @@ call_getUserRegistrations() {
 
 ##############################################################################
 #
+# Call searchCountGET operation
+#
+##############################################################################
+call_searchCountGET() {
+    local path_parameter_names=(type)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/count/{type}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call searchCountPOST operation
+#
+##############################################################################
+call_searchCountPOST() {
+    local path_parameter_names=(type)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/count/{type}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call searchCountWithTemplateGET operation
+#
+##############################################################################
+call_searchCountWithTemplateGET() {
+    local path_parameter_names=(type template)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/count/{type}/{template}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call searchCountWithTemplatePOST operation
+#
+##############################################################################
+call_searchCountWithTemplatePOST() {
+    local path_parameter_names=(type template)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/count/{type}/{template}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call searchDocumentGET operation
+#
+##############################################################################
+call_searchDocumentGET() {
+    local path_parameter_names=(type id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/documents/{type}/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call searchDocumentWithTemplateGET operation
+#
+##############################################################################
+call_searchDocumentWithTemplateGET() {
+    local path_parameter_names=(type id template)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/documents/{type}/{template}/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call searchExplainGET operation
+#
+##############################################################################
+call_searchExplainGET() {
+    local path_parameter_names=(type id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/explain/{type}/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call searchExplainPOST operation
+#
+##############################################################################
+call_searchExplainPOST() {
+    local path_parameter_names=(type id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/explain/{type}/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call searchExplainWithTemplateGET operation
+#
+##############################################################################
+call_searchExplainWithTemplateGET() {
+    local path_parameter_names=(type id template)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/explain/{type}/{template}/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call searchExplainWithTemplatePOST operation
+#
+##############################################################################
+call_searchExplainWithTemplatePOST() {
+    local path_parameter_names=(type id template)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/explain/{type}/{template}/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call searchIndex operation
 #
 ##############################################################################
 call_searchIndex() {
     local path_parameter_names=(type)
-    local query_parameter_names=(size page    )
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/search/index/{type}" path_parameter_names query_parameter_names)
@@ -39381,15 +40799,387 @@ call_searchIndex() {
 
 ##############################################################################
 #
-# Call searchIndexWithTemplate operation
+# Call searchIndexGET operation
 #
 ##############################################################################
-call_searchIndexWithTemplate() {
+call_searchIndexGET() {
+    local path_parameter_names=(type)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/index/{type}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call searchIndexWithTemplateGET operation
+#
+##############################################################################
+call_searchIndexWithTemplateGET() {
     local path_parameter_names=(type template)
-    local query_parameter_names=(size page)
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/search/index/{type}/{template}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call searchIndexWithTemplatePOST operation
+#
+##############################################################################
+call_searchIndexWithTemplatePOST() {
+    local path_parameter_names=(type template)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/index/{type}/{template}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call searchIndicesGET operation
+#
+##############################################################################
+call_searchIndicesGET() {
+    local path_parameter_names=()
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/indices" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call searchMappingsGET operation
+#
+##############################################################################
+call_searchMappingsGET() {
+    local path_parameter_names=(type)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/mappings/{type}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call searchMappingsWithTemplateGET operation
+#
+##############################################################################
+call_searchMappingsWithTemplateGET() {
+    local path_parameter_names=(type template)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/mappings/{type}/{template}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call searchValidateGET operation
+#
+##############################################################################
+call_searchValidateGET() {
+    local path_parameter_names=(type)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/validate/{type}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call searchValidatePOST operation
+#
+##############################################################################
+call_searchValidatePOST() {
+    local path_parameter_names=(type)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/validate/{type}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call searchValidateWithTemplateGET operation
+#
+##############################################################################
+call_searchValidateWithTemplateGET() {
+    local path_parameter_names=(type template)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/validate/{type}/{template}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call searchValidateWithTemplatePOST operation
+#
+##############################################################################
+call_searchValidateWithTemplatePOST() {
+    local path_parameter_names=(type template)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/search/validate/{type}/{template}" path_parameter_names query_parameter_names)
     if [ $? -ne 0 ]; then
         ERROR_MSG=$path
         exit 1
@@ -49515,9 +51305,6 @@ case $key in
     getComments)
     operation="getComments"
     ;;
-    searchComments)
-    operation="searchComments"
-    ;;
     updateComment)
     operation="updateComment"
     ;;
@@ -49968,6 +51755,9 @@ case $key in
     createVideoDisposition)
     operation="createVideoDisposition"
     ;;
+    createVideoTemplate)
+    operation="createVideoTemplate"
+    ;;
     deleteVideo)
     operation="deleteVideo"
     ;;
@@ -49983,6 +51773,9 @@ case $key in
     deleteVideoRelationship)
     operation="deleteVideoRelationship"
     ;;
+    deleteVideoTemplate)
+    operation="deleteVideoTemplate"
+    ;;
     getUserVideos)
     operation="getUserVideos"
     ;;
@@ -49997,6 +51790,12 @@ case $key in
     ;;
     getVideoRelationships)
     operation="getVideoRelationships"
+    ;;
+    getVideoTemplate)
+    operation="getVideoTemplate"
+    ;;
+    getVideoTemplates)
+    operation="getVideoTemplates"
     ;;
     getVideos)
     operation="getVideos"
@@ -50015,6 +51814,9 @@ case $key in
     ;;
     updateVideoRelationship)
     operation="updateVideoRelationship"
+    ;;
+    updateVideoTemplate)
+    operation="updateVideoTemplate"
     ;;
     viewVideo)
     operation="viewVideo"
@@ -50205,11 +52007,68 @@ case $key in
     getUserRegistrations)
     operation="getUserRegistrations"
     ;;
+    searchCountGET)
+    operation="searchCountGET"
+    ;;
+    searchCountPOST)
+    operation="searchCountPOST"
+    ;;
+    searchCountWithTemplateGET)
+    operation="searchCountWithTemplateGET"
+    ;;
+    searchCountWithTemplatePOST)
+    operation="searchCountWithTemplatePOST"
+    ;;
+    searchDocumentGET)
+    operation="searchDocumentGET"
+    ;;
+    searchDocumentWithTemplateGET)
+    operation="searchDocumentWithTemplateGET"
+    ;;
+    searchExplainGET)
+    operation="searchExplainGET"
+    ;;
+    searchExplainPOST)
+    operation="searchExplainPOST"
+    ;;
+    searchExplainWithTemplateGET)
+    operation="searchExplainWithTemplateGET"
+    ;;
+    searchExplainWithTemplatePOST)
+    operation="searchExplainWithTemplatePOST"
+    ;;
     searchIndex)
     operation="searchIndex"
     ;;
-    searchIndexWithTemplate)
-    operation="searchIndexWithTemplate"
+    searchIndexGET)
+    operation="searchIndexGET"
+    ;;
+    searchIndexWithTemplateGET)
+    operation="searchIndexWithTemplateGET"
+    ;;
+    searchIndexWithTemplatePOST)
+    operation="searchIndexWithTemplatePOST"
+    ;;
+    searchIndicesGET)
+    operation="searchIndicesGET"
+    ;;
+    searchMappingsGET)
+    operation="searchMappingsGET"
+    ;;
+    searchMappingsWithTemplateGET)
+    operation="searchMappingsWithTemplateGET"
+    ;;
+    searchValidateGET)
+    operation="searchValidateGET"
+    ;;
+    searchValidatePOST)
+    operation="searchValidatePOST"
+    ;;
+    searchValidateWithTemplateGET)
+    operation="searchValidateWithTemplateGET"
+    ;;
+    searchValidateWithTemplatePOST)
+    operation="searchValidateWithTemplatePOST"
     ;;
     linkAccounts)
     operation="linkAccounts"
@@ -51297,9 +53156,6 @@ case $operation in
     getComments)
     call_getComments
     ;;
-    searchComments)
-    call_searchComments
-    ;;
     updateComment)
     call_updateComment
     ;;
@@ -51750,6 +53606,9 @@ case $operation in
     createVideoDisposition)
     call_createVideoDisposition
     ;;
+    createVideoTemplate)
+    call_createVideoTemplate
+    ;;
     deleteVideo)
     call_deleteVideo
     ;;
@@ -51765,6 +53624,9 @@ case $operation in
     deleteVideoRelationship)
     call_deleteVideoRelationship
     ;;
+    deleteVideoTemplate)
+    call_deleteVideoTemplate
+    ;;
     getUserVideos)
     call_getUserVideos
     ;;
@@ -51779,6 +53641,12 @@ case $operation in
     ;;
     getVideoRelationships)
     call_getVideoRelationships
+    ;;
+    getVideoTemplate)
+    call_getVideoTemplate
+    ;;
+    getVideoTemplates)
+    call_getVideoTemplates
     ;;
     getVideos)
     call_getVideos
@@ -51797,6 +53665,9 @@ case $operation in
     ;;
     updateVideoRelationship)
     call_updateVideoRelationship
+    ;;
+    updateVideoTemplate)
+    call_updateVideoTemplate
     ;;
     viewVideo)
     call_viewVideo
@@ -51987,11 +53858,68 @@ case $operation in
     getUserRegistrations)
     call_getUserRegistrations
     ;;
+    searchCountGET)
+    call_searchCountGET
+    ;;
+    searchCountPOST)
+    call_searchCountPOST
+    ;;
+    searchCountWithTemplateGET)
+    call_searchCountWithTemplateGET
+    ;;
+    searchCountWithTemplatePOST)
+    call_searchCountWithTemplatePOST
+    ;;
+    searchDocumentGET)
+    call_searchDocumentGET
+    ;;
+    searchDocumentWithTemplateGET)
+    call_searchDocumentWithTemplateGET
+    ;;
+    searchExplainGET)
+    call_searchExplainGET
+    ;;
+    searchExplainPOST)
+    call_searchExplainPOST
+    ;;
+    searchExplainWithTemplateGET)
+    call_searchExplainWithTemplateGET
+    ;;
+    searchExplainWithTemplatePOST)
+    call_searchExplainWithTemplatePOST
+    ;;
     searchIndex)
     call_searchIndex
     ;;
-    searchIndexWithTemplate)
-    call_searchIndexWithTemplate
+    searchIndexGET)
+    call_searchIndexGET
+    ;;
+    searchIndexWithTemplateGET)
+    call_searchIndexWithTemplateGET
+    ;;
+    searchIndexWithTemplatePOST)
+    call_searchIndexWithTemplatePOST
+    ;;
+    searchIndicesGET)
+    call_searchIndicesGET
+    ;;
+    searchMappingsGET)
+    call_searchMappingsGET
+    ;;
+    searchMappingsWithTemplateGET)
+    call_searchMappingsWithTemplateGET
+    ;;
+    searchValidateGET)
+    call_searchValidateGET
+    ;;
+    searchValidatePOST)
+    call_searchValidatePOST
+    ;;
+    searchValidateWithTemplateGET)
+    call_searchValidateWithTemplateGET
+    ;;
+    searchValidateWithTemplatePOST)
+    call_searchValidateWithTemplatePOST
     ;;
     linkAccounts)
     call_linkAccounts

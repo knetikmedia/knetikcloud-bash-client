@@ -8,7 +8,7 @@
 # ! swagger-codegen (https://github.com/swagger-api/swagger-codegen)
 # ! FROM SWAGGER SPECIFICATION IN JSON.
 # !
-# ! Generated on: 2018-01-05T16:41:47.119-05:00
+# ! Generated on: 2018-01-05T16:56:18.871-05:00
 # !
 # !
 # ! System wide installation:
@@ -216,7 +216,6 @@ _()
     operations["deleteComment"]=1
     operations["getComment"]=1
     operations["getComments"]=1
-    operations["searchComments"]=1
     operations["updateComment"]=1
     operations["answerPoll"]=1
     operations["createPoll"]=1
@@ -367,22 +366,27 @@ _()
     operations["addVideoFlag"]=1
     operations["addVideoRelationships"]=1
     operations["createVideoDisposition"]=1
+    operations["createVideoTemplate"]=1
     operations["deleteVideo"]=1
     operations["deleteVideoComment"]=1
     operations["deleteVideoDisposition"]=1
     operations["deleteVideoFlag"]=1
     operations["deleteVideoRelationship"]=1
+    operations["deleteVideoTemplate"]=1
     operations["getUserVideos"]=1
     operations["getVideo"]=1
     operations["getVideoComments"]=1
     operations["getVideoDispositions"]=1
     operations["getVideoRelationships"]=1
+    operations["getVideoTemplate"]=1
+    operations["getVideoTemplates"]=1
     operations["getVideos"]=1
     operations["removeUserFromVideoWhitelist"]=1
     operations["removeVideoContributor"]=1
     operations["updateVideo"]=1
     operations["updateVideoComment"]=1
     operations["updateVideoRelationship"]=1
+    operations["updateVideoTemplate"]=1
     operations["viewVideo"]=1
     operations["sendRawEmail"]=1
     operations["sendRawPush"]=1
@@ -446,8 +450,27 @@ _()
     operations["getUsageByYear"]=1
     operations["getUsageEndpoints"]=1
     operations["getUserRegistrations"]=1
+    operations["searchCountGET"]=1
+    operations["searchCountPOST"]=1
+    operations["searchCountWithTemplateGET"]=1
+    operations["searchCountWithTemplatePOST"]=1
+    operations["searchDocumentGET"]=1
+    operations["searchDocumentWithTemplateGET"]=1
+    operations["searchExplainGET"]=1
+    operations["searchExplainPOST"]=1
+    operations["searchExplainWithTemplateGET"]=1
+    operations["searchExplainWithTemplatePOST"]=1
     operations["searchIndex"]=1
-    operations["searchIndexWithTemplate"]=1
+    operations["searchIndexGET"]=1
+    operations["searchIndexWithTemplateGET"]=1
+    operations["searchIndexWithTemplatePOST"]=1
+    operations["searchIndicesGET"]=1
+    operations["searchMappingsGET"]=1
+    operations["searchMappingsWithTemplateGET"]=1
+    operations["searchValidateGET"]=1
+    operations["searchValidatePOST"]=1
+    operations["searchValidateWithTemplateGET"]=1
+    operations["searchValidateWithTemplatePOST"]=1
     operations["linkAccounts"]=1
     operations["linkAccounts1"]=1
     operations["createItemTemplate"]=1
@@ -789,7 +812,6 @@ _()
     operation_parameters["deleteComment"]="id= "
     operation_parameters["getComment"]="id= "
     operation_parameters["getComments"]="context= context_id= size= page= "
-    operation_parameters["searchComments"]="size= page= "
     operation_parameters["updateComment"]="id= "
     operation_parameters["answerPoll"]="id= "
     operation_parameters["createPoll"]=""
@@ -940,22 +962,27 @@ _()
     operation_parameters["addVideoFlag"]="video_id= "
     operation_parameters["addVideoRelationships"]="video_id= "
     operation_parameters["createVideoDisposition"]="video_id= "
+    operation_parameters["createVideoTemplate"]=""
     operation_parameters["deleteVideo"]="id= "
     operation_parameters["deleteVideoComment"]="video_id= id= "
     operation_parameters["deleteVideoDisposition"]="disposition_id= "
     operation_parameters["deleteVideoFlag"]="video_id= "
     operation_parameters["deleteVideoRelationship"]="video_id= id= "
+    operation_parameters["deleteVideoTemplate"]="id= cascade= "
     operation_parameters["getUserVideos"]="user_id= exclude_flagged= size= page= "
     operation_parameters["getVideo"]="id= "
     operation_parameters["getVideoComments"]="video_id= size= page= "
     operation_parameters["getVideoDispositions"]="video_id= size= page= "
     operation_parameters["getVideoRelationships"]="video_id= size= page= "
+    operation_parameters["getVideoTemplate"]="id= "
+    operation_parameters["getVideoTemplates"]="size= page= order= "
     operation_parameters["getVideos"]="exclude_flagged= filter_videos_by_uploader= filter_category= filter_tagset= filter_videos_by_name= filter_videos_by_contributor= filter_videos_by_author= filter_has_author= filter_has_uploader= filter_related_to= filter_friends= filter_disposition= size= page= order= "
     operation_parameters["removeUserFromVideoWhitelist"]="video_id= id= "
     operation_parameters["removeVideoContributor"]="video_id= id= "
     operation_parameters["updateVideo"]="id= "
     operation_parameters["updateVideoComment"]="video_id= id= "
     operation_parameters["updateVideoRelationship"]="video_id= relationship_id= "
+    operation_parameters["updateVideoTemplate"]="id= "
     operation_parameters["viewVideo"]="id= "
     operation_parameters["sendRawEmail"]=""
     operation_parameters["sendRawPush"]=""
@@ -1019,8 +1046,27 @@ _()
     operation_parameters["getUsageByYear"]="start_date= end_date= combine_endpoints= method= url= size= page= "
     operation_parameters["getUsageEndpoints"]="start_date= end_date= "
     operation_parameters["getUserRegistrations"]="granularity= start_date= end_date= size= page= "
-    operation_parameters["searchIndex"]="type= size= page= "
-    operation_parameters["searchIndexWithTemplate"]="type= template= size= page= "
+    operation_parameters["searchCountGET"]="type= "
+    operation_parameters["searchCountPOST"]="type= "
+    operation_parameters["searchCountWithTemplateGET"]="type= template= "
+    operation_parameters["searchCountWithTemplatePOST"]="type= template= "
+    operation_parameters["searchDocumentGET"]="type= id= "
+    operation_parameters["searchDocumentWithTemplateGET"]="type= id= template= "
+    operation_parameters["searchExplainGET"]="type= id= "
+    operation_parameters["searchExplainPOST"]="type= id= "
+    operation_parameters["searchExplainWithTemplateGET"]="type= id= template= "
+    operation_parameters["searchExplainWithTemplatePOST"]="type= id= template= "
+    operation_parameters["searchIndex"]="type= "
+    operation_parameters["searchIndexGET"]="type= "
+    operation_parameters["searchIndexWithTemplateGET"]="type= template= "
+    operation_parameters["searchIndexWithTemplatePOST"]="type= template= "
+    operation_parameters["searchIndicesGET"]=""
+    operation_parameters["searchMappingsGET"]="type= "
+    operation_parameters["searchMappingsWithTemplateGET"]="type= template= "
+    operation_parameters["searchValidateGET"]="type= "
+    operation_parameters["searchValidatePOST"]="type= "
+    operation_parameters["searchValidateWithTemplateGET"]="type= template= "
+    operation_parameters["searchValidateWithTemplatePOST"]="type= template= "
     operation_parameters["linkAccounts"]=""
     operation_parameters["linkAccounts1"]=""
     operation_parameters["createItemTemplate"]=""

@@ -10,7 +10,7 @@
 # !
 # ! Based on: https://github.com/Valodim/zsh-curl-completion/blob/master/_curl
 # !
-# ! Generated on: 2018-01-05T16:41:47.119-05:00
+# ! Generated on: 2018-01-05T16:56:18.871-05:00
 # !
 # !
 # ! Installation:
@@ -423,7 +423,6 @@ case $state in
             "deleteComment[Delete a comment]" \
             "getComment[Return a comment]" \
             "getComments[Returns a page of comments]" \
-            "searchComments[Search the comment index]" \
             "updateComment[Update a comment]"             "answerPoll[Add your vote to a poll]" \
             "createPoll[Create a new poll]" \
             "createPollTemplate[Create a poll template]" \
@@ -558,22 +557,27 @@ case $state in
             "addVideoFlag[Add a new flag]" \
             "addVideoRelationships[Adds one or more existing videos as related to this one]" \
             "createVideoDisposition[Create a video disposition]" \
+            "createVideoTemplate[Create a video template]" \
             "deleteVideo[Deletes a video from the system if no resources are attached to it]" \
             "deleteVideoComment[Delete a video comment]" \
             "deleteVideoDisposition[Delete a video disposition]" \
             "deleteVideoFlag[Delete a flag]" \
             "deleteVideoRelationship[Delete a video's relationship]" \
+            "deleteVideoTemplate[Delete a video template]" \
             "getUserVideos[Get user videos]" \
             "getVideo[Loads a specific video details]" \
             "getVideoComments[Returns a page of comments for a video]" \
             "getVideoDispositions[Returns a page of dispositions for a video]" \
             "getVideoRelationships[Returns a page of video relationships]" \
+            "getVideoTemplate[Get a single video template]" \
+            "getVideoTemplates[List and search video templates]" \
             "getVideos[Search videos using the documented filters]" \
             "removeUserFromVideoWhitelist[Removes a user from a video's whitelist]" \
             "removeVideoContributor[Removes a contributor from a video]" \
             "updateVideo[Modifies a video's details]" \
             "updateVideoComment[Update a video comment]" \
             "updateVideoRelationship[Update a video's relationship details]" \
+            "updateVideoTemplate[Update a video template]" \
             "viewVideo[Increment a video's view count]"             "sendRawEmail[Send a raw email to one or more users]" \
             "sendRawPush[Send a raw push notification]" \
             "sendRawSMS[Send a raw SMS]" \
@@ -618,8 +622,27 @@ case $state in
             "getUsageByMinute[Returns aggregated endpoint usage information by minute]" \
             "getUsageByMonth[Returns aggregated endpoint usage information by month]" \
             "getUsageByYear[Returns aggregated endpoint usage information by year]" \
-            "getUsageEndpoints[Returns list of endpoints called (method and url)]"             "getUserRegistrations[Get user registration info]"             "searchIndex[Search an index with no template]" \
-            "searchIndexWithTemplate[Search an index with a template]"             "linkAccounts[Link facebook account]"             "linkAccounts1[Link google account]"             "createItemTemplate[Create an item template]" \
+            "getUsageEndpoints[Returns list of endpoints called (method and url)]"             "getUserRegistrations[Get user registration info]"             "searchCountGET[Count matches with no template]" \
+            "searchCountPOST[Count matches with no template]" \
+            "searchCountWithTemplateGET[Count matches with a template]" \
+            "searchCountWithTemplatePOST[Count matches with a template]" \
+            "searchDocumentGET[Get document with no template]" \
+            "searchDocumentWithTemplateGET[Get document with a template]" \
+            "searchExplainGET[Explain matches with no template]" \
+            "searchExplainPOST[Explain matches with no template]" \
+            "searchExplainWithTemplateGET[Explain matches with a template]" \
+            "searchExplainWithTemplatePOST[Explain matches with a template]" \
+            "searchIndex[Search an index with no template]" \
+            "searchIndexGET[Search an index with no template]" \
+            "searchIndexWithTemplateGET[Search an index with a template]" \
+            "searchIndexWithTemplatePOST[Search an index with a template]" \
+            "searchIndicesGET[Get indices]" \
+            "searchMappingsGET[Get mapping with no template]" \
+            "searchMappingsWithTemplateGET[Get mapping with a template]" \
+            "searchValidateGET[Validate matches with no template]" \
+            "searchValidatePOST[Validate matches with no template]" \
+            "searchValidateWithTemplateGET[Validate matches with a template]" \
+            "searchValidateWithTemplatePOST[Validate matches with a template]"             "linkAccounts[Link facebook account]"             "linkAccounts1[Link google account]"             "createItemTemplate[Create an item template]" \
             "createStoreItem[Create a store item]" \
             "deleteItemTemplate[Delete an item template]" \
             "deleteStoreItem[Delete a store item]" \
@@ -1931,14 +1954,6 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      searchComments)
-        local -a _op_arguments
-        _op_arguments=(
-                    "size=:[QUERY] The number of objects returned per page"
-"page=:[QUERY] The number of the page returned, starting with 1"
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
       updateComment)
         local -a _op_arguments
         _op_arguments=(
@@ -3155,6 +3170,12 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      createVideoTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       deleteVideo)
         local -a _op_arguments
         _op_arguments=(
@@ -3190,6 +3211,14 @@ case $state in
           "video_id=:[PATH] The video id"
 "id=:[PATH] The relationship id"
                     )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteVideoTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the template"
+          "cascade=:[QUERY] The value needed to delete used templates"
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getUserVideos)
@@ -3234,6 +3263,22 @@ case $state in
           "video_id=:[PATH] The video id"
           "size=:[QUERY] The number of objects returned per page"
 "page=:[QUERY] The number of the page returned, starting with 1"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getVideoTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the template"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getVideoTemplates)
+        local -a _op_arguments
+        _op_arguments=(
+                    "size=:[QUERY] The number of objects returned per page"
+"page=:[QUERY] The number of the page returned, starting with 1"
+"order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3298,6 +3343,13 @@ case $state in
         _op_arguments=(
           "video_id=:[PATH] The video id"
 "relationship_id=:[PATH] The relationship id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateVideoTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the template"
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3841,23 +3893,166 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      searchIndex)
+      searchCountGET)
         local -a _op_arguments
         _op_arguments=(
           "type=:[PATH] The index type"
-          "size=:[QUERY] The number of documents returned per page"
-"page=:[QUERY] The number of the page returned, starting with 1"
-          )
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      searchIndexWithTemplate)
+      searchCountPOST)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchCountWithTemplateGET)
         local -a _op_arguments
         _op_arguments=(
           "type=:[PATH] The index type"
 "template=:[PATH] The index template"
-          "size=:[QUERY] The number of documents returned per page"
-"page=:[QUERY] The number of the page returned, starting with 1"
-          )
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchCountWithTemplatePOST)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+"template=:[PATH] The index template"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchDocumentGET)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+"id=:[PATH] The index id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchDocumentWithTemplateGET)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+"id=:[PATH] The index id"
+"template=:[PATH] The index template"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchExplainGET)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+"id=:[PATH] The index id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchExplainPOST)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+"id=:[PATH] The index id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchExplainWithTemplateGET)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+"id=:[PATH] The index id"
+"template=:[PATH] The index template"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchExplainWithTemplatePOST)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+"id=:[PATH] The index id"
+"template=:[PATH] The index template"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchIndex)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchIndexGET)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchIndexWithTemplateGET)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+"template=:[PATH] The index template"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchIndexWithTemplatePOST)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+"template=:[PATH] The index template"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchIndicesGET)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchMappingsGET)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchMappingsWithTemplateGET)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+"template=:[PATH] The index template"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchValidateGET)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchValidatePOST)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchValidateWithTemplateGET)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+"template=:[PATH] The index template"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      searchValidateWithTemplatePOST)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] The index type"
+"template=:[PATH] The index template"
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       linkAccounts)
