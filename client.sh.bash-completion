@@ -8,7 +8,7 @@
 # ! swagger-codegen (https://github.com/swagger-api/swagger-codegen)
 # ! FROM SWAGGER SPECIFICATION IN JSON.
 # !
-# ! Generated on: 2018-01-05T16:56:18.871-05:00
+# ! Generated on: 2018-02-12T10:37:08.174-05:00
 # !
 # !
 # ! System wide installation:
@@ -70,6 +70,7 @@ _()
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
     operations["getOAuthToken"]=1
+    operations["addUser"]=1
     operations["createActivity"]=1
     operations["createActivityOccurrence"]=1
     operations["createActivityTemplate"]=1
@@ -81,9 +82,12 @@ _()
     operations["getActivityTemplate"]=1
     operations["getActivityTemplates"]=1
     operations["listActivityOccurrences"]=1
+    operations["removeUser"]=1
     operations["setActivityOccurrenceResults"]=1
+    operations["setActivityOccurrenceSettings"]=1
+    operations["setUserStatus"]=1
     operations["updateActivity"]=1
-    operations["updateActivityOccurrence"]=1
+    operations["updateActivityOccurrenceStatus"]=1
     operations["updateActivityTemplate"]=1
     operations["getDownloadURL"]=1
     operations["getSignedS3URL"]=1
@@ -197,6 +201,18 @@ _()
     operations["getTags"]=1
     operations["updateCategory"]=1
     operations["updateCategoryTemplate"]=1
+    operations["acknowledgeChatMessage"]=1
+    operations["addChatMessageBlacklist"]=1
+    operations["deleteChatMessage"]=1
+    operations["editChatMessage"]=1
+    operations["getChatMessage"]=1
+    operations["getChatMessageBlacklist"]=1
+    operations["getChatThreads"]=1
+    operations["getDirectMessages"]=1
+    operations["getThreadMessages"]=1
+    operations["getTopicMessages"]=1
+    operations["removeChatBlacklist"]=1
+    operations["sendMessage"]=1
     operations["createConfig"]=1
     operations["deleteConfig"]=1
     operations["getConfig"]=1
@@ -388,12 +404,35 @@ _()
     operations["updateVideoRelationship"]=1
     operations["updateVideoTemplate"]=1
     operations["viewVideo"]=1
+    operations["compileMessageTemplate"]=1
+    operations["createMessageTemplate"]=1
+    operations["deleteMessageTemplate"]=1
+    operations["getMessageTemplate"]=1
+    operations["getMessageTemplates"]=1
+    operations["sendMessage1"]=1
     operations["sendRawEmail"]=1
     operations["sendRawPush"]=1
     operations["sendRawSMS"]=1
     operations["sendTemplatedEmail"]=1
     operations["sendTemplatedPush"]=1
     operations["sendTemplatedSMS"]=1
+    operations["sendWebsocket"]=1
+    operations["updateMessageTemplate"]=1
+    operations["disableTopicSubscriber"]=1
+    operations["getTopicSubscriber"]=1
+    operations["getTopicSubscribers"]=1
+    operations["getUserTopics"]=1
+    operations["createNotificationType"]=1
+    operations["deleteNotificationType"]=1
+    operations["getNotificationType"]=1
+    operations["getNotificationTypes"]=1
+    operations["getUserNotificationInfo"]=1
+    operations["getUserNotificationInfoList"]=1
+    operations["getUserNotifications"]=1
+    operations["sendNotification"]=1
+    operations["setUserNotificationStatus"]=1
+    operations["silenceDirectNotifications"]=1
+    operations["updateNotificationType"]=1
     operations["createObjectItem"]=1
     operations["createObjectTemplate"]=1
     operations["deleteObjectItem"]=1
@@ -568,12 +607,14 @@ _()
     operations["addUserTag"]=1
     operations["createUserTemplate"]=1
     operations["deleteUserTemplate"]=1
+    operations["getDirectMessages1"]=1
     operations["getUser"]=1
     operations["getUserTags"]=1
     operations["getUserTemplate"]=1
     operations["getUserTemplates"]=1
     operations["getUsers"]=1
     operations["passwordReset"]=1
+    operations["postUserMessage"]=1
     operations["registerUser"]=1
     operations["removeUserTag"]=1
     operations["setPassword"]=1
@@ -600,16 +641,19 @@ _()
     operations["deleteGroup"]=1
     operations["deleteGroupMemberTemplate"]=1
     operations["deleteGroupTemplate"]=1
+    operations["disableGroupNotification"]=1
     operations["getGroup"]=1
     operations["getGroupAncestors"]=1
     operations["getGroupMember"]=1
     operations["getGroupMemberTemplate"]=1
     operations["getGroupMemberTemplates"]=1
     operations["getGroupMembers"]=1
+    operations["getGroupMessages"]=1
     operations["getGroupTemplate"]=1
     operations["getGroupTemplates"]=1
     operations["getGroupsForUser"]=1
     operations["listGroups"]=1
+    operations["postGroupMessage"]=1
     operations["removeGroupMember"]=1
     operations["updateGroup"]=1
     operations["updateGroupMemberProperties"]=1
@@ -666,6 +710,7 @@ _()
     # Only include path, query and header parameters
     declare -A operation_parameters
     operation_parameters["getOAuthToken"]=""
+    operation_parameters["addUser"]="activity_occurrence_id= test= bypass_restrictions= "
     operation_parameters["createActivity"]=""
     operation_parameters["createActivityOccurrence"]="test= "
     operation_parameters["createActivityTemplate"]=""
@@ -677,9 +722,12 @@ _()
     operation_parameters["getActivityTemplate"]="id= "
     operation_parameters["getActivityTemplates"]="size= page= order= "
     operation_parameters["listActivityOccurrences"]="filter_activity= filter_status= filter_event= filter_challenge= size= page= order= "
+    operation_parameters["removeUser"]="activity_occurrence_id= user_id= ban= bypass_restrictions= "
     operation_parameters["setActivityOccurrenceResults"]="activity_occurrence_id= "
+    operation_parameters["setActivityOccurrenceSettings"]="activity_occurrence_id= "
+    operation_parameters["setUserStatus"]="activity_occurrence_id= user_id= "
     operation_parameters["updateActivity"]="id= "
-    operation_parameters["updateActivityOccurrence"]="activity_occurrence_id= "
+    operation_parameters["updateActivityOccurrenceStatus"]="activity_occurrence_id= "
     operation_parameters["updateActivityTemplate"]="id= "
     operation_parameters["getDownloadURL"]="bucket= path= expiration= "
     operation_parameters["getSignedS3URL"]="filename= content_type= "
@@ -793,6 +841,18 @@ _()
     operation_parameters["getTags"]="size= page= "
     operation_parameters["updateCategory"]="id= "
     operation_parameters["updateCategoryTemplate"]="id= "
+    operation_parameters["acknowledgeChatMessage"]="id= "
+    operation_parameters["addChatMessageBlacklist"]="blacklisted_user_id= id= "
+    operation_parameters["deleteChatMessage"]="id= "
+    operation_parameters["editChatMessage"]="id= "
+    operation_parameters["getChatMessage"]="id= "
+    operation_parameters["getChatMessageBlacklist"]="id= "
+    operation_parameters["getChatThreads"]="size= page= order= "
+    operation_parameters["getDirectMessages"]="id= size= page= order= "
+    operation_parameters["getThreadMessages"]="id= size= page= order= "
+    operation_parameters["getTopicMessages"]="id= size= page= order= "
+    operation_parameters["removeChatBlacklist"]="blacklisted_user_id= id= "
+    operation_parameters["sendMessage"]=""
     operation_parameters["createConfig"]=""
     operation_parameters["deleteConfig"]="name= "
     operation_parameters["getConfig"]="name= "
@@ -934,9 +994,9 @@ _()
     operation_parameters["getCurrencyByGeoLocation"]=""
     operation_parameters["addUserLog"]=""
     operation_parameters["getBREEventLog"]="id= "
-    operation_parameters["getBREEventLogs"]="filter_start_date= filter_event_name= filter_event_id= size= page= order= "
+    operation_parameters["getBREEventLogs"]="filter_start_date= filter_event_name= filter_event_id= size= page= order= filter_rule_id= "
     operation_parameters["getBREForwardLog"]="id= "
-    operation_parameters["getBREForwardLogs"]="filter_start_date= filter_end_date= filter_status_code= size= page= order= "
+    operation_parameters["getBREForwardLogs"]="filter_start_date= filter_end_date= filter_status_code= filter_url= size= page= order= "
     operation_parameters["getUserLog"]="id= "
     operation_parameters["getUserLogs"]="filter_user= filter_action_name= size= page= order= "
     operation_parameters["addArtist"]=""
@@ -984,12 +1044,35 @@ _()
     operation_parameters["updateVideoRelationship"]="video_id= relationship_id= "
     operation_parameters["updateVideoTemplate"]="id= "
     operation_parameters["viewVideo"]="id= "
+    operation_parameters["compileMessageTemplate"]=""
+    operation_parameters["createMessageTemplate"]=""
+    operation_parameters["deleteMessageTemplate"]="id= "
+    operation_parameters["getMessageTemplate"]="id= "
+    operation_parameters["getMessageTemplates"]="filter_tagset= filter_tag_intersection= filter_tag_exclusion= size= page= order= "
+    operation_parameters["sendMessage1"]=""
     operation_parameters["sendRawEmail"]=""
     operation_parameters["sendRawPush"]=""
     operation_parameters["sendRawSMS"]=""
     operation_parameters["sendTemplatedEmail"]=""
     operation_parameters["sendTemplatedPush"]=""
     operation_parameters["sendTemplatedSMS"]=""
+    operation_parameters["sendWebsocket"]=""
+    operation_parameters["updateMessageTemplate"]="id= "
+    operation_parameters["disableTopicSubscriber"]="id= user_id= "
+    operation_parameters["getTopicSubscriber"]="id= user_id= "
+    operation_parameters["getTopicSubscribers"]="id= "
+    operation_parameters["getUserTopics"]="id= "
+    operation_parameters["createNotificationType"]=""
+    operation_parameters["deleteNotificationType"]="id= "
+    operation_parameters["getNotificationType"]="id= "
+    operation_parameters["getNotificationTypes"]="size= page= order= "
+    operation_parameters["getUserNotificationInfo"]="type_id= user_id= "
+    operation_parameters["getUserNotificationInfoList"]="user_id= size= page= order= "
+    operation_parameters["getUserNotifications"]="id= filter_status= size= page= order= "
+    operation_parameters["sendNotification"]=""
+    operation_parameters["setUserNotificationStatus"]="user_id= notification_id= "
+    operation_parameters["silenceDirectNotifications"]="type_id= user_id= "
+    operation_parameters["updateNotificationType"]="id= "
     operation_parameters["createObjectItem"]="template_id= cascade= "
     operation_parameters["createObjectTemplate"]=""
     operation_parameters["deleteObjectItem"]="template_id= object_id= "
@@ -1164,12 +1247,14 @@ _()
     operation_parameters["addUserTag"]="user_id= "
     operation_parameters["createUserTemplate"]=""
     operation_parameters["deleteUserTemplate"]="id= cascade= "
+    operation_parameters["getDirectMessages1"]="recipient_id= size= page= "
     operation_parameters["getUser"]="id= "
     operation_parameters["getUserTags"]="user_id= "
     operation_parameters["getUserTemplate"]="id= "
     operation_parameters["getUserTemplates"]="size= page= order= "
     operation_parameters["getUsers"]="filter_displayname= filter_email= filter_firstname= filter_fullname= filter_lastname= filter_username= filter_tag= filter_group= filter_role= filter_last_activity= filter_id_list= filter_search= size= page= order= "
     operation_parameters["passwordReset"]="id= "
+    operation_parameters["postUserMessage"]="recipient_id= "
     operation_parameters["registerUser"]=""
     operation_parameters["removeUserTag"]="user_id= tag= "
     operation_parameters["setPassword"]="id= "
@@ -1196,16 +1281,19 @@ _()
     operation_parameters["deleteGroup"]="unique_name= "
     operation_parameters["deleteGroupMemberTemplate"]="id= cascade= "
     operation_parameters["deleteGroupTemplate"]="id= cascade= "
+    operation_parameters["disableGroupNotification"]="unique_name= user_id= "
     operation_parameters["getGroup"]="unique_name= "
     operation_parameters["getGroupAncestors"]="unique_name= "
     operation_parameters["getGroupMember"]="unique_name= user_id= "
     operation_parameters["getGroupMemberTemplate"]="id= "
     operation_parameters["getGroupMemberTemplates"]="size= page= order= "
     operation_parameters["getGroupMembers"]="unique_name= size= page= order= "
+    operation_parameters["getGroupMessages"]="unique_name= size= page= "
     operation_parameters["getGroupTemplate"]="id= "
     operation_parameters["getGroupTemplates"]="size= page= order= "
     operation_parameters["getGroupsForUser"]="user_id= filter_children= "
     operation_parameters["listGroups"]="filter_template= filter_member_count= filter_name= filter_unique_name= filter_parent= filter_status= size= page= order= "
+    operation_parameters["postGroupMessage"]="unique_name= "
     operation_parameters["removeGroupMember"]="unique_name= user_id= "
     operation_parameters["updateGroup"]="unique_name= "
     operation_parameters["updateGroupMemberProperties"]="unique_name= user_id= "
@@ -1260,6 +1348,14 @@ _()
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values
+    operation_parameters_enum_values["addUser::test"]="true false"
+    operation_parameters_enum_values["addUser::bypass_restrictions"]="true false"
+    operation_parameters_enum_values["addUser::test"]="true false"
+    operation_parameters_enum_values["addUser::bypass_restrictions"]="true false"
+    operation_parameters_enum_values["addUser::test"]="true false"
+    operation_parameters_enum_values["addUser::bypass_restrictions"]="true false"
+    operation_parameters_enum_values["addUser::test"]="true false"
+    operation_parameters_enum_values["addUser::bypass_restrictions"]="true false"
     operation_parameters_enum_values["createActivityOccurrence::test"]="true false"
     operation_parameters_enum_values["createActivityOccurrence::test"]="true false"
     operation_parameters_enum_values["getActivities::filter_template"]="true false"
@@ -1268,6 +1364,14 @@ _()
     operation_parameters_enum_values["getActivities::filter_template"]="true false"
     operation_parameters_enum_values["getActivities::filter_template"]="true false"
     operation_parameters_enum_values["getActivities::filter_template"]="true false"
+    operation_parameters_enum_values["removeUser::ban"]="true false"
+    operation_parameters_enum_values["removeUser::bypass_restrictions"]="true false"
+    operation_parameters_enum_values["removeUser::ban"]="true false"
+    operation_parameters_enum_values["removeUser::bypass_restrictions"]="true false"
+    operation_parameters_enum_values["removeUser::ban"]="true false"
+    operation_parameters_enum_values["removeUser::bypass_restrictions"]="true false"
+    operation_parameters_enum_values["removeUser::ban"]="true false"
+    operation_parameters_enum_values["removeUser::bypass_restrictions"]="true false"
     operation_parameters_enum_values["deletePermission::force"]="true false"
     operation_parameters_enum_values["deletePermission::force"]="true false"
     operation_parameters_enum_values["deleteRole::force"]="true false"

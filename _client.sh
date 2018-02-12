@@ -10,7 +10,7 @@
 # !
 # ! Based on: https://github.com/Valodim/zsh-curl-completion/blob/master/_curl
 # !
-# ! Generated on: 2018-01-05T16:56:18.871-05:00
+# ! Generated on: 2018-02-12T10:37:08.174-05:00
 # !
 # !
 # ! Installation:
@@ -297,7 +297,8 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "getOAuthToken[Get access token]"             "createActivity[Create an activity]" \
+            "getOAuthToken[Get access token]"             "addUser[Add a user to an occurrence]" \
+            "createActivity[Create an activity]" \
             "createActivityOccurrence[Create a new activity occurrence. Ex: start a game]" \
             "createActivityTemplate[Create a activity template]" \
             "deleteActivity[Delete an activity]" \
@@ -308,9 +309,12 @@ case $state in
             "getActivityTemplate[Get a single activity template]" \
             "getActivityTemplates[List and search activity templates]" \
             "listActivityOccurrences[List activity occurrences]" \
+            "removeUser[Remove a user from an occurrence]" \
             "setActivityOccurrenceResults[Sets the status of an activity occurrence to FINISHED and logs metrics]" \
+            "setActivityOccurrenceSettings[Sets the settings of an activity occurrence]" \
+            "setUserStatus[Set a user's status within an occurrence]" \
             "updateActivity[Update an activity]" \
-            "updateActivityOccurrence[Updated the status of an activity occurrence]" \
+            "updateActivityOccurrenceStatus[Update the status of an activity occurrence]" \
             "updateActivityTemplate[Update an activity template]"             "getDownloadURL[Get a temporary signed S3 URL for download]" \
             "getSignedS3URL[Get a signed S3 URL for upload]"             "createClient[Create a new client]" \
             "deleteClient[Delete a client]" \
@@ -342,7 +346,7 @@ case $state in
             "getBRECategoryTemplates[List and search BRE category templates]" \
             "updateBRECategory[Update a category]" \
             "updateBRECategoryTemplate[Update a BRE category template]"             "sendBREEvent[Fire a new event, based on an existing trigger]"             "getBREExpression[Lookup a specific expression]" \
-            "getBREExpressions[Get a list of supported expressions to use in conditions or actions.]" \
+            "getBREExpressions[Get a list of supported expressions to use in conditions or actions]" \
             "getExpressionAsText[Returns the textual representation of an expression]"             "createBREGlobal[Create a global definition]" \
             "deleteBREGlobal[Delete a global]" \
             "getBREGlobal[Get a single global definition]" \
@@ -406,7 +410,18 @@ case $state in
             "getCategoryTemplates[List and search category templates]" \
             "getTags[List all trivia tags in the system]" \
             "updateCategory[Update an existing category]" \
-            "updateCategoryTemplate[Update a category template]"             "createConfig[Create a new config]" \
+            "updateCategoryTemplate[Update a category template]"             "acknowledgeChatMessage[Acknowledge number of messages in a thread]" \
+            "addChatMessageBlacklist[Add a user to a chat message blacklist]" \
+            "deleteChatMessage[Delete a message]" \
+            "editChatMessage[Edit your message]" \
+            "getChatMessage[Get a message]" \
+            "getChatMessageBlacklist[Get a list of blocked users for chat messaging]" \
+            "getChatThreads[List your threads]" \
+            "getDirectMessages[List messages with a user]" \
+            "getThreadMessages[List messages in a thread]" \
+            "getTopicMessages[List messages in a topic]" \
+            "removeChatBlacklist[Remove a user from a blacklist]" \
+            "sendMessage[Send a message]"             "createConfig[Create a new config]" \
             "deleteConfig[Delete an existing config]" \
             "getConfig[Get a single config]" \
             "getConfigs[List and search configs]" \
@@ -578,12 +593,33 @@ case $state in
             "updateVideoComment[Update a video comment]" \
             "updateVideoRelationship[Update a video's relationship details]" \
             "updateVideoTemplate[Update a video template]" \
-            "viewVideo[Increment a video's view count]"             "sendRawEmail[Send a raw email to one or more users]" \
+            "viewVideo[Increment a video's view count]"             "compileMessageTemplate[Compile a message template]" \
+            "createMessageTemplate[Create a message template]" \
+            "deleteMessageTemplate[Delete an existing message template]" \
+            "getMessageTemplate[Get a single message template]" \
+            "getMessageTemplates[List and search message templates]" \
+            "sendMessage1[Send a message]" \
+            "sendRawEmail[Send a raw email to one or more users]" \
             "sendRawPush[Send a raw push notification]" \
             "sendRawSMS[Send a raw SMS]" \
             "sendTemplatedEmail[Send a templated email to one or more users]" \
             "sendTemplatedPush[Send a templated push notification]" \
-            "sendTemplatedSMS[Send a new templated SMS]"             "createObjectItem[Create an object]" \
+            "sendTemplatedSMS[Send a new templated SMS]" \
+            "sendWebsocket[Send a websocket message]" \
+            "updateMessageTemplate[Update an existing message template]"             "disableTopicSubscriber[Enable or disable messages for a user]" \
+            "getTopicSubscriber[Get a subscriber to a topic]" \
+            "getTopicSubscribers[Get all subscribers to a topic]" \
+            "getUserTopics[Get all messaging topics for a given user]"             "createNotificationType[Create a notification type]" \
+            "deleteNotificationType[Delete a notification type]" \
+            "getNotificationType[Get a single notification type]" \
+            "getNotificationTypes[List and search notification types]" \
+            "getUserNotificationInfo[View a user's notification settings for a type]" \
+            "getUserNotificationInfoList[View a user's notification settings]" \
+            "getUserNotifications[Get notifications]" \
+            "sendNotification[Send a notification]" \
+            "setUserNotificationStatus[Set notification status]" \
+            "silenceDirectNotifications[Enable or disable direct notifications for a user]" \
+            "updateNotificationType[Update a notificationType]"             "createObjectItem[Create an object]" \
             "createObjectTemplate[Create an object template]" \
             "deleteObjectItem[Delete an object]" \
             "deleteObjectTemplate[Delete an entitlement template]" \
@@ -727,12 +763,14 @@ case $state in
             "getTemplatePropertyTypes[List template property types]"             "addUserTag[Add a tag to a user]" \
             "createUserTemplate[Create a user template]" \
             "deleteUserTemplate[Delete a user template]" \
+            "getDirectMessages1[Get a list of direct messages with this user]" \
             "getUser[Get a single user]" \
             "getUserTags[List tags for a user]" \
             "getUserTemplate[Get a single user template]" \
             "getUserTemplates[List and search user templates]" \
             "getUsers[List and search users]" \
             "passwordReset[Choose a new password after a reset]" \
+            "postUserMessage[Send a user message]" \
             "registerUser[Register a new user]" \
             "removeUserTag[Remove a tag from a user]" \
             "setPassword[Set a user's password]" \
@@ -756,16 +794,19 @@ case $state in
             "deleteGroup[Removes a group from the system]" \
             "deleteGroupMemberTemplate[Delete an group member template]" \
             "deleteGroupTemplate[Delete a group template]" \
+            "disableGroupNotification[Enable or disable notification of group messages]" \
             "getGroup[Loads a specific group's details]" \
             "getGroupAncestors[Get group ancestors]" \
             "getGroupMember[Get a user from a group]" \
             "getGroupMemberTemplate[Get a single group member template]" \
             "getGroupMemberTemplates[List and search group member templates]" \
             "getGroupMembers[Lists members of the group]" \
+            "getGroupMessages[Get a list of group messages]" \
             "getGroupTemplate[Get a single group template]" \
             "getGroupTemplates[List and search group templates]" \
             "getGroupsForUser[List groups a user is in]" \
             "listGroups[List and search groups]" \
+            "postGroupMessage[Send a group message]" \
             "removeGroupMember[Removes a user from a group]" \
             "updateGroup[Update a group]" \
             "updateGroupMemberProperties[Change a user's order]" \
@@ -819,6 +860,17 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                               )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      addUser)
+        local -a _op_arguments
+        _op_arguments=(
+          "activity_occurrence_id=:[PATH] The id of the activity occurrence"
+          "test=true:[QUERY] if true, indicates that the user should NOT be added. This can be used to test for eligibility"
+          "test=false:[QUERY] if true, indicates that the user should NOT be added. This can be used to test for eligibility"
+"bypass_restrictions=true:[QUERY] if true, indicates that restrictions such as max player count should be ignored. Can only be used with ACTIVITIES_ADMIN"
+          "bypass_restrictions=false:[QUERY] if true, indicates that restrictions such as max player count should be ignored. Can only be used with ACTIVITIES_ADMIN"
+          )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       createActivity)
@@ -903,12 +955,24 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "filter_activity=:[QUERY] Filter for occurrences of the given activity ID"
-"filter_status=:[QUERY] Filter for occurrences of the given activity ID"
+"filter_status=:[QUERY] Filter for occurrences in the given status"
 "filter_event=:[QUERY] Filter for occurrences played during the given event"
 "filter_challenge=:[QUERY] Filter for occurrences played within the given challenge"
 "size=:[QUERY] The number of objects returned per page"
 "page=:[QUERY] The number of the page returned, starting with 1"
 "order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      removeUser)
+        local -a _op_arguments
+        _op_arguments=(
+          "activity_occurrence_id=:[PATH] The id of the activity occurrence"
+"user_id=:[PATH] The id of the user, or &#39;me&#39;"
+          "ban=true:[QUERY] if true, indicates that the user should not be allowed to re-join. Can only be set by host or admin"
+          "ban=false:[QUERY] if true, indicates that the user should not be allowed to re-join. Can only be set by host or admin"
+"bypass_restrictions=true:[QUERY] if true, indicates that restrictions such as current status should be ignored. Can only be used with ACTIVITIES_ADMIN"
+          "bypass_restrictions=false:[QUERY] if true, indicates that restrictions such as current status should be ignored. Can only be used with ACTIVITIES_ADMIN"
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -919,6 +983,21 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      setActivityOccurrenceSettings)
+        local -a _op_arguments
+        _op_arguments=(
+          "activity_occurrence_id=:[PATH] The id of the activity occurrence"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      setUserStatus)
+        local -a _op_arguments
+        _op_arguments=(
+          "activity_occurrence_id=:[PATH] The id of the activity occurrence"
+"user_id=:[PATH] The id of the user"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateActivity)
         local -a _op_arguments
         _op_arguments=(
@@ -926,7 +1005,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      updateActivityOccurrence)
+      updateActivityOccurrenceStatus)
         local -a _op_arguments
         _op_arguments=(
           "activity_occurrence_id=:[PATH] The id of the activity occurrence"
@@ -1805,6 +1884,102 @@ case $state in
         _op_arguments=(
           "id=:[PATH] The id of the template"
                     )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      acknowledgeChatMessage)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The thread id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      addChatMessageBlacklist)
+        local -a _op_arguments
+        _op_arguments=(
+          "blacklisted_user_id=:[PATH] The user id to blacklist"
+"id=:[PATH] The user id or &#39;me&#39;"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteChatMessage)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The message id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      editChatMessage)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The message id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getChatMessage)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The message id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getChatMessageBlacklist)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The user id or &#39;me&#39;"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getChatThreads)
+        local -a _op_arguments
+        _op_arguments=(
+                    "size=:[QUERY] The number of objects returned per page"
+"page=:[QUERY] The number of the page returned"
+"order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getDirectMessages)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The user id"
+          "size=:[QUERY] The number of objects returned per page"
+"page=:[QUERY] The number of the page returned"
+"order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getThreadMessages)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The thread id"
+          "size=:[QUERY] The number of objects returned per page"
+"page=:[QUERY] The number of the page returned"
+"order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTopicMessages)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The topic id"
+          "size=:[QUERY] The number of objects returned per page"
+"page=:[QUERY] The number of the page returned"
+"order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      removeChatBlacklist)
+        local -a _op_arguments
+        _op_arguments=(
+          "blacklisted_user_id=:[PATH] The user id to blacklist"
+"id=:[PATH] The user id or &#39;me&#39;"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      sendMessage)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       createConfig)
@@ -2955,6 +3130,7 @@ case $state in
 "size=:[QUERY] The number of objects returned per page"
 "page=:[QUERY] The number of the page returned, starting with 1"
 "order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
+"filter_rule_id=:[QUERY] Filter event logs by request id"
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2971,6 +3147,7 @@ case $state in
                     "filter_start_date=:[QUERY] A comma separated string without spaces.  First value is the operator to search on, second value is the log start date, a unix timestamp in seconds.  Allowed operators: (GT, LT, EQ, GOE, LOE)."
 "filter_end_date=:[QUERY] A comma separated string without spaces.  First value is the operator to search on, second value is the log end date, a unix timestamp in seconds.  Allowed operators: (GT, LT, EQ, GOE, LOE)."
 "filter_status_code=:[QUERY] Filter forward logs by http status code"
+"filter_url=:[QUERY] Filter forward logs by URL starting with..."
 "size=:[QUERY] The number of objects returned per page"
 "page=:[QUERY] The number of the page returned, starting with 1"
 "order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
@@ -3360,6 +3537,50 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      compileMessageTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createMessageTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteMessageTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The message_template id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMessageTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The message_template id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getMessageTemplates)
+        local -a _op_arguments
+        _op_arguments=(
+                    "filter_tagset=:[QUERY] Filter for message templates with at least one of a specified set of tags (separated by comma)"
+"filter_tag_intersection=:[QUERY] Filter for message templates with all of a specified set of tags (separated by comma)"
+"filter_tag_exclusion=:[QUERY] Filter for message templates with none of a specified set of tags (separated by comma)"
+"size=:[QUERY] The number of objects returned per page"
+"page=:[QUERY] The number of the page returned, starting with 1"
+"order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      sendMessage1)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       sendRawEmail)
         local -a _op_arguments
         _op_arguments=(
@@ -3394,6 +3615,136 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                               )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      sendWebsocket)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateMessageTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The message_template id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      disableTopicSubscriber)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the topic"
+"user_id=:[PATH] The id of the subscriber or &#39;me&#39;"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTopicSubscriber)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the topic"
+"user_id=:[PATH] The id of the subscriber or &#39;me&#39;"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTopicSubscribers)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the topic"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getUserTopics)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the user or &#39;me&#39;"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createNotificationType)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteNotificationType)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getNotificationType)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getNotificationTypes)
+        local -a _op_arguments
+        _op_arguments=(
+                    "size=:[QUERY] The number of objects returned per page"
+"page=:[QUERY] The number of the page returned, starting with 1"
+"order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getUserNotificationInfo)
+        local -a _op_arguments
+        _op_arguments=(
+          "type_id=:[PATH] The id of the topic"
+"user_id=:[PATH] The id of the subscriber or &#39;me&#39;"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getUserNotificationInfoList)
+        local -a _op_arguments
+        _op_arguments=(
+          "user_id=:[PATH] The id of the subscriber or &#39;me&#39;"
+          "size=:[QUERY] The number of objects returned per page"
+"page=:[QUERY] The number of the page returned, starting with 1"
+"order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getUserNotifications)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the user or &#39;me&#39;"
+          "filter_status=:[QUERY] filter for notifications with a given status"
+"size=:[QUERY] The number of objects returned per page"
+"page=:[QUERY] The number of the page returned, starting with 1"
+"order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      sendNotification)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      setUserNotificationStatus)
+        local -a _op_arguments
+        _op_arguments=(
+          "user_id=:[PATH] The id of the user or &#39;me&#39;"
+"notification_id=:[PATH] The id of the notification"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      silenceDirectNotifications)
+        local -a _op_arguments
+        _op_arguments=(
+          "type_id=:[PATH] The id of the topic"
+"user_id=:[PATH] The id of the subscriber or &#39;me&#39;"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateNotificationType)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] id"
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       createObjectItem)
@@ -4789,6 +5140,15 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      getDirectMessages1)
+        local -a _op_arguments
+        _op_arguments=(
+          "recipient_id=:[PATH] The user id"
+          "size=:[QUERY] The number of objects returned per page"
+"page=:[QUERY] The number of the page returned, starting with 1"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       getUser)
         local -a _op_arguments
         _op_arguments=(
@@ -4844,6 +5204,13 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "id=:[PATH] The id of the user"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      postUserMessage)
+        local -a _op_arguments
+        _op_arguments=(
+          "recipient_id=:[PATH] The user id"
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -5041,6 +5408,14 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      disableGroupNotification)
+        local -a _op_arguments
+        _op_arguments=(
+          "unique_name=:[PATH] The group unique name"
+"user_id=:[PATH] The user id of the member or &#39;me&#39;"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       getGroup)
         local -a _op_arguments
         _op_arguments=(
@@ -5089,6 +5464,15 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      getGroupMessages)
+        local -a _op_arguments
+        _op_arguments=(
+          "unique_name=:[PATH] The group unique name"
+          "size=:[QUERY] The number of objects returned per page"
+"page=:[QUERY] The number of the page returned, starting with 1"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       getGroupTemplate)
         local -a _op_arguments
         _op_arguments=(
@@ -5127,6 +5511,13 @@ case $state in
 "page=:[QUERY] The number of the page returned, starting with 1"
 "order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
           )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      postGroupMessage)
+        local -a _op_arguments
+        _op_arguments=(
+          "unique_name=:[PATH] The group unique name"
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       removeGroupMember)

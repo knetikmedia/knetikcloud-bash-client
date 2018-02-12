@@ -8,7 +8,7 @@
 # ! swagger-codegen (https://github.com/swagger-api/swagger-codegen)
 # ! FROM SWAGGER SPECIFICATION IN JSON.
 # !
-# ! Generated on: 2018-01-05T16:56:18.871-05:00
+# ! Generated on: 2018-02-12T10:37:08.174-05:00
 # !
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -103,6 +103,10 @@ operation_parameters_minimum_occurences["getOAuthToken:::username"]=0
 operation_parameters_minimum_occurences["getOAuthToken:::password"]=0
 operation_parameters_minimum_occurences["getOAuthToken:::token"]=0
 operation_parameters_minimum_occurences["getOAuthToken:::refresh_token"]=0
+operation_parameters_minimum_occurences["addUser:::activity_occurrence_id"]=1
+operation_parameters_minimum_occurences["addUser:::test"]=0
+operation_parameters_minimum_occurences["addUser:::bypass_restrictions"]=0
+operation_parameters_minimum_occurences["addUser:::userId"]=0
 operation_parameters_minimum_occurences["createActivity:::activity_resource"]=0
 operation_parameters_minimum_occurences["createActivityOccurrence:::test"]=0
 operation_parameters_minimum_occurences["createActivityOccurrence:::activity_occurrence_resource"]=0
@@ -129,12 +133,21 @@ operation_parameters_minimum_occurences["listActivityOccurrences:::filter_challe
 operation_parameters_minimum_occurences["listActivityOccurrences:::size"]=0
 operation_parameters_minimum_occurences["listActivityOccurrences:::page"]=0
 operation_parameters_minimum_occurences["listActivityOccurrences:::order"]=0
+operation_parameters_minimum_occurences["removeUser:::activity_occurrence_id"]=1
+operation_parameters_minimum_occurences["removeUser:::user_id"]=1
+operation_parameters_minimum_occurences["removeUser:::ban"]=0
+operation_parameters_minimum_occurences["removeUser:::bypass_restrictions"]=0
 operation_parameters_minimum_occurences["setActivityOccurrenceResults:::activity_occurrence_id"]=1
 operation_parameters_minimum_occurences["setActivityOccurrenceResults:::activity_occurrence_results"]=0
+operation_parameters_minimum_occurences["setActivityOccurrenceSettings:::activity_occurrence_id"]=1
+operation_parameters_minimum_occurences["setActivityOccurrenceSettings:::settings"]=0
+operation_parameters_minimum_occurences["setUserStatus:::activity_occurrence_id"]=1
+operation_parameters_minimum_occurences["setUserStatus:::user_id"]=1
+operation_parameters_minimum_occurences["setUserStatus:::status"]=0
 operation_parameters_minimum_occurences["updateActivity:::id"]=1
 operation_parameters_minimum_occurences["updateActivity:::activity_resource"]=0
-operation_parameters_minimum_occurences["updateActivityOccurrence:::activity_occurrence_id"]=1
-operation_parameters_minimum_occurences["updateActivityOccurrence:::activity_occurrence_status"]=0
+operation_parameters_minimum_occurences["updateActivityOccurrenceStatus:::activity_occurrence_id"]=1
+operation_parameters_minimum_occurences["updateActivityOccurrenceStatus:::activity_occurrence_status"]=0
 operation_parameters_minimum_occurences["updateActivityTemplate:::id"]=1
 operation_parameters_minimum_occurences["updateActivityTemplate:::activity_template_resource"]=0
 operation_parameters_minimum_occurences["getDownloadURL:::bucket"]=0
@@ -363,6 +376,33 @@ operation_parameters_minimum_occurences["updateCategory:::id"]=1
 operation_parameters_minimum_occurences["updateCategory:::category"]=0
 operation_parameters_minimum_occurences["updateCategoryTemplate:::id"]=1
 operation_parameters_minimum_occurences["updateCategoryTemplate:::template"]=0
+operation_parameters_minimum_occurences["acknowledgeChatMessage:::id"]=1
+operation_parameters_minimum_occurences["acknowledgeChatMessage:::readCount"]=0
+operation_parameters_minimum_occurences["addChatMessageBlacklist:::blacklisted_user_id"]=1
+operation_parameters_minimum_occurences["addChatMessageBlacklist:::id"]=1
+operation_parameters_minimum_occurences["deleteChatMessage:::id"]=1
+operation_parameters_minimum_occurences["editChatMessage:::id"]=1
+operation_parameters_minimum_occurences["editChatMessage:::chatMessageResource"]=0
+operation_parameters_minimum_occurences["getChatMessage:::id"]=1
+operation_parameters_minimum_occurences["getChatMessageBlacklist:::id"]=1
+operation_parameters_minimum_occurences["getChatThreads:::size"]=0
+operation_parameters_minimum_occurences["getChatThreads:::page"]=0
+operation_parameters_minimum_occurences["getChatThreads:::order"]=0
+operation_parameters_minimum_occurences["getDirectMessages:::id"]=1
+operation_parameters_minimum_occurences["getDirectMessages:::size"]=0
+operation_parameters_minimum_occurences["getDirectMessages:::page"]=0
+operation_parameters_minimum_occurences["getDirectMessages:::order"]=0
+operation_parameters_minimum_occurences["getThreadMessages:::id"]=1
+operation_parameters_minimum_occurences["getThreadMessages:::size"]=0
+operation_parameters_minimum_occurences["getThreadMessages:::page"]=0
+operation_parameters_minimum_occurences["getThreadMessages:::order"]=0
+operation_parameters_minimum_occurences["getTopicMessages:::id"]=1
+operation_parameters_minimum_occurences["getTopicMessages:::size"]=0
+operation_parameters_minimum_occurences["getTopicMessages:::page"]=0
+operation_parameters_minimum_occurences["getTopicMessages:::order"]=0
+operation_parameters_minimum_occurences["removeChatBlacklist:::blacklisted_user_id"]=1
+operation_parameters_minimum_occurences["removeChatBlacklist:::id"]=1
+operation_parameters_minimum_occurences["sendMessage:::chatMessageResource"]=0
 operation_parameters_minimum_occurences["createConfig:::config"]=0
 operation_parameters_minimum_occurences["deleteConfig:::name"]=1
 operation_parameters_minimum_occurences["getConfig:::name"]=1
@@ -702,10 +742,12 @@ operation_parameters_minimum_occurences["getBREEventLogs:::filter_event_id"]=0
 operation_parameters_minimum_occurences["getBREEventLogs:::size"]=0
 operation_parameters_minimum_occurences["getBREEventLogs:::page"]=0
 operation_parameters_minimum_occurences["getBREEventLogs:::order"]=0
+operation_parameters_minimum_occurences["getBREEventLogs:::filter_rule_id"]=0
 operation_parameters_minimum_occurences["getBREForwardLog:::id"]=1
 operation_parameters_minimum_occurences["getBREForwardLogs:::filter_start_date"]=0
 operation_parameters_minimum_occurences["getBREForwardLogs:::filter_end_date"]=0
 operation_parameters_minimum_occurences["getBREForwardLogs:::filter_status_code"]=0
+operation_parameters_minimum_occurences["getBREForwardLogs:::filter_url"]=0
 operation_parameters_minimum_occurences["getBREForwardLogs:::size"]=0
 operation_parameters_minimum_occurences["getBREForwardLogs:::page"]=0
 operation_parameters_minimum_occurences["getBREForwardLogs:::order"]=0
@@ -822,12 +864,59 @@ operation_parameters_minimum_occurences["updateVideoRelationship:::details"]=0
 operation_parameters_minimum_occurences["updateVideoTemplate:::id"]=1
 operation_parameters_minimum_occurences["updateVideoTemplate:::video_template_resource"]=0
 operation_parameters_minimum_occurences["viewVideo:::id"]=1
+operation_parameters_minimum_occurences["compileMessageTemplate:::request"]=0
+operation_parameters_minimum_occurences["createMessageTemplate:::message_template"]=0
+operation_parameters_minimum_occurences["deleteMessageTemplate:::id"]=1
+operation_parameters_minimum_occurences["getMessageTemplate:::id"]=1
+operation_parameters_minimum_occurences["getMessageTemplates:::filter_tagset"]=0
+operation_parameters_minimum_occurences["getMessageTemplates:::filter_tag_intersection"]=0
+operation_parameters_minimum_occurences["getMessageTemplates:::filter_tag_exclusion"]=0
+operation_parameters_minimum_occurences["getMessageTemplates:::size"]=0
+operation_parameters_minimum_occurences["getMessageTemplates:::page"]=0
+operation_parameters_minimum_occurences["getMessageTemplates:::order"]=0
+operation_parameters_minimum_occurences["sendMessage1:::message_resource"]=0
 operation_parameters_minimum_occurences["sendRawEmail:::raw_email_resource"]=0
 operation_parameters_minimum_occurences["sendRawPush:::raw_push_resource"]=0
 operation_parameters_minimum_occurences["sendRawSMS:::raw_SMS_resource"]=0
 operation_parameters_minimum_occurences["sendTemplatedEmail:::message_resource"]=0
 operation_parameters_minimum_occurences["sendTemplatedPush:::template_push_resource"]=0
 operation_parameters_minimum_occurences["sendTemplatedSMS:::template_SMS_resource"]=0
+operation_parameters_minimum_occurences["sendWebsocket:::websocket_resource"]=0
+operation_parameters_minimum_occurences["updateMessageTemplate:::id"]=1
+operation_parameters_minimum_occurences["updateMessageTemplate:::message_template_resource"]=0
+operation_parameters_minimum_occurences["disableTopicSubscriber:::id"]=1
+operation_parameters_minimum_occurences["disableTopicSubscriber:::user_id"]=1
+operation_parameters_minimum_occurences["disableTopicSubscriber:::disabled"]=1
+operation_parameters_minimum_occurences["getTopicSubscriber:::id"]=1
+operation_parameters_minimum_occurences["getTopicSubscriber:::user_id"]=1
+operation_parameters_minimum_occurences["getTopicSubscribers:::id"]=1
+operation_parameters_minimum_occurences["getUserTopics:::id"]=1
+operation_parameters_minimum_occurences["createNotificationType:::notification_type"]=0
+operation_parameters_minimum_occurences["deleteNotificationType:::id"]=1
+operation_parameters_minimum_occurences["getNotificationType:::id"]=1
+operation_parameters_minimum_occurences["getNotificationTypes:::size"]=0
+operation_parameters_minimum_occurences["getNotificationTypes:::page"]=0
+operation_parameters_minimum_occurences["getNotificationTypes:::order"]=0
+operation_parameters_minimum_occurences["getUserNotificationInfo:::type_id"]=1
+operation_parameters_minimum_occurences["getUserNotificationInfo:::user_id"]=1
+operation_parameters_minimum_occurences["getUserNotificationInfoList:::user_id"]=1
+operation_parameters_minimum_occurences["getUserNotificationInfoList:::size"]=0
+operation_parameters_minimum_occurences["getUserNotificationInfoList:::page"]=0
+operation_parameters_minimum_occurences["getUserNotificationInfoList:::order"]=0
+operation_parameters_minimum_occurences["getUserNotifications:::id"]=1
+operation_parameters_minimum_occurences["getUserNotifications:::filter_status"]=0
+operation_parameters_minimum_occurences["getUserNotifications:::size"]=0
+operation_parameters_minimum_occurences["getUserNotifications:::page"]=0
+operation_parameters_minimum_occurences["getUserNotifications:::order"]=0
+operation_parameters_minimum_occurences["sendNotification:::notification"]=0
+operation_parameters_minimum_occurences["setUserNotificationStatus:::user_id"]=1
+operation_parameters_minimum_occurences["setUserNotificationStatus:::notification_id"]=1
+operation_parameters_minimum_occurences["setUserNotificationStatus:::notification"]=0
+operation_parameters_minimum_occurences["silenceDirectNotifications:::type_id"]=1
+operation_parameters_minimum_occurences["silenceDirectNotifications:::user_id"]=1
+operation_parameters_minimum_occurences["silenceDirectNotifications:::silenced"]=1
+operation_parameters_minimum_occurences["updateNotificationType:::id"]=1
+operation_parameters_minimum_occurences["updateNotificationType:::notification_type"]=0
 operation_parameters_minimum_occurences["createObjectItem:::template_id"]=1
 operation_parameters_minimum_occurences["createObjectItem:::cascade"]=0
 operation_parameters_minimum_occurences["createObjectItem:::object_item"]=0
@@ -1230,6 +1319,9 @@ operation_parameters_minimum_occurences["addUserTag:::tag"]=1
 operation_parameters_minimum_occurences["createUserTemplate:::user_template_resource"]=0
 operation_parameters_minimum_occurences["deleteUserTemplate:::id"]=1
 operation_parameters_minimum_occurences["deleteUserTemplate:::cascade"]=0
+operation_parameters_minimum_occurences["getDirectMessages1:::recipient_id"]=1
+operation_parameters_minimum_occurences["getDirectMessages1:::size"]=0
+operation_parameters_minimum_occurences["getDirectMessages1:::page"]=0
 operation_parameters_minimum_occurences["getUser:::id"]=1
 operation_parameters_minimum_occurences["getUserTags:::user_id"]=1
 operation_parameters_minimum_occurences["getUserTemplate:::id"]=1
@@ -1253,6 +1345,8 @@ operation_parameters_minimum_occurences["getUsers:::page"]=0
 operation_parameters_minimum_occurences["getUsers:::order"]=0
 operation_parameters_minimum_occurences["passwordReset:::id"]=1
 operation_parameters_minimum_occurences["passwordReset:::new_password_request"]=0
+operation_parameters_minimum_occurences["postUserMessage:::recipient_id"]=1
+operation_parameters_minimum_occurences["postUserMessage:::chatMessageRequest"]=0
 operation_parameters_minimum_occurences["registerUser:::user_resource"]=0
 operation_parameters_minimum_occurences["removeUserTag:::user_id"]=1
 operation_parameters_minimum_occurences["removeUserTag:::tag"]=1
@@ -1304,6 +1398,9 @@ operation_parameters_minimum_occurences["deleteGroupMemberTemplate:::id"]=1
 operation_parameters_minimum_occurences["deleteGroupMemberTemplate:::cascade"]=0
 operation_parameters_minimum_occurences["deleteGroupTemplate:::id"]=1
 operation_parameters_minimum_occurences["deleteGroupTemplate:::cascade"]=0
+operation_parameters_minimum_occurences["disableGroupNotification:::unique_name"]=1
+operation_parameters_minimum_occurences["disableGroupNotification:::user_id"]=1
+operation_parameters_minimum_occurences["disableGroupNotification:::disabled"]=1
 operation_parameters_minimum_occurences["getGroup:::unique_name"]=1
 operation_parameters_minimum_occurences["getGroupAncestors:::unique_name"]=1
 operation_parameters_minimum_occurences["getGroupMember:::unique_name"]=1
@@ -1316,6 +1413,9 @@ operation_parameters_minimum_occurences["getGroupMembers:::unique_name"]=1
 operation_parameters_minimum_occurences["getGroupMembers:::size"]=0
 operation_parameters_minimum_occurences["getGroupMembers:::page"]=0
 operation_parameters_minimum_occurences["getGroupMembers:::order"]=0
+operation_parameters_minimum_occurences["getGroupMessages:::unique_name"]=1
+operation_parameters_minimum_occurences["getGroupMessages:::size"]=0
+operation_parameters_minimum_occurences["getGroupMessages:::page"]=0
 operation_parameters_minimum_occurences["getGroupTemplate:::id"]=1
 operation_parameters_minimum_occurences["getGroupTemplates:::size"]=0
 operation_parameters_minimum_occurences["getGroupTemplates:::page"]=0
@@ -1331,6 +1431,8 @@ operation_parameters_minimum_occurences["listGroups:::filter_status"]=0
 operation_parameters_minimum_occurences["listGroups:::size"]=0
 operation_parameters_minimum_occurences["listGroups:::page"]=0
 operation_parameters_minimum_occurences["listGroups:::order"]=0
+operation_parameters_minimum_occurences["postGroupMessage:::unique_name"]=1
+operation_parameters_minimum_occurences["postGroupMessage:::chatMessageRequest"]=0
 operation_parameters_minimum_occurences["removeGroupMember:::unique_name"]=1
 operation_parameters_minimum_occurences["removeGroupMember:::user_id"]=1
 operation_parameters_minimum_occurences["updateGroup:::unique_name"]=1
@@ -1463,6 +1565,10 @@ operation_parameters_maximum_occurences["getOAuthToken:::username"]=0
 operation_parameters_maximum_occurences["getOAuthToken:::password"]=0
 operation_parameters_maximum_occurences["getOAuthToken:::token"]=0
 operation_parameters_maximum_occurences["getOAuthToken:::refresh_token"]=0
+operation_parameters_maximum_occurences["addUser:::activity_occurrence_id"]=0
+operation_parameters_maximum_occurences["addUser:::test"]=0
+operation_parameters_maximum_occurences["addUser:::bypass_restrictions"]=0
+operation_parameters_maximum_occurences["addUser:::userId"]=0
 operation_parameters_maximum_occurences["createActivity:::activity_resource"]=0
 operation_parameters_maximum_occurences["createActivityOccurrence:::test"]=0
 operation_parameters_maximum_occurences["createActivityOccurrence:::activity_occurrence_resource"]=0
@@ -1489,12 +1595,21 @@ operation_parameters_maximum_occurences["listActivityOccurrences:::filter_challe
 operation_parameters_maximum_occurences["listActivityOccurrences:::size"]=0
 operation_parameters_maximum_occurences["listActivityOccurrences:::page"]=0
 operation_parameters_maximum_occurences["listActivityOccurrences:::order"]=0
+operation_parameters_maximum_occurences["removeUser:::activity_occurrence_id"]=0
+operation_parameters_maximum_occurences["removeUser:::user_id"]=0
+operation_parameters_maximum_occurences["removeUser:::ban"]=0
+operation_parameters_maximum_occurences["removeUser:::bypass_restrictions"]=0
 operation_parameters_maximum_occurences["setActivityOccurrenceResults:::activity_occurrence_id"]=0
 operation_parameters_maximum_occurences["setActivityOccurrenceResults:::activity_occurrence_results"]=0
+operation_parameters_maximum_occurences["setActivityOccurrenceSettings:::activity_occurrence_id"]=0
+operation_parameters_maximum_occurences["setActivityOccurrenceSettings:::settings"]=0
+operation_parameters_maximum_occurences["setUserStatus:::activity_occurrence_id"]=0
+operation_parameters_maximum_occurences["setUserStatus:::user_id"]=0
+operation_parameters_maximum_occurences["setUserStatus:::status"]=0
 operation_parameters_maximum_occurences["updateActivity:::id"]=0
 operation_parameters_maximum_occurences["updateActivity:::activity_resource"]=0
-operation_parameters_maximum_occurences["updateActivityOccurrence:::activity_occurrence_id"]=0
-operation_parameters_maximum_occurences["updateActivityOccurrence:::activity_occurrence_status"]=0
+operation_parameters_maximum_occurences["updateActivityOccurrenceStatus:::activity_occurrence_id"]=0
+operation_parameters_maximum_occurences["updateActivityOccurrenceStatus:::activity_occurrence_status"]=0
 operation_parameters_maximum_occurences["updateActivityTemplate:::id"]=0
 operation_parameters_maximum_occurences["updateActivityTemplate:::activity_template_resource"]=0
 operation_parameters_maximum_occurences["getDownloadURL:::bucket"]=0
@@ -1723,6 +1838,33 @@ operation_parameters_maximum_occurences["updateCategory:::id"]=0
 operation_parameters_maximum_occurences["updateCategory:::category"]=0
 operation_parameters_maximum_occurences["updateCategoryTemplate:::id"]=0
 operation_parameters_maximum_occurences["updateCategoryTemplate:::template"]=0
+operation_parameters_maximum_occurences["acknowledgeChatMessage:::id"]=0
+operation_parameters_maximum_occurences["acknowledgeChatMessage:::readCount"]=0
+operation_parameters_maximum_occurences["addChatMessageBlacklist:::blacklisted_user_id"]=0
+operation_parameters_maximum_occurences["addChatMessageBlacklist:::id"]=0
+operation_parameters_maximum_occurences["deleteChatMessage:::id"]=0
+operation_parameters_maximum_occurences["editChatMessage:::id"]=0
+operation_parameters_maximum_occurences["editChatMessage:::chatMessageResource"]=0
+operation_parameters_maximum_occurences["getChatMessage:::id"]=0
+operation_parameters_maximum_occurences["getChatMessageBlacklist:::id"]=0
+operation_parameters_maximum_occurences["getChatThreads:::size"]=0
+operation_parameters_maximum_occurences["getChatThreads:::page"]=0
+operation_parameters_maximum_occurences["getChatThreads:::order"]=0
+operation_parameters_maximum_occurences["getDirectMessages:::id"]=0
+operation_parameters_maximum_occurences["getDirectMessages:::size"]=0
+operation_parameters_maximum_occurences["getDirectMessages:::page"]=0
+operation_parameters_maximum_occurences["getDirectMessages:::order"]=0
+operation_parameters_maximum_occurences["getThreadMessages:::id"]=0
+operation_parameters_maximum_occurences["getThreadMessages:::size"]=0
+operation_parameters_maximum_occurences["getThreadMessages:::page"]=0
+operation_parameters_maximum_occurences["getThreadMessages:::order"]=0
+operation_parameters_maximum_occurences["getTopicMessages:::id"]=0
+operation_parameters_maximum_occurences["getTopicMessages:::size"]=0
+operation_parameters_maximum_occurences["getTopicMessages:::page"]=0
+operation_parameters_maximum_occurences["getTopicMessages:::order"]=0
+operation_parameters_maximum_occurences["removeChatBlacklist:::blacklisted_user_id"]=0
+operation_parameters_maximum_occurences["removeChatBlacklist:::id"]=0
+operation_parameters_maximum_occurences["sendMessage:::chatMessageResource"]=0
 operation_parameters_maximum_occurences["createConfig:::config"]=0
 operation_parameters_maximum_occurences["deleteConfig:::name"]=0
 operation_parameters_maximum_occurences["getConfig:::name"]=0
@@ -2062,10 +2204,12 @@ operation_parameters_maximum_occurences["getBREEventLogs:::filter_event_id"]=0
 operation_parameters_maximum_occurences["getBREEventLogs:::size"]=0
 operation_parameters_maximum_occurences["getBREEventLogs:::page"]=0
 operation_parameters_maximum_occurences["getBREEventLogs:::order"]=0
+operation_parameters_maximum_occurences["getBREEventLogs:::filter_rule_id"]=0
 operation_parameters_maximum_occurences["getBREForwardLog:::id"]=0
 operation_parameters_maximum_occurences["getBREForwardLogs:::filter_start_date"]=0
 operation_parameters_maximum_occurences["getBREForwardLogs:::filter_end_date"]=0
 operation_parameters_maximum_occurences["getBREForwardLogs:::filter_status_code"]=0
+operation_parameters_maximum_occurences["getBREForwardLogs:::filter_url"]=0
 operation_parameters_maximum_occurences["getBREForwardLogs:::size"]=0
 operation_parameters_maximum_occurences["getBREForwardLogs:::page"]=0
 operation_parameters_maximum_occurences["getBREForwardLogs:::order"]=0
@@ -2182,12 +2326,59 @@ operation_parameters_maximum_occurences["updateVideoRelationship:::details"]=0
 operation_parameters_maximum_occurences["updateVideoTemplate:::id"]=0
 operation_parameters_maximum_occurences["updateVideoTemplate:::video_template_resource"]=0
 operation_parameters_maximum_occurences["viewVideo:::id"]=0
+operation_parameters_maximum_occurences["compileMessageTemplate:::request"]=0
+operation_parameters_maximum_occurences["createMessageTemplate:::message_template"]=0
+operation_parameters_maximum_occurences["deleteMessageTemplate:::id"]=0
+operation_parameters_maximum_occurences["getMessageTemplate:::id"]=0
+operation_parameters_maximum_occurences["getMessageTemplates:::filter_tagset"]=0
+operation_parameters_maximum_occurences["getMessageTemplates:::filter_tag_intersection"]=0
+operation_parameters_maximum_occurences["getMessageTemplates:::filter_tag_exclusion"]=0
+operation_parameters_maximum_occurences["getMessageTemplates:::size"]=0
+operation_parameters_maximum_occurences["getMessageTemplates:::page"]=0
+operation_parameters_maximum_occurences["getMessageTemplates:::order"]=0
+operation_parameters_maximum_occurences["sendMessage1:::message_resource"]=0
 operation_parameters_maximum_occurences["sendRawEmail:::raw_email_resource"]=0
 operation_parameters_maximum_occurences["sendRawPush:::raw_push_resource"]=0
 operation_parameters_maximum_occurences["sendRawSMS:::raw_SMS_resource"]=0
 operation_parameters_maximum_occurences["sendTemplatedEmail:::message_resource"]=0
 operation_parameters_maximum_occurences["sendTemplatedPush:::template_push_resource"]=0
 operation_parameters_maximum_occurences["sendTemplatedSMS:::template_SMS_resource"]=0
+operation_parameters_maximum_occurences["sendWebsocket:::websocket_resource"]=0
+operation_parameters_maximum_occurences["updateMessageTemplate:::id"]=0
+operation_parameters_maximum_occurences["updateMessageTemplate:::message_template_resource"]=0
+operation_parameters_maximum_occurences["disableTopicSubscriber:::id"]=0
+operation_parameters_maximum_occurences["disableTopicSubscriber:::user_id"]=0
+operation_parameters_maximum_occurences["disableTopicSubscriber:::disabled"]=0
+operation_parameters_maximum_occurences["getTopicSubscriber:::id"]=0
+operation_parameters_maximum_occurences["getTopicSubscriber:::user_id"]=0
+operation_parameters_maximum_occurences["getTopicSubscribers:::id"]=0
+operation_parameters_maximum_occurences["getUserTopics:::id"]=0
+operation_parameters_maximum_occurences["createNotificationType:::notification_type"]=0
+operation_parameters_maximum_occurences["deleteNotificationType:::id"]=0
+operation_parameters_maximum_occurences["getNotificationType:::id"]=0
+operation_parameters_maximum_occurences["getNotificationTypes:::size"]=0
+operation_parameters_maximum_occurences["getNotificationTypes:::page"]=0
+operation_parameters_maximum_occurences["getNotificationTypes:::order"]=0
+operation_parameters_maximum_occurences["getUserNotificationInfo:::type_id"]=0
+operation_parameters_maximum_occurences["getUserNotificationInfo:::user_id"]=0
+operation_parameters_maximum_occurences["getUserNotificationInfoList:::user_id"]=0
+operation_parameters_maximum_occurences["getUserNotificationInfoList:::size"]=0
+operation_parameters_maximum_occurences["getUserNotificationInfoList:::page"]=0
+operation_parameters_maximum_occurences["getUserNotificationInfoList:::order"]=0
+operation_parameters_maximum_occurences["getUserNotifications:::id"]=0
+operation_parameters_maximum_occurences["getUserNotifications:::filter_status"]=0
+operation_parameters_maximum_occurences["getUserNotifications:::size"]=0
+operation_parameters_maximum_occurences["getUserNotifications:::page"]=0
+operation_parameters_maximum_occurences["getUserNotifications:::order"]=0
+operation_parameters_maximum_occurences["sendNotification:::notification"]=0
+operation_parameters_maximum_occurences["setUserNotificationStatus:::user_id"]=0
+operation_parameters_maximum_occurences["setUserNotificationStatus:::notification_id"]=0
+operation_parameters_maximum_occurences["setUserNotificationStatus:::notification"]=0
+operation_parameters_maximum_occurences["silenceDirectNotifications:::type_id"]=0
+operation_parameters_maximum_occurences["silenceDirectNotifications:::user_id"]=0
+operation_parameters_maximum_occurences["silenceDirectNotifications:::silenced"]=0
+operation_parameters_maximum_occurences["updateNotificationType:::id"]=0
+operation_parameters_maximum_occurences["updateNotificationType:::notification_type"]=0
 operation_parameters_maximum_occurences["createObjectItem:::template_id"]=0
 operation_parameters_maximum_occurences["createObjectItem:::cascade"]=0
 operation_parameters_maximum_occurences["createObjectItem:::object_item"]=0
@@ -2590,6 +2781,9 @@ operation_parameters_maximum_occurences["addUserTag:::tag"]=0
 operation_parameters_maximum_occurences["createUserTemplate:::user_template_resource"]=0
 operation_parameters_maximum_occurences["deleteUserTemplate:::id"]=0
 operation_parameters_maximum_occurences["deleteUserTemplate:::cascade"]=0
+operation_parameters_maximum_occurences["getDirectMessages1:::recipient_id"]=0
+operation_parameters_maximum_occurences["getDirectMessages1:::size"]=0
+operation_parameters_maximum_occurences["getDirectMessages1:::page"]=0
 operation_parameters_maximum_occurences["getUser:::id"]=0
 operation_parameters_maximum_occurences["getUserTags:::user_id"]=0
 operation_parameters_maximum_occurences["getUserTemplate:::id"]=0
@@ -2613,6 +2807,8 @@ operation_parameters_maximum_occurences["getUsers:::page"]=0
 operation_parameters_maximum_occurences["getUsers:::order"]=0
 operation_parameters_maximum_occurences["passwordReset:::id"]=0
 operation_parameters_maximum_occurences["passwordReset:::new_password_request"]=0
+operation_parameters_maximum_occurences["postUserMessage:::recipient_id"]=0
+operation_parameters_maximum_occurences["postUserMessage:::chatMessageRequest"]=0
 operation_parameters_maximum_occurences["registerUser:::user_resource"]=0
 operation_parameters_maximum_occurences["removeUserTag:::user_id"]=0
 operation_parameters_maximum_occurences["removeUserTag:::tag"]=0
@@ -2664,6 +2860,9 @@ operation_parameters_maximum_occurences["deleteGroupMemberTemplate:::id"]=0
 operation_parameters_maximum_occurences["deleteGroupMemberTemplate:::cascade"]=0
 operation_parameters_maximum_occurences["deleteGroupTemplate:::id"]=0
 operation_parameters_maximum_occurences["deleteGroupTemplate:::cascade"]=0
+operation_parameters_maximum_occurences["disableGroupNotification:::unique_name"]=0
+operation_parameters_maximum_occurences["disableGroupNotification:::user_id"]=0
+operation_parameters_maximum_occurences["disableGroupNotification:::disabled"]=0
 operation_parameters_maximum_occurences["getGroup:::unique_name"]=0
 operation_parameters_maximum_occurences["getGroupAncestors:::unique_name"]=0
 operation_parameters_maximum_occurences["getGroupMember:::unique_name"]=0
@@ -2676,6 +2875,9 @@ operation_parameters_maximum_occurences["getGroupMembers:::unique_name"]=0
 operation_parameters_maximum_occurences["getGroupMembers:::size"]=0
 operation_parameters_maximum_occurences["getGroupMembers:::page"]=0
 operation_parameters_maximum_occurences["getGroupMembers:::order"]=0
+operation_parameters_maximum_occurences["getGroupMessages:::unique_name"]=0
+operation_parameters_maximum_occurences["getGroupMessages:::size"]=0
+operation_parameters_maximum_occurences["getGroupMessages:::page"]=0
 operation_parameters_maximum_occurences["getGroupTemplate:::id"]=0
 operation_parameters_maximum_occurences["getGroupTemplates:::size"]=0
 operation_parameters_maximum_occurences["getGroupTemplates:::page"]=0
@@ -2691,6 +2893,8 @@ operation_parameters_maximum_occurences["listGroups:::filter_status"]=0
 operation_parameters_maximum_occurences["listGroups:::size"]=0
 operation_parameters_maximum_occurences["listGroups:::page"]=0
 operation_parameters_maximum_occurences["listGroups:::order"]=0
+operation_parameters_maximum_occurences["postGroupMessage:::unique_name"]=0
+operation_parameters_maximum_occurences["postGroupMessage:::chatMessageRequest"]=0
 operation_parameters_maximum_occurences["removeGroupMember:::unique_name"]=0
 operation_parameters_maximum_occurences["removeGroupMember:::user_id"]=0
 operation_parameters_maximum_occurences["updateGroup:::unique_name"]=0
@@ -2820,6 +3024,10 @@ operation_parameters_collection_type["getOAuthToken:::username"]=""
 operation_parameters_collection_type["getOAuthToken:::password"]=""
 operation_parameters_collection_type["getOAuthToken:::token"]=""
 operation_parameters_collection_type["getOAuthToken:::refresh_token"]=""
+operation_parameters_collection_type["addUser:::activity_occurrence_id"]=""
+operation_parameters_collection_type["addUser:::test"]=""
+operation_parameters_collection_type["addUser:::bypass_restrictions"]=""
+operation_parameters_collection_type["addUser:::userId"]=""
 operation_parameters_collection_type["createActivity:::activity_resource"]=""
 operation_parameters_collection_type["createActivityOccurrence:::test"]=""
 operation_parameters_collection_type["createActivityOccurrence:::activity_occurrence_resource"]=""
@@ -2846,12 +3054,21 @@ operation_parameters_collection_type["listActivityOccurrences:::filter_challenge
 operation_parameters_collection_type["listActivityOccurrences:::size"]=""
 operation_parameters_collection_type["listActivityOccurrences:::page"]=""
 operation_parameters_collection_type["listActivityOccurrences:::order"]=""
+operation_parameters_collection_type["removeUser:::activity_occurrence_id"]=""
+operation_parameters_collection_type["removeUser:::user_id"]=""
+operation_parameters_collection_type["removeUser:::ban"]=""
+operation_parameters_collection_type["removeUser:::bypass_restrictions"]=""
 operation_parameters_collection_type["setActivityOccurrenceResults:::activity_occurrence_id"]=""
 operation_parameters_collection_type["setActivityOccurrenceResults:::activity_occurrence_results"]=""
+operation_parameters_collection_type["setActivityOccurrenceSettings:::activity_occurrence_id"]=""
+operation_parameters_collection_type["setActivityOccurrenceSettings:::settings"]=""
+operation_parameters_collection_type["setUserStatus:::activity_occurrence_id"]=""
+operation_parameters_collection_type["setUserStatus:::user_id"]=""
+operation_parameters_collection_type["setUserStatus:::status"]=""
 operation_parameters_collection_type["updateActivity:::id"]=""
 operation_parameters_collection_type["updateActivity:::activity_resource"]=""
-operation_parameters_collection_type["updateActivityOccurrence:::activity_occurrence_id"]=""
-operation_parameters_collection_type["updateActivityOccurrence:::activity_occurrence_status"]=""
+operation_parameters_collection_type["updateActivityOccurrenceStatus:::activity_occurrence_id"]=""
+operation_parameters_collection_type["updateActivityOccurrenceStatus:::activity_occurrence_status"]=""
 operation_parameters_collection_type["updateActivityTemplate:::id"]=""
 operation_parameters_collection_type["updateActivityTemplate:::activity_template_resource"]=""
 operation_parameters_collection_type["getDownloadURL:::bucket"]=""
@@ -3080,6 +3297,33 @@ operation_parameters_collection_type["updateCategory:::id"]=""
 operation_parameters_collection_type["updateCategory:::category"]=""
 operation_parameters_collection_type["updateCategoryTemplate:::id"]=""
 operation_parameters_collection_type["updateCategoryTemplate:::template"]=""
+operation_parameters_collection_type["acknowledgeChatMessage:::id"]=""
+operation_parameters_collection_type["acknowledgeChatMessage:::readCount"]=""
+operation_parameters_collection_type["addChatMessageBlacklist:::blacklisted_user_id"]=""
+operation_parameters_collection_type["addChatMessageBlacklist:::id"]=""
+operation_parameters_collection_type["deleteChatMessage:::id"]=""
+operation_parameters_collection_type["editChatMessage:::id"]=""
+operation_parameters_collection_type["editChatMessage:::chatMessageResource"]=""
+operation_parameters_collection_type["getChatMessage:::id"]=""
+operation_parameters_collection_type["getChatMessageBlacklist:::id"]=""
+operation_parameters_collection_type["getChatThreads:::size"]=""
+operation_parameters_collection_type["getChatThreads:::page"]=""
+operation_parameters_collection_type["getChatThreads:::order"]=""
+operation_parameters_collection_type["getDirectMessages:::id"]=""
+operation_parameters_collection_type["getDirectMessages:::size"]=""
+operation_parameters_collection_type["getDirectMessages:::page"]=""
+operation_parameters_collection_type["getDirectMessages:::order"]=""
+operation_parameters_collection_type["getThreadMessages:::id"]=""
+operation_parameters_collection_type["getThreadMessages:::size"]=""
+operation_parameters_collection_type["getThreadMessages:::page"]=""
+operation_parameters_collection_type["getThreadMessages:::order"]=""
+operation_parameters_collection_type["getTopicMessages:::id"]=""
+operation_parameters_collection_type["getTopicMessages:::size"]=""
+operation_parameters_collection_type["getTopicMessages:::page"]=""
+operation_parameters_collection_type["getTopicMessages:::order"]=""
+operation_parameters_collection_type["removeChatBlacklist:::blacklisted_user_id"]=""
+operation_parameters_collection_type["removeChatBlacklist:::id"]=""
+operation_parameters_collection_type["sendMessage:::chatMessageResource"]=""
 operation_parameters_collection_type["createConfig:::config"]=""
 operation_parameters_collection_type["deleteConfig:::name"]=""
 operation_parameters_collection_type["getConfig:::name"]=""
@@ -3419,10 +3663,12 @@ operation_parameters_collection_type["getBREEventLogs:::filter_event_id"]=""
 operation_parameters_collection_type["getBREEventLogs:::size"]=""
 operation_parameters_collection_type["getBREEventLogs:::page"]=""
 operation_parameters_collection_type["getBREEventLogs:::order"]=""
+operation_parameters_collection_type["getBREEventLogs:::filter_rule_id"]=""
 operation_parameters_collection_type["getBREForwardLog:::id"]=""
 operation_parameters_collection_type["getBREForwardLogs:::filter_start_date"]=""
 operation_parameters_collection_type["getBREForwardLogs:::filter_end_date"]=""
 operation_parameters_collection_type["getBREForwardLogs:::filter_status_code"]=""
+operation_parameters_collection_type["getBREForwardLogs:::filter_url"]=""
 operation_parameters_collection_type["getBREForwardLogs:::size"]=""
 operation_parameters_collection_type["getBREForwardLogs:::page"]=""
 operation_parameters_collection_type["getBREForwardLogs:::order"]=""
@@ -3539,12 +3785,59 @@ operation_parameters_collection_type["updateVideoRelationship:::details"]=""
 operation_parameters_collection_type["updateVideoTemplate:::id"]=""
 operation_parameters_collection_type["updateVideoTemplate:::video_template_resource"]=""
 operation_parameters_collection_type["viewVideo:::id"]=""
+operation_parameters_collection_type["compileMessageTemplate:::request"]=""
+operation_parameters_collection_type["createMessageTemplate:::message_template"]=""
+operation_parameters_collection_type["deleteMessageTemplate:::id"]=""
+operation_parameters_collection_type["getMessageTemplate:::id"]=""
+operation_parameters_collection_type["getMessageTemplates:::filter_tagset"]=""
+operation_parameters_collection_type["getMessageTemplates:::filter_tag_intersection"]=""
+operation_parameters_collection_type["getMessageTemplates:::filter_tag_exclusion"]=""
+operation_parameters_collection_type["getMessageTemplates:::size"]=""
+operation_parameters_collection_type["getMessageTemplates:::page"]=""
+operation_parameters_collection_type["getMessageTemplates:::order"]=""
+operation_parameters_collection_type["sendMessage1:::message_resource"]=""
 operation_parameters_collection_type["sendRawEmail:::raw_email_resource"]=""
 operation_parameters_collection_type["sendRawPush:::raw_push_resource"]=""
 operation_parameters_collection_type["sendRawSMS:::raw_SMS_resource"]=""
 operation_parameters_collection_type["sendTemplatedEmail:::message_resource"]=""
 operation_parameters_collection_type["sendTemplatedPush:::template_push_resource"]=""
 operation_parameters_collection_type["sendTemplatedSMS:::template_SMS_resource"]=""
+operation_parameters_collection_type["sendWebsocket:::websocket_resource"]=""
+operation_parameters_collection_type["updateMessageTemplate:::id"]=""
+operation_parameters_collection_type["updateMessageTemplate:::message_template_resource"]=""
+operation_parameters_collection_type["disableTopicSubscriber:::id"]=""
+operation_parameters_collection_type["disableTopicSubscriber:::user_id"]=""
+operation_parameters_collection_type["disableTopicSubscriber:::disabled"]=""
+operation_parameters_collection_type["getTopicSubscriber:::id"]=""
+operation_parameters_collection_type["getTopicSubscriber:::user_id"]=""
+operation_parameters_collection_type["getTopicSubscribers:::id"]=""
+operation_parameters_collection_type["getUserTopics:::id"]=""
+operation_parameters_collection_type["createNotificationType:::notification_type"]=""
+operation_parameters_collection_type["deleteNotificationType:::id"]=""
+operation_parameters_collection_type["getNotificationType:::id"]=""
+operation_parameters_collection_type["getNotificationTypes:::size"]=""
+operation_parameters_collection_type["getNotificationTypes:::page"]=""
+operation_parameters_collection_type["getNotificationTypes:::order"]=""
+operation_parameters_collection_type["getUserNotificationInfo:::type_id"]=""
+operation_parameters_collection_type["getUserNotificationInfo:::user_id"]=""
+operation_parameters_collection_type["getUserNotificationInfoList:::user_id"]=""
+operation_parameters_collection_type["getUserNotificationInfoList:::size"]=""
+operation_parameters_collection_type["getUserNotificationInfoList:::page"]=""
+operation_parameters_collection_type["getUserNotificationInfoList:::order"]=""
+operation_parameters_collection_type["getUserNotifications:::id"]=""
+operation_parameters_collection_type["getUserNotifications:::filter_status"]=""
+operation_parameters_collection_type["getUserNotifications:::size"]=""
+operation_parameters_collection_type["getUserNotifications:::page"]=""
+operation_parameters_collection_type["getUserNotifications:::order"]=""
+operation_parameters_collection_type["sendNotification:::notification"]=""
+operation_parameters_collection_type["setUserNotificationStatus:::user_id"]=""
+operation_parameters_collection_type["setUserNotificationStatus:::notification_id"]=""
+operation_parameters_collection_type["setUserNotificationStatus:::notification"]=""
+operation_parameters_collection_type["silenceDirectNotifications:::type_id"]=""
+operation_parameters_collection_type["silenceDirectNotifications:::user_id"]=""
+operation_parameters_collection_type["silenceDirectNotifications:::silenced"]=""
+operation_parameters_collection_type["updateNotificationType:::id"]=""
+operation_parameters_collection_type["updateNotificationType:::notification_type"]=""
 operation_parameters_collection_type["createObjectItem:::template_id"]=""
 operation_parameters_collection_type["createObjectItem:::cascade"]=""
 operation_parameters_collection_type["createObjectItem:::object_item"]=""
@@ -3947,6 +4240,9 @@ operation_parameters_collection_type["addUserTag:::tag"]=""
 operation_parameters_collection_type["createUserTemplate:::user_template_resource"]=""
 operation_parameters_collection_type["deleteUserTemplate:::id"]=""
 operation_parameters_collection_type["deleteUserTemplate:::cascade"]=""
+operation_parameters_collection_type["getDirectMessages1:::recipient_id"]=""
+operation_parameters_collection_type["getDirectMessages1:::size"]=""
+operation_parameters_collection_type["getDirectMessages1:::page"]=""
 operation_parameters_collection_type["getUser:::id"]=""
 operation_parameters_collection_type["getUserTags:::user_id"]=""
 operation_parameters_collection_type["getUserTemplate:::id"]=""
@@ -3970,6 +4266,8 @@ operation_parameters_collection_type["getUsers:::page"]=""
 operation_parameters_collection_type["getUsers:::order"]=""
 operation_parameters_collection_type["passwordReset:::id"]=""
 operation_parameters_collection_type["passwordReset:::new_password_request"]=""
+operation_parameters_collection_type["postUserMessage:::recipient_id"]=""
+operation_parameters_collection_type["postUserMessage:::chatMessageRequest"]=""
 operation_parameters_collection_type["registerUser:::user_resource"]=""
 operation_parameters_collection_type["removeUserTag:::user_id"]=""
 operation_parameters_collection_type["removeUserTag:::tag"]=""
@@ -4021,6 +4319,9 @@ operation_parameters_collection_type["deleteGroupMemberTemplate:::id"]=""
 operation_parameters_collection_type["deleteGroupMemberTemplate:::cascade"]=""
 operation_parameters_collection_type["deleteGroupTemplate:::id"]=""
 operation_parameters_collection_type["deleteGroupTemplate:::cascade"]=""
+operation_parameters_collection_type["disableGroupNotification:::unique_name"]=""
+operation_parameters_collection_type["disableGroupNotification:::user_id"]=""
+operation_parameters_collection_type["disableGroupNotification:::disabled"]=""
 operation_parameters_collection_type["getGroup:::unique_name"]=""
 operation_parameters_collection_type["getGroupAncestors:::unique_name"]=""
 operation_parameters_collection_type["getGroupMember:::unique_name"]=""
@@ -4033,6 +4334,9 @@ operation_parameters_collection_type["getGroupMembers:::unique_name"]=""
 operation_parameters_collection_type["getGroupMembers:::size"]=""
 operation_parameters_collection_type["getGroupMembers:::page"]=""
 operation_parameters_collection_type["getGroupMembers:::order"]=""
+operation_parameters_collection_type["getGroupMessages:::unique_name"]=""
+operation_parameters_collection_type["getGroupMessages:::size"]=""
+operation_parameters_collection_type["getGroupMessages:::page"]=""
 operation_parameters_collection_type["getGroupTemplate:::id"]=""
 operation_parameters_collection_type["getGroupTemplates:::size"]=""
 operation_parameters_collection_type["getGroupTemplates:::page"]=""
@@ -4048,6 +4352,8 @@ operation_parameters_collection_type["listGroups:::filter_status"]=""
 operation_parameters_collection_type["listGroups:::size"]=""
 operation_parameters_collection_type["listGroups:::page"]=""
 operation_parameters_collection_type["listGroups:::order"]=""
+operation_parameters_collection_type["postGroupMessage:::unique_name"]=""
+operation_parameters_collection_type["postGroupMessage:::chatMessageRequest"]=""
 operation_parameters_collection_type["removeGroupMember:::unique_name"]=""
 operation_parameters_collection_type["removeGroupMember:::user_id"]=""
 operation_parameters_collection_type["updateGroup:::unique_name"]=""
@@ -4551,6 +4857,7 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[activities]${OFF}"
 read -d '' ops <<EOF
+  ${CYAN}addUser${OFF};Add a user to an occurrence (AUTH) (AUTH)
   ${CYAN}createActivity${OFF};Create an activity (AUTH) (AUTH)
   ${CYAN}createActivityOccurrence${OFF};Create a new activity occurrence. Ex: start a game (AUTH) (AUTH)
   ${CYAN}createActivityTemplate${OFF};Create a activity template (AUTH) (AUTH)
@@ -4562,9 +4869,12 @@ read -d '' ops <<EOF
   ${CYAN}getActivityTemplate${OFF};Get a single activity template (AUTH) (AUTH)
   ${CYAN}getActivityTemplates${OFF};List and search activity templates (AUTH) (AUTH)
   ${CYAN}listActivityOccurrences${OFF};List activity occurrences (AUTH) (AUTH)
+  ${CYAN}removeUser${OFF};Remove a user from an occurrence (AUTH) (AUTH)
   ${CYAN}setActivityOccurrenceResults${OFF};Sets the status of an activity occurrence to FINISHED and logs metrics (AUTH) (AUTH)
+  ${CYAN}setActivityOccurrenceSettings${OFF};Sets the settings of an activity occurrence (AUTH) (AUTH)
+  ${CYAN}setUserStatus${OFF};Set a user's status within an occurrence (AUTH) (AUTH)
   ${CYAN}updateActivity${OFF};Update an activity (AUTH) (AUTH)
-  ${CYAN}updateActivityOccurrence${OFF};Updated the status of an activity occurrence (AUTH) (AUTH)
+  ${CYAN}updateActivityOccurrenceStatus${OFF};Update the status of an activity occurrence (AUTH) (AUTH)
   ${CYAN}updateActivityTemplate${OFF};Update an activity template (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4650,7 +4960,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "${BOLD}${WHITE}[bRERuleEngineExpressions]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}getBREExpression${OFF};Lookup a specific expression (AUTH) (AUTH)
-  ${CYAN}getBREExpressions${OFF};Get a list of supported expressions to use in conditions or actions. (AUTH) (AUTH)
+  ${CYAN}getBREExpressions${OFF};Get a list of supported expressions to use in conditions or actions (AUTH) (AUTH)
   ${CYAN}getExpressionAsText${OFF};Returns the textual representation of an expression (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
@@ -4763,6 +5073,23 @@ read -d '' ops <<EOF
   ${CYAN}getTags${OFF};List all trivia tags in the system (AUTH) (AUTH)
   ${CYAN}updateCategory${OFF};Update an existing category (AUTH) (AUTH)
   ${CYAN}updateCategoryTemplate${OFF};Update a category template (AUTH) (AUTH)
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[chat]${OFF}"
+read -d '' ops <<EOF
+  ${CYAN}acknowledgeChatMessage${OFF};Acknowledge number of messages in a thread (AUTH) (AUTH)
+  ${CYAN}addChatMessageBlacklist${OFF};Add a user to a chat message blacklist (AUTH) (AUTH)
+  ${CYAN}deleteChatMessage${OFF};Delete a message (AUTH) (AUTH)
+  ${CYAN}editChatMessage${OFF};Edit your message (AUTH) (AUTH)
+  ${CYAN}getChatMessage${OFF};Get a message (AUTH) (AUTH)
+  ${CYAN}getChatMessageBlacklist${OFF};Get a list of blocked users for chat messaging (AUTH) (AUTH)
+  ${CYAN}getChatThreads${OFF};List your threads (AUTH) (AUTH)
+  ${CYAN}getDirectMessages${OFF};List messages with a user (AUTH) (AUTH)
+  ${CYAN}getThreadMessages${OFF};List messages in a thread (AUTH) (AUTH)
+  ${CYAN}getTopicMessages${OFF};List messages in a topic (AUTH) (AUTH)
+  ${CYAN}removeChatBlacklist${OFF};Remove a user from a blacklist (AUTH) (AUTH)
+  ${CYAN}sendMessage${OFF};Send a message (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -5054,12 +5381,45 @@ echo "  $ops" | column -t -s ';'
     echo ""
     echo -e "${BOLD}${WHITE}[messaging]${OFF}"
 read -d '' ops <<EOF
+  ${CYAN}compileMessageTemplate${OFF};Compile a message template (AUTH) (AUTH)
+  ${CYAN}createMessageTemplate${OFF};Create a message template (AUTH) (AUTH)
+  ${CYAN}deleteMessageTemplate${OFF};Delete an existing message template (AUTH) (AUTH)
+  ${CYAN}getMessageTemplate${OFF};Get a single message template (AUTH) (AUTH)
+  ${CYAN}getMessageTemplates${OFF};List and search message templates (AUTH) (AUTH)
+  ${CYAN}sendMessage1${OFF};Send a message (AUTH) (AUTH)
   ${CYAN}sendRawEmail${OFF};Send a raw email to one or more users (AUTH) (AUTH)
   ${CYAN}sendRawPush${OFF};Send a raw push notification (AUTH) (AUTH)
   ${CYAN}sendRawSMS${OFF};Send a raw SMS (AUTH) (AUTH)
   ${CYAN}sendTemplatedEmail${OFF};Send a templated email to one or more users (AUTH) (AUTH)
   ${CYAN}sendTemplatedPush${OFF};Send a templated push notification (AUTH) (AUTH)
   ${CYAN}sendTemplatedSMS${OFF};Send a new templated SMS (AUTH) (AUTH)
+  ${CYAN}sendWebsocket${OFF};Send a websocket message (AUTH) (AUTH)
+  ${CYAN}updateMessageTemplate${OFF};Update an existing message template (AUTH) (AUTH)
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[messagingTopics]${OFF}"
+read -d '' ops <<EOF
+  ${CYAN}disableTopicSubscriber${OFF};Enable or disable messages for a user (AUTH) (AUTH)
+  ${CYAN}getTopicSubscriber${OFF};Get a subscriber to a topic (AUTH) (AUTH)
+  ${CYAN}getTopicSubscribers${OFF};Get all subscribers to a topic (AUTH) (AUTH)
+  ${CYAN}getUserTopics${OFF};Get all messaging topics for a given user (AUTH) (AUTH)
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[notifications]${OFF}"
+read -d '' ops <<EOF
+  ${CYAN}createNotificationType${OFF};Create a notification type (AUTH) (AUTH)
+  ${CYAN}deleteNotificationType${OFF};Delete a notification type (AUTH) (AUTH)
+  ${CYAN}getNotificationType${OFF};Get a single notification type (AUTH) (AUTH)
+  ${CYAN}getNotificationTypes${OFF};List and search notification types (AUTH) (AUTH)
+  ${CYAN}getUserNotificationInfo${OFF};View a user's notification settings for a type (AUTH) (AUTH)
+  ${CYAN}getUserNotificationInfoList${OFF};View a user's notification settings (AUTH) (AUTH)
+  ${CYAN}getUserNotifications${OFF};Get notifications (AUTH) (AUTH)
+  ${CYAN}sendNotification${OFF};Send a notification (AUTH) (AUTH)
+  ${CYAN}setUserNotificationStatus${OFF};Set notification status (AUTH) (AUTH)
+  ${CYAN}silenceDirectNotifications${OFF};Enable or disable direct notifications for a user (AUTH) (AUTH)
+  ${CYAN}updateNotificationType${OFF};Update a notificationType (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -5389,12 +5749,14 @@ read -d '' ops <<EOF
   ${CYAN}addUserTag${OFF};Add a tag to a user (AUTH) (AUTH)
   ${CYAN}createUserTemplate${OFF};Create a user template (AUTH) (AUTH)
   ${CYAN}deleteUserTemplate${OFF};Delete a user template (AUTH) (AUTH)
+  ${CYAN}getDirectMessages1${OFF};Get a list of direct messages with this user (AUTH) (AUTH)
   ${CYAN}getUser${OFF};Get a single user (AUTH) (AUTH)
   ${CYAN}getUserTags${OFF};List tags for a user (AUTH) (AUTH)
   ${CYAN}getUserTemplate${OFF};Get a single user template (AUTH) (AUTH)
   ${CYAN}getUserTemplates${OFF};List and search user templates (AUTH) (AUTH)
   ${CYAN}getUsers${OFF};List and search users (AUTH) (AUTH)
   ${CYAN}passwordReset${OFF};Choose a new password after a reset (AUTH) (AUTH)
+  ${CYAN}postUserMessage${OFF};Send a user message
   ${CYAN}registerUser${OFF};Register a new user (AUTH) (AUTH)
   ${CYAN}removeUserTag${OFF};Remove a tag from a user (AUTH) (AUTH)
   ${CYAN}setPassword${OFF};Set a user's password (AUTH) (AUTH)
@@ -5436,16 +5798,19 @@ read -d '' ops <<EOF
   ${CYAN}deleteGroup${OFF};Removes a group from the system (AUTH) (AUTH)
   ${CYAN}deleteGroupMemberTemplate${OFF};Delete an group member template (AUTH) (AUTH)
   ${CYAN}deleteGroupTemplate${OFF};Delete a group template (AUTH) (AUTH)
+  ${CYAN}disableGroupNotification${OFF};Enable or disable notification of group messages (AUTH) (AUTH)
   ${CYAN}getGroup${OFF};Loads a specific group's details (AUTH) (AUTH)
-  ${CYAN}getGroupAncestors${OFF};Get group ancestors
+  ${CYAN}getGroupAncestors${OFF};Get group ancestors (AUTH) (AUTH)
   ${CYAN}getGroupMember${OFF};Get a user from a group (AUTH) (AUTH)
   ${CYAN}getGroupMemberTemplate${OFF};Get a single group member template (AUTH) (AUTH)
   ${CYAN}getGroupMemberTemplates${OFF};List and search group member templates (AUTH) (AUTH)
   ${CYAN}getGroupMembers${OFF};Lists members of the group (AUTH) (AUTH)
+  ${CYAN}getGroupMessages${OFF};Get a list of group messages (AUTH) (AUTH)
   ${CYAN}getGroupTemplate${OFF};Get a single group template (AUTH) (AUTH)
   ${CYAN}getGroupTemplates${OFF};List and search group templates (AUTH) (AUTH)
   ${CYAN}getGroupsForUser${OFF};List groups a user is in (AUTH) (AUTH)
   ${CYAN}listGroups${OFF};List and search groups (AUTH) (AUTH)
+  ${CYAN}postGroupMessage${OFF};Send a group message
   ${CYAN}removeGroupMember${OFF};Removes a user from a group (AUTH) (AUTH)
   ${CYAN}updateGroup${OFF};Update a group (AUTH) (AUTH)
   ${CYAN}updateGroupMemberProperties${OFF};Change a user's order (AUTH) (AUTH)
@@ -5545,7 +5910,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "  -V,--version\t\t\t\tPrint API version"
     echo -e "  --about\t\t\t\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\t\t\t\tSpecify the host URL "
-echo -e "              \t\t\t\t(e.g. 'https://devsandbox.knetikcloud.com')"
+echo -e "              \t\t\t\t(e.g. 'https://sandbox.knetikcloud.com')"
 
     echo -e "  --force\t\t\t\tForce command invocation in spite of missing"
     echo -e "         \t\t\t\trequired parameters or wrong content type"
@@ -5609,12 +5974,46 @@ print_getOAuthToken_help() {
 }
 ##############################################################################
 #
+# Print help for addUser operation
+#
+##############################################################################
+print_addUser_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}addUser - Add a user to an occurrence${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "If called with no body, defaults to the user making the call." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}activity_occurrence_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the activity occurrence ${YELLOW}Specify as: activity_occurrence_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}test${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: false)${OFF} - if true, indicates that the user should NOT be added. This can be used to test for eligibility${YELLOW} Specify as: test=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}bypass_restrictions${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: false)${OFF} - if true, indicates that restrictions such as max player count should be ignored. Can only be used with ACTIVITIES_ADMIN${YELLOW} Specify as: bypass_restrictions=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The id of the user, or null for 'caller'" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Sucessful creation${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Attempted to join an occurrence while missing required entitlement${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for createActivity operation
 #
 ##############################################################################
 print_createActivity_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createActivity - Create an activity${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ACTIVITIES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The activity resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5641,7 +6040,7 @@ print_createActivityOccurrence_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createActivityOccurrence - Create a new activity occurrence. Ex: start a game${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Has to enforce extra rules if not used as an admin" | paste -sd' ' | fold -sw 80
+    echo -e "Has to enforce extra rules if not used as an admin. <br><br><b>Permissions Needed:</b> ACTIVITIES_USER or ACTIVITIES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}test${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: false)${OFF} - if true, indicates that the occurrence should NOT be created. This can be used to test for eligibility and valid settings${YELLOW} Specify as: test=value${OFF}" \
@@ -5670,7 +6069,7 @@ print_createActivityTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createActivityTemplate - Create a activity template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Activity Templates define a type of activity and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e "Activity Templates define a type of activity and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The activity template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5697,6 +6096,8 @@ print_deleteActivity_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteActivity - Delete an activity${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ACTIVITIES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the activity ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -5721,7 +6122,7 @@ print_deleteActivityTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteActivityTemplate - Delete a activity template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5748,6 +6149,8 @@ print_deleteActivityTemplate_help() {
 print_getActivities_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getActivities - List activity definitions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_template${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Filter for activities that are templates, or specifically not if false${YELLOW} Specify as: filter_template=value${OFF}" \
@@ -5784,6 +6187,8 @@ print_getActivity_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getActivity - Get a single activity${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the activity ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -5807,6 +6212,8 @@ print_getActivity_help() {
 print_getActivityOccurrenceDetails_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getActivityOccurrenceDetails - Load a single activity occurrence details${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ACTIVITIES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}activity_occurrence_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the activity occurrence ${YELLOW}Specify as: activity_occurrence_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5832,6 +6239,8 @@ print_getActivityTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getActivityTemplate - Get a single activity template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or ACTIVITIES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -5855,6 +6264,8 @@ print_getActivityTemplate_help() {
 print_getActivityTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getActivityTemplates - List and search activity templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or ACTIVITIES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -5885,10 +6296,12 @@ print_listActivityOccurrences_help() {
     echo ""
     echo -e "${BOLD}${WHITE}listActivityOccurrences - List activity occurrences${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ACTIVITIES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_activity${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for occurrences of the given activity ID${YELLOW} Specify as: filter_activity=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}filter_status${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for occurrences of the given activity ID${YELLOW} Specify as: filter_status=value${OFF}" \
+    echo -e "  * ${GREEN}filter_status${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for occurrences in the given status${YELLOW} Specify as: filter_status=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}filter_event${OFF} ${BLUE}[Integer]${OFF}${OFF} - Filter for occurrences played during the given event${YELLOW} Specify as: filter_event=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5915,12 +6328,43 @@ print_listActivityOccurrences_help() {
 }
 ##############################################################################
 #
+# Print help for removeUser operation
+#
+##############################################################################
+print_removeUser_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeUser - Remove a user from an occurrence${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}activity_occurrence_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the activity occurrence ${YELLOW}Specify as: activity_occurrence_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user, or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}ban${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: false)${OFF} - if true, indicates that the user should not be allowed to re-join. Can only be set by host or admin${YELLOW} Specify as: ban=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}bypass_restrictions${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: false)${OFF} - if true, indicates that restrictions such as current status should be ignored. Can only be used with ACTIVITIES_ADMIN${YELLOW} Specify as: bypass_restrictions=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for setActivityOccurrenceResults operation
 #
 ##############################################################################
 print_setActivityOccurrenceResults_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setActivityOccurrenceResults - Sets the status of an activity occurrence to FINISHED and logs metrics${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "In addition to user permissions requirements there is security based on the core_settings.results_trust setting." | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}activity_occurrence_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the activity occurrence ${YELLOW}Specify as: activity_occurrence_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5941,12 +6385,67 @@ print_setActivityOccurrenceResults_help() {
 }
 ##############################################################################
 #
+# Print help for setActivityOccurrenceSettings operation
+#
+##############################################################################
+print_setActivityOccurrenceSettings_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}setActivityOccurrenceSettings - Sets the settings of an activity occurrence${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}activity_occurrence_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the activity occurrence ${YELLOW}Specify as: activity_occurrence_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new settings" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for setUserStatus operation
+#
+##############################################################################
+print_setUserStatus_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}setUserStatus - Set a user's status within an occurrence${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}activity_occurrence_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the activity occurrence ${YELLOW}Specify as: activity_occurrence_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new status" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=202
+    echo -e "${result_color_table[${code:0:1}]}  202;Accepted${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateActivity operation
 #
 ##############################################################################
 print_updateActivity_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateActivity - Update an activity${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ACTIVITIES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the activity ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -5967,14 +6466,14 @@ print_updateActivity_help() {
 }
 ##############################################################################
 #
-# Print help for updateActivityOccurrence operation
+# Print help for updateActivityOccurrenceStatus operation
 #
 ##############################################################################
-print_updateActivityOccurrence_help() {
+print_updateActivityOccurrenceStatus_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}updateActivityOccurrence - Updated the status of an activity occurrence${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}updateActivityOccurrenceStatus - Update the status of an activity occurrence${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If setting to 'FINISHED' reward will be run based on current metrics that have been recorded already. Aternatively, see results endpoint to finish and record all metrics at once." | paste -sd' ' | fold -sw 80
+    echo -e "If setting to 'FINISHED' reward will be run based on current metrics that have been recorded already. Alternatively, see results endpoint to finish and record all metrics at once. Can be called by non-host participants if non_host_status_control is true" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}activity_occurrence_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the activity occurrence ${YELLOW}Specify as: activity_occurrence_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6002,6 +6501,8 @@ print_updateActivityTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateActivityTemplate - Update an activity template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The activity template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6028,7 +6529,7 @@ print_getDownloadURL_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getDownloadURL - Get a temporary signed S3 URL for download${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "To give access to files in your own S3 account, you will need to grant KnetikcCloud access to the file by adjusting your bucket policy accordingly. See S3 documentation for details." | paste -sd' ' | fold -sw 80
+    echo -e "To give access to files in your own S3 account, you will need to grant KnetikcCloud access to the file by adjusting your bucket policy accordingly. See S3 documentation for details. <br><br><b>Permissions Needed:</b> S3_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}bucket${OFF} ${BLUE}[String]${OFF}${OFF} - S3 bucket name${YELLOW} Specify as: bucket=value${OFF}" \
@@ -6059,7 +6560,7 @@ print_getSignedS3URL_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getSignedS3URL - Get a signed S3 URL for upload${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Requires the file name and file content type (i.e., 'video/mpeg'). Make a PUT to the resulting url to upload the file and use the cdn_url to retrieve it after." | paste -sd' ' | fold -sw 80
+    echo -e "Requires the file name and file content type (i.e., 'video/mpeg'). Make a PUT to the resulting url to upload the file and use the cdn_url to retrieve it after. <br><br><b>Permissions Needed:</b> S3_USER or S3_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filename${OFF} ${BLUE}[String]${OFF}${OFF} - The file name${YELLOW} Specify as: filename=value${OFF}" \
@@ -6088,6 +6589,8 @@ print_createClient_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createClient - Create a new client${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> CLIENTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The client resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -6113,6 +6616,8 @@ print_deleteClient_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteClient - Delete a client${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> CLIENTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}client_key${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The key of the client ${YELLOW}Specify as: client_key=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -6136,6 +6641,8 @@ print_deleteClient_help() {
 print_getClient_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getClient - Get a single client${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> CLIENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}client_key${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The key of the client ${YELLOW}Specify as: client_key=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6161,6 +6668,8 @@ print_getClientGrantTypes_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getClientGrantTypes - List available client grant types${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> CLIENTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -6182,6 +6691,8 @@ print_getClientGrantTypes_help() {
 print_getClients_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getClients - List and search clients${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> CLIENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -6212,6 +6723,8 @@ print_setClientGrantTypes_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setClientGrantTypes - Set grant types for a client${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> CLIENTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}client_key${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The key of the client ${YELLOW}Specify as: client_key=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - A list of unique grant types" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6237,6 +6750,8 @@ print_setClientGrantTypes_help() {
 print_setClientRedirectUris_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setClientRedirectUris - Set redirect uris for a client${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> CLIENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}client_key${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The key of the client ${YELLOW}Specify as: client_key=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6264,6 +6779,8 @@ print_updateClient_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateClient - Update a client${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> CLIENTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}client_key${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The key of the client ${YELLOW}Specify as: client_key=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The client resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6290,6 +6807,8 @@ print_createPermission_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createPermission - Create a new permission${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> PERMISSIONS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The permission resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -6314,6 +6833,8 @@ print_createPermission_help() {
 print_deletePermission_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deletePermission - Delete a permission${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> PERMISSIONS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}permission${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The permission value ${YELLOW}Specify as: permission=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6341,6 +6862,8 @@ print_getPermission_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getPermission - Get a single permission${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> PERMISSIONS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}permission${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The permission value ${YELLOW}Specify as: permission=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -6364,6 +6887,8 @@ print_getPermission_help() {
 print_getPermissions_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getPermissions - List and search permissions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> PERMISSIONS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -6394,6 +6919,8 @@ print_updatePermission_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updatePermission - Update a permission${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> PERMISSIONS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}permission${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The permission value ${YELLOW}Specify as: permission=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The permission resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6420,6 +6947,8 @@ print_createRole_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createRole - Create a new role${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ROLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The role resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -6444,6 +6973,8 @@ print_createRole_help() {
 print_deleteRole_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteRole - Delete a role${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ROLES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}role${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The role value ${YELLOW}Specify as: role=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6471,6 +7002,8 @@ print_getClientRoles_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getClientRoles - Get roles for a client${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ROLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}client_key${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The client key ${YELLOW}Specify as: client_key=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -6495,6 +7028,8 @@ print_getRole_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getRole - Get a single role${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ROLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}role${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The role value ${YELLOW}Specify as: role=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -6518,6 +7053,8 @@ print_getRole_help() {
 print_getRoles_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getRoles - List and search roles${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ROLES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_name${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for roles that have a name starting with specified string${YELLOW} Specify as: filter_name=value${OFF}" \
@@ -6552,6 +7089,8 @@ print_getUserRoles_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserRoles - Get roles for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ROLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The user's id ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -6575,6 +7114,8 @@ print_getUserRoles_help() {
 print_setClientRoles_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setClientRoles - Set roles for a client${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ROLES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}client_key${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The client key ${YELLOW}Specify as: client_key=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6602,6 +7143,8 @@ print_setPermissionsForRole_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setPermissionsForRole - Set permissions for a role${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ROLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}role${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The role value ${YELLOW}Specify as: role=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The list of unique permissions" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6627,6 +7170,8 @@ print_setPermissionsForRole_help() {
 print_setUserRoles_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setUserRoles - Set roles for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ROLES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The user's id ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6654,6 +7199,8 @@ print_updateRole_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateRole - Update a role${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ROLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}role${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The role value ${YELLOW}Specify as: role=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The role resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6679,6 +7226,8 @@ print_updateRole_help() {
 print_deleteTokens_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteTokens - Delete tokens by username, client id, or both${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TOKENS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}username${OFF} ${BLUE}[String]${OFF}${OFF} - The username of the user${YELLOW} Specify as: username=value${OFF}" \
@@ -6707,6 +7256,8 @@ print_getToken_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getToken - Get a single token by username and client id${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TOKENS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}username${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The username of the user ${YELLOW}Specify as: username=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}client_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the client ${YELLOW}Specify as: client_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6732,7 +7283,7 @@ print_getTokens_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getTokens - List usernames and client ids${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Token value not shown" | paste -sd' ' | fold -sw 80
+    echo -e "Token value not shown. <br><br><b>Permissions Needed:</b> TOKENS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_client_id${OFF} ${BLUE}[String]${OFF}${OFF} - Filters for token whose client id matches provided string${YELLOW} Specify as: filter_client_id=value${OFF}" \
@@ -6767,6 +7318,8 @@ print_getBREActions_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBREActions - Get a list of available actions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_ACTIONS_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_category${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for actions that are within a specific category${YELLOW} Specify as: filter_category=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6798,7 +7351,7 @@ print_createBRECategoryTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createBRECategoryTemplate - Create a BRE category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Templates define a type of BRE category and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e "Templates define a type of BRE category and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The category template to create" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6825,7 +7378,7 @@ print_deleteBRECategoryTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteBRECategoryTemplate - Delete a BRE category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6852,6 +7405,8 @@ print_deleteBRECategoryTemplate_help() {
 print_getBRECategories_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBRECategories - List categories${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_CATEGORIES_USER" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -6880,6 +7435,8 @@ print_getBRECategory_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBRECategory - Get a single category${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_CATEGORIES_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The category name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -6904,6 +7461,8 @@ print_getBRECategoryTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBRECategoryTemplate - Get a single BRE category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or BRE_RULE_ENGINE_CATEGORIES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -6927,6 +7486,8 @@ print_getBRECategoryTemplate_help() {
 print_getBRECategoryTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBRECategoryTemplates - List and search BRE category templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or BRE_RULE_ENGINE_CATEGORIES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -6957,6 +7518,8 @@ print_updateBRECategory_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateBRECategory - Update a category${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_CATEGORIES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The category name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The updated BRE category information" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6982,6 +7545,8 @@ print_updateBRECategory_help() {
 print_updateBRECategoryTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateBRECategoryTemplate - Update a BRE category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7009,7 +7574,7 @@ print_sendBREEvent_help() {
     echo ""
     echo -e "${BOLD}${WHITE}sendBREEvent - Fire a new event, based on an existing trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Parameters within the event must match names and types from the trigger. Actual rule execution is asynchornous.  Returns request id, which will be used as the event id" | paste -sd' ' | fold -sw 80
+    echo -e "Parameters within the event must match names and types from the trigger. Actual rule execution is asynchornous.  Returns request id, which will be used as the event id. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_EVENTS_USER" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The BRE event object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7036,6 +7601,8 @@ print_getBREExpression_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBREExpression - Lookup a specific expression${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_EXPRESSIONS_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - Specifiy the type of expression as returned by the listing endpoint ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -7058,9 +7625,9 @@ print_getBREExpression_help() {
 ##############################################################################
 print_getBREExpressions_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getBREExpressions - Get a list of supported expressions to use in conditions or actions.${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getBREExpressions - Get a list of supported expressions to use in conditions or actions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Each resource contains a type and a definition that are read-only, all the other fields must be provided when using the expression in a rule." | paste -sd' ' | fold -sw 80
+    echo -e "Each resource contains a type and a definition that are read-only, all the other fields must be provided when using the expression in a rule. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_EXPRESSIONS_USER" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_type_group${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for expressions by type group${YELLOW} Specify as: filter_type_group=value${OFF}" \
@@ -7087,6 +7654,8 @@ print_getExpressionAsText_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getExpressionAsText - Returns the textual representation of an expression${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_EXPRESSIONS_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The expression resource to be converted" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -7112,7 +7681,7 @@ print_createBREGlobal_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createBREGlobal - Create a global definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Once created you can then use in a custom rule. Note that global definitions cannot be modified or deleted if in use." | paste -sd' ' | fold -sw 80
+    echo -e "Once created you can then use in a custom rule. Note that global definitions cannot be modified or deleted if in use. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_GLOBALS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The BRE global resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7139,7 +7708,7 @@ print_deleteBREGlobal_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteBREGlobal - Delete a global${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "May fail if there are existing rules against it. Cannot delete core globals" | paste -sd' ' | fold -sw 80
+    echo -e "May fail if there are existing rules against it. Cannot delete core globals. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_GLOBALS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the global definition ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7165,6 +7734,8 @@ print_getBREGlobal_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBREGlobal - Get a single global definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_GLOBALS_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the global definition ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -7188,6 +7759,8 @@ print_getBREGlobal_help() {
 print_getBREGlobals_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBREGlobals - List global definitions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_GLOBALS_USER" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_system${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Filter for globals that are system globals when true, or not when false. Leave off for both mixed${YELLOW} Specify as: filter_system=value${OFF}" \
@@ -7218,7 +7791,7 @@ print_updateBREGlobal_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateBREGlobal - Update a global definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "May fail if new parameters mismatch requirements of existing rules. Cannot update core globals" | paste -sd' ' | fold -sw 80
+    echo -e "May fail if new parameters mismatch requirements of existing rules. Cannot update core globals. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_GLOBALS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the global definition ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7246,7 +7819,7 @@ print_createBRERule_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createBRERule - Create a rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Rules define which actions to run when a given event verifies the specified condition. Full list of predicates and other type of expressions can be found at GET /bre/expressions/" | paste -sd' ' | fold -sw 80
+    echo -e "Rules define which actions to run when a given event verifies the specified condition. Full list of predicates and other type of expressions can be found at GET /bre/expressions/. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The BRE rule object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7273,7 +7846,7 @@ print_deleteBRERule_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteBRERule - Delete a rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "May fail if there are existing rules against it. Cannot delete core rules" | paste -sd' ' | fold -sw 80
+    echo -e "May fail if there are existing rules against it. Cannot delete core rules. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the rule ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7298,6 +7871,8 @@ print_deleteBRERule_help() {
 print_getBREExpressionAsString_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBREExpressionAsString - Returns a string representation of the provided expression${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The expression" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7324,6 +7899,8 @@ print_getBRERule_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBRERule - Get a single rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the rule ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -7347,6 +7924,8 @@ print_getBRERule_help() {
 print_getBRERules_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBRERules - List rules${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_name${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for rules containing the given name${YELLOW} Specify as: filter_name=value${OFF}" \
@@ -7387,7 +7966,7 @@ print_setBRERule_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setBRERule - Enable or disable a rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is helpful for turning off systems rules which cannot be deleted or modified otherwise" | paste -sd' ' | fold -sw 80
+    echo -e "This is helpful for turning off systems rules which cannot be deleted or modified otherwise. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the rule ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7415,7 +7994,7 @@ print_updateBRERule_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateBRERule - Update a rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Cannot update system rules" | paste -sd' ' | fold -sw 80
+    echo -e "Cannot update system rules. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the rule ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7443,7 +8022,7 @@ print_createBRETrigger_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createBRETrigger - Create a trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Customer added triggers will not be fired automatically or have rules associated with them by default. Custom rules must be added to get use from the trigger and it must then be fired from the outside. See the Bre Event services" | paste -sd' ' | fold -sw 80
+    echo -e "Customer added triggers will not be fired automatically or have rules associated with them by default. Custom rules must be added to get use from the trigger and it must then be fired from the outside. See the Bre Event services. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_TRIGGERS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The BRE trigger resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7470,7 +8049,7 @@ print_deleteBRETrigger_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteBRETrigger - Delete a trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "May fail if there are existing rules against it. Cannot delete core triggers" | paste -sd' ' | fold -sw 80
+    echo -e "May fail if there are existing rules against it. Cannot delete core triggers. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_TRIGGERS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}event_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The trigger event name ${YELLOW}Specify as: event_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7496,6 +8075,8 @@ print_getBRETrigger_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBRETrigger - Get a single trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_TRIGGERS_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}event_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The trigger event name ${YELLOW}Specify as: event_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -7519,6 +8100,8 @@ print_getBRETrigger_help() {
 print_getBRETriggers_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBRETriggers - List triggers${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_TRIGGERS_USER" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_system${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Filter for triggers that are system triggers when true, or not when false. Leave off for both mixed${YELLOW} Specify as: filter_system=value${OFF}" \
@@ -7557,7 +8140,7 @@ print_updateBRETrigger_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateBRETrigger - Update a trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "May fail if new parameters mismatch requirements of existing rules. Cannot update core triggers" | paste -sd' ' | fold -sw 80
+    echo -e "May fail if new parameters mismatch requirements of existing rules. Cannot update core triggers. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_TRIGGERS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}event_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The trigger event name ${YELLOW}Specify as: event_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7585,7 +8168,7 @@ print_getBREVariableTypes_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBREVariableTypes - Get a list of variable types available${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Types include integer, string, user and invoice. These are used to qualify trigger parameters and action variables with strong typing." | paste -sd' ' | fold -sw 80
+    echo -e "Types include integer, string, user and invoice. These are used to qualify trigger parameters and action variables with strong typing. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_VARIABLES_USER" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -7609,7 +8192,7 @@ print_getBREVariableValues_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBREVariableValues - List valid values for a type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Used to lookup users to fill in a user constant for example. Only types marked as enumerable are suppoorted here." | paste -sd' ' | fold -sw 80
+    echo -e "Used to lookup users to fill in a user constant for example. Only types marked as enumerable are suppoorted here. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_VARIABLES_USER" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The name of the type ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7641,6 +8224,8 @@ print_addChallengeToCampaign_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addChallengeToCampaign - Add a challenge to a campaign${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> CAMPAIGNS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the campaign ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The id of the challenge" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7667,6 +8252,8 @@ print_createCampaign_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createCampaign - Create a campaign${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> CAMPAIGNS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The campaign resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -7692,7 +8279,7 @@ print_createCampaignTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createCampaignTemplate - Create a campaign template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Campaign Templates define a type of campaign and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e "Campaign Templates define a type of campaign and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The campaign template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7719,6 +8306,8 @@ print_deleteCampaign_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteCampaign - Delete a campaign${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> CAMPAIGNS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The campaign id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -7743,7 +8332,7 @@ print_deleteCampaignTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteCampaignTemplate - Delete a campaign template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7771,6 +8360,8 @@ print_getCampaign_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCampaign - Returns a single campaign${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The campaign id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -7794,6 +8385,8 @@ print_getCampaign_help() {
 print_getCampaignChallenges_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCampaignChallenges - List the challenges associated with a campaign${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The campaign id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7829,6 +8422,8 @@ print_getCampaignTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCampaignTemplate - Get a single campaign template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or CAMPAIGNS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -7852,6 +8447,8 @@ print_getCampaignTemplate_help() {
 print_getCampaignTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCampaignTemplates - List and search campaign templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or CAMPAIGNS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -7881,6 +8478,8 @@ print_getCampaignTemplates_help() {
 print_getCampaigns_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCampaigns - List and search campaigns${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_active${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Filter for campaigns that are active${YELLOW} Specify as: filter_active=value${OFF}" \
@@ -7913,6 +8512,8 @@ print_removeChallengeFromCampaign_help() {
     echo ""
     echo -e "${BOLD}${WHITE}removeChallengeFromCampaign - Remove a challenge from a campaign${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> CAMPAIGNS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}campaign_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The campaign id ${YELLOW}Specify as: campaign_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The challenge id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7937,6 +8538,8 @@ print_removeChallengeFromCampaign_help() {
 print_updateCampaign_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateCampaign - Update a campaign${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> CAMPAIGNS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The campaign id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7964,6 +8567,8 @@ print_updateCampaignTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateCampaignTemplate - Update an campaign template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The campaign template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7990,7 +8595,7 @@ print_createChallenge_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createChallenge - Create a challenge${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Challenges do not run on their own.  They must be added to a campaign before events will spawn." | paste -sd' ' | fold -sw 80
+    echo -e "Challenges do not run on their own.  They must be added to a campaign before events will spawn. <br><br><b>Permissions Needed:</b> CHALLENGES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The challenge resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8016,6 +8621,8 @@ print_createChallenge_help() {
 print_createChallengeActivity_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createChallengeActivity - Create a challenge activity${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> CHALLENGES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}challenge_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The challenge id ${YELLOW}Specify as: challenge_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8045,7 +8652,7 @@ print_createChallengeActivityTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createChallengeActivityTemplate - Create a challenge activity template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Challenge Activity Templates define a type of challenge activity and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e "Challenge Activity Templates define a type of challenge activity and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The challengeActivity template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8072,7 +8679,7 @@ print_createChallengeTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createChallengeTemplate - Create a challenge template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Challenge Templates define a type of challenge and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e "Challenge Templates define a type of challenge and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The challenge template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8099,6 +8706,8 @@ print_deleteChallenge_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteChallenge - Delete a challenge${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> CHALLENGES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The challenge id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -8123,7 +8732,7 @@ print_deleteChallengeActivity_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteChallengeActivity - Delete a challenge activity${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "A challenge can have multiple instances of the same activity and thus the id used is of the specific entry within the challenge" | paste -sd' ' | fold -sw 80
+    echo -e "A challenge can have multiple instances of the same activity and thus the id used is of the specific entry within the challenge. <br><br><b>Permissions Needed:</b> CHALLENGES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The challenge_activity id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8150,7 +8759,7 @@ print_deleteChallengeActivityTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteChallengeActivityTemplate - Delete a challenge activity template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8178,6 +8787,8 @@ print_deleteChallengeEvent_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteChallengeEvent - Delete a challenge event${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> CHALLENGES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The challenge event id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -8202,7 +8813,7 @@ print_deleteChallengeTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteChallengeTemplate - Delete a challenge template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8230,6 +8841,8 @@ print_getChallenge_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getChallenge - Retrieve a challenge${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The challenge id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -8253,6 +8866,8 @@ print_getChallenge_help() {
 print_getChallengeActivities_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getChallengeActivities - List and search challenge activities${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}challenge_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The challenge id ${YELLOW}Specify as: challenge_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8284,7 +8899,7 @@ print_getChallengeActivity_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getChallengeActivity - Get a single challenge activity${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "A challenge can have multiple instances of the same activity and thus the id used is of the specific entry within the challenge" | paste -sd' ' | fold -sw 80
+    echo -e "A challenge can have multiple instances of the same activity and thus the id used is of the specific entry within the challenge. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The challenge_activity id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8311,6 +8926,8 @@ print_getChallengeActivityTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getChallengeActivityTemplate - Get a single challenge activity template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or CHALLENGES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -8334,6 +8951,8 @@ print_getChallengeActivityTemplate_help() {
 print_getChallengeActivityTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getChallengeActivityTemplates - List and search challenge activity templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or CHALLENGES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -8364,6 +8983,8 @@ print_getChallengeEvent_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getChallengeEvent - Retrieve a single challenge event details${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The challenge event id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -8387,6 +9008,8 @@ print_getChallengeEvent_help() {
 print_getChallengeEvents_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getChallengeEvents - Retrieve a list of challenge events${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_start_date${OFF} ${BLUE}[String]${OFF}${OFF} - A comma separated string without spaces.  First value is the operator to search on, second value is the event start date, a unix timestamp in seconds.  Allowed operators: (GT, LT, EQ, GOE, LOE).${YELLOW} Specify as: filter_start_date=value${OFF}" \
@@ -8425,6 +9048,8 @@ print_getChallengeTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getChallengeTemplate - Get a single challenge template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or CHALLENGES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -8448,6 +9073,8 @@ print_getChallengeTemplate_help() {
 print_getChallengeTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getChallengeTemplates - List and search challenge templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or CHALLENGES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -8477,6 +9104,8 @@ print_getChallengeTemplates_help() {
 print_getChallenges_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getChallenges - Retrieve a list of challenges${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_active_campaign${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Filter for challenges that are tied to active campaigns${YELLOW} Specify as: filter_active_campaign=value${OFF}" \
@@ -8513,7 +9142,7 @@ print_updateChallenge_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateChallenge - Update a challenge${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If the challenge is a copy, changes will propagate to all the related challenges" | paste -sd' ' | fold -sw 80
+    echo -e "If the challenge is a copy, changes will propagate to all the related challenges. <br><br><b>Permissions Needed:</b> CHALLENGES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The challenge id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8541,7 +9170,7 @@ print_updateChallengeActivity_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateChallengeActivity - Update a challenge activity${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "A challenge can have multiple instances of the same activity and thus the id used is of the specific entry within the challenge" | paste -sd' ' | fold -sw 80
+    echo -e "A challenge can have multiple instances of the same activity and thus the id used is of the specific entry within the challenge. <br><br><b>Permissions Needed:</b> CHALLENGES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The challenge_activity id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8572,6 +9201,8 @@ print_updateChallengeActivityTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateChallengeActivityTemplate - Update an challenge activity template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The challengeActivity template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8597,6 +9228,8 @@ print_updateChallengeActivityTemplate_help() {
 print_updateChallengeTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateChallengeTemplate - Update a challenge template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8624,6 +9257,8 @@ print_createRewardSet_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createRewardSet - Create a reward set${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> REWARDS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The reward set resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -8649,6 +9284,8 @@ print_deleteRewardSet_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteRewardSet - Delete a reward set${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> REWARDS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The reward id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -8673,6 +9310,8 @@ print_getRewardSet_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getRewardSet - Get a single reward set${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The reward id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -8696,6 +9335,8 @@ print_getRewardSet_help() {
 print_getRewardSets_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getRewardSets - List and search reward sets${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -8726,6 +9367,8 @@ print_updateRewardSet_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateRewardSet - Update a reward set${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> REWARDS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The reward id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The reward set resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8752,6 +9395,8 @@ print_createCategory_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createCategory - Create a new category${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> CATEGORIES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The category to create" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -8777,7 +9422,7 @@ print_createCategoryTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createCategoryTemplate - Create a category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Templates define a type of category and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e "Templates define a type of category and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The template to create" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8804,6 +9449,8 @@ print_deleteCategory_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteCategory - Delete an existing category${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> CATEGORIES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the category to be deleted ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -8828,7 +9475,7 @@ print_deleteCategoryTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteCategoryTemplate - Delete a category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8855,6 +9502,8 @@ print_deleteCategoryTemplate_help() {
 print_getCategories_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCategories - List and search categories with optional filters${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_search${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for categories whose names begin with provided string${YELLOW} Specify as: filter_search=value${OFF}" \
@@ -8889,6 +9538,8 @@ print_getCategory_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCategory - Get a single category${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the category to retrieve ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -8913,6 +9564,8 @@ print_getCategoryTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCategoryTemplate - Get a single category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or CATEGORIES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -8936,6 +9589,8 @@ print_getCategoryTemplate_help() {
 print_getCategoryTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCategoryTemplates - List and search category templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or CATEGORIES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -8966,6 +9621,8 @@ print_getTags_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getTags - List all trivia tags in the system${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -8993,6 +9650,8 @@ print_updateCategory_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateCategory - Update an existing category${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> CATEGORIES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the category ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The category to update" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9019,6 +9678,8 @@ print_updateCategoryTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateCategoryTemplate - Update a category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The updated template information" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9038,12 +9699,356 @@ print_updateCategoryTemplate_help() {
 }
 ##############################################################################
 #
+# Print help for acknowledgeChatMessage operation
+#
+##############################################################################
+print_acknowledgeChatMessage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}acknowledgeChatMessage - Acknowledge number of messages in a thread${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The thread id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The amount of messages read" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for addChatMessageBlacklist operation
+#
+##############################################################################
+print_addChatMessageBlacklist_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}addChatMessageBlacklist - Add a user to a chat message blacklist${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> CHAT_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}blacklisted_user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The user id to blacklist ${YELLOW}Specify as: blacklisted_user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The user id or 'me' ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteChatMessage operation
+#
+##############################################################################
+print_deleteChatMessage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteChatMessage - Delete a message${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> CHAT_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The message id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for editChatMessage operation
+#
+##############################################################################
+print_editChatMessage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}editChatMessage - Edit your message${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The message id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The chat message resource" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getChatMessage operation
+#
+##############################################################################
+print_getChatMessage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getChatMessage - Get a message${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> CHAT_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The message id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getChatMessageBlacklist operation
+#
+##############################################################################
+print_getChatMessageBlacklist_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getChatMessageBlacklist - Get a list of blocked users for chat messaging${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> CHAT_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The user id or 'me' ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getChatThreads operation
+#
+##############################################################################
+print_getChatThreads_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getChatThreads - List your threads${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF}${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getDirectMessages operation
+#
+##############################################################################
+print_getDirectMessages_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDirectMessages - List messages with a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The user id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF}${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getThreadMessages operation
+#
+##############################################################################
+print_getThreadMessages_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getThreadMessages - List messages in a thread${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> CHAT_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The thread id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF}${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getTopicMessages operation
+#
+##############################################################################
+print_getTopicMessages_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTopicMessages - List messages in a topic${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> CHAT_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The topic id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF}${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for removeChatBlacklist operation
+#
+##############################################################################
+print_removeChatBlacklist_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}removeChatBlacklist - Remove a user from a blacklist${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> CHAT_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}blacklisted_user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The user id to blacklist ${YELLOW}Specify as: blacklisted_user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The user id or 'me' ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for sendMessage operation
+#
+##############################################################################
+print_sendMessage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}sendMessage - Send a message${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The chat message resource" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for createConfig operation
 #
 ##############################################################################
 print_createConfig_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createConfig - Create a new config${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TOPICS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The config object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9070,6 +10075,8 @@ print_deleteConfig_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteConfig - Delete an existing config${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> CONFIGS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The config name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -9094,7 +10101,7 @@ print_getConfig_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getConfig - Get a single config${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Only configs that are public readable will be shown without admin access" | paste -sd' ' | fold -sw 80
+    echo -e "Only configs that are public readable will be shown without admin access. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The config name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9120,6 +10127,8 @@ print_getConfigs_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getConfigs - List and search configs${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_search${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for configs whose name contains the given string${YELLOW} Specify as: filter_search=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9127,7 +10136,7 @@ print_getConfigs_help() {
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned${YELLOW} Specify as: page=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF} ${CYAN}(default: 1)${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
+    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF}${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -9150,6 +10159,8 @@ print_getConfigs_help() {
 print_updateConfig_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateConfig - Update an existing config${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> CONFIGS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The config name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9177,7 +10188,7 @@ print_createArticle_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createArticle - Create a new article${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Articles are blobs of text with titles, a category and assets. Formatting and display of the text is in the hands of the front end." | paste -sd' ' | fold -sw 80
+    echo -e "Articles are blobs of text with titles, a category and assets. Formatting and display of the text is in the hands of the front end.<br><br><b>Permissions:</b> ARTICLES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new article" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9204,7 +10215,7 @@ print_createArticleTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createArticleTemplate - Create an article template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Article Templates define a type of article and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e "Article Templates define a type of article and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The article template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9231,6 +10242,8 @@ print_deleteArticle_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteArticle - Delete an existing article${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ARTICLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The article id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -9255,7 +10268,7 @@ print_deleteArticleTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteArticleTemplate - Delete an article template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9283,6 +10296,8 @@ print_getArticle_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getArticle - Get a single article${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The article id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -9307,6 +10322,8 @@ print_getArticleTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getArticleTemplate - Get a single article template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or ARTICLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -9330,6 +10347,8 @@ print_getArticleTemplate_help() {
 print_getArticleTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getArticleTemplates - List and search article templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or ARTICLES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -9360,7 +10379,7 @@ print_getArticles_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getArticles - List and search articles${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Get a list of articles with optional filtering. Assets will not be filled in on the resources returned. Use 'Get a single article' to retrieve the full resource with assets for a given item as needed." | paste -sd' ' | fold -sw 80
+    echo -e "Get a list of articles with optional filtering. Assets will not be filled in on the resources returned. Use 'Get a single article' to retrieve the full resource with assets for a given item as needed. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_active_only${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Filter for articles that are active (true) or inactive (false)${YELLOW} Specify as: filter_active_only=value${OFF}" \
@@ -9403,6 +10422,8 @@ print_updateArticle_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateArticle - Update an existing article${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ARTICLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The article id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The article object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9428,6 +10449,8 @@ print_updateArticle_help() {
 print_updateArticleTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateArticleTemplate - Update an article template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9455,6 +10478,8 @@ print_addComment_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addComment - Add a new comment${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> COMMENTS_USER or COMMENTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The comment to be added" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -9480,6 +10505,8 @@ print_deleteComment_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteComment - Delete a comment${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> COMMENTS_USER or COMMENTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The comment id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -9504,6 +10531,8 @@ print_getComment_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getComment - Return a comment${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The comment id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -9527,6 +10556,8 @@ print_getComment_help() {
 print_getComments_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getComments - Returns a page of comments${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}context${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - Get comments by context type${YELLOW} Specify as: context=value${OFF}" \
@@ -9559,6 +10590,8 @@ print_updateComment_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateComment - Update a comment${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> COMMENTS_USER or COMMENTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The comment id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The comment content" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9584,6 +10617,8 @@ print_updateComment_help() {
 print_answerPoll_help() {
     echo ""
     echo -e "${BOLD}${WHITE}answerPoll - Add your vote to a poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> POLLS_ADMIN or POLLS_USER" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9611,7 +10646,7 @@ print_createPoll_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createPoll - Create a new poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Polls are blobs of text with titles, a category and assets. Formatting and display of the text is in the hands of the front end." | paste -sd' ' | fold -sw 80
+    echo -e "Polls are blobs of text with titles, a category and assets. Formatting and display of the text is in the hands of the front end. <br><br><b>Permissions Needed:</b> POLLS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The poll object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9638,7 +10673,7 @@ print_createPollTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createPollTemplate - Create a poll template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Poll templates define a type of poll and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e "Poll templates define a type of poll and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The poll template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9665,6 +10700,8 @@ print_deletePoll_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deletePoll - Delete an existing poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> POLLS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -9689,7 +10726,7 @@ print_deletePollTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deletePollTemplate - Delete a poll template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9717,6 +10754,8 @@ print_getPoll_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getPoll - Get a single poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -9740,6 +10779,8 @@ print_getPoll_help() {
 print_getPollAnswer_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getPollAnswer - Get poll answer${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> POLLS_ADMIN or POLLS_USER" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9765,6 +10806,8 @@ print_getPollTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getPollTemplate - Get a single poll template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or POLLS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -9788,6 +10831,8 @@ print_getPollTemplate_help() {
 print_getPollTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getPollTemplates - List and search poll templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or POLLS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -9818,7 +10863,7 @@ print_getPolls_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getPolls - List and search polls${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Get a list of polls with optional filtering. Assets will not be filled in on the resources returned. Use 'Get a single poll' to retrieve the full resource with assets for a given item as needed." | paste -sd' ' | fold -sw 80
+    echo -e "Get a list of polls with optional filtering. Assets will not be filled in on the resources returned. Use 'Get a single poll' to retrieve the full resource with assets for a given item as needed. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_category${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for polls from a specific category by id${YELLOW} Specify as: filter_category=value${OFF}" \
@@ -9855,6 +10900,8 @@ print_updatePoll_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updatePoll - Update an existing poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> POLLS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The poll object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9880,6 +10927,8 @@ print_updatePoll_help() {
 print_updatePollTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updatePollTemplate - Update a poll template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -9907,6 +10956,8 @@ print_createCurrency_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createCurrency - Create a currency${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> CURRENCIES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The currency object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -9932,6 +10983,8 @@ print_deleteCurrency_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteCurrency - Delete a currency${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> CURRENCIES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}code${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The currency code ${YELLOW}Specify as: code=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -9955,6 +11008,8 @@ print_deleteCurrency_help() {
 print_getCurrencies_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCurrencies - List and search currencies${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_default${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Filter for the one currency that is set as default (true), or all that are not (false)${YELLOW} Specify as: filter_default=value${OFF}" \
@@ -9991,6 +11046,8 @@ print_getCurrency_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCurrency - Get a single currency${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}code${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The currency code ${YELLOW}Specify as: code=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -10014,6 +11071,8 @@ print_getCurrency_help() {
 print_updateCurrency_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateCurrency - Update a currency${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> CURRENCIES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}code${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The currency code ${YELLOW}Specify as: code=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10041,6 +11100,8 @@ print_addDeviceUsers_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addDeviceUsers - Add device users${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> DEVICES_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - userResources" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10067,6 +11128,8 @@ print_createDevice_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createDevice - Create a device${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - device" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -10092,7 +11155,7 @@ print_createDeviceTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createDeviceTemplate - Create a device template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Device Templates define a type of device and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e "Device Templates define a type of device and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The device template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10119,6 +11182,8 @@ print_deleteDevice_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteDevice - Delete a device${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> DEVICES_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -10143,7 +11208,7 @@ print_deleteDeviceTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteDeviceTemplate - Delete an device template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10171,6 +11236,8 @@ print_deleteDeviceUser_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteDeviceUser - Delete a device user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> DEVICES_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the device ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The user id of the device user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10195,6 +11262,8 @@ print_deleteDeviceUser_help() {
 print_deleteDeviceUsers_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteDeviceUsers - Delete all device users${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> DEVICES_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the device ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10222,6 +11291,8 @@ print_getDevice_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getDevice - Get a single device${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> DEVICES_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -10246,6 +11317,8 @@ print_getDeviceTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getDeviceTemplate - Get a single device template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> description" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -10269,6 +11342,8 @@ print_getDeviceTemplate_help() {
 print_getDeviceTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getDeviceTemplates - List and search device templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or DEVICES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -10299,7 +11374,7 @@ print_getDevices_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getDevices - List and search devices${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Get a list of devices with optional filtering" | paste -sd' ' | fold -sw 80
+    echo -e "Get a list of devices with optional filtering. <br><br><b>Permissions Needed:</b> DEVICES_ADMIN or user" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_make${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for devices with specified make${YELLOW} Specify as: filter_make=value${OFF}" \
@@ -10342,6 +11417,8 @@ print_updateDevice_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateDevice - Update a device${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> CUSTOMERS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - device" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10367,6 +11444,8 @@ print_updateDevice_help() {
 print_updateDeviceTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateDeviceTemplate - Update an device template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10394,6 +11473,8 @@ print_addDisposition_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addDisposition - Add a new disposition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> DISPOSITIONS_USER and user, or DISPOSITIONS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new disposition record" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -10419,6 +11500,8 @@ print_deleteDisposition_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteDisposition - Delete a disposition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> DISPOSITIONS_USER and owner, or DISPOSITIONS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the disposition record ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -10443,6 +11526,8 @@ print_getDisposition_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getDisposition - Returns a disposition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the disposition record ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -10466,6 +11551,8 @@ print_getDisposition_help() {
 print_getDispositionCounts_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getDispositionCounts - Returns a list of disposition counts${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_context${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for dispositions within a context type (games, articles, polls, etc). Optionally with a specific id like filter_context=video:47${YELLOW} Specify as: filter_context=value${OFF}" \
@@ -10493,6 +11580,8 @@ print_getDispositionCounts_help() {
 print_getDispositions_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getDispositions - Returns a page of dispositions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_context${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for dispositions within a context type (games, articles, polls, etc). Optionally with a specific id like filter_context=video:47${YELLOW} Specify as: filter_context=value${OFF}" \
@@ -10527,6 +11616,8 @@ print_createFulfillmentType_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createFulfillmentType - Create a fulfillment type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> FULFILLMENT_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The fulfillment type" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -10552,6 +11643,8 @@ print_deleteFulfillmentType_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteFulfillmentType - Delete a fulfillment type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> FULFILLMENT_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -10576,6 +11669,8 @@ print_getFulfillmentType_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getFulfillmentType - Get a single fulfillment type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -10599,6 +11694,8 @@ print_getFulfillmentType_help() {
 print_getFulfillmentTypes_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getFulfillmentTypes - List and search fulfillment types${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -10629,6 +11726,8 @@ print_updateFulfillmentType_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateFulfillmentType - Update a fulfillment type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> FULFILLMENT_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The fulfillment type" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10655,7 +11754,7 @@ print_createAchievement_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createAchievement - Create a new achievement definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If the definition contains a trigger event name, a BRE rule is created, so that tracking logic is executed when the triggering event occurs. If no trigger event name is specified, the user's achievement status must manually be updated via the API." | paste -sd' ' | fold -sw 80
+    echo -e "If the definition contains a trigger event name, a BRE rule is created, so that tracking logic is executed when the triggering event occurs. If no trigger event name is specified, the user's achievement status must manually be updated via the API. <br><br><b>Permissions Needed:</b> ACHIEVEMENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The achievement definition" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10682,7 +11781,7 @@ print_createAchievementTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createAchievementTemplate - Create an achievement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Achievement templates define a type of achievement and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e "Achievement templates define a type of achievement and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The achievement template to be created" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10709,7 +11808,7 @@ print_deleteAchievement_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteAchievement - Delete an achievement definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Will also disable the associated generated rule, if any." | paste -sd' ' | fold -sw 80
+    echo -e "Will also disable the associated generated rule, if any. <br><br><b>Permissions Needed:</b> ACHIEVEMENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The name of the achievement ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10735,7 +11834,7 @@ print_deleteAchievementTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteAchievementTemplate - Delete an achievement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10763,6 +11862,8 @@ print_getAchievement_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getAchievement - Get a single achievement definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ACHIEVEMENTS_ADMIN or ACHIEVEMENTS_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The name of the achievement ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -10787,6 +11888,8 @@ print_getAchievementTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getAchievementTemplate - Get a single achievement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or ACHIEVEMENTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -10810,6 +11913,8 @@ print_getAchievementTemplate_help() {
 print_getAchievementTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getAchievementTemplates - List and search achievement templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or ACHIEVEMENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -10840,6 +11945,8 @@ print_getAchievementTriggers_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getAchievementTriggers - Get the list of triggers that can be used to trigger an achievement progress update${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ACHIEVEMENTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -10861,6 +11968,8 @@ print_getAchievementTriggers_help() {
 print_getAchievements_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getAchievements - Get all achievement definitions in the system${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ACHIEVEMENTS_ADMIN or ACHIEVEMENTS_USER" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_tagset${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for achievements with specified tags (separated by comma)${YELLOW} Specify as: filter_tagset=value${OFF}" \
@@ -10899,7 +12008,7 @@ print_getDerivedAchievements_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getDerivedAchievements - Get a list of derived achievements${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Used by other services that depend on achievements" | paste -sd' ' | fold -sw 80
+    echo -e "Used by other services that depend on achievements.  <br><br><b>Permissions Needed:</b> ACHIEVEMENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The name of the derived achievement ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10925,7 +12034,7 @@ print_getUserAchievementProgress_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserAchievementProgress - Retrieve progress on a given achievement for a given user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Assets will not be filled in on the resources returned. Use 'Get a single poll' to retrieve the full resource with assets for a given item as needed." | paste -sd' ' | fold -sw 80
+    echo -e "Assets will not be filled in on the resources returned. Use 'Get a single poll' to retrieve the full resource with assets for a given item as needed. <br><br><b>Permissions Needed:</b> ACHIEVEMENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The user's id ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10952,7 +12061,7 @@ print_getUserAchievementsProgress_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserAchievementsProgress - Retrieve progress on achievements for a given user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Assets will not be filled in on the resources returned. Use 'Get a single poll' to retrieve the full resource with assets for a given item as needed." | paste -sd' ' | fold -sw 80
+    echo -e "Assets will not be filled in on the resources returned. Use 'Get a single poll' to retrieve the full resource with assets for a given item as needed. <br><br><b>Permissions Needed:</b> ACHIEVEMENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The user's id ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10988,7 +12097,7 @@ print_getUsersAchievementProgress_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUsersAchievementProgress - Retrieve progress on a given achievement for all users${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Assets will not be filled in on the resources returned. Use 'Get single achievement progress for user' to retrieve the full resource with assets for a given user as needed." | paste -sd' ' | fold -sw 80
+    echo -e "Assets will not be filled in on the resources returned. Use 'Get single achievement progress for user' to retrieve the full resource with assets for a given user as needed. <br><br><b>Permissions Needed:</b> ACHIEVEMENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}achievement_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The achievement's name ${YELLOW}Specify as: achievement_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11024,7 +12133,7 @@ print_getUsersAchievementsProgress_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUsersAchievementsProgress - Retrieve progress on achievements for all users${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Assets will not be filled in on the resources returned. Use 'Get single achievement progress for user' to retrieve the full resource with assets for a given user as needed." | paste -sd' ' | fold -sw 80
+    echo -e "Assets will not be filled in on the resources returned. Use 'Get single achievement progress for user' to retrieve the full resource with assets for a given user as needed. <br><br><b>Permissions Needed:</b> ACHIEVEMENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_achievement_derived${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Filter for achievements that are derived from other services${YELLOW} Specify as: filter_achievement_derived=value${OFF}" \
@@ -11059,7 +12168,7 @@ print_incrementAchievementProgress_help() {
     echo ""
     echo -e "${BOLD}${WHITE}incrementAchievementProgress - Increment an achievement progress record for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If no progress record yet exists for the user, it will be created. Otherwise it will be updated and the provided value added to the existing progress. May be negative. If progress meets or exceeds the achievement's max_value it will be marked as earned and a BRE event will be triggered for the <code>BreAchievementEarnedTrigger</code>." | paste -sd' ' | fold -sw 80
+    echo -e "If no progress record yet exists for the user, it will be created. Otherwise it will be updated and the provided value added to the existing progress. May be negative. If progress meets or exceeds the achievement's max_value it will be marked as earned and a BRE event will be triggered for the <code>BreAchievementEarnedTrigger</code>. <br><br><b>Permissions Needed:</b> ACHIEVEMENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The user's id ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11088,7 +12197,7 @@ print_setAchievementProgress_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setAchievementProgress - Set an achievement progress record for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If no progress record yet exists for the user, it will be created. Otherwise it will be updated and progress set to the provided value. If progress meets or exceeds the achievement's max_value it will be marked as earned and a BRE event will be triggered for the <code>BreAchievementEarnedTrigger</code>." | paste -sd' ' | fold -sw 80
+    echo -e "If no progress record yet exists for the user, it will be created. Otherwise it will be updated and progress set to the provided value. If progress meets or exceeds the achievement's max_value it will be marked as earned and a BRE event will be triggered for the <code>BreAchievementEarnedTrigger</code>. <br><br><b>Permissions Needed:</b> ACHIEVEMENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The user's id ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11117,7 +12226,7 @@ print_updateAchievement_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateAchievement - Update an achievement definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "The existing generated rule, if any, will be deleted. A new rule will be created if a trigger event name is specified in the new version." | paste -sd' ' | fold -sw 80
+    echo -e "The existing generated rule, if any, will be deleted. A new rule will be created if a trigger event name is specified in the new version. <br><br><b>Permissions Needed:</b> ACHIEVEMENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The name of the achievement ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11145,6 +12254,8 @@ print_updateAchievementTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateAchievementTemplate - Update an achievement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The updated template" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11171,7 +12282,7 @@ print_getLeaderboard_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getLeaderboard - Retrieves leaderboard details and paginated entries${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "The context type identifies the type of entity (i.e., 'activity') being tracked on the leaderboard. The context ID is the unique ID of the actual entity tracked by the leaderboard. Sorting is based on the fields of LeaderboardEntryResource rather than the returned LeaderboardResource." | paste -sd' ' | fold -sw 80
+    echo -e "The context type identifies the type of entity (i.e., 'activity') being tracked on the leaderboard. The context ID is the unique ID of the actual entity tracked by the leaderboard. Sorting is based on the fields of LeaderboardEntryResource rather than the returned LeaderboardResource. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}context_type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The context type for the leaderboard ${YELLOW}Specify as: context_type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11204,7 +12315,7 @@ print_getLeaderboardRank_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getLeaderboardRank - Retrieves a specific user entry with rank${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "The context type identifies the type of entity (i.e., 'activity') being tracked on the leaderboard. The context ID is the unique ID of the actual entity tracked by the leaderboard" | paste -sd' ' | fold -sw 80
+    echo -e "The context type identifies the type of entity (i.e., 'activity') being tracked on the leaderboard. The context ID is the unique ID of the actual entity tracked by the leaderboard. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}context_type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The context type for the leaderboard ${YELLOW}Specify as: context_type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11232,6 +12343,8 @@ print_getLeaderboardStrategies_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getLeaderboardStrategies - Get a list of available leaderboard strategy names${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -11253,6 +12366,8 @@ print_getLeaderboardStrategies_help() {
 print_createLevel_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createLevel - Create a level schema${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> LEVELING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The level schema definition" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11279,6 +12394,8 @@ print_deleteLevel_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteLevel - Delete a level${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> LEVELING_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The level schema name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -11302,6 +12419,8 @@ print_deleteLevel_help() {
 print_getLevel_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getLevel - Retrieve a level${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> LEVELING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The level schema name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11327,6 +12446,8 @@ print_getLevelTriggers_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getLevelTriggers - Get the list of triggers that can be used to trigger a leveling progress update${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> LEVELING_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -11349,7 +12470,7 @@ print_getLevels_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getLevels - List and search levels${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Get a list of levels schemas with optional filtering" | paste -sd' ' | fold -sw 80
+    echo -e "Get a list of levels schemas with optional filtering. <br><br><b>Permissions Needed:</b> LEVELING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_name${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for level schemas whose name contains a given string${YELLOW} Specify as: filter_name=value${OFF}" \
@@ -11382,6 +12503,8 @@ print_getUserLevel_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserLevel - Get a user's progress for a given level schema${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> LEVELING_ADMIN or self" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The level schema name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11407,7 +12530,7 @@ print_getUserLevels_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserLevels - Get a user's progress for all level schemas${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Filtering and sorting is based on the LevelingResource object, not the UserLevelingResource that is returned here." | paste -sd' ' | fold -sw 80
+    echo -e "Filtering and sorting is based on the LevelingResource object, not the UserLevelingResource that is returned here. <br><br><b>Permissions Needed:</b> LEVELING_ADMIN or self" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11441,7 +12564,7 @@ print_incrementProgress_help() {
     echo ""
     echo -e "${BOLD}${WHITE}incrementProgress - Update or create a leveling progress record for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If no progress record yet exists for the user, it will be created. Otherwise the provided value will be added to it. May be negative. If progress meets or exceeds the level's max_value it will be marked as earned and a BRE event will be triggered for the <code>BreAchievementEarnedTrigger</code>." | paste -sd' ' | fold -sw 80
+    echo -e "If no progress record yet exists for the user, it will be created. Otherwise the provided value will be added to it. May be negative. If progress meets or exceeds the level's max_value it will be marked as earned and a BRE event will be triggered for the <code>BreAchievementEarnedTrigger</code>. <br><br><b>Permissions Needed:</b> LEVELING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11470,7 +12593,7 @@ print_setProgress_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setProgress - Set leveling progress for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If no progress record yet exists for the user, it will be created. Otherwise it will be updated to the provided value. If progress meets or exceeds the level's max_value it will be marked as earned and a BRE event will be triggered for the <code>BreAchievementEarnedTrigger</code>." | paste -sd' ' | fold -sw 80
+    echo -e "If no progress record yet exists for the user, it will be created. Otherwise it will be updated to the provided value. If progress meets or exceeds the level's max_value it will be marked as earned and a BRE event will be triggered for the <code>BreAchievementEarnedTrigger</code>. <br><br><b>Permissions Needed:</b> LEVELING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11498,6 +12621,8 @@ print_setProgress_help() {
 print_updateLevel_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateLevel - Update a level${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> LEVELING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The level schema name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11552,6 +12677,8 @@ print_addQuestionAnswers_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addQuestionAnswers - Add an answer to a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}question_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: question_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new answer" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11577,6 +12704,8 @@ print_addQuestionAnswers_help() {
 print_addQuestionTag_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addQuestionTag - Add a tag to a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11604,7 +12733,7 @@ print_addTagToQuestionsBatch_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addTagToQuestionsBatch - Add a tag to a batch of questions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "All questions that dont't have the tag and match filters will have it added. The returned number is the number of questions updated." | paste -sd' ' | fold -sw 80
+    echo -e "All questions that dont't have the tag and match filters will have it added. The returned number is the number of questions updated. <br><br><b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_search${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for documents whose question, answers or tags contains provided string${YELLOW} Specify as: filter_search=value${OFF}" \
@@ -11647,7 +12776,7 @@ print_createImportJob_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createImportJob - Create an import job${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Set up a job to import a set of trivia questions from a cvs file at a remote url. the file will be validated asynchronously but will not be processed until started manually with the process endpoint." | paste -sd' ' | fold -sw 80
+    echo -e "Set up a job to import a set of trivia questions from a cvs file at a remote url. the file will be validated asynchronously but will not be processed until started manually with the process endpoint. <br><br><b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new import job" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11674,6 +12803,8 @@ print_createQuestion_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createQuestion - Create a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new question" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -11699,7 +12830,7 @@ print_createQuestionTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createQuestionTemplate - Create a question template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Question templates define a type of question and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e "Question templates define a type of question and the properties they have. <br><br><b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The question template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11726,7 +12857,7 @@ print_deleteImportJob_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteImportJob - Delete an import job${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Also deletes all questions that were imported by it" | paste -sd' ' | fold -sw 80
+    echo -e "Also deletes all questions that were imported by it. <br><br><b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the job ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11752,6 +12883,8 @@ print_deleteQuestion_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteQuestion - Delete a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -11775,6 +12908,8 @@ print_deleteQuestion_help() {
 print_deleteQuestionAnswers_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteQuestionAnswers - Remove an answer from a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}question_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: question_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11801,7 +12936,7 @@ print_deleteQuestionTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteQuestionTemplate - Delete a question template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11829,6 +12964,8 @@ print_getImportJob_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getImportJob - Get an import job${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the job ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -11852,6 +12989,8 @@ print_getImportJob_help() {
 print_getImportJobs_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getImportJobs - Get a list of import job${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_vendor${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for jobs by vendor id${YELLOW} Specify as: filter_vendor=value${OFF}" \
@@ -11890,6 +13029,8 @@ print_getQuestion_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getQuestion - Get a single question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -11913,6 +13054,8 @@ print_getQuestion_help() {
 print_getQuestionAnswer_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getQuestionAnswer - Get an answer for a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}question_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: question_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -11939,6 +13082,8 @@ print_getQuestionAnswers_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getQuestionAnswers - List the answers available for a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}question_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: question_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -11963,7 +13108,7 @@ print_getQuestionDeltas_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getQuestionDeltas - List question deltas in ascending order of updated date${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "The 'since' parameter is important to avoid getting a full list of all questions. Implementors should make sure they pass the updated date of the last resource loaded, not the date of the last request, in order to avoid gaps" | paste -sd' ' | fold -sw 80
+    echo -e "The 'since' parameter is important to avoid getting a full list of all questions. Implementors should make sure they pass the updated date of the last resource loaded, not the date of the last request, in order to avoid gaps. <br><br><b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}since${OFF} ${BLUE}[Integer]${OFF}${OFF} - Timestamp in seconds${YELLOW} Specify as: since=value${OFF}" \
@@ -11990,6 +13135,8 @@ print_getQuestionTags_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getQuestionTags - List the tags for a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -12014,6 +13161,8 @@ print_getQuestionTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getQuestionTemplate - Get a single question template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -12037,6 +13186,8 @@ print_getQuestionTemplate_help() {
 print_getQuestionTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getQuestionTemplates - List and search question templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -12066,6 +13217,8 @@ print_getQuestionTemplates_help() {
 print_getQuestions_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getQuestions - List and search questions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -12112,7 +13265,7 @@ print_getQuestionsCount_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getQuestionsCount - Count questions based on filters${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is also provided by the list endpoint so you don't need to call this for pagination purposes" | paste -sd' ' | fold -sw 80
+    echo -e "This is also provided by the list endpoint so you don't need to call this for pagination purposes. <br><br><b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_search${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for documents whose question, answers or tags contains provided string${YELLOW} Specify as: filter_search=value${OFF}" \
@@ -12151,7 +13304,7 @@ print_processImportJob_help() {
     echo ""
     echo -e "${BOLD}${WHITE}processImportJob - Start processing an import job${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Will process the CSV file and add new questions asynchronously. The status of the job must be 'VALID'." | paste -sd' ' | fold -sw 80
+    echo -e "Will process the CSV file and add new questions asynchronously. The status of the job must be 'VALID'. <br><br><b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the job ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12179,6 +13332,8 @@ print_removeQuestionTag_help() {
     echo ""
     echo -e "${BOLD}${WHITE}removeQuestionTag - Remove a tag from a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}tag${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The tag to remove ${YELLOW}Specify as: tag=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12204,7 +13359,7 @@ print_removeTagToQuestionsBatch_help() {
     echo ""
     echo -e "${BOLD}${WHITE}removeTagToQuestionsBatch - Remove a tag from a batch of questions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "ll questions that have the tag and match filters will have it removed. The returned number is the number of questions updated." | paste -sd' ' | fold -sw 80
+    echo -e "ll questions that have the tag and match filters will have it removed. The returned number is the number of questions updated. <br><br><b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}tag${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The tag to remove ${YELLOW}Specify as: tag=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12246,7 +13401,7 @@ print_searchQuestionTags_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchQuestionTags - List and search tags by the beginning of the string${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "For performance reasons, search & category filters are mutually exclusive. If category is specified, search filter will be ignored in order to do fast matches for typeahead." | paste -sd' ' | fold -sw 80
+    echo -e "For performance reasons, search & category filters are mutually exclusive. If category is specified, search filter will be ignored in order to do fast matches for typeahead. <br><br><b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_search${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for tags starting with the given text${YELLOW} Specify as: filter_search=value${OFF}" \
@@ -12277,7 +13432,7 @@ print_updateImportJob_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateImportJob - Update an import job${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Changes should be made before process is started for there to be any effect." | paste -sd' ' | fold -sw 80
+    echo -e "Changes should be made before process is started for there to be any effect. <br><br><b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the job ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12305,6 +13460,8 @@ print_updateQuestion_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateQuestion - Update a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The updated question" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12330,6 +13487,8 @@ print_updateQuestion_help() {
 print_updateQuestionAnswer_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateQuestionAnswer - Update an answer for a question${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}question_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the question ${YELLOW}Specify as: question_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12358,6 +13517,8 @@ print_updateQuestionTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateQuestionTemplate - Update a question template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The question template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12384,7 +13545,7 @@ print_updateQuestionsInBulk_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateQuestionsInBulk - Bulk update questions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Will update all questions that match filters used (or all questions in system if no filters used). Body should match a question resource with only those properties you wish to set. Null values will be ignored. Returned number is how many were updated." | paste -sd' ' | fold -sw 80
+    echo -e "Will update all questions that match filters used (or all questions in system if no filters used). Body should match a question resource with only those properties you wish to set. Null values will be ignored. Returned number is how many were updated. <br><br><b>Permissions Needed:</b> TRIVIA_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_search${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for documents whose question, answers or tags contains provided string${YELLOW} Specify as: filter_search=value${OFF}" \
@@ -12425,7 +13586,7 @@ print_createInvoice_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createInvoice - Create an invoice${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Create an invoice(s) by providing a cart GUID. Note that there may be multiple invoices created, one per vendor." | paste -sd' ' | fold -sw 80
+    echo -e "Create an invoice(s) by providing a cart GUID. Note that there may be multiple invoices created, one per vendor. <br><br><b>Permissions Needed:</b> INVOICES_USER or INVOICES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - Invoice to be created" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12452,6 +13613,8 @@ print_getFulFillmentStatuses_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getFulFillmentStatuses - Lists available fulfillment statuses${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -12473,6 +13636,8 @@ print_getFulFillmentStatuses_help() {
 print_getInvoice_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getInvoice - Retrieve an invoice${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVOICES_USER and owner, or INVOICES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the invoice ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12497,6 +13662,8 @@ print_getInvoice_help() {
 print_getInvoiceLogs_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getInvoiceLogs - List invoice logs${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVOICES_USER and owner, or INVOICES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the invoice ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12526,7 +13693,7 @@ print_getInvoices_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getInvoices - Retrieve invoices${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Without INVOICES_ADMIN permission the results are automatically filtered for only the logged in user's invoices. It is recomended however that filter_user be added to avoid issues for admin users accidentally getting additional invoices." | paste -sd' ' | fold -sw 80
+    echo -e "Without INVOICES_ADMIN permission the results are automatically filtered for only the logged in user's invoices. It is recomended however that filter_user be added to avoid issues for admin users accidentally getting additional invoices. <br><br><b>Permissions Needed:</b> INVOICES_USER and owner, or INVOICES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_user${OFF} ${BLUE}[Integer]${OFF}${OFF} - The id of a user to get invoices for. Automtically added if not being called with admin permissions.${YELLOW} Specify as: filter_user=value${OFF}" \
@@ -12561,7 +13728,7 @@ print_getInvoices_help() {
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF} ${CYAN}(default: 1)${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
+    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF}${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -12585,6 +13752,8 @@ print_getPaymentStatuses_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getPaymentStatuses - Lists available payment statuses${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -12606,6 +13775,8 @@ print_getPaymentStatuses_help() {
 print_payInvoice_help() {
     echo ""
     echo -e "${BOLD}${WHITE}payInvoice - Pay an invoice using a saved payment method${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVOICES_USER and owner, or INVOICES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the invoice ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12633,7 +13804,7 @@ print_setBundledInvoiceItemFulfillmentStatus_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setBundledInvoiceItemFulfillmentStatus - Set the fulfillment status of a bundled invoice item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This allows external fulfillment systems to report success or failure. Fulfillment status changes are restricted by a specific flow determining which status can lead to which." | paste -sd' ' | fold -sw 80
+    echo -e "This allows external fulfillment systems to report success or failure. Fulfillment status changes are restricted by a specific flow determining which status can lead to which. <br><br><b>Permissions Needed:</b> INVOICES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the invoice ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12663,6 +13834,8 @@ print_setExternalRef_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setExternalRef - Set the external reference of an invoice${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVOICES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the invoice ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - External reference info" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12689,7 +13862,7 @@ print_setInvoiceItemFulfillmentStatus_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setInvoiceItemFulfillmentStatus - Set the fulfillment status of an invoice item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This allows external fulfillment systems to report success or failure. Fulfillment status changes are restricted by a specific flow determining which status can lead to which." | paste -sd' ' | fold -sw 80
+    echo -e "This allows external fulfillment systems to report success or failure. Fulfillment status changes are restricted by a specific flow determining which status can lead to which. <br><br><b>Permissions Needed:</b> INVOICES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the invoice ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12718,6 +13891,8 @@ print_setOrderNotes_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setOrderNotes - Set the order notes of an invoice${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVOICES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the invoice ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - Payment status info" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12744,7 +13919,7 @@ print_setPaymentStatus_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setPaymentStatus - Set the payment status of an invoice${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This may trigger fulfillment if setting the status to 'paid'. This is mainly intended to support external payment systems that cannot be incorporated into the payment method system. Payment status changes are restricted by a specific flow determining which status can lead to which." | paste -sd' ' | fold -sw 80
+    echo -e "This may trigger fulfillment if setting the status to 'paid'. This is mainly intended to support external payment systems that cannot be incorporated into the payment method system. Payment status changes are restricted by a specific flow determining which status can lead to which. <br><br><b>Permissions Needed:</b> INVOICES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the invoice ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12772,6 +13947,8 @@ print_updateBillingInfo_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateBillingInfo - Set or update billing info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVOICES_USER and owner, or INVOICES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the invoice ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - Address info" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12798,6 +13975,8 @@ print_getCountries_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCountries - Get a list of countries${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -12820,7 +13999,7 @@ print_getCountryByGeoLocation_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCountryByGeoLocation - Get the iso3 code of your country${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Determined by geo ip location" | paste -sd' ' | fold -sw 80
+    echo -e "Determined by geo ip location. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -12843,6 +14022,8 @@ print_getCountryByGeoLocation_help() {
 print_getCountryStates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCountryStates - Get a list of a country's states${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}country_code_iso3${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The iso3 code of the country ${YELLOW}Specify as: country_code_iso3=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12868,7 +14049,7 @@ print_getCurrencyByGeoLocation_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCurrencyByGeoLocation - Get the currency information of your country${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Determined by geo ip location, currency to country mapping and a fallback setting" | paste -sd' ' | fold -sw 80
+    echo -e "Determined by geo ip location, currency to country mapping and a fallback setting. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -12891,6 +14072,8 @@ print_getCurrencyByGeoLocation_help() {
 print_addUserLog_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addUserLog - Add a user log entry${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The user log entry to be added" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12917,6 +14100,8 @@ print_getBREEventLog_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBREEventLog - Get an existing BRE event log entry by id${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_EVENTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The BRE event log entry id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -12941,6 +14126,8 @@ print_getBREEventLogs_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBREEventLogs - Returns a list of BRE event log entries${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_EVENTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_start_date${OFF} ${BLUE}[String]${OFF}${OFF} - A comma separated string without spaces.  First value is the operator to search on, second value is the event log start date, a unix timestamp in seconds.  Allowed operators: (GT, LT, EQ, GOE, LOE).${YELLOW} Specify as: filter_start_date=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12953,6 +14140,8 @@ print_getBREEventLogs_help() {
     echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF} ${CYAN}(default: id:DESC)${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_rule_id${OFF} ${BLUE}[String]${OFF}${OFF} - Filter event logs by request id${YELLOW} Specify as: filter_rule_id=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -12975,6 +14164,8 @@ print_getBREEventLogs_help() {
 print_getBREForwardLog_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBREForwardLog - Get an existing forward log entry by id${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_EVENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The forward log entry id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13000,12 +14191,16 @@ print_getBREForwardLogs_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBREForwardLogs - Returns a list of forward log entries${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_EVENTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_start_date${OFF} ${BLUE}[String]${OFF}${OFF} - A comma separated string without spaces.  First value is the operator to search on, second value is the log start date, a unix timestamp in seconds.  Allowed operators: (GT, LT, EQ, GOE, LOE).${YELLOW} Specify as: filter_start_date=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}filter_end_date${OFF} ${BLUE}[String]${OFF}${OFF} - A comma separated string without spaces.  First value is the operator to search on, second value is the log end date, a unix timestamp in seconds.  Allowed operators: (GT, LT, EQ, GOE, LOE).${YELLOW} Specify as: filter_end_date=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}filter_status_code${OFF} ${BLUE}[Integer]${OFF}${OFF} - Filter forward logs by http status code${YELLOW} Specify as: filter_status_code=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_url${OFF} ${BLUE}[Integer]${OFF}${OFF} - Filter forward logs by URL starting with...${YELLOW} Specify as: filter_url=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13035,6 +14230,8 @@ print_getUserLog_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserLog - Returns a user log entry by id${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> LOGS_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The user log entry id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -13058,6 +14255,8 @@ print_getUserLog_help() {
 print_getUserLogs_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserLogs - Returns a page of user logs entries${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> LOGS_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_user${OFF} ${BLUE}[Integer]${OFF}${OFF} - Filter for actions taken by a specific user by id${YELLOW} Specify as: filter_user=value${OFF}" \
@@ -13092,7 +14291,7 @@ print_addArtist_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addArtist - Adds a new artist in the system${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Adds a new artist in the system. Use specific media contributions endpoint to add contributions" | paste -sd' ' | fold -sw 80
+    echo -e "Adds a new artist in the system. Use specific media contributions endpoint to add contributions. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new artist" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13119,7 +14318,7 @@ print_createArtistTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createArtistTemplate - Create an artist template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Artist Templates define a type of artist and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e "Artist Templates define a type of artist and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The artist template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13146,6 +14345,8 @@ print_deleteArtist_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteArtist - Removes an artist from the system IF no resources are attached to it${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ARTISTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The artist id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -13170,7 +14371,7 @@ print_deleteArtistTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteArtistTemplate - Delete an artist template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13198,6 +14399,8 @@ print_getArtist_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getArtist - Loads a specific artist details${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The artist id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}show_contributions${OFF} ${BLUE}[Integer]${OFF}${OFF} - The number of contributions to show fetch${YELLOW} Specify as: show_contributions=value${OFF}" \
@@ -13224,6 +14427,8 @@ print_getArtistTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getArtistTemplate - Get a single artist template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or ARTISTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -13247,6 +14452,8 @@ print_getArtistTemplate_help() {
 print_getArtistTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getArtistTemplates - List and search artist templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or ARTISTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -13276,6 +14483,8 @@ print_getArtistTemplates_help() {
 print_getArtists_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getArtists - Search for artists${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_artists_by_name${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for artists which name *STARTS* with the given string${YELLOW} Specify as: filter_artists_by_name=value${OFF}" \
@@ -13308,6 +14517,8 @@ print_updateArtist_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateArtist - Modifies an artist details${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ARTISTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The artist id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new artist" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13333,6 +14544,8 @@ print_updateArtist_help() {
 print_updateArtistTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateArtistTemplate - Update an artist template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13360,6 +14573,8 @@ print_addFlag_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addFlag - Add a flag${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The flag resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -13384,6 +14599,8 @@ print_addFlag_help() {
 print_deleteFlag_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteFlag - Delete a flag${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> MODERATION_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}context_name${OFF} ${BLUE}[String]${OFF}${OFF} - The name of the context${YELLOW} Specify as: context_name=value${OFF}" \
@@ -13413,6 +14630,8 @@ print_deleteFlag_help() {
 print_getFlags_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getFlags - Returns a page of flags${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> MODERATION_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_context${OFF} ${BLUE}[String]${OFF}${OFF} - Filter by flag context${YELLOW} Specify as: filter_context=value${OFF}" \
@@ -13447,6 +14666,8 @@ print_getModerationReport_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getModerationReport - Get a flag report${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> MODERATION_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The flag report id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -13471,7 +14692,7 @@ print_getModerationReports_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getModerationReports - Returns a page of flag reports${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Context can be either a free-form string or a pre-defined context name" | paste -sd' ' | fold -sw 80
+    echo -e "Context can be either a free-form string or a pre-defined context name. <br><br><b>Permissions Needed:</b> MODERATION_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}exclude_resolved${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: true)${OFF} - Ignore resolved context${YELLOW} Specify as: exclude_resolved=value${OFF}" \
@@ -13506,7 +14727,7 @@ print_updateModerationReport_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateModerationReport - Update a flag report${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Lets you set the resolution of a report. Resolution types is {banned,ignore} in case of 'banned' you will need to pass the reason." | paste -sd' ' | fold -sw 80
+    echo -e "Lets you set the resolution of a report. Resolution types is {banned,ignore} in case of 'banned' you will need to pass the reason. <br><br><b>Permissions Needed:</b> MODERATION_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The flag report id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13534,7 +14755,7 @@ print_addUserToVideoWhitelist_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addUserToVideoWhitelist - Adds a user to a video's whitelist${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Whitelisted users can view video regardless of privacy setting." | paste -sd' ' | fold -sw 80
+    echo -e "Whitelisted users can view video regardless of privacy setting. <br><br><b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13562,6 +14783,8 @@ print_addVideo_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addVideo - Adds a new video in the system${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The video object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -13586,6 +14809,8 @@ print_addVideo_help() {
 print_addVideoComment_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addVideoComment - Add a new video comment${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13613,6 +14838,8 @@ print_addVideoContributor_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addVideoContributor - Adds a contributor to a video${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The contribution object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13638,6 +14865,8 @@ print_addVideoContributor_help() {
 print_addVideoFlag_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addVideoFlag - Add a new flag${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13665,6 +14894,8 @@ print_addVideoRelationships_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addVideoRelationships - Adds one or more existing videos as related to this one${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The video relationship object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13690,6 +14921,8 @@ print_addVideoRelationships_help() {
 print_createVideoDisposition_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createVideoDisposition - Create a video disposition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13717,7 +14950,7 @@ print_createVideoTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createVideoTemplate - Create a video template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Video Templates define a type of video and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e "Video Templates define a type of video and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The video template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13744,6 +14977,8 @@ print_deleteVideo_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteVideo - Deletes a video from the system if no resources are attached to it${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -13767,6 +15002,8 @@ print_deleteVideo_help() {
 print_deleteVideoComment_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteVideoComment - Delete a video comment${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13793,6 +15030,8 @@ print_deleteVideoDisposition_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteVideoDisposition - Delete a video disposition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}disposition_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The disposition id ${YELLOW}Specify as: disposition_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -13817,6 +15056,8 @@ print_deleteVideoFlag_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteVideoFlag - Delete a flag${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -13840,6 +15081,8 @@ print_deleteVideoFlag_help() {
 print_deleteVideoRelationship_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteVideoRelationship - Delete a video's relationship${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13866,7 +15109,7 @@ print_deleteVideoTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteVideoTemplate - Delete a video template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13893,6 +15136,8 @@ print_deleteVideoTemplate_help() {
 print_getUserVideos_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserVideos - Get user videos${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The user id ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13924,6 +15169,8 @@ print_getVideo_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getVideo - Loads a specific video details${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -13947,6 +15194,8 @@ print_getVideo_help() {
 print_getVideoComments_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getVideoComments - Returns a page of comments for a video${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -13976,6 +15225,8 @@ print_getVideoDispositions_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getVideoDispositions - Returns a page of dispositions for a video${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -14003,6 +15254,8 @@ print_getVideoDispositions_help() {
 print_getVideoRelationships_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getVideoRelationships - Returns a page of video relationships${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14032,6 +15285,8 @@ print_getVideoTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getVideoTemplate - Get a single video template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -14055,6 +15310,8 @@ print_getVideoTemplate_help() {
 print_getVideoTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getVideoTemplates - List and search video templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -14084,6 +15341,8 @@ print_getVideoTemplates_help() {
 print_getVideos_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getVideos - Search videos using the documented filters${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}exclude_flagged${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: true)${OFF} - Skip videos that have been flagged by the current user${YELLOW} Specify as: exclude_flagged=value${OFF}" \
@@ -14138,7 +15397,7 @@ print_removeUserFromVideoWhitelist_help() {
     echo ""
     echo -e "${BOLD}${WHITE}removeUserFromVideoWhitelist - Removes a user from a video's whitelist${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Remove the user with the id given in the path from the whitelist of users that can view this video regardless of privacy setting." | paste -sd' ' | fold -sw 80
+    echo -e "Remove the user with the id given in the path from the whitelist of users that can view this video regardless of privacy setting. <br><br><b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14165,6 +15424,8 @@ print_removeVideoContributor_help() {
     echo ""
     echo -e "${BOLD}${WHITE}removeVideoContributor - Removes a contributor from a video${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The contributor id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14189,6 +15450,8 @@ print_removeVideoContributor_help() {
 print_updateVideo_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateVideo - Modifies a video's details${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14215,6 +15478,8 @@ print_updateVideo_help() {
 print_updateVideoComment_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateVideoComment - Update a video comment${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14243,6 +15508,8 @@ print_updateVideoRelationship_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateVideoRelationship - Update a video's relationship details${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> VIDEOS_USER or VIDEOS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}video_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: video_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}relationship_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The relationship id ${YELLOW}Specify as: relationship_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14270,6 +15537,8 @@ print_updateVideoTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateVideoTemplate - Update a video template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The video template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14296,8 +15565,180 @@ print_viewVideo_help() {
     echo ""
     echo -e "${BOLD}${WHITE}viewVideo - Increment a video's view count${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The video id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for compileMessageTemplate operation
+#
+##############################################################################
+print_compileMessageTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}compileMessageTemplate - Compile a message template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Processes a set of input data against the template and returnes the compiled result. <br><br><b>Permissions Needed:</b> MESSAGING_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - request" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createMessageTemplate operation
+#
+##############################################################################
+print_createMessageTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createMessageTemplate - Create a message template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> MESSAGING_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new template email to be sent" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteMessageTemplate operation
+#
+##############################################################################
+print_deleteMessageTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteMessageTemplate - Delete an existing message template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ARTICLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The message_template id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getMessageTemplate operation
+#
+##############################################################################
+print_getMessageTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getMessageTemplate - Get a single message template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ARTICLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The message_template id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getMessageTemplates operation
+#
+##############################################################################
+print_getMessageTemplates_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getMessageTemplates - List and search message templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Get a list of message templates with optional filtering. <br><br><b>Permissions Needed:</b> ARTICLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}filter_tagset${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for message templates with at least one of a specified set of tags (separated by comma)${YELLOW} Specify as: filter_tagset=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_tag_intersection${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for message templates with all of a specified set of tags (separated by comma)${YELLOW} Specify as: filter_tag_intersection=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_tag_exclusion${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for message templates with none of a specified set of tags (separated by comma)${YELLOW} Specify as: filter_tag_exclusion=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF} ${CYAN}(default: id:ASC)${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for sendMessage1 operation
+#
+##############################################################################
+print_sendMessage1_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}sendMessage1 - Send a message${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Sends a message with one or more formats to one or more users. Fill in any message formats desired (email, sms, websockets) and each user will recieve all valid formats. <br><br><b>Permissions Needed:</b> MESSAGING_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The message to be sent" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=204
@@ -14319,6 +15760,8 @@ print_viewVideo_help() {
 print_sendRawEmail_help() {
     echo ""
     echo -e "${BOLD}${WHITE}sendRawEmail - Send a raw email to one or more users${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> MESSAGING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new raw email to be sent" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14345,7 +15788,7 @@ print_sendRawPush_help() {
     echo ""
     echo -e "${BOLD}${WHITE}sendRawPush - Send a raw push notification${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Sends a raw push notification message to one or more users. User's without registered mobile device for the application will be skipped." | paste -sd' ' | fold -sw 80
+    echo -e "Sends a raw push notification message to one or more users. User's without registered mobile device for the application will be skipped. <br><br><b>Permissions Needed:</b> MESSAGING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new raw push notification to be sent" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14372,7 +15815,7 @@ print_sendRawSMS_help() {
     echo ""
     echo -e "${BOLD}${WHITE}sendRawSMS - Send a raw SMS${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Sends a raw SMS text message to one or more users. User's without registered mobile numbers will be skipped." | paste -sd' ' | fold -sw 80
+    echo -e "Sends a raw SMS text message to one or more users. User's without registered mobile numbers will be skipped. <br><br><b>Permissions Needed:</b> MESSAGING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new raw SMS to be sent" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14399,6 +15842,8 @@ print_sendTemplatedEmail_help() {
     echo ""
     echo -e "${BOLD}${WHITE}sendTemplatedEmail - Send a templated email to one or more users${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> MESSAGING_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new template email to be sent" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -14424,7 +15869,7 @@ print_sendTemplatedPush_help() {
     echo ""
     echo -e "${BOLD}${WHITE}sendTemplatedPush - Send a templated push notification${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Sends a templated push notification message to one or more users. User's without registered mobile device for the application will be skipped." | paste -sd' ' | fold -sw 80
+    echo -e "Sends a templated push notification message to one or more users. User's without registered mobile device for the application will be skipped. <br><br><b>Permissions Needed:</b> MESSAGING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new templated push notification to be sent" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14451,7 +15896,7 @@ print_sendTemplatedSMS_help() {
     echo ""
     echo -e "${BOLD}${WHITE}sendTemplatedSMS - Send a new templated SMS${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Sends a templated SMS text message to one or more users. User's without registered mobile numbers will be skipped." | paste -sd' ' | fold -sw 80
+    echo -e "Sends a templated SMS text message to one or more users. User's without registered mobile numbers will be skipped. <br><br><b>Permissions Needed:</b> MESSAGING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new template SMS to be sent" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14471,12 +15916,475 @@ print_sendTemplatedSMS_help() {
 }
 ##############################################################################
 #
+# Print help for sendWebsocket operation
+#
+##############################################################################
+print_sendWebsocket_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}sendWebsocket - Send a websocket message${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Sends a websocket message to one or more users. <br><br><b>Permissions Needed:</b> MESSAGING_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new websocket message to be sent" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateMessageTemplate operation
+#
+##############################################################################
+print_updateMessageTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateMessageTemplate - Update an existing message template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ARTICLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The message_template id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The message template" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for disableTopicSubscriber operation
+#
+##############################################################################
+print_disableTopicSubscriber_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}disableTopicSubscriber - Enable or disable messages for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Useful for opt-out options on a single topic. Consider multiple topics for multiple opt-out options." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the topic ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the subscriber or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - disabled" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getTopicSubscriber operation
+#
+##############################################################################
+print_getTopicSubscriber_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTopicSubscriber - Get a subscriber to a topic${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TOPICS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the topic ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the subscriber or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getTopicSubscribers operation
+#
+##############################################################################
+print_getTopicSubscribers_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTopicSubscribers - Get all subscribers to a topic${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TOPICS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the topic ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getUserTopics operation
+#
+##############################################################################
+print_getUserTopics_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getUserTopics - Get all messaging topics for a given user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TOPICS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createNotificationType operation
+#
+##############################################################################
+print_createNotificationType_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createNotificationType - Create a notification type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - notificationType" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteNotificationType operation
+#
+##############################################################################
+print_deleteNotificationType_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteNotificationType - Delete a notification type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getNotificationType operation
+#
+##############################################################################
+print_getNotificationType_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getNotificationType - Get a single notification type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getNotificationTypes operation
+#
+##############################################################################
+print_getNotificationTypes_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getNotificationTypes - List and search notification types${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Get a list of notification type with optional filtering" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF} ${CYAN}(default: id:ASC)${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getUserNotificationInfo operation
+#
+##############################################################################
+print_getUserNotificationInfo_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getUserNotificationInfo - View a user's notification settings for a type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the topic ${YELLOW}Specify as: type_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the subscriber or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getUserNotificationInfoList operation
+#
+##############################################################################
+print_getUserNotificationInfoList_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getUserNotificationInfoList - View a user's notification settings${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the subscriber or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF} ${CYAN}(default: id:ASC)${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getUserNotifications operation
+#
+##############################################################################
+print_getUserNotifications_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getUserNotifications - Get notifications${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_status${OFF} ${BLUE}[String]${OFF}${OFF} - filter for notifications with a given status${YELLOW} Specify as: filter_status=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF} ${CYAN}(default: id:ASC)${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for sendNotification operation
+#
+##############################################################################
+print_sendNotification_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}sendNotification - Send a notification${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - notification" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for setUserNotificationStatus operation
+#
+##############################################################################
+print_setUserNotificationStatus_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}setUserNotificationStatus - Set notification status${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}notification_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the notification ${YELLOW}Specify as: notification_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - status" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for silenceDirectNotifications operation
+#
+##############################################################################
+print_silenceDirectNotifications_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}silenceDirectNotifications - Enable or disable direct notifications for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Allows enabling or disabling messages for a given notification type when sent direct to the user. Notifications can still be retrieved by endpoint. For notifications broadcased to a topic, see the topic service to disable messages for the user there." | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the topic ${YELLOW}Specify as: type_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the subscriber or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - silenced" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateNotificationType operation
+#
+##############################################################################
+print_updateNotificationType_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateNotificationType - Update a notificationType${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - notificationType" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for createObjectItem operation
 #
 ##############################################################################
 print_createObjectItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createObjectItem - Create an object${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVENTORY_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}template_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template this object is to be part of ${YELLOW}Specify as: template_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14506,7 +16414,7 @@ print_createObjectTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createObjectTemplate - Create an object template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Object templates define a type of entitlement and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e "Object templates define a type of entitlement and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The entitlement template to be created" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14533,6 +16441,8 @@ print_deleteObjectItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteObjectItem - Delete an object${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVENTORY_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}template_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template this object is part of ${YELLOW}Specify as: template_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}object_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the object ${YELLOW}Specify as: object_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14558,7 +16468,7 @@ print_deleteObjectTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteObjectTemplate - Delete an entitlement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14586,6 +16496,8 @@ print_getObjectItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getObjectItem - Get a single object${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}template_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template this object is part of ${YELLOW}Specify as: template_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}object_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the object ${YELLOW}Specify as: object_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14610,6 +16522,8 @@ print_getObjectItem_help() {
 print_getObjectItems_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getObjectItems - List and search objects${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}template_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template to get objects for ${YELLOW}Specify as: template_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14641,6 +16555,8 @@ print_getObjectTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getObjectTemplate - Get a single entitlement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or ACHIEVEMENTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -14664,6 +16580,8 @@ print_getObjectTemplate_help() {
 print_getObjectTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getObjectTemplates - List and search entitlement templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or ACHIEVEMENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -14694,6 +16612,8 @@ print_updateObjectItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateObjectItem - Update an object${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVENTORY_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}template_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template this object is part of ${YELLOW}Specify as: template_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}object_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the object ${YELLOW}Specify as: object_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14723,6 +16643,8 @@ print_updateObjectTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateObjectTemplate - Update an entitlement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The updated template" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14748,6 +16670,8 @@ print_updateObjectTemplate_help() {
 print_createPaymentMethod_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createPaymentMethod - Create a new payment method for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> PAYMENTS_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - ID of the user for whom the payment method is being created ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14775,6 +16699,8 @@ print_deletePaymentMethod_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deletePaymentMethod - Delete an existing payment method for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> PAYMENTS_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - ID of the user for whom the payment method is being updated ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - ID of the payment method being deleted ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14799,6 +16725,8 @@ print_deletePaymentMethod_help() {
 print_getPaymentMethod_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getPaymentMethod - Get a single payment method for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> PAYMENTS_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - ID of the user for whom the payment method is being retrieved ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14825,6 +16753,8 @@ print_getPaymentMethodType_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getPaymentMethodType - Get a single payment method type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - ID of the payment method type being retrieved ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -14848,6 +16778,8 @@ print_getPaymentMethodType_help() {
 print_getPaymentMethodTypes_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getPaymentMethodTypes - Get all payment method types${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_name${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for payment method types whose name matches a given string${YELLOW} Specify as: filter_name=value${OFF}" \
@@ -14879,6 +16811,8 @@ print_getPaymentMethodTypes_help() {
 print_getPaymentMethods_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getPaymentMethods - Get all payment methods for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> PAYMENTS_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - ID of the user for whom the payment methods are being retrieved ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14918,6 +16852,8 @@ print_paymentAuthorization_help() {
     echo ""
     echo -e "${BOLD}${WHITE}paymentAuthorization - Authorize payment of an invoice for later capture${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> PAYMENTS_ADMIN or PAYMENTS_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - Payment authorization request" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -14943,6 +16879,8 @@ print_paymentCapture_help() {
     echo ""
     echo -e "${BOLD}${WHITE}paymentCapture - Capture an existing invoice payment authorization${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> PAYMENTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - ID of the payment authorization to capture ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -14966,6 +16904,8 @@ print_paymentCapture_help() {
 print_updatePaymentMethod_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updatePaymentMethod - Update an existing payment method for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> PAYMENTS_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - ID of the user for whom the payment method is being updated ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14994,7 +16934,7 @@ print_verifyAppleReceipt_help() {
     echo ""
     echo -e "${BOLD}${WHITE}verifyAppleReceipt - Pay invoice with Apple receipt${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Mark an invoice paid using Apple payment receipt. A receipt will only be accepted once and the details of the transaction must match the invoice, including the product_id matching the sku text of the item in the invoice. Returns the transaction ID if successful." | paste -sd' ' | fold -sw 80
+    echo -e "Mark an invoice paid using Apple payment receipt. A receipt will only be accepted once and the details of the transaction must match the invoice, including the product_id matching the sku text of the item in the invoice. Returns the transaction ID if successful. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The request for paying an invoice through an Apple receipt" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15021,7 +16961,7 @@ print_createOrUpdateFattMerchantPaymentMethod_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createOrUpdateFattMerchantPaymentMethod - Create or update a FattMerchant payment method for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Stores customer information and creates a payment method that can be used to pay invoices through the payments endpoints." | paste -sd' ' | fold -sw 80
+    echo -e "Stores customer information and creates a payment method that can be used to pay invoices through the payments endpoints. <br><br><b>Permissions Needed:</b> FATTMERCHANT_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - Request containing payment method information for user" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15048,7 +16988,7 @@ print_handleGooglePayment_help() {
     echo ""
     echo -e "${BOLD}${WHITE}handleGooglePayment - Mark an invoice paid with Google${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Mark an invoice paid with Google. Verifies signature from Google and treats the developerPayload field inside the json payload as the id of the invoice to pay. Returns the transaction ID if successful." | paste -sd' ' | fold -sw 80
+    echo -e "Mark an invoice paid with Google. Verifies signature from Google and treats the developerPayload field inside the json payload as the id of the invoice to pay. Returns the transaction ID if successful. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The request for paying an invoice through a Google in-app payment" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15075,7 +17015,7 @@ print_silentPostOptimal_help() {
     echo ""
     echo -e "${BOLD}${WHITE}silentPostOptimal - Initiate silent post with Optimal${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Will return the url for a hosted payment endpoint to post to. See Optimal documentation for details." | paste -sd' ' | fold -sw 80
+    echo -e "Will return the url for a hosted payment endpoint to post to. See Optimal documentation for details. <br><br><b>Permissions Needed:</b> OPTIMAL_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The payment request to initiate" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15102,7 +17042,7 @@ print_createPayPalBillingAgreementUrl_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createPayPalBillingAgreementUrl - Create a PayPal Classic billing agreement for the user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Returns the token that should be used to forward the user to PayPal so they can accept the agreement." | paste -sd' ' | fold -sw 80
+    echo -e "Returns the token that should be used to forward the user to PayPal so they can accept the agreement. <br><br><b>Permissions Needed:</b> PAYPAL_CLASSIC_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The request to create a PayPal billing agreement" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15129,7 +17069,7 @@ print_createPayPalExpressCheckout_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createPayPalExpressCheckout - Create a payment token for PayPal express checkout${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Returns the token that should be used to forward the user to PayPal so they can complete the checkout." | paste -sd' ' | fold -sw 80
+    echo -e "Returns the token that should be used to forward the user to PayPal so they can complete the checkout. <br><br><b>Permissions Needed:</b> PAYPAL_CLASSIC_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The request to create a PayPal payment token" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15156,7 +17096,7 @@ print_finalizePayPalBillingAgreement_help() {
     echo ""
     echo -e "${BOLD}${WHITE}finalizePayPalBillingAgreement - Finalizes a billing agreement after the user has accepted through PayPal${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Returns the ID of the new payment method created for the user for the billing agreement." | paste -sd' ' | fold -sw 80
+    echo -e "Returns the ID of the new payment method created for the user for the billing agreement. <br><br><b>Permissions Needed:</b> PAYPAL_CLASSIC_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The request to finalize a PayPal billing agreement" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15183,7 +17123,7 @@ print_finalizePayPalCheckout_help() {
     echo ""
     echo -e "${BOLD}${WHITE}finalizePayPalCheckout - Finalizes a payment after the user has completed checkout with PayPal${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "The invoice will be marked paid/failed by asynchronous IPN callback." | paste -sd' ' | fold -sw 80
+    echo -e "The invoice will be marked paid/failed by asynchronous IPN callback. <br><br><b>Permissions Needed:</b> PAYPAL_CLASSIC_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The request to finalize the payment" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15210,7 +17150,7 @@ print_createStripePaymentMethod_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createStripePaymentMethod - Create a Stripe payment method for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Obtain a token from Stripe, following their examples and documentation. Stores customer information and creates a payment method that can be used to pay invoices through the payments endpoints. Ensure that Stripe itself has been configured with the webhook so that invoices are marked paid." | paste -sd' ' | fold -sw 80
+    echo -e "Obtain a token from Stripe, following their examples and documentation. Stores customer information and creates a payment method that can be used to pay invoices through the payments endpoints. Ensure that Stripe itself has been configured with the webhook so that invoices are marked paid. <br><br><b>Permissions Needed:</b> STRIPE_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The request to create a Stripe customer with payment info" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15237,7 +17177,7 @@ print_payStripeInvoice_help() {
     echo ""
     echo -e "${BOLD}${WHITE}payStripeInvoice - Pay with a single use token${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Obtain a token from Stripe, following their examples and documentation. Pays an invoice without creating a payment method. Ensure that Stripe itself has been configured with the webhook so that invoices are marked paid." | paste -sd' ' | fold -sw 80
+    echo -e "Obtain a token from Stripe, following their examples and documentation. Pays an invoice without creating a payment method. Ensure that Stripe itself has been configured with the webhook so that invoices are marked paid. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The request to pay an invoice" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15264,6 +17204,8 @@ print_getTransaction_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getTransaction - Get the details for a single transaction${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TRANSACTIONS_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -15287,6 +17229,8 @@ print_getTransaction_help() {
 print_getTransactions_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getTransactions - List and search transactions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TRANSACTIONS_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_invoice${OFF} ${BLUE}[Integer]${OFF}${OFF} - Filter for transactions from a specific invoice${YELLOW} Specify as: filter_invoice=value${OFF}" \
@@ -15319,7 +17263,7 @@ print_refundTransaction_help() {
     echo ""
     echo -e "${BOLD}${WHITE}refundTransaction - Refund a payment transaction, in full or in part${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Will not allow for refunding more than the full amount even with multiple partial refunds. Money is refunded to the payment method used to make the original payment. Payment method must support refunds." | paste -sd' ' | fold -sw 80
+    echo -e "Will not allow for refunding more than the full amount even with multiple partial refunds. Money is refunded to the payment method used to make the original payment. Payment method must support refunds. <br><br><b>Permissions Needed:</b> PAYMENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the transaction to refund ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15347,6 +17291,8 @@ print_getUserWallet_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserWallet - Returns the user's wallet for the given currency code${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> WALLETS_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The ID of the user for whom wallet is being retrieved ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}currency_code${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - Currency code of the user's wallet ${YELLOW}Specify as: currency_code=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15371,6 +17317,8 @@ print_getUserWallet_help() {
 print_getUserWalletTransactions_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserWalletTransactions - Retrieve a user's wallet transactions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> WALLETS_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The ID of the user for whom wallet transactions are being retrieved ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15411,6 +17359,8 @@ print_getUserWallets_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserWallets - List all of a user's wallets${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> WALLETS_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The ID of the user for whom wallets are being retrieved ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -15435,6 +17385,8 @@ print_getWalletBalances_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getWalletBalances - Retrieves a summation of wallet balances by currency code${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> WALLETS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -15456,6 +17408,8 @@ print_getWalletBalances_help() {
 print_getWalletTransactions_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getWalletTransactions - Retrieve wallet transactions across the system${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> WALLETS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_invoice${OFF} ${BLUE}[Integer]${OFF}${OFF} - Filter for transactions from a specific invoice${YELLOW} Specify as: filter_invoice=value${OFF}" \
@@ -15502,6 +17456,8 @@ print_getWallets_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getWallets - Retrieve a list of wallets across the system${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> WALLETS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15531,6 +17487,8 @@ print_updateWalletBalance_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateWalletBalance - Updates the balance for a user's wallet${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> WALLETS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The ID of the user for whom wallet is being modified ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}currency_code${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - Currency code of the user's wallet ${YELLOW}Specify as: currency_code=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15558,6 +17516,8 @@ print_createXsollaTokenUrl_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createXsollaTokenUrl - Create a payment token that should be used to forward the user to Xsolla so they can complete payment${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> XSOLLA_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The payment request to be sent to XSolla" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -15583,7 +17543,7 @@ print_getChallengeEventLeaderboard_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getChallengeEventLeaderboard - Retrieve a challenge event leaderboard details${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Lists all leaderboard entries with additional user details" | paste -sd' ' | fold -sw 80
+    echo -e "Lists all leaderboard entries with additional user details. <br><br><b>Permissions Needed:</b> REPORTING_CHALLENGES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_event${OFF} ${BLUE}[Integer]${OFF}${OFF} - A sepecific challenge event id${YELLOW} Specify as: filter_event=value${OFF}" \
@@ -15616,7 +17576,7 @@ print_getChallengeEventParticipants_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getChallengeEventParticipants - Retrieve a challenge event participant details${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Lists all user submitted scores sorted by value, including those that do not apear in the leaderboard due to value or aggregation" | paste -sd' ' | fold -sw 80
+    echo -e "Lists all user submitted scores sorted by value, including those that do not apear in the leaderboard due to value or aggregation. <br><br><b>Permissions Needed:</b> REPORTING_CHALLENGES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_event${OFF} ${BLUE}[Integer]${OFF}${OFF} - A sepecific challenge event id${YELLOW} Specify as: filter_event=value${OFF}" \
@@ -15648,6 +17608,8 @@ print_getChallengeEventParticipants_help() {
 print_getInvoiceReports_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getInvoiceReports - Retrieve invoice counts aggregated by time ranges${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> REPORTING_ORDERS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}currency_code${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The code for a currency to get sales data for ${YELLOW}Specify as: currency_code=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15687,7 +17649,7 @@ print_getItemRevenue_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getItemRevenue - Get item revenue info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Get basic info about revenue from sales of items and bundles (not subscriptions, shipping, etc), summed up within a time range" | paste -sd' ' | fold -sw 80
+    echo -e "Get basic info about revenue from sales of items and bundles (not subscriptions, shipping, etc), summed up within a time range. <br><br><b>Permissions Needed:</b> REPORTING_REVENUE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}currency_code${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The code for a currency to get sales data for ${YELLOW}Specify as: currency_code=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15717,7 +17679,7 @@ print_getRefundRevenue_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getRefundRevenue - Get refund revenue info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Get basic info about revenue loss from refunds (for all item types), summed up within a time range." | paste -sd' ' | fold -sw 80
+    echo -e "Get basic info about revenue loss from refunds (for all item types), summed up within a time range. <br><br><b>Permissions Needed:</b> REPORTING_REVENUE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}currency_code${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The code for a currency to get refund data for ${YELLOW}Specify as: currency_code=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15747,7 +17709,7 @@ print_getRevenueByCountry_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getRevenueByCountry - Get revenue info by country${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Get basic info about revenue from sales of all types, summed up within a time range and split out by country. Sorted for largest revenue at the top" | paste -sd' ' | fold -sw 80
+    echo -e "Get basic info about revenue from sales of all types, summed up within a time range and split out by country. Sorted for largest revenue at the top. <br><br><b>Permissions Needed:</b> REPORTING_REVENUE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}currency_code${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The code for a currency to get sales data for ${YELLOW}Specify as: currency_code=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15781,7 +17743,7 @@ print_getRevenueByItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getRevenueByItem - Get revenue info by item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Get basic info about revenue from sales of all types, summed up within a time range and split out by specific item. Sorted for largest revenue at the top" | paste -sd' ' | fold -sw 80
+    echo -e "Get basic info about revenue from sales of all types, summed up within a time range and split out by specific item. Sorted for largest revenue at the top. <br><br><b>Permissions Needed:</b> REPORTING_REVENUE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}currency_code${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The code for a currency to get sales data for ${YELLOW}Specify as: currency_code=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15815,7 +17777,7 @@ print_getSubscriptionRevenue_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getSubscriptionRevenue - Get subscription revenue info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Get basic info about revenue from sales of new subscriptions as well as recurring payemnts, summed up within a time range" | paste -sd' ' | fold -sw 80
+    echo -e "Get basic info about revenue from sales of new subscriptions as well as recurring payemnts, summed up within a time range. <br><br><b>Permissions Needed:</b> REPORTING_REVENUE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}currency_code${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The code for a currency to get sales data for ${YELLOW}Specify as: currency_code=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15845,6 +17807,8 @@ print_getSubscriptionReports_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getSubscriptionReports - Get a list of available subscription reports in most recent first order${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> SUBSCRIPTIONS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15871,6 +17835,8 @@ print_getSubscriptionReports_help() {
 print_getUsageByDay_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUsageByDay - Returns aggregated endpoint usage information by day${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> USAGE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}start_date${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The beginning of the range being requested, unix timestamp in seconds${YELLOW} Specify as: start_date=value${OFF}" \
@@ -15909,6 +17875,8 @@ print_getUsageByHour_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUsageByHour - Returns aggregated endpoint usage information by hour${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> USAGE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}start_date${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The beginning of the range being requested, unix timestamp in seconds${YELLOW} Specify as: start_date=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15945,6 +17913,8 @@ print_getUsageByHour_help() {
 print_getUsageByMinute_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUsageByMinute - Returns aggregated endpoint usage information by minute${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> USAGE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}start_date${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The beginning of the range being requested, unix timestamp in seconds${YELLOW} Specify as: start_date=value${OFF}" \
@@ -15983,6 +17953,8 @@ print_getUsageByMonth_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUsageByMonth - Returns aggregated endpoint usage information by month${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> USAGE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}start_date${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The beginning of the range being requested, unix timestamp in seconds${YELLOW} Specify as: start_date=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16019,6 +17991,8 @@ print_getUsageByMonth_help() {
 print_getUsageByYear_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUsageByYear - Returns aggregated endpoint usage information by year${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> USAGE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}start_date${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The beginning of the range being requested, unix timestamp in seconds${YELLOW} Specify as: start_date=value${OFF}" \
@@ -16057,6 +18031,8 @@ print_getUsageEndpoints_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUsageEndpoints - Returns list of endpoints called (method and url)${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> USAGE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}start_date${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The beginning of the range being requested, unix timestamp in seconds${YELLOW} Specify as: start_date=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16084,7 +18060,7 @@ print_getUserRegistrations_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserRegistrations - Get user registration info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Get user registration counts grouped by time range" | paste -sd' ' | fold -sw 80
+    echo -e "Get user registration counts grouped by time range. <br><br><b>Permissions Needed:</b> REPORTING_USER_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}granularity${OFF} ${BLUE}[String]${OFF} ${CYAN}(default: day)${OFF} - The time duration to aggregate by${YELLOW} Specify as: granularity=value${OFF}" \
@@ -16119,7 +18095,7 @@ print_searchCountGET_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchCountGET - Count matches with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _count.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _count.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16145,7 +18121,7 @@ print_searchCountPOST_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchCountPOST - Count matches with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _count.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _count.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16173,7 +18149,7 @@ print_searchCountWithTemplateGET_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchCountWithTemplateGET - Count matches with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _count.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _count.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16200,7 +18176,7 @@ print_searchCountWithTemplatePOST_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchCountWithTemplatePOST - Count matches with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _count.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _count.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16229,7 +18205,7 @@ print_searchDocumentGET_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchDocumentGET - Get document with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16256,7 +18232,7 @@ print_searchDocumentWithTemplateGET_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchDocumentWithTemplateGET - Get document with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16284,7 +18260,7 @@ print_searchExplainGET_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchExplainGET - Explain matches with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _explain.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _explain.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16311,7 +18287,7 @@ print_searchExplainPOST_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchExplainPOST - Explain matches with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _explain.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _explain.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16340,7 +18316,7 @@ print_searchExplainWithTemplateGET_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchExplainWithTemplateGET - Explain matches with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _explain.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _explain.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16368,7 +18344,7 @@ print_searchExplainWithTemplatePOST_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchExplainWithTemplatePOST - Explain matches with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _explain.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _explain.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-count.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16398,7 +18374,7 @@ print_searchIndex_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchIndex - Search an index with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _search.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _search.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16426,7 +18402,7 @@ print_searchIndexGET_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchIndexGET - Search an index with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _search.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _search.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16452,7 +18428,7 @@ print_searchIndexWithTemplateGET_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchIndexWithTemplateGET - Search an index with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _search.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _search.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16479,7 +18455,7 @@ print_searchIndexWithTemplatePOST_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchIndexWithTemplatePOST - Search an index with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _search.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _search.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16508,7 +18484,7 @@ print_searchIndicesGET_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchIndicesGET - Get indices${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _cat/indices for indices.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-get-mapping.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _cat/indices for indices.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-get-mapping.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -16532,7 +18508,7 @@ print_searchMappingsGET_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchMappingsGET - Get mapping with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _mapping.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-get-mapping.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _mapping.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-get-mapping.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16558,7 +18534,7 @@ print_searchMappingsWithTemplateGET_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchMappingsWithTemplateGET - Get mapping with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _mapping.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-get-mapping.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _mapping.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-get-mapping.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16585,7 +18561,7 @@ print_searchValidateGET_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchValidateGET - Validate matches with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _validate/query.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-validate.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _validate/query.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-validate.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16611,7 +18587,7 @@ print_searchValidatePOST_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchValidatePOST - Validate matches with no template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _validate/query.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-validate.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _validate/query.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-validate.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16639,7 +18615,7 @@ print_searchValidateWithTemplateGET_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchValidateWithTemplateGET - Validate matches with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _validate/query.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-validate.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _validate/query.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-validate.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16666,7 +18642,7 @@ print_searchValidateWithTemplatePOST_help() {
     echo ""
     echo -e "${BOLD}${WHITE}searchValidateWithTemplatePOST - Validate matches with a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _validate/query.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-validate.html'>API guide</a>" | paste -sd' ' | fold -sw 80
+    echo -e "This is a 1 to 1 mapping of a ElasticSearch call to _validate/query.  Further information can be found at their <a href='https://www.elastic.co/guide/en/elasticsearch/reference/current/search-validate.html'>API guide</a>. <br><br><b>Permissions Needed:</b> SEARCH_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The index type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16695,7 +18671,7 @@ print_linkAccounts_help() {
     echo ""
     echo -e "${BOLD}${WHITE}linkAccounts - Link facebook account${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Links the current user account to a facebook account, using the acccess token from facebook. Can also be used to update the access token after it has expired." | paste -sd' ' | fold -sw 80
+    echo -e "Links the current user account to a facebook account, using the acccess token from facebook. Can also be used to update the access token after it has expired. <br><br><b>Permissions Needed:</b> Non-facebook user token" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The token from facebook" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16722,7 +18698,7 @@ print_linkAccounts1_help() {
     echo ""
     echo -e "${BOLD}${WHITE}linkAccounts1 - Link google account${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Links the current user account to a google account, using the acccess token from google. Can also be used to update the access token after it has expired." | paste -sd' ' | fold -sw 80
+    echo -e "Links the current user account to a google account, using the acccess token from google. Can also be used to update the access token after it has expired. <br><br><b>Permissions Needed:</b> Non-google user token" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The token from google" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16749,7 +18725,7 @@ print_createItemTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createItemTemplate - Create an item template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Item Templates define a type of item and the properties they have." | paste -sd' ' | fold -sw 80
+    echo -e "Item Templates define a type of item and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new item template" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16776,7 +18752,7 @@ print_createStoreItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createStoreItem - Create a store item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "SKUs have to be unique in the entire store. If a duplicate SKU is found, a 400 error is generated and the response will have a \"parameters\" field that is a list of duplicates. A duplicate is an object like {item_id, offending_sku_list}. Ex:<br /> {..., parameters: [[{item: 1, skus: [\"SKU-1\"]}]]}<br /> If an item is brand new and has duplicate SKUs within itself, the item ID will be 0.  Item subclasses are not allowed here, you will have to use their respective endpoints." | paste -sd' ' | fold -sw 80
+    echo -e "SKUs have to be unique in the entire store. If a duplicate SKU is found, a 400 error is generated and the response will have a \"parameters\" field that is a list of duplicates. A duplicate is an object like {item_id, offending_sku_list}. Ex:<br /> {..., parameters: [[{item: 1, skus: [\"SKU-1\"]}]]}<br /> If an item is brand new and has duplicate SKUs within itself, the item ID will be 0.  Item subclasses are not allowed here, you will have to use their respective endpoints. <br><br><b>Permissions Needed:</b> STORE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}cascade${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: false)${OFF} - Whether to cascade group changes, such as in the limited gettable behavior. A 400 error will return otherwise if the group is already in use with different values.${YELLOW} Specify as: cascade=value${OFF}" \
@@ -16805,6 +18781,8 @@ print_deleteItemTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteItemTemplate - Delete an item template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}cascade${OFF} ${BLUE}[String]${OFF}${OFF} - force deleting the template if it's attached to other objects, cascade = detach${YELLOW} Specify as: cascade=value${OFF}" \
@@ -16831,6 +18809,8 @@ print_deleteStoreItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteStoreItem - Delete a store item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> STORE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the item ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -16855,6 +18835,8 @@ print_getBehaviors_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBehaviors - List available item behaviors${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -16877,7 +18859,7 @@ print_getItemTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getItemTemplate - Get a single item template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Item Templates define a type of item and the properties they have." | paste -sd' ' | fold -sw 80
+    echo -e "Item Templates define a type of item and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16902,6 +18884,8 @@ print_getItemTemplate_help() {
 print_getItemTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getItemTemplates - List and search item templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -16932,6 +18916,8 @@ print_getStoreItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getStoreItem - Get a single store item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the item ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -16956,7 +18942,7 @@ print_getStoreItems_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getStoreItems - List and search store items${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If called without permission STORE_ADMIN the only items marked displayable, whose start and end date are null or appropriate to the current date, and whose geo policy allows the caller's country will be returned. Similarly skus will be filtered, possibly resulting in an item returned with no skus the user can purchase." | paste -sd' ' | fold -sw 80
+    echo -e "If called without permission STORE_ADMIN the only items marked displayable, whose start and end date are null or appropriate to the current date, and whose geo policy allows the caller's country will be returned. Similarly skus will be filtered, possibly resulting in an item returned with no skus the user can purchase. br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_name_search${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for items whose name starts with a given string.${YELLOW} Specify as: filter_name_search=value${OFF}" \
@@ -17015,7 +19001,7 @@ print_quickBuy_help() {
     echo ""
     echo -e "${BOLD}${WHITE}quickBuy - One-step purchase and pay for a single SKU item from a user's wallet${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Used to create and automatically pay an invoice for a single unit of a single SKU from a user's wallet. SKU must be priced in virtual currency and must not be an item that requires shipping. PAYMENTS_ADMIN permission is required if user ID is specified and is not the ID of the currently logged in user. If invoice price does not match expected price, purchase is aborted" | paste -sd' ' | fold -sw 80
+    echo -e "Used to create and automatically pay an invoice for a single unit of a single SKU from a user's wallet. SKU must be priced in virtual currency and must not be an item that requires shipping. PAYMENTS_ADMIN permission is required if user ID is specified and is not the ID of the currently logged in user. If invoice price does not match expected price, purchase is aborted. <br><br><b>Permissions Needed:</b> PAYMENTS_USER and owner, or PAYMENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - Quick buy details" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17044,6 +19030,8 @@ print_updateItemTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateItemTemplate - Update an item template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The item template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17069,6 +19057,8 @@ print_updateItemTemplate_help() {
 print_updateStoreItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateStoreItem - Update a store item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> STORE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the item ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17098,7 +19088,7 @@ print_createBundleItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createBundleItem - Create a bundle item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "The SKU for the bundle itself must be unique and there can only be one SKU.  Extra notes for price_override:  The price of all the items (multiplied by the quantity) must equal the price of the bundle.  With individual prices set, items will be processed individually and can be refunded as such.  However, if all prices are set to null, the price of the bundle will be used and will be treated as one item." | paste -sd' ' | fold -sw 80
+    echo -e "The SKU for the bundle itself must be unique and there can only be one SKU.  Extra notes for price_override:  The price of all the items (multiplied by the quantity) must equal the price of the bundle.  With individual prices set, items will be processed individually and can be refunded as such.  However, if all prices are set to null, the price of the bundle will be used and will be treated as one item. <br><br><b>Permissions Needed:</b> BUNDLES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}cascade${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: false)${OFF} - Whether to cascade group changes, such as in the limited gettable behavior. A 400 error will return otherwise if the group is already in use with different values.${YELLOW} Specify as: cascade=value${OFF}" \
@@ -17127,7 +19117,7 @@ print_createBundleTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createBundleTemplate - Create a bundle template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Bundle Templates define a type of bundle and the properties they have." | paste -sd' ' | fold -sw 80
+    echo -e "Bundle Templates define a type of bundle and the properties they have. <br><br><b>Permissions Needed:</b> BUNDLES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new bundle template" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17154,6 +19144,8 @@ print_deleteBundleItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteBundleItem - Delete a bundle item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> BUNDLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the bundle ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -17177,6 +19169,8 @@ print_deleteBundleItem_help() {
 print_deleteBundleTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteBundleTemplate - Delete a bundle template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> BUNDLES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17204,6 +19198,8 @@ print_getBundleItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBundleItem - Get a single bundle item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the bundle ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -17228,7 +19224,7 @@ print_getBundleTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBundleTemplate - Get a single bundle template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Bundle Templates define a type of bundle and the properties they have." | paste -sd' ' | fold -sw 80
+    echo -e "Bundle Templates define a type of bundle and the properties they have. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17253,6 +19249,8 @@ print_getBundleTemplate_help() {
 print_getBundleTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBundleTemplates - List and search bundle templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -17283,6 +19281,8 @@ print_updateBundleItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateBundleItem - Update a bundle item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> BUNDLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the bundle ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}cascade${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: false)${OFF} - Whether to cascade group changes, such as in the limited gettable behavior. A 400 error will return otherwise if the group is already in use with different values.${YELLOW} Specify as: cascade=value${OFF}" \
@@ -17311,6 +19311,8 @@ print_updateBundleTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateBundleTemplate - Update a bundle template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> BUNDLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The bundle template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17337,7 +19339,7 @@ print_createCouponItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createCouponItem - Create a coupon item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "SKUs have to be unique in the entire store." | paste -sd' ' | fold -sw 80
+    echo -e "SKUs have to be unique in the entire store. <br><br><b>Permissions Needed:</b> COUPONS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}cascade${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: false)${OFF} - Whether to cascade group changes, such as in the limited gettable behavior. A 400 error will return otherwise if the group is already in use with different values.${YELLOW} Specify as: cascade=value${OFF}" \
@@ -17366,7 +19368,7 @@ print_createCouponTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createCouponTemplate - Create a coupon template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Coupon Templates define a type of coupon and the properties they have." | paste -sd' ' | fold -sw 80
+    echo -e "Coupon Templates define a type of coupon and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new coupon template" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17393,6 +19395,8 @@ print_deleteCouponItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteCouponItem - Delete a coupon item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> COUPONS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the coupon ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -17416,6 +19420,8 @@ print_deleteCouponItem_help() {
 print_deleteCouponTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteCouponTemplate - Delete a coupon template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17443,6 +19449,8 @@ print_getCouponItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCouponItem - Get a single coupon item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> COUPONS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the coupon ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -17466,6 +19474,8 @@ print_getCouponItem_help() {
 print_getCouponItemBySku_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCouponItemBySku - Get a coupon by sku${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}sku${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - A sku of the coupon ${YELLOW}Specify as: sku=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17491,7 +19501,7 @@ print_getCouponTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCouponTemplate - Get a single coupon template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Coupon Templates define a type of coupon and the properties they have." | paste -sd' ' | fold -sw 80
+    echo -e "Coupon Templates define a type of coupon and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN or COUPONS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17516,6 +19526,8 @@ print_getCouponTemplate_help() {
 print_getCouponTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCouponTemplates - List and search coupon templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or COUPONS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -17546,6 +19558,8 @@ print_updateCouponItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateCouponItem - Update a coupon item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> COUPONS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the coupon ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}cascade${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: false)${OFF} - Whether to cascade group changes, such as in the limited gettable behavior. A 400 error will return otherwise if the group is already in use with different values.${YELLOW} Specify as: cascade=value${OFF}" \
@@ -17574,6 +19588,8 @@ print_updateCouponTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateCouponTemplate - Update a coupon template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The coupon template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17600,6 +19616,8 @@ print_createCatalogSale_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createCatalogSale - Create a sale${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> SALES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The catalog sale object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -17625,6 +19643,8 @@ print_deleteCatalogSale_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteCatalogSale - Delete a sale${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> SALES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the sale ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -17649,6 +19669,8 @@ print_getCatalogSale_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCatalogSale - Get a single sale${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> SALES_USER or SALES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the sale ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -17672,6 +19694,8 @@ print_getCatalogSale_help() {
 print_getCatalogSales_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCatalogSales - List and search sales${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> SALES_USER or SALES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -17702,6 +19726,8 @@ print_updateCatalogSale_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateCatalogSale - Update a sale${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> SALES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the sale ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The catalog sale object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17728,7 +19754,7 @@ print_createShippingItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createShippingItem - Create a shipping item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "A shipping item represents a shipping option and cost. SKUs have to be unique in the entire store." | paste -sd' ' | fold -sw 80
+    echo -e "A shipping item represents a shipping option and cost. SKUs have to be unique in the entire store. <br><br><b>Permissions Needed:</b> SHIPPING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}cascade${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: false)${OFF} - Whether to cascade group changes, such as in the limited gettable behavior. A 400 error will return otherwise if the group is already in use with different values.${YELLOW} Specify as: cascade=value${OFF}" \
@@ -17784,6 +19810,8 @@ print_deleteShippingItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteShippingItem - Delete a shipping item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> SHIPPING_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the shipping item ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -17807,6 +19835,8 @@ print_deleteShippingItem_help() {
 print_deleteShippingTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteShippingTemplate - Delete a shipping template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17834,6 +19864,8 @@ print_getShippingItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getShippingItem - Get a single shipping item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the shipping item ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -17858,7 +19890,7 @@ print_getShippingTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getShippingTemplate - Get a single shipping template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Shipping Templates define a type of shipping and the properties they have." | paste -sd' ' | fold -sw 80
+    echo -e "Shipping Templates define a type of shipping and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN or SHIPPING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17883,6 +19915,8 @@ print_getShippingTemplate_help() {
 print_getShippingTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getShippingTemplates - List and search shipping templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or SHIPPING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -17913,6 +19947,8 @@ print_updateShippingItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateShippingItem - Update a shipping item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> SHIPPING_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the shipping item ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}cascade${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: false)${OFF} - Whether to cascade group changes, such as in the limited gettable behavior. A 400 error will return otherwise if the group is already in use with different values.${YELLOW} Specify as: cascade=value${OFF}" \
@@ -17941,6 +19977,8 @@ print_updateShippingTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateShippingTemplate - Update a shipping template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The shipping template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17966,6 +20004,8 @@ print_updateShippingTemplate_help() {
 print_addCustomDiscount_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addCustomDiscount - Adds a custom discount to the cart${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> SHOPPING_CARTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the cart ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -17993,6 +20033,8 @@ print_addDiscountToCart_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addDiscountToCart - Adds a discount coupon to the cart${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> SHOPPING_CARTS_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the cart ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The request of the sku" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18019,7 +20061,7 @@ print_addItemToCart_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addItemToCart - Add an item to the cart${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Currently, carts cannot contain virtual and real currency items at the same time. Furthermore, the API only support a single virtual item at the moment" | paste -sd' ' | fold -sw 80
+    echo -e "Currently, carts cannot contain virtual and real currency items at the same time. Furthermore, the API only support a single virtual item at the moment. <br><br><b>Permissions Needed:</b> SHOPPING_CARTS_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the cart ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18047,7 +20089,7 @@ print_createCart_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createCart - Create a cart${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "You don't have to have a user to create a cart but the API requires authentication to checkout" | paste -sd' ' | fold -sw 80
+    echo -e "You don't have to have a user to create a cart but the API requires authentication to checkout. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}owner${OFF} ${BLUE}[Integer]${OFF}${OFF} - Set the owner of a cart. If not specified, defaults to the calling user's id. If specified and is not the calling user's id, SHOPPING_CARTS_ADMIN permission is required${YELLOW} Specify as: owner=value${OFF}" \
@@ -18076,6 +20118,8 @@ print_getCart_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCart - Returns the cart with the given GUID${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> SHOPPING_CARTS_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the cart ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -18099,6 +20143,8 @@ print_getCart_help() {
 print_getCarts_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCarts - Get a list of carts${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> SHOPPING_CARTS_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_owner_id${OFF} ${BLUE}[Integer]${OFF}${OFF} - Filter by the id of the owner${YELLOW} Specify as: filter_owner_id=value${OFF}" \
@@ -18131,6 +20177,8 @@ print_getShippable_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getShippable - Returns whether a cart requires shipping${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> SHOPPING_CARTS_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the cart ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -18155,7 +20203,7 @@ print_getShippingCountries_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getShippingCountries - Get the list of available shipping countries per vendor${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Since a cart can have multiple vendors with different shipping options, the countries are broken down by vendors. Please see notes about the response object as the fields are variable." | paste -sd' ' | fold -sw 80
+    echo -e "Since a cart can have multiple vendors with different shipping options, the countries are broken down by vendors. Please see notes about the response object as the fields are variable. <br><br><b>Permissions Needed:</b> SHOPPING_CARTS_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the cart ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18180,6 +20228,8 @@ print_getShippingCountries_help() {
 print_removeDiscountFromCart_help() {
     echo ""
     echo -e "${BOLD}${WHITE}removeDiscountFromCart - Removes a discount coupon from the cart${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> SHOPPING_CARTS_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the cart ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18206,7 +20256,7 @@ print_setCartCurrency_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setCartCurrency - Sets the currency to use for the cart${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "May be disallowed by site settings." | paste -sd' ' | fold -sw 80
+    echo -e "May be disallowed by site settings. <br><br><b>Permissions Needed:</b> SHOPPING_CARTS_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the cart ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18234,6 +20284,8 @@ print_setCartOwner_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setCartOwner - Sets the owner of a cart if none is set already${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> SHOPPING_CARTS_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the cart ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The id of the user" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18260,7 +20312,7 @@ print_updateItemInCart_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateItemInCart - Changes the quantity of an item already in the cart${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "A quantity of zero will remove the item from the cart altogether." | paste -sd' ' | fold -sw 80
+    echo -e "A quantity of zero will remove the item from the cart altogether. <br><br><b>Permissions Needed:</b> SHOPPING_CARTS_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the cart ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18288,6 +20340,8 @@ print_updateShippingAddress_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateShippingAddress - Modifies or sets the order shipping address${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> SHOPPING_CARTS_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the cart ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The cart shipping address request object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18314,6 +20368,8 @@ print_createSubscription_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createSubscription - Creates a subscription item and associated plans${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> SUBSCRIPTIONS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The subscription to be created" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -18339,7 +20395,7 @@ print_createSubscriptionTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createSubscriptionTemplate - Create a subscription template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Subscription Templates define a type of subscription and the properties they have." | paste -sd' ' | fold -sw 80
+    echo -e "Subscription Templates define a type of subscription and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new subscription template" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18366,7 +20422,7 @@ print_deleteSubscription_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteSubscription - Delete a subscription plan${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Must not be locked or a migration target" | paste -sd' ' | fold -sw 80
+    echo -e "Must not be locked or a migration target. <br><br><b>Permissions Needed:</b> SUBSCRIPTIONS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the subscription ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18392,6 +20448,8 @@ print_deleteSubscription_help() {
 print_deleteSubscriptionTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteSubscriptionTemplate - Delete a subscription template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18419,6 +20477,8 @@ print_getSubscription_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getSubscription - Retrieve a single subscription item and associated plans${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the subscription ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -18443,7 +20503,7 @@ print_getSubscriptionTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getSubscriptionTemplate - Get a single subscription template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Subscription Templates define a type of subscription and the properties they have." | paste -sd' ' | fold -sw 80
+    echo -e "Subscription Templates define a type of subscription and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18468,6 +20528,8 @@ print_getSubscriptionTemplate_help() {
 print_getSubscriptionTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getSubscriptionTemplates - List and search subscription templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or SUBSCRIPTIONS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -18498,6 +20560,8 @@ print_getSubscriptions_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getSubscriptions - List available subscription items and associated plans${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18527,6 +20591,8 @@ print_processSubscriptions_help() {
     echo ""
     echo -e "${BOLD}${WHITE}processSubscriptions - Processes subscriptions and charge dues${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> SUBSCRIPTIONS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -18549,7 +20615,7 @@ print_updateSubscription_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateSubscription - Updates a subscription item and associated plans${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Will not remove plans left out" | paste -sd' ' | fold -sw 80
+    echo -e "Will not remove plans left out. <br><br><b>Permissions Needed:</b> SUBSCRIPTIONS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the subscription ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18577,6 +20643,8 @@ print_updateSubscriptionTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateSubscriptionTemplate - Update a subscription template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The subscription template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18603,6 +20671,8 @@ print_createVendor_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createVendor - Create a vendor${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> VENDORS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The vendor" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -18628,7 +20698,7 @@ print_createVendorTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createVendorTemplate - Create a vendor template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Vendor Templates define a type of vendor and the properties they have." | paste -sd' ' | fold -sw 80
+    echo -e "Vendor Templates define a type of vendor and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new vendor template" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18655,6 +20725,8 @@ print_deleteVendor_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteVendor - Delete a vendor${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> VENDORS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the vendor ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -18678,6 +20750,8 @@ print_deleteVendor_help() {
 print_deleteVendorTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteVendorTemplate - Delete a vendor template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18705,6 +20779,8 @@ print_getVendor_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getVendor - Get a single vendor${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the vendor ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -18729,7 +20805,7 @@ print_getVendorTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getVendorTemplate - Get a single vendor template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Vendor Templates define a type of vendor and the properties they have." | paste -sd' ' | fold -sw 80
+    echo -e "Vendor Templates define a type of vendor and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18755,12 +20831,14 @@ print_getVendorTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getVendorTemplates - List and search vendor templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF} ${CYAN}(default: 1)${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
+    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF}${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -18783,6 +20861,8 @@ print_getVendorTemplates_help() {
 print_getVendors_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getVendors - List and search vendors${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_name${OFF} ${BLUE}[String]${OFF}${OFF} - Filters vendors by name starting with the text provided in the filter${YELLOW} Specify as: filter_name=value${OFF}" \
@@ -18815,6 +20895,8 @@ print_updateVendor_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateVendor - Update a vendor${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> VENDORS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the vendor ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The vendor" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18840,6 +20922,8 @@ print_updateVendor_help() {
 print_updateVendorTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateVendorTemplate - Update a vendor template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18867,6 +20951,8 @@ print_createCountryTax_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createCountryTax - Create a country tax${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TAX_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The tax object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -18891,6 +20977,8 @@ print_createCountryTax_help() {
 print_createStateTax_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createStateTax - Create a state tax${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TAX_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}country_code_iso3${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The iso3 code of the country ${YELLOW}Specify as: country_code_iso3=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18918,6 +21006,8 @@ print_deleteCountryTax_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteCountryTax - Delete an existing tax${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TAX_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}country_code_iso3${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The iso3 code of the country ${YELLOW}Specify as: country_code_iso3=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -18941,6 +21031,8 @@ print_deleteCountryTax_help() {
 print_deleteStateTax_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteStateTax - Delete an existing state tax${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TAX_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}country_code_iso3${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The iso3 code of the country ${YELLOW}Specify as: country_code_iso3=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -18967,6 +21059,8 @@ print_getCountryTax_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCountryTax - Get a single tax${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}country_code_iso3${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The iso3 code of the country ${YELLOW}Specify as: country_code_iso3=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -18991,7 +21085,7 @@ print_getCountryTaxes_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getCountryTaxes - List and search taxes${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Get a list of taxes" | paste -sd' ' | fold -sw 80
+    echo -e "<b>Permissions Needed:</b> TAX_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -19022,6 +21116,8 @@ print_getStateTax_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getStateTax - Get a single state tax${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}country_code_iso3${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The iso3 code of the country ${YELLOW}Specify as: country_code_iso3=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}state_code${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The code of the state ${YELLOW}Specify as: state_code=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19047,7 +21143,7 @@ print_getStateTaxesForCountries_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getStateTaxesForCountries - List and search taxes across all countries${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Get a list of taxes" | paste -sd' ' | fold -sw 80
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -19078,7 +21174,7 @@ print_getStateTaxesForCountry_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getStateTaxesForCountry - List and search taxes within a country${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Get a list of taxes" | paste -sd' ' | fold -sw 80
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}country_code_iso3${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The iso3 code of the country ${YELLOW}Specify as: country_code_iso3=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19110,6 +21206,8 @@ print_updateCountryTax_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateCountryTax - Create or update a tax${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TAX_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}country_code_iso3${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The iso3 code of the country ${YELLOW}Specify as: country_code_iso3=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The tax object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19135,6 +21233,8 @@ print_updateCountryTax_help() {
 print_updateStateTax_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateStateTax - Create or update a state tax${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TAX_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}country_code_iso3${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The iso3 code of the country ${YELLOW}Specify as: country_code_iso3=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19163,6 +21263,8 @@ print_getTemplatePropertyType_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getTemplatePropertyType - Get details for a template property type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - type ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -19187,6 +21289,8 @@ print_getTemplatePropertyTypes_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getTemplatePropertyTypes - List template property types${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -19208,6 +21312,8 @@ print_getTemplatePropertyTypes_help() {
 print_addUserTag_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addUserTag - Add a tag to a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> USERS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19235,7 +21341,7 @@ print_createUserTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createUserTemplate - Create a user template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "User Templates define a type of user and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e "User Templates define a type of user and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The user template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19262,7 +21368,7 @@ print_deleteUserTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteUserTemplate - Delete a user template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19283,6 +21389,36 @@ print_deleteUserTemplate_help() {
 }
 ##############################################################################
 #
+# Print help for getDirectMessages1 operation
+#
+##############################################################################
+print_getDirectMessages1_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getDirectMessages1 - Get a list of direct messages with this user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}recipient_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The user id ${YELLOW}Specify as: recipient_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for getUser operation
 #
 ##############################################################################
@@ -19290,7 +21426,7 @@ print_getUser_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUser - Get a single user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Additional private info is included as USERS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e "Additional private info is included as USERS_ADMIN. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19316,6 +21452,8 @@ print_getUserTags_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserTags - List tags for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> USERS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -19340,6 +21478,8 @@ print_getUserTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserTemplate - Get a single user template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or USERS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -19363,6 +21503,8 @@ print_getUserTemplate_help() {
 print_getUserTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserTemplates - List and search user templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or USERS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -19393,7 +21535,7 @@ print_getUsers_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUsers - List and search users${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Additional private info is included as USERS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e "Additional private info is included as USERS_ADMIN. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_displayname${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for users whose display name starts with provided string.${YELLOW} Specify as: filter_displayname=value${OFF}" \
@@ -19448,7 +21590,7 @@ print_passwordReset_help() {
     echo ""
     echo -e "${BOLD}${WHITE}passwordReset - Choose a new password after a reset${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Finish resetting a user's password using the secret provided from the password-reset endpoint.  Password should be in plain text and will be encrypted on receipt. Use SSL for security." | paste -sd' ' | fold -sw 80
+    echo -e "Finish resetting a user's password using the secret provided from the password-reset endpoint.  Password should be in plain text and will be encrypted on receipt. Use SSL for security. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19469,6 +21611,32 @@ print_passwordReset_help() {
 }
 ##############################################################################
 #
+# Print help for postUserMessage operation
+#
+##############################################################################
+print_postUserMessage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}postUserMessage - Send a user message${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}recipient_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The user id ${YELLOW}Specify as: recipient_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The chat message request" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for registerUser operation
 #
 ##############################################################################
@@ -19476,7 +21644,7 @@ print_registerUser_help() {
     echo ""
     echo -e "${BOLD}${WHITE}registerUser - Register a new user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Password should be in plain text and will be encrypted on receipt. Use SSL for security" | paste -sd' ' | fold -sw 80
+    echo -e "Password should be in plain text and will be encrypted on receipt. Use SSL for security. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The user resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19503,6 +21671,8 @@ print_removeUserTag_help() {
     echo ""
     echo -e "${BOLD}${WHITE}removeUserTag - Remove a tag from a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> USERS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}tag${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The tag to remove ${YELLOW}Specify as: tag=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19528,7 +21698,7 @@ print_setPassword_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setPassword - Set a user's password${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Password should be in plain text and will be encrypted on receipt. Use SSL for security." | paste -sd' ' | fold -sw 80
+    echo -e "Password should be in plain text and will be encrypted on receipt. Use SSL for security. <br><br><b>Permissions Needed:</b> USERS_ADMIN or (USERS_USER and owner)" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19556,7 +21726,7 @@ print_startPasswordReset_help() {
     echo ""
     echo -e "${BOLD}${WHITE}startPasswordReset - Reset a user's password${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "A reset code will be generated and a 'forgot_password' BRE event will be fired with that code.  The default system rule will send an email to the selected user if an email service has been setup. You can modify that rule in BRE to send an SMS instead or any other type of notification as you see fit" | paste -sd' ' | fold -sw 80
+    echo -e "A reset code will be generated and a 'forgot_password' BRE event will be fired with that code.  The default system rule will send an email to the selected user if an email service has been setup. You can modify that rule in BRE to send an SMS instead or any other type of notification as you see fit. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19582,7 +21752,7 @@ print_submitPasswordReset_help() {
     echo ""
     echo -e "${BOLD}${WHITE}submitPasswordReset - Reset a user's password without user id${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "A reset code will be generated and a 'forgot_password' BRE event will be fired with that code.  The default system rule will send an email to the selected user if an email service has been setup. You can modify that rule in BRE to send an SMS instead or any other type of notification as you see fit.  Must submit their email, username, or mobile phone number" | paste -sd' ' | fold -sw 80
+    echo -e "A reset code will be generated and a 'forgot_password' BRE event will be fired with that code.  The default system rule will send an email to the selected user if an email service has been setup. You can modify that rule in BRE to send an SMS instead or any other type of notification as you see fit.  Must submit their email, username, or mobile phone number. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - An object containing one of three methods to look up a user" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19609,7 +21779,7 @@ print_updateUser_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateUser - Update a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Password will not be edited on this endpoint, use password specific endpoints." | paste -sd' ' | fold -sw 80
+    echo -e "Password will not be edited on this endpoint, use password specific endpoints. <br><br><b>Permissions Needed:</b> USERS_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19637,6 +21807,8 @@ print_updateUserTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateUserTemplate - Update a user template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The user template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19662,6 +21834,8 @@ print_updateUserTemplate_help() {
 print_createAddress_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createAddress - Create a new address${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> USERS_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19689,6 +21863,8 @@ print_deleteAddress_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteAddress - Delete an address${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> USERS_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the address ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19714,6 +21890,8 @@ print_getAddress_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getAddress - Get a single address${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> USERS_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the address ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19738,6 +21916,8 @@ print_getAddress_help() {
 print_getAddresses_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getAddresses - List and search addresses${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> USERS_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19769,6 +21949,8 @@ print_updateAddress_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateAddress - Update an address${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> USERS_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the address ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19796,7 +21978,7 @@ print_addFriend_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addFriend - Add a friend${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "As a user, either creates or confirm a pending request. As an admin, call this endpoint twice while inverting the IDs to create a confirmed friendship." | paste -sd' ' | fold -sw 80
+    echo -e "As a user, either creates or confirm a pending request. As an admin, call this endpoint twice while inverting the IDs to create a confirmed friendship. <br><br><b>Permissions Needed:</b> FRIENDSHIPS_ADMIN or (FRIENDSHIPS_USER and owner)" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' if logged in ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19822,6 +22004,8 @@ print_addFriend_help() {
 print_getFriends_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getFriends - Get friends list${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> FRIENDSHIPS_ADMIN or (FRIENDSHIPS_USER and owner)" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19855,7 +22039,7 @@ print_getInviteToken_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getInviteToken - Returns the invite token${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a unique invite token that allows direct connection to the request user.  Exposing that token presents privacy issues if the token is leaked. Use friend request flow instead if confirmation is required" | paste -sd' ' | fold -sw 80
+    echo -e "This is a unique invite token that allows direct connection to the request user.  Exposing that token presents privacy issues if the token is leaked. Use friend request. <br><br><b>Permissions Needed:</b> FRIENDSHIPS_ADMIN or (FRIENDSHIPS_USER and owner)flow instead if confirmation is required" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' if logged in ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19881,7 +22065,7 @@ print_getInvites_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getInvites - Get pending invites${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Invites that the specified user received" | paste -sd' ' | fold -sw 80
+    echo -e "Invites that the specified user received. <br><br><b>Permissions Needed:</b> FRIENDSHIPS_ADMIN or (FRIENDSHIPS_USER and owner)" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19911,7 +22095,7 @@ print_redeemFriendshipToken_help() {
     echo ""
     echo -e "${BOLD}${WHITE}redeemFriendshipToken - Redeem friendship token${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Immediately connects the requested user with the user mapped by the provided invite token" | paste -sd' ' | fold -sw 80
+    echo -e "Immediately connects the requested user with the user mapped by the provided invite token. <br><br><b>Permissions Needed:</b> FRIENDSHIPS_ADMIN or (FRIENDSHIPS_USER and owner)" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' if logged in ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19939,6 +22123,8 @@ print_removeOrDeclineFriend_help() {
     echo ""
     echo -e "${BOLD}${WHITE}removeOrDeclineFriend - Remove or decline a friend${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> FRIENDSHIPS_ADMIN or (FRIENDSHIPS_USER and owner)" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' if logged in ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user to befriend ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19963,6 +22149,8 @@ print_removeOrDeclineFriend_help() {
 print_addMemberToGroup_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addMemberToGroup - Adds a new member to the group${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> GROUP_ADMIN or self if open" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -19990,6 +22178,8 @@ print_addMembersToGroup_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addMembersToGroup - Adds multiple members to the group${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> GROUP_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - The id and status for a list of users to add to the group" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20016,6 +22206,8 @@ print_createGroup_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createGroup - Create a group${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> GROUP_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new group" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -20041,7 +22233,7 @@ print_createGroupMemberTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createGroupMemberTemplate - Create an group member template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "GroupMember Templates define a type of group member and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e "GroupMember Templates define a type of group member and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The group member template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20068,7 +22260,7 @@ print_createGroupTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createGroupTemplate - Create a group template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Group Templates define a type of group and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e "Group Templates define a type of group and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The group template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20095,7 +22287,7 @@ print_deleteGroup_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteGroup - Removes a group from the system${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "All groups listing this as the parent are also removed and users are in turn removed from this and those groups. This may result in users no longer being in this group's parent if they were not added to it directly as well." | paste -sd' ' | fold -sw 80
+    echo -e "All groups listing this as the parent are also removed and users are in turn removed from this and those groups. This may result in users no longer being in this group's parent if they were not added to it directly as well. <br><br><b>Permissions Needed:</b> GROUP_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20121,7 +22313,7 @@ print_deleteGroupMemberTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteGroupMemberTemplate - Delete an group member template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20149,12 +22341,39 @@ print_deleteGroupTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteGroupTemplate - Delete a group template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}cascade${OFF} ${BLUE}[String]${OFF}${OFF} - The value needed to delete used templates${YELLOW} Specify as: cascade=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for disableGroupNotification operation
+#
+##############################################################################
+print_disableGroupNotification_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}disableGroupNotification - Enable or disable notification of group messages${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The user id of the member or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - disabled" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=204
@@ -20176,6 +22395,8 @@ print_deleteGroupTemplate_help() {
 print_getGroup_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getGroup - Loads a specific group's details${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20199,9 +22420,9 @@ print_getGroup_help() {
 ##############################################################################
 print_getGroupAncestors_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}getGroupAncestors - Get group ancestors${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}getGroupAncestors - Get group ancestors${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Returns a list of ancestor groups in reverse order (parent, then grandparent, etc" | paste -sd' ' | fold -sw 80
+    echo -e "Returns a list of ancestor groups in reverse order (parent, then grandparent, etc). <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20226,6 +22447,8 @@ print_getGroupAncestors_help() {
 print_getGroupMember_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getGroupMember - Get a user from a group${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20252,6 +22475,8 @@ print_getGroupMemberTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getGroupMemberTemplate - Get a single group member template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or GROUP_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -20275,6 +22500,8 @@ print_getGroupMemberTemplate_help() {
 print_getGroupMemberTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getGroupMemberTemplates - List and search group member templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or GROUP_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -20305,6 +22532,8 @@ print_getGroupMembers_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getGroupMembers - Lists members of the group${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -20328,12 +22557,44 @@ print_getGroupMembers_help() {
 }
 ##############################################################################
 #
+# Print help for getGroupMessages operation
+#
+##############################################################################
+print_getGroupMessages_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getGroupMessages - Get a list of group messages${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for getGroupTemplate operation
 #
 ##############################################################################
 print_getGroupTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getGroupTemplate - Get a single group template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or GROUP_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20358,6 +22619,8 @@ print_getGroupTemplate_help() {
 print_getGroupTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getGroupTemplates - List and search group templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or GROUP_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -20388,6 +22651,8 @@ print_getGroupsForUser_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getGroupsForUser - List groups a user is in${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}filter_children${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Whether to limit group list to children of groups only. If true, shows only groups with parents. If false, shows only groups with no parent.${YELLOW} Specify as: filter_children=value${OFF}" \
@@ -20413,6 +22678,8 @@ print_getGroupsForUser_help() {
 print_listGroups_help() {
     echo ""
     echo -e "${BOLD}${WHITE}listGroups - List and search groups${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_template${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for groups using a specific template, by id${YELLOW} Specify as: filter_template=value${OFF}" \
@@ -20448,12 +22715,40 @@ print_listGroups_help() {
 }
 ##############################################################################
 #
+# Print help for postGroupMessage operation
+#
+##############################################################################
+print_postGroupMessage_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}postGroupMessage - Send a group message${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The chat message request" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for removeGroupMember operation
 #
 ##############################################################################
 print_removeGroupMember_help() {
     echo ""
     echo -e "${BOLD}${WHITE}removeGroupMember - Removes a user from a group${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> GROUP_ADMIN or self if open" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20480,7 +22775,7 @@ print_updateGroup_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateGroup - Update a group${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If adding/removing/changing parent, user membership in group/new parent groups may be modified. The parent being removed will remove members from this sub group unless they were added explicitly to the parent and the new parent will gain members unless they were already a part of it." | paste -sd' ' | fold -sw 80
+    echo -e "If adding/removing/changing parent, user membership in group/new parent groups may be modified. The parent being removed will remove members from this sub group unless they were added explicitly to the parent and the new parent will gain members unless they were already a part of it. <br><br><b>Permissions Needed:</b> GROUP_ADMIN or admin of the group" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20507,6 +22802,8 @@ print_updateGroup_help() {
 print_updateGroupMemberProperties_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateGroupMemberProperties - Change a user's order${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> GROUP_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20535,6 +22832,8 @@ print_updateGroupMemberProperties1_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateGroupMemberProperties1 - Change a user's membership properties${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> GROUP_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The user id of the member to modify ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20561,6 +22860,8 @@ print_updateGroupMemberProperties1_help() {
 print_updateGroupMemberStatus_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateGroupMemberStatus - Change a user's status${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> GROUP_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20589,6 +22890,8 @@ print_updateGroupMemberTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateGroupMemberTemplate - Update an group member template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The group member template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20614,6 +22917,8 @@ print_updateGroupMemberTemplate_help() {
 print_updateGroupTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateGroupTemplate - Update a group template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20641,7 +22946,7 @@ print_addItemToUserInventory_help() {
     echo ""
     echo -e "${BOLD}${WHITE}addItemToUserInventory - Adds an item to the user inventory${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "The inventory is fulfilled asynchronously UNLESS the invoice is explicitely skipped. Depending on the use case, it might require the client to verify that the entitlement was added after the fact or configure a BRE rule to get a notification in real time" | paste -sd' ' | fold -sw 80
+    echo -e "The inventory is fulfilled asynchronously UNLESS the invoice is explicitely skipped. Depending on the use case, it might require the client to verify that the entitlement was added after the fact or configure a BRE rule to get a notification in real time. <br><br><b>Permissions Needed:</b> INVENTORY_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20669,7 +22974,7 @@ print_checkUserEntitlementItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}checkUserEntitlementItem - Check for access to an item without consuming${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Useful for pre-check and accounts for all various buisness rules" | paste -sd' ' | fold -sw 80
+    echo -e "Useful for pre-check and accounts for all various buisness rules. <br><br><b>Permissions Needed:</b> INVENTORY_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user to check for or 'me' for logged in user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20698,6 +23003,8 @@ print_createEntitlementItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createEntitlementItem - Create an entitlement item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVENTORY_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}cascade${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: false)${OFF} - Whether to cascade group changes, such as in the limited gettable behavior. A 400 error will return otherwise if the group is already in use with different values.${YELLOW} Specify as: cascade=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20725,7 +23032,7 @@ print_createEntitlementTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createEntitlementTemplate - Create an entitlement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Entitlement templates define a type of entitlement and the properties they have" | paste -sd' ' | fold -sw 80
+    echo -e "Entitlement templates define a type of entitlement and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The entitlement template to be created" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20752,6 +23059,8 @@ print_deleteEntitlementItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteEntitlementItem - Delete an entitlement item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVENTORY_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}entitlement_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the entitlement ${YELLOW}Specify as: entitlement_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -20776,7 +23085,7 @@ print_deleteEntitlementTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteEntitlementTemplate - Delete an entitlement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects" | paste -sd' ' | fold -sw 80
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20804,6 +23113,8 @@ print_getEntitlementItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getEntitlementItem - Get a single entitlement item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}entitlement_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the entitlement ${YELLOW}Specify as: entitlement_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -20827,6 +23138,8 @@ print_getEntitlementItem_help() {
 print_getEntitlementItems_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getEntitlementItems - List and search entitlement items${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_template${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for entitlements using a specified template${YELLOW} Specify as: filter_template=value${OFF}" \
@@ -20859,6 +23172,8 @@ print_getEntitlementTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getEntitlementTemplate - Get a single entitlement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or ACHIEVEMENTS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -20882,6 +23197,8 @@ print_getEntitlementTemplate_help() {
 print_getEntitlementTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getEntitlementTemplates - List and search entitlement templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or ACHIEVEMENTS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -20911,6 +23228,8 @@ print_getEntitlementTemplates_help() {
 print_getUserInventories_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserInventories - List the user inventory entries for a given user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVENTORY_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -20952,8 +23271,10 @@ print_getUserInventory_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserInventory - Get an inventory entry${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVENTORY_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the inventory owner or 'me' for the logged in user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the inventory owner or 'me' for the logged in user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user inventory ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -20976,6 +23297,8 @@ print_getUserInventory_help() {
 print_getUserInventoryLog_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserInventoryLog - List the log entries for this inventory entry${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVENTORY_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the inventory owner or 'me' for the logged in user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21005,6 +23328,8 @@ print_getUserInventoryLog_help() {
 print_getUsersInventory_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUsersInventory - List the user inventory entries for all users${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVENTORY_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}inactive${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: false)${OFF} - If true, accepts inactive user inventories${YELLOW} Specify as: inactive=value${OFF}" \
@@ -21045,6 +23370,8 @@ print_grantUserEntitlement_help() {
     echo ""
     echo -e "${BOLD}${WHITE}grantUserEntitlement - Grant an entitlement${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVENTORY_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user to grant the entitlement to ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - grantRequest" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21070,6 +23397,8 @@ print_grantUserEntitlement_help() {
 print_updateEntitlementItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateEntitlementItem - Update an entitlement item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVENTORY_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}entitlement_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the entitlement ${YELLOW}Specify as: entitlement_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21099,6 +23428,8 @@ print_updateEntitlementTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateEntitlementTemplate - Update an entitlement template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The updated template" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21124,6 +23455,8 @@ print_updateEntitlementTemplate_help() {
 print_updateUserInventoryBehaviorData_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateUserInventoryBehaviorData - Set the behavior data for an inventory entry${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVENTORY_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21152,7 +23485,7 @@ print_updateUserInventoryExpires_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateUserInventoryExpires - Set the expiration date${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Will change the current grace period for a subscription but not the bill date (possibly even ending before having the chance to re-bill)" | paste -sd' ' | fold -sw 80
+    echo -e "Will change the current grace period for a subscription but not the bill date (possibly even ending before having the chance to re-bill). <br><br><b>Permissions Needed:</b> INVENTORY_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - user_id ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21181,6 +23514,8 @@ print_updateUserInventoryStatus_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateUserInventoryStatus - Set the status for an inventory entry${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVENTORY_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user inventory ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21207,6 +23542,8 @@ print_updateUserInventoryStatus_help() {
 print_useUserEntitlementItem_help() {
     echo ""
     echo -e "${BOLD}${WHITE}useUserEntitlementItem - Use an item${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> INVENTORY_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user to check for or 'me' for logged in user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21237,6 +23574,8 @@ print_createUserRelationship_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createUserRelationship - Create a user relationship${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> RELATIONSHIPS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new relationship" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -21262,6 +23601,8 @@ print_deleteUserRelationship_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteUserRelationship - Delete a user relationship${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> RELATIONSHIPS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the relationship ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -21286,6 +23627,8 @@ print_getUserRelationship_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserRelationship - Get a user relationship${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> RELATIONSHIPS_USER or RELATIONSHIPS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the relationship ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -21309,6 +23652,8 @@ print_getUserRelationship_help() {
 print_getUserRelationships_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserRelationships - Get a list of user relationships${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> RELATIONSHIPS_USER or RELATIONSHIPS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -21339,6 +23684,8 @@ print_updateUserRelationship_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateUserRelationship - Update a user relationship${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> RELATIONSHIPS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the relationship ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new relationship" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21365,6 +23712,8 @@ print_getUserSubscriptionDetails_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserSubscriptionDetails - Get details about a user's subscription${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> USERS_SUBSCRIPTIONS_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}inventory_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user's inventory ${YELLOW}Specify as: inventory_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21390,6 +23739,8 @@ print_getUsersSubscriptionDetails_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUsersSubscriptionDetails - Get details about a user's subscriptions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> USERS_SUBSCRIPTIONS_ADMIN or owner" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -21413,6 +23764,8 @@ print_getUsersSubscriptionDetails_help() {
 print_reactivateUserSubscription_help() {
     echo ""
     echo -e "${BOLD}${WHITE}reactivateUserSubscription - Reactivate a subscription and charge fee${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> USERS_SUBSCRIPTIONS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21441,6 +23794,8 @@ print_setSubscriptionBillDate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setSubscriptionBillDate - Set a new date to bill a subscription on${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> USERS_SUBSCRIPTIONS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}inventory_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user's inventory ${YELLOW}Specify as: inventory_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21468,7 +23823,7 @@ print_setSubscriptionPaymentMethod_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setSubscriptionPaymentMethod - Set the payment method to use for a subscription${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "May send null to use floating default" | paste -sd' ' | fold -sw 80
+    echo -e "May send null to use floating default. <br><br><b>Permissions Needed:</b> USERS_SUBSCRIPTIONS_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21497,7 +23852,7 @@ print_setSubscriptionStatus_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setSubscriptionStatus - Set the status of a subscription${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Note that the new status may be blocked if the system is not configured to allow the current status to be changed to the new, to enforce proper flow. The default options for statuses are shown below but may be altered for special use cases" | paste -sd' ' | fold -sw 80
+    echo -e "Note that the new status may be blocked if the system is not configured to allow the current status to be changed to the new, to enforce proper flow. The default options for statuses are shown below but may be altered for special use cases. <br><br><b>Permissions Needed:</b> USERS_SUBSCRIPTIONS_ADMIN or owner" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21526,6 +23881,8 @@ print_setUserSubscriptionPlan_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setUserSubscriptionPlan - Set a new subscription plan for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> USERS_SUBSCRIPTIONS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}inventory_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user's inventory ${YELLOW}Specify as: inventory_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21553,7 +23910,7 @@ print_setUserSubscriptionPrice_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setUserSubscriptionPrice - Set a new subscription price for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This new price will be what the user is charged at the begining of each new period. This override is specific to the current subscription and will not carry over if they end and later re-subscribe. It will persist if the plan is changed using the setUserSubscriptionPlan endpoint." | paste -sd' ' | fold -sw 80
+    echo -e "This new price will be what the user is charged at the begining of each new period. This override is specific to the current subscription and will not carry over if they end and later re-subscribe. It will persist if the plan is changed using the setUserSubscriptionPlan endpoint. <br><br><b>Permissions Needed:</b> USERS_SUBSCRIPTIONS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21582,7 +23939,7 @@ print_getBatch_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getBatch - Get batch result with token${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Tokens expire in 24 hours" | paste -sd' ' | fold -sw 80
+    echo -e "Tokens expire in 24 hours. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}token${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - token ${YELLOW}Specify as: token=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21612,7 +23969,7 @@ print_sendBatch_help() {
     echo ""
     echo -e "${BOLD}${WHITE}sendBatch - Request to run API call given the method, content type, path url, and body of request${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Should the request take longer than one of the alloted timeout parameters, a token will be returned instead, which can be used on the token endpoint in this service" | paste -sd' ' | fold -sw 80
+    echo -e "Should the request take longer than one of the alloted timeout parameters, a token will be returned instead, which can be used on the token endpoint in this service. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The batch object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21639,6 +23996,8 @@ print_getHealth_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getHealth - Get health info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -21660,6 +24019,8 @@ print_getHealth_help() {
 print_deleteMaintenance_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteMaintenance - Delete maintenance info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> MAINTENANCE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -21683,7 +24044,7 @@ print_getMaintenance_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getMaintenance - Get current maintenance info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Get current maintenance info. 404 if no maintenance." | paste -sd' ' | fold -sw 80
+    echo -e "Get current maintenance info. 404 if no maintenance. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -21706,6 +24067,8 @@ print_getMaintenance_help() {
 print_setMaintenance_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setMaintenance - Set current maintenance info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> MAINTENANCE_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The maintenance object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -21732,6 +24095,8 @@ print_updateMaintenance_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateMaintenance - Update current maintenance info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> MAINTENANCE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The maintenance object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -21757,7 +24122,7 @@ print_getUserLocationLog_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserLocationLog - Returns the authentication log for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "A log entry is recorded everytime a user requests a new token. Standard pagination available" | paste -sd' ' | fold -sw 80
+    echo -e "A log entry is recorded everytime a user requests a new token. Standard pagination available. <br><br><b>Permissions Needed:</b> SECURITY_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF}${OFF} - The user id${YELLOW} Specify as: user_id=value${OFF}" \
@@ -21790,6 +24155,8 @@ print_getUserTokenDetails_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserTokenDetails - Returns the authentication token details. Use /users endpoint for detailed user's info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> SECURITY_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -21811,6 +24178,8 @@ print_getUserTokenDetails_help() {
 print_getVersion_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getVersion - Get current version info${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -21856,6 +24225,80 @@ call_getOAuthToken() {
         echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call addUser operation
+#
+##############################################################################
+call_addUser() {
+    local path_parameter_names=(activity_occurrence_id)
+    local query_parameter_names=(test bypass_restrictions    )
+    local path
+
+    path=$(build_request_path "/activity-occurrences/{activity_occurrence_id}/users" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -22339,6 +24782,38 @@ call_listActivityOccurrences() {
 
 ##############################################################################
 #
+# Call removeUser operation
+#
+##############################################################################
+call_removeUser() {
+    local path_parameter_names=(activity_occurrence_id user_id)
+    local query_parameter_names=(ban bypass_restrictions    )
+    local path
+
+    path=$(build_request_path "/activity-occurrences/{activity_occurrence_id}/users/{user_id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call setActivityOccurrenceResults operation
 #
 ##############################################################################
@@ -22353,6 +24828,154 @@ call_setActivityOccurrenceResults() {
         exit 1
     fi
     local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call setActivityOccurrenceSettings operation
+#
+##############################################################################
+call_setActivityOccurrenceSettings() {
+    local path_parameter_names=(activity_occurrence_id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/activity-occurrences/{activity_occurrence_id}/settings" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call setUserStatus operation
+#
+##############################################################################
+call_setUserStatus() {
+    local path_parameter_names=(activity_occurrence_id user_id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/activity-occurrences/{activity_occurrence_id}/users/{user_id}/status" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
     local headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
         headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
@@ -22487,10 +25110,10 @@ call_updateActivity() {
 
 ##############################################################################
 #
-# Call updateActivityOccurrence operation
+# Call updateActivityOccurrenceStatus operation
 #
 ##############################################################################
-call_updateActivityOccurrence() {
+call_updateActivityOccurrenceStatus() {
     local path_parameter_names=(activity_occurrence_id)
     local query_parameter_names=(    )
     local path
@@ -27965,6 +30588,516 @@ call_updateCategoryTemplate() {
         exit 1
     fi
     local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call acknowledgeChatMessage operation
+#
+##############################################################################
+call_acknowledgeChatMessage() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/chat/threads/{id}/acknowledge" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call addChatMessageBlacklist operation
+#
+##############################################################################
+call_addChatMessageBlacklist() {
+    local path_parameter_names=(blacklisted_user_id id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/chat/users/{id}/blacklist/{blacklisted_user_id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deleteChatMessage operation
+#
+##############################################################################
+call_deleteChatMessage() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/chat/messages/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call editChatMessage operation
+#
+##############################################################################
+call_editChatMessage() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/chat/messages/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getChatMessage operation
+#
+##############################################################################
+call_getChatMessage() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/chat/messages/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getChatMessageBlacklist operation
+#
+##############################################################################
+call_getChatMessageBlacklist() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/chat/users/{id}/blacklist" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getChatThreads operation
+#
+##############################################################################
+call_getChatThreads() {
+    local path_parameter_names=()
+    local query_parameter_names=(size page order    )
+    local path
+
+    path=$(build_request_path "/chat/threads" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getDirectMessages operation
+#
+##############################################################################
+call_getDirectMessages() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(size page order    )
+    local path
+
+    path=$(build_request_path "/chat/users/{id}/messages" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getThreadMessages operation
+#
+##############################################################################
+call_getThreadMessages() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(size page order    )
+    local path
+
+    path=$(build_request_path "/chat/threads/{id}/messages" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTopicMessages operation
+#
+##############################################################################
+call_getTopicMessages() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(size page order    )
+    local path
+
+    path=$(build_request_path "/chat/topics/{id}/messages" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call removeChatBlacklist operation
+#
+##############################################################################
+call_removeChatBlacklist() {
+    local path_parameter_names=(blacklisted_user_id id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/chat/users/{id}/blacklist/{blacklisted_user_id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call sendMessage operation
+#
+##############################################################################
+call_sendMessage() {
+    local path_parameter_names=()
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/chat/messages" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
     local headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
         headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
@@ -34810,7 +37943,7 @@ call_getBREEventLog() {
 ##############################################################################
 call_getBREEventLogs() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_start_date filter_event_name filter_event_id size page order    )
+    local query_parameter_names=(filter_start_date filter_event_name filter_event_id size page order filter_rule_id    )
     local path
 
     path=$(build_request_path "/bre/logs/event-log" path_parameter_names query_parameter_names)
@@ -34874,7 +38007,7 @@ call_getBREForwardLog() {
 ##############################################################################
 call_getBREForwardLogs() {
     local path_parameter_names=()
-    local query_parameter_names=(filter_start_date filter_end_date filter_status_code size page order    )
+    local query_parameter_names=(filter_start_date filter_end_date filter_status_code filter_url size page order    )
     local path
 
     path=$(build_request_path "/bre/logs/forward-log" path_parameter_names query_parameter_names)
@@ -37161,6 +40294,324 @@ call_viewVideo() {
 
 ##############################################################################
 #
+# Call compileMessageTemplate operation
+#
+##############################################################################
+call_compileMessageTemplate() {
+    local path_parameter_names=()
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/messaging/templates/compilations" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createMessageTemplate operation
+#
+##############################################################################
+call_createMessageTemplate() {
+    local path_parameter_names=()
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/messaging/templates" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteMessageTemplate operation
+#
+##############################################################################
+call_deleteMessageTemplate() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/messaging/templates/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMessageTemplate operation
+#
+##############################################################################
+call_getMessageTemplate() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/messaging/templates/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getMessageTemplates operation
+#
+##############################################################################
+call_getMessageTemplates() {
+    local path_parameter_names=()
+    local query_parameter_names=(filter_tagset filter_tag_intersection filter_tag_exclusion size page order    )
+    local path
+
+    path=$(build_request_path "/messaging/templates" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call sendMessage1 operation
+#
+##############################################################################
+call_sendMessage1() {
+    local path_parameter_names=()
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/messaging/message" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call sendRawEmail operation
 #
 ##############################################################################
@@ -37545,6 +40996,886 @@ call_sendTemplatedSMS() {
         exit 1
     fi
     local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call sendWebsocket operation
+#
+##############################################################################
+call_sendWebsocket() {
+    local path_parameter_names=()
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/messaging/websocket-message" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateMessageTemplate operation
+#
+##############################################################################
+call_updateMessageTemplate() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/messaging/templates/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call disableTopicSubscriber operation
+#
+##############################################################################
+call_disableTopicSubscriber() {
+    local path_parameter_names=(id user_id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/messaging/topics/{id}/subscribers/{user_id}/disabled" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getTopicSubscriber operation
+#
+##############################################################################
+call_getTopicSubscriber() {
+    local path_parameter_names=(id user_id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/messaging/topics/{id}/subscribers/{user_id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTopicSubscribers operation
+#
+##############################################################################
+call_getTopicSubscribers() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/messaging/topics/{id}/subscribers" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getUserTopics operation
+#
+##############################################################################
+call_getUserTopics() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/users/{id}/topics" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call createNotificationType operation
+#
+##############################################################################
+call_createNotificationType() {
+    local path_parameter_names=()
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/notifications/types" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteNotificationType operation
+#
+##############################################################################
+call_deleteNotificationType() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/notifications/types/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getNotificationType operation
+#
+##############################################################################
+call_getNotificationType() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/notifications/types/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getNotificationTypes operation
+#
+##############################################################################
+call_getNotificationTypes() {
+    local path_parameter_names=()
+    local query_parameter_names=(size page order    )
+    local path
+
+    path=$(build_request_path "/notifications/types" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getUserNotificationInfo operation
+#
+##############################################################################
+call_getUserNotificationInfo() {
+    local path_parameter_names=(type_id user_id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/users/{user_id}/notifications/types/{type_id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getUserNotificationInfoList operation
+#
+##############################################################################
+call_getUserNotificationInfoList() {
+    local path_parameter_names=(user_id)
+    local query_parameter_names=(size page order    )
+    local path
+
+    path=$(build_request_path "/users/{user_id}/notifications/types" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getUserNotifications operation
+#
+##############################################################################
+call_getUserNotifications() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(filter_status size page order    )
+    local path
+
+    path=$(build_request_path "/users/{id}/notifications" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call sendNotification operation
+#
+##############################################################################
+call_sendNotification() {
+    local path_parameter_names=()
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/notifications" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call setUserNotificationStatus operation
+#
+##############################################################################
+call_setUserNotificationStatus() {
+    local path_parameter_names=(user_id notification_id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/users/{user_id}/notifications/{notification_id}/status" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call silenceDirectNotifications operation
+#
+##############################################################################
+call_silenceDirectNotifications() {
+    local path_parameter_names=(type_id user_id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/users/{user_id}/notifications/types/{type_id}/silenced" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateNotificationType operation
+#
+##############################################################################
+call_updateNotificationType() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/notifications/types/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
     local headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
         headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
@@ -46113,6 +50444,38 @@ call_deleteUserTemplate() {
 
 ##############################################################################
 #
+# Call getDirectMessages1 operation
+#
+##############################################################################
+call_getDirectMessages1() {
+    local path_parameter_names=(recipient_id)
+    local query_parameter_names=(size page    )
+    local path
+
+    path=$(build_request_path "/users/users/{recipient_id}/messages" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call getUser operation
 #
 ##############################################################################
@@ -46287,6 +50650,80 @@ call_passwordReset() {
         exit 1
     fi
     local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call postUserMessage operation
+#
+##############################################################################
+call_postUserMessage() {
+    local path_parameter_names=(recipient_id)
+    local query_parameter_names=()
+    local path
+
+    path=$(build_request_path "/users/{recipient_id}/messages" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
     local headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
         headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
@@ -47725,6 +52162,80 @@ call_deleteGroupTemplate() {
 
 ##############################################################################
 #
+# Call disableGroupNotification operation
+#
+##############################################################################
+call_disableGroupNotification() {
+    local path_parameter_names=(unique_name user_id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/users/groups/{unique_name}/members/{user_id}/messages/disabled" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call getGroup operation
 #
 ##############################################################################
@@ -47762,7 +52273,7 @@ call_getGroup() {
 ##############################################################################
 call_getGroupAncestors() {
     local path_parameter_names=(unique_name)
-    local query_parameter_names=()
+    local query_parameter_names=(    )
     local path
 
     path=$(build_request_path "/users/groups/{unique_name}/ancestors" path_parameter_names query_parameter_names)
@@ -47917,6 +52428,38 @@ call_getGroupMembers() {
 
 ##############################################################################
 #
+# Call getGroupMessages operation
+#
+##############################################################################
+call_getGroupMessages() {
+    local path_parameter_names=(unique_name)
+    local query_parameter_names=(size page    )
+    local path
+
+    path=$(build_request_path "/users/groups/{unique_name}/messages" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call getGroupTemplate operation
 #
 ##############################################################################
@@ -48040,6 +52583,80 @@ call_listGroups() {
         echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call postGroupMessage operation
+#
+##############################################################################
+call_postGroupMessage() {
+    local path_parameter_names=(unique_name)
+    local query_parameter_names=()
+    local path
+
+    path=$(build_request_path "/users/groups/{unique_name}/messages" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -50867,6 +55484,9 @@ case $key in
     getOAuthToken)
     operation="getOAuthToken"
     ;;
+    addUser)
+    operation="addUser"
+    ;;
     createActivity)
     operation="createActivity"
     ;;
@@ -50900,14 +55520,23 @@ case $key in
     listActivityOccurrences)
     operation="listActivityOccurrences"
     ;;
+    removeUser)
+    operation="removeUser"
+    ;;
     setActivityOccurrenceResults)
     operation="setActivityOccurrenceResults"
+    ;;
+    setActivityOccurrenceSettings)
+    operation="setActivityOccurrenceSettings"
+    ;;
+    setUserStatus)
+    operation="setUserStatus"
     ;;
     updateActivity)
     operation="updateActivity"
     ;;
-    updateActivityOccurrence)
-    operation="updateActivityOccurrence"
+    updateActivityOccurrenceStatus)
+    operation="updateActivityOccurrenceStatus"
     ;;
     updateActivityTemplate)
     operation="updateActivityTemplate"
@@ -51247,6 +55876,42 @@ case $key in
     ;;
     updateCategoryTemplate)
     operation="updateCategoryTemplate"
+    ;;
+    acknowledgeChatMessage)
+    operation="acknowledgeChatMessage"
+    ;;
+    addChatMessageBlacklist)
+    operation="addChatMessageBlacklist"
+    ;;
+    deleteChatMessage)
+    operation="deleteChatMessage"
+    ;;
+    editChatMessage)
+    operation="editChatMessage"
+    ;;
+    getChatMessage)
+    operation="getChatMessage"
+    ;;
+    getChatMessageBlacklist)
+    operation="getChatMessageBlacklist"
+    ;;
+    getChatThreads)
+    operation="getChatThreads"
+    ;;
+    getDirectMessages)
+    operation="getDirectMessages"
+    ;;
+    getThreadMessages)
+    operation="getThreadMessages"
+    ;;
+    getTopicMessages)
+    operation="getTopicMessages"
+    ;;
+    removeChatBlacklist)
+    operation="removeChatBlacklist"
+    ;;
+    sendMessage)
+    operation="sendMessage"
     ;;
     createConfig)
     operation="createConfig"
@@ -51821,6 +56486,24 @@ case $key in
     viewVideo)
     operation="viewVideo"
     ;;
+    compileMessageTemplate)
+    operation="compileMessageTemplate"
+    ;;
+    createMessageTemplate)
+    operation="createMessageTemplate"
+    ;;
+    deleteMessageTemplate)
+    operation="deleteMessageTemplate"
+    ;;
+    getMessageTemplate)
+    operation="getMessageTemplate"
+    ;;
+    getMessageTemplates)
+    operation="getMessageTemplates"
+    ;;
+    sendMessage1)
+    operation="sendMessage1"
+    ;;
     sendRawEmail)
     operation="sendRawEmail"
     ;;
@@ -51838,6 +56521,57 @@ case $key in
     ;;
     sendTemplatedSMS)
     operation="sendTemplatedSMS"
+    ;;
+    sendWebsocket)
+    operation="sendWebsocket"
+    ;;
+    updateMessageTemplate)
+    operation="updateMessageTemplate"
+    ;;
+    disableTopicSubscriber)
+    operation="disableTopicSubscriber"
+    ;;
+    getTopicSubscriber)
+    operation="getTopicSubscriber"
+    ;;
+    getTopicSubscribers)
+    operation="getTopicSubscribers"
+    ;;
+    getUserTopics)
+    operation="getUserTopics"
+    ;;
+    createNotificationType)
+    operation="createNotificationType"
+    ;;
+    deleteNotificationType)
+    operation="deleteNotificationType"
+    ;;
+    getNotificationType)
+    operation="getNotificationType"
+    ;;
+    getNotificationTypes)
+    operation="getNotificationTypes"
+    ;;
+    getUserNotificationInfo)
+    operation="getUserNotificationInfo"
+    ;;
+    getUserNotificationInfoList)
+    operation="getUserNotificationInfoList"
+    ;;
+    getUserNotifications)
+    operation="getUserNotifications"
+    ;;
+    sendNotification)
+    operation="sendNotification"
+    ;;
+    setUserNotificationStatus)
+    operation="setUserNotificationStatus"
+    ;;
+    silenceDirectNotifications)
+    operation="silenceDirectNotifications"
+    ;;
+    updateNotificationType)
+    operation="updateNotificationType"
     ;;
     createObjectItem)
     operation="createObjectItem"
@@ -52361,6 +57095,9 @@ case $key in
     deleteUserTemplate)
     operation="deleteUserTemplate"
     ;;
+    getDirectMessages1)
+    operation="getDirectMessages1"
+    ;;
     getUser)
     operation="getUser"
     ;;
@@ -52378,6 +57115,9 @@ case $key in
     ;;
     passwordReset)
     operation="passwordReset"
+    ;;
+    postUserMessage)
+    operation="postUserMessage"
     ;;
     registerUser)
     operation="registerUser"
@@ -52457,6 +57197,9 @@ case $key in
     deleteGroupTemplate)
     operation="deleteGroupTemplate"
     ;;
+    disableGroupNotification)
+    operation="disableGroupNotification"
+    ;;
     getGroup)
     operation="getGroup"
     ;;
@@ -52475,6 +57218,9 @@ case $key in
     getGroupMembers)
     operation="getGroupMembers"
     ;;
+    getGroupMessages)
+    operation="getGroupMessages"
+    ;;
     getGroupTemplate)
     operation="getGroupTemplate"
     ;;
@@ -52486,6 +57232,9 @@ case $key in
     ;;
     listGroups)
     operation="listGroups"
+    ;;
+    postGroupMessage)
+    operation="postGroupMessage"
     ;;
     removeGroupMember)
     operation="removeGroupMember"
@@ -52718,6 +57467,9 @@ case $operation in
     getOAuthToken)
     call_getOAuthToken
     ;;
+    addUser)
+    call_addUser
+    ;;
     createActivity)
     call_createActivity
     ;;
@@ -52751,14 +57503,23 @@ case $operation in
     listActivityOccurrences)
     call_listActivityOccurrences
     ;;
+    removeUser)
+    call_removeUser
+    ;;
     setActivityOccurrenceResults)
     call_setActivityOccurrenceResults
+    ;;
+    setActivityOccurrenceSettings)
+    call_setActivityOccurrenceSettings
+    ;;
+    setUserStatus)
+    call_setUserStatus
     ;;
     updateActivity)
     call_updateActivity
     ;;
-    updateActivityOccurrence)
-    call_updateActivityOccurrence
+    updateActivityOccurrenceStatus)
+    call_updateActivityOccurrenceStatus
     ;;
     updateActivityTemplate)
     call_updateActivityTemplate
@@ -53098,6 +57859,42 @@ case $operation in
     ;;
     updateCategoryTemplate)
     call_updateCategoryTemplate
+    ;;
+    acknowledgeChatMessage)
+    call_acknowledgeChatMessage
+    ;;
+    addChatMessageBlacklist)
+    call_addChatMessageBlacklist
+    ;;
+    deleteChatMessage)
+    call_deleteChatMessage
+    ;;
+    editChatMessage)
+    call_editChatMessage
+    ;;
+    getChatMessage)
+    call_getChatMessage
+    ;;
+    getChatMessageBlacklist)
+    call_getChatMessageBlacklist
+    ;;
+    getChatThreads)
+    call_getChatThreads
+    ;;
+    getDirectMessages)
+    call_getDirectMessages
+    ;;
+    getThreadMessages)
+    call_getThreadMessages
+    ;;
+    getTopicMessages)
+    call_getTopicMessages
+    ;;
+    removeChatBlacklist)
+    call_removeChatBlacklist
+    ;;
+    sendMessage)
+    call_sendMessage
     ;;
     createConfig)
     call_createConfig
@@ -53672,6 +58469,24 @@ case $operation in
     viewVideo)
     call_viewVideo
     ;;
+    compileMessageTemplate)
+    call_compileMessageTemplate
+    ;;
+    createMessageTemplate)
+    call_createMessageTemplate
+    ;;
+    deleteMessageTemplate)
+    call_deleteMessageTemplate
+    ;;
+    getMessageTemplate)
+    call_getMessageTemplate
+    ;;
+    getMessageTemplates)
+    call_getMessageTemplates
+    ;;
+    sendMessage1)
+    call_sendMessage1
+    ;;
     sendRawEmail)
     call_sendRawEmail
     ;;
@@ -53689,6 +58504,57 @@ case $operation in
     ;;
     sendTemplatedSMS)
     call_sendTemplatedSMS
+    ;;
+    sendWebsocket)
+    call_sendWebsocket
+    ;;
+    updateMessageTemplate)
+    call_updateMessageTemplate
+    ;;
+    disableTopicSubscriber)
+    call_disableTopicSubscriber
+    ;;
+    getTopicSubscriber)
+    call_getTopicSubscriber
+    ;;
+    getTopicSubscribers)
+    call_getTopicSubscribers
+    ;;
+    getUserTopics)
+    call_getUserTopics
+    ;;
+    createNotificationType)
+    call_createNotificationType
+    ;;
+    deleteNotificationType)
+    call_deleteNotificationType
+    ;;
+    getNotificationType)
+    call_getNotificationType
+    ;;
+    getNotificationTypes)
+    call_getNotificationTypes
+    ;;
+    getUserNotificationInfo)
+    call_getUserNotificationInfo
+    ;;
+    getUserNotificationInfoList)
+    call_getUserNotificationInfoList
+    ;;
+    getUserNotifications)
+    call_getUserNotifications
+    ;;
+    sendNotification)
+    call_sendNotification
+    ;;
+    setUserNotificationStatus)
+    call_setUserNotificationStatus
+    ;;
+    silenceDirectNotifications)
+    call_silenceDirectNotifications
+    ;;
+    updateNotificationType)
+    call_updateNotificationType
     ;;
     createObjectItem)
     call_createObjectItem
@@ -54212,6 +59078,9 @@ case $operation in
     deleteUserTemplate)
     call_deleteUserTemplate
     ;;
+    getDirectMessages1)
+    call_getDirectMessages1
+    ;;
     getUser)
     call_getUser
     ;;
@@ -54229,6 +59098,9 @@ case $operation in
     ;;
     passwordReset)
     call_passwordReset
+    ;;
+    postUserMessage)
+    call_postUserMessage
     ;;
     registerUser)
     call_registerUser
@@ -54308,6 +59180,9 @@ case $operation in
     deleteGroupTemplate)
     call_deleteGroupTemplate
     ;;
+    disableGroupNotification)
+    call_disableGroupNotification
+    ;;
     getGroup)
     call_getGroup
     ;;
@@ -54326,6 +59201,9 @@ case $operation in
     getGroupMembers)
     call_getGroupMembers
     ;;
+    getGroupMessages)
+    call_getGroupMessages
+    ;;
     getGroupTemplate)
     call_getGroupTemplate
     ;;
@@ -54337,6 +59215,9 @@ case $operation in
     ;;
     listGroups)
     call_listGroups
+    ;;
+    postGroupMessage)
+    call_postGroupMessage
     ;;
     removeGroupMember)
     call_removeGroupMember
