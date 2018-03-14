@@ -10,7 +10,7 @@
 # !
 # ! Based on: https://github.com/Valodim/zsh-curl-completion/blob/master/_curl
 # !
-# ! Generated on: 2018-02-12T10:37:08.174-05:00
+# ! Generated on: 2018-03-14T12:02:21.938-04:00
 # !
 # !
 # ! Installation:
@@ -338,31 +338,7 @@ case $state in
             "setUserRoles[Set roles for a user]" \
             "updateRole[Update a role]"             "deleteTokens[Delete tokens by username, client id, or both]" \
             "getToken[Get a single token by username and client id]" \
-            "getTokens[List usernames and client ids]"             "getBREActions[Get a list of available actions]"             "createBRECategoryTemplate[Create a BRE category template]" \
-            "deleteBRECategoryTemplate[Delete a BRE category template]" \
-            "getBRECategories[List categories]" \
-            "getBRECategory[Get a single category]" \
-            "getBRECategoryTemplate[Get a single BRE category template]" \
-            "getBRECategoryTemplates[List and search BRE category templates]" \
-            "updateBRECategory[Update a category]" \
-            "updateBRECategoryTemplate[Update a BRE category template]"             "sendBREEvent[Fire a new event, based on an existing trigger]"             "getBREExpression[Lookup a specific expression]" \
-            "getBREExpressions[Get a list of supported expressions to use in conditions or actions]" \
-            "getExpressionAsText[Returns the textual representation of an expression]"             "createBREGlobal[Create a global definition]" \
-            "deleteBREGlobal[Delete a global]" \
-            "getBREGlobal[Get a single global definition]" \
-            "getBREGlobals[List global definitions]" \
-            "updateBREGlobal[Update a global definition]"             "createBRERule[Create a rule]" \
-            "deleteBRERule[Delete a rule]" \
-            "getBREExpressionAsString[Returns a string representation of the provided expression]" \
-            "getBRERule[Get a single rule]" \
-            "getBRERules[List rules]" \
-            "setBRERule[Enable or disable a rule]" \
-            "updateBRERule[Update a rule]"             "createBRETrigger[Create a trigger]" \
-            "deleteBRETrigger[Delete a trigger]" \
-            "getBRETrigger[Get a single trigger]" \
-            "getBRETriggers[List triggers]" \
-            "updateBRETrigger[Update a trigger]"             "getBREVariableTypes[Get a list of variable types available]" \
-            "getBREVariableValues[List valid values for a type]"             "addChallengeToCampaign[Add a challenge to a campaign]" \
+            "getTokens[List usernames and client ids]"             "addChallengeToCampaign[Add a challenge to a campaign]" \
             "createCampaign[Create a campaign]" \
             "createCampaignTemplate[Create a campaign template]" \
             "deleteCampaign[Delete a campaign]" \
@@ -421,35 +397,30 @@ case $state in
             "getThreadMessages[List messages in a thread]" \
             "getTopicMessages[List messages in a topic]" \
             "removeChatBlacklist[Remove a user from a blacklist]" \
-            "sendMessage[Send a message]"             "createConfig[Create a new config]" \
+            "sendChatMessage[Send a message]"             "createConfig[Create a new config]" \
             "deleteConfig[Delete an existing config]" \
             "getConfig[Get a single config]" \
             "getConfigs[List and search configs]" \
             "updateConfig[Update an existing config]"             "createArticle[Create a new article]" \
             "createArticleTemplate[Create an article template]" \
+            "createTemplate[Create a template]" \
             "deleteArticle[Delete an existing article]" \
             "deleteArticleTemplate[Delete an article template]" \
+            "deleteTemplate[Delete a template]" \
             "getArticle[Get a single article]" \
             "getArticleTemplate[Get a single article template]" \
             "getArticleTemplates[List and search article templates]" \
             "getArticles[List and search articles]" \
+            "getTemplate[Get a template]" \
+            "getTemplates[List and search templates]" \
             "updateArticle[Update an existing article]" \
-            "updateArticleTemplate[Update an article template]"             "addComment[Add a new comment]" \
+            "updateArticleTemplate[Update an article template]" \
+            "updateTemplate[Update a template]" \
+            "validate[Validate a templated resource]"             "addComment[Add a new comment]" \
             "deleteComment[Delete a comment]" \
             "getComment[Return a comment]" \
             "getComments[Returns a page of comments]" \
-            "updateComment[Update a comment]"             "answerPoll[Add your vote to a poll]" \
-            "createPoll[Create a new poll]" \
-            "createPollTemplate[Create a poll template]" \
-            "deletePoll[Delete an existing poll]" \
-            "deletePollTemplate[Delete a poll template]" \
-            "getPoll[Get a single poll]" \
-            "getPollAnswer[Get poll answer]" \
-            "getPollTemplate[Get a single poll template]" \
-            "getPollTemplates[List and search poll templates]" \
-            "getPolls[List and search polls]" \
-            "updatePoll[Update an existing poll]" \
-            "updatePollTemplate[Update a poll template]"             "createCurrency[Create a currency]" \
+            "updateComment[Update a comment]"             "createCurrency[Create a currency]" \
             "deleteCurrency[Delete a currency]" \
             "getCurrencies[List and search currencies]" \
             "getCurrency[Get a single currency]" \
@@ -565,7 +536,18 @@ case $state in
             "getFlags[Returns a page of flags]" \
             "getModerationReport[Get a flag report]" \
             "getModerationReports[Returns a page of flag reports]" \
-            "updateModerationReport[Update a flag report]"             "addUserToVideoWhitelist[Adds a user to a video's whitelist]" \
+            "updateModerationReport[Update a flag report]"             "answerPoll[Add your vote to a poll]" \
+            "createPoll[Create a new poll]" \
+            "createPollTemplate[Create a poll template]" \
+            "deletePoll[Delete an existing poll]" \
+            "deletePollTemplate[Delete a poll template]" \
+            "getPoll[Get a single poll]" \
+            "getPollAnswer[Get poll answer]" \
+            "getPollTemplate[Get a single poll template]" \
+            "getPollTemplates[List and search poll templates]" \
+            "getPolls[List and search polls]" \
+            "updatePoll[Update an existing poll]" \
+            "updatePollTemplate[Update a poll template]"             "addUserToVideoWhitelist[Adds a user to a video's whitelist]" \
             "addVideo[Adds a new video in the system]" \
             "addVideoComment[Add a new video comment]" \
             "addVideoContributor[Adds a contributor to a video]" \
@@ -598,7 +580,7 @@ case $state in
             "deleteMessageTemplate[Delete an existing message template]" \
             "getMessageTemplate[Get a single message template]" \
             "getMessageTemplates[List and search message templates]" \
-            "sendMessage1[Send a message]" \
+            "sendMessage[Send a message]" \
             "sendRawEmail[Send a raw email to one or more users]" \
             "sendRawPush[Send a raw push notification]" \
             "sendRawSMS[Send a raw SMS]" \
@@ -608,7 +590,6 @@ case $state in
             "sendWebsocket[Send a websocket message]" \
             "updateMessageTemplate[Update an existing message template]"             "disableTopicSubscriber[Enable or disable messages for a user]" \
             "getTopicSubscriber[Get a subscriber to a topic]" \
-            "getTopicSubscribers[Get all subscribers to a topic]" \
             "getUserTopics[Get all messaging topics for a given user]"             "createNotificationType[Create a notification type]" \
             "deleteNotificationType[Delete a notification type]" \
             "getNotificationType[Get a single notification type]" \
@@ -636,7 +617,7 @@ case $state in
             "getPaymentMethods[Get all payment methods for a user]" \
             "paymentAuthorization[Authorize payment of an invoice for later capture]" \
             "paymentCapture[Capture an existing invoice payment authorization]" \
-            "updatePaymentMethod[Update an existing payment method for a user]"             "verifyAppleReceipt[Pay invoice with Apple receipt]"             "createOrUpdateFattMerchantPaymentMethod[Create or update a FattMerchant payment method for a user]"             "handleGooglePayment[Mark an invoice paid with Google]"             "silentPostOptimal[Initiate silent post with Optimal]"             "createPayPalBillingAgreementUrl[Create a PayPal Classic billing agreement for the user]" \
+            "updatePaymentMethod[Update an existing payment method for a user]"             "verifyAppleReceipt[Pay invoice with Apple receipt]"             "createOrUpdateFattMerchantPaymentMethod[Create or update a FattMerchant payment method for a user]"             "silentPostOptimal[Initiate silent post with Optimal]"             "createPayPalBillingAgreementUrl[Create a PayPal Classic billing agreement for the user]" \
             "createPayPalExpressCheckout[Create a payment token for PayPal express checkout]" \
             "finalizePayPalBillingAgreement[Finalizes a billing agreement after the user has accepted through PayPal]" \
             "finalizePayPalCheckout[Finalizes a payment after the user has completed checkout with PayPal]"             "createStripePaymentMethod[Create a Stripe payment method for a user]" \
@@ -658,7 +639,24 @@ case $state in
             "getUsageByMinute[Returns aggregated endpoint usage information by minute]" \
             "getUsageByMonth[Returns aggregated endpoint usage information by month]" \
             "getUsageByYear[Returns aggregated endpoint usage information by year]" \
-            "getUsageEndpoints[Returns list of endpoints called (method and url)]"             "getUserRegistrations[Get user registration info]"             "searchCountGET[Count matches with no template]" \
+            "getUsageEndpoints[Returns list of endpoints called (method and url)]"             "getUserRegistrations[Get user registration info]"             "getBREActions[Get a list of available actions]"             "sendBREEvent[Fire a new event, based on an existing trigger]"             "getBREExpression[Lookup a specific expression]" \
+            "getBREExpressions[Get a list of supported expressions to use in conditions or actions.]" \
+            "getExpressionAsText[Returns the textual representation of an expression]"             "createBREGlobal[Create a global definition]" \
+            "deleteBREGlobal[Delete a global]" \
+            "getBREGlobal[Get a single global definition]" \
+            "getBREGlobals[List global definitions]" \
+            "updateBREGlobal[Update a global definition]"             "createBRERule[Create a rule]" \
+            "deleteBRERule[Delete a rule]" \
+            "getBREExpressionAsString[Returns a string representation of the provided expression]" \
+            "getBRERule[Get a single rule]" \
+            "getBRERules[List rules]" \
+            "setBRERule[Enable or disable a rule]" \
+            "updateBRERule[Update a rule]"             "createBRETrigger[Create a trigger]" \
+            "deleteBRETrigger[Delete a trigger]" \
+            "getBRETrigger[Get a single trigger]" \
+            "getBRETriggers[List triggers]" \
+            "updateBRETrigger[Update a trigger]"             "getBREVariableTypes[Get a list of variable types available]" \
+            "getBREVariableValues[List valid values for a type]"             "searchCountGET[Count matches with no template]" \
             "searchCountPOST[Count matches with no template]" \
             "searchCountWithTemplateGET[Count matches with a template]" \
             "searchCountWithTemplatePOST[Count matches with a template]" \
@@ -1023,7 +1021,7 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
                     "bucket=:[QUERY] S3 bucket name"
-"path=:[QUERY] The path to the file relative the bucket (the s3 object key)"
+"path=:[QUERY] The path to the file relative to the bucket (the s3 object key)"
 "expiration=:[QUERY] The number of seconds this URL will be valid. Default to 60"
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
@@ -1229,251 +1227,6 @@ case $state in
 "size=:[QUERY] The number of objects returned per page"
 "page=:[QUERY] The number of the page returned, starting with 1"
 "order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getBREActions)
-        local -a _op_arguments
-        _op_arguments=(
-                    "filter_category=:[QUERY] Filter for actions that are within a specific category"
-"filter_name=:[QUERY] Filter for actions that have names containing the given string"
-"filter_tags=:[QUERY] Filter for actions that have all of the given tags (comma separated list)"
-"filter_search=:[QUERY] Filter for actions containing the given words somewhere within name, description and tags"
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      createBRECategoryTemplate)
-        local -a _op_arguments
-        _op_arguments=(
-                              )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      deleteBRECategoryTemplate)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The id of the template"
-          "cascade=:[QUERY] The value needed to delete used templates"
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getBRECategories)
-        local -a _op_arguments
-        _op_arguments=(
-                    "size=:[QUERY] The number of objects returned per page"
-"page=:[QUERY] The number of the page returned, starting with 1"
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getBRECategory)
-        local -a _op_arguments
-        _op_arguments=(
-          "name=:[PATH] The category name"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getBRECategoryTemplate)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The id of the template"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getBRECategoryTemplates)
-        local -a _op_arguments
-        _op_arguments=(
-                    "size=:[QUERY] The number of objects returned per page"
-"page=:[QUERY] The number of the page returned, starting with 1"
-"order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      updateBRECategory)
-        local -a _op_arguments
-        _op_arguments=(
-          "name=:[PATH] The category name"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      updateBRECategoryTemplate)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The id of the template"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      sendBREEvent)
-        local -a _op_arguments
-        _op_arguments=(
-                              )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getBREExpression)
-        local -a _op_arguments
-        _op_arguments=(
-          "type=:[PATH] Specifiy the type of expression as returned by the listing endpoint"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getBREExpressions)
-        local -a _op_arguments
-        _op_arguments=(
-                    "filter_type_group=:[QUERY] Filter for expressions by type group"
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getExpressionAsText)
-        local -a _op_arguments
-        _op_arguments=(
-                              )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      createBREGlobal)
-        local -a _op_arguments
-        _op_arguments=(
-                              )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      deleteBREGlobal)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The id of the global definition"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getBREGlobal)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The id of the global definition"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getBREGlobals)
-        local -a _op_arguments
-        _op_arguments=(
-                    "filter_system=true:[QUERY] Filter for globals that are system globals when true, or not when false. Leave off for both mixed"
-          "filter_system=false:[QUERY] Filter for globals that are system globals when true, or not when false. Leave off for both mixed"
-"size=:[QUERY] The number of objects returned per page"
-"page=:[QUERY] The number of the page returned, starting with 1"
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      updateBREGlobal)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The id of the global definition"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      createBRERule)
-        local -a _op_arguments
-        _op_arguments=(
-                              )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      deleteBRERule)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The id of the rule"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getBREExpressionAsString)
-        local -a _op_arguments
-        _op_arguments=(
-                              )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getBRERule)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The id of the rule"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getBRERules)
-        local -a _op_arguments
-        _op_arguments=(
-                    "filter_name=:[QUERY] Filter for rules containing the given name"
-"filter_enabled=true:[QUERY] Filter for rules by active status, null for both"
-          "filter_enabled=false:[QUERY] Filter for rules by active status, null for both"
-"filter_system=true:[QUERY] Filter for rules that are system rules when true, or not when false. Leave off for both mixed"
-          "filter_system=false:[QUERY] Filter for rules that are system rules when true, or not when false. Leave off for both mixed"
-"filter_trigger=:[QUERY] Filter for rules that are for the trigger with the given name"
-"filter_action=:[QUERY] Filter for rules that use the action with the given name"
-"filter_condition=:[QUERY] Filter for rules that have a condition containing the given string"
-"size=:[QUERY] The number of objects returned per page"
-"page=:[QUERY] The number of the page returned, starting with 1"
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      setBRERule)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The id of the rule"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      updateBRERule)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The id of the rule"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      createBRETrigger)
-        local -a _op_arguments
-        _op_arguments=(
-                              )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      deleteBRETrigger)
-        local -a _op_arguments
-        _op_arguments=(
-          "event_name=:[PATH] The trigger event name"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getBRETrigger)
-        local -a _op_arguments
-        _op_arguments=(
-          "event_name=:[PATH] The trigger event name"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getBRETriggers)
-        local -a _op_arguments
-        _op_arguments=(
-                    "filter_system=true:[QUERY] Filter for triggers that are system triggers when true, or not when false. Leave off for both mixed"
-          "filter_system=false:[QUERY] Filter for triggers that are system triggers when true, or not when false. Leave off for both mixed"
-"filter_category=:[QUERY] Filter for triggers that are within a specific category"
-"filter_tags=:[QUERY] Filter for triggers that have all of the given tags (comma separated list)"
-"filter_name=:[QUERY] Filter for triggers that have names containing the given string"
-"filter_search=:[QUERY] Filter for triggers containing the given words somewhere within name, description and tags"
-"size=:[QUERY] The number of objects returned per page"
-"page=:[QUERY] The number of the page returned, starting with 1"
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      updateBRETrigger)
-        local -a _op_arguments
-        _op_arguments=(
-          "event_name=:[PATH] The trigger event name"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getBREVariableTypes)
-        local -a _op_arguments
-        _op_arguments=(
-                              )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getBREVariableValues)
-        local -a _op_arguments
-        _op_arguments=(
-          "name=:[PATH] The name of the type"
-          "filter_name=:[QUERY] Filter results by those with names starting with this string"
-"size=:[QUERY] The number of objects returned per page"
-"page=:[QUERY] The number of the page returned, starting with 1"
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -1976,7 +1729,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      sendMessage)
+      sendChatMessage)
         local -a _op_arguments
         _op_arguments=(
                               )
@@ -2031,6 +1784,13 @@ case $state in
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      createTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+          "type_hint=:[PATH] The type for the resource this template applies to"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       deleteArticle)
         local -a _op_arguments
         _op_arguments=(
@@ -2044,6 +1804,14 @@ case $state in
           "id=:[PATH] The id of the template"
           "cascade=:[QUERY] The value needed to delete used templates"
           )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+          "type_hint=:[PATH] The type for the resource this template applies to"
+"id=:[PATH] The id of the template"
+                    )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       getArticle)
@@ -2085,6 +1853,24 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
+      getTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+          "type_hint=:[PATH] The type for the resource this template applies to"
+"id=:[PATH] The id of the template"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getTemplates)
+        local -a _op_arguments
+        _op_arguments=(
+          "type_hint=:[PATH] The type for the resource this template applies to"
+          "size=:[QUERY] The number of objects returned per page"
+"page=:[QUERY] The number of the page returned, starting with 1"
+"order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
       updateArticle)
         local -a _op_arguments
         _op_arguments=(
@@ -2096,6 +1882,21 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "id=:[PATH] The id of the template"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+          "type_hint=:[PATH] The type for the resource this template applies to"
+"id=:[PATH] The id of the template"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      validate)
+        local -a _op_arguments
+        _op_arguments=(
+          "type_hint=:[PATH] The type for the resource this template applies to"
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2133,96 +1934,6 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "id=:[PATH] The comment id"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      answerPoll)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The poll id"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      createPoll)
-        local -a _op_arguments
-        _op_arguments=(
-                              )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      createPollTemplate)
-        local -a _op_arguments
-        _op_arguments=(
-                              )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      deletePoll)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The poll id"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      deletePollTemplate)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The id of the template"
-          "cascade=:[QUERY] The value needed to delete used templates"
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getPoll)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The poll id"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getPollAnswer)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The poll id"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getPollTemplate)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The id of the template"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getPollTemplates)
-        local -a _op_arguments
-        _op_arguments=(
-                    "size=:[QUERY] The number of objects returned per page"
-"page=:[QUERY] The number of the page returned, starting with 1"
-"order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getPolls)
-        local -a _op_arguments
-        _op_arguments=(
-                    "filter_category=:[QUERY] Filter for polls from a specific category by id"
-"filter_tagset=:[QUERY] Filter for polls with specified tags (separated by comma)"
-"filter_text=:[QUERY] Filter for polls whose text contains a string"
-"size=:[QUERY] The number of objects returned per page"
-"page=:[QUERY] The number of the page returned"
-"order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
-          )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      updatePoll)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The poll id"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      updatePollTemplate)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The id of the template"
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -2440,7 +2151,7 @@ case $state in
       updateFulfillmentType)
         local -a _op_arguments
         _op_arguments=(
-          "id=:[PATH] The id"
+          "id=:[PATH] The fulfillment id"
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3289,6 +3000,7 @@ case $state in
 "filter_context_id=:[QUERY] Filter by moderation context ID"
 "size=:[QUERY] The number of objects returned per page"
 "page=:[QUERY] The number of the page returned, starting with 1"
+"order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3296,6 +3008,96 @@ case $state in
         local -a _op_arguments
         _op_arguments=(
           "id=:[PATH] The flag report id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      answerPoll)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The poll id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createPoll)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createPollTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deletePoll)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The poll id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deletePollTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the template"
+          "cascade=:[QUERY] The value needed to delete used templates"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPoll)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The poll id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPollAnswer)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The poll id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPollTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the template"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPollTemplates)
+        local -a _op_arguments
+        _op_arguments=(
+                    "size=:[QUERY] The number of objects returned per page"
+"page=:[QUERY] The number of the page returned, starting with 1"
+"order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getPolls)
+        local -a _op_arguments
+        _op_arguments=(
+                    "filter_category=:[QUERY] Filter for polls from a specific category by id"
+"filter_tagset=:[QUERY] Filter for polls with specified tags (separated by comma)"
+"filter_text=:[QUERY] Filter for polls whose text contains a string"
+"size=:[QUERY] The number of objects returned per page"
+"page=:[QUERY] The number of the page returned"
+"order=:[QUERY] A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updatePoll)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The poll id"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updatePollTemplate)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the template"
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3575,7 +3377,7 @@ case $state in
           )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      sendMessage1)
+      sendMessage)
         local -a _op_arguments
         _op_arguments=(
                               )
@@ -3643,13 +3445,6 @@ case $state in
         _op_arguments=(
           "id=:[PATH] The id of the topic"
 "user_id=:[PATH] The id of the subscriber or &#39;me&#39;"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      getTopicSubscribers)
-        local -a _op_arguments
-        _op_arguments=(
-          "id=:[PATH] The id of the topic"
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
@@ -3911,12 +3706,6 @@ case $state in
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
       createOrUpdateFattMerchantPaymentMethod)
-        local -a _op_arguments
-        _op_arguments=(
-                              )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      handleGooglePayment)
         local -a _op_arguments
         _op_arguments=(
                               )
@@ -4239,6 +4028,192 @@ case $state in
                     "granularity=:[QUERY] The time duration to aggregate by"
 "start_date=:[QUERY] The start of the time range to aggregate, unix timestamp in seconds. Default is beginning of time"
 "end_date=:[QUERY] The end of the time range to aggregate, unix timestamp in seconds. Default is end of time"
+"size=:[QUERY] The number of objects returned per page"
+"page=:[QUERY] The number of the page returned, starting with 1"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBREActions)
+        local -a _op_arguments
+        _op_arguments=(
+                    "filter_category=:[QUERY] Filter for actions that are within a specific category"
+"filter_name=:[QUERY] Filter for actions that have names containing the given string"
+"filter_tags=:[QUERY] Filter for actions that have all of the given tags (comma separated list)"
+"filter_search=:[QUERY] Filter for actions containing the given words somewhere within name, description and tags"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      sendBREEvent)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBREExpression)
+        local -a _op_arguments
+        _op_arguments=(
+          "type=:[PATH] Specifiy the type of expression as returned by the listing endpoint"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBREExpressions)
+        local -a _op_arguments
+        _op_arguments=(
+                    "filter_type_group=:[QUERY] Filter for expressions by type group"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getExpressionAsText)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createBREGlobal)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteBREGlobal)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the global definition"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBREGlobal)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the global definition"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBREGlobals)
+        local -a _op_arguments
+        _op_arguments=(
+                    "filter_system=true:[QUERY] Filter for globals that are system globals when true, or not when false. Leave off for both mixed"
+          "filter_system=false:[QUERY] Filter for globals that are system globals when true, or not when false. Leave off for both mixed"
+"size=:[QUERY] The number of objects returned per page"
+"page=:[QUERY] The number of the page returned, starting with 1"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateBREGlobal)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the global definition"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createBRERule)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteBRERule)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the rule"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBREExpressionAsString)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBRERule)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the rule"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBRERules)
+        local -a _op_arguments
+        _op_arguments=(
+                    "filter_name=:[QUERY] Filter for rules containing the given name"
+"filter_enabled=true:[QUERY] Filter for rules by active status, null for both"
+          "filter_enabled=false:[QUERY] Filter for rules by active status, null for both"
+"filter_system=true:[QUERY] Filter for rules that are system rules when true, or not when false. Leave off for both mixed"
+          "filter_system=false:[QUERY] Filter for rules that are system rules when true, or not when false. Leave off for both mixed"
+"filter_trigger=:[QUERY] Filter for rules that are for the trigger with the given name"
+"filter_action=:[QUERY] Filter for rules that use the action with the given name"
+"filter_condition=:[QUERY] Filter for rules that have a condition containing the given string"
+"size=:[QUERY] The number of objects returned per page"
+"page=:[QUERY] The number of the page returned, starting with 1"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      setBRERule)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the rule"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateBRERule)
+        local -a _op_arguments
+        _op_arguments=(
+          "id=:[PATH] The id of the rule"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      createBRETrigger)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      deleteBRETrigger)
+        local -a _op_arguments
+        _op_arguments=(
+          "event_name=:[PATH] The trigger event name"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBRETrigger)
+        local -a _op_arguments
+        _op_arguments=(
+          "event_name=:[PATH] The trigger event name"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBRETriggers)
+        local -a _op_arguments
+        _op_arguments=(
+                    "filter_system=true:[QUERY] Filter for triggers that are system triggers when true, or not when false. Leave off for both mixed"
+          "filter_system=false:[QUERY] Filter for triggers that are system triggers when true, or not when false. Leave off for both mixed"
+"filter_category=:[QUERY] Filter for triggers that are within a specific category"
+"filter_tags=:[QUERY] Filter for triggers that have all of the given tags (comma separated list)"
+"filter_name=:[QUERY] Filter for triggers that have names containing the given string"
+"filter_search=:[QUERY] Filter for triggers containing the given words somewhere within name, description and tags"
+"size=:[QUERY] The number of objects returned per page"
+"page=:[QUERY] The number of the page returned, starting with 1"
+          )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      updateBRETrigger)
+        local -a _op_arguments
+        _op_arguments=(
+          "event_name=:[PATH] The trigger event name"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBREVariableTypes)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      getBREVariableValues)
+        local -a _op_arguments
+        _op_arguments=(
+          "name=:[PATH] The name of the type"
+          "filter_name=:[QUERY] Filter results by those with names starting with this string"
 "size=:[QUERY] The number of objects returned per page"
 "page=:[QUERY] The number of the page returned, starting with 1"
           )

@@ -8,7 +8,7 @@
 # ! swagger-codegen (https://github.com/swagger-api/swagger-codegen)
 # ! FROM SWAGGER SPECIFICATION IN JSON.
 # !
-# ! Generated on: 2018-02-12T10:37:08.174-05:00
+# ! Generated on: 2018-03-14T12:02:21.938-04:00
 # !
 # !
 # ! System wide installation:
@@ -117,38 +117,6 @@ _()
     operations["deleteTokens"]=1
     operations["getToken"]=1
     operations["getTokens"]=1
-    operations["getBREActions"]=1
-    operations["createBRECategoryTemplate"]=1
-    operations["deleteBRECategoryTemplate"]=1
-    operations["getBRECategories"]=1
-    operations["getBRECategory"]=1
-    operations["getBRECategoryTemplate"]=1
-    operations["getBRECategoryTemplates"]=1
-    operations["updateBRECategory"]=1
-    operations["updateBRECategoryTemplate"]=1
-    operations["sendBREEvent"]=1
-    operations["getBREExpression"]=1
-    operations["getBREExpressions"]=1
-    operations["getExpressionAsText"]=1
-    operations["createBREGlobal"]=1
-    operations["deleteBREGlobal"]=1
-    operations["getBREGlobal"]=1
-    operations["getBREGlobals"]=1
-    operations["updateBREGlobal"]=1
-    operations["createBRERule"]=1
-    operations["deleteBRERule"]=1
-    operations["getBREExpressionAsString"]=1
-    operations["getBRERule"]=1
-    operations["getBRERules"]=1
-    operations["setBRERule"]=1
-    operations["updateBRERule"]=1
-    operations["createBRETrigger"]=1
-    operations["deleteBRETrigger"]=1
-    operations["getBRETrigger"]=1
-    operations["getBRETriggers"]=1
-    operations["updateBRETrigger"]=1
-    operations["getBREVariableTypes"]=1
-    operations["getBREVariableValues"]=1
     operations["addChallengeToCampaign"]=1
     operations["createCampaign"]=1
     operations["createCampaignTemplate"]=1
@@ -212,7 +180,7 @@ _()
     operations["getThreadMessages"]=1
     operations["getTopicMessages"]=1
     operations["removeChatBlacklist"]=1
-    operations["sendMessage"]=1
+    operations["sendChatMessage"]=1
     operations["createConfig"]=1
     operations["deleteConfig"]=1
     operations["getConfig"]=1
@@ -220,31 +188,25 @@ _()
     operations["updateConfig"]=1
     operations["createArticle"]=1
     operations["createArticleTemplate"]=1
+    operations["createTemplate"]=1
     operations["deleteArticle"]=1
     operations["deleteArticleTemplate"]=1
+    operations["deleteTemplate"]=1
     operations["getArticle"]=1
     operations["getArticleTemplate"]=1
     operations["getArticleTemplates"]=1
     operations["getArticles"]=1
+    operations["getTemplate"]=1
+    operations["getTemplates"]=1
     operations["updateArticle"]=1
     operations["updateArticleTemplate"]=1
+    operations["updateTemplate"]=1
+    operations["validate"]=1
     operations["addComment"]=1
     operations["deleteComment"]=1
     operations["getComment"]=1
     operations["getComments"]=1
     operations["updateComment"]=1
-    operations["answerPoll"]=1
-    operations["createPoll"]=1
-    operations["createPollTemplate"]=1
-    operations["deletePoll"]=1
-    operations["deletePollTemplate"]=1
-    operations["getPoll"]=1
-    operations["getPollAnswer"]=1
-    operations["getPollTemplate"]=1
-    operations["getPollTemplates"]=1
-    operations["getPolls"]=1
-    operations["updatePoll"]=1
-    operations["updatePollTemplate"]=1
     operations["createCurrency"]=1
     operations["deleteCurrency"]=1
     operations["getCurrencies"]=1
@@ -375,6 +337,18 @@ _()
     operations["getModerationReport"]=1
     operations["getModerationReports"]=1
     operations["updateModerationReport"]=1
+    operations["answerPoll"]=1
+    operations["createPoll"]=1
+    operations["createPollTemplate"]=1
+    operations["deletePoll"]=1
+    operations["deletePollTemplate"]=1
+    operations["getPoll"]=1
+    operations["getPollAnswer"]=1
+    operations["getPollTemplate"]=1
+    operations["getPollTemplates"]=1
+    operations["getPolls"]=1
+    operations["updatePoll"]=1
+    operations["updatePollTemplate"]=1
     operations["addUserToVideoWhitelist"]=1
     operations["addVideo"]=1
     operations["addVideoComment"]=1
@@ -409,7 +383,7 @@ _()
     operations["deleteMessageTemplate"]=1
     operations["getMessageTemplate"]=1
     operations["getMessageTemplates"]=1
-    operations["sendMessage1"]=1
+    operations["sendMessage"]=1
     operations["sendRawEmail"]=1
     operations["sendRawPush"]=1
     operations["sendRawSMS"]=1
@@ -420,7 +394,6 @@ _()
     operations["updateMessageTemplate"]=1
     operations["disableTopicSubscriber"]=1
     operations["getTopicSubscriber"]=1
-    operations["getTopicSubscribers"]=1
     operations["getUserTopics"]=1
     operations["createNotificationType"]=1
     operations["deleteNotificationType"]=1
@@ -454,7 +427,6 @@ _()
     operations["updatePaymentMethod"]=1
     operations["verifyAppleReceipt"]=1
     operations["createOrUpdateFattMerchantPaymentMethod"]=1
-    operations["handleGooglePayment"]=1
     operations["silentPostOptimal"]=1
     operations["createPayPalBillingAgreementUrl"]=1
     operations["createPayPalExpressCheckout"]=1
@@ -489,6 +461,30 @@ _()
     operations["getUsageByYear"]=1
     operations["getUsageEndpoints"]=1
     operations["getUserRegistrations"]=1
+    operations["getBREActions"]=1
+    operations["sendBREEvent"]=1
+    operations["getBREExpression"]=1
+    operations["getBREExpressions"]=1
+    operations["getExpressionAsText"]=1
+    operations["createBREGlobal"]=1
+    operations["deleteBREGlobal"]=1
+    operations["getBREGlobal"]=1
+    operations["getBREGlobals"]=1
+    operations["updateBREGlobal"]=1
+    operations["createBRERule"]=1
+    operations["deleteBRERule"]=1
+    operations["getBREExpressionAsString"]=1
+    operations["getBRERule"]=1
+    operations["getBRERules"]=1
+    operations["setBRERule"]=1
+    operations["updateBRERule"]=1
+    operations["createBRETrigger"]=1
+    operations["deleteBRETrigger"]=1
+    operations["getBRETrigger"]=1
+    operations["getBRETriggers"]=1
+    operations["updateBRETrigger"]=1
+    operations["getBREVariableTypes"]=1
+    operations["getBREVariableValues"]=1
     operations["searchCountGET"]=1
     operations["searchCountPOST"]=1
     operations["searchCountWithTemplateGET"]=1
@@ -757,38 +753,6 @@ _()
     operation_parameters["deleteTokens"]="username= client_id= "
     operation_parameters["getToken"]="username= client_id= "
     operation_parameters["getTokens"]="filter_client_id= filter_username= size= page= order= "
-    operation_parameters["getBREActions"]="filter_category= filter_name= filter_tags= filter_search= "
-    operation_parameters["createBRECategoryTemplate"]=""
-    operation_parameters["deleteBRECategoryTemplate"]="id= cascade= "
-    operation_parameters["getBRECategories"]="size= page= "
-    operation_parameters["getBRECategory"]="name= "
-    operation_parameters["getBRECategoryTemplate"]="id= "
-    operation_parameters["getBRECategoryTemplates"]="size= page= order= "
-    operation_parameters["updateBRECategory"]="name= "
-    operation_parameters["updateBRECategoryTemplate"]="id= "
-    operation_parameters["sendBREEvent"]=""
-    operation_parameters["getBREExpression"]="type= "
-    operation_parameters["getBREExpressions"]="filter_type_group= "
-    operation_parameters["getExpressionAsText"]=""
-    operation_parameters["createBREGlobal"]=""
-    operation_parameters["deleteBREGlobal"]="id= "
-    operation_parameters["getBREGlobal"]="id= "
-    operation_parameters["getBREGlobals"]="filter_system= size= page= "
-    operation_parameters["updateBREGlobal"]="id= "
-    operation_parameters["createBRERule"]=""
-    operation_parameters["deleteBRERule"]="id= "
-    operation_parameters["getBREExpressionAsString"]=""
-    operation_parameters["getBRERule"]="id= "
-    operation_parameters["getBRERules"]="filter_name= filter_enabled= filter_system= filter_trigger= filter_action= filter_condition= size= page= "
-    operation_parameters["setBRERule"]="id= "
-    operation_parameters["updateBRERule"]="id= "
-    operation_parameters["createBRETrigger"]=""
-    operation_parameters["deleteBRETrigger"]="event_name= "
-    operation_parameters["getBRETrigger"]="event_name= "
-    operation_parameters["getBRETriggers"]="filter_system= filter_category= filter_tags= filter_name= filter_search= size= page= "
-    operation_parameters["updateBRETrigger"]="event_name= "
-    operation_parameters["getBREVariableTypes"]=""
-    operation_parameters["getBREVariableValues"]="name= filter_name= size= page= "
     operation_parameters["addChallengeToCampaign"]="id= "
     operation_parameters["createCampaign"]=""
     operation_parameters["createCampaignTemplate"]=""
@@ -852,7 +816,7 @@ _()
     operation_parameters["getThreadMessages"]="id= size= page= order= "
     operation_parameters["getTopicMessages"]="id= size= page= order= "
     operation_parameters["removeChatBlacklist"]="blacklisted_user_id= id= "
-    operation_parameters["sendMessage"]=""
+    operation_parameters["sendChatMessage"]=""
     operation_parameters["createConfig"]=""
     operation_parameters["deleteConfig"]="name= "
     operation_parameters["getConfig"]="name= "
@@ -860,31 +824,25 @@ _()
     operation_parameters["updateConfig"]="name= "
     operation_parameters["createArticle"]=""
     operation_parameters["createArticleTemplate"]=""
+    operation_parameters["createTemplate"]="type_hint= "
     operation_parameters["deleteArticle"]="id= "
     operation_parameters["deleteArticleTemplate"]="id= cascade= "
+    operation_parameters["deleteTemplate"]="type_hint= id= "
     operation_parameters["getArticle"]="id= "
     operation_parameters["getArticleTemplate"]="id= "
     operation_parameters["getArticleTemplates"]="size= page= order= "
     operation_parameters["getArticles"]="filter_active_only= filter_category= filter_tagset= filter_tag_intersection= filter_tag_exclusion= filter_title= size= page= order= "
+    operation_parameters["getTemplate"]="type_hint= id= "
+    operation_parameters["getTemplates"]="type_hint= size= page= order= "
     operation_parameters["updateArticle"]="id= "
     operation_parameters["updateArticleTemplate"]="id= "
+    operation_parameters["updateTemplate"]="type_hint= id= "
+    operation_parameters["validate"]="type_hint= "
     operation_parameters["addComment"]=""
     operation_parameters["deleteComment"]="id= "
     operation_parameters["getComment"]="id= "
     operation_parameters["getComments"]="context= context_id= size= page= "
     operation_parameters["updateComment"]="id= "
-    operation_parameters["answerPoll"]="id= "
-    operation_parameters["createPoll"]=""
-    operation_parameters["createPollTemplate"]=""
-    operation_parameters["deletePoll"]="id= "
-    operation_parameters["deletePollTemplate"]="id= cascade= "
-    operation_parameters["getPoll"]="id= "
-    operation_parameters["getPollAnswer"]="id= "
-    operation_parameters["getPollTemplate"]="id= "
-    operation_parameters["getPollTemplates"]="size= page= order= "
-    operation_parameters["getPolls"]="filter_category= filter_tagset= filter_text= size= page= order= "
-    operation_parameters["updatePoll"]="id= "
-    operation_parameters["updatePollTemplate"]="id= "
     operation_parameters["createCurrency"]=""
     operation_parameters["deleteCurrency"]="code= "
     operation_parameters["getCurrencies"]="filter_default= filter_enabled_currencies= filter_type= size= page= order= "
@@ -1013,8 +971,20 @@ _()
     operation_parameters["deleteFlag"]="context_name= context_id= user_id= "
     operation_parameters["getFlags"]="filter_context= filter_context_id= filter_user_id= size= page= "
     operation_parameters["getModerationReport"]="id= "
-    operation_parameters["getModerationReports"]="exclude_resolved= filter_context= filter_context_id= size= page= "
+    operation_parameters["getModerationReports"]="exclude_resolved= filter_context= filter_context_id= size= page= order= "
     operation_parameters["updateModerationReport"]="id= "
+    operation_parameters["answerPoll"]="id= "
+    operation_parameters["createPoll"]=""
+    operation_parameters["createPollTemplate"]=""
+    operation_parameters["deletePoll"]="id= "
+    operation_parameters["deletePollTemplate"]="id= cascade= "
+    operation_parameters["getPoll"]="id= "
+    operation_parameters["getPollAnswer"]="id= "
+    operation_parameters["getPollTemplate"]="id= "
+    operation_parameters["getPollTemplates"]="size= page= order= "
+    operation_parameters["getPolls"]="filter_category= filter_tagset= filter_text= size= page= order= "
+    operation_parameters["updatePoll"]="id= "
+    operation_parameters["updatePollTemplate"]="id= "
     operation_parameters["addUserToVideoWhitelist"]="id= "
     operation_parameters["addVideo"]=""
     operation_parameters["addVideoComment"]="video_id= "
@@ -1049,7 +1019,7 @@ _()
     operation_parameters["deleteMessageTemplate"]="id= "
     operation_parameters["getMessageTemplate"]="id= "
     operation_parameters["getMessageTemplates"]="filter_tagset= filter_tag_intersection= filter_tag_exclusion= size= page= order= "
-    operation_parameters["sendMessage1"]=""
+    operation_parameters["sendMessage"]=""
     operation_parameters["sendRawEmail"]=""
     operation_parameters["sendRawPush"]=""
     operation_parameters["sendRawSMS"]=""
@@ -1060,7 +1030,6 @@ _()
     operation_parameters["updateMessageTemplate"]="id= "
     operation_parameters["disableTopicSubscriber"]="id= user_id= "
     operation_parameters["getTopicSubscriber"]="id= user_id= "
-    operation_parameters["getTopicSubscribers"]="id= "
     operation_parameters["getUserTopics"]="id= "
     operation_parameters["createNotificationType"]=""
     operation_parameters["deleteNotificationType"]="id= "
@@ -1094,7 +1063,6 @@ _()
     operation_parameters["updatePaymentMethod"]="user_id= id= "
     operation_parameters["verifyAppleReceipt"]=""
     operation_parameters["createOrUpdateFattMerchantPaymentMethod"]=""
-    operation_parameters["handleGooglePayment"]=""
     operation_parameters["silentPostOptimal"]=""
     operation_parameters["createPayPalBillingAgreementUrl"]=""
     operation_parameters["createPayPalExpressCheckout"]=""
@@ -1129,6 +1097,30 @@ _()
     operation_parameters["getUsageByYear"]="start_date= end_date= combine_endpoints= method= url= size= page= "
     operation_parameters["getUsageEndpoints"]="start_date= end_date= "
     operation_parameters["getUserRegistrations"]="granularity= start_date= end_date= size= page= "
+    operation_parameters["getBREActions"]="filter_category= filter_name= filter_tags= filter_search= "
+    operation_parameters["sendBREEvent"]=""
+    operation_parameters["getBREExpression"]="type= "
+    operation_parameters["getBREExpressions"]="filter_type_group= "
+    operation_parameters["getExpressionAsText"]=""
+    operation_parameters["createBREGlobal"]=""
+    operation_parameters["deleteBREGlobal"]="id= "
+    operation_parameters["getBREGlobal"]="id= "
+    operation_parameters["getBREGlobals"]="filter_system= size= page= "
+    operation_parameters["updateBREGlobal"]="id= "
+    operation_parameters["createBRERule"]=""
+    operation_parameters["deleteBRERule"]="id= "
+    operation_parameters["getBREExpressionAsString"]=""
+    operation_parameters["getBRERule"]="id= "
+    operation_parameters["getBRERules"]="filter_name= filter_enabled= filter_system= filter_trigger= filter_action= filter_condition= size= page= "
+    operation_parameters["setBRERule"]="id= "
+    operation_parameters["updateBRERule"]="id= "
+    operation_parameters["createBRETrigger"]=""
+    operation_parameters["deleteBRETrigger"]="event_name= "
+    operation_parameters["getBRETrigger"]="event_name= "
+    operation_parameters["getBRETriggers"]="filter_system= filter_category= filter_tags= filter_name= filter_search= size= page= "
+    operation_parameters["updateBRETrigger"]="event_name= "
+    operation_parameters["getBREVariableTypes"]=""
+    operation_parameters["getBREVariableValues"]="name= filter_name= size= page= "
     operation_parameters["searchCountGET"]="type= "
     operation_parameters["searchCountPOST"]="type= "
     operation_parameters["searchCountWithTemplateGET"]="type= template= "
@@ -1376,32 +1368,6 @@ _()
     operation_parameters_enum_values["deletePermission::force"]="true false"
     operation_parameters_enum_values["deleteRole::force"]="true false"
     operation_parameters_enum_values["deleteRole::force"]="true false"
-    operation_parameters_enum_values["getBREGlobals::filter_system"]="true false"
-    operation_parameters_enum_values["getBREGlobals::filter_system"]="true false"
-    operation_parameters_enum_values["getBREGlobals::filter_system"]="true false"
-    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
-    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
-    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
-    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
-    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
-    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
-    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
-    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
-    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
-    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
-    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
-    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
-    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
-    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
-    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
-    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
-    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
-    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
-    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
-    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
-    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
-    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
-    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
     operation_parameters_enum_values["getCampaigns::filter_active"]="true false"
     operation_parameters_enum_values["getCampaigns::filter_active"]="true false"
     operation_parameters_enum_values["getCampaigns::filter_active"]="true false"
@@ -1534,6 +1500,7 @@ _()
     operation_parameters_enum_values["getModerationReports::exclude_resolved"]="true false"
     operation_parameters_enum_values["getModerationReports::exclude_resolved"]="true false"
     operation_parameters_enum_values["getModerationReports::exclude_resolved"]="true false"
+    operation_parameters_enum_values["getModerationReports::exclude_resolved"]="true false"
     operation_parameters_enum_values["getUserVideos::exclude_flagged"]="true false"
     operation_parameters_enum_values["getUserVideos::exclude_flagged"]="true false"
     operation_parameters_enum_values["getUserVideos::exclude_flagged"]="true false"
@@ -1640,6 +1607,32 @@ _()
     operation_parameters_enum_values["getUsageByYear::combine_endpoints"]="true false"
     operation_parameters_enum_values["getUsageByYear::combine_endpoints"]="true false"
     operation_parameters_enum_values["getUsageByYear::combine_endpoints"]="true false"
+    operation_parameters_enum_values["getBREGlobals::filter_system"]="true false"
+    operation_parameters_enum_values["getBREGlobals::filter_system"]="true false"
+    operation_parameters_enum_values["getBREGlobals::filter_system"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_enabled"]="true false"
+    operation_parameters_enum_values["getBRERules::filter_system"]="true false"
+    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
+    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
+    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
+    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
+    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
+    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
+    operation_parameters_enum_values["getBRETriggers::filter_system"]="true false"
     operation_parameters_enum_values["createStoreItem::cascade"]="true false"
     operation_parameters_enum_values["createStoreItem::cascade"]="true false"
     operation_parameters_enum_values["getStoreItems::filter_published"]="true false"

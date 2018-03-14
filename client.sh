@@ -8,7 +8,7 @@
 # ! swagger-codegen (https://github.com/swagger-api/swagger-codegen)
 # ! FROM SWAGGER SPECIFICATION IN JSON.
 # !
-# ! Generated on: 2018-02-12T10:37:08.174-05:00
+# ! Generated on: 2018-03-14T12:02:21.938-04:00
 # !
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -204,68 +204,6 @@ operation_parameters_minimum_occurences["getTokens:::filter_username"]=0
 operation_parameters_minimum_occurences["getTokens:::size"]=0
 operation_parameters_minimum_occurences["getTokens:::page"]=0
 operation_parameters_minimum_occurences["getTokens:::order"]=0
-operation_parameters_minimum_occurences["getBREActions:::filter_category"]=0
-operation_parameters_minimum_occurences["getBREActions:::filter_name"]=0
-operation_parameters_minimum_occurences["getBREActions:::filter_tags"]=0
-operation_parameters_minimum_occurences["getBREActions:::filter_search"]=0
-operation_parameters_minimum_occurences["createBRECategoryTemplate:::template"]=0
-operation_parameters_minimum_occurences["deleteBRECategoryTemplate:::id"]=1
-operation_parameters_minimum_occurences["deleteBRECategoryTemplate:::cascade"]=0
-operation_parameters_minimum_occurences["getBRECategories:::size"]=0
-operation_parameters_minimum_occurences["getBRECategories:::page"]=0
-operation_parameters_minimum_occurences["getBRECategory:::name"]=1
-operation_parameters_minimum_occurences["getBRECategoryTemplate:::id"]=1
-operation_parameters_minimum_occurences["getBRECategoryTemplates:::size"]=0
-operation_parameters_minimum_occurences["getBRECategoryTemplates:::page"]=0
-operation_parameters_minimum_occurences["getBRECategoryTemplates:::order"]=0
-operation_parameters_minimum_occurences["updateBRECategory:::name"]=1
-operation_parameters_minimum_occurences["updateBRECategory:::category"]=0
-operation_parameters_minimum_occurences["updateBRECategoryTemplate:::id"]=1
-operation_parameters_minimum_occurences["updateBRECategoryTemplate:::template"]=0
-operation_parameters_minimum_occurences["sendBREEvent:::bre_event"]=0
-operation_parameters_minimum_occurences["getBREExpression:::type"]=1
-operation_parameters_minimum_occurences["getBREExpressions:::filter_type_group"]=0
-operation_parameters_minimum_occurences["getExpressionAsText:::expression"]=0
-operation_parameters_minimum_occurences["createBREGlobal:::bre_global_resource"]=0
-operation_parameters_minimum_occurences["deleteBREGlobal:::id"]=1
-operation_parameters_minimum_occurences["getBREGlobal:::id"]=1
-operation_parameters_minimum_occurences["getBREGlobals:::filter_system"]=0
-operation_parameters_minimum_occurences["getBREGlobals:::size"]=0
-operation_parameters_minimum_occurences["getBREGlobals:::page"]=0
-operation_parameters_minimum_occurences["updateBREGlobal:::id"]=1
-operation_parameters_minimum_occurences["updateBREGlobal:::bre_global_resource"]=0
-operation_parameters_minimum_occurences["createBRERule:::bre_rule"]=0
-operation_parameters_minimum_occurences["deleteBRERule:::id"]=1
-operation_parameters_minimum_occurences["getBREExpressionAsString:::expression"]=0
-operation_parameters_minimum_occurences["getBRERule:::id"]=1
-operation_parameters_minimum_occurences["getBRERules:::filter_name"]=0
-operation_parameters_minimum_occurences["getBRERules:::filter_enabled"]=0
-operation_parameters_minimum_occurences["getBRERules:::filter_system"]=0
-operation_parameters_minimum_occurences["getBRERules:::filter_trigger"]=0
-operation_parameters_minimum_occurences["getBRERules:::filter_action"]=0
-operation_parameters_minimum_occurences["getBRERules:::filter_condition"]=0
-operation_parameters_minimum_occurences["getBRERules:::size"]=0
-operation_parameters_minimum_occurences["getBRERules:::page"]=0
-operation_parameters_minimum_occurences["setBRERule:::id"]=1
-operation_parameters_minimum_occurences["setBRERule:::enabled"]=0
-operation_parameters_minimum_occurences["updateBRERule:::id"]=1
-operation_parameters_minimum_occurences["updateBRERule:::bre_rule"]=0
-operation_parameters_minimum_occurences["createBRETrigger:::bre_trigger_resource"]=0
-operation_parameters_minimum_occurences["deleteBRETrigger:::event_name"]=1
-operation_parameters_minimum_occurences["getBRETrigger:::event_name"]=1
-operation_parameters_minimum_occurences["getBRETriggers:::filter_system"]=0
-operation_parameters_minimum_occurences["getBRETriggers:::filter_category"]=0
-operation_parameters_minimum_occurences["getBRETriggers:::filter_tags"]=0
-operation_parameters_minimum_occurences["getBRETriggers:::filter_name"]=0
-operation_parameters_minimum_occurences["getBRETriggers:::filter_search"]=0
-operation_parameters_minimum_occurences["getBRETriggers:::size"]=0
-operation_parameters_minimum_occurences["getBRETriggers:::page"]=0
-operation_parameters_minimum_occurences["updateBRETrigger:::event_name"]=1
-operation_parameters_minimum_occurences["updateBRETrigger:::bre_trigger_resource"]=0
-operation_parameters_minimum_occurences["getBREVariableValues:::name"]=1
-operation_parameters_minimum_occurences["getBREVariableValues:::filter_name"]=0
-operation_parameters_minimum_occurences["getBREVariableValues:::size"]=0
-operation_parameters_minimum_occurences["getBREVariableValues:::page"]=0
 operation_parameters_minimum_occurences["addChallengeToCampaign:::id"]=1
 operation_parameters_minimum_occurences["addChallengeToCampaign:::challenge_id"]=0
 operation_parameters_minimum_occurences["createCampaign:::campaign_resource"]=0
@@ -402,7 +340,7 @@ operation_parameters_minimum_occurences["getTopicMessages:::page"]=0
 operation_parameters_minimum_occurences["getTopicMessages:::order"]=0
 operation_parameters_minimum_occurences["removeChatBlacklist:::blacklisted_user_id"]=1
 operation_parameters_minimum_occurences["removeChatBlacklist:::id"]=1
-operation_parameters_minimum_occurences["sendMessage:::chatMessageResource"]=0
+operation_parameters_minimum_occurences["sendChatMessage:::chatMessageResource"]=0
 operation_parameters_minimum_occurences["createConfig:::config"]=0
 operation_parameters_minimum_occurences["deleteConfig:::name"]=1
 operation_parameters_minimum_occurences["getConfig:::name"]=1
@@ -414,9 +352,14 @@ operation_parameters_minimum_occurences["updateConfig:::name"]=1
 operation_parameters_minimum_occurences["updateConfig:::config"]=0
 operation_parameters_minimum_occurences["createArticle:::article_resource"]=0
 operation_parameters_minimum_occurences["createArticleTemplate:::article_template_resource"]=0
+operation_parameters_minimum_occurences["createTemplate:::type_hint"]=1
+operation_parameters_minimum_occurences["createTemplate:::template"]=0
 operation_parameters_minimum_occurences["deleteArticle:::id"]=1
 operation_parameters_minimum_occurences["deleteArticleTemplate:::id"]=1
 operation_parameters_minimum_occurences["deleteArticleTemplate:::cascade"]=0
+operation_parameters_minimum_occurences["deleteTemplate:::type_hint"]=1
+operation_parameters_minimum_occurences["deleteTemplate:::id"]=1
+operation_parameters_minimum_occurences["deleteTemplate:::cascade"]=0
 operation_parameters_minimum_occurences["getArticle:::id"]=1
 operation_parameters_minimum_occurences["getArticleTemplate:::id"]=1
 operation_parameters_minimum_occurences["getArticleTemplates:::size"]=0
@@ -431,10 +374,21 @@ operation_parameters_minimum_occurences["getArticles:::filter_title"]=0
 operation_parameters_minimum_occurences["getArticles:::size"]=0
 operation_parameters_minimum_occurences["getArticles:::page"]=0
 operation_parameters_minimum_occurences["getArticles:::order"]=0
+operation_parameters_minimum_occurences["getTemplate:::type_hint"]=1
+operation_parameters_minimum_occurences["getTemplate:::id"]=1
+operation_parameters_minimum_occurences["getTemplates:::type_hint"]=1
+operation_parameters_minimum_occurences["getTemplates:::size"]=0
+operation_parameters_minimum_occurences["getTemplates:::page"]=0
+operation_parameters_minimum_occurences["getTemplates:::order"]=0
 operation_parameters_minimum_occurences["updateArticle:::id"]=1
 operation_parameters_minimum_occurences["updateArticle:::article_resource"]=0
 operation_parameters_minimum_occurences["updateArticleTemplate:::id"]=1
 operation_parameters_minimum_occurences["updateArticleTemplate:::article_template_resource"]=0
+operation_parameters_minimum_occurences["updateTemplate:::type_hint"]=1
+operation_parameters_minimum_occurences["updateTemplate:::id"]=1
+operation_parameters_minimum_occurences["updateTemplate:::template"]=0
+operation_parameters_minimum_occurences["validate:::type_hint"]=1
+operation_parameters_minimum_occurences["validate:::resource"]=0
 operation_parameters_minimum_occurences["addComment:::comment_resource"]=0
 operation_parameters_minimum_occurences["deleteComment:::id"]=1
 operation_parameters_minimum_occurences["getComment:::id"]=1
@@ -444,29 +398,6 @@ operation_parameters_minimum_occurences["getComments:::size"]=0
 operation_parameters_minimum_occurences["getComments:::page"]=0
 operation_parameters_minimum_occurences["updateComment:::id"]=1
 operation_parameters_minimum_occurences["updateComment:::content"]=0
-operation_parameters_minimum_occurences["answerPoll:::id"]=1
-operation_parameters_minimum_occurences["answerPoll:::answer_key"]=0
-operation_parameters_minimum_occurences["createPoll:::poll_resource"]=0
-operation_parameters_minimum_occurences["createPollTemplate:::poll_template_resource"]=0
-operation_parameters_minimum_occurences["deletePoll:::id"]=1
-operation_parameters_minimum_occurences["deletePollTemplate:::id"]=1
-operation_parameters_minimum_occurences["deletePollTemplate:::cascade"]=0
-operation_parameters_minimum_occurences["getPoll:::id"]=1
-operation_parameters_minimum_occurences["getPollAnswer:::id"]=1
-operation_parameters_minimum_occurences["getPollTemplate:::id"]=1
-operation_parameters_minimum_occurences["getPollTemplates:::size"]=0
-operation_parameters_minimum_occurences["getPollTemplates:::page"]=0
-operation_parameters_minimum_occurences["getPollTemplates:::order"]=0
-operation_parameters_minimum_occurences["getPolls:::filter_category"]=0
-operation_parameters_minimum_occurences["getPolls:::filter_tagset"]=0
-operation_parameters_minimum_occurences["getPolls:::filter_text"]=0
-operation_parameters_minimum_occurences["getPolls:::size"]=0
-operation_parameters_minimum_occurences["getPolls:::page"]=0
-operation_parameters_minimum_occurences["getPolls:::order"]=0
-operation_parameters_minimum_occurences["updatePoll:::id"]=1
-operation_parameters_minimum_occurences["updatePoll:::poll_resource"]=0
-operation_parameters_minimum_occurences["updatePollTemplate:::id"]=1
-operation_parameters_minimum_occurences["updatePollTemplate:::poll_template_resource"]=0
 operation_parameters_minimum_occurences["createCurrency:::currency"]=0
 operation_parameters_minimum_occurences["deleteCurrency:::code"]=1
 operation_parameters_minimum_occurences["getCurrencies:::filter_default"]=0
@@ -791,8 +722,32 @@ operation_parameters_minimum_occurences["getModerationReports:::filter_context"]
 operation_parameters_minimum_occurences["getModerationReports:::filter_context_id"]=0
 operation_parameters_minimum_occurences["getModerationReports:::size"]=0
 operation_parameters_minimum_occurences["getModerationReports:::page"]=0
+operation_parameters_minimum_occurences["getModerationReports:::order"]=0
 operation_parameters_minimum_occurences["updateModerationReport:::id"]=1
 operation_parameters_minimum_occurences["updateModerationReport:::flag_report_resource"]=0
+operation_parameters_minimum_occurences["answerPoll:::id"]=1
+operation_parameters_minimum_occurences["answerPoll:::answer_key"]=0
+operation_parameters_minimum_occurences["createPoll:::poll_resource"]=0
+operation_parameters_minimum_occurences["createPollTemplate:::poll_template_resource"]=0
+operation_parameters_minimum_occurences["deletePoll:::id"]=1
+operation_parameters_minimum_occurences["deletePollTemplate:::id"]=1
+operation_parameters_minimum_occurences["deletePollTemplate:::cascade"]=0
+operation_parameters_minimum_occurences["getPoll:::id"]=1
+operation_parameters_minimum_occurences["getPollAnswer:::id"]=1
+operation_parameters_minimum_occurences["getPollTemplate:::id"]=1
+operation_parameters_minimum_occurences["getPollTemplates:::size"]=0
+operation_parameters_minimum_occurences["getPollTemplates:::page"]=0
+operation_parameters_minimum_occurences["getPollTemplates:::order"]=0
+operation_parameters_minimum_occurences["getPolls:::filter_category"]=0
+operation_parameters_minimum_occurences["getPolls:::filter_tagset"]=0
+operation_parameters_minimum_occurences["getPolls:::filter_text"]=0
+operation_parameters_minimum_occurences["getPolls:::size"]=0
+operation_parameters_minimum_occurences["getPolls:::page"]=0
+operation_parameters_minimum_occurences["getPolls:::order"]=0
+operation_parameters_minimum_occurences["updatePoll:::id"]=1
+operation_parameters_minimum_occurences["updatePoll:::poll_resource"]=0
+operation_parameters_minimum_occurences["updatePollTemplate:::id"]=1
+operation_parameters_minimum_occurences["updatePollTemplate:::poll_template_resource"]=0
 operation_parameters_minimum_occurences["addUserToVideoWhitelist:::id"]=1
 operation_parameters_minimum_occurences["addUserToVideoWhitelist:::user_id"]=0
 operation_parameters_minimum_occurences["addVideo:::video_resource"]=0
@@ -874,7 +829,7 @@ operation_parameters_minimum_occurences["getMessageTemplates:::filter_tag_exclus
 operation_parameters_minimum_occurences["getMessageTemplates:::size"]=0
 operation_parameters_minimum_occurences["getMessageTemplates:::page"]=0
 operation_parameters_minimum_occurences["getMessageTemplates:::order"]=0
-operation_parameters_minimum_occurences["sendMessage1:::message_resource"]=0
+operation_parameters_minimum_occurences["sendMessage:::message_resource"]=0
 operation_parameters_minimum_occurences["sendRawEmail:::raw_email_resource"]=0
 operation_parameters_minimum_occurences["sendRawPush:::raw_push_resource"]=0
 operation_parameters_minimum_occurences["sendRawSMS:::raw_SMS_resource"]=0
@@ -889,7 +844,6 @@ operation_parameters_minimum_occurences["disableTopicSubscriber:::user_id"]=1
 operation_parameters_minimum_occurences["disableTopicSubscriber:::disabled"]=1
 operation_parameters_minimum_occurences["getTopicSubscriber:::id"]=1
 operation_parameters_minimum_occurences["getTopicSubscriber:::user_id"]=1
-operation_parameters_minimum_occurences["getTopicSubscribers:::id"]=1
 operation_parameters_minimum_occurences["getUserTopics:::id"]=1
 operation_parameters_minimum_occurences["createNotificationType:::notification_type"]=0
 operation_parameters_minimum_occurences["deleteNotificationType:::id"]=1
@@ -967,7 +921,6 @@ operation_parameters_minimum_occurences["updatePaymentMethod:::id"]=1
 operation_parameters_minimum_occurences["updatePaymentMethod:::payment_method"]=0
 operation_parameters_minimum_occurences["verifyAppleReceipt:::request"]=0
 operation_parameters_minimum_occurences["createOrUpdateFattMerchantPaymentMethod:::request"]=0
-operation_parameters_minimum_occurences["handleGooglePayment:::request"]=0
 operation_parameters_minimum_occurences["silentPostOptimal:::request"]=0
 operation_parameters_minimum_occurences["createPayPalBillingAgreementUrl:::request"]=0
 operation_parameters_minimum_occurences["createPayPalExpressCheckout:::request"]=0
@@ -1091,6 +1044,54 @@ operation_parameters_minimum_occurences["getUserRegistrations:::start_date"]=0
 operation_parameters_minimum_occurences["getUserRegistrations:::end_date"]=0
 operation_parameters_minimum_occurences["getUserRegistrations:::size"]=0
 operation_parameters_minimum_occurences["getUserRegistrations:::page"]=0
+operation_parameters_minimum_occurences["getBREActions:::filter_category"]=0
+operation_parameters_minimum_occurences["getBREActions:::filter_name"]=0
+operation_parameters_minimum_occurences["getBREActions:::filter_tags"]=0
+operation_parameters_minimum_occurences["getBREActions:::filter_search"]=0
+operation_parameters_minimum_occurences["sendBREEvent:::bre_event"]=0
+operation_parameters_minimum_occurences["getBREExpression:::type"]=1
+operation_parameters_minimum_occurences["getBREExpressions:::filter_type_group"]=0
+operation_parameters_minimum_occurences["getExpressionAsText:::expression"]=0
+operation_parameters_minimum_occurences["createBREGlobal:::bre_global_resource"]=0
+operation_parameters_minimum_occurences["deleteBREGlobal:::id"]=1
+operation_parameters_minimum_occurences["getBREGlobal:::id"]=1
+operation_parameters_minimum_occurences["getBREGlobals:::filter_system"]=0
+operation_parameters_minimum_occurences["getBREGlobals:::size"]=0
+operation_parameters_minimum_occurences["getBREGlobals:::page"]=0
+operation_parameters_minimum_occurences["updateBREGlobal:::id"]=1
+operation_parameters_minimum_occurences["updateBREGlobal:::bre_global_resource"]=0
+operation_parameters_minimum_occurences["createBRERule:::bre_rule"]=0
+operation_parameters_minimum_occurences["deleteBRERule:::id"]=1
+operation_parameters_minimum_occurences["getBREExpressionAsString:::expression"]=0
+operation_parameters_minimum_occurences["getBRERule:::id"]=1
+operation_parameters_minimum_occurences["getBRERules:::filter_name"]=0
+operation_parameters_minimum_occurences["getBRERules:::filter_enabled"]=0
+operation_parameters_minimum_occurences["getBRERules:::filter_system"]=0
+operation_parameters_minimum_occurences["getBRERules:::filter_trigger"]=0
+operation_parameters_minimum_occurences["getBRERules:::filter_action"]=0
+operation_parameters_minimum_occurences["getBRERules:::filter_condition"]=0
+operation_parameters_minimum_occurences["getBRERules:::size"]=0
+operation_parameters_minimum_occurences["getBRERules:::page"]=0
+operation_parameters_minimum_occurences["setBRERule:::id"]=1
+operation_parameters_minimum_occurences["setBRERule:::enabled"]=0
+operation_parameters_minimum_occurences["updateBRERule:::id"]=1
+operation_parameters_minimum_occurences["updateBRERule:::bre_rule"]=0
+operation_parameters_minimum_occurences["createBRETrigger:::bre_trigger_resource"]=0
+operation_parameters_minimum_occurences["deleteBRETrigger:::event_name"]=1
+operation_parameters_minimum_occurences["getBRETrigger:::event_name"]=1
+operation_parameters_minimum_occurences["getBRETriggers:::filter_system"]=0
+operation_parameters_minimum_occurences["getBRETriggers:::filter_category"]=0
+operation_parameters_minimum_occurences["getBRETriggers:::filter_tags"]=0
+operation_parameters_minimum_occurences["getBRETriggers:::filter_name"]=0
+operation_parameters_minimum_occurences["getBRETriggers:::filter_search"]=0
+operation_parameters_minimum_occurences["getBRETriggers:::size"]=0
+operation_parameters_minimum_occurences["getBRETriggers:::page"]=0
+operation_parameters_minimum_occurences["updateBRETrigger:::event_name"]=1
+operation_parameters_minimum_occurences["updateBRETrigger:::bre_trigger_resource"]=0
+operation_parameters_minimum_occurences["getBREVariableValues:::name"]=1
+operation_parameters_minimum_occurences["getBREVariableValues:::filter_name"]=0
+operation_parameters_minimum_occurences["getBREVariableValues:::size"]=0
+operation_parameters_minimum_occurences["getBREVariableValues:::page"]=0
 operation_parameters_minimum_occurences["searchCountGET:::type"]=1
 operation_parameters_minimum_occurences["searchCountPOST:::type"]=1
 operation_parameters_minimum_occurences["searchCountPOST:::query"]=0
@@ -1445,7 +1446,7 @@ operation_parameters_minimum_occurences["updateGroupMemberProperties1:::user_id"
 operation_parameters_minimum_occurences["updateGroupMemberProperties1:::Properties"]=1
 operation_parameters_minimum_occurences["updateGroupMemberStatus:::unique_name"]=1
 operation_parameters_minimum_occurences["updateGroupMemberStatus:::user_id"]=1
-operation_parameters_minimum_occurences["updateGroupMemberStatus:::Status"]=1
+operation_parameters_minimum_occurences["updateGroupMemberStatus:::status"]=1
 operation_parameters_minimum_occurences["updateGroupMemberTemplate:::id"]=1
 operation_parameters_minimum_occurences["updateGroupMemberTemplate:::group_member_template_resource"]=0
 operation_parameters_minimum_occurences["updateGroupTemplate:::id"]=1
@@ -1666,68 +1667,6 @@ operation_parameters_maximum_occurences["getTokens:::filter_username"]=0
 operation_parameters_maximum_occurences["getTokens:::size"]=0
 operation_parameters_maximum_occurences["getTokens:::page"]=0
 operation_parameters_maximum_occurences["getTokens:::order"]=0
-operation_parameters_maximum_occurences["getBREActions:::filter_category"]=0
-operation_parameters_maximum_occurences["getBREActions:::filter_name"]=0
-operation_parameters_maximum_occurences["getBREActions:::filter_tags"]=0
-operation_parameters_maximum_occurences["getBREActions:::filter_search"]=0
-operation_parameters_maximum_occurences["createBRECategoryTemplate:::template"]=0
-operation_parameters_maximum_occurences["deleteBRECategoryTemplate:::id"]=0
-operation_parameters_maximum_occurences["deleteBRECategoryTemplate:::cascade"]=0
-operation_parameters_maximum_occurences["getBRECategories:::size"]=0
-operation_parameters_maximum_occurences["getBRECategories:::page"]=0
-operation_parameters_maximum_occurences["getBRECategory:::name"]=0
-operation_parameters_maximum_occurences["getBRECategoryTemplate:::id"]=0
-operation_parameters_maximum_occurences["getBRECategoryTemplates:::size"]=0
-operation_parameters_maximum_occurences["getBRECategoryTemplates:::page"]=0
-operation_parameters_maximum_occurences["getBRECategoryTemplates:::order"]=0
-operation_parameters_maximum_occurences["updateBRECategory:::name"]=0
-operation_parameters_maximum_occurences["updateBRECategory:::category"]=0
-operation_parameters_maximum_occurences["updateBRECategoryTemplate:::id"]=0
-operation_parameters_maximum_occurences["updateBRECategoryTemplate:::template"]=0
-operation_parameters_maximum_occurences["sendBREEvent:::bre_event"]=0
-operation_parameters_maximum_occurences["getBREExpression:::type"]=0
-operation_parameters_maximum_occurences["getBREExpressions:::filter_type_group"]=0
-operation_parameters_maximum_occurences["getExpressionAsText:::expression"]=0
-operation_parameters_maximum_occurences["createBREGlobal:::bre_global_resource"]=0
-operation_parameters_maximum_occurences["deleteBREGlobal:::id"]=0
-operation_parameters_maximum_occurences["getBREGlobal:::id"]=0
-operation_parameters_maximum_occurences["getBREGlobals:::filter_system"]=0
-operation_parameters_maximum_occurences["getBREGlobals:::size"]=0
-operation_parameters_maximum_occurences["getBREGlobals:::page"]=0
-operation_parameters_maximum_occurences["updateBREGlobal:::id"]=0
-operation_parameters_maximum_occurences["updateBREGlobal:::bre_global_resource"]=0
-operation_parameters_maximum_occurences["createBRERule:::bre_rule"]=0
-operation_parameters_maximum_occurences["deleteBRERule:::id"]=0
-operation_parameters_maximum_occurences["getBREExpressionAsString:::expression"]=0
-operation_parameters_maximum_occurences["getBRERule:::id"]=0
-operation_parameters_maximum_occurences["getBRERules:::filter_name"]=0
-operation_parameters_maximum_occurences["getBRERules:::filter_enabled"]=0
-operation_parameters_maximum_occurences["getBRERules:::filter_system"]=0
-operation_parameters_maximum_occurences["getBRERules:::filter_trigger"]=0
-operation_parameters_maximum_occurences["getBRERules:::filter_action"]=0
-operation_parameters_maximum_occurences["getBRERules:::filter_condition"]=0
-operation_parameters_maximum_occurences["getBRERules:::size"]=0
-operation_parameters_maximum_occurences["getBRERules:::page"]=0
-operation_parameters_maximum_occurences["setBRERule:::id"]=0
-operation_parameters_maximum_occurences["setBRERule:::enabled"]=0
-operation_parameters_maximum_occurences["updateBRERule:::id"]=0
-operation_parameters_maximum_occurences["updateBRERule:::bre_rule"]=0
-operation_parameters_maximum_occurences["createBRETrigger:::bre_trigger_resource"]=0
-operation_parameters_maximum_occurences["deleteBRETrigger:::event_name"]=0
-operation_parameters_maximum_occurences["getBRETrigger:::event_name"]=0
-operation_parameters_maximum_occurences["getBRETriggers:::filter_system"]=0
-operation_parameters_maximum_occurences["getBRETriggers:::filter_category"]=0
-operation_parameters_maximum_occurences["getBRETriggers:::filter_tags"]=0
-operation_parameters_maximum_occurences["getBRETriggers:::filter_name"]=0
-operation_parameters_maximum_occurences["getBRETriggers:::filter_search"]=0
-operation_parameters_maximum_occurences["getBRETriggers:::size"]=0
-operation_parameters_maximum_occurences["getBRETriggers:::page"]=0
-operation_parameters_maximum_occurences["updateBRETrigger:::event_name"]=0
-operation_parameters_maximum_occurences["updateBRETrigger:::bre_trigger_resource"]=0
-operation_parameters_maximum_occurences["getBREVariableValues:::name"]=0
-operation_parameters_maximum_occurences["getBREVariableValues:::filter_name"]=0
-operation_parameters_maximum_occurences["getBREVariableValues:::size"]=0
-operation_parameters_maximum_occurences["getBREVariableValues:::page"]=0
 operation_parameters_maximum_occurences["addChallengeToCampaign:::id"]=0
 operation_parameters_maximum_occurences["addChallengeToCampaign:::challenge_id"]=0
 operation_parameters_maximum_occurences["createCampaign:::campaign_resource"]=0
@@ -1864,7 +1803,7 @@ operation_parameters_maximum_occurences["getTopicMessages:::page"]=0
 operation_parameters_maximum_occurences["getTopicMessages:::order"]=0
 operation_parameters_maximum_occurences["removeChatBlacklist:::blacklisted_user_id"]=0
 operation_parameters_maximum_occurences["removeChatBlacklist:::id"]=0
-operation_parameters_maximum_occurences["sendMessage:::chatMessageResource"]=0
+operation_parameters_maximum_occurences["sendChatMessage:::chatMessageResource"]=0
 operation_parameters_maximum_occurences["createConfig:::config"]=0
 operation_parameters_maximum_occurences["deleteConfig:::name"]=0
 operation_parameters_maximum_occurences["getConfig:::name"]=0
@@ -1876,9 +1815,14 @@ operation_parameters_maximum_occurences["updateConfig:::name"]=0
 operation_parameters_maximum_occurences["updateConfig:::config"]=0
 operation_parameters_maximum_occurences["createArticle:::article_resource"]=0
 operation_parameters_maximum_occurences["createArticleTemplate:::article_template_resource"]=0
+operation_parameters_maximum_occurences["createTemplate:::type_hint"]=0
+operation_parameters_maximum_occurences["createTemplate:::template"]=0
 operation_parameters_maximum_occurences["deleteArticle:::id"]=0
 operation_parameters_maximum_occurences["deleteArticleTemplate:::id"]=0
 operation_parameters_maximum_occurences["deleteArticleTemplate:::cascade"]=0
+operation_parameters_maximum_occurences["deleteTemplate:::type_hint"]=0
+operation_parameters_maximum_occurences["deleteTemplate:::id"]=0
+operation_parameters_maximum_occurences["deleteTemplate:::cascade"]=0
 operation_parameters_maximum_occurences["getArticle:::id"]=0
 operation_parameters_maximum_occurences["getArticleTemplate:::id"]=0
 operation_parameters_maximum_occurences["getArticleTemplates:::size"]=0
@@ -1893,10 +1837,21 @@ operation_parameters_maximum_occurences["getArticles:::filter_title"]=0
 operation_parameters_maximum_occurences["getArticles:::size"]=0
 operation_parameters_maximum_occurences["getArticles:::page"]=0
 operation_parameters_maximum_occurences["getArticles:::order"]=0
+operation_parameters_maximum_occurences["getTemplate:::type_hint"]=0
+operation_parameters_maximum_occurences["getTemplate:::id"]=0
+operation_parameters_maximum_occurences["getTemplates:::type_hint"]=0
+operation_parameters_maximum_occurences["getTemplates:::size"]=0
+operation_parameters_maximum_occurences["getTemplates:::page"]=0
+operation_parameters_maximum_occurences["getTemplates:::order"]=0
 operation_parameters_maximum_occurences["updateArticle:::id"]=0
 operation_parameters_maximum_occurences["updateArticle:::article_resource"]=0
 operation_parameters_maximum_occurences["updateArticleTemplate:::id"]=0
 operation_parameters_maximum_occurences["updateArticleTemplate:::article_template_resource"]=0
+operation_parameters_maximum_occurences["updateTemplate:::type_hint"]=0
+operation_parameters_maximum_occurences["updateTemplate:::id"]=0
+operation_parameters_maximum_occurences["updateTemplate:::template"]=0
+operation_parameters_maximum_occurences["validate:::type_hint"]=0
+operation_parameters_maximum_occurences["validate:::resource"]=0
 operation_parameters_maximum_occurences["addComment:::comment_resource"]=0
 operation_parameters_maximum_occurences["deleteComment:::id"]=0
 operation_parameters_maximum_occurences["getComment:::id"]=0
@@ -1906,29 +1861,6 @@ operation_parameters_maximum_occurences["getComments:::size"]=0
 operation_parameters_maximum_occurences["getComments:::page"]=0
 operation_parameters_maximum_occurences["updateComment:::id"]=0
 operation_parameters_maximum_occurences["updateComment:::content"]=0
-operation_parameters_maximum_occurences["answerPoll:::id"]=0
-operation_parameters_maximum_occurences["answerPoll:::answer_key"]=0
-operation_parameters_maximum_occurences["createPoll:::poll_resource"]=0
-operation_parameters_maximum_occurences["createPollTemplate:::poll_template_resource"]=0
-operation_parameters_maximum_occurences["deletePoll:::id"]=0
-operation_parameters_maximum_occurences["deletePollTemplate:::id"]=0
-operation_parameters_maximum_occurences["deletePollTemplate:::cascade"]=0
-operation_parameters_maximum_occurences["getPoll:::id"]=0
-operation_parameters_maximum_occurences["getPollAnswer:::id"]=0
-operation_parameters_maximum_occurences["getPollTemplate:::id"]=0
-operation_parameters_maximum_occurences["getPollTemplates:::size"]=0
-operation_parameters_maximum_occurences["getPollTemplates:::page"]=0
-operation_parameters_maximum_occurences["getPollTemplates:::order"]=0
-operation_parameters_maximum_occurences["getPolls:::filter_category"]=0
-operation_parameters_maximum_occurences["getPolls:::filter_tagset"]=0
-operation_parameters_maximum_occurences["getPolls:::filter_text"]=0
-operation_parameters_maximum_occurences["getPolls:::size"]=0
-operation_parameters_maximum_occurences["getPolls:::page"]=0
-operation_parameters_maximum_occurences["getPolls:::order"]=0
-operation_parameters_maximum_occurences["updatePoll:::id"]=0
-operation_parameters_maximum_occurences["updatePoll:::poll_resource"]=0
-operation_parameters_maximum_occurences["updatePollTemplate:::id"]=0
-operation_parameters_maximum_occurences["updatePollTemplate:::poll_template_resource"]=0
 operation_parameters_maximum_occurences["createCurrency:::currency"]=0
 operation_parameters_maximum_occurences["deleteCurrency:::code"]=0
 operation_parameters_maximum_occurences["getCurrencies:::filter_default"]=0
@@ -2253,8 +2185,32 @@ operation_parameters_maximum_occurences["getModerationReports:::filter_context"]
 operation_parameters_maximum_occurences["getModerationReports:::filter_context_id"]=0
 operation_parameters_maximum_occurences["getModerationReports:::size"]=0
 operation_parameters_maximum_occurences["getModerationReports:::page"]=0
+operation_parameters_maximum_occurences["getModerationReports:::order"]=0
 operation_parameters_maximum_occurences["updateModerationReport:::id"]=0
 operation_parameters_maximum_occurences["updateModerationReport:::flag_report_resource"]=0
+operation_parameters_maximum_occurences["answerPoll:::id"]=0
+operation_parameters_maximum_occurences["answerPoll:::answer_key"]=0
+operation_parameters_maximum_occurences["createPoll:::poll_resource"]=0
+operation_parameters_maximum_occurences["createPollTemplate:::poll_template_resource"]=0
+operation_parameters_maximum_occurences["deletePoll:::id"]=0
+operation_parameters_maximum_occurences["deletePollTemplate:::id"]=0
+operation_parameters_maximum_occurences["deletePollTemplate:::cascade"]=0
+operation_parameters_maximum_occurences["getPoll:::id"]=0
+operation_parameters_maximum_occurences["getPollAnswer:::id"]=0
+operation_parameters_maximum_occurences["getPollTemplate:::id"]=0
+operation_parameters_maximum_occurences["getPollTemplates:::size"]=0
+operation_parameters_maximum_occurences["getPollTemplates:::page"]=0
+operation_parameters_maximum_occurences["getPollTemplates:::order"]=0
+operation_parameters_maximum_occurences["getPolls:::filter_category"]=0
+operation_parameters_maximum_occurences["getPolls:::filter_tagset"]=0
+operation_parameters_maximum_occurences["getPolls:::filter_text"]=0
+operation_parameters_maximum_occurences["getPolls:::size"]=0
+operation_parameters_maximum_occurences["getPolls:::page"]=0
+operation_parameters_maximum_occurences["getPolls:::order"]=0
+operation_parameters_maximum_occurences["updatePoll:::id"]=0
+operation_parameters_maximum_occurences["updatePoll:::poll_resource"]=0
+operation_parameters_maximum_occurences["updatePollTemplate:::id"]=0
+operation_parameters_maximum_occurences["updatePollTemplate:::poll_template_resource"]=0
 operation_parameters_maximum_occurences["addUserToVideoWhitelist:::id"]=0
 operation_parameters_maximum_occurences["addUserToVideoWhitelist:::user_id"]=0
 operation_parameters_maximum_occurences["addVideo:::video_resource"]=0
@@ -2336,7 +2292,7 @@ operation_parameters_maximum_occurences["getMessageTemplates:::filter_tag_exclus
 operation_parameters_maximum_occurences["getMessageTemplates:::size"]=0
 operation_parameters_maximum_occurences["getMessageTemplates:::page"]=0
 operation_parameters_maximum_occurences["getMessageTemplates:::order"]=0
-operation_parameters_maximum_occurences["sendMessage1:::message_resource"]=0
+operation_parameters_maximum_occurences["sendMessage:::message_resource"]=0
 operation_parameters_maximum_occurences["sendRawEmail:::raw_email_resource"]=0
 operation_parameters_maximum_occurences["sendRawPush:::raw_push_resource"]=0
 operation_parameters_maximum_occurences["sendRawSMS:::raw_SMS_resource"]=0
@@ -2351,7 +2307,6 @@ operation_parameters_maximum_occurences["disableTopicSubscriber:::user_id"]=0
 operation_parameters_maximum_occurences["disableTopicSubscriber:::disabled"]=0
 operation_parameters_maximum_occurences["getTopicSubscriber:::id"]=0
 operation_parameters_maximum_occurences["getTopicSubscriber:::user_id"]=0
-operation_parameters_maximum_occurences["getTopicSubscribers:::id"]=0
 operation_parameters_maximum_occurences["getUserTopics:::id"]=0
 operation_parameters_maximum_occurences["createNotificationType:::notification_type"]=0
 operation_parameters_maximum_occurences["deleteNotificationType:::id"]=0
@@ -2429,7 +2384,6 @@ operation_parameters_maximum_occurences["updatePaymentMethod:::id"]=0
 operation_parameters_maximum_occurences["updatePaymentMethod:::payment_method"]=0
 operation_parameters_maximum_occurences["verifyAppleReceipt:::request"]=0
 operation_parameters_maximum_occurences["createOrUpdateFattMerchantPaymentMethod:::request"]=0
-operation_parameters_maximum_occurences["handleGooglePayment:::request"]=0
 operation_parameters_maximum_occurences["silentPostOptimal:::request"]=0
 operation_parameters_maximum_occurences["createPayPalBillingAgreementUrl:::request"]=0
 operation_parameters_maximum_occurences["createPayPalExpressCheckout:::request"]=0
@@ -2553,6 +2507,54 @@ operation_parameters_maximum_occurences["getUserRegistrations:::start_date"]=0
 operation_parameters_maximum_occurences["getUserRegistrations:::end_date"]=0
 operation_parameters_maximum_occurences["getUserRegistrations:::size"]=0
 operation_parameters_maximum_occurences["getUserRegistrations:::page"]=0
+operation_parameters_maximum_occurences["getBREActions:::filter_category"]=0
+operation_parameters_maximum_occurences["getBREActions:::filter_name"]=0
+operation_parameters_maximum_occurences["getBREActions:::filter_tags"]=0
+operation_parameters_maximum_occurences["getBREActions:::filter_search"]=0
+operation_parameters_maximum_occurences["sendBREEvent:::bre_event"]=0
+operation_parameters_maximum_occurences["getBREExpression:::type"]=0
+operation_parameters_maximum_occurences["getBREExpressions:::filter_type_group"]=0
+operation_parameters_maximum_occurences["getExpressionAsText:::expression"]=0
+operation_parameters_maximum_occurences["createBREGlobal:::bre_global_resource"]=0
+operation_parameters_maximum_occurences["deleteBREGlobal:::id"]=0
+operation_parameters_maximum_occurences["getBREGlobal:::id"]=0
+operation_parameters_maximum_occurences["getBREGlobals:::filter_system"]=0
+operation_parameters_maximum_occurences["getBREGlobals:::size"]=0
+operation_parameters_maximum_occurences["getBREGlobals:::page"]=0
+operation_parameters_maximum_occurences["updateBREGlobal:::id"]=0
+operation_parameters_maximum_occurences["updateBREGlobal:::bre_global_resource"]=0
+operation_parameters_maximum_occurences["createBRERule:::bre_rule"]=0
+operation_parameters_maximum_occurences["deleteBRERule:::id"]=0
+operation_parameters_maximum_occurences["getBREExpressionAsString:::expression"]=0
+operation_parameters_maximum_occurences["getBRERule:::id"]=0
+operation_parameters_maximum_occurences["getBRERules:::filter_name"]=0
+operation_parameters_maximum_occurences["getBRERules:::filter_enabled"]=0
+operation_parameters_maximum_occurences["getBRERules:::filter_system"]=0
+operation_parameters_maximum_occurences["getBRERules:::filter_trigger"]=0
+operation_parameters_maximum_occurences["getBRERules:::filter_action"]=0
+operation_parameters_maximum_occurences["getBRERules:::filter_condition"]=0
+operation_parameters_maximum_occurences["getBRERules:::size"]=0
+operation_parameters_maximum_occurences["getBRERules:::page"]=0
+operation_parameters_maximum_occurences["setBRERule:::id"]=0
+operation_parameters_maximum_occurences["setBRERule:::enabled"]=0
+operation_parameters_maximum_occurences["updateBRERule:::id"]=0
+operation_parameters_maximum_occurences["updateBRERule:::bre_rule"]=0
+operation_parameters_maximum_occurences["createBRETrigger:::bre_trigger_resource"]=0
+operation_parameters_maximum_occurences["deleteBRETrigger:::event_name"]=0
+operation_parameters_maximum_occurences["getBRETrigger:::event_name"]=0
+operation_parameters_maximum_occurences["getBRETriggers:::filter_system"]=0
+operation_parameters_maximum_occurences["getBRETriggers:::filter_category"]=0
+operation_parameters_maximum_occurences["getBRETriggers:::filter_tags"]=0
+operation_parameters_maximum_occurences["getBRETriggers:::filter_name"]=0
+operation_parameters_maximum_occurences["getBRETriggers:::filter_search"]=0
+operation_parameters_maximum_occurences["getBRETriggers:::size"]=0
+operation_parameters_maximum_occurences["getBRETriggers:::page"]=0
+operation_parameters_maximum_occurences["updateBRETrigger:::event_name"]=0
+operation_parameters_maximum_occurences["updateBRETrigger:::bre_trigger_resource"]=0
+operation_parameters_maximum_occurences["getBREVariableValues:::name"]=0
+operation_parameters_maximum_occurences["getBREVariableValues:::filter_name"]=0
+operation_parameters_maximum_occurences["getBREVariableValues:::size"]=0
+operation_parameters_maximum_occurences["getBREVariableValues:::page"]=0
 operation_parameters_maximum_occurences["searchCountGET:::type"]=0
 operation_parameters_maximum_occurences["searchCountPOST:::type"]=0
 operation_parameters_maximum_occurences["searchCountPOST:::query"]=0
@@ -2907,7 +2909,7 @@ operation_parameters_maximum_occurences["updateGroupMemberProperties1:::user_id"
 operation_parameters_maximum_occurences["updateGroupMemberProperties1:::Properties"]=0
 operation_parameters_maximum_occurences["updateGroupMemberStatus:::unique_name"]=0
 operation_parameters_maximum_occurences["updateGroupMemberStatus:::user_id"]=0
-operation_parameters_maximum_occurences["updateGroupMemberStatus:::Status"]=0
+operation_parameters_maximum_occurences["updateGroupMemberStatus:::status"]=0
 operation_parameters_maximum_occurences["updateGroupMemberTemplate:::id"]=0
 operation_parameters_maximum_occurences["updateGroupMemberTemplate:::group_member_template_resource"]=0
 operation_parameters_maximum_occurences["updateGroupTemplate:::id"]=0
@@ -3125,68 +3127,6 @@ operation_parameters_collection_type["getTokens:::filter_username"]=""
 operation_parameters_collection_type["getTokens:::size"]=""
 operation_parameters_collection_type["getTokens:::page"]=""
 operation_parameters_collection_type["getTokens:::order"]=""
-operation_parameters_collection_type["getBREActions:::filter_category"]=""
-operation_parameters_collection_type["getBREActions:::filter_name"]=""
-operation_parameters_collection_type["getBREActions:::filter_tags"]=""
-operation_parameters_collection_type["getBREActions:::filter_search"]=""
-operation_parameters_collection_type["createBRECategoryTemplate:::template"]=""
-operation_parameters_collection_type["deleteBRECategoryTemplate:::id"]=""
-operation_parameters_collection_type["deleteBRECategoryTemplate:::cascade"]=""
-operation_parameters_collection_type["getBRECategories:::size"]=""
-operation_parameters_collection_type["getBRECategories:::page"]=""
-operation_parameters_collection_type["getBRECategory:::name"]=""
-operation_parameters_collection_type["getBRECategoryTemplate:::id"]=""
-operation_parameters_collection_type["getBRECategoryTemplates:::size"]=""
-operation_parameters_collection_type["getBRECategoryTemplates:::page"]=""
-operation_parameters_collection_type["getBRECategoryTemplates:::order"]=""
-operation_parameters_collection_type["updateBRECategory:::name"]=""
-operation_parameters_collection_type["updateBRECategory:::category"]=""
-operation_parameters_collection_type["updateBRECategoryTemplate:::id"]=""
-operation_parameters_collection_type["updateBRECategoryTemplate:::template"]=""
-operation_parameters_collection_type["sendBREEvent:::bre_event"]=""
-operation_parameters_collection_type["getBREExpression:::type"]=""
-operation_parameters_collection_type["getBREExpressions:::filter_type_group"]=""
-operation_parameters_collection_type["getExpressionAsText:::expression"]=""
-operation_parameters_collection_type["createBREGlobal:::bre_global_resource"]=""
-operation_parameters_collection_type["deleteBREGlobal:::id"]=""
-operation_parameters_collection_type["getBREGlobal:::id"]=""
-operation_parameters_collection_type["getBREGlobals:::filter_system"]=""
-operation_parameters_collection_type["getBREGlobals:::size"]=""
-operation_parameters_collection_type["getBREGlobals:::page"]=""
-operation_parameters_collection_type["updateBREGlobal:::id"]=""
-operation_parameters_collection_type["updateBREGlobal:::bre_global_resource"]=""
-operation_parameters_collection_type["createBRERule:::bre_rule"]=""
-operation_parameters_collection_type["deleteBRERule:::id"]=""
-operation_parameters_collection_type["getBREExpressionAsString:::expression"]=""
-operation_parameters_collection_type["getBRERule:::id"]=""
-operation_parameters_collection_type["getBRERules:::filter_name"]=""
-operation_parameters_collection_type["getBRERules:::filter_enabled"]=""
-operation_parameters_collection_type["getBRERules:::filter_system"]=""
-operation_parameters_collection_type["getBRERules:::filter_trigger"]=""
-operation_parameters_collection_type["getBRERules:::filter_action"]=""
-operation_parameters_collection_type["getBRERules:::filter_condition"]=""
-operation_parameters_collection_type["getBRERules:::size"]=""
-operation_parameters_collection_type["getBRERules:::page"]=""
-operation_parameters_collection_type["setBRERule:::id"]=""
-operation_parameters_collection_type["setBRERule:::enabled"]=""
-operation_parameters_collection_type["updateBRERule:::id"]=""
-operation_parameters_collection_type["updateBRERule:::bre_rule"]=""
-operation_parameters_collection_type["createBRETrigger:::bre_trigger_resource"]=""
-operation_parameters_collection_type["deleteBRETrigger:::event_name"]=""
-operation_parameters_collection_type["getBRETrigger:::event_name"]=""
-operation_parameters_collection_type["getBRETriggers:::filter_system"]=""
-operation_parameters_collection_type["getBRETriggers:::filter_category"]=""
-operation_parameters_collection_type["getBRETriggers:::filter_tags"]=""
-operation_parameters_collection_type["getBRETriggers:::filter_name"]=""
-operation_parameters_collection_type["getBRETriggers:::filter_search"]=""
-operation_parameters_collection_type["getBRETriggers:::size"]=""
-operation_parameters_collection_type["getBRETriggers:::page"]=""
-operation_parameters_collection_type["updateBRETrigger:::event_name"]=""
-operation_parameters_collection_type["updateBRETrigger:::bre_trigger_resource"]=""
-operation_parameters_collection_type["getBREVariableValues:::name"]=""
-operation_parameters_collection_type["getBREVariableValues:::filter_name"]=""
-operation_parameters_collection_type["getBREVariableValues:::size"]=""
-operation_parameters_collection_type["getBREVariableValues:::page"]=""
 operation_parameters_collection_type["addChallengeToCampaign:::id"]=""
 operation_parameters_collection_type["addChallengeToCampaign:::challenge_id"]=""
 operation_parameters_collection_type["createCampaign:::campaign_resource"]=""
@@ -3323,7 +3263,7 @@ operation_parameters_collection_type["getTopicMessages:::page"]=""
 operation_parameters_collection_type["getTopicMessages:::order"]=""
 operation_parameters_collection_type["removeChatBlacklist:::blacklisted_user_id"]=""
 operation_parameters_collection_type["removeChatBlacklist:::id"]=""
-operation_parameters_collection_type["sendMessage:::chatMessageResource"]=""
+operation_parameters_collection_type["sendChatMessage:::chatMessageResource"]=""
 operation_parameters_collection_type["createConfig:::config"]=""
 operation_parameters_collection_type["deleteConfig:::name"]=""
 operation_parameters_collection_type["getConfig:::name"]=""
@@ -3335,9 +3275,14 @@ operation_parameters_collection_type["updateConfig:::name"]=""
 operation_parameters_collection_type["updateConfig:::config"]=""
 operation_parameters_collection_type["createArticle:::article_resource"]=""
 operation_parameters_collection_type["createArticleTemplate:::article_template_resource"]=""
+operation_parameters_collection_type["createTemplate:::type_hint"]=""
+operation_parameters_collection_type["createTemplate:::template"]=""
 operation_parameters_collection_type["deleteArticle:::id"]=""
 operation_parameters_collection_type["deleteArticleTemplate:::id"]=""
 operation_parameters_collection_type["deleteArticleTemplate:::cascade"]=""
+operation_parameters_collection_type["deleteTemplate:::type_hint"]=""
+operation_parameters_collection_type["deleteTemplate:::id"]=""
+operation_parameters_collection_type["deleteTemplate:::cascade"]=""
 operation_parameters_collection_type["getArticle:::id"]=""
 operation_parameters_collection_type["getArticleTemplate:::id"]=""
 operation_parameters_collection_type["getArticleTemplates:::size"]=""
@@ -3352,10 +3297,21 @@ operation_parameters_collection_type["getArticles:::filter_title"]=""
 operation_parameters_collection_type["getArticles:::size"]=""
 operation_parameters_collection_type["getArticles:::page"]=""
 operation_parameters_collection_type["getArticles:::order"]=""
+operation_parameters_collection_type["getTemplate:::type_hint"]=""
+operation_parameters_collection_type["getTemplate:::id"]=""
+operation_parameters_collection_type["getTemplates:::type_hint"]=""
+operation_parameters_collection_type["getTemplates:::size"]=""
+operation_parameters_collection_type["getTemplates:::page"]=""
+operation_parameters_collection_type["getTemplates:::order"]=""
 operation_parameters_collection_type["updateArticle:::id"]=""
 operation_parameters_collection_type["updateArticle:::article_resource"]=""
 operation_parameters_collection_type["updateArticleTemplate:::id"]=""
 operation_parameters_collection_type["updateArticleTemplate:::article_template_resource"]=""
+operation_parameters_collection_type["updateTemplate:::type_hint"]=""
+operation_parameters_collection_type["updateTemplate:::id"]=""
+operation_parameters_collection_type["updateTemplate:::template"]=""
+operation_parameters_collection_type["validate:::type_hint"]=""
+operation_parameters_collection_type["validate:::resource"]=""
 operation_parameters_collection_type["addComment:::comment_resource"]=""
 operation_parameters_collection_type["deleteComment:::id"]=""
 operation_parameters_collection_type["getComment:::id"]=""
@@ -3365,29 +3321,6 @@ operation_parameters_collection_type["getComments:::size"]=""
 operation_parameters_collection_type["getComments:::page"]=""
 operation_parameters_collection_type["updateComment:::id"]=""
 operation_parameters_collection_type["updateComment:::content"]=""
-operation_parameters_collection_type["answerPoll:::id"]=""
-operation_parameters_collection_type["answerPoll:::answer_key"]=""
-operation_parameters_collection_type["createPoll:::poll_resource"]=""
-operation_parameters_collection_type["createPollTemplate:::poll_template_resource"]=""
-operation_parameters_collection_type["deletePoll:::id"]=""
-operation_parameters_collection_type["deletePollTemplate:::id"]=""
-operation_parameters_collection_type["deletePollTemplate:::cascade"]=""
-operation_parameters_collection_type["getPoll:::id"]=""
-operation_parameters_collection_type["getPollAnswer:::id"]=""
-operation_parameters_collection_type["getPollTemplate:::id"]=""
-operation_parameters_collection_type["getPollTemplates:::size"]=""
-operation_parameters_collection_type["getPollTemplates:::page"]=""
-operation_parameters_collection_type["getPollTemplates:::order"]=""
-operation_parameters_collection_type["getPolls:::filter_category"]=""
-operation_parameters_collection_type["getPolls:::filter_tagset"]=""
-operation_parameters_collection_type["getPolls:::filter_text"]=""
-operation_parameters_collection_type["getPolls:::size"]=""
-operation_parameters_collection_type["getPolls:::page"]=""
-operation_parameters_collection_type["getPolls:::order"]=""
-operation_parameters_collection_type["updatePoll:::id"]=""
-operation_parameters_collection_type["updatePoll:::poll_resource"]=""
-operation_parameters_collection_type["updatePollTemplate:::id"]=""
-operation_parameters_collection_type["updatePollTemplate:::poll_template_resource"]=""
 operation_parameters_collection_type["createCurrency:::currency"]=""
 operation_parameters_collection_type["deleteCurrency:::code"]=""
 operation_parameters_collection_type["getCurrencies:::filter_default"]=""
@@ -3712,8 +3645,32 @@ operation_parameters_collection_type["getModerationReports:::filter_context"]=""
 operation_parameters_collection_type["getModerationReports:::filter_context_id"]=""
 operation_parameters_collection_type["getModerationReports:::size"]=""
 operation_parameters_collection_type["getModerationReports:::page"]=""
+operation_parameters_collection_type["getModerationReports:::order"]=""
 operation_parameters_collection_type["updateModerationReport:::id"]=""
 operation_parameters_collection_type["updateModerationReport:::flag_report_resource"]=""
+operation_parameters_collection_type["answerPoll:::id"]=""
+operation_parameters_collection_type["answerPoll:::answer_key"]=""
+operation_parameters_collection_type["createPoll:::poll_resource"]=""
+operation_parameters_collection_type["createPollTemplate:::poll_template_resource"]=""
+operation_parameters_collection_type["deletePoll:::id"]=""
+operation_parameters_collection_type["deletePollTemplate:::id"]=""
+operation_parameters_collection_type["deletePollTemplate:::cascade"]=""
+operation_parameters_collection_type["getPoll:::id"]=""
+operation_parameters_collection_type["getPollAnswer:::id"]=""
+operation_parameters_collection_type["getPollTemplate:::id"]=""
+operation_parameters_collection_type["getPollTemplates:::size"]=""
+operation_parameters_collection_type["getPollTemplates:::page"]=""
+operation_parameters_collection_type["getPollTemplates:::order"]=""
+operation_parameters_collection_type["getPolls:::filter_category"]=""
+operation_parameters_collection_type["getPolls:::filter_tagset"]=""
+operation_parameters_collection_type["getPolls:::filter_text"]=""
+operation_parameters_collection_type["getPolls:::size"]=""
+operation_parameters_collection_type["getPolls:::page"]=""
+operation_parameters_collection_type["getPolls:::order"]=""
+operation_parameters_collection_type["updatePoll:::id"]=""
+operation_parameters_collection_type["updatePoll:::poll_resource"]=""
+operation_parameters_collection_type["updatePollTemplate:::id"]=""
+operation_parameters_collection_type["updatePollTemplate:::poll_template_resource"]=""
 operation_parameters_collection_type["addUserToVideoWhitelist:::id"]=""
 operation_parameters_collection_type["addUserToVideoWhitelist:::user_id"]=""
 operation_parameters_collection_type["addVideo:::video_resource"]=""
@@ -3795,7 +3752,7 @@ operation_parameters_collection_type["getMessageTemplates:::filter_tag_exclusion
 operation_parameters_collection_type["getMessageTemplates:::size"]=""
 operation_parameters_collection_type["getMessageTemplates:::page"]=""
 operation_parameters_collection_type["getMessageTemplates:::order"]=""
-operation_parameters_collection_type["sendMessage1:::message_resource"]=""
+operation_parameters_collection_type["sendMessage:::message_resource"]=""
 operation_parameters_collection_type["sendRawEmail:::raw_email_resource"]=""
 operation_parameters_collection_type["sendRawPush:::raw_push_resource"]=""
 operation_parameters_collection_type["sendRawSMS:::raw_SMS_resource"]=""
@@ -3810,7 +3767,6 @@ operation_parameters_collection_type["disableTopicSubscriber:::user_id"]=""
 operation_parameters_collection_type["disableTopicSubscriber:::disabled"]=""
 operation_parameters_collection_type["getTopicSubscriber:::id"]=""
 operation_parameters_collection_type["getTopicSubscriber:::user_id"]=""
-operation_parameters_collection_type["getTopicSubscribers:::id"]=""
 operation_parameters_collection_type["getUserTopics:::id"]=""
 operation_parameters_collection_type["createNotificationType:::notification_type"]=""
 operation_parameters_collection_type["deleteNotificationType:::id"]=""
@@ -3888,7 +3844,6 @@ operation_parameters_collection_type["updatePaymentMethod:::id"]=""
 operation_parameters_collection_type["updatePaymentMethod:::payment_method"]=""
 operation_parameters_collection_type["verifyAppleReceipt:::request"]=""
 operation_parameters_collection_type["createOrUpdateFattMerchantPaymentMethod:::request"]=""
-operation_parameters_collection_type["handleGooglePayment:::request"]=""
 operation_parameters_collection_type["silentPostOptimal:::request"]=""
 operation_parameters_collection_type["createPayPalBillingAgreementUrl:::request"]=""
 operation_parameters_collection_type["createPayPalExpressCheckout:::request"]=""
@@ -4012,6 +3967,54 @@ operation_parameters_collection_type["getUserRegistrations:::start_date"]=""
 operation_parameters_collection_type["getUserRegistrations:::end_date"]=""
 operation_parameters_collection_type["getUserRegistrations:::size"]=""
 operation_parameters_collection_type["getUserRegistrations:::page"]=""
+operation_parameters_collection_type["getBREActions:::filter_category"]=""
+operation_parameters_collection_type["getBREActions:::filter_name"]=""
+operation_parameters_collection_type["getBREActions:::filter_tags"]=""
+operation_parameters_collection_type["getBREActions:::filter_search"]=""
+operation_parameters_collection_type["sendBREEvent:::bre_event"]=""
+operation_parameters_collection_type["getBREExpression:::type"]=""
+operation_parameters_collection_type["getBREExpressions:::filter_type_group"]=""
+operation_parameters_collection_type["getExpressionAsText:::expression"]=""
+operation_parameters_collection_type["createBREGlobal:::bre_global_resource"]=""
+operation_parameters_collection_type["deleteBREGlobal:::id"]=""
+operation_parameters_collection_type["getBREGlobal:::id"]=""
+operation_parameters_collection_type["getBREGlobals:::filter_system"]=""
+operation_parameters_collection_type["getBREGlobals:::size"]=""
+operation_parameters_collection_type["getBREGlobals:::page"]=""
+operation_parameters_collection_type["updateBREGlobal:::id"]=""
+operation_parameters_collection_type["updateBREGlobal:::bre_global_resource"]=""
+operation_parameters_collection_type["createBRERule:::bre_rule"]=""
+operation_parameters_collection_type["deleteBRERule:::id"]=""
+operation_parameters_collection_type["getBREExpressionAsString:::expression"]=""
+operation_parameters_collection_type["getBRERule:::id"]=""
+operation_parameters_collection_type["getBRERules:::filter_name"]=""
+operation_parameters_collection_type["getBRERules:::filter_enabled"]=""
+operation_parameters_collection_type["getBRERules:::filter_system"]=""
+operation_parameters_collection_type["getBRERules:::filter_trigger"]=""
+operation_parameters_collection_type["getBRERules:::filter_action"]=""
+operation_parameters_collection_type["getBRERules:::filter_condition"]=""
+operation_parameters_collection_type["getBRERules:::size"]=""
+operation_parameters_collection_type["getBRERules:::page"]=""
+operation_parameters_collection_type["setBRERule:::id"]=""
+operation_parameters_collection_type["setBRERule:::enabled"]=""
+operation_parameters_collection_type["updateBRERule:::id"]=""
+operation_parameters_collection_type["updateBRERule:::bre_rule"]=""
+operation_parameters_collection_type["createBRETrigger:::bre_trigger_resource"]=""
+operation_parameters_collection_type["deleteBRETrigger:::event_name"]=""
+operation_parameters_collection_type["getBRETrigger:::event_name"]=""
+operation_parameters_collection_type["getBRETriggers:::filter_system"]=""
+operation_parameters_collection_type["getBRETriggers:::filter_category"]=""
+operation_parameters_collection_type["getBRETriggers:::filter_tags"]=""
+operation_parameters_collection_type["getBRETriggers:::filter_name"]=""
+operation_parameters_collection_type["getBRETriggers:::filter_search"]=""
+operation_parameters_collection_type["getBRETriggers:::size"]=""
+operation_parameters_collection_type["getBRETriggers:::page"]=""
+operation_parameters_collection_type["updateBRETrigger:::event_name"]=""
+operation_parameters_collection_type["updateBRETrigger:::bre_trigger_resource"]=""
+operation_parameters_collection_type["getBREVariableValues:::name"]=""
+operation_parameters_collection_type["getBREVariableValues:::filter_name"]=""
+operation_parameters_collection_type["getBREVariableValues:::size"]=""
+operation_parameters_collection_type["getBREVariableValues:::page"]=""
 operation_parameters_collection_type["searchCountGET:::type"]=""
 operation_parameters_collection_type["searchCountPOST:::type"]=""
 operation_parameters_collection_type["searchCountPOST:::query"]=""
@@ -4366,7 +4369,7 @@ operation_parameters_collection_type["updateGroupMemberProperties1:::user_id"]="
 operation_parameters_collection_type["updateGroupMemberProperties1:::Properties"]=""
 operation_parameters_collection_type["updateGroupMemberStatus:::unique_name"]=""
 operation_parameters_collection_type["updateGroupMemberStatus:::user_id"]=""
-operation_parameters_collection_type["updateGroupMemberStatus:::Status"]=""
+operation_parameters_collection_type["updateGroupMemberStatus:::status"]=""
 operation_parameters_collection_type["updateGroupMemberTemplate:::id"]=""
 operation_parameters_collection_type["updateGroupMemberTemplate:::group_member_template_resource"]=""
 operation_parameters_collection_type["updateGroupTemplate:::id"]=""
@@ -4849,7 +4852,7 @@ EOF
     echo ""
     echo -e "${BOLD}${WHITE}Operations (grouped by tags)${OFF}"
     echo ""
-    echo -e "${BOLD}${WHITE}[accessToken]${OFF}"
+    echo -e "${BOLD}${WHITE}[access_Token]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}getOAuthToken${OFF};Get access token
 EOF
@@ -4879,14 +4882,14 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[amazonWebServicesS3]${OFF}"
+    echo -e "${BOLD}${WHITE}[amazon_Web_Services_S3]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}getDownloadURL${OFF};Get a temporary signed S3 URL for download (AUTH) (AUTH)
   ${CYAN}getSignedS3URL${OFF};Get a signed S3 URL for upload (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[authClients]${OFF}"
+    echo -e "${BOLD}${WHITE}[auth_Clients]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createClient${OFF};Create a new client (AUTH) (AUTH)
   ${CYAN}deleteClient${OFF};Delete a client (AUTH) (AUTH)
@@ -4899,7 +4902,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[authPermissions]${OFF}"
+    echo -e "${BOLD}${WHITE}[auth_Permissions]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createPermission${OFF};Create a new permission (AUTH) (AUTH)
   ${CYAN}deletePermission${OFF};Delete a permission (AUTH) (AUTH)
@@ -4909,7 +4912,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[authRoles]${OFF}"
+    echo -e "${BOLD}${WHITE}[auth_Roles]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createRole${OFF};Create a new role (AUTH) (AUTH)
   ${CYAN}deleteRole${OFF};Delete a role (AUTH) (AUTH)
@@ -4924,83 +4927,11 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[authTokens]${OFF}"
+    echo -e "${BOLD}${WHITE}[auth_Tokens]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}deleteTokens${OFF};Delete tokens by username, client id, or both (AUTH) (AUTH)
   ${CYAN}getToken${OFF};Get a single token by username and client id (AUTH) (AUTH)
   ${CYAN}getTokens${OFF};List usernames and client ids (AUTH) (AUTH)
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
-    echo -e "${BOLD}${WHITE}[bRERuleEngineActions]${OFF}"
-read -d '' ops <<EOF
-  ${CYAN}getBREActions${OFF};Get a list of available actions (AUTH) (AUTH)
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
-    echo -e "${BOLD}${WHITE}[bRERuleEngineCategories]${OFF}"
-read -d '' ops <<EOF
-  ${CYAN}createBRECategoryTemplate${OFF};Create a BRE category template (AUTH) (AUTH)
-  ${CYAN}deleteBRECategoryTemplate${OFF};Delete a BRE category template (AUTH) (AUTH)
-  ${CYAN}getBRECategories${OFF};List categories (AUTH) (AUTH)
-  ${CYAN}getBRECategory${OFF};Get a single category (AUTH) (AUTH)
-  ${CYAN}getBRECategoryTemplate${OFF};Get a single BRE category template (AUTH) (AUTH)
-  ${CYAN}getBRECategoryTemplates${OFF};List and search BRE category templates (AUTH) (AUTH)
-  ${CYAN}updateBRECategory${OFF};Update a category (AUTH) (AUTH)
-  ${CYAN}updateBRECategoryTemplate${OFF};Update a BRE category template (AUTH) (AUTH)
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
-    echo -e "${BOLD}${WHITE}[bRERuleEngineEvents]${OFF}"
-read -d '' ops <<EOF
-  ${CYAN}sendBREEvent${OFF};Fire a new event, based on an existing trigger (AUTH) (AUTH)
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
-    echo -e "${BOLD}${WHITE}[bRERuleEngineExpressions]${OFF}"
-read -d '' ops <<EOF
-  ${CYAN}getBREExpression${OFF};Lookup a specific expression (AUTH) (AUTH)
-  ${CYAN}getBREExpressions${OFF};Get a list of supported expressions to use in conditions or actions (AUTH) (AUTH)
-  ${CYAN}getExpressionAsText${OFF};Returns the textual representation of an expression (AUTH) (AUTH)
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
-    echo -e "${BOLD}${WHITE}[bRERuleEngineGlobals]${OFF}"
-read -d '' ops <<EOF
-  ${CYAN}createBREGlobal${OFF};Create a global definition (AUTH) (AUTH)
-  ${CYAN}deleteBREGlobal${OFF};Delete a global (AUTH) (AUTH)
-  ${CYAN}getBREGlobal${OFF};Get a single global definition (AUTH) (AUTH)
-  ${CYAN}getBREGlobals${OFF};List global definitions (AUTH) (AUTH)
-  ${CYAN}updateBREGlobal${OFF};Update a global definition (AUTH) (AUTH)
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
-    echo -e "${BOLD}${WHITE}[bRERuleEngineRules]${OFF}"
-read -d '' ops <<EOF
-  ${CYAN}createBRERule${OFF};Create a rule (AUTH) (AUTH)
-  ${CYAN}deleteBRERule${OFF};Delete a rule (AUTH) (AUTH)
-  ${CYAN}getBREExpressionAsString${OFF};Returns a string representation of the provided expression (AUTH) (AUTH)
-  ${CYAN}getBRERule${OFF};Get a single rule (AUTH) (AUTH)
-  ${CYAN}getBRERules${OFF};List rules (AUTH) (AUTH)
-  ${CYAN}setBRERule${OFF};Enable or disable a rule (AUTH) (AUTH)
-  ${CYAN}updateBRERule${OFF};Update a rule (AUTH) (AUTH)
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
-    echo -e "${BOLD}${WHITE}[bRERuleEngineTriggers]${OFF}"
-read -d '' ops <<EOF
-  ${CYAN}createBRETrigger${OFF};Create a trigger (AUTH) (AUTH)
-  ${CYAN}deleteBRETrigger${OFF};Delete a trigger (AUTH) (AUTH)
-  ${CYAN}getBRETrigger${OFF};Get a single trigger (AUTH) (AUTH)
-  ${CYAN}getBRETriggers${OFF};List triggers (AUTH) (AUTH)
-  ${CYAN}updateBRETrigger${OFF};Update a trigger (AUTH) (AUTH)
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
-    echo -e "${BOLD}${WHITE}[bRERuleEngineVariables]${OFF}"
-read -d '' ops <<EOF
-  ${CYAN}getBREVariableTypes${OFF};Get a list of variable types available (AUTH) (AUTH)
-  ${CYAN}getBREVariableValues${OFF};List valid values for a type (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -5022,7 +4953,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[campaignsChallenges]${OFF}"
+    echo -e "${BOLD}${WHITE}[campaigns_Challenges]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createChallenge${OFF};Create a challenge (AUTH) (AUTH)
   ${CYAN}createChallengeActivity${OFF};Create a challenge activity (AUTH) (AUTH)
@@ -5050,7 +4981,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[campaignsRewards]${OFF}"
+    echo -e "${BOLD}${WHITE}[campaigns_Rewards]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createRewardSet${OFF};Create a reward set (AUTH) (AUTH)
   ${CYAN}deleteRewardSet${OFF};Delete a reward set (AUTH) (AUTH)
@@ -5089,7 +5020,7 @@ read -d '' ops <<EOF
   ${CYAN}getThreadMessages${OFF};List messages in a thread (AUTH) (AUTH)
   ${CYAN}getTopicMessages${OFF};List messages in a topic (AUTH) (AUTH)
   ${CYAN}removeChatBlacklist${OFF};Remove a user from a blacklist (AUTH) (AUTH)
-  ${CYAN}sendMessage${OFF};Send a message (AUTH) (AUTH)
+  ${CYAN}sendChatMessage${OFF};Send a message (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -5103,45 +5034,34 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[contentArticles]${OFF}"
+    echo -e "${BOLD}${WHITE}[content_Articles]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createArticle${OFF};Create a new article (AUTH) (AUTH)
   ${CYAN}createArticleTemplate${OFF};Create an article template (AUTH) (AUTH)
+  ${CYAN}createTemplate${OFF};Create a template (AUTH) (AUTH)
   ${CYAN}deleteArticle${OFF};Delete an existing article (AUTH) (AUTH)
   ${CYAN}deleteArticleTemplate${OFF};Delete an article template (AUTH) (AUTH)
+  ${CYAN}deleteTemplate${OFF};Delete a template (AUTH) (AUTH)
   ${CYAN}getArticle${OFF};Get a single article (AUTH) (AUTH)
   ${CYAN}getArticleTemplate${OFF};Get a single article template (AUTH) (AUTH)
   ${CYAN}getArticleTemplates${OFF};List and search article templates (AUTH) (AUTH)
   ${CYAN}getArticles${OFF};List and search articles (AUTH) (AUTH)
+  ${CYAN}getTemplate${OFF};Get a template (AUTH) (AUTH)
+  ${CYAN}getTemplates${OFF};List and search templates (AUTH) (AUTH)
   ${CYAN}updateArticle${OFF};Update an existing article (AUTH) (AUTH)
   ${CYAN}updateArticleTemplate${OFF};Update an article template (AUTH) (AUTH)
+  ${CYAN}updateTemplate${OFF};Update a template (AUTH) (AUTH)
+  ${CYAN}validate${OFF};Validate a templated resource (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[contentComments]${OFF}"
+    echo -e "${BOLD}${WHITE}[content_Comments]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}addComment${OFF};Add a new comment (AUTH) (AUTH)
   ${CYAN}deleteComment${OFF};Delete a comment (AUTH) (AUTH)
   ${CYAN}getComment${OFF};Return a comment (AUTH) (AUTH)
   ${CYAN}getComments${OFF};Returns a page of comments (AUTH) (AUTH)
   ${CYAN}updateComment${OFF};Update a comment (AUTH) (AUTH)
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
-    echo -e "${BOLD}${WHITE}[contentPolls]${OFF}"
-read -d '' ops <<EOF
-  ${CYAN}answerPoll${OFF};Add your vote to a poll (AUTH) (AUTH)
-  ${CYAN}createPoll${OFF};Create a new poll (AUTH) (AUTH)
-  ${CYAN}createPollTemplate${OFF};Create a poll template (AUTH) (AUTH)
-  ${CYAN}deletePoll${OFF};Delete an existing poll (AUTH) (AUTH)
-  ${CYAN}deletePollTemplate${OFF};Delete a poll template (AUTH) (AUTH)
-  ${CYAN}getPoll${OFF};Get a single poll (AUTH) (AUTH)
-  ${CYAN}getPollAnswer${OFF};Get poll answer (AUTH) (AUTH)
-  ${CYAN}getPollTemplate${OFF};Get a single poll template (AUTH) (AUTH)
-  ${CYAN}getPollTemplates${OFF};List and search poll templates (AUTH) (AUTH)
-  ${CYAN}getPolls${OFF};List and search polls (AUTH) (AUTH)
-  ${CYAN}updatePoll${OFF};Update an existing poll (AUTH) (AUTH)
-  ${CYAN}updatePollTemplate${OFF};Update a poll template (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -5193,7 +5113,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[gamificationAchievements]${OFF}"
+    echo -e "${BOLD}${WHITE}[gamification_Achievements]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createAchievement${OFF};Create a new achievement definition (AUTH) (AUTH)
   ${CYAN}createAchievementTemplate${OFF};Create an achievement template (AUTH) (AUTH)
@@ -5216,7 +5136,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[gamificationLeaderboards]${OFF}"
+    echo -e "${BOLD}${WHITE}[gamification_Leaderboards]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}getLeaderboard${OFF};Retrieves leaderboard details and paginated entries (AUTH) (AUTH)
   ${CYAN}getLeaderboardRank${OFF};Retrieves a specific user entry with rank (AUTH) (AUTH)
@@ -5224,7 +5144,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[gamificationLeveling]${OFF}"
+    echo -e "${BOLD}${WHITE}[gamification_Leveling]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createLevel${OFF};Create a level schema (AUTH) (AUTH)
   ${CYAN}deleteLevel${OFF};Delete a level (AUTH) (AUTH)
@@ -5239,13 +5159,13 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[gamificationMetrics]${OFF}"
+    echo -e "${BOLD}${WHITE}[gamification_Metrics]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}addMetric${OFF};Add a metric (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[gamificationTrivia]${OFF}"
+    echo -e "${BOLD}${WHITE}[gamification_Trivia]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}addQuestionAnswers${OFF};Add an answer to a question (AUTH) (AUTH)
   ${CYAN}addQuestionTag${OFF};Add a tag to a question (AUTH) (AUTH)
@@ -5319,7 +5239,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[mediaArtists]${OFF}"
+    echo -e "${BOLD}${WHITE}[media_Artists]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}addArtist${OFF};Adds a new artist in the system (AUTH) (AUTH)
   ${CYAN}createArtistTemplate${OFF};Create an artist template (AUTH) (AUTH)
@@ -5334,7 +5254,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[mediaModeration]${OFF}"
+    echo -e "${BOLD}${WHITE}[media_Moderation]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}addFlag${OFF};Add a flag (AUTH) (AUTH)
   ${CYAN}deleteFlag${OFF};Delete a flag (AUTH) (AUTH)
@@ -5345,7 +5265,24 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[mediaVideos]${OFF}"
+    echo -e "${BOLD}${WHITE}[media_Polls]${OFF}"
+read -d '' ops <<EOF
+  ${CYAN}answerPoll${OFF};Add your vote to a poll (AUTH) (AUTH)
+  ${CYAN}createPoll${OFF};Create a new poll (AUTH) (AUTH)
+  ${CYAN}createPollTemplate${OFF};Create a poll template (AUTH) (AUTH)
+  ${CYAN}deletePoll${OFF};Delete an existing poll (AUTH) (AUTH)
+  ${CYAN}deletePollTemplate${OFF};Delete a poll template (AUTH) (AUTH)
+  ${CYAN}getPoll${OFF};Get a single poll (AUTH) (AUTH)
+  ${CYAN}getPollAnswer${OFF};Get poll answer (AUTH) (AUTH)
+  ${CYAN}getPollTemplate${OFF};Get a single poll template (AUTH) (AUTH)
+  ${CYAN}getPollTemplates${OFF};List and search poll templates (AUTH) (AUTH)
+  ${CYAN}getPolls${OFF};List and search polls (AUTH) (AUTH)
+  ${CYAN}updatePoll${OFF};Update an existing poll (AUTH) (AUTH)
+  ${CYAN}updatePollTemplate${OFF};Update a poll template (AUTH) (AUTH)
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[media_Videos]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}addUserToVideoWhitelist${OFF};Adds a user to a video's whitelist (AUTH) (AUTH)
   ${CYAN}addVideo${OFF};Adds a new video in the system (AUTH) (AUTH)
@@ -5386,7 +5323,7 @@ read -d '' ops <<EOF
   ${CYAN}deleteMessageTemplate${OFF};Delete an existing message template (AUTH) (AUTH)
   ${CYAN}getMessageTemplate${OFF};Get a single message template (AUTH) (AUTH)
   ${CYAN}getMessageTemplates${OFF};List and search message templates (AUTH) (AUTH)
-  ${CYAN}sendMessage1${OFF};Send a message (AUTH) (AUTH)
+  ${CYAN}sendMessage${OFF};Send a message (AUTH) (AUTH)
   ${CYAN}sendRawEmail${OFF};Send a raw email to one or more users (AUTH) (AUTH)
   ${CYAN}sendRawPush${OFF};Send a raw push notification (AUTH) (AUTH)
   ${CYAN}sendRawSMS${OFF};Send a raw SMS (AUTH) (AUTH)
@@ -5398,11 +5335,10 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[messagingTopics]${OFF}"
+    echo -e "${BOLD}${WHITE}[messaging_Topics]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}disableTopicSubscriber${OFF};Enable or disable messages for a user (AUTH) (AUTH)
   ${CYAN}getTopicSubscriber${OFF};Get a subscriber to a topic (AUTH) (AUTH)
-  ${CYAN}getTopicSubscribers${OFF};Get all subscribers to a topic (AUTH) (AUTH)
   ${CYAN}getUserTopics${OFF};Get all messaging topics for a given user (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
@@ -5452,31 +5388,25 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[paymentsApple]${OFF}"
+    echo -e "${BOLD}${WHITE}[payments_Apple]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}verifyAppleReceipt${OFF};Pay invoice with Apple receipt (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[paymentsFattMerchant]${OFF}"
+    echo -e "${BOLD}${WHITE}[payments_FattMerchant]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createOrUpdateFattMerchantPaymentMethod${OFF};Create or update a FattMerchant payment method for a user (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[paymentsGoogle]${OFF}"
-read -d '' ops <<EOF
-  ${CYAN}handleGooglePayment${OFF};Mark an invoice paid with Google (AUTH) (AUTH)
-EOF
-echo "  $ops" | column -t -s ';'
-    echo ""
-    echo -e "${BOLD}${WHITE}[paymentsOptimal]${OFF}"
+    echo -e "${BOLD}${WHITE}[payments_Optimal]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}silentPostOptimal${OFF};Initiate silent post with Optimal (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[paymentsPayPalClassic]${OFF}"
+    echo -e "${BOLD}${WHITE}[payments_PayPalClassic]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createPayPalBillingAgreementUrl${OFF};Create a PayPal Classic billing agreement for the user (AUTH) (AUTH)
   ${CYAN}createPayPalExpressCheckout${OFF};Create a payment token for PayPal express checkout (AUTH) (AUTH)
@@ -5485,14 +5415,14 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[paymentsStripe]${OFF}"
+    echo -e "${BOLD}${WHITE}[payments_Stripe]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createStripePaymentMethod${OFF};Create a Stripe payment method for a user (AUTH) (AUTH)
   ${CYAN}payStripeInvoice${OFF};Pay with a single use token (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[paymentsTransactions]${OFF}"
+    echo -e "${BOLD}${WHITE}[payments_Transactions]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}getTransaction${OFF};Get the details for a single transaction (AUTH) (AUTH)
   ${CYAN}getTransactions${OFF};List and search transactions (AUTH) (AUTH)
@@ -5500,7 +5430,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[paymentsWallets]${OFF}"
+    echo -e "${BOLD}${WHITE}[payments_Wallets]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}getUserWallet${OFF};Returns the user's wallet for the given currency code (AUTH) (AUTH)
   ${CYAN}getUserWalletTransactions${OFF};Retrieve a user's wallet transactions (AUTH) (AUTH)
@@ -5512,26 +5442,26 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[paymentsXsolla]${OFF}"
+    echo -e "${BOLD}${WHITE}[payments_Xsolla]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createXsollaTokenUrl${OFF};Create a payment token that should be used to forward the user to Xsolla so they can complete payment (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[reportingChallenges]${OFF}"
+    echo -e "${BOLD}${WHITE}[reporting_Challenges]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}getChallengeEventLeaderboard${OFF};Retrieve a challenge event leaderboard details (AUTH) (AUTH)
   ${CYAN}getChallengeEventParticipants${OFF};Retrieve a challenge event participant details (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[reportingOrders]${OFF}"
+    echo -e "${BOLD}${WHITE}[reporting_Orders]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}getInvoiceReports${OFF};Retrieve invoice counts aggregated by time ranges (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[reportingRevenue]${OFF}"
+    echo -e "${BOLD}${WHITE}[reporting_Revenue]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}getItemRevenue${OFF};Get item revenue info (AUTH) (AUTH)
   ${CYAN}getRefundRevenue${OFF};Get refund revenue info (AUTH) (AUTH)
@@ -5541,13 +5471,13 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[reportingSubscriptions]${OFF}"
+    echo -e "${BOLD}${WHITE}[reporting_Subscriptions]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}getSubscriptionReports${OFF};Get a list of available subscription reports in most recent first order (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[reportingUsage]${OFF}"
+    echo -e "${BOLD}${WHITE}[reporting_Usage]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}getUsageByDay${OFF};Returns aggregated endpoint usage information by day (AUTH) (AUTH)
   ${CYAN}getUsageByHour${OFF};Returns aggregated endpoint usage information by hour (AUTH) (AUTH)
@@ -5558,9 +5488,68 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[reportingUsers]${OFF}"
+    echo -e "${BOLD}${WHITE}[reporting_Users]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}getUserRegistrations${OFF};Get user registration info (AUTH) (AUTH)
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[rule_Engine_Actions]${OFF}"
+read -d '' ops <<EOF
+  ${CYAN}getBREActions${OFF};Get a list of available actions (AUTH) (AUTH)
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[rule_Engine_Events]${OFF}"
+read -d '' ops <<EOF
+  ${CYAN}sendBREEvent${OFF};Fire a new event, based on an existing trigger (AUTH) (AUTH)
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[rule_Engine_Expressions]${OFF}"
+read -d '' ops <<EOF
+  ${CYAN}getBREExpression${OFF};Lookup a specific expression (AUTH) (AUTH)
+  ${CYAN}getBREExpressions${OFF};Get a list of supported expressions to use in conditions or actions. (AUTH) (AUTH)
+  ${CYAN}getExpressionAsText${OFF};Returns the textual representation of an expression (AUTH) (AUTH)
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[rule_Engine_Globals]${OFF}"
+read -d '' ops <<EOF
+  ${CYAN}createBREGlobal${OFF};Create a global definition (AUTH) (AUTH)
+  ${CYAN}deleteBREGlobal${OFF};Delete a global (AUTH) (AUTH)
+  ${CYAN}getBREGlobal${OFF};Get a single global definition (AUTH) (AUTH)
+  ${CYAN}getBREGlobals${OFF};List global definitions (AUTH) (AUTH)
+  ${CYAN}updateBREGlobal${OFF};Update a global definition (AUTH) (AUTH)
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[rule_Engine_Rules]${OFF}"
+read -d '' ops <<EOF
+  ${CYAN}createBRERule${OFF};Create a rule (AUTH) (AUTH)
+  ${CYAN}deleteBRERule${OFF};Delete a rule (AUTH) (AUTH)
+  ${CYAN}getBREExpressionAsString${OFF};Returns a string representation of the provided expression (AUTH) (AUTH)
+  ${CYAN}getBRERule${OFF};Get a single rule (AUTH) (AUTH)
+  ${CYAN}getBRERules${OFF};List rules (AUTH) (AUTH)
+  ${CYAN}setBRERule${OFF};Enable or disable a rule (AUTH) (AUTH)
+  ${CYAN}updateBRERule${OFF};Update a rule (AUTH) (AUTH)
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[rule_Engine_Triggers]${OFF}"
+read -d '' ops <<EOF
+  ${CYAN}createBRETrigger${OFF};Create a trigger (AUTH) (AUTH)
+  ${CYAN}deleteBRETrigger${OFF};Delete a trigger (AUTH) (AUTH)
+  ${CYAN}getBRETrigger${OFF};Get a single trigger (AUTH) (AUTH)
+  ${CYAN}getBRETriggers${OFF};List triggers (AUTH) (AUTH)
+  ${CYAN}updateBRETrigger${OFF};Update a trigger (AUTH) (AUTH)
+EOF
+echo "  $ops" | column -t -s ';'
+    echo ""
+    echo -e "${BOLD}${WHITE}[rule_Engine_Variables]${OFF}"
+read -d '' ops <<EOF
+  ${CYAN}getBREVariableTypes${OFF};Get a list of variable types available (AUTH) (AUTH)
+  ${CYAN}getBREVariableValues${OFF};List valid values for a type (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
@@ -5590,13 +5579,13 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[socialFacebook]${OFF}"
+    echo -e "${BOLD}${WHITE}[social_Facebook]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}linkAccounts${OFF};Link facebook account (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[socialGoogle]${OFF}"
+    echo -e "${BOLD}${WHITE}[social_Google]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}linkAccounts1${OFF};Link google account (AUTH) (AUTH)
 EOF
@@ -5619,7 +5608,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[storeBundles]${OFF}"
+    echo -e "${BOLD}${WHITE}[store_Bundles]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createBundleItem${OFF};Create a bundle item (AUTH) (AUTH)
   ${CYAN}createBundleTemplate${OFF};Create a bundle template (AUTH) (AUTH)
@@ -5633,7 +5622,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[storeCoupons]${OFF}"
+    echo -e "${BOLD}${WHITE}[store_Coupons]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createCouponItem${OFF};Create a coupon item (AUTH) (AUTH)
   ${CYAN}createCouponTemplate${OFF};Create a coupon template (AUTH) (AUTH)
@@ -5648,7 +5637,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[storeSales]${OFF}"
+    echo -e "${BOLD}${WHITE}[store_Sales]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createCatalogSale${OFF};Create a sale (AUTH) (AUTH)
   ${CYAN}deleteCatalogSale${OFF};Delete a sale (AUTH) (AUTH)
@@ -5658,7 +5647,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[storeShipping]${OFF}"
+    echo -e "${BOLD}${WHITE}[store_Shipping]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createShippingItem${OFF};Create a shipping item (AUTH) (AUTH)
   ${CYAN}createShippingTemplate${OFF};Create a shipping template (AUTH) (AUTH)
@@ -5672,7 +5661,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[storeShoppingCarts]${OFF}"
+    echo -e "${BOLD}${WHITE}[store_Shopping_Carts]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}addCustomDiscount${OFF};Adds a custom discount to the cart (AUTH) (AUTH)
   ${CYAN}addDiscountToCart${OFF};Adds a discount coupon to the cart (AUTH) (AUTH)
@@ -5690,7 +5679,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[storeSubscriptions]${OFF}"
+    echo -e "${BOLD}${WHITE}[store_Subscriptions]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createSubscription${OFF};Creates a subscription item and associated plans (AUTH) (AUTH)
   ${CYAN}createSubscriptionTemplate${OFF};Create a subscription template (AUTH) (AUTH)
@@ -5706,7 +5695,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[storeVendors]${OFF}"
+    echo -e "${BOLD}${WHITE}[store_Vendors]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createVendor${OFF};Create a vendor (AUTH) (AUTH)
   ${CYAN}createVendorTemplate${OFF};Create a vendor template (AUTH) (AUTH)
@@ -5737,7 +5726,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[templatesProperties]${OFF}"
+    echo -e "${BOLD}${WHITE}[templates_Properties]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}getTemplatePropertyType${OFF};Get details for a template property type (AUTH) (AUTH)
   ${CYAN}getTemplatePropertyTypes${OFF};List template property types (AUTH) (AUTH)
@@ -5767,7 +5756,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[usersAddresses]${OFF}"
+    echo -e "${BOLD}${WHITE}[users_Addresses]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createAddress${OFF};Create a new address (AUTH) (AUTH)
   ${CYAN}deleteAddress${OFF};Delete an address (AUTH) (AUTH)
@@ -5777,7 +5766,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[usersFriendships]${OFF}"
+    echo -e "${BOLD}${WHITE}[users_Friendships]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}addFriend${OFF};Add a friend (AUTH) (AUTH)
   ${CYAN}getFriends${OFF};Get friends list (AUTH) (AUTH)
@@ -5788,7 +5777,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[usersGroups]${OFF}"
+    echo -e "${BOLD}${WHITE}[users_Groups]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}addMemberToGroup${OFF};Adds a new member to the group (AUTH) (AUTH)
   ${CYAN}addMembersToGroup${OFF};Adds multiple members to the group (AUTH) (AUTH)
@@ -5821,7 +5810,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[usersInventory]${OFF}"
+    echo -e "${BOLD}${WHITE}[users_Inventory]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}addItemToUserInventory${OFF};Adds an item to the user inventory (AUTH) (AUTH)
   ${CYAN}checkUserEntitlementItem${OFF};Check for access to an item without consuming (AUTH) (AUTH)
@@ -5847,7 +5836,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[usersRelationships]${OFF}"
+    echo -e "${BOLD}${WHITE}[users_Relationships]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}createUserRelationship${OFF};Create a user relationship (AUTH) (AUTH)
   ${CYAN}deleteUserRelationship${OFF};Delete a user relationship (AUTH) (AUTH)
@@ -5857,7 +5846,7 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[usersSubscriptions]${OFF}"
+    echo -e "${BOLD}${WHITE}[users_Subscriptions]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}getUserSubscriptionDetails${OFF};Get details about a user's subscription (AUTH) (AUTH)
   ${CYAN}getUsersSubscriptionDetails${OFF};Get details about a user's subscriptions (AUTH) (AUTH)
@@ -5870,20 +5859,20 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[utilBatch]${OFF}"
+    echo -e "${BOLD}${WHITE}[util_Batch]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}getBatch${OFF};Get batch result with token (AUTH) (AUTH)
   ${CYAN}sendBatch${OFF};Request to run API call given the method, content type, path url, and body of request (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[utilHealth]${OFF}"
+    echo -e "${BOLD}${WHITE}[util_Health]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}getHealth${OFF};Get health info (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[utilMaintenance]${OFF}"
+    echo -e "${BOLD}${WHITE}[util_Maintenance]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}deleteMaintenance${OFF};Delete maintenance info (AUTH) (AUTH)
   ${CYAN}getMaintenance${OFF};Get current maintenance info (AUTH) (AUTH)
@@ -5892,14 +5881,14 @@ read -d '' ops <<EOF
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[utilSecurity]${OFF}"
+    echo -e "${BOLD}${WHITE}[util_Security]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}getUserLocationLog${OFF};Returns the authentication log for a user (AUTH) (AUTH)
   ${CYAN}getUserTokenDetails${OFF};Returns the authentication token details. Use /users endpoint for detailed user's info (AUTH) (AUTH)
 EOF
 echo "  $ops" | column -t -s ';'
     echo ""
-    echo -e "${BOLD}${WHITE}[utilVersion]${OFF}"
+    echo -e "${BOLD}${WHITE}[util_Version]${OFF}"
 read -d '' ops <<EOF
   ${CYAN}getVersion${OFF};Get current version info (AUTH) (AUTH)
 EOF
@@ -5910,7 +5899,7 @@ echo "  $ops" | column -t -s ';'
     echo -e "  -V,--version\t\t\t\tPrint API version"
     echo -e "  --about\t\t\t\tPrint the information about service"
     echo -e "  --host ${CYAN}<url>${OFF}\t\t\t\tSpecify the host URL "
-echo -e "              \t\t\t\t(e.g. 'https://sandbox.knetikcloud.com')"
+echo -e "              \t\t\t\t(e.g. 'https://jsapi-integration.us-east-1.elasticbeanstalk.com')"
 
     echo -e "  --force\t\t\t\tForce command invocation in spite of missing"
     echo -e "         \t\t\t\trequired parameters or wrong content type"
@@ -5934,7 +5923,7 @@ print_about() {
     echo -e "${BOLD}${WHITE}Knetik Platform API Documentation latest command line client (API version latest
 )${OFF}"
     echo ""
-    echo -e "License: "
+    echo -e "License: Knetik"
     echo -e "Contact: support@knetik.com"
     echo ""
 read -d '' appdescription <<EOF
@@ -6213,7 +6202,7 @@ print_getActivityOccurrenceDetails_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getActivityOccurrenceDetails - Load a single activity occurrence details${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "<b>Permissions Needed:</b> ACTIVITIES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e "<b>Permissions Needed:</b> ACTIVITIES_USER or ACTIVITIES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}activity_occurrence_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the activity occurrence ${YELLOW}Specify as: activity_occurrence_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6296,7 +6285,7 @@ print_listActivityOccurrences_help() {
     echo ""
     echo -e "${BOLD}${WHITE}listActivityOccurrences - List activity occurrences${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "<b>Permissions Needed:</b> ACTIVITIES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e "<b>Permissions Needed:</b> ACTIVITIES_USER or ACTIVITIES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_activity${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for occurrences of the given activity ID${YELLOW} Specify as: filter_activity=value${OFF}" \
@@ -6364,7 +6353,7 @@ print_setActivityOccurrenceResults_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setActivityOccurrenceResults - Sets the status of an activity occurrence to FINISHED and logs metrics${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "In addition to user permissions requirements there is security based on the core_settings.results_trust setting." | paste -sd' ' | fold -sw 80
+    echo -e "In addition to user permissions requirements there is security based on the core_settings.results_trust setting. <br><br><b>Permissions Needed:</b> ACTIVITIES_USER or ACTIVITIES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}activity_occurrence_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the activity occurrence ${YELLOW}Specify as: activity_occurrence_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6391,6 +6380,8 @@ print_setActivityOccurrenceResults_help() {
 print_setActivityOccurrenceSettings_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setActivityOccurrenceSettings - Sets the settings of an activity occurrence${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ACTIVITIES_USER and host or ACTIVITIES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}activity_occurrence_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the activity occurrence ${YELLOW}Specify as: activity_occurrence_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6473,7 +6464,7 @@ print_updateActivityOccurrenceStatus_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateActivityOccurrenceStatus - Update the status of an activity occurrence${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "If setting to 'FINISHED' reward will be run based on current metrics that have been recorded already. Alternatively, see results endpoint to finish and record all metrics at once. Can be called by non-host participants if non_host_status_control is true" | paste -sd' ' | fold -sw 80
+    echo -e "If setting to 'FINISHED' reward will be run based on current metrics that have been recorded already. Alternatively, see results endpoint to finish and record all metrics at once. Can be called by non-host participants if non_host_status_control is true. <br><br><b>Permissions Needed:</b> ACTIVITIES_USER and host or ACTIVITIES_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}activity_occurrence_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the activity occurrence ${YELLOW}Specify as: activity_occurrence_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -6534,7 +6525,7 @@ print_getDownloadURL_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}bucket${OFF} ${BLUE}[String]${OFF}${OFF} - S3 bucket name${YELLOW} Specify as: bucket=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}path${OFF} ${BLUE}[String]${OFF}${OFF} - The path to the file relative the bucket (the s3 object key)${YELLOW} Specify as: path=value${OFF}" \
+    echo -e "  * ${GREEN}path${OFF} ${BLUE}[String]${OFF}${OFF} - The path to the file relative to the bucket (the s3 object key)${YELLOW} Specify as: path=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}expiration${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 60)${OFF} - The number of seconds this URL will be valid. Default to 60${YELLOW} Specify as: expiration=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -7295,912 +7286,6 @@ print_getTokens_help() {
     echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF}${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getBREActions operation
-#
-##############################################################################
-print_getBREActions_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getBREActions - Get a list of available actions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_ACTIONS_USER" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}filter_category${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for actions that are within a specific category${YELLOW} Specify as: filter_category=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}filter_name${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for actions that have names containing the given string${YELLOW} Specify as: filter_name=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}filter_tags${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for actions that have all of the given tags (comma separated list)${YELLOW} Specify as: filter_tags=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}filter_search${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for actions containing the given words somewhere within name, description and tags${YELLOW} Specify as: filter_search=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for createBRECategoryTemplate operation
-#
-##############################################################################
-print_createBRECategoryTemplate_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}createBRECategoryTemplate - Create a BRE category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Templates define a type of BRE category and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The category template to create" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for deleteBRECategoryTemplate operation
-#
-##############################################################################
-print_deleteBRECategoryTemplate_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}deleteBRECategoryTemplate - Delete a BRE category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}cascade${OFF} ${BLUE}[String]${OFF}${OFF} - The value needed to delete used templates${YELLOW} Specify as: cascade=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getBRECategories operation
-#
-##############################################################################
-print_getBRECategories_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getBRECategories - List categories${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_CATEGORIES_USER" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getBRECategory operation
-#
-##############################################################################
-print_getBRECategory_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getBRECategory - Get a single category${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_CATEGORIES_USER" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The category name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getBRECategoryTemplate operation
-#
-##############################################################################
-print_getBRECategoryTemplate_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getBRECategoryTemplate - Get a single BRE category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or BRE_RULE_ENGINE_CATEGORIES_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getBRECategoryTemplates operation
-#
-##############################################################################
-print_getBRECategoryTemplates_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getBRECategoryTemplates - List and search BRE category templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or BRE_RULE_ENGINE_CATEGORIES_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF} ${CYAN}(default: id:ASC)${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for updateBRECategory operation
-#
-##############################################################################
-print_updateBRECategory_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}updateBRECategory - Update a category${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_CATEGORIES_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The category name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The updated BRE category information" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for updateBRECategoryTemplate operation
-#
-##############################################################################
-print_updateBRECategoryTemplate_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}updateBRECategoryTemplate - Update a BRE category template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The updated category template definition" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for sendBREEvent operation
-#
-##############################################################################
-print_sendBREEvent_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}sendBREEvent - Fire a new event, based on an existing trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Parameters within the event must match names and types from the trigger. Actual rule execution is asynchornous.  Returns request id, which will be used as the event id. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_EVENTS_USER" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The BRE event object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getBREExpression operation
-#
-##############################################################################
-print_getBREExpression_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getBREExpression - Lookup a specific expression${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_EXPRESSIONS_USER" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - Specifiy the type of expression as returned by the listing endpoint ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getBREExpressions operation
-#
-##############################################################################
-print_getBREExpressions_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getBREExpressions - Get a list of supported expressions to use in conditions or actions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Each resource contains a type and a definition that are read-only, all the other fields must be provided when using the expression in a rule. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_EXPRESSIONS_USER" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}filter_type_group${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for expressions by type group${YELLOW} Specify as: filter_type_group=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getExpressionAsText operation
-#
-##############################################################################
-print_getExpressionAsText_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getExpressionAsText - Returns the textual representation of an expression${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_EXPRESSIONS_USER" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The expression resource to be converted" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for createBREGlobal operation
-#
-##############################################################################
-print_createBREGlobal_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}createBREGlobal - Create a global definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Once created you can then use in a custom rule. Note that global definitions cannot be modified or deleted if in use. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_GLOBALS_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The BRE global resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for deleteBREGlobal operation
-#
-##############################################################################
-print_deleteBREGlobal_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}deleteBREGlobal - Delete a global${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "May fail if there are existing rules against it. Cannot delete core globals. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_GLOBALS_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the global definition ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getBREGlobal operation
-#
-##############################################################################
-print_getBREGlobal_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getBREGlobal - Get a single global definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_GLOBALS_USER" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the global definition ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getBREGlobals operation
-#
-##############################################################################
-print_getBREGlobals_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getBREGlobals - List global definitions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_GLOBALS_USER" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}filter_system${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Filter for globals that are system globals when true, or not when false. Leave off for both mixed${YELLOW} Specify as: filter_system=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for updateBREGlobal operation
-#
-##############################################################################
-print_updateBREGlobal_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}updateBREGlobal - Update a global definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "May fail if new parameters mismatch requirements of existing rules. Cannot update core globals. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_GLOBALS_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the global definition ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The BRE global resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for createBRERule operation
-#
-##############################################################################
-print_createBRERule_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}createBRERule - Create a rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Rules define which actions to run when a given event verifies the specified condition. Full list of predicates and other type of expressions can be found at GET /bre/expressions/. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The BRE rule object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for deleteBRERule operation
-#
-##############################################################################
-print_deleteBRERule_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}deleteBRERule - Delete a rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "May fail if there are existing rules against it. Cannot delete core rules. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the rule ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getBREExpressionAsString operation
-#
-##############################################################################
-print_getBREExpressionAsString_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getBREExpressionAsString - Returns a string representation of the provided expression${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The expression" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getBRERule operation
-#
-##############################################################################
-print_getBRERule_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getBRERule - Get a single rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the rule ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getBRERules operation
-#
-##############################################################################
-print_getBRERules_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getBRERules - List rules${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}filter_name${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for rules containing the given name${YELLOW} Specify as: filter_name=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}filter_enabled${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: null)${OFF} - Filter for rules by active status, null for both${YELLOW} Specify as: filter_enabled=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}filter_system${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Filter for rules that are system rules when true, or not when false. Leave off for both mixed${YELLOW} Specify as: filter_system=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}filter_trigger${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for rules that are for the trigger with the given name${YELLOW} Specify as: filter_trigger=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}filter_action${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for rules that use the action with the given name${YELLOW} Specify as: filter_action=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}filter_condition${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for rules that have a condition containing the given string${YELLOW} Specify as: filter_condition=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for setBRERule operation
-#
-##############################################################################
-print_setBRERule_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}setBRERule - Enable or disable a rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "This is helpful for turning off systems rules which cannot be deleted or modified otherwise. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the rule ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The boolean value" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for updateBRERule operation
-#
-##############################################################################
-print_updateBRERule_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}updateBRERule - Update a rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Cannot update system rules. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the rule ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The BRE rule object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for createBRETrigger operation
-#
-##############################################################################
-print_createBRETrigger_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}createBRETrigger - Create a trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Customer added triggers will not be fired automatically or have rules associated with them by default. Custom rules must be added to get use from the trigger and it must then be fired from the outside. See the Bre Event services. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_TRIGGERS_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The BRE trigger resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for deleteBRETrigger operation
-#
-##############################################################################
-print_deleteBRETrigger_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}deleteBRETrigger - Delete a trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "May fail if there are existing rules against it. Cannot delete core triggers. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_TRIGGERS_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}event_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The trigger event name ${YELLOW}Specify as: event_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getBRETrigger operation
-#
-##############################################################################
-print_getBRETrigger_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getBRETrigger - Get a single trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_TRIGGERS_USER" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}event_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The trigger event name ${YELLOW}Specify as: event_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getBRETriggers operation
-#
-##############################################################################
-print_getBRETriggers_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getBRETriggers - List triggers${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_TRIGGERS_USER" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}filter_system${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Filter for triggers that are system triggers when true, or not when false. Leave off for both mixed${YELLOW} Specify as: filter_system=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}filter_category${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for triggers that are within a specific category${YELLOW} Specify as: filter_category=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}filter_tags${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for triggers that have all of the given tags (comma separated list)${YELLOW} Specify as: filter_tags=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}filter_name${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for triggers that have names containing the given string${YELLOW} Specify as: filter_name=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}filter_search${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for triggers containing the given words somewhere within name, description and tags${YELLOW} Specify as: filter_search=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for updateBRETrigger operation
-#
-##############################################################################
-print_updateBRETrigger_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}updateBRETrigger - Update a trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "May fail if new parameters mismatch requirements of existing rules. Cannot update core triggers. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_TRIGGERS_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}event_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The trigger event name ${YELLOW}Specify as: event_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The BRE trigger resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getBREVariableTypes operation
-#
-##############################################################################
-print_getBREVariableTypes_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getBREVariableTypes - Get a list of variable types available${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Types include integer, string, user and invoice. These are used to qualify trigger parameters and action variables with strong typing. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_VARIABLES_USER" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getBREVariableValues operation
-#
-##############################################################################
-print_getBREVariableValues_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getBREVariableValues - List valid values for a type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Used to lookup users to fill in a user constant for example. Only types marked as enumerable are suppoorted here. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_VARIABLES_USER" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The name of the type ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}filter_name${OFF} ${BLUE}[String]${OFF}${OFF} - Filter results by those with names starting with this string${YELLOW} Specify as: filter_name=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -10014,12 +9099,12 @@ print_removeChatBlacklist_help() {
 }
 ##############################################################################
 #
-# Print help for sendMessage operation
+# Print help for sendChatMessage operation
 #
 ##############################################################################
-print_sendMessage_help() {
+print_sendChatMessage_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}sendMessage - Send a message${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}sendChatMessage - Send a message${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -10048,7 +9133,7 @@ print_createConfig_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createConfig - Create a new config${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "<b>Permissions Needed:</b> TOPICS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e "<b>Permissions Needed:</b> CONFIGS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The config object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -10235,6 +9320,34 @@ print_createArticleTemplate_help() {
 }
 ##############################################################################
 #
+# Print help for createTemplate operation
+#
+##############################################################################
+print_createTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createTemplate - Create a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type_hint${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The type for the resource this template applies to ${YELLOW}Specify as: type_hint=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The template" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for deleteArticle operation
 #
 ##############################################################################
@@ -10274,6 +9387,35 @@ print_deleteArticleTemplate_help() {
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}cascade${OFF} ${BLUE}[String]${OFF}${OFF} - The value needed to delete used templates${YELLOW} Specify as: cascade=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteTemplate operation
+#
+##############################################################################
+print_deleteTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteTemplate - Delete a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type_hint${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The type for the resource this template applies to ${YELLOW}Specify as: type_hint=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[]${OFF}${OFF} - How to cascade the delete" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=204
@@ -10415,6 +9557,65 @@ print_getArticles_help() {
 }
 ##############################################################################
 #
+# Print help for getTemplate operation
+#
+##############################################################################
+print_getTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTemplate - Get a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type_hint${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The type for the resource this template applies to ${YELLOW}Specify as: type_hint=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getTemplates operation
+#
+##############################################################################
+print_getTemplates_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getTemplates - List and search templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type_hint${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The type for the resource this template applies to ${YELLOW}Specify as: type_hint=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF} ${CYAN}(default: id:ASC)${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
 # Print help for updateArticle operation
 #
 ##############################################################################
@@ -10460,6 +9661,63 @@ print_updateArticleTemplate_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=204
     echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateTemplate operation
+#
+##############################################################################
+print_updateTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateTemplate - Update a template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type_hint${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The type for the resource this template applies to ${YELLOW}Specify as: type_hint=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The template" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for validate operation
+#
+##############################################################################
+print_validate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}validate - Validate a templated resource${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Error code thrown if invalid.<br><br><b>Permissions Needed:</b> TEMPLATES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type_hint${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The type for the resource this template applies to ${YELLOW}Specify as: type_hint=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The resource to validate" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=400
     echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
@@ -10595,344 +9853,6 @@ print_updateComment_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The comment id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The comment content" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for answerPoll operation
-#
-##############################################################################
-print_answerPoll_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}answerPoll - Add your vote to a poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> POLLS_ADMIN or POLLS_USER" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The answer key" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for createPoll operation
-#
-##############################################################################
-print_createPoll_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}createPoll - Create a new poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Polls are blobs of text with titles, a category and assets. Formatting and display of the text is in the hands of the front end. <br><br><b>Permissions Needed:</b> POLLS_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The poll object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for createPollTemplate operation
-#
-##############################################################################
-print_createPollTemplate_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}createPollTemplate - Create a poll template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Poll templates define a type of poll and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The poll template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for deletePoll operation
-#
-##############################################################################
-print_deletePoll_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}deletePoll - Delete an existing poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> POLLS_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for deletePollTemplate operation
-#
-##############################################################################
-print_deletePollTemplate_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}deletePollTemplate - Delete a poll template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}cascade${OFF} ${BLUE}[String]${OFF}${OFF} - The value needed to delete used templates${YELLOW} Specify as: cascade=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getPoll operation
-#
-##############################################################################
-print_getPoll_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getPoll - Get a single poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getPollAnswer operation
-#
-##############################################################################
-print_getPollAnswer_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getPollAnswer - Get poll answer${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> POLLS_ADMIN or POLLS_USER" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getPollTemplate operation
-#
-##############################################################################
-print_getPollTemplate_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getPollTemplate - Get a single poll template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or POLLS_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getPollTemplates operation
-#
-##############################################################################
-print_getPollTemplates_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getPollTemplates - List and search poll templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or POLLS_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF} ${CYAN}(default: id:ASC)${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getPolls operation
-#
-##############################################################################
-print_getPolls_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getPolls - List and search polls${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Get a list of polls with optional filtering. Assets will not be filled in on the resources returned. Use 'Get a single poll' to retrieve the full resource with assets for a given item as needed. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}filter_category${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for polls from a specific category by id${YELLOW} Specify as: filter_category=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}filter_tagset${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for polls with specified tags (separated by comma)${YELLOW} Specify as: filter_tagset=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}filter_text${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for polls whose text contains a string${YELLOW} Specify as: filter_text=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned${YELLOW} Specify as: page=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF} ${CYAN}(default: id:ASC)${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
-        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for updatePoll operation
-#
-##############################################################################
-print_updatePoll_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}updatePoll - Update an existing poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> POLLS_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The poll object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=204
-    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for updatePollTemplate operation
-#
-##############################################################################
-print_updatePollTemplate_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}updatePollTemplate - Update a poll template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The poll template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -11729,7 +10649,7 @@ print_updateFulfillmentType_help() {
     echo -e "<b>Permissions Needed:</b> FULFILLMENT_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The fulfillment id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The fulfillment type" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
@@ -12420,7 +11340,7 @@ print_getLevel_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getLevel - Retrieve a level${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "<b>Permissions Needed:</b> LEVELING_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e "<b>Permissions Needed:</b> LEVELING_USER" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The level schema name ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12470,7 +11390,7 @@ print_getLevels_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getLevels - List and search levels${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Get a list of levels schemas with optional filtering. <br><br><b>Permissions Needed:</b> LEVELING_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e "Get a list of levels schemas with optional filtering. <br><br><b>Permissions Needed:</b> LEVELING_USER" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_name${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for level schemas whose name contains a given string${YELLOW} Specify as: filter_name=value${OFF}" \
@@ -12503,7 +11423,7 @@ print_getUserLevel_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserLevel - Get a user's progress for a given level schema${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "<b>Permissions Needed:</b> LEVELING_ADMIN or self" | paste -sd' ' | fold -sw 80
+    echo -e "<b>Permissions Needed:</b> LEVELING_USER or self" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -12530,7 +11450,7 @@ print_getUserLevels_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserLevels - Get a user's progress for all level schemas${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Filtering and sorting is based on the LevelingResource object, not the UserLevelingResource that is returned here. <br><br><b>Permissions Needed:</b> LEVELING_ADMIN or self" | paste -sd' ' | fold -sw 80
+    echo -e "Filtering and sorting is based on the LevelingResource object, not the UserLevelingResource that is returned here. <br><br><b>Permissions Needed:</b> LEVELING_USER or self" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -14705,6 +13625,8 @@ print_getModerationReports_help() {
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF}${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -14732,6 +13654,344 @@ print_updateModerationReport_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The flag report id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The new flag report" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for answerPoll operation
+#
+##############################################################################
+print_answerPoll_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}answerPoll - Add your vote to a poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> POLLS_ADMIN or POLLS_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The answer key" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createPoll operation
+#
+##############################################################################
+print_createPoll_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createPoll - Create a new poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Polls are blobs of text with titles, a category and assets. Formatting and display of the text is in the hands of the front end. <br><br><b>Permissions Needed:</b> POLLS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The poll object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createPollTemplate operation
+#
+##############################################################################
+print_createPollTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createPollTemplate - Create a poll template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Poll templates define a type of poll and the properties they have. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The poll template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deletePoll operation
+#
+##############################################################################
+print_deletePoll_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deletePoll - Delete an existing poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> POLLS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deletePollTemplate operation
+#
+##############################################################################
+print_deletePollTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deletePollTemplate - Delete a poll template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "If cascade = 'detach', it will force delete the template even if it's attached to other objects. <br><br><b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}cascade${OFF} ${BLUE}[String]${OFF}${OFF} - The value needed to delete used templates${YELLOW} Specify as: cascade=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPoll operation
+#
+##############################################################################
+print_getPoll_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPoll - Get a single poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPollAnswer operation
+#
+##############################################################################
+print_getPollAnswer_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPollAnswer - Get poll answer${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> POLLS_ADMIN or POLLS_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPollTemplate operation
+#
+##############################################################################
+print_getPollTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPollTemplate - Get a single poll template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or POLLS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPollTemplates operation
+#
+##############################################################################
+print_getPollTemplates_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPollTemplates - List and search poll templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN or POLLS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF} ${CYAN}(default: id:ASC)${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getPolls operation
+#
+##############################################################################
+print_getPolls_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getPolls - List and search polls${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Get a list of polls with optional filtering. Assets will not be filled in on the resources returned. Use 'Get a single poll' to retrieve the full resource with assets for a given item as needed. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}filter_category${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for polls from a specific category by id${YELLOW} Specify as: filter_category=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_tagset${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for polls with specified tags (separated by comma)${YELLOW} Specify as: filter_tagset=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_text${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for polls whose text contains a string${YELLOW} Specify as: filter_text=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}order${OFF} ${BLUE}[String]${OFF} ${CYAN}(default: id:ASC)${OFF} - A comma separated list of sorting requirements in priority order, each entry matching PROPERTY_NAME:[ASC|DESC]${YELLOW} Specify as: order=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updatePoll operation
+#
+##############################################################################
+print_updatePoll_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updatePoll - Update an existing poll${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> POLLS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The poll id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The poll object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updatePollTemplate operation
+#
+##############################################################################
+print_updatePollTemplate_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updatePollTemplate - Update a poll template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TEMPLATE_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the template ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The poll template resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -15645,7 +14905,7 @@ print_deleteMessageTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteMessageTemplate - Delete an existing message template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "<b>Permissions Needed:</b> ARTICLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e "<b>Permissions Needed:</b> MESSAGING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The message_template id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15671,7 +14931,7 @@ print_getMessageTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getMessageTemplate - Get a single message template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "<b>Permissions Needed:</b> ARTICLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e "<b>Permissions Needed:</b> MESSAGING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The message_template id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15697,7 +14957,7 @@ print_getMessageTemplates_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getMessageTemplates - List and search message templates${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Get a list of message templates with optional filtering. <br><br><b>Permissions Needed:</b> ARTICLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e "Get a list of message templates with optional filtering. <br><br><b>Permissions Needed:</b> MESSAGING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}filter_tagset${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for message templates with at least one of a specified set of tags (separated by comma)${YELLOW} Specify as: filter_tagset=value${OFF}" \
@@ -15727,12 +14987,12 @@ print_getMessageTemplates_help() {
 }
 ##############################################################################
 #
-# Print help for sendMessage1 operation
+# Print help for sendMessage operation
 #
 ##############################################################################
-print_sendMessage1_help() {
+print_sendMessage_help() {
     echo ""
-    echo -e "${BOLD}${WHITE}sendMessage1 - Send a message${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "${BOLD}${WHITE}sendMessage - Send a message${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo -e "Sends a message with one or more formats to one or more users. Fill in any message formats desired (email, sms, websockets) and each user will recieve all valid formats. <br><br><b>Permissions Needed:</b> MESSAGING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
@@ -15950,7 +15210,7 @@ print_updateMessageTemplate_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateMessageTemplate - Update an existing message template${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "<b>Permissions Needed:</b> ARTICLES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e "<b>Permissions Needed:</b> MESSAGING_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The message_template id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -15978,7 +15238,7 @@ print_disableTopicSubscriber_help() {
     echo ""
     echo -e "${BOLD}${WHITE}disableTopicSubscriber - Enable or disable messages for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Useful for opt-out options on a single topic. Consider multiple topics for multiple opt-out options." | paste -sd' ' | fold -sw 80
+    echo -e "Useful for opt-out options on a single topic. Consider multiple topics for multiple opt-out options. <br><br><b>Permissions Needed:</b> TOPICS_ADMIN or self" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the topic ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16007,37 +15267,11 @@ print_getTopicSubscriber_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getTopicSubscriber - Get a subscriber to a topic${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "<b>Permissions Needed:</b> TOPICS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e "<b>Permissions Needed:</b> TOPICS_ADMIN or self" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the topic ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the subscriber or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=200
-    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for getTopicSubscribers operation
-#
-##############################################################################
-print_getTopicSubscribers_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}getTopicSubscribers - Get all subscribers to a topic${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "<b>Permissions Needed:</b> TOPICS_ADMIN" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the topic ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
@@ -16060,7 +15294,7 @@ print_getUserTopics_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserTopics - Get all messaging topics for a given user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "<b>Permissions Needed:</b> TOPICS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e "<b>Permissions Needed:</b> TOPICS_ADMIN or self" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16085,6 +15319,8 @@ print_getUserTopics_help() {
 print_createNotificationType_help() {
     echo ""
     echo -e "${BOLD}${WHITE}createNotificationType - Create a notification type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> NOTIFICATIONS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - notificationType" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16111,6 +15347,8 @@ print_deleteNotificationType_help() {
     echo ""
     echo -e "${BOLD}${WHITE}deleteNotificationType - Delete a notification type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> NOTIFICATIONS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo ""
@@ -16134,6 +15372,8 @@ print_deleteNotificationType_help() {
 print_getNotificationType_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getNotificationType - Get a single notification type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> NOTIFICATIONS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16159,7 +15399,7 @@ print_getNotificationTypes_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getNotificationTypes - List and search notification types${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Get a list of notification type with optional filtering" | paste -sd' ' | fold -sw 80
+    echo -e "Get a list of notification type with optional filtering. <br><br><b>Permissions Needed:</b> NOTIFICATIONS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
@@ -16190,6 +15430,8 @@ print_getUserNotificationInfo_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserNotificationInfo - View a user's notification settings for a type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> NOTIFICATIONS_ADMIN or self" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the topic ${YELLOW}Specify as: type_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the subscriber or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16214,6 +15456,8 @@ print_getUserNotificationInfo_help() {
 print_getUserNotificationInfoList_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserNotificationInfoList - View a user's notification settings${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> NOTIFICATIONS_ADMIN or self" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the subscriber or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16244,6 +15488,8 @@ print_getUserNotificationInfoList_help() {
 print_getUserNotifications_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getUserNotifications - Get notifications${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> NOTIFICATIONS_ADMIN or self" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16277,6 +15523,8 @@ print_sendNotification_help() {
     echo ""
     echo -e "${BOLD}${WHITE}sendNotification - Send a notification${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
+    echo -e "<b>Permissions Needed:</b> NOTIFICATIONS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - notification" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
@@ -16301,6 +15549,8 @@ print_sendNotification_help() {
 print_setUserNotificationStatus_help() {
     echo ""
     echo -e "${BOLD}${WHITE}setUserNotificationStatus - Set notification status${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> NOTIFICATIONS_ADMIN or self" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16329,7 +15579,7 @@ print_silenceDirectNotifications_help() {
     echo ""
     echo -e "${BOLD}${WHITE}silenceDirectNotifications - Enable or disable direct notifications for a user${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "Allows enabling or disabling messages for a given notification type when sent direct to the user. Notifications can still be retrieved by endpoint. For notifications broadcased to a topic, see the topic service to disable messages for the user there." | paste -sd' ' | fold -sw 80
+    echo -e "Allows enabling or disabling messages for a given notification type when sent direct to the user. Notifications can still be retrieved by endpoint. For notifications broadcased to a topic, see the topic service to disable messages for the user there. <br><br><b>Permissions Needed:</b> NOTIFICATIONS_ADMIN or self" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}type_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the topic ${YELLOW}Specify as: type_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16357,6 +15607,8 @@ print_silenceDirectNotifications_help() {
 print_updateNotificationType_help() {
     echo ""
     echo -e "${BOLD}${WHITE}updateNotificationType - Update a notificationType${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> NOTIFICATIONS_ADMIN" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - id ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -16970,33 +16222,6 @@ print_createOrUpdateFattMerchantPaymentMethod_help() {
     echo -e "${BOLD}${WHITE}Responses${OFF}"
     code=200
     echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=400
-    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=401
-    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=403
-    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-    code=404
-    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
-}
-##############################################################################
-#
-# Print help for handleGooglePayment operation
-#
-##############################################################################
-print_handleGooglePayment_help() {
-    echo ""
-    echo -e "${BOLD}${WHITE}handleGooglePayment - Mark an invoice paid with Google${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo -e "Mark an invoice paid with Google. Verifies signature from Google and treats the developerPayload field inside the json payload as the id of the invoice to pay. Returns the transaction ID if successful. <br><br><b>Permissions Needed:</b> ANY" | paste -sd' ' | fold -sw 80
-    echo -e ""
-    echo -e "${BOLD}${WHITE}Parameters${OFF}"
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The request for paying an invoice through a Google in-app payment" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e ""
-    echo ""
-    echo -e "${BOLD}${WHITE}Responses${OFF}"
-    code=201
-    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=400
     echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
     code=401
@@ -18068,6 +17293,689 @@ print_getUserRegistrations_help() {
     echo -e "  * ${GREEN}start_date${OFF} ${BLUE}[Integer]${OFF}${OFF} - The start of the time range to aggregate, unix timestamp in seconds. Default is beginning of time${YELLOW} Specify as: start_date=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}end_date${OFF} ${BLUE}[Integer]${OFF}${OFF} - The end of the time range to aggregate, unix timestamp in seconds. Default is end of time${YELLOW} Specify as: end_date=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBREActions operation
+#
+##############################################################################
+print_getBREActions_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBREActions - Get a list of available actions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_ACTIONS_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}filter_category${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for actions that are within a specific category${YELLOW} Specify as: filter_category=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_name${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for actions that have names containing the given string${YELLOW} Specify as: filter_name=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_tags${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for actions that have all of the given tags (comma separated list)${YELLOW} Specify as: filter_tags=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_search${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for actions containing the given words somewhere within name, description and tags${YELLOW} Specify as: filter_search=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for sendBREEvent operation
+#
+##############################################################################
+print_sendBREEvent_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}sendBREEvent - Fire a new event, based on an existing trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Parameters within the event must match names and types from the trigger. Actual rule execution is asynchornous.  Returns request id, which will be used as the event id. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_EVENTS_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The BRE event object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBREExpression operation
+#
+##############################################################################
+print_getBREExpression_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBREExpression - Lookup a specific expression${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_EXPRESSIONS_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}type${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - Specifiy the type of expression as returned by the listing endpoint ${YELLOW}Specify as: type=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBREExpressions operation
+#
+##############################################################################
+print_getBREExpressions_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBREExpressions - Get a list of supported expressions to use in conditions or actions.${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Each resource contains a type and a definition that are read-only, all the other fields must be provided when using the expression in a rule. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_EXPRESSIONS_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}filter_type_group${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for expressions by type group${YELLOW} Specify as: filter_type_group=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getExpressionAsText operation
+#
+##############################################################################
+print_getExpressionAsText_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getExpressionAsText - Returns the textual representation of an expression${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_EXPRESSIONS_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The expression resource to be converted" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createBREGlobal operation
+#
+##############################################################################
+print_createBREGlobal_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createBREGlobal - Create a global definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Once created you can then use in a custom rule. Note that global definitions cannot be modified or deleted if in use. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_GLOBALS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The BRE global resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteBREGlobal operation
+#
+##############################################################################
+print_deleteBREGlobal_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteBREGlobal - Delete a global${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "May fail if there are existing rules against it. Cannot delete core globals. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_GLOBALS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the global definition ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBREGlobal operation
+#
+##############################################################################
+print_getBREGlobal_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBREGlobal - Get a single global definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_GLOBALS_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the global definition ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBREGlobals operation
+#
+##############################################################################
+print_getBREGlobals_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBREGlobals - List global definitions${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_GLOBALS_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}filter_system${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Filter for globals that are system globals when true, or not when false. Leave off for both mixed${YELLOW} Specify as: filter_system=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateBREGlobal operation
+#
+##############################################################################
+print_updateBREGlobal_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateBREGlobal - Update a global definition${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "May fail if new parameters mismatch requirements of existing rules. Cannot update core globals. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_GLOBALS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the global definition ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The BRE global resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createBRERule operation
+#
+##############################################################################
+print_createBRERule_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createBRERule - Create a rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Rules define which actions to run when a given event verifies the specified condition. Full list of predicates and other type of expressions can be found at GET /bre/expressions/. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The BRE rule object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteBRERule operation
+#
+##############################################################################
+print_deleteBRERule_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteBRERule - Delete a rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "May fail if there are existing rules against it. Cannot delete core rules. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the rule ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBREExpressionAsString operation
+#
+##############################################################################
+print_getBREExpressionAsString_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBREExpressionAsString - Returns a string representation of the provided expression${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The expression" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBRERule operation
+#
+##############################################################################
+print_getBRERule_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBRERule - Get a single rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the rule ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBRERules operation
+#
+##############################################################################
+print_getBRERules_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBRERules - List rules${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}filter_name${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for rules containing the given name${YELLOW} Specify as: filter_name=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_enabled${OFF} ${BLUE}[Boolean]${OFF} ${CYAN}(default: null)${OFF} - Filter for rules by active status, null for both${YELLOW} Specify as: filter_enabled=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_system${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Filter for rules that are system rules when true, or not when false. Leave off for both mixed${YELLOW} Specify as: filter_system=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_trigger${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for rules that are for the trigger with the given name${YELLOW} Specify as: filter_trigger=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_action${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for rules that use the action with the given name${YELLOW} Specify as: filter_action=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_condition${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for rules that have a condition containing the given string${YELLOW} Specify as: filter_condition=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for setBRERule operation
+#
+##############################################################################
+print_setBRERule_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}setBRERule - Enable or disable a rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "This is helpful for turning off systems rules which cannot be deleted or modified otherwise. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the rule ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The boolean value" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateBRERule operation
+#
+##############################################################################
+print_updateBRERule_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateBRERule - Update a rule${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Cannot update system rules. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_RULES_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the rule ${YELLOW}Specify as: id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The BRE rule object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for createBRETrigger operation
+#
+##############################################################################
+print_createBRETrigger_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}createBRETrigger - Create a trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Customer added triggers will not be fired automatically or have rules associated with them by default. Custom rules must be added to get use from the trigger and it must then be fired from the outside. See the Bre Event services. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_TRIGGERS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The BRE trigger resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=201
+    echo -e "${result_color_table[${code:0:1}]}  201;Created${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for deleteBRETrigger operation
+#
+##############################################################################
+print_deleteBRETrigger_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}deleteBRETrigger - Delete a trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "May fail if there are existing rules against it. Cannot delete core triggers. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_TRIGGERS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}event_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The trigger event name ${YELLOW}Specify as: event_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBRETrigger operation
+#
+##############################################################################
+print_getBRETrigger_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBRETrigger - Get a single trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_TRIGGERS_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}event_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The trigger event name ${YELLOW}Specify as: event_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBRETriggers operation
+#
+##############################################################################
+print_getBRETriggers_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBRETriggers - List triggers${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> BRE_RULE_ENGINE_TRIGGERS_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}filter_system${OFF} ${BLUE}[Boolean]${OFF}${OFF} - Filter for triggers that are system triggers when true, or not when false. Leave off for both mixed${YELLOW} Specify as: filter_system=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_category${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for triggers that are within a specific category${YELLOW} Specify as: filter_category=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_tags${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for triggers that have all of the given tags (comma separated list)${YELLOW} Specify as: filter_tags=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_name${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for triggers that have names containing the given string${YELLOW} Specify as: filter_name=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_search${OFF} ${BLUE}[String]${OFF}${OFF} - Filter for triggers containing the given words somewhere within name, description and tags${YELLOW} Specify as: filter_search=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}page${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 1)${OFF} - The number of the page returned, starting with 1${YELLOW} Specify as: page=value${OFF}" \
+        | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for updateBRETrigger operation
+#
+##############################################################################
+print_updateBRETrigger_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}updateBRETrigger - Update a trigger${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "May fail if new parameters mismatch requirements of existing rules. Cannot update core triggers. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_TRIGGERS_ADMIN" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}event_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The trigger event name ${YELLOW}Specify as: event_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF}${OFF} - The BRE trigger resource object" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=204
+    echo -e "${result_color_table[${code:0:1}]}  204;No Content${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBREVariableTypes operation
+#
+##############################################################################
+print_getBREVariableTypes_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBREVariableTypes - Get a list of variable types available${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Types include integer, string, user and invoice. These are used to qualify trigger parameters and action variables with strong typing. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_VARIABLES_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo ""
+    echo -e "${BOLD}${WHITE}Responses${OFF}"
+    code=200
+    echo -e "${result_color_table[${code:0:1}]}  200;OK${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=400
+    echo -e "${result_color_table[${code:0:1}]}  400;Bad Request${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=401
+    echo -e "${result_color_table[${code:0:1}]}  401;Unauthorized${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=403
+    echo -e "${result_color_table[${code:0:1}]}  403;Forbidden${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+    code=404
+    echo -e "${result_color_table[${code:0:1}]}  404;Not Found${OFF}" | paste -sd' ' | column -t -s ';' | fold -sw 80 | sed '2,$s/^/       /'
+}
+##############################################################################
+#
+# Print help for getBREVariableValues operation
+#
+##############################################################################
+print_getBREVariableValues_help() {
+    echo ""
+    echo -e "${BOLD}${WHITE}getBREVariableValues - List valid values for a type${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "Used to lookup users to fill in a user constant for example. Only types marked as enumerable are suppoorted here. <br><br><b>Permissions Needed:</b> BRE_RULE_ENGINE_VARIABLES_USER" | paste -sd' ' | fold -sw 80
+    echo -e ""
+    echo -e "${BOLD}${WHITE}Parameters${OFF}"
+    echo -e "  * ${GREEN}name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The name of the type ${YELLOW}Specify as: name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}filter_name${OFF} ${BLUE}[String]${OFF}${OFF} - Filter results by those with names starting with this string${YELLOW} Specify as: filter_name=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}size${OFF} ${BLUE}[Integer]${OFF} ${CYAN}(default: 25)${OFF} - The number of objects returned per page${YELLOW} Specify as: size=value${OFF}" \
         | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -22039,7 +21947,7 @@ print_getInviteToken_help() {
     echo ""
     echo -e "${BOLD}${WHITE}getInviteToken - Returns the invite token${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
-    echo -e "This is a unique invite token that allows direct connection to the request user.  Exposing that token presents privacy issues if the token is leaked. Use friend request. <br><br><b>Permissions Needed:</b> FRIENDSHIPS_ADMIN or (FRIENDSHIPS_USER and owner)flow instead if confirmation is required" | paste -sd' ' | fold -sw 80
+    echo -e "This is a unique invite token that allows direct connection to the request user.  Exposing that token presents privacy issues if the token is leaked. Use friend request flow instead if confirmation is required. <br><br><b>Permissions Needed:</b> FRIENDSHIPS_ADMIN or (FRIENDSHIPS_USER and owner)" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user or 'me' if logged in ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -22368,6 +22276,8 @@ print_deleteGroupTemplate_help() {
 print_disableGroupNotification_help() {
     echo ""
     echo -e "${BOLD}${WHITE}disableGroupNotification - Enable or disable notification of group messages${OFF}${BLUE}(AUTH - OAuth2)${OFF}${BLUE}(AUTH - OAuth2)${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e ""
+    echo -e "<b>Permissions Needed:</b> TOPICS_ADMIN or self" | paste -sd' ' | fold -sw 80
     echo -e ""
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}unique_name${OFF} ${BLUE}[String]${OFF} ${RED}(required)${OFF}${OFF} - The group unique name ${YELLOW}Specify as: unique_name=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
@@ -23857,7 +23767,7 @@ print_setSubscriptionStatus_help() {
     echo -e "${BOLD}${WHITE}Parameters${OFF}"
     echo -e "  * ${GREEN}user_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user ${YELLOW}Specify as: user_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e "  * ${GREEN}inventory_id${OFF} ${BLUE}[Integer]${OFF} ${RED}(required)${OFF}${OFF} - The id of the user's inventory ${YELLOW}Specify as: inventory_id=value${OFF}" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
-    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - The new status for the subscription. Actual options may differ from the indicated set if the invoice status type data has been altered.  Allowable values: ('current', 'canceled', 'stopped', 'payment_failed', 'suspended')" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
+    echo -e "  * ${GREEN}body${OFF} ${BLUE}[application/json]${OFF} ${RED}(required)${OFF}${OFF} - The new status for the subscription" | paste -sd' ' | fold -sw 80 | sed '2,$s/^/    /'
     echo -e ""
     echo ""
     echo -e "${BOLD}${WHITE}Responses${OFF}"
@@ -26593,1576 +26503,6 @@ call_getTokens() {
     local path
 
     path=$(build_request_path "/auth/tokens" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getBREActions operation
-#
-##############################################################################
-call_getBREActions() {
-    local path_parameter_names=()
-    local query_parameter_names=(filter_category filter_name filter_tags filter_search    )
-    local path
-
-    path=$(build_request_path "/bre/actions" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call createBRECategoryTemplate operation
-#
-##############################################################################
-call_createBRECategoryTemplate() {
-    local path_parameter_names=()
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/categories/templates" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call deleteBRECategoryTemplate operation
-#
-##############################################################################
-call_deleteBRECategoryTemplate() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(cascade    )
-    local path
-
-    path=$(build_request_path "/bre/categories/templates/{id}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getBRECategories operation
-#
-##############################################################################
-call_getBRECategories() {
-    local path_parameter_names=()
-    local query_parameter_names=(size page    )
-    local path
-
-    path=$(build_request_path "/bre/categories" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getBRECategory operation
-#
-##############################################################################
-call_getBRECategory() {
-    local path_parameter_names=(name)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/categories/{name}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getBRECategoryTemplate operation
-#
-##############################################################################
-call_getBRECategoryTemplate() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/categories/templates/{id}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getBRECategoryTemplates operation
-#
-##############################################################################
-call_getBRECategoryTemplates() {
-    local path_parameter_names=()
-    local query_parameter_names=(size page order    )
-    local path
-
-    path=$(build_request_path "/bre/categories/templates" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call updateBRECategory operation
-#
-##############################################################################
-call_updateBRECategory() {
-    local path_parameter_names=(name)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/categories/{name}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call updateBRECategoryTemplate operation
-#
-##############################################################################
-call_updateBRECategoryTemplate() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/categories/templates/{id}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call sendBREEvent operation
-#
-##############################################################################
-call_sendBREEvent() {
-    local path_parameter_names=()
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/events" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call getBREExpression operation
-#
-##############################################################################
-call_getBREExpression() {
-    local path_parameter_names=(type)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/expressions/{type}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getBREExpressions operation
-#
-##############################################################################
-call_getBREExpressions() {
-    local path_parameter_names=()
-    local query_parameter_names=(filter_type_group    )
-    local path
-
-    path=$(build_request_path "/bre/expressions" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getExpressionAsText operation
-#
-##############################################################################
-call_getExpressionAsText() {
-    local path_parameter_names=()
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/expressions" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call createBREGlobal operation
-#
-##############################################################################
-call_createBREGlobal() {
-    local path_parameter_names=()
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/globals/definitions" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call deleteBREGlobal operation
-#
-##############################################################################
-call_deleteBREGlobal() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/globals/definitions/{id}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getBREGlobal operation
-#
-##############################################################################
-call_getBREGlobal() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/globals/definitions/{id}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getBREGlobals operation
-#
-##############################################################################
-call_getBREGlobals() {
-    local path_parameter_names=()
-    local query_parameter_names=(filter_system size page    )
-    local path
-
-    path=$(build_request_path "/bre/globals/definitions" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call updateBREGlobal operation
-#
-##############################################################################
-call_updateBREGlobal() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/globals/definitions/{id}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call createBRERule operation
-#
-##############################################################################
-call_createBRERule() {
-    local path_parameter_names=()
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/rules" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call deleteBRERule operation
-#
-##############################################################################
-call_deleteBRERule() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/rules/{id}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getBREExpressionAsString operation
-#
-##############################################################################
-call_getBREExpressionAsString() {
-    local path_parameter_names=()
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/rules/expression-as-string" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call getBRERule operation
-#
-##############################################################################
-call_getBRERule() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/rules/{id}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getBRERules operation
-#
-##############################################################################
-call_getBRERules() {
-    local path_parameter_names=()
-    local query_parameter_names=(filter_name filter_enabled filter_system filter_trigger filter_action filter_condition size page    )
-    local path
-
-    path=$(build_request_path "/bre/rules" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call setBRERule operation
-#
-##############################################################################
-call_setBRERule() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/rules/{id}/enabled" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call updateBRERule operation
-#
-##############################################################################
-call_updateBRERule() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/rules/{id}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call createBRETrigger operation
-#
-##############################################################################
-call_createBRETrigger() {
-    local path_parameter_names=()
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/triggers" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call deleteBRETrigger operation
-#
-##############################################################################
-call_deleteBRETrigger() {
-    local path_parameter_names=(event_name)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/triggers/{event_name}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getBRETrigger operation
-#
-##############################################################################
-call_getBRETrigger() {
-    local path_parameter_names=(event_name)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/triggers/{event_name}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getBRETriggers operation
-#
-##############################################################################
-call_getBRETriggers() {
-    local path_parameter_names=()
-    local query_parameter_names=(filter_system filter_category filter_tags filter_name filter_search size page    )
-    local path
-
-    path=$(build_request_path "/bre/triggers" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call updateBRETrigger operation
-#
-##############################################################################
-call_updateBRETrigger() {
-    local path_parameter_names=(event_name)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/triggers/{event_name}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call getBREVariableTypes operation
-#
-##############################################################################
-call_getBREVariableTypes() {
-    local path_parameter_names=()
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/bre/variable-types" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getBREVariableValues operation
-#
-##############################################################################
-call_getBREVariableValues() {
-    local path_parameter_names=(name)
-    local query_parameter_names=(filter_name size page    )
-    local path
-
-    path=$(build_request_path "/bre/variable-types/{name}/values" path_parameter_names query_parameter_names)
     if [ $? -ne 0 ]; then
         ERROR_MSG=$path
         exit 1
@@ -31084,10 +29424,10 @@ call_removeChatBlacklist() {
 
 ##############################################################################
 #
-# Call sendMessage operation
+# Call sendChatMessage operation
 #
 ##############################################################################
-call_sendMessage() {
+call_sendChatMessage() {
     local path_parameter_names=()
     local query_parameter_names=(    )
     local path
@@ -31550,6 +29890,80 @@ call_createArticleTemplate() {
 
 ##############################################################################
 #
+# Call createTemplate operation
+#
+##############################################################################
+call_createTemplate() {
+    local path_parameter_names=(type_hint)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/templates/{type_hint}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
 # Call deleteArticle operation
 #
 ##############################################################################
@@ -31609,6 +30023,71 @@ call_deleteArticleTemplate() {
         echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
     else
         eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deleteTemplate operation
+#
+##############################################################################
+call_deleteTemplate() {
+    local path_parameter_names=(type_hint id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/templates/{type_hint}/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
     fi
 }
 
@@ -31742,6 +30221,70 @@ call_getArticles() {
 
 ##############################################################################
 #
+# Call getTemplate operation
+#
+##############################################################################
+call_getTemplate() {
+    local path_parameter_names=(type_hint id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/templates/{type_hint}/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getTemplates operation
+#
+##############################################################################
+call_getTemplates() {
+    local path_parameter_names=(type_hint)
+    local query_parameter_names=(size page order    )
+    local path
+
+    path=$(build_request_path "/templates/{type_hint}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
 # Call updateArticle operation
 #
 ##############################################################################
@@ -31830,6 +30373,154 @@ call_updateArticleTemplate() {
         exit 1
     fi
     local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateTemplate operation
+#
+##############################################################################
+call_updateTemplate() {
+    local path_parameter_names=(type_hint id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/templates/{type_hint}/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call validate operation
+#
+##############################################################################
+call_validate() {
+    local path_parameter_names=(type_hint)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/templates/{type_hint}/validate" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
     local headers_curl=$(header_arguments_to_curl)
     if [[ -n $header_accept ]]; then
         headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
@@ -32069,600 +30760,6 @@ call_updateComment() {
     local path
 
     path=$(build_request_path "/comments/{id}/content" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call answerPoll operation
-#
-##############################################################################
-call_answerPoll() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/media/polls/{id}/response" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call createPoll operation
-#
-##############################################################################
-call_createPoll() {
-    local path_parameter_names=()
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/media/polls" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call createPollTemplate operation
-#
-##############################################################################
-call_createPollTemplate() {
-    local path_parameter_names=()
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/media/polls/templates" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call deletePoll operation
-#
-##############################################################################
-call_deletePoll() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/media/polls/{id}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call deletePollTemplate operation
-#
-##############################################################################
-call_deletePollTemplate() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(cascade    )
-    local path
-
-    path=$(build_request_path "/media/polls/templates/{id}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="DELETE"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getPoll operation
-#
-##############################################################################
-call_getPoll() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/media/polls/{id}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getPollAnswer operation
-#
-##############################################################################
-call_getPollAnswer() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/media/polls/{id}/response" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getPollTemplate operation
-#
-##############################################################################
-call_getPollTemplate() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/media/polls/templates/{id}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getPollTemplates operation
-#
-##############################################################################
-call_getPollTemplates() {
-    local path_parameter_names=()
-    local query_parameter_names=(size page order    )
-    local path
-
-    path=$(build_request_path "/media/polls/templates" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getPolls operation
-#
-##############################################################################
-call_getPolls() {
-    local path_parameter_names=()
-    local query_parameter_names=(filter_category filter_tagset filter_text size page order    )
-    local path
-
-    path=$(build_request_path "/media/polls" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call updatePoll operation
-#
-##############################################################################
-call_updatePoll() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/media/polls/{id}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="PUT"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
-# Call updatePollTemplate operation
-#
-##############################################################################
-call_updatePollTemplate() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/media/polls/templates/{id}" path_parameter_names query_parameter_names)
     if [ $? -ne 0 ]; then
         ERROR_MSG=$path
         exit 1
@@ -38761,7 +36858,7 @@ call_getModerationReport() {
 ##############################################################################
 call_getModerationReports() {
     local path_parameter_names=()
-    local query_parameter_names=(exclude_resolved filter_context filter_context_id size page    )
+    local query_parameter_names=(exclude_resolved filter_context filter_context_id size page order    )
     local path
 
     path=$(build_request_path "/moderation/reports" path_parameter_names query_parameter_names)
@@ -38797,6 +36894,600 @@ call_updateModerationReport() {
     local path
 
     path=$(build_request_path "/moderation/reports/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call answerPoll operation
+#
+##############################################################################
+call_answerPoll() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/media/polls/{id}/response" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createPoll operation
+#
+##############################################################################
+call_createPoll() {
+    local path_parameter_names=()
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/media/polls" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createPollTemplate operation
+#
+##############################################################################
+call_createPollTemplate() {
+    local path_parameter_names=()
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/media/polls/templates" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deletePoll operation
+#
+##############################################################################
+call_deletePoll() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/media/polls/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call deletePollTemplate operation
+#
+##############################################################################
+call_deletePollTemplate() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(cascade    )
+    local path
+
+    path=$(build_request_path "/media/polls/templates/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPoll operation
+#
+##############################################################################
+call_getPoll() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/media/polls/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPollAnswer operation
+#
+##############################################################################
+call_getPollAnswer() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/media/polls/{id}/response" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPollTemplate operation
+#
+##############################################################################
+call_getPollTemplate() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/media/polls/templates/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPollTemplates operation
+#
+##############################################################################
+call_getPollTemplates() {
+    local path_parameter_names=()
+    local query_parameter_names=(size page order    )
+    local path
+
+    path=$(build_request_path "/media/polls/templates" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getPolls operation
+#
+##############################################################################
+call_getPolls() {
+    local path_parameter_names=()
+    local query_parameter_names=(filter_category filter_tagset filter_text size page order    )
+    local path
+
+    path=$(build_request_path "/media/polls" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updatePoll operation
+#
+##############################################################################
+call_updatePoll() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/media/polls/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updatePollTemplate operation
+#
+##############################################################################
+call_updatePollTemplate() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/media/polls/templates/{id}" path_parameter_names query_parameter_names)
     if [ $? -ne 0 ]; then
         ERROR_MSG=$path
         exit 1
@@ -40538,10 +39229,10 @@ call_getMessageTemplates() {
 
 ##############################################################################
 #
-# Call sendMessage1 operation
+# Call sendMessage operation
 #
 ##############################################################################
-call_sendMessage1() {
+call_sendMessage() {
     local path_parameter_names=()
     local query_parameter_names=(    )
     local path
@@ -41287,38 +39978,6 @@ call_getTopicSubscriber() {
     local path
 
     path=$(build_request_path "/messaging/topics/{id}/subscribers/{user_id}" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="GET"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    if [[ "$print_curl" = true ]]; then
-        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    else
-        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
-    fi
-}
-
-##############################################################################
-#
-# Call getTopicSubscribers operation
-#
-##############################################################################
-call_getTopicSubscribers() {
-    local path_parameter_names=(id)
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/messaging/topics/{id}/subscribers" path_parameter_names query_parameter_names)
     if [ $? -ne 0 ]; then
         ERROR_MSG=$path
         exit 1
@@ -42986,80 +41645,6 @@ call_createOrUpdateFattMerchantPaymentMethod() {
 
 ##############################################################################
 #
-# Call handleGooglePayment operation
-#
-##############################################################################
-call_handleGooglePayment() {
-    local path_parameter_names=()
-    local query_parameter_names=(    )
-    local path
-
-    path=$(build_request_path "/payment/provider/google/payments" path_parameter_names query_parameter_names)
-    if [ $? -ne 0 ]; then
-        ERROR_MSG=$path
-        exit 1
-    fi
-    local method="POST"
-    local headers_curl=$(header_arguments_to_curl)
-    if [[ -n $header_accept ]]; then
-        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
-    fi
-
-    local basic_auth_option=""
-    if [[ -n $basic_auth_credential ]]; then
-        basic_auth_option="-u ${basic_auth_credential}"
-    fi
-    local body_json_curl=""
-
-    #
-    # Check if the user provided 'Content-type' headers in the
-    # command line. If not try to set them based on the Swagger specification
-    # if values produces and consumes are defined unambigously
-    #
-    if [[ -z $header_content_type ]]; then
-        header_content_type="application/json"
-    fi
-
-
-    if [[ -z $header_content_type && "$force" = false ]]; then
-        :
-        echo "ERROR: Request's content-type not specified!!!"
-        echo "This operation expects content-type in one of the following formats:"
-        echo -e "\t- application/json"
-        echo ""
-        echo "Use '--content-type' to set proper content type"
-        exit 1
-    else
-        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
-    fi
-
-
-    #
-    # If we have received some body content over pipe, pass it from the
-    # temporary file to cURL
-    #
-    if [[ -n $body_content_temp_file ]]; then
-        if [[ "$print_curl" = true ]]; then
-            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        else
-            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
-        fi
-        rm "${body_content_temp_file}"
-    #
-    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
-    #
-    else
-        body_json_curl=$(body_parameters_to_json)
-        if [[ "$print_curl" = true ]]; then
-            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        else
-            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
-        fi
-    fi
-}
-
-##############################################################################
-#
 # Call silentPostOptimal operation
 #
 ##############################################################################
@@ -44545,6 +43130,1194 @@ call_getUserRegistrations() {
     local path
 
     path=$(build_request_path "/reporting/users/registrations" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getBREActions operation
+#
+##############################################################################
+call_getBREActions() {
+    local path_parameter_names=()
+    local query_parameter_names=(filter_category filter_name filter_tags filter_search    )
+    local path
+
+    path=$(build_request_path "/bre/actions" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call sendBREEvent operation
+#
+##############################################################################
+call_sendBREEvent() {
+    local path_parameter_names=()
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/bre/events" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getBREExpression operation
+#
+##############################################################################
+call_getBREExpression() {
+    local path_parameter_names=(type)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/bre/expressions/{type}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getBREExpressions operation
+#
+##############################################################################
+call_getBREExpressions() {
+    local path_parameter_names=()
+    local query_parameter_names=(filter_type_group    )
+    local path
+
+    path=$(build_request_path "/bre/expressions" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getExpressionAsText operation
+#
+##############################################################################
+call_getExpressionAsText() {
+    local path_parameter_names=()
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/bre/expressions" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createBREGlobal operation
+#
+##############################################################################
+call_createBREGlobal() {
+    local path_parameter_names=()
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/bre/globals/definitions" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteBREGlobal operation
+#
+##############################################################################
+call_deleteBREGlobal() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/bre/globals/definitions/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getBREGlobal operation
+#
+##############################################################################
+call_getBREGlobal() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/bre/globals/definitions/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getBREGlobals operation
+#
+##############################################################################
+call_getBREGlobals() {
+    local path_parameter_names=()
+    local query_parameter_names=(filter_system size page    )
+    local path
+
+    path=$(build_request_path "/bre/globals/definitions" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateBREGlobal operation
+#
+##############################################################################
+call_updateBREGlobal() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/bre/globals/definitions/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createBRERule operation
+#
+##############################################################################
+call_createBRERule() {
+    local path_parameter_names=()
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/bre/rules" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteBRERule operation
+#
+##############################################################################
+call_deleteBRERule() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/bre/rules/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getBREExpressionAsString operation
+#
+##############################################################################
+call_getBREExpressionAsString() {
+    local path_parameter_names=()
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/bre/rules/expression-as-string" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getBRERule operation
+#
+##############################################################################
+call_getBRERule() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/bre/rules/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getBRERules operation
+#
+##############################################################################
+call_getBRERules() {
+    local path_parameter_names=()
+    local query_parameter_names=(filter_name filter_enabled filter_system filter_trigger filter_action filter_condition size page    )
+    local path
+
+    path=$(build_request_path "/bre/rules" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call setBRERule operation
+#
+##############################################################################
+call_setBRERule() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/bre/rules/{id}/enabled" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call updateBRERule operation
+#
+##############################################################################
+call_updateBRERule() {
+    local path_parameter_names=(id)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/bre/rules/{id}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call createBRETrigger operation
+#
+##############################################################################
+call_createBRETrigger() {
+    local path_parameter_names=()
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/bre/triggers" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="POST"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call deleteBRETrigger operation
+#
+##############################################################################
+call_deleteBRETrigger() {
+    local path_parameter_names=(event_name)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/bre/triggers/{event_name}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="DELETE"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getBRETrigger operation
+#
+##############################################################################
+call_getBRETrigger() {
+    local path_parameter_names=(event_name)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/bre/triggers/{event_name}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getBRETriggers operation
+#
+##############################################################################
+call_getBRETriggers() {
+    local path_parameter_names=()
+    local query_parameter_names=(filter_system filter_category filter_tags filter_name filter_search size page    )
+    local path
+
+    path=$(build_request_path "/bre/triggers" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call updateBRETrigger operation
+#
+##############################################################################
+call_updateBRETrigger() {
+    local path_parameter_names=(event_name)
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/bre/triggers/{event_name}" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="PUT"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    local body_json_curl=""
+
+    #
+    # Check if the user provided 'Content-type' headers in the
+    # command line. If not try to set them based on the Swagger specification
+    # if values produces and consumes are defined unambigously
+    #
+    if [[ -z $header_content_type ]]; then
+        header_content_type="application/json"
+    fi
+
+
+    if [[ -z $header_content_type && "$force" = false ]]; then
+        :
+        echo "ERROR: Request's content-type not specified!!!"
+        echo "This operation expects content-type in one of the following formats:"
+        echo -e "\t- application/json"
+        echo ""
+        echo "Use '--content-type' to set proper content type"
+        exit 1
+    else
+        headers_curl="${headers_curl} -H 'Content-type: ${header_content_type}'"
+    fi
+
+
+    #
+    # If we have received some body content over pipe, pass it from the
+    # temporary file to cURL
+    #
+    if [[ -n $body_content_temp_file ]]; then
+        if [[ "$print_curl" = true ]]; then
+            echo "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        else
+            eval "cat ${body_content_temp_file} | curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\" -d @-"
+        fi
+        rm "${body_content_temp_file}"
+    #
+    # If not, try to build the content body from arguments KEY==VALUE and KEY:=VALUE
+    #
+    else
+        body_json_curl=$(body_parameters_to_json)
+        if [[ "$print_curl" = true ]]; then
+            echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        else
+            eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} ${body_json_curl} \"${host}${path}\""
+        fi
+    fi
+}
+
+##############################################################################
+#
+# Call getBREVariableTypes operation
+#
+##############################################################################
+call_getBREVariableTypes() {
+    local path_parameter_names=()
+    local query_parameter_names=(    )
+    local path
+
+    path=$(build_request_path "/bre/variable-types" path_parameter_names query_parameter_names)
+    if [ $? -ne 0 ]; then
+        ERROR_MSG=$path
+        exit 1
+    fi
+    local method="GET"
+    local headers_curl=$(header_arguments_to_curl)
+    if [[ -n $header_accept ]]; then
+        headers_curl="${headers_curl} -H 'Accept: ${header_accept}'"
+    fi
+
+    local basic_auth_option=""
+    if [[ -n $basic_auth_credential ]]; then
+        basic_auth_option="-u ${basic_auth_credential}"
+    fi
+    if [[ "$print_curl" = true ]]; then
+        echo "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    else
+        eval "curl ${basic_auth_option} ${curl_arguments} ${headers_curl} -X ${method} \"${host}${path}\""
+    fi
+}
+
+##############################################################################
+#
+# Call getBREVariableValues operation
+#
+##############################################################################
+call_getBREVariableValues() {
+    local path_parameter_names=(name)
+    local query_parameter_names=(filter_name size page    )
+    local path
+
+    path=$(build_request_path "/bre/variable-types/{name}/values" path_parameter_names query_parameter_names)
     if [ $? -ne 0 ]; then
         ERROR_MSG=$path
         exit 1
@@ -50452,7 +50225,7 @@ call_getDirectMessages1() {
     local query_parameter_names=(size page    )
     local path
 
-    path=$(build_request_path "/users/users/{recipient_id}/messages" path_parameter_names query_parameter_names)
+    path=$(build_request_path "/users/{recipient_id}/messages" path_parameter_names query_parameter_names)
     if [ $? -ne 0 ]; then
         ERROR_MSG=$path
         exit 1
@@ -55625,102 +55398,6 @@ case $key in
     getTokens)
     operation="getTokens"
     ;;
-    getBREActions)
-    operation="getBREActions"
-    ;;
-    createBRECategoryTemplate)
-    operation="createBRECategoryTemplate"
-    ;;
-    deleteBRECategoryTemplate)
-    operation="deleteBRECategoryTemplate"
-    ;;
-    getBRECategories)
-    operation="getBRECategories"
-    ;;
-    getBRECategory)
-    operation="getBRECategory"
-    ;;
-    getBRECategoryTemplate)
-    operation="getBRECategoryTemplate"
-    ;;
-    getBRECategoryTemplates)
-    operation="getBRECategoryTemplates"
-    ;;
-    updateBRECategory)
-    operation="updateBRECategory"
-    ;;
-    updateBRECategoryTemplate)
-    operation="updateBRECategoryTemplate"
-    ;;
-    sendBREEvent)
-    operation="sendBREEvent"
-    ;;
-    getBREExpression)
-    operation="getBREExpression"
-    ;;
-    getBREExpressions)
-    operation="getBREExpressions"
-    ;;
-    getExpressionAsText)
-    operation="getExpressionAsText"
-    ;;
-    createBREGlobal)
-    operation="createBREGlobal"
-    ;;
-    deleteBREGlobal)
-    operation="deleteBREGlobal"
-    ;;
-    getBREGlobal)
-    operation="getBREGlobal"
-    ;;
-    getBREGlobals)
-    operation="getBREGlobals"
-    ;;
-    updateBREGlobal)
-    operation="updateBREGlobal"
-    ;;
-    createBRERule)
-    operation="createBRERule"
-    ;;
-    deleteBRERule)
-    operation="deleteBRERule"
-    ;;
-    getBREExpressionAsString)
-    operation="getBREExpressionAsString"
-    ;;
-    getBRERule)
-    operation="getBRERule"
-    ;;
-    getBRERules)
-    operation="getBRERules"
-    ;;
-    setBRERule)
-    operation="setBRERule"
-    ;;
-    updateBRERule)
-    operation="updateBRERule"
-    ;;
-    createBRETrigger)
-    operation="createBRETrigger"
-    ;;
-    deleteBRETrigger)
-    operation="deleteBRETrigger"
-    ;;
-    getBRETrigger)
-    operation="getBRETrigger"
-    ;;
-    getBRETriggers)
-    operation="getBRETriggers"
-    ;;
-    updateBRETrigger)
-    operation="updateBRETrigger"
-    ;;
-    getBREVariableTypes)
-    operation="getBREVariableTypes"
-    ;;
-    getBREVariableValues)
-    operation="getBREVariableValues"
-    ;;
     addChallengeToCampaign)
     operation="addChallengeToCampaign"
     ;;
@@ -55910,8 +55587,8 @@ case $key in
     removeChatBlacklist)
     operation="removeChatBlacklist"
     ;;
-    sendMessage)
-    operation="sendMessage"
+    sendChatMessage)
+    operation="sendChatMessage"
     ;;
     createConfig)
     operation="createConfig"
@@ -55934,11 +55611,17 @@ case $key in
     createArticleTemplate)
     operation="createArticleTemplate"
     ;;
+    createTemplate)
+    operation="createTemplate"
+    ;;
     deleteArticle)
     operation="deleteArticle"
     ;;
     deleteArticleTemplate)
     operation="deleteArticleTemplate"
+    ;;
+    deleteTemplate)
+    operation="deleteTemplate"
     ;;
     getArticle)
     operation="getArticle"
@@ -55952,11 +55635,23 @@ case $key in
     getArticles)
     operation="getArticles"
     ;;
+    getTemplate)
+    operation="getTemplate"
+    ;;
+    getTemplates)
+    operation="getTemplates"
+    ;;
     updateArticle)
     operation="updateArticle"
     ;;
     updateArticleTemplate)
     operation="updateArticleTemplate"
+    ;;
+    updateTemplate)
+    operation="updateTemplate"
+    ;;
+    validate)
+    operation="validate"
     ;;
     addComment)
     operation="addComment"
@@ -55972,42 +55667,6 @@ case $key in
     ;;
     updateComment)
     operation="updateComment"
-    ;;
-    answerPoll)
-    operation="answerPoll"
-    ;;
-    createPoll)
-    operation="createPoll"
-    ;;
-    createPollTemplate)
-    operation="createPollTemplate"
-    ;;
-    deletePoll)
-    operation="deletePoll"
-    ;;
-    deletePollTemplate)
-    operation="deletePollTemplate"
-    ;;
-    getPoll)
-    operation="getPoll"
-    ;;
-    getPollAnswer)
-    operation="getPollAnswer"
-    ;;
-    getPollTemplate)
-    operation="getPollTemplate"
-    ;;
-    getPollTemplates)
-    operation="getPollTemplates"
-    ;;
-    getPolls)
-    operation="getPolls"
-    ;;
-    updatePoll)
-    operation="updatePoll"
-    ;;
-    updatePollTemplate)
-    operation="updatePollTemplate"
     ;;
     createCurrency)
     operation="createCurrency"
@@ -56399,6 +56058,42 @@ case $key in
     updateModerationReport)
     operation="updateModerationReport"
     ;;
+    answerPoll)
+    operation="answerPoll"
+    ;;
+    createPoll)
+    operation="createPoll"
+    ;;
+    createPollTemplate)
+    operation="createPollTemplate"
+    ;;
+    deletePoll)
+    operation="deletePoll"
+    ;;
+    deletePollTemplate)
+    operation="deletePollTemplate"
+    ;;
+    getPoll)
+    operation="getPoll"
+    ;;
+    getPollAnswer)
+    operation="getPollAnswer"
+    ;;
+    getPollTemplate)
+    operation="getPollTemplate"
+    ;;
+    getPollTemplates)
+    operation="getPollTemplates"
+    ;;
+    getPolls)
+    operation="getPolls"
+    ;;
+    updatePoll)
+    operation="updatePoll"
+    ;;
+    updatePollTemplate)
+    operation="updatePollTemplate"
+    ;;
     addUserToVideoWhitelist)
     operation="addUserToVideoWhitelist"
     ;;
@@ -56501,8 +56196,8 @@ case $key in
     getMessageTemplates)
     operation="getMessageTemplates"
     ;;
-    sendMessage1)
-    operation="sendMessage1"
+    sendMessage)
+    operation="sendMessage"
     ;;
     sendRawEmail)
     operation="sendRawEmail"
@@ -56533,9 +56228,6 @@ case $key in
     ;;
     getTopicSubscriber)
     operation="getTopicSubscriber"
-    ;;
-    getTopicSubscribers)
-    operation="getTopicSubscribers"
     ;;
     getUserTopics)
     operation="getUserTopics"
@@ -56635,9 +56327,6 @@ case $key in
     ;;
     createOrUpdateFattMerchantPaymentMethod)
     operation="createOrUpdateFattMerchantPaymentMethod"
-    ;;
-    handleGooglePayment)
-    operation="handleGooglePayment"
     ;;
     silentPostOptimal)
     operation="silentPostOptimal"
@@ -56740,6 +56429,78 @@ case $key in
     ;;
     getUserRegistrations)
     operation="getUserRegistrations"
+    ;;
+    getBREActions)
+    operation="getBREActions"
+    ;;
+    sendBREEvent)
+    operation="sendBREEvent"
+    ;;
+    getBREExpression)
+    operation="getBREExpression"
+    ;;
+    getBREExpressions)
+    operation="getBREExpressions"
+    ;;
+    getExpressionAsText)
+    operation="getExpressionAsText"
+    ;;
+    createBREGlobal)
+    operation="createBREGlobal"
+    ;;
+    deleteBREGlobal)
+    operation="deleteBREGlobal"
+    ;;
+    getBREGlobal)
+    operation="getBREGlobal"
+    ;;
+    getBREGlobals)
+    operation="getBREGlobals"
+    ;;
+    updateBREGlobal)
+    operation="updateBREGlobal"
+    ;;
+    createBRERule)
+    operation="createBRERule"
+    ;;
+    deleteBRERule)
+    operation="deleteBRERule"
+    ;;
+    getBREExpressionAsString)
+    operation="getBREExpressionAsString"
+    ;;
+    getBRERule)
+    operation="getBRERule"
+    ;;
+    getBRERules)
+    operation="getBRERules"
+    ;;
+    setBRERule)
+    operation="setBRERule"
+    ;;
+    updateBRERule)
+    operation="updateBRERule"
+    ;;
+    createBRETrigger)
+    operation="createBRETrigger"
+    ;;
+    deleteBRETrigger)
+    operation="deleteBRETrigger"
+    ;;
+    getBRETrigger)
+    operation="getBRETrigger"
+    ;;
+    getBRETriggers)
+    operation="getBRETriggers"
+    ;;
+    updateBRETrigger)
+    operation="updateBRETrigger"
+    ;;
+    getBREVariableTypes)
+    operation="getBREVariableTypes"
+    ;;
+    getBREVariableValues)
+    operation="getBREVariableValues"
     ;;
     searchCountGET)
     operation="searchCountGET"
@@ -57608,102 +57369,6 @@ case $operation in
     getTokens)
     call_getTokens
     ;;
-    getBREActions)
-    call_getBREActions
-    ;;
-    createBRECategoryTemplate)
-    call_createBRECategoryTemplate
-    ;;
-    deleteBRECategoryTemplate)
-    call_deleteBRECategoryTemplate
-    ;;
-    getBRECategories)
-    call_getBRECategories
-    ;;
-    getBRECategory)
-    call_getBRECategory
-    ;;
-    getBRECategoryTemplate)
-    call_getBRECategoryTemplate
-    ;;
-    getBRECategoryTemplates)
-    call_getBRECategoryTemplates
-    ;;
-    updateBRECategory)
-    call_updateBRECategory
-    ;;
-    updateBRECategoryTemplate)
-    call_updateBRECategoryTemplate
-    ;;
-    sendBREEvent)
-    call_sendBREEvent
-    ;;
-    getBREExpression)
-    call_getBREExpression
-    ;;
-    getBREExpressions)
-    call_getBREExpressions
-    ;;
-    getExpressionAsText)
-    call_getExpressionAsText
-    ;;
-    createBREGlobal)
-    call_createBREGlobal
-    ;;
-    deleteBREGlobal)
-    call_deleteBREGlobal
-    ;;
-    getBREGlobal)
-    call_getBREGlobal
-    ;;
-    getBREGlobals)
-    call_getBREGlobals
-    ;;
-    updateBREGlobal)
-    call_updateBREGlobal
-    ;;
-    createBRERule)
-    call_createBRERule
-    ;;
-    deleteBRERule)
-    call_deleteBRERule
-    ;;
-    getBREExpressionAsString)
-    call_getBREExpressionAsString
-    ;;
-    getBRERule)
-    call_getBRERule
-    ;;
-    getBRERules)
-    call_getBRERules
-    ;;
-    setBRERule)
-    call_setBRERule
-    ;;
-    updateBRERule)
-    call_updateBRERule
-    ;;
-    createBRETrigger)
-    call_createBRETrigger
-    ;;
-    deleteBRETrigger)
-    call_deleteBRETrigger
-    ;;
-    getBRETrigger)
-    call_getBRETrigger
-    ;;
-    getBRETriggers)
-    call_getBRETriggers
-    ;;
-    updateBRETrigger)
-    call_updateBRETrigger
-    ;;
-    getBREVariableTypes)
-    call_getBREVariableTypes
-    ;;
-    getBREVariableValues)
-    call_getBREVariableValues
-    ;;
     addChallengeToCampaign)
     call_addChallengeToCampaign
     ;;
@@ -57893,8 +57558,8 @@ case $operation in
     removeChatBlacklist)
     call_removeChatBlacklist
     ;;
-    sendMessage)
-    call_sendMessage
+    sendChatMessage)
+    call_sendChatMessage
     ;;
     createConfig)
     call_createConfig
@@ -57917,11 +57582,17 @@ case $operation in
     createArticleTemplate)
     call_createArticleTemplate
     ;;
+    createTemplate)
+    call_createTemplate
+    ;;
     deleteArticle)
     call_deleteArticle
     ;;
     deleteArticleTemplate)
     call_deleteArticleTemplate
+    ;;
+    deleteTemplate)
+    call_deleteTemplate
     ;;
     getArticle)
     call_getArticle
@@ -57935,11 +57606,23 @@ case $operation in
     getArticles)
     call_getArticles
     ;;
+    getTemplate)
+    call_getTemplate
+    ;;
+    getTemplates)
+    call_getTemplates
+    ;;
     updateArticle)
     call_updateArticle
     ;;
     updateArticleTemplate)
     call_updateArticleTemplate
+    ;;
+    updateTemplate)
+    call_updateTemplate
+    ;;
+    validate)
+    call_validate
     ;;
     addComment)
     call_addComment
@@ -57955,42 +57638,6 @@ case $operation in
     ;;
     updateComment)
     call_updateComment
-    ;;
-    answerPoll)
-    call_answerPoll
-    ;;
-    createPoll)
-    call_createPoll
-    ;;
-    createPollTemplate)
-    call_createPollTemplate
-    ;;
-    deletePoll)
-    call_deletePoll
-    ;;
-    deletePollTemplate)
-    call_deletePollTemplate
-    ;;
-    getPoll)
-    call_getPoll
-    ;;
-    getPollAnswer)
-    call_getPollAnswer
-    ;;
-    getPollTemplate)
-    call_getPollTemplate
-    ;;
-    getPollTemplates)
-    call_getPollTemplates
-    ;;
-    getPolls)
-    call_getPolls
-    ;;
-    updatePoll)
-    call_updatePoll
-    ;;
-    updatePollTemplate)
-    call_updatePollTemplate
     ;;
     createCurrency)
     call_createCurrency
@@ -58382,6 +58029,42 @@ case $operation in
     updateModerationReport)
     call_updateModerationReport
     ;;
+    answerPoll)
+    call_answerPoll
+    ;;
+    createPoll)
+    call_createPoll
+    ;;
+    createPollTemplate)
+    call_createPollTemplate
+    ;;
+    deletePoll)
+    call_deletePoll
+    ;;
+    deletePollTemplate)
+    call_deletePollTemplate
+    ;;
+    getPoll)
+    call_getPoll
+    ;;
+    getPollAnswer)
+    call_getPollAnswer
+    ;;
+    getPollTemplate)
+    call_getPollTemplate
+    ;;
+    getPollTemplates)
+    call_getPollTemplates
+    ;;
+    getPolls)
+    call_getPolls
+    ;;
+    updatePoll)
+    call_updatePoll
+    ;;
+    updatePollTemplate)
+    call_updatePollTemplate
+    ;;
     addUserToVideoWhitelist)
     call_addUserToVideoWhitelist
     ;;
@@ -58484,8 +58167,8 @@ case $operation in
     getMessageTemplates)
     call_getMessageTemplates
     ;;
-    sendMessage1)
-    call_sendMessage1
+    sendMessage)
+    call_sendMessage
     ;;
     sendRawEmail)
     call_sendRawEmail
@@ -58516,9 +58199,6 @@ case $operation in
     ;;
     getTopicSubscriber)
     call_getTopicSubscriber
-    ;;
-    getTopicSubscribers)
-    call_getTopicSubscribers
     ;;
     getUserTopics)
     call_getUserTopics
@@ -58618,9 +58298,6 @@ case $operation in
     ;;
     createOrUpdateFattMerchantPaymentMethod)
     call_createOrUpdateFattMerchantPaymentMethod
-    ;;
-    handleGooglePayment)
-    call_handleGooglePayment
     ;;
     silentPostOptimal)
     call_silentPostOptimal
@@ -58723,6 +58400,78 @@ case $operation in
     ;;
     getUserRegistrations)
     call_getUserRegistrations
+    ;;
+    getBREActions)
+    call_getBREActions
+    ;;
+    sendBREEvent)
+    call_sendBREEvent
+    ;;
+    getBREExpression)
+    call_getBREExpression
+    ;;
+    getBREExpressions)
+    call_getBREExpressions
+    ;;
+    getExpressionAsText)
+    call_getExpressionAsText
+    ;;
+    createBREGlobal)
+    call_createBREGlobal
+    ;;
+    deleteBREGlobal)
+    call_deleteBREGlobal
+    ;;
+    getBREGlobal)
+    call_getBREGlobal
+    ;;
+    getBREGlobals)
+    call_getBREGlobals
+    ;;
+    updateBREGlobal)
+    call_updateBREGlobal
+    ;;
+    createBRERule)
+    call_createBRERule
+    ;;
+    deleteBRERule)
+    call_deleteBRERule
+    ;;
+    getBREExpressionAsString)
+    call_getBREExpressionAsString
+    ;;
+    getBRERule)
+    call_getBRERule
+    ;;
+    getBRERules)
+    call_getBRERules
+    ;;
+    setBRERule)
+    call_setBRERule
+    ;;
+    updateBRERule)
+    call_updateBRERule
+    ;;
+    createBRETrigger)
+    call_createBRETrigger
+    ;;
+    deleteBRETrigger)
+    call_deleteBRETrigger
+    ;;
+    getBRETrigger)
+    call_getBRETrigger
+    ;;
+    getBRETriggers)
+    call_getBRETriggers
+    ;;
+    updateBRETrigger)
+    call_updateBRETrigger
+    ;;
+    getBREVariableTypes)
+    call_getBREVariableTypes
+    ;;
+    getBREVariableValues)
+    call_getBREVariableValues
     ;;
     searchCountGET)
     call_searchCountGET
